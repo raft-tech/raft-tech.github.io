@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import heroImage from "../images/raft-hero-team.png"

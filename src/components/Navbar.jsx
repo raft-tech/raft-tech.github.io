@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import headerLogo from "../images/raft-header-logo.png"
-import { FaBars } from "react-icons/fa"
+import { FaBars, FaTimes } from "react-icons/fa"
 
 const Navbar = () => {
   const [menuViz, setMenuViz] = useState("")
@@ -17,14 +17,14 @@ const Navbar = () => {
         </div>
         <div id="nav-links" className={menuClass}>
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/clients">Clients</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/blog">Blog</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Services</Link>
+          <Link to="/">Clients</Link>
+          <Link to="/">Contact</Link>
+          <Link to="/">Blog</Link>
         </div>
         <div id="hamburger" className="menubars" onClick={toggleMenu}>
-          <FaBars />
+         {menuViz ? <FaTimes /> : <FaBars />}
         </div>
       </nav>
     </header>

@@ -1,32 +1,37 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 #clients {
-    h1 { 
-        color: $purple;
-        text-align: center;
-        padding-top: 75px;
-        width: 100%;
-        font-size: 3rem;
-    }
+  h1 {
+    color: $purple;
+    text-align: center;
+    padding-top: 75px;
+    width: 100%;
+    font-size: 2.5rem;
+  }
 
-    .logos {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 80%;
-        margin: 50px auto;
+  .logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
 
-        .logo {
-            border-radius: 50%;
-            width: 10vw;
-            height: 10vw;
-            background-color: $darkgrey;
-        }
+    .logo {
+      border-radius: 50%;
+      width: 10vw;
+      height: 10vw;
+      background-color: $darkgrey;
     }
+  }
 }
 
 @media (min-width: $medium) {
-    #clients .logos {
-        margin: 75px auto;
+  #clients {
+    h1 {
+      font-size: 3rem;
     }
+    .logos {
+      margin: 75px auto;
+    }
+  }
 }

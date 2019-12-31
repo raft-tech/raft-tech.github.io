@@ -9,25 +9,25 @@ export const Services = () => {
         <ServiceCard
           title="Cloud Native"
           description=""
-          url="/cloud"
+          url="#cloud"
           color="purple"
         />
         <ServiceCard
           title="Data Science"
           description=""
-          url="/data"
+          url="#data"
           color="lightgrey"
         />
         <ServiceCard
           title="Digital Transformation"
           description=""
-          url="/transformation"
+          url="#transformation"
           color="darkgrey"
         />
         <ServiceCard
           title="Product Strategy"
           description=""
-          url="/strategy"
+          url="#strategy"
           color="seagreen"
         />
       </div>

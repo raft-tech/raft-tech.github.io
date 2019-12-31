@@ -19,7 +19,7 @@ export const Introducing = () => {
           Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
           ipsum Lorem ipsum Lorem ipsum..{" "}
         </p>
-        <Link to="/about">
+        <Link to="#about">
           <div className="button learn-more">Learn More ></div>
         </Link>
       </div>
