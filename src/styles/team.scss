@@ -4,7 +4,7 @@
     h1 { 
         color: white;
         text-align: center;
-        padding: 75px;
+        padding: 75px 0;
         width: 100%;
         background: $purple;
         font-size: 3rem;
@@ -17,12 +17,13 @@
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
+        flex-flow: row wrap;
 
         .member {
+            width: 45%;
             .image {
                 border-radius: 10px;
                 width: 100%;
-                max-width: 250px;
             }
 
             .name {
@@ -35,6 +36,22 @@
                 font-weight: bold;
             }
 
+        }
+    }
+}
+
+@media (min-width: $medium) {
+    #team {
+        .members .member {
+            width: 35%;
+        }
+    }
+}
+
+@media (min-width: $large) {
+    #team {
+        .members .member {
+            width: 20%;
         }
     }
 }
