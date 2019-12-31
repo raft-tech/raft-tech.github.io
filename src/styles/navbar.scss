@@ -1,0 +1,41 @@
+@import './colors.scss';
+
+header {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 40px 0;
+        width: 95%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        ul {
+            list-style: none; 
+            display: flex;
+
+            a {
+                text-decoration: none;
+                color: $purple
+            }
+
+            li {
+                margin-right: 55px;
+                letter-spacing: 1px;
+            }
+        }
+
+        img {
+            height: 75px;
+            min-height: 75px;
+            width: 245px;
+            min-width: 245px;
+        }
+
+    }
+}

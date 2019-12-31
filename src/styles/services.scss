@@ -1,0 +1,60 @@
+@import './colors.scss';
+
+#services {
+    padding-bottom: 100px; 
+
+    h1 { 
+        color: white;
+        text-align: center;
+        padding: 75px 0;
+        width: 100%;
+        background: $seagreen;
+        font-size: 3rem;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        color: $purple;
+        width: 90%;
+        margin: 0 auto;
+
+        .card {
+            max-width: 20%;
+            margin-right: 4%;
+            font-weight: bold;
+
+            h2 {
+                text-align: center;
+                margin-bottom: 50px;
+                white-space: nowrap;
+            }
+
+            a {
+                font-weight: bolder;
+                color: $purple;
+            }
+
+            .circle {
+                width: 10vw;
+                height: 10vw;
+                margin: 50px auto;
+                border-radius: 50%;
+
+                &.purple {
+                    background-color: $purple;
+                }
+                &.seagreen {
+                    background-color: $seagreen;
+                }
+                &.lightgrey {
+                    background-color: $lightgrey;
+                }
+                &.darkgrey {
+                    background-color: $darkgrey;
+                }
+            }
+        }
+    }
+
+}

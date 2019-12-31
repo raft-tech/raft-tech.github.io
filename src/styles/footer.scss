@@ -1,0 +1,52 @@
+@import './colors.scss';
+
+footer {
+    margin-top: 100px;
+    padding: 75px;
+    background: $purple;
+    color: white;
+    border-top: 25px solid $seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo img {
+        max-width: 400px;
+        margin-left: 125px;
+
+    }
+
+    .contact {
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        .company, .address, .email {
+            margin-bottom: 20px;
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        align-self: flex-end;
+
+        .platform {
+            background: white;
+            width: 4vw;
+            height: 4vw;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }    
+}
+
+#copyright {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: #7f94c7;
+    padding: 30px 50px;
+}
