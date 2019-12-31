@@ -1,56 +1,96 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 #introducing {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px 0 20px 0;
+
+  color: $purple;
+
+  .left {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-flow: column nowrap;
+    padding-bottom: 40px;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      padding: 0px;
+      margin: 10px auto;
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      align-self: center;
+      white-space: nowrap;
+    }
+
+    div.button.learn-more {
+      background: $purple;
+      display: inline-block;
+      padding: 25px 65px;
+      border-radius: 15px;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      &:hover {
+        background: $seagreen;
+      }
+    }
+  }
+
+  .right img {
+    width: 120px;
+  }
+}
+
+@media (min-width: $large) {
+  #introducing {
+    flex-flow: row;
     width: 80%;
-    margin: 0 auto;
-    padding: 30px 0;
-    color: $purple;
-
-    .left {
-        display: flex;
-        flex-flow: column nowrap;
-
-        h1 {
-            font-size: 3rem;
-            padding-bottom: 10px;
-            span {
-                font-size: 4rem;
-            }
-        }
-    
-        p {
-            font-size: 1.1rem;
-            font-weight: bold;
-            padding-bottom: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            align-self: flex-end;
-            margin-right: 35px;
-        }
-
-        div.button.learn-more {
-            background: $purple;
-            display: inline-block;
-            padding: 25px 65px;
-            border-radius: 15px;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-    }
-
-    .right img {
-        width: 420px;
-    }
-    
+    padding-top: 20px;
 
     > div {
-        max-width: 40%;
+      width: 50%;
     }
 
+    .left {
+      padding-bottom: 20px;
+      text-align: left;
+
+      h1 {
+        margin: 10px 0;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      a {
+        align-self: flex-end;
+        margin-right: 35px;
+      }
+    }
+
+    .right {
+      text-align: center;
+      img {
+        width: 420px;
+      }
+    }
+  }
 }
