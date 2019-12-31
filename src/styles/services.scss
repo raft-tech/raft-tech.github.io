@@ -15,13 +15,12 @@
     .cards {
         display: flex;
         justify-content: space-evenly;
+        flex-direction: column;
         color: $purple;
         width: 90%;
         margin: 0 auto;
 
         .card {
-            max-width: 20%;
-            margin-right: 4%;
             font-weight: bold;
 
             h2 {
@@ -33,6 +32,10 @@
             a {
                 font-weight: bolder;
                 color: $purple;
+
+                &:hover {
+                    color: $seagreen;
+                }
             }
 
             .circle {
@@ -57,4 +60,28 @@
         }
     }
 
+}
+
+@media (min-width: $medium){
+    #services {
+        .cards {
+            flex-flow: row wrap;
+            .card {
+                max-width: 40%;
+                margin-right: 4%;
+            }
+        }
+    }
+}
+
+@media (min-width: $xlarge){
+    #services {
+        .cards {
+            flex-flow: row wrap;
+            .card {
+                max-width: 20%;
+                margin-right: 4%;
+            }
+        }
+    }
 }
