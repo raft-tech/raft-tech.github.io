@@ -6,18 +6,18 @@ export const Clients = () => {
     <div id="clients">
       <h1>Clients &amp; Partners</h1>
       <div className="logos">
-        <Logo url="" image="" />
-        <Logo url="" image="" />
-        <Logo url="" image="" />
-        <Logo url="" image="" />
-        <Logo url="" image="" />
-        <Logo url="" image="" />
+        <ClientPartner url="" image={null} />
+        <ClientPartner url="" image={null} />
+        <ClientPartner url="" image={null} />
+        <ClientPartner url="" image={null} />
+        <ClientPartner url="" image={null} />
+        <ClientPartner url="" image={null} />
       </div>
     </div>
   )
 }
 
-const Logo = ({ image, url }) => {
+const ClientPartner = ({ image, url }) => {
   return (
     <div className="logo">
       <Link to={url}>

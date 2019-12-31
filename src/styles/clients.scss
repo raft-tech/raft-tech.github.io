@@ -14,16 +14,19 @@
         justify-content: space-evenly;
         align-items: center;
         width: 80%;
-        margin: 0 auto;
-        margin-top: 75px;
+        margin: 50px auto;
 
         .logo {
             border-radius: 50%;
-            width: 120px;
-            height: 120px;
+            width: 10vw;
+            height: 10vw;
             background-color: $darkgrey;
         }
     }
+}
 
-    
+@media (min-width: $medium) {
+    #clients .logos {
+        margin: 75px auto;
+    }
 }
