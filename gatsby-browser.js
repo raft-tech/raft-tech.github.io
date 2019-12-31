@@ -6,6 +6,7 @@
 
 // You can delete this file if you're not using it
 import "./src/styles/layout.scss"
+import "./src/styles/hero.scss"
 import "./src/styles/navbar.scss"
 import "./src/styles/introducing.scss"
 import "./src/styles/services.scss"
