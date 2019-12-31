@@ -1,41 +1,114 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 header {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 40px 0;
-        width: 95%;
-        margin: 0 auto;
-        overflow: hidden;
-        position: relative;
+  nav {
+    padding: 10px 0;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 
-        ul {
-            list-style: none; 
-            display: flex;
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 300ms;
+      padding-bottom: 30px;
+      opacity: 0;
+      transform: scaleY(0);
+      height: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-            a {
-                text-decoration: none;
-                color: $purple
-            }
+      a {
+        text-decoration: none;
+        color: $purple;
+        letter-spacing: 1px;
+        padding: 20px 0px;
 
-            li {
-                margin-right: 55px;
-                letter-spacing: 1px;
-            }
+        &:hover {
+          color: white;
+          background: $purple;
         }
-
-        img {
-            height: 75px;
-            min-height: 75px;
-            width: 245px;
-            min-width: 245px;
-        }
-
+      }
     }
+
+    #nav-links.show {
+      display: flex;
+      opacity: 1;
+      transform: scaleY(1);
+      height: inherit;
+
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    img.logo {
+      height: 25px;
+    }
+
+    .menubars {
+      align-self: center;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 13px;
+      right: 10px;
+    }
+  }
+}
+
+@media (min-width: $large) {
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+
+      img.logo {
+        height: 55px;
+      }
+
+      .menubars {
+        display: none;
+      }
+
+      #nav-links,
+      #nav-links.show {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        opacity: 1;
+        transform: scaleY(1);
+        height: inherit;
+        padding: 0;
+
+        a {
+          margin-right: 55px;
+          width: initial;
+
+          &:last-child{
+              margin-right: 0;
+          }
+
+          &:hover {
+              background: white;
+              color: $purple;
+              text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
