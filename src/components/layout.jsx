@@ -16,7 +16,6 @@ const Layout = ({ children }) => {
       <Navbar />
       <main>{children}</main>
       <Footer />
-      <div id="copyright">&copy; Raft 2020</div>
     </>
   )
 }

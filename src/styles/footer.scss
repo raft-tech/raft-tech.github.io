@@ -1,52 +1,123 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 footer {
-    margin-top: 100px;
-    padding: 75px;
-    background: $purple;
-    color: white;
-    border-top: 25px solid $seagreen;
+  // padding: 25px;
+  background: $purple;
+  color: white;
+  border-top: 25px solid $seagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  > div {
+    padding: 20px 0;
+  }
+
+  .logo img {
+    width: 20vw;
+    margin: 0 auto;
+  }
+
+  .contact {
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    .company,
+    .address,
+    .email {
+      margin-bottom: 20px;
+    }
+
+    .company {
+      display: none;
+    }
+  }
+
+  .social {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
 
-    .logo img {
-        max-width: 400px;
-        margin-left: 125px;
+    .platform {
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
 
+      svg {
+        fill: $purple;
+        width: 40px;
+        height: 40px;
+      }
+
+      &.li {
+        border-radius: 0;
+      }
+
+      &:hover svg {
+        fill: $seagreen;
+        cursor: pointer;
+      }
     }
-
-    .contact {
-        font-size: 1.3rem;
-        font-weight: bold;
-
-        .company, .address, .email {
-            margin-bottom: 20px;
-        }
-    }
-
-    .social {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        align-self: flex-end;
-
-        .platform {
-            background: white;
-            width: 4vw;
-            height: 4vw;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-    }    
+  }
 }
 
 #copyright {
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    background: #7f94c7;
-    padding: 30px 50px;
+  display: block;
+  width: 100vw;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: #7f94c7;
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media (min-width: $large) {
+  footer {
+    flex-flow: row nowrap;
+    text-align: left;
+    padding: 20px 50px;
+
+    .logo {
+      img {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    .logo,
+    .contact,
+    .social {
+      width: 33%;
+    }
+
+    .contact {
+    //   padding-left: 150px;
+      .company {
+        display: block;
+      }
+
+      > div {
+          width: 50%;
+          margin: 0 auto;
+      }
+    }
+
+    .social {
+      align-self: flex-end;
+      justify-content: center;
+    }
+  }
+
+  #copyright {
+    text-align: left;
+    padding: 20px 50px;
+  }
 }
