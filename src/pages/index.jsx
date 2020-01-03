@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import heroImage from "../images/raft-hero-team.png"
+import heroImage from "../images/raft-hero-team.jpg"
 import { Introducing } from "../components/Introducing"
 import { Services } from "../components/Services"
 import { Team } from "../components/Team"
