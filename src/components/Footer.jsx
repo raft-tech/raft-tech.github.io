@@ -1,5 +1,5 @@
 import React from "react"
-import footerLogo from "../images/raft-footer-logo.png"
+import nameLogo from "../images/raft-name-logo.png"
 import { FaFacebook, FaLinkedin } from "react-icons/fa"
 
 export const Footer = () => {
@@ -7,7 +7,7 @@ export const Footer = () => {
     <>
       <footer>
         <div className="logo">
-          <img src={footerLogo} alt="raft logo with text" />
+          <img src={nameLogo} alt="raft logo with text" />
         </div>
         <div className="contact">
           <div className="company">Raft</div>

@@ -1,7 +1,6 @@
 @import "./colors.scss";
 
 footer {
-  // padding: 25px;
   background: $purple;
   color: white;
   border-top: 25px solid $seagreen;
@@ -15,10 +14,13 @@ footer {
     padding: 20px 0;
   }
 
-  .logo img {
-    width: 20vw;
+  .logo {
+    margin-top: 10px;
+    padding-bottom: 0;
+    img {
+    width: 22vw;
     margin: 0 auto;
-  }
+  }}
 
   .contact {
     font-size: 1.3rem;
@@ -39,6 +41,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+    margin-bottom: 10px;
 
     .platform {
       background: white;
@@ -85,8 +88,10 @@ footer {
     padding: 20px 50px;
 
     .logo {
+      margin-top: 0;
+      padding: 20px 0;
       img {
-        max-width: 300px;
+        max-width: 320px;
         margin: 0 auto;
         display: block;
       }
@@ -99,7 +104,6 @@ footer {
     }
 
     .contact {
-    //   padding-left: 150px;
       .company {
         display: block;
       }
@@ -113,6 +117,7 @@ footer {
     .social {
       align-self: flex-end;
       justify-content: center;
+      margin-bottom: 0;
     }
   }
 
