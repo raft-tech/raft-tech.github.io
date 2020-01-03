@@ -7,7 +7,7 @@ header {
   font-size: 1.5rem;
 
   nav {
-    padding: 10px 0;
+    padding: 7px 0;
     width: 95%;
     margin: 0 auto;
     overflow: hidden;
@@ -53,7 +53,8 @@ header {
     }
 
     img.logo {
-      height: 25px;
+      height: 35px;
+      vertical-align: middle;
     }
 
     .menubars {
@@ -73,10 +74,11 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 40px 0;
+      padding: 36px 0;
 
       img.logo {
-        height: 55px;
+        height: 75px;
+        vertical-align: middle;
       }
 
       .menubars {

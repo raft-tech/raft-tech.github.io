@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
-import headerLogo from "../images/raft-header-logo.png"
+import namedLogo from "../images/raft-name-logo.png"
 import { FaBars, FaTimes } from "react-icons/fa"
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     <header>
       <nav>
         <div className="left">
-          <img className="logo" src={headerLogo} alt="quad circle with text" />
+          <img className="logo" src={namedLogo} alt="quad circle with text" />
         </div>
         <div id="nav-links" className={menuClass}>
           <Link to="/">Home</Link>
