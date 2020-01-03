@@ -22,6 +22,8 @@
 
         .card {
             font-weight: bold;
+            display: flex;
+            flex-direction: column;
 
             h2 {
                 text-align: center;
@@ -38,24 +40,9 @@
                 }
             }
 
-            .circle {
-                width: 10vw;
-                height: 10vw;
-                margin: 50px auto;
-                border-radius: 50%;
-
-                &.purple {
-                    background-color: $purple;
-                }
-                &.seagreen {
-                    background-color: $seagreen;
-                }
-                &.lightgrey {
-                    background-color: $lightgrey;
-                }
-                &.darkgrey {
-                    background-color: $darkgrey;
-                }
+            img.circle {
+                width: 15vw;
+                margin: 50px auto 15px auto;
             }
         }
     }
@@ -81,6 +68,9 @@
             .card {
                 max-width: 20%;
                 margin-right: 4%;
+                img.circle {
+                    width: 12vw;
+                }
             }
         }
     }
