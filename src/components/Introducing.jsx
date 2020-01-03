@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import raftLogo from "../images/raft-logo.png"
+import raftLogo from "../images/raft-logo-712.jpg"
 
 export const Introducing = () => {
   return (
