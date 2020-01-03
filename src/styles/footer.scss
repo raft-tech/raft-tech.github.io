@@ -10,6 +10,11 @@ footer {
   align-items: center;
   text-align: center;
 
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+
   > div {
     padding: 20px 0;
   }
