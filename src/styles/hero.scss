@@ -1,7 +1,7 @@
 @import './colors.scss';
 
 #hero {
-    height: calc(.38 * 100vw);
+    height: calc(.44 * 100vw);
     width: 100vw;
     overflow: hidden;
     background-color: #7cb3c8;
@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: -55px;
 
     img {
         width: 100%;
@@ -16,9 +17,22 @@
     }
 }
 
+@media (min-width: $medium){
+    #hero{
+    margin-top: -95px;
+    height: calc(.5 * 100vw);}
+}
+
 @media (min-width: $xlarge){
     #hero {
-        height: calc(.371 * 100vw);
+        height: calc(.5 * 100vw);
+        background-image: url('../images/header-image-2560x1396.jpg')
+    }
+}
+
+@media (min-width: 1470px){
+    #hero {
+        height: calc(.45 * 100vw);
         background-image: url('../images/header-image-2560x1396.jpg')
     }
 }
