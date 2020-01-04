@@ -10,35 +10,48 @@ footer {
   align-items: center;
   text-align: center;
 
+  .row {
+    &.row-1 {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+
+      .logo {
+        margin-top: 20px;
+        padding-bottom: 0;
+        img {
+          width: 22vw;
+          margin: 0 auto;
+        }
+      }
+
+      .contact {
+        &.address {
+          margin-top: 10px;
+        }
+
+        &.other {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    &.social {
+      padding: 20px 0;
+    }
+  }
+
   a:link {
     text-decoration: none;
     color: white;
   }
 
-  > div {
-    padding: 20px 0;
-  }
-
-  .logo {
-    margin-top: 10px;
-    padding-bottom: 0;
-    img {
-    width: 22vw;
-    margin: 0 auto;
-  }}
-
   .contact {
     font-size: 1.3rem;
-    font-weight: bold;
 
-    .company,
     .address,
-    .email {
+    .fax {
       margin-bottom: 20px;
-    }
-
-    .company {
-      display: none;
     }
   }
 
@@ -81,41 +94,52 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background: #7f94c7;
+  background: $lightgrey;
   padding: 20px 0;
   text-align: center;
 }
 
 @media (min-width: $large) {
   footer {
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     text-align: left;
-    padding: 20px 50px;
+    padding: 30px 50px;
+
+    .row {
+      width: 100%;
+      align-items: flex-start;
+      text-align: center;
+
+      &.row-1 {
+        flex-flow: row nowrap;
+
+        & > div {
+          width: 33%;
+        }
+
+        .logo,
+        .contact.address,
+        .contact.other {
+          margin-top: 0;
+        }
+
+        .contact .email {
+          margin-top: 15px;
+        }
+      }
+
+      &.social {
+        padding: 0;
+        margin-top: -10px;
+      }
+    }
 
     .logo {
-      margin-top: 0;
-      padding: 20px 0;
+      margin: 0;
       img {
         max-width: 320px;
         margin: 0 auto;
         display: block;
-      }
-    }
-
-    .logo,
-    .contact,
-    .social {
-      width: 33%;
-    }
-
-    .contact {
-      .company {
-        display: block;
-      }
-
-      > div {
-          width: 50%;
-          margin: 0 auto;
       }
     }
 
@@ -128,6 +152,18 @@ footer {
 
   #copyright {
     text-align: left;
-    padding: 20px 50px;
+    padding: 5px 50px;
+  }
+}
+
+@media (min-width: $xlarge) {
+  footer {
+    .row.social {
+      margin-top: -40px;
+    }
+
+    .row.row-1 .contact .email {
+      margin-top: 50px;
+    }
   }
 }

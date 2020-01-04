@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import heroImage from "../images/raft-hero-team.jpg"
 import { Introducing } from "../components/Introducing"
 import { Services } from "../components/Services"
-import { Team } from "../components/Team"
 import { Clients } from "../components/Clients"
 import SEO from "../components/seo"
 
@@ -13,7 +12,6 @@ const IndexPage = () => (
     <IndexHero />
     <Introducing />
     <Services />
-    <Team />
     <Clients />
   </Layout>
 )

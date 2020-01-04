@@ -1,48 +1,51 @@
 @import './colors.scss';
 
 #services {
-    padding-bottom: 100px; 
+    padding-bottom: 40px; 
 
-    h1 { 
-        color: white;
-        text-align: center;
-        padding: 75px 0;
-        width: 100%;
+    .section-title {
         background: $seagreen;
-        font-size: 3rem;
     }
 
     .cards {
         display: flex;
         justify-content: space-evenly;
-        flex-direction: column;
+        align-items: center;
+        flex-flow: column wrap;
         color: $purple;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
 
         .card {
             font-weight: bold;
             display: flex;
             flex-direction: column;
+            width: 100%;
+            cursor: pointer;
+            transition: 300ms;
+            transform: scale(1);
 
-            h2 {
+            .title {
                 text-align: center;
-                margin-bottom: 50px;
                 white-space: nowrap;
-            }
-
-            a {
-                font-weight: bolder;
-                color: $purple;
-
-                &:hover {
-                    color: $seagreen;
-                }
             }
 
             img.circle {
                 width: 15vw;
+                transition: 300ms;
+                transform: scale(1) translateY(0deg);
                 margin: 50px auto 15px auto;
+                border-radius: 50%;
+                border: 2px solid white;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+
+                img.circle {
+                    transform: scale(1.1);
+                    border: 2px solid $lightgrey;
+                }
             }
         }
     }
@@ -51,10 +54,11 @@
 
 @media (min-width: $medium){
     #services {
+        padding-bottom: 70px; 
         .cards {
             flex-flow: row wrap;
             .card {
-                max-width: 40%;
+                width: 30%;
                 margin-right: 4%;
             }
         }
@@ -63,6 +67,7 @@
 
 @media (min-width: $xlarge){
     #services {
+        padding-bottom: 40px; 
         .cards {
             flex-flow: row wrap;
             .card {

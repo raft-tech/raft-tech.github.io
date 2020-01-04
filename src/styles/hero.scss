@@ -1,5 +1,24 @@
+@import './colors.scss';
+
 #hero {
+    height: calc(.38 * 100vw);
+    width: 100vw;
+    overflow: hidden;
+    background-color: #7cb3c8;
+    background-image: url('../images/raft-hero-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     img {
         width: 100%;
+        display: none;
+    }
+}
+
+@media (min-width: $xlarge){
+    #hero {
+        height: calc(.371 * 100vw);
+        background-image: url('../images/header-image-2560x1396.jpg')
     }
 }

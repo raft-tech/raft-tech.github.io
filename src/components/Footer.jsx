@@ -6,29 +6,29 @@ export const Footer = () => {
   return (
     <>
       <footer>
-        <div className="logo">
-          <img src={nameLogo} alt="raft logo with text" />
-        </div>
-        <div className="contact">
-          <div className="company">Raft</div>
-          <div className="address">
+        <div className="row row-1">
+          <div className="logo">
+            <img src={nameLogo} alt="raft logo with text" />
+          </div>
+          <div className="contact address">
             2100 6th Avenue
             <br />
             Arlington, VA 22212
           </div>
-          <div className="email">info@raft.com</div>
-          <div className="phone">(888)555-5121</div>
-          <div className="fax">(888)555-3432</div>
+          <div className="contact other">
+            <div className="phone">Phone: (888)555-5121</div>
+            <div className="fax">Fax: (888)555-3432</div>
+            <div className="email">E-mail: info@raft.com</div>
+          </div>
         </div>
-        <div className="social">
+
+        <div className="row social">
           <div className="platform fb">
             <FaFacebook />
           </div>
           <div className="platform li">
             <FaLinkedin />
           </div>
-          {/* <div className="platform"></div> */}
-          {/* <div className="platform"></div> */}
         </div>
       </footer>
       <div id="copyright">&copy; Raft 2020</div>

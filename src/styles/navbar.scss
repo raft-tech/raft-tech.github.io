@@ -1,20 +1,18 @@
 @import "./colors.scss";
 
 header {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  background-color: rgb(113, 179, 205);
 
   nav {
-    padding: 7px 0;
+    padding: 10px 0;
     width: 95%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 
     #nav-links {
-      display: none;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -26,16 +24,19 @@ header {
       list-style: none;
       padding: 0;
       margin: 0;
-
+      
       a {
+        font-family: "AvantGardeBold";
         text-decoration: none;
-        color: $purple;
-        letter-spacing: 1px;
+        color: white;
         padding: 20px 0px;
+        background-color: transparent;
+        transform: scaleY(0);
+        transition: background-color 200ms;
 
         &:hover {
           color: white;
-          background: $seagreen;
+          background-color: $purple;
         }
       }
     }
@@ -49,6 +50,7 @@ header {
       a {
         width: 100%;
         text-align: center;
+        transform: scaleY(1);
       }
     }
 
@@ -64,6 +66,10 @@ header {
       position: absolute;
       top: 13px;
       right: 10px;
+
+      svg {
+        fill: white;
+      }
     }
   }
 }
@@ -74,8 +80,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 36px 0;
-
+      
       img.logo {
         height: 75px;
         vertical-align: middle;
@@ -99,15 +104,17 @@ header {
         a {
           margin-right: 55px;
           width: initial;
+          border-bottom: 2px solid transparent;
+          padding: 0;
+          transform: scaleY(1);
 
           &:last-child{
               margin-right: 0;
           }
 
           &:hover {
-              background: white;
-              color: $seagreen;
-              text-decoration: underline;
+            background-color: transparent;
+            border-color: white;
           }
         }
       }

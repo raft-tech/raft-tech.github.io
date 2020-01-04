@@ -4,20 +4,19 @@ import raftLogo from "../images/raft-logo-712.jpg"
 
 export const Introducing = () => {
   return (
-    <div id="introducing">
+    <section id="introducing">
       <div className="left">
-        <h1>
+        <h1 className="section-title">
           Introducing <span>raft</span>
         </h1>
-        <p>
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-          ipsum Lorem ipsum Lorem ipsum..{" "}
+        <p className='about'>
+          We are a full stack digital consultancy that working synergistically with
+          clients to achieve the state of continuous transformation and
+          innovation. We have startup agility coupled with enterprise expertise.
+          We believe transformation isn’t just a rush to catch up, it’s an
+          opportunity to liberate people to fulfill their creative potential, to
+          work more collaboratively, and to enjoy more meaningful professional
+          relationships.
         </p>
         <Link to="#about">
           <div className="button learn-more">Learn More ></div>
@@ -26,6 +25,6 @@ export const Introducing = () => {
       <div className="right">
         <img src={raftLogo} alt="raft quad circle logo" />
       </div>
-    </div>
+    </section>
   )
 }
