@@ -12,13 +12,7 @@ export const Introducing = () => {
           Introducing <img className='word-logo' src={raftWordLogo} alt="raft word logo" />
         </h1>
         <p className='about'>
-          We are a full stack digital consultancy that working synergistically with
-          clients to achieve the state of continuous transformation and
-          innovation. We have startup agility coupled with enterprise expertise.
-          We believe transformation isn’t just a rush to catch up, it’s an
-          opportunity to liberate people to fulfill their creative potential, to
-          work more collaboratively, and to enjoy more meaningful professional
-          relationships.
+          A new breed of digital consulting firm, that’s part full stack consultancy, part think tank and part band of creative mercenaries. We’re problem solvers and innovators with a focus on Open Source. Our name is actually inspired from the <a href="raft.github.io"> Raft Consensus Algorithm </a>, which revolutionized solving consensus problems by being more reliable and easier to understand. It is also the algorithm implemented by etcd (brain of the Kubernetes). We took on this name because we share a similar goal; replace any outdated, overly complex and outdated system with a new, effecient and secure one that <i>just</i> works.
         </p>
         <Link to="#about">
           <div className="button learn-more">Learn More ></div>
