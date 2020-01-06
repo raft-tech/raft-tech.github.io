@@ -4,10 +4,10 @@
     height: calc(.44 * 100vw);
     width: 100vw;
     overflow: hidden;
-    background-color: #7cb3c8;
+    background-color: $lightblue;
     background-image: url('../images/raft-hero-team.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     margin-top: -55px;
 
