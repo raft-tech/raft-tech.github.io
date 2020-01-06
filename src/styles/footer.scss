@@ -99,6 +99,22 @@ footer {
   text-align: center;
 }
 
+@media (min-width: $medium) {
+  footer {
+    .row.row-1 {
+      .logo {
+        margin: 0;
+        margin-top: 10px;
+        img {
+          max-width: 250px;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: $large) {
   footer {
     flex-flow: column nowrap;
@@ -131,15 +147,6 @@ footer {
       &.social {
         padding: 0;
         margin-top: -10px;
-      }
-    }
-
-    .logo {
-      margin: 0;
-      img {
-        max-width: 320px;
-        margin: 0 auto;
-        display: block;
       }
     }
 

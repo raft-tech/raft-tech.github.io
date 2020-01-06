@@ -29,6 +29,14 @@
     .about {
       font-size: 1.2rem;
       padding-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    .word-logo {
+      max-height: 4vw;
+      min-height: 80px;
+      margin: 0 auto;
+      display: block;
     }
 
     a {
@@ -58,6 +66,23 @@
   }
 }
 
+@media (min-width: $medium) {
+
+  #introducing {
+    .left {
+      .word-logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -14px;
+      }
+
+      .about {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 @media (min-width: $large) {
   #introducing {
     flex-flow: row;
@@ -78,6 +103,7 @@
 
       .about {
         text-align: left;
+        margin-bottom: 20px;
       }
 
       a {

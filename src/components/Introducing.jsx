@@ -1,13 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import raftLogo from "../images/raft-logo-712.jpg"
+import raftWordLogo from '../images/raft-name-logo.png'
 
 export const Introducing = () => {
   return (
     <section id="introducing">
       <div className="left">
         <h1 className="section-title">
-          Introducing <span>raft</span>
+          {/* Introducing <span>raft</span> */}
+          Introducing <img className='word-logo' src={raftWordLogo} alt="raft word logo" />
         </h1>
         <p className='about'>
           We are a full stack digital consultancy that working synergistically with
