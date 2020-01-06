@@ -1,38 +1,39 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 #hero {
-    height: calc(.44 * 100vw);
-    width: 100vw;
-    overflow: hidden;
-    background-color: $lightblue;
-    background-image: url('../images/raft-hero-team.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-top: -55px;
+  height: calc(0.44 * 100vw);
+  width: 100vw;
+  overflow: hidden;
+  background-color: $lightblue;
+  background-image: url("../images/raft-hero-team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -55px;
 
-    img {
-        width: 100%;
-        display: none;
-    }
+  img {
+    width: 100%;
+    display: none;
+  }
 }
 
-@media (min-width: $medium){
-    #hero{
+@media (min-width: $medium) {
+  #hero {
     margin-top: -95px;
-    height: calc(.5 * 100vw);}
+    height: calc(0.5 * 100vw);
+    background-image: url("../images/header-image-1400.jpg");
+  }
 }
 
-@media (min-width: $xlarge){
-    #hero {
-        height: calc(.5 * 100vw);
-        background-image: url('../images/header-image-2560x1396.jpg')
-    }
+@media (min-width: $large) {
+  #hero {
+    height: calc(0.5 * 100vw);
+    background-image: url("../images/header-image-2560x1396.jpg");
+  }
 }
 
-@media (min-width: 1470px){
-    #hero {
-        height: calc(.45 * 100vw);
-        background-image: url('../images/header-image-2560x1396.jpg')
-    }
+@media (min-width: 1470px) {
+  #hero {
+    height: calc(0.43 * 100vw);
+  }
 }
