@@ -103,19 +103,34 @@ header {
         padding: 0;
 
         a {
-          margin-right: 55px;
+          margin-right: 50px;
           width: initial;
-          border-bottom: 2px solid transparent;
-          padding: 0;
+          padding: 5px 2px;
           transform: scaleY(1);
+          position: relative;
 
           &:last-child{
               margin-right: 0;
           }
 
+          &::after {
+            content: '';
+            transform: scaleX(0);
+            background-color: $purple;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: transform 150ms;
+            border-radius: 5px;
+          }
+
           &:hover {
             background-color: transparent;
-            border-color: white;
+            &::after {
+              transform: scaleX(1);
+              height: 3px;
+            }
           }
         }
       }
