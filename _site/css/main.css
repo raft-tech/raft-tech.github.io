@@ -667,6 +667,37 @@ pre code.hljs {
 @font-face {
   font-family: "/css/TradeGothic";
   src: url("/css/fonts/TradeGothic-Regular.woff2") format("woff2"); }
+* {
+  font-family: "TradeGothic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+img, a {
+  user-select: none; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+section .section-title {
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  width: 100%;
+  font-size: 3rem; }
+
 .navigation {
   background-color: #6cb5ca;
   box-shadow: 0 0px #6cb5ca;
@@ -693,7 +724,73 @@ pre code.hljs {
   width: auto;
   display: contents; }
 
+#introducing {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+  color: #17097c; }
+
+#introducing .left {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 40px;
+  text-align: center; }
+
+#introducing .right {
+  width: 100%;
+  text-align: center; }
+
+#introducing .left .word-logo {
+  max-height: 4vw;
+  min-height: 80px;
+  margin: 0 auto;
+  width: auto; }
+
+#introducing .left .section-title {
+  color: #17097c;
+  font-size: 3rem;
+  padding: 0;
+  text-align: center; }
+
+#services {
+  padding-bottom: 40px; }
+
+#services .section-title {
+  background: #209bb9; }
+
 @media (min-width: 992px) {
+  #introducing {
+    flex-flow: row;
+    width: 80%;
+    padding-top: 30px; }
+
+  #introducing .left,
+  #introducing .right {
+    width: 50%; }
+
+  #introducing .left {
+    padding-bottom: 20px;
+    text-align: left; }
+
+  #introducing .right {
+    padding-bottom: 20px;
+    text-align: right; }
+
+  #introducing .left .word-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -14px; }
+
+  #introducing .left .section-title {
+    margin: 10px 0; }
+
+  #services {
+    padding-bottom: 40px; }
+
   .navigation {
     background-color: #6cb5ca;
     box-shadow: 0 2px #6cb5ca;
@@ -845,7 +942,3 @@ pre code.hljs {
   background: #8c91c4;
   text-align: left;
   padding-left: 10px; }
-
-body {
-  font-family: TradeGothic,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  box-sizing: border-box; }

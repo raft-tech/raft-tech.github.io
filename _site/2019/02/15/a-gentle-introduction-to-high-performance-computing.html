@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Intro to HPC</title>
+  <meta name="description" content="CIO LEVEL SUMMARY:">
+  
+  <meta name="author" content="Ben Centra">
+  <meta name="copyright" content="&copy; Ben Centra 2020">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="CIO LEVEL SUMMARY:" />
+  <meta property="og:url" content="http://localhost:4000/2019/02/15/a-gentle-introduction-to-high-performance-computing.html">
+  <meta property="og:site_name" content="Raft" />
+  <meta property="og:title" content="Intro to HPC" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Intro to HPC">
+  <meta name="twitter:description" content="CIO LEVEL SUMMARY:">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000/2019/02/15/a-gentle-introduction-to-high-performance-computing.html">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2019/02/15/a-gentle-introduction-to-high-performance-computing.html">
+	<link rel="alternate" type="application/rss+xml" title="Raft" href="http://localhost:4000/feed.xml" />
+	
+	<!-- Tooltips -->
+	<script type="text/javascript">
+		window.tooltips = []
+	</script>
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <div class="left">
+        <img src="/assets/logo.png" alt="Raft">
+      </div>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+				
+	
+	<li class="nav-link"><a href="/about/">About</a>
+	
+
+	
+	<li class="nav-link"><a href="/blog/">Blog</a>
+	
+
+	
+	<li class="nav-link"><a href="/clients/">Clients</a>
+	
+
+	
+	<li class="nav-link"><a href="/contact/">Contact</a>
+	
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+	<li class="nav-link"><a href="/services/">Services</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">Intro to HPC</h1>
+      <p class="info">by <strong></strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">February 15, 2019</div>
+  <div class="post-categories">
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <p><strong>CIO LEVEL SUMMARY:</strong></p>
+
+<ul>
+  <li>
+    <p>High Performance Computing (HPC) uses existing technology to create a high level of performance that is above and beyond what a typical computer can do.</p>
+  </li>
+  <li>
+    <p>HPC is often implemented using multiple computers, called <em>clusters</em>, that work together to generate a high level of performance.</p>
+  </li>
+  <li>
+    <p>When HPC is implemented using large clusters of computers, special thought needs to be given to how the computers communicate with each other.</p>
+  </li>
+  <li>
+    <p>NextGen Healthcare utilizes HPC--as well as other recent technologies--in order to build (and help others build) a large database of Electronic Healthcare Records (EHR).</p>
+  </li>
+  <li>
+    <p>This large scale ability to aggregate health information allows companies, organizations, and researchers access to huge amounts of health related data, which provides opportunities for large scale insights from this data.</p>
+  </li>
+</ul>
+
+<p><strong>WHAT IS HPC?</strong></p>
+
+<p>The computer--or tablet or other mobile device--that you are using to
+access this article is pretty powerful. But there are limitations on
+what it can do. These limitations are caused by many different parts of
+your computer’s hardware and/or software. For example, the Hard Drive on
+your computer has a finite amount of storage. While it’s enough for most
+of the things you do day to day, if you tried to store a million
+Electronic Health Records (EHRs) like many large medical organizations
+do, your device would not be up for the job. Luckily, using High
+Performance Computing, we can distribute the necessary storage across
+many computers, even adding redundancy so that information will stay
+safe in the event of a computer failure.</p>
+
+<p>Similarly, you might need to actually do something with the data instead
+of just letting it sit there. Creating reports, searching for records,
+and doing other analyses on this data requires a huge amount of
+processing power. The simplest computer, a central processing unit (CPU)
+can only process one calculation at a time (although does it so quickly
+that this might seem hard to believe). If you have a three step program
+that needs to do A, B, and then C, the CPU will need to execute A, wait
+until A finishes, execute B, wait until B finishes, and then finally
+execute C. When you’re dealing with large amounts of data and intensive
+calculations, the time needed to wait for even a superfast computer
+would be unreasonable.</p>
+
+<p>So far, we’ve looked at how one computer can, but HPC clusters have many
+computers that are available to complete tasks. These tasks--like
+finding the average latency between diagnosis and treatment of a certain
+condition--are submitted to the cluster along with the amount of
+resources needed to complete the task. A <em>scheduler</em> takes that task and
+spreads it out over the available <em>nodes</em> (or computers) in the cluster.</p>
+
+<p>Imagine a restaurant who is making a lasagna as their dinner special.
+Let’s simplify and say that there are 6 steps to making a pan of
+lasagna:</p>
+
+<ol>
+  <li>
+    <p>Chop onion, garlic and herbs</p>
+  </li>
+  <li>
+    <p>Sauté onion, garlic, and herbs with meat and tomato sauce</p>
+  </li>
+  <li>
+    <p>Parboil noodles</p>
+  </li>
+  <li>
+    <p>Mix Ricotta and egg mixture</p>
+  </li>
+  <li>
+    <p>Layer meat sauce, noodles, ricotta mix, and mozzarella til pan is full</p>
+  </li>
+  <li>
+    <p>Bake at 400° F for 1 hour</p>
+  </li>
+</ol>
+
+<p>Now, if you only have one chef, you would by necessity do each step one
+at a time. But having a bunch of sous chefs in the kitchen would help
+speed things up. For example, one chef could chop onions, while the
+other chops the garlic and herbs. Since chopping onions doesn’t rely on
+chopping garlic and herbs, we can do them at the same time. We CAN’T,
+however, sauté the chopped onion, garlic and herbs while also chopping
+them. So far we’ve discovered two types of tasks: ones that are
+independent and can be done separately, and ones that are dependent and
+have to be done in order.</p>
+
+<p>HPC clusters can help you with tasks or subtasks that are independent of
+each other. For example, if you need to look through psychiatric
+diagnoses and change any previous diagnosis of Asperger’s Syndrome to
+Autism Spectrum Disorder to reflect changes in the DSM-5, you could use
+multiple cores to do many changes at one time, speeding up the process
+immensely if you have huge amounts of files.</p>
+
+<p>However, just like you cannot both chop and sauté the onions, garlic and
+herbs at the same time, there are some computer processes that are
+dependent on each other, and do not enjoy the same speed increase when
+using an HPC cluster. For example, no matter how many chefs are
+available, it will still take an hour to bake the lasagna. Similarly in
+an HPC cluster, if a single process takes 1 hour, if it’s unable to be
+split up into subtasks, then we cannot possibly speed it up to be
+shorter than an hour. For a mathematical example, calculating the
+Fibonacci series--in which each number in the series is the sum of the
+previous two numbers--does not benefit from additional cores. Since the
+calculation must be done in order and relies on previous calculations,
+the computer must wait for one calculation to be done before it can do
+another.</p>
+
+<script type="math/tex; mode=display">\underbrace {1,1,2,3,5,8,13...}_\text{Fibonacci Series}%0</script>
+
+<p><strong>USING HPC</strong></p>
+
+<p>In practice, using an HPC to speed up your data processing can be as
+simple as importing a package or downloading an add-on to whatever
+program you’re already using. Luckily, many great program have been
+written in order to make distributed computing accessible to people
+without advanced computing degrees.</p>
+
+<p>Other times, software that you buy and use, such as EHR software from
+NextGen have built in capabilities to help you create, manage, and use
+HPCs to your advantage. NextGen Healthcare develops software to handle
+Electronic Health Records, which can often be huge. NextGen software
+allows multiple providers to have compatible systems, giving patients
+and practitioners a more seamless experience when accessing personal
+health records. A quicker and more accurate system of storing and
+accessing health records can often lead to better and more accurate
+outcomes.</p>
+
+<p>Instead of faxing over loads of records to many different offices,
+NextGen has provided a way to have all patient related information in
+one place, even across practices. This provides are more whole picture
+of a patient’s health, both within and between healthcare organizations.</p>
+
+<p>It also allows for more streamlined analytics. Especially with large
+hospitals or health related organizations that have huge amounts of
+EHRs. As Artificial Intelligence capabilities increase, we will need
+ways to implement it in our healthcare systems.</p>
+
+<p>One study<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> created an AI framework that was able to outperform usual
+treatment plans both in cost, and in positive patient outcomes.
+According to the study, “the cost per unit of outcome change (CPUC) was
+$189 vs. $497” for the AI vs. normal treatment. This lower cost was
+also achieved while producing a “30- 35% increase in patient outcomes”.
+Using AI could lead to huge improvements in the level of healthcare
+available to patients and practitioners alike. But, large scale
+developments will most likely require larger, more advanced computer
+architectures both for storing and for processing. The faster we are
+able to complete data processing and computation, the more lives can be
+improved or even saved.</p>
+
+<p><strong>CLOUD BASED SERVICES</strong></p>
+
+<p>And while it’s possible for anyone to build their own cluster of
+computers, the knowledge, time, and energy required for its upkeep is
+often a steep cost that companies cannot take on.</p>
+
+<p>Luckily, large scale services such as Amazon Web Services (AWS) and
+Google Cloud allow companies to purchase as little or as much computing
+power as they need. These large companies take care of the hardware, and
+much of the software necessary to use HPCs. They are also able to take
+care of security for these clusters. EHRs require a high level of
+security since they contain both Personal Health Information (PHI) and
+Personal Identifiable Information (PII). Their services allow companies
+to more easily integrate HPC into their existing data practices.</p>
+
+<p>These services allow users a lot of flexibility in designing the type of
+HPC architecture that they need. Not just overall, but for each specific
+project that you might have. If one project that you are running uses
+complex Machine Learning models with many parameters, you may need a
+more GPU heavy cluster. Whereas other, smaller or less complex projects
+may only require clusters of CPUs. Similarly, some projects may be more
+memory heavy, requiring a lot of storage capability, whereas others
+require less storage, but more processing. Building an on location
+Cluster that can run all of these projects can be expensive and lead to
+a lot of expensive hardware going unused most of the time. Using large
+services like AWS or Google Cloud allow you to pay for what you need,
+when you need it, and provide much of the infrastructure needed to
+quickly transform your normal data pipeline into one that utilizes HPC.</p>
+
+<p><strong>CONCLUSION</strong></p>
+
+<p>Many data processes require large amounts of storage and processing
+power. Often more than one single machine can handle. This is especially
+true with EHRs. Luckily, companies like NextGen, Amazon Web Services,
+and Google Cloud provide both software and hardware solutions to large
+healthcare data problems. While some processes cannot be parallelized,
+many can; and the use of multiple machines linked together to form a
+High Performance Cluster can produce incredible speed ups. This speed
+allows us to take advantage of state of the art AI and Machine Learning
+models that can improve patient experiences and outcomes. It can also
+help with simpler data tasks such as making large scale record changes,
+or searching through large amounts of data.</p>
+
+<p><strong>RESOURCES:</strong></p>
+
+<p><a href="https://www.youtube.com/watch?v=VviB3kxFe_0">Intro to Google Cloud</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=XvwdQ4Kigpk">AWS and NextGen</a></p>
+
+<p><a href="https://arxiv.org/pdf/1301.2158.pdf">AI on EHRs</a></p>
+
+<p><a href="http://hpc.fs.uni-lj.si/sites/default/files/HPC_for_dummies.pdf">HPC Structure</a></p>
+
+<p><strong>REFRENCES:</strong></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://arxiv.org/pdf/1301.2158.pdf">https://arxiv.org/pdf/1301.2158.pdf</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+      <a href="//twitter.com/share?text=Intro+to+HPC&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F02%2F15%2Fa-gentle-introduction-to-high-performance-computing.html&via=TheBenCentra"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+        <i class="fa fa-twitter-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=Intro+to+HPC&u=http%3A%2F%2Flocalhost%3A4000%2F2019%2F02%2F15%2Fa-gentle-introduction-to-high-performance-computing.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F02%2F15%2Fa-gentle-introduction-to-high-performance-computing.html"
+        onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
+        <i class="fa fa-linkedin-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <a href="//plus.google.com/share?title=Intro+to+HPC&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F02%2F15%2Fa-gentle-introduction-to-high-performance-computing.html"
+        onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=Intro+to+HPC&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F02%2F15%2Fa-gentle-introduction-to-high-performance-computing.html&media=http://localhost:4000/assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/2019/02/15/a-gentle-introduction-to-high-performance-computing.html') + '&title=Intro to HPC'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-logo site-contact">
+      <img src="/assets/raft-name-logo.png" />
+    </div>
+
+    <div class="site-contact">
+
+      <div class="address-footer">
+        1801 Reston Pkwy <br />
+        Suite #102 <br />
+        Reston, VA 20190
+      </div>
+
+        
+          
+            <a href="" title="Follow me on Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          
+        
+          
+            <a href="http://" title="Friend me on Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          
+        
+          
+            <a href="https://github.com/bencentra" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+            </a>
+          
+        
+          
+            <a href="https://www.linkedin.com/pub/ben-centra/47/769/60a" title="Connect with me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+    </div>
+
+    <div class="site-contact">
+
+      <div class="address-footer-double">
+        <a href="tel:5715264106"><i class="fa fa-phone"></i>(571)-526-4106</a><br />
+        <a href="tel:5715264106"><i class="fa fa-fax"></i>(571)-526-4106</a><br />
+        <a href="mailto:info@goraft.tech?Subject=goraft.tech%20contact"><i class="fa fa-envelope"></i>info@goraft.tech</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<div id="copyright">&copy; Raft 2020</div>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+<script src="//unpkg.com/popper.js@1"></script>
+<script src="//unpkg.com/tippy.js@5"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+	// Enable tooltips via Tippy.js
+	if (Array.isArray(window.tooltips)) {
+		window.tooltips.forEach(function(tooltip) {
+			var selector = tooltip[0];
+			var config = tooltip[1];
+			tippy(selector, config);
+		})
+	}
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dimensionality Reduction</title>
+  <meta name="description" content="CIO Level Summary">
+  
+  <meta name="author" content="Ben Centra">
+  <meta name="copyright" content="&copy; Ben Centra 2020">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="CIO Level Summary" />
+  <meta property="og:url" content="http://localhost:4000/2019/01/04/dimensionality-reduction.html">
+  <meta property="og:site_name" content="Raft" />
+  <meta property="og:title" content="Dimensionality Reduction" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dimensionality Reduction">
+  <meta name="twitter:description" content="CIO Level Summary">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000/2019/01/04/dimensionality-reduction.html">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2019/01/04/dimensionality-reduction.html">
+	<link rel="alternate" type="application/rss+xml" title="Raft" href="http://localhost:4000/feed.xml" />
+	
+	<!-- Tooltips -->
+	<script type="text/javascript">
+		window.tooltips = []
+	</script>
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <div class="left">
+        <img src="/assets/logo.png" alt="Raft">
+      </div>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+				
+	
+	<li class="nav-link"><a href="/about/">About</a>
+	
+
+	
+	<li class="nav-link"><a href="/blog/">Blog</a>
+	
+
+	
+	<li class="nav-link"><a href="/clients/">Clients</a>
+	
+
+	
+	<li class="nav-link"><a href="/contact/">Contact</a>
+	
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+	<li class="nav-link"><a href="/services/">Services</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">Dimensionality Reduction</h1>
+      <p class="info">by <strong></strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">January 4, 2019</div>
+  <div class="post-categories">
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <p><strong>CIO Level Summary</strong></p>
+
+<ul>
+  <li>
+    <p>Modern datasets often have a large number of features which add richness, but also complexity.</p>
+  </li>
+  <li>
+    <p>In situations where the complexity of the data is too much either for humans to understand, or computers to process in a time efficient manner, we often want to reduce the number of features (dimensions) in the dataset.</p>
+  </li>
+  <li>
+    <p>When doing Dimensionality Reduction, we want to keep as much useful information as possible. The techniques described below (PCA, LDA, LASSO, RIDGE, Elastic Net, and Autoencoders) aim to mitigate issues of dimensionality while maintaining as much richness in the data as possible.</p>
+  </li>
+</ul>
+
+<p><strong>What is Dimensionality and Why do we want to reduce it?</strong></p>
+
+<p>Interesting and useful datasets are often (though not always) rather
+large. They generally have both many observations (for example, data on
+90 million homes recently listed on Zillow.com), and many features
+(information about each observation such as longitude, latitude, state,
+city, rent price, neighborhood...etc). The features of a dataset are
+often referred to as <em>dimensions</em>. A good rule of thumb for
+understanding that term is picturing a scatterplot of your features. If
+you only have two features you could plot it on a two-<em>dimensional</em>
+graph. If you had three, a three-<em>dimensional</em> graph...and so on.</p>
+
+<p>Human brains can process 3, perhaps 4 dimensions at a time. But once you
+try to look at 5 let alone 100 dimensions, you’re going to struggle to
+observe the types of patterns that jump out at you in 2 or 3 dimensions.
+Dimensionality reduction is often used in order to make data more
+consumable to human beings. We can take 100 features and squish it down
+into 2 or 3 easily visualized features.</p>
+
+<p>But humans are not the only issue. Even if we’re okay with the fact that
+we cannot easily visualize 1,000 dimensional data, we may not be able to
+stomach the time cost of creating a model to understand our data that
+will take hours--if not days or weeks--to complete. Taking data from
+1,000 to 100 features doesn’t help human beings comprehend patterns and
+trends in the data, but it allows computers to do so much faster.</p>
+
+<p>There are many different methods of dimensionality reduction, and
+different situations call for different methods. The first methods that
+we will talk about are methods of combining existing features to create
+a new smaller set of features.</p>
+
+<p><strong>Principal Components Analysis (PCA) and Linear Discriminant Analysis
+(LDA)</strong></p>
+
+<p><em>PCA.</em> Principal Components Analysis takes all of your existing features
+(we’ll call the number of features you have, n) and creates a new set of
+n features. It might seem redundant to take n features and make n
+different ones, but these new features--called principal
+components--have a particularly useful characteristic. These new
+principal components (PCs) are created so that the first PC explains as
+much variance in the data as possible. Let’s take a step back and look
+at what this means visually.</p>
+
+<p>Let’s look at this scatterplot which shows subjects’ height and weight
+(both z-scored).</p>
+
+<p><img src="//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture1.png" alt="" class="center-image" /></p>
+
+<p>There’s some variation in both the x and y axes. But by looking at the
+data, we can see that there is the most variation is in this direction.
+If we ignored the x and y axes and drew this line as a new axis, it
+would have the highest amount of variance that one axis could have.</p>
+
+<p><img src="//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture2.png" alt="" class="center-image" /></p>
+
+<p>We can then draw a new second axis perpendicular to this new one</p>
+
+<p><img src="//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture3.png" alt="" class="center-image" /></p>
+
+<p>These new axes--our principal components--are linear combinations of
+our old x and y values. But these principle components maximize the
+amount of variance explained so that the first principal component
+explains the most variance in the data, and the second (or nth, if you
+have more than 2 original features) component explains the least. The
+principal components are <em>orthogonal</em> to each other. This means they’re
+at 90 degree angles to each other. Practically, this means each of our
+PCs is uncorrelated with all the other PCs.</p>
+
+<p>To find these principal components, we use <strong>eigenvalue decomposition</strong>
+to break the covariance matrix of all the features into its
+corresponding eigenvectors and eigenvalues. The eigenvectors are our new
+axes, or principal components. The eigenvalues give us an idea of how
+much of the overall variance is accounted for by each component. In
+general, the large the eigenvalue, the more variance the corresponding
+eigenvector (the PC) accounts for.</p>
+
+<p>But we are trying to <em>reduce</em> dimensions, and PCA naturally makes n new
+components out of n original features. So, we want to get rid of some of
+the PCs while still explaining as much of the variation in the data as
+possible. In this case, variation means information. We could easily
+reduce even a 100 feature dataset to a 1 dimensional one by taking all
+the feature values and averaging them together to form one new score.
+However, this gets rid of a lot of the useful information in the data.</p>
+
+<p>We can take advantage of the fact that our new PCs are ranked in order
+of how much variance they explain. We can choose m components (where m
+&lt; n) that explain <em>most</em> of the variance in the data. For example, this
+diabetes dataset has 8 features that we can use for clustering: # of
+Pregnancies, Glucose Level, Blood Pressure, Skin Thickness, Insulin,
+BMI, Diabetes Pedigree Function, and Age.</p>
+
+<p><em>Table 1.</em> Example of Diabetes Data.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pregnancies</th>
+      <th>Glucose</th>
+      <th>BP</th>
+      <th>Skin Thick</th>
+      <th>Insulin</th>
+      <th>BMI</th>
+      <th>DPF</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>148</td>
+      <td>72</td>
+      <td>35</td>
+      <td>0</td>
+      <td>33.6</td>
+      <td>0.627</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>85</td>
+      <td>66</td>
+      <td>29</td>
+      <td>0</td>
+      <td>26.6</td>
+      <td>0.351</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>183</td>
+      <td>64</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.3</td>
+      <td>0.672</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>89</td>
+      <td>66</td>
+      <td>23</td>
+      <td>94</td>
+      <td>28.1</td>
+      <td>0.167</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Let’s import our packages and load in our data to python (note: each
+feature in the csv is now z-scored).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Lasso</span><span class="p">,</span> <span class="n">Ridge</span><span class="p">,</span> <span class="n">ElasticNet</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">ggplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Dense</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Model</span>
+
+
+<span class="n">dia</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"diabetesScaled.csv"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We can run principal components analysis on this data set, and then
+generate a <strong>scree plot</strong> which will show us how much variance is
+accounted for by each principal component.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">()</span>
+<span class="n">pcs</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">dia</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pcs</span><span class="o">.</span><span class="n">explained_variance_ratio_</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'number of components'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'cumulative explained variance'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture4.png" alt="" class="center-image" /></p>
+
+<p>We can see in this plot that the first Principal component accounts for
+almost 25% of the variance in the original data. And all together, the
+first 5 account for almost 90% of the original variation. We could drop
+almost ⅓ our our features and only lose about 10% of the original
+variation.</p>
+
+<p>There’s no hard or fast rule for choosing the number of PCs to retain.
+The “elbow” methods looks at the scree plot and decides where the
+inflection point (or “elbow”) of the graph is, and includes all PCs
+before that point. Others will include any PC with an eigenvalue greater
+than 1, and still others will choose a proportion of variance (usually
+95%+) they want to retain and keep only enough PCs to reach that
+proportion.</p>
+
+<p><em>LDA.</em> While PCA performs dimensionality reduction by finding the
+eigenvalues and eigenvectors of the total covariance matrix, Linear
+Discriminant Analysis (LDA) does something similar, but to a different
+kind of covariance matrix.</p>
+
+<p>LDA is still interested in finding new axes that account for the most
+variance possible. But this time, we want to focus on <em>between and
+within class</em> variance. In our diabetes data set, we have two groups:
+people with a diabetes diagnosis and those without. And we’d like to
+know the differences between these groups, especially if it can help us
+classify <em>new</em> people as either diabetic or not.</p>
+
+<p>So, LDA decomposes the combination of the within
+(<script type="math/tex">S_W</script>; how much variation is within each group) and between
+(<script type="math/tex">S_B</script>; how much variation there is between diabetics and non diabetics)
+covariance matrices.</p>
+
+<script type="math/tex; mode=display">S_W = \sum\limits_{i=1}^{c}  S_i%0</script>
+
+<script type="math/tex; mode=display">\text{where } S_i = \sum\limits_{\pmb x \in D_i}^n (\pmb x - \pmb m_i)\;(\pmb x - \pmb m_i)^T%0</script>
+
+<script type="math/tex; mode=display">S_B =\sum\limits_{i=1}^{c} N_{i} (\pmb m_i - \pmb \mu) (\pmb m_i - \pmb \mu)^T%0</script>
+
+<p>The covariance matrix we decompose is <script type="math/tex">S_w^{-1}S_B%0</script>
+which allows us to simultaneously maximize between group variance (i.e.
+the groups will be far apart from each other on these new component
+axes), and minimize the within group variance (i.e. data points in each
+group will be close to other points in the group on these new component
+axes).</p>
+
+<p>Once we’ve decomposed this matrix to get our new axes, we can keep as
+many, or as few components as we want, all while retaining as <em>much</em>
+information about what makes our two groups--diabetic and
+non-diabetic--separate from each other. This gives as a good, and less
+computationally expensive way of figuring out whether new patients are
+likely to have diabetes.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lda</span> <span class="o">=</span> <span class="n">LinearDiscriminantAnalysis</span><span class="p">()</span>
+<span class="n">lds</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diapc</span><span class="p">,</span> <span class="n">dia</span><span class="p">[</span><span class="s">"Outcome"</span><span class="p">])</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">diapc</span><span class="p">)</span>
+<span class="n">ggdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s">"score"</span><span class="p">:</span> <span class="n">scores</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span> <span class="s">"diabetic"</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">dia</span><span class="p">[</span><span class="s">"Outcome"</span><span class="p">]),</span> <span class="s">"n"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)})</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span> <span class="n">x</span> <span class="o">=</span> <span class="s">"score"</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">"n"</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">"diabetic"</span><span class="p">),</span><span class="n">data</span> <span class="o">=</span> <span class="n">ggdf</span><span class="p">)</span>  <span class="o">+</span> <span class="n">geom_point</span><span class="p">()</span> <span class="o">+</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>When we plot the data using one component from LDA, we can see that the
+groups are pretty well separated using this new axis.</p>
+
+<p><img src="//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture5.png" alt="" class="center-image" /></p>
+
+<p><strong>LASSO and RIDGE Regression, and Elastic Net</strong></p>
+
+<p>One issue with methods like PCA and LDA is that the new components that
+we create can be hard to understand in clinical context, they’re just a
+mash up of different proportions of our original features.</p>
+
+<p>So other methods that preserve interpretability are important. LASSO and
+RIDGE regression offer small tweaks to traditional regression models
+that allow us to reduce the impact of, or even completely get rid of,
+features in our data set.</p>
+
+<p>Traditionally, Linear Regression produces a model that minimizes the Sum
+of Squared Errors.</p>
+
+<script type="math/tex; mode=display">\sum \limits_{i = 1}^n(x_i - \hat{x_i})^2%0</script>
+
+<p>LASSO and RIDGE regression do the same thing, but also include something
+called a <strong>penalty term</strong> which makes our Beta Coefficients more likely
+to be small, or in the case of LASSO regression, 0.</p>
+
+<p>LASSO regression penalizes the L1 norm of the Beta coefficients.</p>
+
+<script type="math/tex; mode=display">\sum \limits_{i = 1}^n(x_i - \hat{x_i})^2 + \lambda|| \beta ||_1%0</script>
+
+<p>This is similar to putting a Laplacian prior on the values of the Beta
+coefficients, and forces many of them to be 0. In order to minimize the
+above equation, we want as many of the Beta coefficients to be 0 so that
+the <script type="math/tex">\lambda || \beta ||_1%0</script> term is as small as possible
+(<script type="math/tex">\lambda</script> is just a scalar like 0.2 that scales the impact of the
+<script type="math/tex">\lambda || \beta ||_1%0</script> term). When the Beta coefficient associated with a feature is 0, it’s as
+if we didn’t include that feature at all, thus the number of features is
+reduced.</p>
+
+<p>RIDGE regression does the same thing, but the penalty term is the L2
+norm of the Beta coefficients.</p>
+
+<script type="math/tex; mode=display">\sum \limits_{i = 1}^n(x_i - \hat{x_i})^2 + \lambda|| \beta ||_2%0</script>
+
+<p>This is similar to putting a normal prior on the values of the Beta
+coefficients. So while it won’t force as many of the coefficients to be
+0, it will make them much more likely to be <em>near</em> to 0.</p>
+
+<p><img src="//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture6.png" alt="" class="center-image" />
+<em>Image from: <a href="https://www.transtutors.com/homework-help/statistics/laplace-distribution.aspx">https://www.transtutors.com/homework-help/statistics/laplace-distribution.aspx</a></em></p>
+
+<p>So, while we don’t completely get rid of features, we do make their
+impact very small.</p>
+
+<p>Elastic Net regression simply combines LASSO and RIDGE regression
+together by penalizing both the L1 and L2 norms to different degrees.</p>
+
+<script type="math/tex; mode=display">\sum \limits_{i = 1}^n(x_i - \hat{x_i})^2 + \lambda_1|| \beta ||_1 + \lambda_2|| \beta ||_2%0</script>
+
+<p>Only LASSO does true dimensionality reduction since it forces many of
+the beta coefficients to be 0 while RIDGE and Elastic Net force small
+coefficients to be <em>near</em> to 0, however all three techniques take
+features with very little influence and reduces it even further.</p>
+
+<p>Since regular linear regression predicts <em>continuous</em> outcomes, we’re
+going to try to predict insulin level from all the other features.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+<span class="n">L</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diapc</span><span class="p">[[</span><span class="s">"Pregnancies"</span><span class="p">,</span><span class="s">"Glucose"</span><span class="p">,</span><span class="s">"BloodPressure"</span><span class="p">,</span><span class="s">"SkinThickness"</span><span class="p">,</span><span class="s">"BMI"</span><span class="p">,</span><span class="s">"DiabetesPedigreeFunction"</span><span class="p">,</span><span class="s">"Age"</span><span class="p">]],</span> <span class="n">diapc</span><span class="p">[</span><span class="s">"Insulin"</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
+
+<span class="n">R</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+<span class="n">R</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diapc</span><span class="p">[[</span><span class="s">"Pregnancies"</span><span class="p">,</span><span class="s">"Glucose"</span><span class="p">,</span><span class="s">"BloodPressure"</span><span class="p">,</span><span class="s">"SkinThickness"</span><span class="p">,</span><span class="s">"BMI"</span><span class="p">,</span><span class="s">"DiabetesPedigreeFunction"</span><span class="p">,</span><span class="s">"Age"</span><span class="p">]],</span> <span class="n">diapc</span><span class="p">[</span><span class="s">"Insulin"</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">R</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
+
+<span class="n">EN</span> <span class="o">=</span> <span class="n">ElasticNet</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">l1_ratio</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+<span class="n">EN</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diapc</span><span class="p">[[</span><span class="s">"Pregnancies"</span><span class="p">,</span><span class="s">"Glucose"</span><span class="p">,</span><span class="s">"BloodPressure"</span><span class="p">,</span><span class="s">"SkinThickness"</span><span class="p">,</span><span class="s">"BMI"</span><span class="p">,</span><span class="s">"DiabetesPedigreeFunction"</span><span class="p">,</span><span class="s">"Age"</span><span class="p">]],</span> <span class="n">diapc</span><span class="p">[</span><span class="s">"Insulin"</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">EN</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>When we print out the coefficients for the three Regressions, we can see
+that LASSO indeed produced more zero coefficients than Ridge.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Lasso
+</span><span class="p">[</span><span class="o">-</span><span class="mf">0.</span>          <span class="mf">0.11792462</span>  <span class="mf">0.</span>          <span class="mf">0.22976144</span>  <span class="mf">0.</span>          <span class="mf">0.</span>
+ <span class="o">-</span><span class="mf">0.</span>        <span class="p">]</span>
+<span class="c1">#Ridge
+</span><span class="p">[</span><span class="o">-</span><span class="mf">0.04841414</span>  <span class="mf">0.3294465</span>  <span class="o">-</span><span class="mf">0.01997248</span>  <span class="mf">0.41463334</span> <span class="o">-</span><span class="mf">0.03922907</span>  <span class="mf">0.0699</span>
+<span class="mi">9183</span>
+ <span class="o">-</span><span class="mf">0.05149703</span><span class="p">]</span>
+<span class="c1">#Elastic Net
+</span><span class="p">[</span><span class="o">-</span><span class="mf">0.</span>          <span class="mf">0.06867859</span>  <span class="mf">0.</span>          <span class="mf">0.12913884</span>  <span class="mf">0.</span>          <span class="mf">0.</span>
+ <span class="o">-</span><span class="mf">0.</span>        <span class="p">]</span>
+</code></pre></div></div>
+
+<p><strong>Dimensionality Reduction with Neural Networks (Autoencoders)</strong></p>
+
+<p>All of the above techniques rely in some way on the assumption of
+linearity. PCA and LDA create new axes/components from <em>linear</em>
+combinations of the original set of features, while LASSO, RIDGE, and
+Elastic Net rely on the assumption that models between our features and
+diabetes diagnosis are <em>linear</em>.</p>
+
+<p>But sometimes, we want to relax those assumptions. Neural Networks have
+been used for a multitude of problems, and one of those is
+dimensionality reduction.</p>
+
+<p>A simple type of neural network called an <strong>Autoencoder (AE)</strong>, takes in
+our features as input, and feeds it through a hidden layer that is
+<em>smaller</em> than the input layer. Then it feeds data from the hidden layer
+out to the output layer which is the same dimension as our features.
+Essentially, we’re feeding our data to the AE, getting it to represent
+the data with fewer features, and then attempting to use that
+representation to recreate the original features.</p>
+
+<p>Autoencoder architecture can extend far beyond that which is described
+here, but the general principle is the same: learn a way to represent
+the original data so that it’s smaller, but you can still recreate the
+data from the representation relatively well. Unlike PCA and LDA though,
+these autoencoders can model non-linear relationships if the layers have
+non-linear activation functions (see this article about Feed Forward
+Neural Networks for more on activation functions) . In essence,
+autoencoders with non-linear activation functions can do nonlinear PCA.
+Adding nonlinearity allows for more flexible (and hopefully better) data
+representation.</p>
+
+<p>Dimensionality reduction using autoencoders does share the issue of
+interpretability with PCA and LDA. The latent representation created by
+the autoencoder is not guaranteed to be easily understood by humans, and
+is therefore not too great when you want to make inferences about your
+original features.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># hidden layer size
+</span><span class="n">encoding_dim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,))</span>
+
+<span class="n">encoded</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="n">encoding_dim</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">)(</span><span class="nb">input</span><span class="p">)</span>
+<span class="n">decoded</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'sigmoid'</span><span class="p">)(</span><span class="n">encoded</span><span class="p">)</span>
+
+<span class="c1"># autoencoder
+</span><span class="n">autoencoder</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">decoded</span><span class="p">)</span>
+
+<span class="c1"># input --&gt; representation
+</span><span class="n">encoder</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">encoded</span><span class="p">)</span>
+<span class="n">encoded_input</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">encoding_dim</span><span class="p">,))</span>
+
+<span class="n">decoder_layer</span> <span class="o">=</span> <span class="n">autoencoder</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># create the decoder model
+</span><span class="n">decoder</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">encoded_input</span><span class="p">,</span> <span class="n">decoder_layer</span><span class="p">(</span><span class="n">encoded_input</span><span class="p">))</span>
+<span class="n">autoencoder</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s">'adadelta'</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s">'binary_crossentropy'</span><span class="p">,</span>
+<span class="n">metrics</span> <span class="o">=</span> <span class="p">[</span><span class="s">"mae"</span><span class="p">])</span>
+
+<span class="n">autoencoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diapc</span><span class="p">,</span> <span class="n">diapc</span><span class="p">,</span>
+                <span class="n">epochs</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+                <span class="n">batch_size</span><span class="o">=</span><span class="mi">256</span><span class="p">,</span>
+                <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">diapc</span><span class="p">,</span> <span class="n">diapc</span><span class="p">))</span>
+<span class="c1">#to access encoder/decoder
+</span><span class="n">encoded_dia</span> <span class="o">=</span> <span class="n">encoder</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">diapc</span><span class="p">)</span>
+<span class="n">decoded_dia</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">encoded_dia</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Conclusion</strong></p>
+
+<p>Data often has more features than we can handle. Dimensionality
+reduction allows us to retain important information about the data,
+while reducing the number of features from the data that we have to pay
+attention to. This is often helpful for human understanding, as well as
+computational efficiency. Depending on the type of data and questions
+you have, you might want to use different types of dimensionality
+reduction techniques, and with the help of this article, you can
+determine which technique fits your needs best.</p>
+
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+      <a href="//twitter.com/share?text=Dimensionality+Reduction&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F04%2Fdimensionality-reduction.html&via=TheBenCentra"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+        <i class="fa fa-twitter-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=Dimensionality+Reduction&u=http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F04%2Fdimensionality-reduction.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F04%2Fdimensionality-reduction.html"
+        onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
+        <i class="fa fa-linkedin-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <a href="//plus.google.com/share?title=Dimensionality+Reduction&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F04%2Fdimensionality-reduction.html"
+        onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=Dimensionality+Reduction&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F04%2Fdimensionality-reduction.html&media=http://localhost:4000/assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/2019/01/04/dimensionality-reduction.html') + '&title=Dimensionality Reduction'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-logo site-contact">
+      <img src="/assets/raft-name-logo.png" />
+    </div>
+
+    <div class="site-contact">
+
+      <div class="address-footer">
+        1801 Reston Pkwy <br />
+        Suite #102 <br />
+        Reston, VA 20190
+      </div>
+
+        
+          
+            <a href="" title="Follow me on Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          
+        
+          
+            <a href="http://" title="Friend me on Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          
+        
+          
+            <a href="https://github.com/bencentra" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+            </a>
+          
+        
+          
+            <a href="https://www.linkedin.com/pub/ben-centra/47/769/60a" title="Connect with me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+    </div>
+
+    <div class="site-contact">
+
+      <div class="address-footer-double">
+        <a href="tel:5715264106"><i class="fa fa-phone"></i>(571)-526-4106</a><br />
+        <a href="tel:5715264106"><i class="fa fa-fax"></i>(571)-526-4106</a><br />
+        <a href="mailto:info@goraft.tech?Subject=goraft.tech%20contact"><i class="fa fa-envelope"></i>info@goraft.tech</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<div id="copyright">&copy; Raft 2020</div>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+<script src="//unpkg.com/popper.js@1"></script>
+<script src="//unpkg.com/tippy.js@5"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+	// Enable tooltips via Tippy.js
+	if (Array.isArray(window.tooltips)) {
+		window.tooltips.forEach(function(tooltip) {
+			var selector = tooltip[0];
+			var config = tooltip[1];
+			tippy(selector, config);
+		})
+	}
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>

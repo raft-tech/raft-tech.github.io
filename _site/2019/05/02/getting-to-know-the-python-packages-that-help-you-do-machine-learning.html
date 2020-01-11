@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Python for Machine Learning</title>
+  <meta name="description" content="CIO LEVEL SUMMARY:">
+  
+  <meta name="author" content="Ben Centra">
+  <meta name="copyright" content="&copy; Ben Centra 2020">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="CIO LEVEL SUMMARY:" />
+  <meta property="og:url" content="http://localhost:4000/2019/05/02/getting-to-know-the-python-packages-that-help-you-do-machine-learning.html">
+  <meta property="og:site_name" content="Raft" />
+  <meta property="og:title" content="Python for Machine Learning" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Python for Machine Learning">
+  <meta name="twitter:description" content="CIO LEVEL SUMMARY:">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000/2019/05/02/getting-to-know-the-python-packages-that-help-you-do-machine-learning.html">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2019/05/02/getting-to-know-the-python-packages-that-help-you-do-machine-learning.html">
+	<link rel="alternate" type="application/rss+xml" title="Raft" href="http://localhost:4000/feed.xml" />
+	
+	<!-- Tooltips -->
+	<script type="text/javascript">
+		window.tooltips = []
+	</script>
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <div class="left">
+        <img src="/assets/logo.png" alt="Raft">
+      </div>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+				
+	
+	<li class="nav-link"><a href="/about/">About</a>
+	
+
+	
+	<li class="nav-link"><a href="/blog/">Blog</a>
+	
+
+	
+	<li class="nav-link"><a href="/clients/">Clients</a>
+	
+
+	
+	<li class="nav-link"><a href="/contact/">Contact</a>
+	
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+	<li class="nav-link"><a href="/services/">Services</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">Python for Machine Learning</h1>
+      <p class="info">by <strong></strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">May 2, 2019</div>
+  <div class="post-categories">
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <p><strong>CIO LEVEL SUMMARY:</strong></p>
+
+<ul>
+  <li>
+    <p>Machine Learning can be difficult to implement by hand, but packages in python like SciKit Learn, Keras, and Tensorflow create an environment where building ML models from logistic regression to Deep Networks is straightforward.</p>
+  </li>
+  <li>
+    <p><strong>Scikit learn</strong> is a package is a general machine learning library that implements basic ML algorithms, both supervised and unsupervised. It has clear and consistent syntax so that training models is similar between algorithms.</p>
+  </li>
+  <li>
+    <p>Similarly, <strong>Keras</strong> is an open source Neural Network library that uses different frameworks (such as Tensorflow) to create an easy to use syntax for building custom Neural Networks. Keras allows you flexibility, without the technical cost of using Tensorflow directly.</p>
+  </li>
+  <li>
+    <p><strong>Tensorflow</strong> is a lower level machine learning library created and maintained by Google. It allows for incredibly customization and flexibility, but does have less opaque and more complex syntax that can have a steep learning curve.</p>
+  </li>
+</ul>
+
+<p><strong>SCIKIT LEARN</strong></p>
+
+<p>Scikit-learn is an open source package for common machine learning
+models. It’s built on top of other popular python libraries such as
+<em>numpy</em> (which implements multidimensional arrays) and <em>pandas</em> (which
+introduces the data frame class). While everything you do using
+scikit-learn will be done using python syntax, scikit-learn (sklearn for
+short) takes advantage of C to speed things up under the hood.</p>
+
+<p>Sklearn provides out of the box models for <em>most</em> of the common machine
+learning algorithms such as k-means clustering, regularized regression
+models, tree-based classifiers and support vector machines. But it also
+includes many tools to help with data preprocessing and cross
+validation.</p>
+
+<p>The beauty of sklearn is its consistency. To create a model of any kind,
+you first create a model object using the specific constructor for the
+model you’d like to use. For logistic regression you’d use the
+<strong>linear_model.LogisticRegression()</strong> constructor to create a new
+logistic regression model object. For a random forest you would use the
+<strong>ensemble.RandomForestClassifier()</strong> constructor.</p>
+
+<p>But once you have the model object defined, fitting and assessing your
+model is very consistent, no matter the type.</p>
+
+<p>To use data to fit your model, you simply use model.fit(). See the below
+example to see how similar the syntax is for both models.</p>
+
+<p>First we load in the necessary packages and data:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1">#load premade dataset
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_wine</span><span class="p">()</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s">'data'</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s">'feature_names'</span><span class="p">])</span>
+<span class="n">features</span><span class="p">[</span><span class="s">'target'</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s">'target'</span><span class="p">]</span>
+<span class="n">features</span><span class="p">[</span><span class="s">'class'</span><span class="p">]</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="s">'target'</span><span class="p">]</span><span class="o">.</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">ind</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="s">'target_names'</span><span class="p">][</span><span class="n">ind</span><span class="p">])</span>
+</code></pre></div></div>
+<p>Then we use the built in function <strong>train_test_split()</strong> to create a
+training and testing set.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#split data for validation
+</span><span class="n">x_train</span><span class="p">,</span><span class="n">x_test</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'data'</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="s">'target'</span><span class="p">],</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"There are </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">x_train</span><span class="p">),</span> <span class="s">"data points for training </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_test</span><span class="p">),</span> <span class="s">"data points for testing"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now the beautiful part. Notice the similarities in syntax between the
+implementation of the Logistic Regression and Random Forest models.
+They’re almost identical!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#LogisticRegression
+</span><span class="n">mod1</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="n">mod1</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">mod1</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span><span class="n">y_test</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Logistic Regression (ACC):"</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>
+
+<span class="c1">#RandomForestClassifier
+</span><span class="n">mod2</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
+<span class="n">mod2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">score2</span> <span class="o">=</span> <span class="n">mod2</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span><span class="n">y_test</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Random Forest (ACC):"</span><span class="p">,</span> <span class="n">score2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>And this holds true for all the models in sklearn. Once you learn a
+handful of common functions like <strong>.fit()</strong>, <strong>.predict()</strong>, and
+<strong>.score()</strong> you can apply them consistently to different types of
+models.</p>
+
+<p>Sklearn allows you to utilize dozens of different machine learning
+models with both ease and speed. You can even create simple Feed Forward
+neural networks using the <strong>MLPClassifier()</strong> class (MLP stands for
+multilayer perceptron). Sklearn provides a clear and consistent user
+experience, while still allowing you some freedom to tweak parameters
+and customize your models.</p>
+
+<p>Here’s some common sklearn methods to help you train your sklearn
+models:</p>
+
+<ul>
+  <li>
+    <p><strong>fit()</strong> takes in data and uses it to train the model you call it on.</p>
+  </li>
+  <li>
+    <p><strong>predict()</strong> takes a trained model and a set of inputs (these can either be seen, or unseen) and outputs the values predicted by the model.</p>
+  </li>
+  <li>
+    <p><strong>score()</strong> take in (usually unseen) test data, runs it through your model, and returns a measure of model performance based on how close the predictions were to the actual output.</p>
+  </li>
+</ul>
+
+<p><strong>KERAS</strong></p>
+
+<p>You can access tensorflow backend through keras</p>
+
+<p>But sometimes, you need a little more complexity or control when
+building Neural Networks. This is where Keras comes in. Keras is a deep
+learning library that allows users to build customizable Networks while
+still maintaining approachable syntax.</p>
+
+<p>The most basic type of network in Keras is the <strong>Sequential</strong> model. The
+Sequential() class allows us to easily build stacks of layers to create
+all kinds of neural networks. We can initialize a Sequential with a list
+of one or more layers, or we can use the model.add() function to add
+more layers to the stack. Once we compile our model, keras uses a
+machine learning library like Tensorflow, Theano or CNTK to implement
+all of the necessary model computation like tensor operations.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Activation</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">(</span>
+<span class="p">[</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">input_shape</span> <span class="o">=</span> <span class="mi">40</span><span class="p">),</span>
+<span class="n">Activation</span><span class="p">(</span><span class="s">'relu'</span><span class="p">),</span>
+<span class="n">Dense</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+<span class="n">Activation</span><span class="p">(</span><span class="s">'softmax'</span><span class="p">)]</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">input_shape</span> <span class="o">=</span> <span class="mi">40</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s">'relu'</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s">'softmax'</span><span class="p">)</span>
+</code></pre></div></div>
+<p><strong>Building a Model</strong></p>
+
+<p>Both blocks of code will result in the same model. Keras treats layers
+(and as we’ll soon see, other neural network features) a bit like Lego
+pieces and allows you to build a customized model using these pieces.
+This allows us to have a lot of flexibility when creating our model
+structure. Let’s take a look at some commonly used layers that we can
+use.</p>
+
+<ul>
+  <li>
+    <p><strong>Dense()</strong> creates a new fully connected layer, meaning that the each input value is included in the calculation of each of the layer’s output.</p>
+  </li>
+  <li>
+    <p><strong>Activation()</strong> applies an activation to the last output in the model. You can specify the type of activation function you want by passing a string like “relu” or “softmax” to the method.</p>
+  </li>
+  <li>
+    <p><strong>Dropout()</strong> randomly drops connection between node during each pass through the model. Using the rate argument, you can specify the proportion of input units to be dropped.</p>
+  </li>
+  <li>
+    <p><strong>Conv<em>2</em>D()</strong> and <strong>Conv<em>3</em>D()</strong> create 2D or 3D Convolutional layers for use in a convolutional NN. Convolutional layers use learned “filters” that condense and extract information from images (see HSI article on Convolutional Neural Networks for more information).</p>
+  </li>
+  <li>
+    <p><strong>MaxPooling<em>2</em>D()</strong> and <strong>MaxPooling<em>3</em>D()</strong> creates a Max pooling layer. In general, Pooling reduces the dimensions of (downsamples) images and usually follows convolutional layers. Max pooling will take the maximum value from an nxn window of entries in the matrix.</p>
+  </li>
+  <li>
+    <p><strong>AveragePooling<em>2</em>D()</strong> and <strong>AveragePooling<em>3</em>D()</strong> are similar to Max pooling, but it will take the average value of an nxn window of entries in the matrix.</p>
+  </li>
+</ul>
+
+<p><strong>How to Compile</strong></p>
+
+<p>Once you’ve specified the layers that you’d like your network to have,
+you need to give Keras a few pieces of information about how you want to
+<em>train</em> your model. Let’s look at three main arguments the <strong>compile()</strong>
+function takes.</p>
+
+<ul>
+  <li>
+    <p><strong>Loss</strong> refers to the <em>loss function</em> that you want to minimize. When your model is doing well, it’s loss will be low. For specific info see (https://keras.io/losses/).</p>
+
+    <ul>
+      <li>
+        <p>Binary Cross Entropy</p>
+      </li>
+      <li>
+        <p>Mean Square Error</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Metrics</strong> allow you to track the progress of your model as it trains. You can ask for things like <em>accuracy</em> (for categorical tasks) or <em>mean absolute error</em> (for continuous predictions).</p>
+  </li>
+  <li>
+    <p><strong>Optimizer</strong> allows you to specify the algorithm used to optimize your network (i.e. to minimize your loss function). Some popular ones include <em>SGD</em> which stands for stochastic gradient descent and <em>Adam</em> (short for adaptive moment estimation) which takes advantage of the second as well as the first moment of the gradient and is often quite effective compared to other algorithms.</p>
+  </li>
+</ul>
+
+<p><strong>How to Fit</strong></p>
+
+<p>Now that we’ve specified the structure of our network as well as the
+details of how it will be trained, we need to give the network some data
+to learn from. In Keras, we do that using the <strong>fit()</strong> method. We feed
+this method the data we want to use to train our model, as well as how
+long we want to train our model (using the epoch argument) and then we
+set our model off to learn!</p>
+
+<p>Once our model is done training, we can use the model to make
+predictions on unseen data using <strong>model.predict()</strong>, or we can further
+evaluate different model metrics like accuracy using the metrics we
+discussed in the Compile section.</p>
+
+<p>For examples of fully implemented Keras models, see the HSI articles on
+<em>Convolutional Neural Networks,</em> and <em>Feed-Forward Neural Networks</em>.</p>
+
+<p><strong>TENSORFLOW</strong></p>
+
+<p>Often, most networks can be built using the Keras package. Despite how
+much work Keras does for you, it still allows for model flexibility.
+However, occasionally it can be necessary or useful to customize or
+optimize your models even further. Keras is able to use multiple
+backends to actually build the tensor calculations necessary to train a
+network. Tensorflow is very commonly used, but is a standalone library
+and can be accessed by itself using import tensorflow.</p>
+
+<p>Tensorflow allows you to be hands-on with the computational elements of
+your model. It also is incredibly fast, as the models you build are
+eventually executed (at least in part) in C++. Tensorflow is so named,
+because in building a model, you essentially create a pipeline through
+which your data (which is, after all just a tensor) can <em>flow</em>. While
+Tensorflow does a lot of work for you behind the scenes so that you can
+use your time to build beautiful models instead of getting bogged down
+in the details of implementation, it is still far less simple and
+accessible than Keras. Often, developers will choose to use Keras when
+possible since it gives you many of the advantages of Tensorflow (like
+speed), while allowing for much simpler syntax.</p>
+
+<p><strong>CONCLUSION</strong></p>
+
+<p>Python has a very well developed and easily accessible set of tools that
+can help you build all kinds of Machine Learning models; from simpler
+models in <strong>scikitlearn</strong>, to highly customizable networks in
+<strong>Tensorflow</strong>. Each tool has its own strengths and weaknesses, but
+together, they provide almost limitless access to any kind of Machine
+Learning model you could need to deploy.</p>
+
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+      <a href="//twitter.com/share?text=Python+for+Machine+Learning&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F05%2F02%2Fgetting-to-know-the-python-packages-that-help-you-do-machine-learning.html&via=TheBenCentra"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+        <i class="fa fa-twitter-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=Python+for+Machine+Learning&u=http%3A%2F%2Flocalhost%3A4000%2F2019%2F05%2F02%2Fgetting-to-know-the-python-packages-that-help-you-do-machine-learning.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F05%2F02%2Fgetting-to-know-the-python-packages-that-help-you-do-machine-learning.html"
+        onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
+        <i class="fa fa-linkedin-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <a href="//plus.google.com/share?title=Python+for+Machine+Learning&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F05%2F02%2Fgetting-to-know-the-python-packages-that-help-you-do-machine-learning.html"
+        onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=Python+for+Machine+Learning&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F05%2F02%2Fgetting-to-know-the-python-packages-that-help-you-do-machine-learning.html&media=http://localhost:4000/assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/2019/05/02/getting-to-know-the-python-packages-that-help-you-do-machine-learning.html') + '&title=Python for Machine Learning'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-logo site-contact">
+      <img src="/assets/raft-name-logo.png" />
+    </div>
+
+    <div class="site-contact">
+
+      <div class="address-footer">
+        1801 Reston Pkwy <br />
+        Suite #102 <br />
+        Reston, VA 20190
+      </div>
+
+        
+          
+            <a href="" title="Follow me on Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          
+        
+          
+            <a href="http://" title="Friend me on Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          
+        
+          
+            <a href="https://github.com/bencentra" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+            </a>
+          
+        
+          
+            <a href="https://www.linkedin.com/pub/ben-centra/47/769/60a" title="Connect with me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+    </div>
+
+    <div class="site-contact">
+
+      <div class="address-footer-double">
+        <a href="tel:5715264106"><i class="fa fa-phone"></i>(571)-526-4106</a><br />
+        <a href="tel:5715264106"><i class="fa fa-fax"></i>(571)-526-4106</a><br />
+        <a href="mailto:info@goraft.tech?Subject=goraft.tech%20contact"><i class="fa fa-envelope"></i>info@goraft.tech</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<div id="copyright">&copy; Raft 2020</div>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+<script src="//unpkg.com/popper.js@1"></script>
+<script src="//unpkg.com/tippy.js@5"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+	// Enable tooltips via Tippy.js
+	if (Array.isArray(window.tooltips)) {
+		window.tooltips.forEach(function(tooltip) {
+			var selector = tooltip[0];
+			var config = tooltip[1];
+			tippy(selector, config);
+		})
+	}
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>
