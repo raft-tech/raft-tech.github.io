@@ -1,0 +1,185 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+// Includes Bourbon, Neat, and Bitters (thanks, thoughtbot!)
+@import
+  "bourbon/bourbon",
+  "base/base",
+  "neat/neat",
+  "layout"
+;
+
+$purple: #17097c;
+$seagreen: #209bb9;
+$lightgrey: #8c91c4;
+$darkgrey: #424680;
+$lightblue: #6cb5ca;
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+
+@font-face {
+    font-family: "AvantGardeBold";
+    src: url('/css/fonts/AvantGarde-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "/css/TradeGothic";
+    src: url('/css/fonts/TradeGothic-Regular.woff2') format('woff2');
+}
+
+.navigation {
+  background-color: #6cb5ca;
+  box-shadow: 0 0px #6cb5ca;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  background-color: $lightblue;
+}
+
+.navigation .logo img {
+  max-height: 35px;
+}
+
+.page-content {
+  margin-top: 0px;
+}
+
+.navigation li.nav-link a {
+  font-family: "AvantGardeBold";
+  text-decoration: none;
+  color: white;
+  padding: 20px 0px;
+  background-color: transparent;
+  transform: scaleY(0);
+  transition: background-color 200ms;
+  width: auto;
+  display: contents;
+}
+
+@media (min-width: $large) {
+  .navigation {
+    background-color: #6cb5ca;
+    box-shadow: 0 2px #6cb5ca;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    padding: 10px 0;
+    background-color: $lightblue;
+    font-size: 1.2rem;
+  }
+
+  .navigation .logo img {
+    max-height: 75px;
+    margin-top: 0px;
+  }
+
+  .navigation li.nav-link a {
+    margin-right: 50px;
+    width: initial;
+    padding: 5px 2px;
+    transform: scaleY(1);
+    position: relative;
+    padding: 5px 2px;
+    margin-right: 50px;
+    width: auto;
+    display: inline;
+
+    &:last-child{
+        padding: 5px 2px;
+        margin-right: 50px;
+        width: auto;
+
+    }
+
+    &::after {
+      content: '';
+      transform: scaleX(0);
+      background-color: $purple;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: transform 150ms;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      &::after {
+        transform: scaleX(1);
+        height: 3px;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .page-content {
+    margin-top: 66px;
+  }
+}
+
+.navigation .navigation-wrapper {
+  max-width: none;
+}
+
+#js-mobile-menu {
+  color: $purple;
+}
+
+.site-header-container .scrim.has-cover, .post-header-container .scrim.has-cover {
+  background-color: rgba(0, 0, 0, 0);
+  height: 43vw;
+  margin-top: -95px;
+}
+
+#hero {
+  height: calc(0.44 * 100vw);
+  width: 100vw;
+  overflow: hidden;
+  background-color: $lightblue;
+  background-image: url("../images/raft-hero-team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+
+  img {
+    width: 100%;
+    display: none;
+  }
+}
+
+@media (min-width: $medium) {
+  #hero {
+    height: auto;
+    background-image: url("../images/header-image.jpg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: $large) {
+  #hero {
+    height: auto;
+    background-image: url("../images/header-image.jpg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1470px) {
+  #hero {
+    height: calc(0.43 * 100vw);
+  }
+}
+
+.page {
+  margin-top: 30px;
+}
