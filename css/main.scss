@@ -78,7 +78,19 @@ $xlarge: 1200px;
 
   .navigation .logo img {
     max-height: 75px;
+  }
+
+  .site-footer .wrapper .footer-logo img {
+    width: 250px;
+  }
+
+  .navigation .logo img,
+  .site-footer .wrapper .footer-logo img {
+    height: auto;
     margin-top: 0px;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
   }
 
   .navigation li.nav-link a {
@@ -124,6 +136,11 @@ $xlarge: 1200px;
 
   .page-content {
     margin-top: 66px;
+  }
+
+  #copyright {
+    text-align: left;
+    padding: 5px 50px;
   }
 }
 
@@ -182,4 +199,71 @@ $xlarge: 1200px;
 
 .page {
   margin-top: 30px;
+}
+
+.site-footer {
+  background-color: $purple;
+  border-top: 25px solid $lightblue;
+  font-size: 1.3rem;
+  padding: 0.25em;
+}
+
+.site-footer .site-contact {
+  font-size: 1.3rem;
+  line-height: normal;
+}
+
+.site-footer .wrapper {
+  max-width: 100%;
+  text-align: center;
+  margin: 10px ;
+
+}
+
+.site-footer .wrapper .site-contact a .fa {
+  font-size: 30px;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+
+.site-footer .wrapper .site-contact .address-footer-double a .fa {
+  margin-right: 10px;
+  font-size: unset;
+}
+
+
+.site-footer .wrapper .site-contact a:hover {
+  text-decoration: none;
+  color: $lightblue;
+}
+
+.address-footer {
+  padding-bottom: 30px;
+}
+
+.address-footer-double {
+  padding-bottom: 60px;
+  text-align: left;
+  display: inline-block;
+}
+
+.footer-logo img {
+  padding-top: 5%;
+}
+
+#copyright {
+  display: block;
+  width: 100vw;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: #8c91c4;
+  text-align: left;
+  padding-left: 10px ;
+}
+
+body {
+  font-family: TradeGothic,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+      box-sizing: border-box;
 }

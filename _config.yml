@@ -79,14 +79,14 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    url:
     desc: Follow me on Twitter
     share: true
 
   - name: Facebook
     icon: facebook
     username: thebencentra
-    url: ""
+    url: "http://"
     desc: Friend me on Facebook
     share: true
 
@@ -95,7 +95,7 @@ social:
     username: bencentra
     url: https://github.com/bencentra
     desc: Fork me on GitHub
-    share: false
+    share: true
 
   - name: LinkedIn
     icon: linkedin
