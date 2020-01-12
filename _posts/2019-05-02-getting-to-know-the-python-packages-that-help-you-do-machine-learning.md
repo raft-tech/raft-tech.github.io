@@ -3,7 +3,7 @@ layout: post
 title:  "Python for Machine Learning"
 date:   2019-05-02
 categories:
-featimg: featimage/may_2_2019.jpg
+featimg: /assets/images/featimage/may_2_2019.jpg
 ---
 
 **CIO LEVEL SUMMARY:**

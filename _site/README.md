@@ -1,3 +1,8 @@
+# Raft Website
+
+Jekyll site, based on [Centrarium](https://github.com/bencentra/centrarium) theme. To run locally: `bundle exec jekyll serve`
+
+
 # Centrarium [![Circle CI](https://circleci.com/gh/bencentra/centrarium/tree/master.svg?style=svg)](https://circleci.com/gh/bencentra/centrarium/tree/master)
 
 A simple yet classy theme for your Jekyll website or blog. Customizable to fit your style or brand.
@@ -52,7 +57,7 @@ bundle install
 
 ## Stackbit Deploy
 
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/bencentra/centrarium)
 

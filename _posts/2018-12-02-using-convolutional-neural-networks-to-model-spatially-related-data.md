@@ -3,7 +3,7 @@ layout: post
 title:  "CNN Object Detection"
 date:   2018-12-02
 categories:
-featimg: featimage/dec_02_2018.png
+featimg: /assets/images/featimage/dec_02_2018.png
 ---
 
 **CIO LEVEL SUMMARY:**

@@ -3,7 +3,7 @@ layout: post
 title:  "Intro to HPC"
 date:   2019-02-15
 categories:
-featimg: featimage/feb_15_2019.jpeg
+featimg: /assets/images/featimage/feb_15_2019.jpeg
 ---
 
 **CIO LEVEL SUMMARY:**

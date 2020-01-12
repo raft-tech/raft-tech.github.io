@@ -3,7 +3,7 @@ layout: post
 title:  "Dimensionality Reduction"
 date:   2019-01-04
 categories:
-featimg: featimage/jan_04_2019.png
+featimg: /assets/images/featimage/jan_04_2019.png
 ---
 
 **CIO Level Summary**

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Jan 2020 14:53:16 -0500</pubDate>
-    <lastBuildDate>Sat, 11 Jan 2020 14:53:16 -0500</lastBuildDate>
+    <pubDate>Sun, 12 Jan 2020 00:46:08 -0500</pubDate>
+    <lastBuildDate>Sun, 12 Jan 2020 00:46:08 -0500</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -67,70 +67,6 @@
         <link>http://localhost:4000/2018/10/12/a-gentle-intorduction-to-feed-forward-neural-networks.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/10/12/a-gentle-intorduction-to-feed-forward-neural-networks.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different...</description>
-        <pubDate>Mon, 20 Apr 2015 04:43:59 -0400</pubDate>
-        <link>http://localhost:4000/jekyll/2015/04/20/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2015/04/20/welcome-to-jekyll.html</guid>
-        
-        <category>jekyll</category>
-        
-        <category>welcome</category>
-        
-        
-        <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Dummy Post 6</title>
-        <description>&lt;p&gt;This is just a dummy post. Lorem ipsum and all the rest.&lt;/p&gt; &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</description>
-        <pubDate>Sun, 19 Apr 2015 04:43:59 -0400</pubDate>
-        <link>http://localhost:4000/dummy/2015/04/19/dummy6.html</link>
-        <guid isPermaLink="true">http://localhost:4000/dummy/2015/04/19/dummy6.html</guid>
-        
-        <category>lorem</category>
-        
-        <category>ipsum</category>
-        
-        
-        <category>Dummy</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different...</description>
-        <pubDate>Sat, 18 Apr 2015 15:25:52 -0400</pubDate>
-        <link>http://localhost:4000/jekyll/2015/04/18/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2015/04/18/welcome-to-jekyll.html</guid>
-        
-        <category>jekyll</category>
-        
-        <category>welcome</category>
-        
-        
-        <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Dummy Post 6</title>
-        <description>&lt;p&gt;This is just a dummy post. Lorem ipsum and all the rest.&lt;/p&gt; &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</description>
-        <pubDate>Sat, 18 Apr 2015 15:25:52 -0400</pubDate>
-        <link>http://localhost:4000/dummy/2015/04/18/dummy6.html</link>
-        <guid isPermaLink="true">http://localhost:4000/dummy/2015/04/18/dummy6.html</guid>
-        
-        <category>lorem</category>
-        
-        <category>ipsum</category>
-        
-        
-        <category>Dummy</category>
         
       </item>
     
