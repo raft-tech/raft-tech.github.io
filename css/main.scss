@@ -304,6 +304,15 @@ section .section-title {
   }
 }
 
+.about-hero {
+  -webkit-filter: grayscale(66%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(66%);
+}
+
+.about-cover {
+  height: 30vw;
+}
+
 @media (min-width: $medium) {
   #hero {
     height: auto;
@@ -533,4 +542,21 @@ $speed: 300ms;
 
     }
   }
+}
+
+.leadership {
+  background-color: $lightgrey;
+  color: white;
+}
+
+.aboutCEOrow{
+  display: flex;
+}
+
+.ceoImage{
+  width: auto;
+}
+
+.ceoText{
+  flex-grow: 1;
 }

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
+  <div class="about-cover scrim">
+    <h1 class="hero-header"> {{ page.header }}</h1>
+  </div>
+</div>
+
+<div class="wrapper">
+<div class="page">
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
+</div>
+
+<div class="leadership">
+  <h3>Our Leadership</h3>
+  <div class="aboutCEOrow">
+    <div class="ceoImage">
+      <img src="/assets/{{ page.ceoImage }}" alt="{{ page.ceoName }}"/>
+      <h5>{{ page.ceoName }}</h5>
+    </div>
+    <div class="ceoText">
+      {{ page.aboutCEO }}
+    </div>
+  </div>
+</div>

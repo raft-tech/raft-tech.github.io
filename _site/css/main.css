@@ -886,6 +886,14 @@ section .section-title {
     width: 100%;
     display: none; }
 
+.about-hero {
+  -webkit-filter: grayscale(66%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(66%); }
+
+.about-cover {
+  height: 30vw; }
+
 @media (min-width: 768px) {
   #hero {
     height: auto;
@@ -1039,3 +1047,15 @@ section .section-title {
     width: 8vw;
     height: 8vw;
     background-color: #fff; } }
+.leadership {
+  background-color: #8c91c4;
+  color: white; }
+
+.aboutCEOrow {
+  display: flex; }
+
+.ceoImage {
+  width: auto; }
+
+.ceoText {
+  flex-grow: 1; }
