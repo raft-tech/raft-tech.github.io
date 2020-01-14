@@ -88,6 +88,19 @@ section .section-title {
   margin-top: 0px;
 }
 
+.active {
+    content: '';
+    transform: scaleX(0);
+    background-color: $purple;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 150ms;
+    border-radius: 5px;
+
+}
+
 .navigation li.nav-link a {
   font-family: "AvantGardeBold";
   text-decoration: none;
@@ -276,7 +289,7 @@ section .section-title {
 }
 
 #hero {
-  height: calc(0.44 * 100vw);
+  height: auto;
   width: 100vw;
   overflow: hidden;
   background-color: $lightblue;
