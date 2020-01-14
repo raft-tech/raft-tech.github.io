@@ -2,6 +2,6 @@
 {% assign sorted_pages = site.pages | sort:"order" %}
 {% for p in sorted_pages %}
 	{% if p.title and p.main_nav == true %}
-	<li class="nav-link"><a class="{% if p.url == page.url %} active {% endif %}"href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+	<li class="nav-link"><a class="{% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
 	{% endif %}
 {% endfor %}
