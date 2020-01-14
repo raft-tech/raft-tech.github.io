@@ -72,13 +72,12 @@ section .section-title {
 }
 
 .navigation {
-  background-color: #6cb5ca;
-  box-shadow: 0 0px #6cb5ca;
+  background-color: rgba(255,255,255,0.1);
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: absolute;
-  background-color: $lightblue;
+  box-shadow: none;
 }
 
 .navigation .logo img {
@@ -172,14 +171,12 @@ section .section-title {
   }
 
   .navigation {
-    background-color: #6cb5ca;
-    box-shadow: 0 2px #6cb5ca;
+    background-color: rgba(255,255,255,0.0);
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
     position: absolute;
     padding: 10px 0;
-    background-color: $lightblue;
     font-size: 1.2rem;
   }
 
@@ -241,10 +238,6 @@ section .section-title {
 
   }
 
-  .page-content {
-    margin-top: 66px;
-  }
-
   #copyright {
     text-align: left;
     padding: 5px 50px;
@@ -291,7 +284,6 @@ section .section-title {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 30px;
 
   img {
     width: 100%;
@@ -305,7 +297,7 @@ section .section-title {
 }
 
 .about-cover {
-  height: 30vw;
+  height: 25vw;
 }
 
 @media (min-width: $medium) {
@@ -696,4 +688,8 @@ a.btn-card {
   padding: 0 0.25em;
   text-decoration: none;
   color: $seagreen;
+}
+
+#services .cards .card {
+  border: none;
 }
