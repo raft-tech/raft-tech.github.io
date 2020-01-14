@@ -556,10 +556,6 @@ $speed: 300ms;
   flex-grow: 1;
 }
 
-.post-content p:nth-child(odd) {
-  background: red;
-}
-
 /* card details start  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
 
@@ -685,3 +681,19 @@ a.btn-card {
   margin: 0 auto;
 }
 /* End card section */
+
+.page-content .post .share_header {
+  font-weight: bold;
+  margin: 0 0 1em 0;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+}
+
+.page-content .post .share_header a {
+  width: 1em;
+  padding: 0 0.25em;
+  text-decoration: none;
+  color: $purple
+}

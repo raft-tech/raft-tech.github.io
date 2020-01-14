@@ -1057,9 +1057,6 @@ section .section-title {
 .ceoText {
   flex-grow: 1; }
 
-.post-content p:nth-child(odd) {
-  background: red; }
-
 /* card details start  */
 .card-content {
   background: #ffffff;
@@ -1171,3 +1168,16 @@ a.btn-card {
   margin: 0 auto; }
 
 /* End card section */
+.page-content .post .share_header {
+  font-weight: bold;
+  margin: 0 0 1em 0;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+
+.page-content .post .share_header a {
+  width: 1em;
+  padding: 0 0.25em;
+  text-decoration: none;
+  color: #17097c; }
