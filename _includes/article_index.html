@@ -10,7 +10,7 @@
       <div class="card-featimg">
         <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
             {% assign thumb = post.featimg  %}
-            <img src="{{ site.media_folder | replace: '//', '/'}}{{ thumb }}" alt="{{ thumb }}">
+            <img src=".{{ site.media_folder | replace: '//', '/'}}{{ thumb }}" alt="{{ thumb }}">
 
         </a>
         </div>
