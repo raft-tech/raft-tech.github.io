@@ -28,15 +28,19 @@ $xlarge: 1200px;
     src: url('./fonts/AvantGarde-Bold.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: "/css/TradeGothic";
-    src: url('./fonts/TradeGothic-Regular.woff2') format('woff2');
-}
-
 * {
-  font-family: "TradeGothic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Circular",sans-serif;
   box-sizing: border-box;
 }
+
+p, h2 {
+  color: $purple;
+}
+
+h2 {
+  font-weight: 700;
+}
+
 
 a {
   text-decoration: none;
@@ -276,6 +280,11 @@ section .section-title {
   }
 }
 
+.invert {
+  background-color: $darkgrey;
+  color: white;
+}
+
 .navigation .navigation-wrapper {
   max-width: none;
 }
@@ -288,6 +297,17 @@ section .section-title {
   background-color: rgba(0, 0, 0, 0);
   height: 43vw;
   margin-top: -95px;
+}
+
+.scrim {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+
+.hero-header {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #hero {
@@ -555,8 +575,19 @@ $speed: 300ms;
   display: flex;
 }
 
-.ceoImage{
+.ceoImage {
   width: auto;
+  padding: 0px 40px;
+  border-radius: 50%;
+  min-width: 290px;
+}
+
+.ceoImage h5 {
+  padding-top: 10px;
+}
+
+.ceoImage img {
+  border-radius: 50%;
 }
 
 .ceoText{
