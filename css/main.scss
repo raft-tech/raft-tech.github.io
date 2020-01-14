@@ -89,15 +89,17 @@ section .section-title {
 }
 
 .active {
-    content: '';
-    transform: scaleX(0);
-    background-color: $purple;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: transform 150ms;
-    border-radius: 5px;
+  content: '';
+  transform: scaleX(0);
+  background-color: #17097c;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  transform: scaleX(1);
+    height: 3px;
+    text-decoration: none;
 
 }
 
