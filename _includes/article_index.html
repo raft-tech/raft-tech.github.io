@@ -22,7 +22,7 @@
             <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         </a>
           <p class="post-content">{{ post.content | strip_html | truncate: 180 }}</p>
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">Read More</a>
+          <a href="{{ post.url | replace: '//', '/'}}">Read More</a>
     </div>
 
   </div>
