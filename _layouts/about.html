@@ -19,7 +19,7 @@ layout: default
     <h3>Our Leadership</h3>
     <div class="aboutCEOrow">
       <div class="ceoImage">
-        <img src="./assets/{{ page.ceoImage | prepend: site.baseurl }}" alt="{{ page.ceoName }}"/>
+        <img src="{{ page.ceoImage | prepend: site.baseurl }}" alt="{{ page.ceoName }}"/>
         <h5>{{ page.ceoName }}</h5>
       </div>
       <div class="ceoText">

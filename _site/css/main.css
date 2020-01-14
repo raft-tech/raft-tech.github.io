@@ -664,10 +664,10 @@ pre code.hljs {
 
 @font-face {
   font-family: "AvantGardeBold";
-  src: url("/css/fonts/AvantGarde-Bold.woff2") format("woff2"); }
+  src: url("./fonts/AvantGarde-Bold.woff2") format("woff2"); }
 @font-face {
   font-family: "/css/TradeGothic";
-  src: url("/css/fonts/TradeGothic-Regular.woff2") format("woff2"); }
+  src: url("./fonts/TradeGothic-Regular.woff2") format("woff2"); }
 * {
   font-family: "TradeGothic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box; }
