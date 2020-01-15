@@ -11,7 +11,7 @@
 	 	{% if p.title != 'Services' %}
 			<li class="nav-link"><a class="{% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
 		{% else %}
-	 	 <li class="nav-link service-link"><a class="{% if p.url == page.url %}active{% endif %}" href="#">{{ p.title }}</a>
+	 	 <li class="nav-link service-link"><a class="{% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
 		 <!-- <ul class="service-nav">
 		 {% for p2 in site.pages %}
 		 	{% if p2.subpage == 'services' %}
