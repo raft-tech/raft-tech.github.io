@@ -303,6 +303,10 @@ section .section-title {
   color: white;
 }
 
+.invert a {
+  color: #4affef;
+}
+
 .navigation .navigation-wrapper {
   max-width: none;
 }
@@ -754,11 +758,16 @@ a.btn-card {
   width: 100%;
 }
 
+
 .page-content .post .share_header a {
   width: 1em;
   padding: 0 0.25em;
   text-decoration: none;
   color: white;
+}
+
+.page-content img {
+  width: auto;
 }
 
 .shared_header_icon {
