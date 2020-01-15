@@ -8,21 +8,28 @@ layout: default
   </div>
 </div>
 
-<div class="wrapper">
 <div class="page">
+
+  <h2 class="service-h2">{{ page.pageTitle }}</h2>
 
   <div class="row">
     {% assign count = 0 %}
     {% for srv in page.services %}
-      <div class="col">
+      <div class="col service-border">
+        <h3 class="service-h3">{{ srv[1]["head"] }}</h3>
         <div class="row">
-          <div class="col-4"><img src="{{ site.baseurl }}{{ srv[1]["img"] }}"/></div>
-          <div class="col">{{ srv[1]["txt"] }}</div>
+          <div class="col-2"><img class="service-img" src="{{ site.baseurl }}{{ srv[1]["img"] }}"/></div>
+          <div class="col service-txt">{{ srv[1]["txt"] }}</div>
         </div>
       </div>
       {% cycle '', '</div><div class="row">' %}
     {% endfor %}
   </div>
 
-</div>
+  <div class="wrapper">
+    <article class="post-content">
+      {{ content }}
+    </article>
+  </div>
+
 </div>

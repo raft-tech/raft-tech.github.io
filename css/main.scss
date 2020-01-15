@@ -517,7 +517,7 @@ $speed: 300ms;
       .card {
         img.circle {
           margin: 50px auto 15px auto;
-          width: 30vw;
+          width: 15vw;
         }
       }
     }
@@ -537,7 +537,7 @@ $speed: 300ms;
 
       .card {
         img.circle {
-          width: 12vw;
+          width: 15vw;
         }
       }
     }
@@ -774,8 +774,29 @@ a.btn-card {
   border: none;
 }
 
-.row {
-  padding: 10px 0px;
+.service-h2 {
+  text-align: center;
+  color: $purple;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.service-h3 {
+  padding-top: 10px;
+  text-align: center;
+  color: $purple;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: -5px;
+}
+
+.service-border {
+  border: 1px solid #e4e4e4;
+}
+
+.service-txt {
+  padding: 10px;
+  color: $purple;
 }
 
 .button {
