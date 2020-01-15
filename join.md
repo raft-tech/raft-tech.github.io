@@ -1,11 +1,11 @@
 ---
-layout: page
-title: "Join"
+layout: join
+title: Join
 permalink: /join/
 main_nav: true
 order: 3
 featimg: /assets/banner.jpg
-header: Be part of our journey!
+header: Be a part of our journey!
 ---
 
 ## Join Us!
