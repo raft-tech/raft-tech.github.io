@@ -37,6 +37,10 @@ p, h2, ul {
   color: $purple;
 }
 
+.blog-post {
+  padding-top: 20px;
+}
+
 h2 {
   font-weight: 700;
 }
@@ -372,9 +376,19 @@ section .section-title {
 }
 
 
-.site-footer .wrapper .site-contact .address-footer-double a .fa {
+.site-footer .wrapper .site-contact .address-footer-double a .fa,
+.contact-icons {
   margin-right: 10px;
   font-size: unset;
+}
+
+.contact-icons{
+  font-size: 20px;
+}
+
+.contact-map {
+  width: 100% !important;
+  height: 100%;
 }
 
 .site-footer .wrapper .site-contact a:hover {
@@ -724,4 +738,8 @@ a.btn-card {
 
 #services .cards .card {
   border: none;
+}
+
+.row {
+  padding: 10px 5px;
 }

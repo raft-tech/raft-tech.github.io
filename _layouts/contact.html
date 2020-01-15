@@ -4,18 +4,30 @@ layout: default
 
 <div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
   <div class="about-cover scrim">
-    <h1 class="hero-header"> {{ page.header }}</h1>
+    <h1 class="hero-header title"> {{ page.title }}</h1>
   </div>
 </div>
 
 <div class="wrapper">
 <div class="page">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  <div class="row">
+    <div class="col-4 contact-icons">
+      <a href="tel:5715264106">
+        <i class="fa fa-phone contact-icons"></i>(571)-526-4106
+      </a><br>
+      <a href="mailto:info@goraft.tech?Subject=goraft.tech%20contact">
+        <i class="fa fa-envelope contact-icons"></i>info@goraft.tech
+      </a>
+      <p>
+        <i class="fa fa-map contact-icons"></i>1801 Reston Pkwy<br>Suite #102<br>Reston, VA 20190
+      </p>
+    </div>
 
-
+    <div class="col">
+      <img class="contact-map" src="/assets/map.png" />
+    </div>
+  </div>
 
   <form
     action="https://formspree.io/meqaobep"

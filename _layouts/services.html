@@ -11,9 +11,18 @@ layout: default
 <div class="wrapper">
 <div class="page">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <div class="row">
+    {% assign count = 0 %}
+    {% for srv in page.services %}
+      <div class="col">
+        <div class="row">
+          <div class="col-4"><img src="{{ srv[1]["img"] }}"/></div>
+          <div class="col">{{ srv[1]["txt"] }}</div>
+        </div>
+      </div>
+      {% cycle '', '</div><div class="row">' %}
+    {% endfor %}
+  </div>
 
 </div>
 </div>
