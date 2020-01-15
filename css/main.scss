@@ -37,6 +37,10 @@ p, h2, ul {
   color: $purple;
 }
 
+.about {
+  margin-bottom: 40px;
+}
+
 .blog-post {
   padding-top: 20px;
 }
@@ -147,7 +151,27 @@ section .section-title {
   color: $purple;
   font-size: 3rem;
   padding: 0;
-  text-align: center;
+  text-align: left;
+  font-weight: 700;
+}
+
+.line {
+  background-color: #00a5db;
+  display: block;
+  height: 2px;
+  margin: 10px 0 20px;
+  transition: all .2s linear;
+  width: 30px;
+}
+
+#introducing .left .h5 {
+    color: #00a5db;
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: .12em;
+    line-height: 35px;
+    margin-top: 0;
+    text-transform: uppercase;
 }
 
 @media (min-width: $large) {
@@ -778,8 +802,8 @@ text-decoration: none;
     border-radius: 150px;
     cursor: pointer;
     background: #FFF;
-    border: 1px solid #23103a;
-    color: #23103a;
+    border: 1px solid #00a5db;
+    color: #251b85;
     bottom: 30px;
     left: 50%;
     -webkit-transform: translateX(-50%);
