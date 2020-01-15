@@ -16,7 +16,7 @@ layout: default
     {% for srv in page.services %}
       <div class="col">
         <div class="row">
-          <div class="col-4"><img src="{{ srv[1]["img"] }}"/></div>
+          <div class="col-4"><img src="{{ site.baseurl }}{{ srv[1]["img"] }}"/></div>
           <div class="col">{{ srv[1]["txt"] }}</div>
         </div>
       </div>
