@@ -227,7 +227,7 @@ section .section-title {
     &::after {
       content: '';
       transform: scaleX(0);
-      background-color: $purple;
+      background-color: white;
       position: absolute;
       left: 0;
       right: 0;
@@ -304,7 +304,7 @@ section .section-title {
   height: auto;
   width: 100vw;
   overflow: hidden;
-  background-color: $lightblue;
+  background-color: $purple;
   background-image: url("../images/raft-hero-team.jpg");
   background-repeat: no-repeat;
   background-size: cover;
