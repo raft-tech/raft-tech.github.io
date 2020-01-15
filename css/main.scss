@@ -304,8 +304,8 @@ section .section-title {
   height: auto;
   width: 100vw;
   overflow: hidden;
-  background-color: $purple;
-  background-image: url("../images/raft-hero-team.jpg");
+  background-color: $seagreen;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -327,16 +327,7 @@ section .section-title {
 
 @media (min-width: $medium) {
   #hero {
-    height: auto;
-    background-image: url("../images/header-image.jpg");
-    background-size: cover;
-  }
-}
-
-@media (min-width: $large) {
-  #hero {
-    height: auto;
-    background-image: url("../images/header-image.jpg");
+    height: 50vw;
     background-size: cover;
   }
 }
