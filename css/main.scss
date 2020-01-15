@@ -491,6 +491,7 @@ $speed: 300ms;
     padding-bottom: 40px;
     .cards {
       flex-flow: row wrap;
+      margin-top: 11px;
 
       a {
         max-width: 24%;
@@ -724,4 +725,38 @@ a.btn-card {
 
 #services .cards .card {
   border: none;
+}
+
+.button {
+text-decoration: none;
+    line-height: 1;
+    color: inherit;
+    border: 0;
+    outline: 0;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-property: color,background-color,-webkit-transform,-webkit-box-shadow;
+    -webkit-transition-property: color,background-color,box-shadow,-webkit-transform;
+    transition-property: color,background-color,box-shadow,-webkit-transform;
+    transition-property: color,background-color,transform,box-shadow;
+    transition-property: color,background-color,transform,box-shadow,-webkit-transform;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    text-align: center;
+    padding: 15px 25px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #23103a;
+    border: 1px solid #8bd2dc;
+    border-radius: 150px;
+    cursor: pointer;
+    background: #FFF;
+    border: 1px solid #23103a;
+    color: #23103a;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 250ms ease;
+    transition: 250ms ease;
 }
