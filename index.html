@@ -4,7 +4,7 @@ pagination:
   enabled: true
 ---
 
-<div id="hero" class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
+<div id="hero" class="site-header-container {% if site.cover %}has-cover{% endif %} fullhome" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
   <div class="scrim {% if site.cover %}has-cover{% endif %}">
   </div>
 </div>

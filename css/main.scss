@@ -304,7 +304,7 @@ section .section-title {
   height: auto;
   width: 100vw;
   overflow: hidden;
-  background-color: $seagreen;
+  background-color: $purple;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,7 +327,18 @@ section .section-title {
 
 @media (min-width: $medium) {
   #hero {
-    height: 50vw;
+    height: auto;
+    background-size: cover;
+  }
+
+  .fullhome {
+    height: 50vw !important;
+  }
+}
+
+@media (min-width: $large) {
+  #hero {
+    height: auto;
     background-size: cover;
   }
 }
