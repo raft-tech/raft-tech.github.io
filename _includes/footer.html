@@ -76,6 +76,15 @@ $(document).ready(function() {
 
 </script>
 
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.service-link').on('click',function () {
+      $('.service-nav').slideToggle('show');
+      console.log("hi there")
+    });
+  });
+</script>
+
 {% if page.custom_js %}
 <!-- Custom page specific js files -->
   {% for js_file in page.custom_js %}
