@@ -68,5 +68,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-_site/
+**/_site/
 _config.yml
+.sass-cache/

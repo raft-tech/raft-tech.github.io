@@ -1,4 +1,0 @@
-
-
-## Our Approach
-Understanding a problem is the foundation that any solution is built on. That’s why we take the time to thoroughly understand yours before we get started, so we can get it right the first time. Spending resources on a problem you don’t understand is like trying to fix a house’s structural problems with paint—it might seemfaster, but sooner or later it’s all going to collapse.
