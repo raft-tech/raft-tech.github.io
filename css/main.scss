@@ -912,6 +912,11 @@ a.btn-card {
   width: 60% !important;
 }
 
+.service-wrapper-padding {
+  flex: 0 0 25%;
+  max-width: 200px;
+}
+
 // Dropdown list binds to JS toggle event
 .nav-dropdown {
   position: absolute;

@@ -27,17 +27,20 @@ layout: default
 
   <h2 class="service-h2">{{ page.pageTitle2 }}</h2>
 
-  <div class="wrapper">
-    <div class="row">
-      <div class="col">
-      {% assign count = 0 %}
-      {% for exp in page.experiences %}
-      <div class="exp">
-        <div class="col service-txt"><h3 class="service-h3">{{ exp[1]["head"]}}</h3>{{exp[1]["text"]}}</div>
 
+
+  <div class="wrapper">
+    <div class="service-wrapper-padding"></div>
+      <div class="row">
+        <div class="col">
+        {% assign count = 0 %}
+        {% for exp in page.experiences %}
+        <div class="exp">
+          <div class="col service-txt"><h3 class="service-h3">{{ exp[1]["head"]}}</h3>{{exp[1]["text"]}}</div>
+
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
   </div>
 
 </div>
