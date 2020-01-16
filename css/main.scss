@@ -812,6 +812,16 @@ a.btn-card {
   display: flex;
 }
 
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  right: 25%;
+  margin-top: 10px;
+}
+
 .button {
 text-decoration: none;
     line-height: 1;
