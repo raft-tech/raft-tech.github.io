@@ -1,13 +1,14 @@
 ---
 layout: services
-title: Services
+title: Cloud Native
 permalink: /services/
-main_nav: true
+main_nav: false
 order: 2
 featimg: /assets/pressBanner.jpg
 pageTitle: Cloud Native Approach
 pageTitle2: Our Experience
 header: Automation driven culture
+subpage: services
 services:
   service1:
     head: Automation
@@ -16,7 +17,7 @@ services:
   service2:
     head: Vendor Agnostic
     img: /assets/cap-icon2.png
-    txt: Being tied to a specific vendor or technology incurs substantial long-term feed and reduces your agility. Instead, we architect open source solutions that provide flexibility to switch between cloud providers without impacting mission objectives. 
+    txt: Being tied to a specific vendor incurs substantial long-term costs and reduces your agility. Instead, we architect open source solutions that provide our customers the flexibility to switch between cloud providers without impacting their mission objectives. Our team uses OpenJDK, PostgreSql, Cassandra, Upstream Kubernets, and other tools to priortize mission over vendor interests.
   service3:
     head: Scalability
     img: /assets/cap-icon3.png
@@ -51,5 +52,5 @@ experiences:
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, libero in lobortis fermentum, mauris eros congue dolor, consectetur pellentesque nibh dolor at justo. Nam laoreet maximus risus. Quisque sit amet ipsum diam. Cras volutpat eros eu neque placerat, nec blandit mauris vulputate. Integer laoreet bibendum varius. Suspendisse accumsan laoreet lectus, nec egestas libero cursus sed. Maecenas et euismod purus.   
   experience6:
     head: Serverless
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, libero in lobortis fermentum, mauris eros congue dolor, consectetur pellentesque nibh dolor at justo. Nam laoreet maximus risus. Quisque sit amet ipsum diam. Cras volutpat eros eu neque placerat, nec blandit mauris vulputate. Integer laoreet bibendum varius. Suspendisse accumsan laoreet lectus, nec egestas libero cursus sed. Maecenas et euismod purus.  
----                 
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, libero in lobortis fermentum, mauris eros congue dolor, consectetur pellentesque nibh dolor at justo. Nam laoreet maximus risus. Quisque sit amet ipsum diam. Cras volutpat eros eu neque placerat, nec blandit mauris vulputate. Integer laoreet bibendum varius. Suspendisse accumsan laoreet lectus, nec egestas libero cursus sed. Maecenas et euismod purus. 
+---                  
