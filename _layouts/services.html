@@ -4,7 +4,7 @@ layout: default
 
 <div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
   <div class="about-cover scrim">
-    <h1 class="hero-header title"> {{ page.title }}</h1>
+    <h1 class="hero-header title"> {{ page.header }}</h1>
   </div>
 </div>
 
@@ -25,6 +25,8 @@ layout: default
     {% endfor %}
   </div>
 
+  <h2 class="service-h2">{{ page.pageTitle2 }}</h2>
+
   <div class="wrapper">
     <div class="row">
       <div class="col">
@@ -36,12 +38,6 @@ layout: default
       </div>
       {% endfor %}
     </div>
-  </div>
-
-  <div class="wrapper experience">
-    <article class="post-content">
-      {{ content }}
-    </article>
   </div>
 
 </div>
