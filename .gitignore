@@ -70,4 +70,4 @@ yarn-error.log
 
 **/_site/
 _config.yml
-.sass-cache/
+/.sass-cache

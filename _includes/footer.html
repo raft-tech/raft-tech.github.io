@@ -7,7 +7,7 @@
     </div>
 
     <div class="site-contact">
-  <div class="flexbox">
+      <div class="flexbox">
       <div>
         <b>Headquarters:</b><br/>
         1801 Reston Pkwy <br />
@@ -84,12 +84,32 @@ $(document).ready(function() {
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('.service-link').on('click',function () {
-      $('.service-nav').slideToggle('show');
-      console.log("hi there")
-    });
-  });
+  (function($) { // Begin jQuery
+    $(function() { // DOM ready
+      // If a link has a dropdown, add sub menu toggle.
+      $('nav ul li a:not(:only-child)').hover(function(e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        // Close one dropdown when selecting another
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+      // Clicking away from dropdown will remove the dropdown class
+      $('.nav-dropdown').hover(function(e) {
+        $('.nav-dropdown').show();
+        e.stopPropagation();
+      });
+
+      $('.nav-dropdown').mouseleave(function(e) {
+        $('.nav-dropdown').hide();
+        e.stopPropagation();
+      });
+
+      $('html').hover(function() {
+        $('.nav-dropdown').hide();
+      });
+
+    }); // end DOM ready
+  })(jQuery); // end jQuery
 </script>
 
 {% if page.custom_js %}

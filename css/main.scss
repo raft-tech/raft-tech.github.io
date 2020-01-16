@@ -445,7 +445,10 @@ section .section-title {
   color: $lightblue;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 .flexbox {
   display: flex;
   flex-direction: row;
@@ -467,7 +470,10 @@ section .section-title {
 .address-footer-double {
   padding-top: 10px;
   padding-left: 50px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
   padding-bottom: 60px;
   text-align: left;
   display: inline-block;
@@ -853,6 +859,16 @@ a.btn-card {
 
 .service-logos {
   display: flex;
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  right: 25%;
+  margin-top: 10px;
 }
 
 .button {
