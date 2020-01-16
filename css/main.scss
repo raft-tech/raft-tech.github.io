@@ -353,7 +353,7 @@ section .section-title {
 .hero-header {
   display: table-cell;
   vertical-align: middle;
-  
+
   &.title {
     padding-top: 40px;
   }
@@ -419,10 +419,6 @@ section .section-title {
 }
 .second {
   margin-bottom: 15px;
-}
-
-.exp {
-  padding-left: 138px;
 }
 
 .exp > p {
@@ -1038,7 +1034,7 @@ text-decoration: none;
       background-position: center;
       height: 200px;
       width: 100%;
-      
+
     }
 
     @media (min-width: $medium){
