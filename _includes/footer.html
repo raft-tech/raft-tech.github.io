@@ -7,11 +7,18 @@
     </div>
 
     <div class="site-contact">
-
-      <div class="address-footer">
+  <div class="flexbox">
+      <div>
+        <b>Headquarters:</b><br/>
         1801 Reston Pkwy <br />
         Suite #102 <br />
-        Reston, VA 20190
+        Reston, VA 20190<br />
+      </div>
+      <div>
+            <b>Satelite Office:</b><br/>
+            18911 Hardy Oak Blvd <br />
+            San Antonio, TX<br />
+      </div>
       </div>
 
         {% for social in site.social %}
@@ -74,6 +81,15 @@ $(document).ready(function() {
 	}
 });
 
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.service-link').on('click',function () {
+      $('.service-nav').slideToggle('show');
+      console.log("hi there")
+    });
+  });
 </script>
 
 {% if page.custom_js %}

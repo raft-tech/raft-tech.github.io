@@ -1,7 +1,25 @@
-<li class="nav-link"><a href="{{ site.baseurl }}">Home</a>
+<li class="nav-link"><a href="{{ site.baseurl }}/index.html">Home</a>
+<!---<li class="nav-link"><a href="{{ site.baseurl }}/about/">About</a>
+<li class="nav-link"><a href="{{ site.baseurl }}/services/">Services</a>
+<li class="nav-link"><a href="{{ site.baseurl }}/join/">Join</a>
+<li class="nav-link"><a href="{{ site.baseurl }}/contact/">Contact</a>
+<li class="nav-link"><a href="{{ site.baseurl }}/blog/">Blog</a> -->
+
 {% assign sorted_pages = site.pages | sort:"order" %}
 {% for p in sorted_pages %}
 	{% if p.title and p.main_nav == true %}
-	<li class="nav-link"><a class="{% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+	 	{% if p.title != 'Services' %}
+			<li class="nav-link"><a class="{% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+		{% else %}
+	 	 <li class="nav-link service-link"><a class="{% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+		 <!-- <ul class="service-nav">
+		 {% for p2 in site.pages %}
+		 	{% if p2.subpage == 'services' %}
+		 		<li class="nav-link"><a href="#">p2.title</a></li>
+			{% endif %}
+		 {% endfor %}
+		 </ul> -->
+		{% endif %}
+		</li>
 	{% endif %}
 {% endfor %}

@@ -424,11 +424,29 @@ section .section-title {
   color: $lightblue;
 }
 
-.address-footer {
-  padding-bottom: 30px;
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 20px;
+  text-align: left;
+
+}
+
+.flexbox > div {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  width: calc(1/2*100% - (1 - 1/2)*75px);
 }
 
 .address-footer-double {
+  padding-top: 10px;
+  padding-left: 50px;
+
   padding-bottom: 60px;
   text-align: left;
   display: inline-block;
@@ -521,7 +539,7 @@ $speed: 300ms;
       .card {
         img.circle {
           margin: 50px auto 15px auto;
-          width: 30vw;
+          width: 15vw;
         }
       }
     }
@@ -541,7 +559,7 @@ $speed: 300ms;
 
       .card {
         img.circle {
-          width: 12vw;
+          width: 15vw;
         }
       }
     }
@@ -783,8 +801,33 @@ a.btn-card {
   border: none;
 }
 
-.row {
+.service-h2 {
+  text-align: center;
+  color: $purple;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.service-h3 {
   padding: 10px 0px;
+  text-align: left;
+  color: $purple;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: -5px;
+}
+
+.service-border {
+  border: 1px solid #e4e4e4;
+}
+
+.service-txt {
+  padding: 10px;
+  color: gray;
+}
+
+.service-logos {
+  display: flex;
 }
 
 .button {
