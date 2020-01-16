@@ -15,7 +15,7 @@
 		 <ul class="nav-dropdown">
 		 {% for p2 in site.pages %}
 		 	{% if p2.subpage == 'services' %}
-		 		<li class="nav-link"><a href="{{ p2.permalink | prepend: site.baseurl }}">{{p2.title}}</a></li>
+		 		<li class="nav-link sub-nav-link"><a href="{{ p2.permalink | prepend: site.baseurl }}">{{p2.title}}</a></li>
 			{% endif %}
 		 {% endfor %}
 		 </ul>

@@ -87,7 +87,6 @@ section .section-title {
   background-color: rgba(255,255,255,0.1);
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
   position: absolute;
   box-shadow: none;
 }
@@ -230,7 +229,6 @@ section .section-title {
     background-color: rgba(255,255,255,0.0);
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
     position: absolute;
     padding: 10px 0;
     font-size: 1.2rem;
@@ -918,6 +916,11 @@ a.btn-card {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   right: 25%;
   margin-top: 10px;
+  height: 100%;
+}
+
+.sub-nav-link {
+  display: block !important;
 }
 
 .button {
