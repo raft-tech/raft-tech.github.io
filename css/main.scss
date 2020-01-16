@@ -108,13 +108,28 @@ section .section-title {
 .navigation li.nav-link a {
   font-family: "AvantGardeBold";
   text-decoration: none;
-  color: white;
+  color: $purple;
   padding: 20px 0px;
   background-color: transparent;
   transform: scaleY(0);
   transition: background-color 200ms;
   width: auto;
   display: contents;
+}
+
+@media screen and (min-width: $medium){
+  .navigation {
+    background: transparent;
+  }
+  ul.navigation-menu {
+    background: transparent;
+  }
+  .navigation li.nav-link {
+    margin-right: 1.5rem;
+  }
+  .navigation li.nav-link a {
+    color: white;
+  }
 }
 
 #introducing {
@@ -151,7 +166,6 @@ section .section-title {
   color: $purple;
   font-size: 3rem;
   padding: 0;
-  text-align: left;
   font-weight: 700;
 }
 
@@ -159,7 +173,7 @@ section .section-title {
   background-color: #00a5db;
   display: block;
   height: 2px;
-  margin: 10px 0 20px;
+  margin: 10px auto 20px auto;
   transition: all .2s linear;
   width: 30px;
 }
@@ -205,6 +219,11 @@ section .section-title {
 
   #introducing .left .section-title {
     margin: 10px 0;
+    text-align: left;
+  }
+
+  #introducing .line {
+    margin: 10px 0 20px;
   }
 
   .navigation {
@@ -232,6 +251,10 @@ section .section-title {
     max-width: 250px;
     margin: 0 auto;
     display: block;
+  }
+
+  .navigation li.nav-link {
+    margin-right: 0rem;
   }
 
   .navigation li.nav-link a {
@@ -330,6 +353,10 @@ section .section-title {
 .hero-header {
   display: table-cell;
   vertical-align: middle;
+  
+  &.title {
+    padding-top: 40px;
+  }
 }
 
 #hero {
@@ -355,6 +382,10 @@ section .section-title {
 
 .about-cover {
   height: 25vw;
+}
+
+.home-hero.site-header-container .scrim.has-cover {
+  height: 70vw;
 }
 
 @media (min-width: $medium) {
@@ -405,6 +436,10 @@ section .section-title {
   border-top: 25px solid $lightblue;
   font-size: 1.3rem;
   padding: 0.25em;
+
+  #footer-logo-image{
+    max-height: 100px;
+  }
 }
 
 .site-footer .site-contact {
@@ -415,7 +450,8 @@ section .section-title {
 .site-footer .wrapper {
   max-width: 100%;
   text-align: center;
-  margin: 10px ;
+  margin: 10px;
+  padding: 15px 0 20px 0 ;
 }
 
 .site-footer .wrapper .site-contact a .fa {
@@ -447,32 +483,46 @@ section .section-title {
 
 .flexbox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-top: 20px;
-  text-align: left;
-
+  align-items: center;
+  text-align: center;
 }
 
 .flexbox > div {
   box-sizing: border-box;
-  margin-bottom: 30px;
-  width: calc(1/2*100% - (1 - 1/2)*75px);
+  margin: 15px auto;
 }
 
 .address-footer-double {
-  padding-top: 10px;
-  padding-left: 50px;
-  padding-bottom: 60px;
+  margin-top: 20px;
   text-align: left;
   display: inline-block;
 }
 
-.footer-logo img {
-  padding-top: 5%;
+@media screen and (min-width: $medium){
+  .site-contact.address-social {
+    flex-basis: 150%;
+  }
+  .address-footer-double {
+    margin-top: 0;
+  }
+  .site-footer .wrapper {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: $xlarge){
+  .flexbox {
+    flex-flow: row nowrap;
+  }
+
+  .site-footer .wrapper {
+    margin: 30px auto;
+  }
 }
 
 #copyright {
@@ -639,10 +689,22 @@ $speed: 300ms;
 .leadership {
   background-color: $lightgrey;
   color: white;
+
+  h3 {
+    font-size: 1.72rem;
+    font-weight: bold;
+  }
 }
 
 .aboutCEOrow{
   display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $medium){
+    flex-flow: row nowrap;
+  }
 }
 
 .ceoImage {
@@ -650,6 +712,8 @@ $speed: 300ms;
   padding: 0px 40px;
   border-radius: 50%;
   min-width: 290px;
+  text-align: center;
+  align-self: flex-start;
 }
 
 .ceoImage h5 {
@@ -763,10 +827,11 @@ a.btn-card {
     color: #fff;
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
+// Check with Barak if he remembers why this was used.  Causes overflow of view width.
+// .row {
+//     margin-right: -15px;
+//     margin-left: -15px;
+// }
 
 @media(min-width: $medium) {
   .container {
@@ -840,10 +905,6 @@ a.btn-card {
   margin-bottom: -5px;
 }
 
-.service-border {
-  border: 1px solid #e4e4e4;
-}
-
 .service-txt {
   padding: 10px;
   color: #6e6e6e;
@@ -895,4 +956,100 @@ text-decoration: none;
     transform: translateX(-50%);
     -webkit-transition: 250ms ease;
     transition: 250ms ease;
+}
+
+#services-page {
+  > .row {
+    margin-left: 0;
+    margin-right: 0;
+    flex-flow: column nowrap;
+
+    .service-border{
+      border-top: 1px solid #e4e4e4;
+      border-bottom: 1px solid #e4e4e4;
+    }
+
+    @media (min-width: $medium){
+      flex-flow: row nowrap;
+      .service-border{
+        border: 1px solid #e4e4e4;
+      }
+    }
+
+    .col.service-border .row {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+
+      @media (min-width: $large){
+        flex-flow: row nowrap;
+      }
+
+      .col-2.service-logos {
+        flex: 0 0 25%;
+        max-width: 200px;
+      }
+    }
+
+    .col.service-txt,
+    .col.service-txt h3 {
+      text-align: center;
+      @media (min-width: $large){
+        text-align: left;
+      }
+    }
+
+  }
+
+  .wrapper.experience {
+    margin: 20px auto;
+  }
+}
+
+
+.wrapper.contact {
+  .page {
+    margin-top: 10px;
+
+    @media (min-width: $medium){
+      .page {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .row {
+    flex-flow: column nowrap;
+    padding-bottom: 40px;
+    align-items: center;
+
+    div.contact-icons {
+      text-align: center;
+      width: 100%;
+    }
+
+    .map {
+      background-image: url('../assets/map.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      
+    }
+
+    @media (min-width: $medium){
+      flex-flow: row nowrap;
+      padding-bottom: 20px;
+
+      div.contact-icons {
+        text-align: left;
+        width: 40%;
+        padding-left: 10px;
+      }
+    }
+  }
 }
