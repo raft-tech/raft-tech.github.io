@@ -12,11 +12,11 @@ services:
   service1:
     head: Automation
     img: /assets/cap-icon1.png
-    txt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, libero in lobortis fermentum, mauris eros congue dolor, consectetur pellentesque nibh dolor at justo. Nam laoreet maximus risus. Quisque sit amet ipsum diam. Cras volutpat eros eu neque placerat, nec blandit mauris vulputate. Integer laoreet bibendum varius. Suspendisse accumsan laoreet lectus, nec egestas libero cursus sed. Maecenas et euismod purus.
+    txt: Agile systems that respond to rapid changes require automation. We obsess over automated pipelines like GitOps to provision our infrastructure, K8s to auto scale, slash commands to deploy code, and container runtime security to detect anomalous behavior.
   service2:
     head: Vendor Agnostic
     img: /assets/cap-icon2.png
-    txt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque, libero in lobortis fermentum, mauris eros congue dolor, consectetur pellentesque nibh dolor at justo. Nam laoreet maximus risus. Quisque sit amet ipsum diam. Cras volutpat eros eu neque placerat, nec blandit mauris vulputate. Integer laoreet bibendum varius. Suspendisse accumsan laoreet lectus, nec egestas libero cursus sed. Maecenas et euismod purus.
+    txt: Being tied to a specific vendor or technology incurs substantial long-term feed and reduces your agility. Instead, we architect open source solutions that provide flexibility to switch between cloud providers without impacting mission objectives. 
   service3:
     head: Scalability
     img: /assets/cap-icon3.png
