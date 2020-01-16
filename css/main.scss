@@ -424,11 +424,29 @@ section .section-title {
   color: $lightblue;
 }
 
-.address-footer {
-  padding-bottom: 30px;
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 20px;
+  text-align: left;
+
+}
+
+.flexbox > div {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  width: calc(1/2*100% - (1 - 1/2)*75px);
 }
 
 .address-footer-double {
+  padding-top: 10px;
+  padding-left: 50px;
+
   padding-bottom: 60px;
   text-align: left;
   display: inline-block;
