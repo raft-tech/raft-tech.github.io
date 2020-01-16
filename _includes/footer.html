@@ -3,23 +3,21 @@
   <div class="wrapper">
 
     <div class="footer-logo site-contact">
-      <img src="{{ site.baseurl }}/assets/raft-name-logo.png" />
+      <img id='footer-logo-image' src="{{ site.baseurl }}/assets/raft-name-logo.png" />
     </div>
 
-    <div class="site-contact">
-
+    <div class="site-contact address-social">
       <div class="flexbox">
-      <div>
-        <b>Headquarters:</b><br/>
-        1801 Reston Pkwy <br />
-        Suite #102 <br />
-        Reston, VA 20190<br />
-      </div>
-      <div>
-            <b>Satelite Office:</b><br/>
-            18911 Hardy Oak Blvd <br />
-            San Antonio, TX<br />
-      </div>
+        <div>
+          <b>Headquarters</b><br/>
+          1801 Reston Pkwy #102 <br />
+          Reston, VA 20190<br />
+        </div>
+        <div>
+          <b>Satellite Office</b><br/>
+          18911 Hardy Oak Blvd <br />
+          San Antonio, TX<br />
+        </div>
       </div>
 
         {% for social in site.social %}

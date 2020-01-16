@@ -173,10 +173,12 @@ pre code.hljs {
     overflow: visible;
     padding: 0;
     width: 100%;
+	background: white;
     @include media ($tablet) {
       display: block;
       margin: 0;
-      padding: 0;
+	  padding: 0;
+	  background: transparent;
     }
     &.show {
       display: block;
@@ -185,18 +187,20 @@ pre code.hljs {
   // Nav items
   ul li.nav-link {
     display: block;
-    text-align: right;
+    text-align: center;
     width: 100%;
     padding: 0.25em 0;
     @include media ($tablet) {
       background: transparent;
       display: inline;
       text-decoration: none;
-      width: auto;
+	  width: auto;
+	  text-align: right;
     }
   }
   li.nav-link {
-  	a {
+	  a {
+		color: #17097c;
 	    display: inline-block;
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
@@ -388,12 +392,19 @@ pre code.hljs {
 	    outline: none;
 	  }
 	}
+
 	.wrapper {
 		@include outer-container;
-	}
-	.footer-heading {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
 
+		@include media ($tablet){
+			flex-flow: row nowrap;
+		}
 	}
+	
 	/*
 	*	Site Navigation (left)
 	*/
@@ -414,18 +425,16 @@ pre code.hljs {
 	*	Contact Info (center)
 	*/
 	.site-contact {
-		margin-top: 1em;
+		font-size: 0.9em;
 		@include span-columns(12);
+		margin-right: 0;
 		@include media ($mobile) {
-			@include span-columns(6);
 			margin-top: 0;
 			margin-right: 0;
 		}
 		@include media ($tablet) {
-			@include span-columns(4);
 			margin-top: 0;
 		}
-		font-size: 0.9em;
 		i {
 			width: 1.25em;
 			text-align: center;
