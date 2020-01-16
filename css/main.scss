@@ -410,6 +410,27 @@ section .section-title {
   margin-top: 30px;
 }
 
+.services-page {
+  background-color: #f4f6f9;
+  padding-top: 30px;
+}
+.first {
+  margin-bottom: 30px;
+}
+.second {
+  margin-bottom: 15px;
+}
+
+.exp {
+  padding-left: 138px;
+}
+
+.exp > p {
+  padding-left: 10px;
+  color: #6e6e6e;
+}
+
+
 .site-footer {
   background-color: $purple;
   border-top: 25px solid $lightblue;
@@ -522,6 +543,10 @@ $speed: 300ms;
 
   .section-title {
     background: $seagreen;
+  }
+
+  .grid {
+    background-color: red;
   }
 
   .cards {
@@ -882,7 +907,7 @@ a.btn-card {
 
 .service-txt {
   padding: 10px;
-  color: gray;
+  color: #6e6e6e;
 }
 
 .service-logos {
