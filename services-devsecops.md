@@ -30,26 +30,17 @@ services:
     img: /assets/cap-icon4.png
     txt: Null Pointer Exceptions and Buffer Overflows are a thing of the past when using Immutable structures and pattern matching. At the core of our teams approach to immutability is automation. We automate every part of the deployment down to the lowest level so that any change in a deployed system requires deploying a new system.
   service6:
-    head: Fault Tolerance
+    head: GitOps
     img: /assets/cap-icon4.png
-    txt: Modern critical applications must remain available even in the presence of failures. At the application layer, our engineers provide automated fault tolerance (using Hystrix) when microservices fail. While at the infrastructure level, we configure multiple availability zones, and use K8s (control plane) to automatically reschedule the pods from the faulty node onto other healthy nodes in the cluster.    
+    txt: Our team maintains the codebase of the infrastructure in Git so that the entire infrastructure can be re-deployed from the code with the least amount of human intervention. GitOps is the basis for our team to use automated monitoring to alert our engineers when the configuration running in our cloud native environment doesn’t match the configuration in code.
 experiences:
   experience1:
-    head: Microservices
-    text: Smaller microservices working together to fulfil business requirements provide the software agility needed in enterprise software. Our team builds RESTFul microservices that are containerized and platform/cloud agnostic. Each microservice exposes its health metrics that are fetched by prometheus. 
-  experience2:
     head: Kubernetes
-    text: Using a mix of open source tools and best practices, our engineering team builds Kubernetes clusters that are quick to setup and yet secure. The clusters built and maintained are production ready and include necessary tools like EFK, Prometheus, Grafana, Istio, and Admission Control.
+    text: The only thing more important than building a good product efficiently, is launching a stable and secure product quickly. The Kubernetes (K8s) open-source system allows us to do just that, utilizing it’s revolutionary capacity to design, deploy and manage cluster based containers systems, our team utilizes K8s Admission Control, and RBAC to ensure the public facing clusters are secure.
+  experience2:
+    head: Service Mesh
+    text: Our team uses both Edge Routing (using Ambassador - Envoy) and Ingress (using Istio - Envoy) to secure network communication down to the pod level. Using Istio as a sidecar, our team provides authentication, observability, relillience, and traffic management.
   experience3:  
-    head: Air gapped environments
-    text: Our team knows the process and benefits of building low and deploying high. The containers built by our team are self-contained, include all external dependencies, and can be built on air-gapped environments. Additionally, our team understands the intricacies between classified offering of cloud vendors (C2S, Azure Classified Cloud).
-  experience4:
-    head: Kafka
-    text: Event driven architectures are made possible by using Kafka to pub/sub events between microservices. Our team also uses Kafka to prepare stream processing pipelines and KSQL to gather real time insights from the data. 
-  experience5:
-    head: Infrastructure as Code (IaC)
-    text: Our team lives by the moto If it isnt in code, it doesnt exist. Using IaC allows our engineers to build K8s clusters in shorter time and ensure that the clusters are security configured from Day 1.
-  experience6:
-    head: Serverless
-    text: From writing one-off functions in the cloud to running complex microservices on serverless platforms, our team ensures costs, application state, and security are all managed with a fair balance. 
+    head: Falco
+    text: Our team is involved with the open source Falco project for container native runtime security. Working at the most basic layer, the kernel, our team can detect anomalous activity at both application and infrastructure level.
 ---
