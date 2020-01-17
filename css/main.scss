@@ -921,14 +921,17 @@ a.btn-card {
   position: absolute;
   display: none;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  right: 25%;
+ box-shadow: 0 0px 12px rgba(0, 0, 0, .3);
+  right: 5%;
   margin-top: 10px;
-  height: 100%;
+  background: rgba(0, 0, 0,  .3);
+  border-radius: 25px;
 }
 
 .sub-nav-link {
+  float: left;
   display: block !important;
+
 }
 
 .button {
