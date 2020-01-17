@@ -6,7 +6,7 @@
   box-shadow: 0 2px $highlight-color;
   padding: 0 1em;
   margin: 0;
-  position: fixed; // Remove this to make header scrollable again
+  position: absolute; // Make fixed once we implement the Intersection Observer
   top: 0;
   left: 0;
   right: 0;
