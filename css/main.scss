@@ -922,11 +922,10 @@ a.btn-card {
   position: absolute;
   display: none;
   z-index: 1;
- box-shadow: 0 0px 12px rgba(0, 0, 0, 1);
-
+ box-shadow: 0 0px 12px rgba(0, 0, 0, .3);
   right: 5%;
   margin-top: 10px;
-  background: rgba(0, 0, 0,  .7);
+  background: rgba(0, 0, 0,  .3);
   border-radius: 25px;
 }
 
