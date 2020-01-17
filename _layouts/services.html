@@ -29,18 +29,14 @@ layout: default
 
 
 
-  <div class="wrapper">
-    <div class="service-wrapper-padding"></div>
-      <div class="row">
-        <div class="col">
-        {% assign count = 0 %}
-        {% for exp in page.experiences %}
-        <div class="exp">
-          <div class="col service-txt"><h3 class="service-h3">{{ exp[1]["head"]}}</h3>{{exp[1]["text"]}}</div>
+  <div class="row service-exp">
+    <div class="col">
+    {% assign count = 0 %}
+    {% for exp in page.experiences %}
+    <div class="exp">
+      <div class="col service-txt"><h3 class="service-h3">{{ exp[1]["head"]}}</h3>{{exp[1]["text"]}}</div>
 
-        </div>
-        {% endfor %}
-      </div>
+    </div>
+    {% endfor %}
+    </div>
   </div>
-
-</div>
