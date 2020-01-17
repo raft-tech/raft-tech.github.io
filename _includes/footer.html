@@ -86,28 +86,26 @@ $(document).ready(function() {
 <script type="text/javascript">
   (function($) { // Begin jQuery
     $(function() { // DOM ready
-      // If a link has a dropdown, add sub menu toggle.
-      $('nav ul li a:not(:only-child)').hover(function(e) {
-        //$(this).siblings('.nav-dropdown').toggle();
-        // Close one dropdown when selecting another
-        //$('.nav-dropdown').not($(this).siblings()).hide();
-        $('.nav-dropdown').show();
+      // Mobile Nav - toggle dropdown on touch
+      $('.navigation-menu > .nav-link').click(function(e){
+        const menu = $(this).find('.nav-dropdown')
+        menu.hasClass('visible') 
+          ? menu.removeClass('visible')
+          : menu.addClass('visible')
         e.stopPropagation();
-      });
-      // Clicking away from dropdown will remove the dropdown class
-      // $('.nav-dropdown').hover(function(e) {
-      //   $('.nav-dropdown').show();
-      //   e.stopPropagation();
-      // });
+      })
+
+      // If a link has a dropdown, add sub menu toggle.
+      $('.navigation-menu > .nav-link').hover(function(e){
+        $('.nav-dropdown').removeClass('visible');
+        $(this).find('.nav-dropdown').addClass('visible')
+        e.stopPropagation();
+      })
 
       $('.nav-dropdown').mouseleave(function(e) {
-        $('.nav-dropdown').hide();
+        $(this).removeClass('visible');
         e.stopPropagation();
       });
-
-      // $('html').hover(function() {
-      //   $('.nav-dropdown').hide();
-      // });
 
     }); // end DOM ready
   })(jQuery); // end jQuery
