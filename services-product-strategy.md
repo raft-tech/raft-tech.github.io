@@ -10,29 +10,21 @@ pageTitle2: Our Experience
 header: Products and Solutions that inspire audiences
 services:
   service1:
-    head: Obstacle
+    head: Identify & Strategize
     img: /assets/cap-icon1.png
-    txt: Discover the real root of your issues and find solutions that scale past the projected life of the product.
+    txt: Discover the real root of your issues and find solutions that scale past the projected life of the product. Build a flexible roadmap that allows your project to pivot with the ever-changing demands of your organization.
   service2:
-    head: Strategy
+    head: Define Success
     img: /assets/cap-icon2.png
-    txt: Build a flexible roadmap that allows your project to pivot with the ever-changing demands of your organization.
+    txt: Establish success criteria that enable users to take actions that freely align with organizational objectives and choose the best medium for your organization's project, from mobile first to native applications.
   service3:
-    head: Success
+    head: Establish Design Pillars
     img: /assets/cap-icon3.png
     txt: Establish strategies that enable users to take actions that freely align with organizational objectives.
   service4:
-    head: Medium
+    head: Execution
     img: /assets/cap-icon4.png
-    txt: Choose the best medium for your organization’s project, from mobile first to native applications.
-  service5:
-    head: Competition
-    img: /assets/cap-icon4.png
-    txt: Build on the successes of other products in the market to make your portfolio stand out from the crowd.
-  service6:
-    head: Derisk
-    img: /assets/cap-icon4.png
-    txt: Prioritize the riskiest product assumptions and create strategies to avoid time and money wasting pitfalls.
+    txt: Prioritize the riskiest product assumptions to build, evaluate, and iterate quickly to strengthen your solution and ultimately deliver the best version of the final product.
 experiences:
   experience1:
     head: User Research
