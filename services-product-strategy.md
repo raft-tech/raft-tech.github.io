@@ -7,6 +7,7 @@ featimg: /assets/pressBanner.jpg
 subpage: services
 pageTitle: Product Strategy Approach
 pageTitle2: Our Experience
+pageText: When it comes to navigating from your organization’s initial concept to finalized product delivery, we’re experts. By creating products driven by user outcomes, instead of features, we can empower your users to take actions that meet and exceed your organizational goals.
 header: Products and Solutions that inspire audiences
 services:
   service1:

@@ -7,32 +7,25 @@ featimg: /assets/pressBanner.jpg
 subpage: services
 pageTitle: Data Sciecne Approach
 pageTitle2: Our Experience
+pageText: Our agile and robust team of data scientists, statisticians, and engineers understand data and have hands-on experience in building end-to-end machine learning and AI solutions to make things easier, faster, and more efficient. We follow agile data science framework to create and validate customized analytic solutions using Lean methods with regular touch points.
 header: Enabling metrics driven decisions
 services:
   service1:
     head: Discovery
-    img: /assets/cap-icon1.png
-    txt: Our approach begins with defining the problem being solved. It is followed by understanding the unique requirements, analyzing the data, and defining future goals to make recommendations for tools, technology, and architecture. 
+    img: /assets/Discovery.svg
+    txt: Define the problem being solved and understand the unique requirements, analyze the data, and assess the future goals to make recommendations for tools, technology, architecture. 
   service2:
-    head: Proof of concept
-    img: /assets/cap-icon2.png
-    txt: Building small scale system to validate the viability of the solution.
+    head: Prototype & Iterate
+    img: /assets/Proof_of_concept.svg
+    txt: Build a Minimal Viable Product (MVP) in short time and continuously improve the MVP by rapid iterations and automatically train the solution to become more efficient and enhance the quality of data insights.
   service3:
-    head: Improvement
-    img: /assets/cap-icon3.png
-    txt: Continuously improve the solution by rapid iterations and automatically train the solution to become more efficient and enhance the quality of data insights.
-  service4:
     head: Detect Bias
-    img: /assets/cap-icon4.png
-    txt: Find any bias in the system and remove them using a mix of pre-processing, training, and post-processing methods.
-  service5:
+    img: /assets/Bias.svg
+    txt: Monitor for bias before, during and after modelling in the system and remove them using a mix of pre-processing, training, and post-processing methods including regularizer, surrogate models,  fair machine learning models, or by calibrating the hyper parameters.
+  service4:
     head: Production
-    img: /assets/cap-icon4.png
-    txt: Put the trained data model into production and continuously improve it by retraining to unlock the predictive power of the model
-  service6:
-    head: Production
-    img: /assets/cap-icon4.png
-    txt: Put the trained data model into production and continuously improve it by retraining to unlock the predictive power of the model    
+    img: /assets/Production.svg
+    txt: Deploy the trained data model into production and continuously improve it by retraining to unlock the predictive power of the model   
 experiences:
   experience1:
     head: Machine Learning
