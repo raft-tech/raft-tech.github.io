@@ -28,15 +28,16 @@ services:
     txt: Deploy the trained data model into production and continuously improve it by retraining to unlock the predictive power of the model   
 experiences:
   experience1:
-    head: Machine Learning
-    text: Whether you’re looking to anticipate future industry trends or understand the semantics of the written word, Machine Learning/Ai is one of the most powerful tools we can put at your disposal. Our focus on natural language processing (NLP), computer vision, and predictive analytics allow you to automate decision-making and pattern recognition processes trained from your data sets or ones carefully selected by us.
+    head: Kubeflow
+    text: Putting a trained model in production without having a pipeline to continuously retrain the model is bound to make that model outdated as time progresses. Our engineers build a data science pipeline using Kubeflow to ensure the data pre-processing, parameter tuning, and model training steps are part of the CI/CD pipeline and can leverage the multi-step workflow model  
   experience2:
     head: Data Pipelines
     text: When it comes to transferring huge volumes of information quickly, powerful large-scale data processing is vital. Utilizing open-source, lightning fast, reactive and distributed cluster computing frameworks (such as Spark, MapReduce, Hadoop, Hive, Kafka, Casandra, ElasticSearch, and Akka) we can create a data pipeline tailored to the specific needs of your project. 
   experience3:  
-    head: Bioinformatics
-    text: Our expert team of bioinformaticians, statisticians, molecular biologists, computer scientists, and scientific programmers provide in-depth bioinformatics analysis to provide high-quality, publication-ready genomics and proteomics data. We are well versed in Next Generation Sequence data management and analysis, Genotyping and SNP data analysis, Microarray data analysis and tools, structural and functional genomics, and statistical and bio-mathematical modeling. 
+    head: Machine Learning
+    text: Whether you’re looking to anticipate future industry trends or understand the semantics of the written word, Machine Learning/Ai is one of the most powerful tools we can put at your disposal. Our focus on natural language processing (NLP), computer vision, and predictive analytics allow you to automate decision-making and pattern recognition processes trained from your data sets or ones carefully selected by us.
   experience4: 
-    head: Kubeflow
-    text: Putting a trained model in production without having a pipeline to continuously retrain the model is bound to make that model outdated as time progresses. Our engineers build a data science pipeline using Kubeflow to ensure the data pre-processing, parameter tuning, and model training steps are part of the CI/CD pipeline and can leverage the multi-step workflow model
+    head: Bioinformatics
+    text: Our expert team of bioinformaticians, statisticians, molecular biologists, computer scientists, and scientific programmers provide in-depth bioinformatics analysis to provide high-quality, publication-ready genomics and proteomics data. We are well versed in Next Generation Sequence data management and analysis, Genotyping and SNP data analysis, Microarray data analysis and tools, structural and functional genomics, and statistical and bio-mathematical modeling.   
+
 ---
