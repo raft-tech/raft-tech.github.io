@@ -277,6 +277,10 @@ section .section-title {
   height: 70vw;
 }
 
+.home-hero {
+  padding-top: 25px;
+}
+
 @media (min-width: $medium) {
   #hero {
     height: auto;
@@ -929,10 +933,6 @@ text-decoration: none;
       }
     }
   }
-}
-
-.logo img {
-  max-height: 75px !important;
 }
 
 #map {
