@@ -5,8 +5,9 @@ permalink: /services/devsecops
 main_nav: false
 featimg: /assets/pressBanner.jpg
 subpage: services
-pageTitle: DevSecOps Approach
-pageTitle2: Our Experience
+pageTitle: How we do DevSecOps?
+pageTitle2: Our Expertise
+pageText: 
 header: Scalable pipelines to accelerate innovation
 services:
   service1:

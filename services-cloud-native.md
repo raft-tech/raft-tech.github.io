@@ -5,9 +5,9 @@ permalink: /services/cloudnative
 main_nav: false
 order: 2
 featimg: /assets/pressBanner.jpg
-pageTitle: Cloud Native Approach
-pageTitle2: Our Experience
-pageText: Cloud Native isn't just a buzzword to us. We’ve built a culture of automation, orchestration, and security that are at the core of our organization.
+pageTitle: How we do Cloud Native?
+pageTitle2: Our Expertise
+pageText: Cloud Native isn't just a buzzword to us. We’ve built a culture of automation, orchestration, and security that is at the core of our organization. Our team integrates infrastructure as code, open source software, and SRE expertise to manage scalable scalable clusters.
 header: Automation driven operations culture
 subpage: services
 services:

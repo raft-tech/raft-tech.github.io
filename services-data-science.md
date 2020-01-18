@@ -5,8 +5,8 @@ permalink: /services/datascience
 main_nav: false
 featimg: /assets/pressBanner.jpg
 subpage: services
-pageTitle: Data Sciecne Approach
-pageTitle2: Our Experience
+pageTitle: How we do Data Science?
+pageTitle2: Our Expertise
 pageText: Our agile and robust team of data scientists, statisticians, and engineers understand data and have hands-on experience in building end-to-end machine learning and AI solutions to make things easier, faster, and more efficient. We follow agile data science framework to create and validate customized analytic solutions using Lean methods with regular touch points.
 header: Enabling metrics driven decisions
 services:
