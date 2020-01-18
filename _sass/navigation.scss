@@ -17,7 +17,7 @@
   margin: 0 auto;
   box-shadow: none;
 
-  @media screen and (min-width: $medium) {
+  @media screen and (min-width: $large) {
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     margin: 0 auto;
@@ -39,26 +39,25 @@
   display: block;
   float: left;
   margin: 0 auto;
-  padding: .5em;
   height: auto;
-  margin-top: 0px;
+  margin-top: .5rem;
   max-width: 250px;
 
-  @include media($tablet) {
-    padding-left: 25px;
-    padding-top: 1.5rem;
-  }
-
   @include media($large) {
-    padding-top: 1rem;
+    padding-left: 1.5rem;
   }
 
   img {
     max-height: 2.5em;
     padding-right: 1em;
     max-height: 35px;
-    @media (min-width: $large) {
+
+    @media (min-width: $tablet) {
       max-height: 55px;
+    }
+
+    @media (min-width: $large) {
+      max-height: 75px;
     }
   }
 
@@ -70,11 +69,15 @@
 .navigation .navigation-menu-button {
   display: block;
   float: right;
-  margin: 0;
   font-size: 1.5em;
-  padding-top: 5px;
+  margin-top: 5px;
+  margin-right: .25rem;
 
-  @include media($tablet) {
+  @include media($tablet){
+    margin-top: 13px;
+  }
+
+  @include media($large) {
     display: none;
   }
 }
@@ -84,7 +87,7 @@
   float: none;
   padding: 1.25em 0;
   
-  @include media($tablet) {
+  @include media($large) {
     float: right;
     line-height: 1.5em;
   }
@@ -104,7 +107,7 @@
     display: block;
   }
 
-  @include media($tablet) {
+  @include media($large) {
     display: block;
     margin: 0;
     padding: 0;
@@ -122,7 +125,7 @@
   padding: 0.25em 0;
   position: relative;
 
-  @include media($tablet) {
+  @include media($large) {
     background: transparent;
     display: inline-block;
     text-decoration: none;
@@ -152,7 +155,7 @@
     color: $seagreen;
   }
 
-  @include media($tablet) {
+  @include media($large) {
     padding-right: 1.5em;
     color: white;
     display: inline;
@@ -235,7 +238,7 @@
 }
 
 /* Nav Dropdown - Tablet and Desktop */
-@media (min-width: $medium) {
+@media (min-width: $large) {
   .navigation .nav-link .nav-dropdown.visible {
     position: absolute;
     border-radius: 10px;
