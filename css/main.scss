@@ -24,6 +24,7 @@ $large: 992px;
 $xlarge: 1200px;
 
 @import 'navigation';
+@import 'work';
 
 @font-face {
     font-family: "AvantGardeBold";
@@ -947,38 +948,5 @@ text-decoration: none;
 
 .gm-style img{max-height:none;}
 
-#problem {
-  width: auto; 
-  float:left; 
-  height:auto; 
-  margin-right:10px;
-  margin-bottom:10px;
-}
 
-#problem img {
-  max-height: 500px;
-}
-
-.work {
-  margin-left: 30px !important;
-  margin-right: 30px !important;
-  margin-top: 10px !important;
-  border-bottom: 1px solid #e4e4e4;
-}
-
-.work h2 {
-  text-align: center !important;
-}
-
-#solution {
-  width: 700px; 
-  float:left; 
-  height:auto; 
-  margin-left:100px;
-  margin-bottom:10px;  
-}
-
-#solution p.text {
-  color: #6e6e6e;
-}
 
