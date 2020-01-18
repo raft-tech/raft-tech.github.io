@@ -94,6 +94,7 @@ $(document).ready(function() {
         document.getElementById('map'), {zoom: 14, center: uluru});
     // The marker, positioned at Uluru
     var marker = new google.maps.Marker({position: uluru, map: map});
+    google.maps.event.trigger(map, "resize");
   }
 
 
