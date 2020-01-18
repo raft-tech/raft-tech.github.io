@@ -7,7 +7,7 @@ featimg: /assets/pressBanner.jpg
 subpage: services
 pageTitle: How we do DevSecOps?
 pageTitle2: Our Expertise
-pageText: 
+pageText: Our DevSecOps journey has been an evolution of architecting automated CI/CD pipelines to integrating security into the platform operations so systems are least trust by default.
 header: Scalable pipelines to accelerate innovation
 services:
   service1:
@@ -37,11 +37,14 @@ services:
 experiences:
   experience1:
     head: Kubernetes
-    text: The only thing more important than building a good product efficiently, is launching a stable and secure product quickly. The Kubernetes (K8s) open-source system allows us to do just that, utilizing it’s revolutionary capacity to design, deploy and manage cluster based containers systems, our team utilizes K8s Admission Control, and RBAC to ensure the public facing clusters are secure.
+    text: The only thing more important than building a good product efficiently, is launching a stable and secure product quickly. The Kubernetes (K8s) open-source system allows us to do just that, utilizing it’s revolutionary capacity to design, deploy and manage cluster based containers systems, our team utilizes K8s Admission Control and RBAC to ensure the public facing clusters are secure with least privilege.
   experience2:
     head: Service Mesh
-    text: Our team uses both Edge Routing (using Ambassador - Envoy) and Ingress (using Istio - Envoy) to secure network communication down to the pod level. Using Istio as a sidecar, our team provides authentication, observability, relillience, and traffic management.
-  experience3:  
+    text: Our team uses both Edge Routing (using Ambassador - Envoy) and Ingress (using Istio - Envoy) to secure network communication down to the pod level. Using Istio as a sidecar, our team provides authentication, observability, relillience, and traffic management to each microservices.
+  experience3:   
+    head: Securing etcd
+    text: Etcd (the brain behind K8s) is a prized component for attackers to get access to. Our team uses authentication and firewalls to restrict access to etcd as well as encrypt the data in etcd (at rest).
+  experience4:  
     head: Falco
-    text: Our team is involved with the open source Falco project for container native runtime security. Working at the most basic layer, the kernel, our team can detect anomalous activity at both application and infrastructure level.
+    text: Our team is involved with the open source Falco project for container native runtime security. Working at the most basic layer, the kernel, our team (using Falco) can detect anomalous activity at both application and infrastructure level.
 ---
