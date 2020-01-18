@@ -1,30 +1,39 @@
 ---
 layout: default
----
-
+---   
 <div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
   <div class="about-cover scrim">
     <h1 class="hero-header title"> {{ page.header }}</h1>
   </div>
 </div>
 
-<div class="wrapper contact">
+<div class="wrapper">
+  <article class="post-content">
+    {% include /data/work_vehicles.html %}
+  </article>
+</div>
+
+<!-- <div class="invert">
+  <div class="wrapper">
+    <article class="post-content">
+      {% include /data/about_why_go_raft.html %}
+    </article>
+  </div>
+</div> -->
+<div class=invert>
+<div class="wrapper contact invert">
 <div class="page">
 
   <div class="row">
     <div class="contact-icons">
-      <a href="tel:5715264106">
         <i class="fa fa-phone contact-icons"></i>(571)-526-4106
-      </a><br>
-      <a href="mailto:info@goraft.tech?Subject=goraft.tech%20contact">
+      <br>
         <i class="fa fa-envelope contact-icons"></i>info@goraft.tech
-      </a>
-      <p>
-        <i class="fa fa-map contact-icons"></i>1801 Reston Pkwy<br>Suite #102<br>Reston, VA 20190
-      </p>
+        <br>
+        <i class="fa fa-map-marker contact-icons"></i>1801 Reston Pkwy<br>Suite #102<br>Reston, VA 20190
     </div>
 
-    <div class="map"></div>
+<div id="map" style="height: 200px; width: 100%"></div>    
   </div>
 
   <form
@@ -49,5 +58,6 @@ layout: default
     <button type="submit">Send</button>
   </form>
 
+</div>
 </div>
 </div>

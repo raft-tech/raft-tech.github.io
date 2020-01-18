@@ -356,10 +356,7 @@ section .section-title {
   font-size: 20px;
 }
 
-.contact-map {
-  width: 100% !important;
-  height: 100%;
-}
+
 
 .site-footer .wrapper .site-contact a:hover {
   text-decoration: none;
@@ -915,15 +912,7 @@ text-decoration: none;
       width: 100%;
     }
 
-    .map {
-      background-image: url('../assets/map.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 200px;
-      width: 100%;
 
-    }
 
     @media (min-width: $medium){
       flex-flow: row nowrap;
