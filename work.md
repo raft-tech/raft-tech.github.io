@@ -1,3 +1,4 @@
+---
 layout: work
 title: Our Work
 permalink: /our-work/
@@ -6,3 +7,4 @@ order: 2
 featimg: /assets/pressBanner.jpg
 pageTitle: Our Work
 header: Mission focused delivery
+---
