@@ -11,7 +11,7 @@ layout: default
 <div id='services-page' class="page">
 
   <h2 class="service-h2">{{ page.pageTitle }}</h2>
-  <p style="color: #6e6e6e;width:100%;text-align:center;padding-left:20%;padding-right:20%;"> {{ page.pageText }} </p>
+  <p class="service-text">{{ page.pageText }} </p>
   <div class="row">
     {% assign count = 0 %}
     {% for srv in page.services %}

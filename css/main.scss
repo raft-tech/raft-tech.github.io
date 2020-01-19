@@ -303,6 +303,22 @@ section .section-title {
   background-color: #f4f6f9;
   padding-top: 30px;
 }
+
+.service-text {
+  color: #6e6e6e;
+  width:100%;
+  text-align:center;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+@media (min-width: $large) {
+  .service-text {
+    padding-left:20%;
+    padding-right:20%;
+  }
+}
+
 .first {
   margin-bottom: 30px;
 }
