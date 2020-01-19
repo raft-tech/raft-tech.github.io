@@ -7,7 +7,7 @@ featimg: /assets/pressBanner.jpg
 subpage: services
 pageTitle: How we do Product Strategy?
 pageTitle2: Our Expertise
-pageText: When it comes to navigating from your organization’s initial concept to finalized product delivery, we’re experts. By creating products driven by user outcomes, instead of features, we can empower your users to take actions that meet and exceed your organizational goals.
+pageText: sd
 header: Creating Powerful Products and Solutions that inspire audiences.
 services:
   service1:
@@ -29,7 +29,7 @@ services:
 experiences:
   experience1:
     head: User Research
-    text: Research is paramount for creating products that enhance users day-to-day tasks. Our team learns everything we can about the users by asking questions, identifying and proving or disproving our assumptions, finding commonalities across users, and recognizing their needs, goals, and mental models. Activities include: Ethnographic study, Stakeholder interviews/workshops, Sector and competitor analysis, Journey mapping, Usability testing, Heuristic analysis. 
+    text: Research is paramount for creating products that enhance users day-to-day tasks. Our team learns everything we can about the users by asking questions, identifying and proving or disproving our assumptions, finding commonalities across users, and recognizing their needs, goals, and mental models. Activities include - Ethnographic study, Stakeholder interviews/workshops, Sector and competitor analysis, Journey mapping, Usability testing, Heuristic analysis. 
   experience2:
     head: Design
     text: Users today expect software experiences to be engaging and accessible, which is why people are at the heart of our design. Whether we’re creating User Interfaces from scratch, or redesigning existing products, our team of UX designers are fluent in translating a client’s needs into an easy, intuitive user experience. 
