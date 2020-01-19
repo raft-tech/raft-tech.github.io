@@ -16,11 +16,11 @@ services:
     txt: Discover the real root of your issues and find solutions that scale past the projected life of the product. Build a flexible roadmap that allows your project to pivot with the ever-changing demands of your organization.
   service2:
     head: Define Success
-    img: /assets/success.svg
+    img: /assets/Success.svg
     txt: Establish success criteria that enable users to take actions that freely align with organizational objectives and choose the best medium for your organization's project, from mobile first to native applications.
   service3:
     head: Establish Design Pillars
-    img: /assets/pillars.svg
+    img: /assets/Pillars.svg
     txt: Establish strategies that enable users to take actions that freely align with organizational objectives.
   service4:
     head: Execution
