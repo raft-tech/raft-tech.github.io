@@ -8,20 +8,20 @@ subpage: services
 pageTitle: How we do Product Strategy?
 pageTitle2: Our Expertise
 pageText: When it comes to navigating from your organization’s initial concept to finalized product delivery, we’re experts. By creating products driven by user outcomes, instead of features, we can empower your users to take actions that meet and exceed your organizational goals.
-header: Products and Solutions that inspire audiences
+header: Creating Powerful Products and Solutions that inspire audiences.
 services:
   service1:
     head: Identify & Strategize
     img: /assets/strategize.svg
-    txt: The first step to any successful product strategy is to discover the root of your organization’s issue and identify solutions that scale past the projected life of the product. Our team can help you build a flexible roadmap that allows your project to pivot with the ever-changing demands of your organization.
+    txt: The first step to any successful product strategy is to discover the root of your organization’s issue and identify solutions that scale past the projected life of the product. Our team can help you build a flexible roadmap that blend business goals with customer goals and allows your project to quickly pivot.
   service2:
     head: Define Success
     img: /assets/Success.svg
-    txt: We believe in human centered design, which empowers users to freely act in ways that align with your organizational objectives. By choosing the best methodologies, mediums, and approaches for your solution, we can ensure that the successfully developed product will remain relevant to their needs.
+    txt: Establish success criteria that enable users to take actions that freely align with organizational objectives and choose the best medium for your organization’s project, from mobile first to native applications. Success criteria is critical to achieving the objectives of your project. We establish success criteria that measures the value your customer and business is going to receive, focusses on the product and its specific features, and assesses change in your customers' actions and behavior.
   service3:
     head: Establish Design Pillars
     img: /assets/Pillars.svg
-    txt: When crafting your User Experience (UX), it’s essential to establish each element of the product and build them to support the product’s core objective. By creating intuitive interfaces absent of feature bloat, we can enable your target audience intuitively discover, use, and explore your products. 
+    txt: When crafting your User Experience (UX), it’s essential to establish core elements of the product and build them to support the product’s fundamental objective. By creating intuitive interfaces absent of feature bloat, we can enable your target audience intuitively discover, use, and explore your products.
   service4:
     head: Execution
     img: /assets/execution.svg
@@ -29,10 +29,10 @@ services:
 experiences:
   experience1:
     head: User Research
-    text: We focus on understanding user behaviors, needs, and motivations through interviews, competitive and evaluative research, task analysis, and other feedback methodologies. 
+    text: Research is paramount for creating products that enhance users day-to-day tasks. Our team learns everything we can about the users by asking questions, identifying and proving or disproving our assumptions, finding commonalities across users, and recognizing their needs, goals, and mental models. Activities include: Ethnographic study, Stakeholder interviews/workshops, Sector and competitor analysis, Journey mapping, Usability testing, Heuristic analysis. 
   experience2:
     head: Design
-    text: Users today expect software experiences to be engaging and accessible, which is why people are at the heart of our design. Whether we’re creating User Interfaces from scratch, or redesigning existing products, our team of designers are fluent in translating a client’s needs into an easy, intuitive user experience. 
+    text: Users today expect software experiences to be engaging and accessible, which is why people are at the heart of our design. Whether we’re creating User Interfaces from scratch, or redesigning existing products, our team of UX designers are fluent in translating a client’s needs into an easy, intuitive user experience. 
   experience3:  
     head: Content
     text: Our clients work hard to create a professional public-facing image for their organization, so we work hard to emulate that experience in our products. Our content strategies guide users to take natural behaviors that align with our client’s end goals using established best practices, accessible plain language, and highly measured interaction.
