@@ -777,7 +777,6 @@ a.btn-card {
 
 .page-content img {
   width: auto;
-  /* max-height: 125px; */
 }
 
 .shared_header_icon {
@@ -791,6 +790,7 @@ a.btn-card {
 
 #services .cards .card {
   border: none;
+  background: transparent;
 }
 
 .service-h2 {
@@ -829,8 +829,6 @@ a.btn-card {
 .button {
 text-decoration: none;
     line-height: 1;
-    color: inherit;
-    border: 0;
     outline: 0;
     -webkit-transition-duration: 250ms;
     transition-duration: 250ms;
@@ -844,9 +842,6 @@ text-decoration: none;
     text-align: center;
     padding: 15px 25px;
     margin-top: 5px;
-    color: #fff;
-    background-color: #23103a;
-    border: 1px solid #8bd2dc;
     border-radius: 150px;
     cursor: pointer;
     background: #FFF;
@@ -858,6 +853,14 @@ text-decoration: none;
     transform: translateX(-50%);
     -webkit-transition: 250ms ease;
     transition: 250ms ease;
+}
+
+#introducing a:hover {
+  text-decoration: none;
+  .button {
+    background: #00a5db;
+    color: white;
+  }
 }
 
 #services-page {
