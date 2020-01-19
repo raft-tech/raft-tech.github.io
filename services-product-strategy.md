@@ -5,26 +5,26 @@ permalink: /services/product
 main_nav: false
 featimg: /assets/pressBanner.jpg
 subpage: services
-pageTitle: Product Strategy Approach
-pageTitle2: Our Experience
+pageTitle: How we do Product Strategy?
+pageTitle2: Our Expertise
 pageText: When it comes to navigating from your organization’s initial concept to finalized product delivery, we’re experts. By creating products driven by user outcomes, instead of features, we can empower your users to take actions that meet and exceed your organizational goals.
 header: Products and Solutions that inspire audiences
 services:
   service1:
     head: Identify & Strategize
-    img: /assets/cap-icon1.png
+    img: /assets/strategize.svg
     txt: Discover the real root of your issues and find solutions that scale past the projected life of the product. Build a flexible roadmap that allows your project to pivot with the ever-changing demands of your organization.
   service2:
     head: Define Success
-    img: /assets/cap-icon2.png
+    img: /assets/Success.svg
     txt: Establish success criteria that enable users to take actions that freely align with organizational objectives and choose the best medium for your organization's project, from mobile first to native applications.
   service3:
     head: Establish Design Pillars
-    img: /assets/cap-icon3.png
+    img: /assets/Pillars.svg
     txt: Establish strategies that enable users to take actions that freely align with organizational objectives.
   service4:
     head: Execution
-    img: /assets/cap-icon4.png
+    img: /assets/execution.svg
     txt: Prioritize the riskiest product assumptions to build, evaluate, and iterate quickly to strengthen your solution and ultimately deliver the best version of the final product.
 experiences:
   experience1:

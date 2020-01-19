@@ -18,8 +18,8 @@ description: >
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-# baseurl: "http://healthstarinfo.com/goraft" # the subpath of your site, e.g. /blog/
-url: "http://healthstarinfo.com/goraft" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://goraft.tech" # the base hostname & protocol for your site
 cover: "/assets/header_image_big.jpg"
 logo: "/assets/logo.png"
 
@@ -49,8 +49,8 @@ jekyll-archives:
 # Disqus comments
 # disqus_shortname: bencentra
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+#Google analytics
+ga_tracking_id: "UA-18253952-2"
 
 # Category descriptions (for archive pages)
 descriptions:

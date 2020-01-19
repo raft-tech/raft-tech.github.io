@@ -24,6 +24,7 @@ $large: 992px;
 $xlarge: 1200px;
 
 @import 'navigation';
+@import 'work';
 
 @font-face {
     font-family: "AvantGardeBold";
@@ -277,6 +278,10 @@ section .section-title {
   height: 70vw;
 }
 
+.home-hero {
+  padding-top: 25px;
+}
+
 @media (min-width: $medium) {
   #hero {
     height: auto;
@@ -372,10 +377,7 @@ section .section-title {
   font-size: 20px;
 }
 
-.contact-map {
-  width: 100% !important;
-  height: 100%;
-}
+
 
 .site-footer .wrapper .site-contact a:hover {
   text-decoration: none;
@@ -775,6 +777,7 @@ a.btn-card {
 
 .page-content img {
   width: auto;
+  /* max-height: 125px; */
 }
 
 .shared_header_icon {
@@ -868,6 +871,10 @@ text-decoration: none;
       border-bottom: 1px solid #e4e4e4;
     }
 
+    .service-img {
+      max-height: 125px;
+    }
+
     @media (min-width: $medium){
       flex-flow: row nowrap;
       .service-border{
@@ -930,15 +937,7 @@ text-decoration: none;
       width: 100%;
     }
 
-    .map {
-      background-image: url('../assets/map.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 200px;
-      width: 100%;
 
-    }
 
     @media (min-width: $medium){
       flex-flow: row nowrap;
@@ -952,3 +951,18 @@ text-decoration: none;
     }
   }
 }
+
+#map {
+  height: 200px;
+  width: 100%;
+  margin-top: 25px;
+
+  @include media($medium){
+    margin-top: 0;
+  }
+}
+
+.gm-style img{max-height:none;}
+
+
+
