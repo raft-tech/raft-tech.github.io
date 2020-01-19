@@ -46,5 +46,5 @@ experiences:
     text: Etcd (the brain behind K8s) is a prized component for attackers to get access to. Our team uses authentication and firewalls to restrict access to etcd as well as encrypt the data in etcd (at rest).
   experience4:  
     head: Falco
-    text: Our team is involved with the open source Falco project for container native runtime security. Working at the most basic layer, the kernel, our team (using Falco) can detect anomalous activity at both application and infrastructure level.
+    text: Our team participates with the open source Falco project for container native runtime security. Working at the most basic layer, the kernel, our team (using Falco) can detect anomalous activity at both application and infrastructure level.
 ---
