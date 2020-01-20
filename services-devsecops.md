@@ -37,14 +37,14 @@ services:
 experiences:
   experience1:
     head: Kubernetes
-    text: The only thing more important than building a good product efficiently, is launching a stable and secure product quickly. The Kubernetes (K8s) open-source system allows us to do just that, utilizing it’s revolutionary capacity to design, deploy and manage cluster based containers systems, our team utilizes K8s Admission Control and RBAC to ensure the public facing clusters are secure with least privilege.
+    text: Open source ecosystem for orchestration, managing and customizing application specific workflows, and automating at scale is the key to launching a stable and secure product quickly. , Our team utilizes it’s revolutionary capacity to design, deploy and manage cluster based containers systems, and K8s Admission Control, and RBAC to ensure the public facing clusters are secure.
   experience2:
     head: Service Mesh
-    text: Our team uses both Edge Routing (using Ambassador - Envoy) and Ingress (using Istio - Envoy) to secure network communication down to the pod level. Using Istio as a sidecar, our team provides authentication, observability, relillience, and traffic management to each microservices.
+    text: Scaling and Securing microservices as they grows in size and complexity can become difficult to manage and understand. Using Service Mesh, our team addresses these challenges where cross-cutting concerns, such as service discovery, service-to-service and origin-to-service security, observability and resiliency, are configured as code  Our team uses both Edge Routing (using Ambassador - Envoy) and Ingress (using Istio - Envoy) to secure network communication down to the pod level. Using Istio as a sidecar, our team provides authentication, observability, relillience, and traffic management.
   experience3:   
     head: Securing etcd
     text: Etcd (the brain behind K8s) is a prized component for attackers to get access to. Our team uses authentication and firewalls to restrict access to etcd as well as encrypt the data in etcd (at rest).
   experience4:  
     head: Falco
-    text: Our team participates with the open source Falco project for container native runtime security. Working at the most basic layer, the kernel, our team (using Falco) can detect anomalous activity at both application and infrastructure level.
+    text: Kubernetes runtime security in production environments is critical and necessary to avoid any operational and reputational costs of security breaches. Our team participates with the open source Falco project for container native runtime security. Working at the most basic layer, the kernel, our team can detect anomalous activity at both application and infrastructure level.
 ---
