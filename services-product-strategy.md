@@ -7,7 +7,7 @@ featimg: /assets/pressBanner.jpg
 subpage: services
 pageTitle: How we do Product Strategy?
 pageTitle2: Our Expertise
-pageText: sd
+pageText: When it comes to navigating from your organization’s initial concept to finalized product delivery, we’re experts. By creating products driven by user outcomes, instead of features, we can empower your users to take actions that meet and exceed your organizational goals.
 header: Creating Powerful Products and Solutions that inspire audiences.
 services:
   service1:
