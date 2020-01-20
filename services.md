@@ -3,7 +3,7 @@ layout: services
 title: Services
 permalink: /services/
 main_nav: true
-order: 2
+order: 3
 featimg: /assets/pressBanner.jpg
 pageTitle: Our Approach
 

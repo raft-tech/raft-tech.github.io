@@ -3,7 +3,7 @@ layout: join
 title: Join
 permalink: /join/
 main_nav: true
-order: 3
+order: 4
 featimg: /assets/banner.jpg
 header: Be a part of our journey!
 ---
