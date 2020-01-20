@@ -25,7 +25,7 @@ works:
 
   work3:
     head: Data Science
-    img: /assets/devsecops.png
+    img: /assets/Data-Science-LG.jpg
     challenge: Create an innovative solution to detect objects in digital images and videos in real time from aerial imagery. Multiple objects should detected at any given time with bounding box coordinates.
     solution: We developed a product with a success rate of approximately 95% of detecting objects from the real world images and videos using a machine learning algorithm based on Dataset for Object DeTection in Aerial images (DOTA). The machine learning model can detect up to 15 objects (cars, cargo, trucks, airplanes, etc). The model is wrapped around with a RESTful API and is containerized as a microservice. We also  built an end-to-end ML pipeline using Kubeflow that is capable of constantly automatically re-training the model after it has been put in production.
     technique: Convolution Neural Network (CNN), PyTorch, Kubeflow, ImageMagik, OpenCV, Generative Adverserial Networks (GANs), Hyperparameter Tuning
