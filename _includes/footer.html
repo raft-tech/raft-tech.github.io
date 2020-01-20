@@ -97,32 +97,23 @@ $(document).ready(function() {
     google.maps.event.trigger(map, "resize");
   }
 
+  /* Intersection Observer to change nav background on scroll */
+  let threshold = 0.5;
+  let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold
+  }
 
-  (function($) { // Begin jQuery
-    $(function() { // DOM ready
-      // Mobile Nav - toggle dropdown on touch
-      $('.navigation-menu > .nav-link').click(function(e){
-        const menu = $(this).find('.nav-dropdown')
-        menu.hasClass('visible') 
-          ? menu.removeClass('visible')
-          : menu.addClass('visible')
-        e.stopPropagation();
-      })
+  function changeNavBgColor(entries, observer) {
+    entries[0].intersectionRatio < threshold
+      ? $('#navigation').addClass('scrolled')
+      : $('#navigation').removeClass('scrolled')
+  }
 
-      // If a link has a dropdown, add sub menu toggle.
-      $('.navigation-menu > .nav-link').hover(function(e){
-        $('.nav-dropdown').removeClass('visible');
-        $(this).find('.nav-dropdown').addClass('visible')
-        e.stopPropagation();
-      })
-
-      $('.nav-dropdown').mouseleave(function(e) {
-        $(this).removeClass('visible');
-        e.stopPropagation();
-      });
-
-    }); // end DOM ready
-  })(jQuery); // end jQuery
+  let observer = new IntersectionObserver(changeNavBgColor, options); 
+  let target = document.querySelector('#hero');
+  observer.observe(target);
 </script>
 
 <script async defer
