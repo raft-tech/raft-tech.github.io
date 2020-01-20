@@ -8,29 +8,25 @@ layout: default
   </div>
 </div>
 
-<div class="row work">
-  <article class="post-content">
-    {% include /data/work_one.html %}
-  </article>
-</div>
-
-<div class="row work">
-    <article class="post-content">
-      {% include /data/work_two.html %}
-    </article>
-</div>
-
-
-<div class="row work">
-    <article class="post-content">
-      {% include /data/work_three.html %}
-    </article>
-</div>
-
-<div class="row work">
-    <article class="post-content">
-      {% include /data/work_four.html %}
-    </article>
-</div>
-
+    {% assign count = 0 %}
+    {% for work in page.works %}
+    <div class="row work">
+      <article class="post-content">
+        <h2>{{ work[1]["head"] }}</h2>
+        <div class="work-row {% cycle '', 'reverse' %}">
+          <div id="problem">
+            <img src={{ work[1]["img"] }}></img>
+          </div>
+          <div id="solution">
+            <p><strong>Challenge</strong></p>
+            <p class="text">{{ work[1]["challenge"] }}</p>
+            <p><strong>Solution</strong></p>
+            <p class="text">{{ work[1]["solution"] }}</p>
+            <p><strong>Techniques</strong></p>
+            <p class="text">{{ work[1]["technique"] }}</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    {% endfor %}
 
