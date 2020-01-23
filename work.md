@@ -32,7 +32,7 @@ works:
 
   work4:
     head: Product Strategy
-    img: /assets/devsecops.png
+    img: /assets/Product-Strategy-DEV.jpg
     challenge: Our client engaged us to digitize paper based financial educational tools that empower consumers to make better informed decisions about their financial health.
     solution: Following user-centered and progressive web approach, we created mobile-first tools that aligned with product strategy and met the needs of the target consumers. Our team created these tools using a combination of best practices and creative problem solving, including evaluating the current paper based financial tool, analysing market trends, interviewing consumer for their needs and wants, researching industry partnerships and performing competitor research.
     technique: Literature Review, Environmental Scan, Consumer Tool Analysis, Stakeholder and focus group interviews, User personas development, Empathy mapping, Wireframes, Clickable Prototypes, Usability Testing.   
