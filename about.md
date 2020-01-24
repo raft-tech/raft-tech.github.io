@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 main_nav: true
 order: 1
-featimg: /assets/aboutBanner1.jpg
+featimg: /assets/aboutBanner.jpg
 header: Our people and culture set us apart
 ceoImage: /assets/Shubhi_hi-res.jpg
 ceoName: Shubhi Mishra J.D., M.S. (CEO)
