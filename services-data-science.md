@@ -17,9 +17,9 @@ services:
   service2:
     head: Prototype & Iterate
     img: /assets/Proof_of_concept.svg
-    txt: Build a Minimal Viable Product (MVP) in short time and continuously improve the MVP by rapid iterations and automatically train the solution to become more efficient and enhance the quality of data insights.
+    txt: Build a Minimum Viable Product (MVP) in short time and continuously improve the MVP by rapid iterations and automatically train the solution to become more efficient and enhance the quality of data insights.
   service3:
-    head: Detect Bias
+    head: Bias Detection
     img: /assets/Bias.svg
     txt: Monitor for bias before, during and after modelling in the system and remove them using a mix of pre-processing, training, and post-processing methods including regularizer, surrogate models,  fair machine learning models, or by calibrating the hyper parameters.
   service4:
@@ -32,7 +32,7 @@ experiences:
     text: Putting a trained model in production without having a pipeline to continuously retrain the model is bound to make that model outdated as time progresses. Our engineers build a data science pipeline using Kubeflow to ensure the data pre-processing, parameter tuning, and model training steps are part of the CI/CD pipeline and can leverage the multi-step workflow model  
   experience2:
     head: Data Pipelines
-    text: When it comes to transferring huge volumes of information quickly, powerful large-scale data processing is vital. Utilizing open-source, lightning fast, reactive and distributed cluster computing frameworks (such as Spark, MapReduce, Hadoop, Hive, Kafka, Casandra, ElasticSearch, and Akka) we can create a data pipeline tailored to the specific needs of your project. 
+    text: When it comes to transferring huge volumes of information quickly, powerful large-scale data processing is vital. Utilizing open source, lightning fast, reactive and distributed cluster computing frameworks (such as Spark, MapReduce, Hadoop, Hive, Kafka, Casandra, ElasticSearch, and Akka) we can create a data pipeline tailored to the specific needs of your project. 
   experience3:  
     head: Machine Learning
     text: Our team has expertise in the algorithms and the maths at the core of Machine Learning. Whether you're looking for object detection, predictive analysis, model trending, or  bias detection, our team can work with small amount of training data to prepare a model with high accuracy. Our focus on natural language processing (NLP), computer vision, and predictive analytics allow you to automate decision-making and pattern recognition processes trained from your data sets or ones carefully selected by us.

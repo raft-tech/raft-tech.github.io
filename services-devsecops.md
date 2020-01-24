@@ -13,7 +13,7 @@ services:
   service1:
     head: Developer Focused
     img: /assets/Developer_Focused.svg
-    txt: Our DevSecOps pipelines are focused on the productivity of the Developers while at the same time ensuring the security is ensured. As developers embrace cloud native platforms such as Kubernetes, our team builds pipelines that provide the developers a direct view into the security so that security isn’t an after-thought.
+    txt: Our DevSecOps pipelines are focused on the productivity of the developers while at the same time ensuring the security is ensured. As developers embrace cloud native platforms such as Kubernetes, our team builds pipelines that provide the developers a direct view into the security so that security isn’t an after-thought.
   service2:
     head: Zero Trust
     img: /assets/Zero_trust.svg
@@ -21,15 +21,15 @@ services:
   service3:
     head: Pipeline Driven
     img: /assets/Pipeline_Driven.svg
-    txt: We believe in a cloud native environment most things should be automated. Whether that’d be finding CVEs at the time of building container images, static/dynamic code analysis, runtime security, testing, or deploying, our team prepares pipelines that trigger all these things at the time of merge into master branch
+    txt: We believe in a cloud native environment most things should be automated. Whether that would be finding CVEs at the time of building container images, static/dynamic code analysis, runtime security, testing, or deploying, our team prepares pipelines that trigger all these things at the time of merge into master branch
   service4:
     head: Continuous Monitoring
     img: /assets/Continuous_Monitoring.svg
-    txt: Receiving Authority To Operate (ATO) shouldn’t be one all and be all for the solution. Rather than spending man hours to periodically manually going through the compliance of the security controls, our team believes in continuous monitoring that is triggered at the time of any change to the system.
+    txt: Receiving Authority To Operate (ATO) shouldn’t be-all and end-all for the solution. Rather than spending man hours to periodically manually go through the compliance of the security controls, our team believes in continuous monitoring that is triggered at the time of any change to the system.
   service5:
     head: Immutable
     img: /assets/immutability.svg
-    txt: Null Pointer Exceptions and Buffer Overflows are a thing of the past when using Immutable structures and pattern matching. At the core of our teams approach to immutability is automation. We automate every part of the deployment down to the lowest level so that any change in a deployed system requires deploying a new system.
+    txt: Null Pointer Exceptions and Buffer Overflows are a thing of the past when using Immutable structures and pattern matching. At the core of our team's approach to immutability is automation. We automate every part of the deployment down to the lowest level so that any change in a deployed system requires deploying a new system.
   service6:
     head: GitOps
     img: /assets/gitops.svg
@@ -37,7 +37,7 @@ services:
 experiences:
   experience1:
     head: Kubernetes
-    text: Open source ecosystem for orchestration, managing and customizing application specific workflows, and automating at scale is the key to launching a stable and secure product quickly. , Our team utilizes it’s revolutionary capacity to design, deploy and manage cluster based containers systems, and K8s Admission Control, and RBAC to ensure the public facing clusters are secure.
+    text: Open source ecosystem for orchestration, managing and customizing application specific workflows, and automating at scale is the key to launching a stable and secure product quickly. , Our team utilizes its revolutionary capacity to design, deploy and manage cluster based containers systems, and K8s Admission Control, and RBAC to ensure the public facing clusters are secure.
   experience2:
     head: Service Mesh
     text: Scaling and Securing microservices as they grows in size and complexity can become difficult to manage and understand. Using Service Mesh, our team addresses these challenges where cross-cutting concerns, such as service discovery, service-to-service and origin-to-service security, observability and resiliency, are configured as code  Our team uses both Edge Routing (using Ambassador - Envoy) and Ingress (using Istio - Envoy) to secure network communication down to the pod level. Using Istio as a sidecar, our team provides authentication, observability, relillience, and traffic management.
