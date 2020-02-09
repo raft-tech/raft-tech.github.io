@@ -546,21 +546,22 @@ $speed: 300ms;
 #clients {
   .section-title {
     color: $purple;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 
   .logos {
     display: flex;
     justify-content: space-evenly;
+    flex-flow: row wrap;
     align-items: center;
-    width: 80%;
-    margin: 20px auto 50px auto;
+    margin: 0px auto 20px auto;
 
     .logo {
       border-radius: 50%;
-      width: 10vw;
-      height: 8vw;
-      background-color: $darkgrey;
+      width: 22vw;
+      height: 22vw;
+      margin: 0 3vw 10vw 3vw;
+      background-color: #fff;
 
       img {
         height: 100%;
@@ -578,11 +579,13 @@ $speed: 300ms;
       font-size: 3.5rem;
     }
     .logos {
+      flex-flow: row nowrap;
+      margin: 20px auto 50px auto;
 
       .logo {
-        width: 10vw;
-        height: 8vw;
-        background-color: #fff;
+        width: 9vw;
+        height: 9vw;
+        margin: auto;
       }
 
     }
