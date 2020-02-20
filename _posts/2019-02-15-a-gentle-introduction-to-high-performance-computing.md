@@ -4,6 +4,7 @@ title:  "Intro to HPC"
 date:   2019-02-15
 categories:
 featimg: /assets/images/featimage/feb_15_2019.jpeg
+bgimg: /assets/images/bgimg/hpc.jpg
 ---
 
 **CIO LEVEL SUMMARY:**

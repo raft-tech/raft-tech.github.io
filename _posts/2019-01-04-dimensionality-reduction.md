@@ -4,6 +4,7 @@ title:  "Dimensionality Reduction"
 date:   2019-01-04
 categories:
 featimg: /assets/images/featimage/jan_04_2019.png
+bgimg: /assets/images/bgimg/pca.jpg
 ---
 
 **CIO Level Summary**

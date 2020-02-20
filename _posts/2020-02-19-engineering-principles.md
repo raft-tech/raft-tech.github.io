@@ -4,6 +4,7 @@ title:  "Raft Engineering Principles"
 date:   2020-02-19
 categories:
 featimg: /assets/images/featimage/engineering_principles.jpg
+bgimg: /assets/images/bgimg/eng.jpg
 ---
 
 These principles are a part of our culture and each project we undertake. They are not specific to any programming language, framework, platform, or tool, but specific to the fundamentals and best practices we use when building and maintaining software for ourselves and our customers. By being open and transparent about sharing these principles, we want to show how the sausage is made.
