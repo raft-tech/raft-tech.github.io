@@ -33,7 +33,7 @@ Every behind-the-scenes decision we take as engineers has an impact on the end u
 
 ## Find the Right Tools for the Right Job 
 
-We have a generalist approach when it comes to programming languages, frameworks, libraries, platforms, etc. We believe the right tools can only be used for the right job when engineers truly understand the mission. Once we understand the problem that the solution is being built for, we can choose/advise on the best tools. Problems, like data validation, are easier to solve with strongly typed languages with good type safety (e.g. Scala, Java) than dynamically typed languages (e.g. Ruby, Python). Running application that need horizontal scalability won't work well as well on bare bones EC2 as containerizing it on Kubernetes. A problem requiring a machine learning model will operate better on R or Python ecosystems than most other languages. Below are some questions we ask ourselves when choosing these tools: 
+We have a generalist approach when it comes to programming languages, frameworks, libraries, platforms, etc. We believe that understanding the mission by thoroughly evaluating the problem to be solved is a precursor to selecting the most effective tool chain. Problems like data validation are easier to solve with strongly typed languages (e.g. Scala, Java) rather than dynamically typed (e.g. Ruby, Python). Running an application that needs horizontal scalability on bare bones EC2 won't work as well as containerizing it on Kubernetes. A problem requiring a machine learning model will operate better in an R or Python ecosystem than in most others. Below are some questions we ask ourselves when choosing these tools:
 
 - What are the ecosystems and communities around these tools?
 - Will the tools allow us to pivot, iterate, and ship faster?
@@ -47,9 +47,8 @@ Once you understand the fundamentals of a Git repository, it is clear why Git is
 
 ## Sustain High Quality (Agile)
 
-We don't like to pigeonhole our team into following a specific software development methodology as long as it is [not SAFe](https://software.af.mil/wp-content/uploads/2019/12/CSO-MFR-on-Agile-Frameworks-12282019.pdf). Rather, the cornerstones of our software development principles allow our engineering teams to produce high-quality features quickly.
+Our teams are not pigeonholed into following a specific software development methodology as long as it is [not SAFe](https://software.af.mil/wp-content/uploads/2019/12/CSO-MFR-on-Agile-Frameworks-12282019.pdf). Rather, the cornerstones of our software development principles allow our engineering teams to produce high-quality features quickly.
 
-- Sustainable high quality
 - Working in short (2 to 3 week) sprints
 - Breaking big tasks into smaller tasks that can be validated
 - Sprint planning -> Execution -> Retrospective -> Iterate
@@ -71,11 +70,11 @@ All engineers are encouraged to contribute their learnings back to the open sour
 
 ## Cut the Buzz Words
 
-We're not fans of buzz words. Buzz words are great for helping creative sales teams simplify complicated engineering topics for non-technical folk. However, more often than not, they are misleading and favor vendor preference. For example, this blog is completely "Serverless," but we have no idea whether it runs on AWS, Azure, Bare Metals, etc. We don't throw "Machine Learning" at "Big Data" and expect magical insights. Rather, we focus on the business insights our users desire and work backwards to pick the learning algorithms that will work best over time with the least [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error).
+We're not fans of buzz words. Buzz words are great for helping creative sales teams simplify complicated engineering topics for non-technical folk. However, more often than not, they are misleading and exhibit a vendor bias. For example, this blog is completely "Serverless," but we have no idea whether it runs on AWS, Azure, Bare Metals, etc. We don't throw "Machine Learning" at "Big Data" and expect magical insights. Rather, we focus on the business insights our users desire and work backwards to pick the learning algorithms that will work best over time with the least [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error).
 
 ## Design for Scale 
 
-We work on public facing applications that parse, validate, and ingest over 40 million records in 60 days (with over 80% of the submissions in the last 10 days). While designing applications, we think about how the applications will scale early on in the design process. Throwing cloud resources at a scale problem only gets you so far. We choose programming languages capable of handling concurrency with ease (e.g. Scala), software patterns like Command Query Responsibility Segregation (CQRS), modular micro-services, event driven systems (e.g. Kafka), and platforms capable of keeping up with scale (e.g. Kubernetes). These engineering decisions are critical to the success of the applications we work on in the public sector, so we dedicate specific sprints early in the project life cycle to make these decisions. The decisions we make aren't set in stone but rather allow for flexibility and being able to pivot down the line without significant cost. 
+We work on public facing applications that parse, validate, and ingest over 40 million records in 60 days (with over 80% of the submissions in the last 10 days). While designing applications, we think about how the applications will scale early on in the design process. Throwing cloud resources at a scale problem only gets you so far. We choose programming languages capable of handling concurrency with ease (e.g. Scala), software patterns like Command Query Responsibility Segregation (CQRS), modular micro-services, event driven systems (e.g. Kafka), and platforms capable of keeping up with scale (e.g. Kubernetes). These choices are critical to the success of the applications we work on in the public sector, so we dedicate specific sprints early in the project life cycle to make these engineering decisions.
 
 ## Always Be Learning
 
@@ -88,7 +87,7 @@ Any manually-performed, technical task that _can_ be automated _must_ be automat
 
 ## Share Lessons Learned 
 
-Engineering, especially software engineering, allows for starting small, validating, learning from mistakes, and iterating. Sharing the knowledge gained doesn't go far enough if there isn't a formal process of incorporating that knowledge into a document, script, or automated pipeline. At the end of each retrospective, we hold a "dev talk" where each engineer has a chance to share what they learned and how they've incorporated it into our current processes. 
+Engineering, especially software engineering, allows for starting small, validating, learning from mistakes, and iterating. Knowledge gained doesn't go far unless there is a formal process for incorporating that knowledge into a document, script, or automated pipeline. At the end of each retrospective, we hold a "dev talk" where each engineer has a chance to share what they learned and how they've incorporated it into our current processes. 
 
 ## Obey the 15-Minute Rule
 
