@@ -28,7 +28,7 @@ These principles are a part of our culture and each project we undertake. They a
 
 ## Start With the User 
 
-Every behind-the-scenes decision we take as engineers has an impact on the end user. The impact might be direct (e.g. adding a large dependency), indirect (e.g. fixing a CVE), or specific to a subset of users. But thinking about that impact during every stage of the decision-making process allows us to pivot our approach and cross collaborate with our user experience team. 
+Every behind-the-scenes decision we take as engineers has an impact on the end user. The impact might be direct (e.g. adding a large dependency), indirect (e.g. fixing a CVE), or specific to a subset of users. But thinking about that impact during every stage of the decision-making process allows us to collaborate with our user-experience team and, when advantageous, pivot our approach. 
 
 
 ## Find the Right Tools for the Right Job 
