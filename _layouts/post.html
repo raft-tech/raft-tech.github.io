@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url(/assets/whoweareBanner.jpg);"{% endif %}>
+<div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %}" {% if page.featimg %}style="background-image: url({{page.bgimg}});"{% endif %}>
   <div class="about-cover scrim">
     <div class="post-header-container {% if page.cover %}has-cover{% endif %}" {% if page.cover %}style="background-image: url({{ page.cover | prepend: site.baseurl }});"{% endif %}>
       <div class="scrim {% if page.cover %}has-cover{% endif %}">

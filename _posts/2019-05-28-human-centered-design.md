@@ -4,6 +4,7 @@ title:  "Human Centered Design"
 date:   2019-05-28
 categories:
 featimg: /assets/images/featimage/venn.jpg
+bgimg: /assets/images/bgimg/hcd.jpg
 ---
 
 **Let’s start with the basics..**
