@@ -455,7 +455,7 @@ computer vision to recognize the location of surgical tools during
 laparoscopic surgery[^4]. And as these fields increase the amount of
 image data they collect, the uses for CNNs will grow.
 
-**REFRENCES**
+**REFERENCES**
 
 [^1]: Pereira, S., Pinto, A., Alves, V., & Silva, C. A. (2016). Brain
     tumor segmentation using convolutional neural networks in MRI

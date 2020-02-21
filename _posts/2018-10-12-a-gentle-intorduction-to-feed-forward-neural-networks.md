@@ -480,18 +480,18 @@ your tasks? Get in touch with us!*
 4.  [Wisconsin Breast Cancer
     Data](https://data.world/health/breast-cancer-wisconsin)
 
-**Refrences:**
+**References:**
 
-[^1]: [//www.openclinical.org/neuralnetworksinhealthcare.html](//www.openclinical.org/neuralnetworksinhealthcare.html)
+[^1]: [Artificial Neural Networks in Healthcare: A Short Review](http://www.openclinical.org/neuralnetworksinhealthcare.html)
 
-[^2]: [//citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&rep=rep1&type=pdf](//citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&rep=rep1&type=pdf)
+[^2]: [Approximation with Artificial Neural Networks](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&rep=rep1&type=pdf)
 
-[^3]: [https://data.world/health/breast-cancer-wisconsin](https://data.world/health/breast-cancer-wisconsin)
+[^3]: [Breast Cancer Wisconsin (Diagnostic) Data Set](https://data.world/health/breast-cancer-wisconsin)
 
-[^4]: [https://pdfs.semanticscholar.org/9779/cb9faedb85515370590f89e8a1f1f922fdca.pdf](https://pdfs.semanticscholar.org/9779/cb9faedb85515370590f89e8a1f1f922fdca.pdf)
+[^4]: [New Approaches for Image Compression Using Neural Network](https://pdfs.semanticscholar.org/9779/cb9faedb85515370590f89e8a1f1f922fdca.pdf)
 
-[^5]: [https://arxiv.org/abs/1412.6830](https://arxiv.org/abs/1412.6830)
+[^5]: [Learning Activation Functions to Improve Deep Neural Networks](https://arxiv.org/abs/1412.6830)
 
-[^6]: [https://data.world/health/breast-cancer-wisconsin](https://data.world/health/breast-cancer-wisconsin)
+[^6]: [Breast Cancer Wisconsin (Diagnostic) Data Set](https://data.world/health/breast-cancer-wisconsin)
 
-[^7]: [https://www.ncbi.nlm.nih.gov/pubmed/20865492](https://www.ncbi.nlm.nih.gov/pubmed/20865492)
+[^7]: [An MLP neural network for ECG noise removal based on Kalman filter](https://www.ncbi.nlm.nih.gov/pubmed/20865492)
