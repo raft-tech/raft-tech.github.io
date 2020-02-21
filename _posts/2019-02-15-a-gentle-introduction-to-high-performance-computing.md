@@ -194,6 +194,6 @@ or searching through large amounts of data.
 
 [HPC Structure](http://hpc.fs.uni-lj.si/sites/default/files/HPC_for_dummies.pdf)
 
-**REFRENCES:**
+**REFERENCES:**
 
 [^1]: [https://arxiv.org/pdf/1301.2158.pdf](https://arxiv.org/pdf/1301.2158.pdf)
