@@ -17,10 +17,10 @@
 
         {% endif %}
         <a href="{{ post.url | prepend: goraft/ | replace: '//', '/'}}">
-            <h3>{{ post.title | truncate: 30 }}</h3>
+            <h3>{{ post.title | truncate: 27 }}</h3>
             <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         </a>
-          <p class="post-content">{{ post.content | strip_html | truncate: 180 }}</p>
+          <p class="post-content">{{ post.content | strip_html | truncate: 165 }}</p>
           <a href="{{ post.url | prepend: goraft/ | replace: '//', '/'}}">Read More</a>
     </div>
 
