@@ -11,7 +11,7 @@ In with the new, and out with the old. As we creep into a new decade of Mobile U
 
 ## Menus
 ### OUT: Hamburger Menus 
-![hamburger menu](/assets/images/ui-design-trends/out-hamburger-menu.png)
+![hamburger menu](/assets/images/ui-design-trends/out-hamburger-menu.jpg)
 The Hamburger menu is a staple of UI design, so old it can legally drink. In this age of minimalist design, it’s seen a rise in popularity because it neatly tucks everything away, leaving the user with an uncluttered UI. Unfortunately, it’s a little too clean, leaving the user aimlessly searching on a nearly blank screen to make their first input. As phone screens grow larger in size and higher in definition, users find it harder to touch the top part of their screen. Often times these buttons are usually placed in the same location as the standard mobile navigation back button, creating a clash of UI elements.
 
 ### IN: Tab Bar 
@@ -29,7 +29,7 @@ While we wait for our fingers to grow to accommodate larger screens, designing f
 
 ## Listing Items
 ### OUT: Carousels
-![Carousels](/assets/images/ui-design-trends/out-carousels.png)
+![Carousels](/assets/images/ui-design-trends/out-carousels.jpg)
 The UI industry as a whole has finally broken up their love affair with carousels. Carousels are counterintuitive, requiring UI signposts like arrows, mirror illusions, dots, and lines to prompt users to interact with them. They can also limit discoverability due to sequential access, and seemingly endless listings may create user fatigue. (If you’ve ever swiped aimlessly through a random collection of movies on Netflix, you know what we mean.)
 
 ### IN: Card UI  
