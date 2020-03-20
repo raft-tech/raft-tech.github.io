@@ -5,6 +5,7 @@ date:   2020-03-05
 categories:
 featimg: /assets/images/featimage/pwa-icon.jpg
 bgimg: /assets/images/bgimg/pwa-future.jpg
+author: Shubhi Mishra
 ---
 
 Native apps are [doomed](https://medium.com/javascript-scene/native-apps-are-doomed-ac397148a2c0) and responsive design is [dead](https://uxdesign.cc/stop-using-responsive-design-f0922e7882b2), yet [more than half](https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics) of all website traffic worldwide is generated through mobile devices.  How can Business and Product Owners continue to maximize device reach while reducing development effort? The answer: Progressive Web Apps (PWAs).  
