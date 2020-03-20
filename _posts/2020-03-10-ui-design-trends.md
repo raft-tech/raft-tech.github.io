@@ -5,6 +5,7 @@ date:   2020-03-10
 categories:
 featimg: /assets/images/featimage/ui-design-trends.jpg
 bgimg: /assets/images/bgimg/ui-design-trends.jpg
+author: Shubhi Mishra
 ---
 
 In with the new, and out with the old. As we creep into a new decade of Mobile UI and Web Design, the team at Raft sat down to select our favorite trends from across the web.  
