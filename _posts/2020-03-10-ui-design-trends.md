@@ -38,5 +38,5 @@ The UI industry as a whole has finally broken up their love affair with carousel
 With the rise in popularity of material design, developers are literally putting all their cards on the table. Cards display lists as clean, uniform containers spread out evenly across the UI. When designed well, cards present information in small bite-sized chunks, inviting engagement and helping users quickly navigate their options. Although cards increase the depth of scroll, they create a more impactful experience by grouping eye-catching imagery, descriptive text, and associated interactions. Cards are easy to scale, integrate well with the atomic design systems, and allow for a much wider spectrum of screen interaction, including swiping, scrolling, tapping and clicking.
 
 ## Contact Us
-If you’re interested in designing a Native App or Progressive Web App, our team of UX gurus have their fingers on the pulse of the mobile development community. Reach out to us at hireus@goraft.tech.
+If you’re interested in designing a Native App or Progressive Web App, our team of UX gurus have their fingers on the pulse of the mobile development community. Reach out to us at [hireus@goraft.tech](mailto:hireus@goraft.tech).
 
