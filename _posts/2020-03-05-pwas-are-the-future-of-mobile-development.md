@@ -37,4 +37,4 @@ Like any rapidly evolving technology PWAs come with their fair share of trade of
 -	**Legacy Compatibility:** Support for enhanced features in PWAs is understandably lacking on older devices, and even differs between modern mobile operating systems.  However, the “Progressive” part of “PWA” encourages developers to make the most of the features available on each device. 
 
 ## Contact Us
-Whether you’re looking to transition from a native app or starting from scratch, we can help you decide if a PWA is right for your project. Reach out at hireus@goraft.tech.  
+Whether you’re looking to transition from a native app or starting from scratch, we can help you decide if a PWA is right for your project. Reach out at [hireus@goraft.tech](mailto:hireus@goraft.tech). 
