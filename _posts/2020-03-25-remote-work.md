@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Our Remote Work Best Practices"
-shorter_title: "Our Remote-First Culture"
+short_title: "Our Remote-First Culture"
 date: 2020-03-25
 categories:
 featimg: /assets/images/featimage/TELEWORK_Icon.jpg 

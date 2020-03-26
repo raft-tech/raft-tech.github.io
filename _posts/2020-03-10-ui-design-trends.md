@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Emerging Mobile UI and Web Design Trends of 2020"
+short_title: "Emerging Mobile Trends"
 date:   2020-03-10
 categories:
 featimg: /assets/images/featimage/ui-design-trends.jpg
