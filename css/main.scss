@@ -970,5 +970,15 @@ text-decoration: none;
 
 .gm-style img{max-height:none;}
 
+.post {
+  img.float-img-right {
+    margin-bottom: 20px;
 
-
+    @include media($large){
+      float: right; 
+      padding: 10px;
+      height: 400px;
+      margin-bottom: auto;
+    }
+  }
+}
