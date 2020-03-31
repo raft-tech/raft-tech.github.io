@@ -1,16 +1,17 @@
 ---
 layout: post
 title:  "5 Things Every Developer Should Know About Repo Documentation"
-shorter_title: "The Importance of READMEs"
+short_title: "The Importance of READMEs"
 date:   2020-04-01
 categories:
-featimg: assets/images/featimage/Documentation_feat.jpg
-bgimg: assets/images/bgimg/Documentation_bg.jpg
+featimg: /assets/images/featimage/Documentation_feat.jpg
+bgimg: /assets/images/bgimg/Documentation_bg.jpg
 author: Barak Stout
 ---
+
 Documentation is a vital part of the development process that is often overlooked. In the worst cases scenarios, no documentation is recorded at all, leaving an impenetrable wall of code that takes time and resources to decipher. However, many programmers write poor documentation regarding their software and rely on outdated documentation when something goes wrong. This _incomplete documentation_ can be a nightmare for new hires who are often tasked to _"follow the documentation"_. So to establish a practice of developer etiquette, I've created this list of 5 lessons I've recently learned to avoid saddling my fellow developers with poor and incomplete documentation.
 
-<img style="float: right; padding: 10px;" src="assets/images/SingleImages/Documentation_image.jpg" height="400px" alt="Frustrated man at computer with no README documentation">
+<img src="/assets/images/SingleImages/Documentation_image.jpg" class="float-img-right" alt="Frustrated man at computer with no README documentation">
 
 ## 1. Do More Than Just Link to Documentation Repos
 Earlier this week, I was tasked with creating a system backup using a README file left by the previous developer. The very first line in the documentation file referred to another documentation file that was so old the link 404ed. To make matters even worse, the previous developer left the company 8 months ago. While you can and *should* include relevant links in your README, the whole point of a README is to inform others about the specific operation of *your* software. While linking to other documentation repos can be helpful, always provide as much context and information as possible directly in your README file. 
