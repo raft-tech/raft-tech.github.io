@@ -5,6 +5,7 @@ date:   2019-05-28
 categories:
 featimg: /assets/images/featimage/venn.jpg
 bgimg: /assets/images/bgimg/hcd.jpg
+author: Shubhi Mishra
 ---
 
 **Let’s start with the basics..**
