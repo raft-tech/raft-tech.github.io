@@ -9,8 +9,6 @@ bgimg: /assets/images/bgimg/pwa.jpg
 author: Meissa 
 --- 
 
-## PWAs for Security Constrained Environments
-
 [Though we've already expressed our support of Progressive Web Applications (PWAs) as the future of mobile development](https://goraft.tech/2020/03/05/pwas-are-the-future-of-mobile-development.html), I'd like to dive a bit deeper into how they operate and explore a few potential applications. 
 
 ## What makes PWAs secure? 
