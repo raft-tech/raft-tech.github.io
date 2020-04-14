@@ -9,8 +9,6 @@ bgimg: /assets/images/bgimg/pwa.jpg
 author: Meissa 
 --- 
 
-## PWAs for Security Constrained Environments
-
 [Though we've already expressed our support of Progressive Web Applications (PWAs) as the future of mobile development](https://goraft.tech/2020/03/05/pwas-are-the-future-of-mobile-development.html), I'd like to dive a bit deeper into how they operate and explore a few potential applications. 
 
 ## What makes PWAs secure? 
@@ -35,7 +33,7 @@ Though PWAs require connection to an HTTPS server for installation, they would s
 
 ### Low Bandwidth Areas
 
-When operating in areas with low-bandwidth or intermittent connectivity, it is we must be mindful of network loads. These considerations may also be paired with concerns about device storage capacity, and so the size of our application may need to be minimized. Although frameworks such as React or Angular are popular, they may push app sizes beyond the desired threshold. Plain JS is [always an option](https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/), and can help shave crucial KBs. However don't miss out on the large ecosystem of reusable components provided by React, et al. dev communities. Preact provides a strong middle ground as it has the smallest footprint ([3kb vs 80kb for React](https://blog.knoldus.com/preact-an-alternative-to-react/)) of any PWA framework while also providing compatibility with the React ecosystem and better developer [experience than Angular](https://2019.stateofjs.com/front-end-frameworks/#front_end_frameworks_experience_ranking). This means you don't need to sacrifice developer productivity in the process of meeting the requirements of your target devices. 
+When operating in areas with low-bandwidth or intermittent connectivity, we must be mindful of network loads. This considerations may also be paired with concerns about device storage capacity, and so the size of our application may need to be minimized. Although frameworks such as React or Angular are popular, they may push app sizes beyond the desired threshold. Plain JS is [always an option](https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/) and can help shave crucial KBs. However, don't miss out on the large ecosystem of reusable components provided by React, et al. dev communities. [Preact](https://preactjs.com) provides a strong middle ground as it has the smallest footprint ([3kb vs 80kb for React](https://blog.knoldus.com/preact-an-alternative-to-react/)) of any PWA framework while also providing compatibility with the React ecosystem and a better developer [experience than Angular](https://2019.stateofjs.com/front-end-frameworks/#front_end_frameworks_experience_ranking). This means you don't need to sacrifice developer productivity in the process of meeting the requirements of your target devices. 
 
 Though there is an expectation of more frequent network connectivity here than with air gapped devices, our application of optimistic UI updates, combined with a hybrid caching strategy work equally well. Providing users with a consistent experience despite slow/no data transmission capabilities extends the usefulness of our apps and can deliver impactful functionality to regions and communities lacking extensive infrastructure. 
 
