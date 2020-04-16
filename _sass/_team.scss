@@ -1,0 +1,103 @@
+#team {
+  h3 {
+    font-size: 1.72rem;
+    font-weight: bold;
+    color: $purple;
+  }
+
+  ul#members {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+
+    h4,
+    h5 {
+      margin: 0;
+      line-height: normal;
+    }
+
+    li.member {
+      width: calc(33%);
+      justify-content: stretch;
+
+      @media screen and (min-width: $tablet) {
+        & {
+          width: 25%;
+        }
+      }
+
+      a {
+        width: 100%;
+        background-image: attr(data-image);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        color: $purple;
+        position: relative;
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 2;
+          // background-color: rgba(0, 0, 0, 0.3);
+          color: white;
+          color: $purple;
+          transition: background-color 0.3s;
+
+          .name {
+            font-size: 1rem;
+            padding: 0.5rem 0 0 0.75rem;
+            font-weight: bold;
+          }
+
+          .role {
+            font-size: 0.85rem;
+            padding: 0.25rem 0 0.25rem 0.75rem;
+            transition: transform 0.5s, opacity 0.5s;
+          }
+        }
+
+        .plus-icon {
+          position: absolute;
+          bottom: 0;
+          right: 1rem;
+          z-index: 2;
+          color: white;
+          font-size: 2rem;
+          font-weight: bold;
+          opacity: 0;
+          transform: translateY(1rem);
+          transition: transform 0.5s, opacity 0.5s;
+        }
+
+        &:hover {
+          text-decoration: none;
+
+          .overlay {
+            background-color: rgba(58, 27, 121, 0.8);
+            bottom: 0;
+            color: white;
+            mix-blend-mode: soft-light;
+          }
+
+          .plus-icon {
+            opacity: 1;
+            transform: translateY(0) translateX(0);
+          }
+        }
+
+        img {
+          filter: grayscale(100%);
+          transition: filter 1s;
+        }
+      }
+    }
+  }
+}
