@@ -1,0 +1,29 @@
+---
+layout: default
+paramlink: {{ page.link_url }}
+---
+
+<div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
+  <div class="about-cover scrim">
+    <h1 class="hero-header title"> {{ page.header }}</h1>
+  </div>
+</div>
+
+<div class="wrapper">
+
+  <h1>{{page.name}}</h1>
+
+  <ul>
+      <li>{{page.id}}: {{page.id}}</li>
+      <li>{{page.full_name}}: {{page.full_name}}</li>
+      <li>{{page.permalink}}: {{page.permalink}}</li>
+
+      <!-- optional -->
+      <li>{{page.role}}: {{page.role}}</li>
+      {% if page.image %}<li>{{page.image}}: {{page.image}}</li>{% endif %}
+      <li>{{page.github}}: {{page.github}}</li>
+      <li>{{page.linkedin}}: {{page.linkedin}}</li>
+      <li>{{page.about}}: {{page.about}}</li>
+  </ul>
+
+</div>
