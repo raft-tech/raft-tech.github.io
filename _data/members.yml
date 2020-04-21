@@ -1,0 +1,18 @@
+- id: member_1
+  full_name: Member 1
+  permalink: about/member_1
+  role: Role
+  image: 'meis.jpg'
+  github: ''
+  linkedin: ''
+  about: |
+    About text for member_1
+- id: member_2
+  full_name: Member 2
+  permalink: about/member_2
+  role: Role
+  image: 
+  github: ''
+  linkedin: ''
+  about: |
+    About text for member_2
