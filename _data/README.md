@@ -36,7 +36,7 @@ collections:
 #### Generate Profiles
 
 ```bash
-(rm -r _about || echo "no folder") bundle exec jekyll pagemaster --no-permalink about
+(rm -r _about || echo "no folder") && bundle exec jekyll pagemaster --no-permalink about
 
 # pagemaster doesn't re-generate existing pages.
 # It will skip any updates made to `members.yaml`
