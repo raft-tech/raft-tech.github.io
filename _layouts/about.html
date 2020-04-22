@@ -28,7 +28,7 @@ layout: default
   </article>
 </div>
 
-<div class="leadership">
+<!-- <div class="leadership">
   <div class="wrapper">
     <h3>Our Leadership</h3>
     <div class="aboutCEOrow">
@@ -41,24 +41,26 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
+<div class="invert">
 <div id="team">
   <div class="wrapper">
     <h3>Our Team</h3>
     <ul id="members">
       {% for member in site.data.members %}
-        <li class="member" data-name={{member.full_name}} data-role={{member.role}} data-image="url(/assets/{{member.image}})">
+        <li class="member" data-name={{member.full_name}} data-role={{member.role}} data-image="url(/assets/profiles/{{member.image}})">
           <a href="/about/{{member.full_name | slugify }}">
-            <div class='overlay'>
+            <div class='header'>
               <h4 class='name'>{{member.full_name}}</h4>
               <h5 class='role'>{% if member.role.size > 0 %}{{member.role}}{% else %}Team Member{% endif %}</h5>
             </div>
             <div class='plus-icon'>+</div>
-            <img src="/assets/{{member.image}}" alt="{{member.name}}">
+            <img src="/assets/profiles/{{member.image}}" alt="{{member.name}}">
           </a>
         </li>
       {% endfor %}
     </ul>
   </div>
+</div>
 </div>
