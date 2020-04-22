@@ -2,7 +2,7 @@
   h3 {
     font-size: 1.72rem;
     font-weight: bold;
-    color: $purple;
+    color: white;
   }
 
   ul#members {
@@ -14,55 +14,32 @@
     padding: 0;
     box-sizing: border-box;
 
-    h4,
-    h5 {
+    .name, .role {
       margin: 0;
       line-height: normal;
+      color: white;
+      width: 100%;
+      text-align: left;
+      font-family: "AvantGardeBold";
     }
 
     li.member {
       width: calc(33%);
       justify-content: stretch;
+      margin-bottom: 2rem;
 
       @media screen and (min-width: $tablet) {
-        & {
-          width: 25%;
-        }
+        & { width: 25%; }
       }
 
       a {
         width: 100%;
-        background-image: attr(data-image);
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         color: $purple;
         position: relative;
-
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 2;
-          // background-color: rgba(0, 0, 0, 0.3);
-          color: white;
-          color: $purple;
-          transition: background-color 0.3s;
-
-          .name {
-            font-size: 1rem;
-            padding: 0.5rem 0 0 0.75rem;
-            font-weight: bold;
-          }
-
-          .role {
-            font-size: 0.85rem;
-            padding: 0.25rem 0 0.25rem 0.75rem;
-            transition: transform 0.5s, opacity 0.5s;
-          }
-        }
+        transition: transform 300ms;
 
         .plus-icon {
           position: absolute;
@@ -77,25 +54,54 @@
           transition: transform 0.5s, opacity 0.5s;
         }
 
+        .header {
+          width: 100%;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+
+          .name {
+            font-size: 1.2rem;
+            padding: 0.5rem 0 0 0.75rem;
+            font-weight: bold;
+            align-self: flex-start;
+          }
+
+          .role {
+            font-size: 1rem;
+            padding: 0.25rem 0 0.25rem 0.75rem;
+            align-self: flex-start;
+            font-weight: normal;
+            font-family: "AvantGarde";
+          }
+        }
+
+        img {
+          filter: grayscale(100%);
+          // transition: filter .3s;
+          background: transparent;
+          transition: border-radius 300ms;
+        }
+
         &:hover {
           text-decoration: none;
+          transform: scale(1.025);
+          z-index: 2;
 
-          .overlay {
-            background-color: rgba(58, 27, 121, 0.8);
-            bottom: 0;
+          .header {
+            background: #5598cf;
             color: white;
-            mix-blend-mode: soft-light;
           }
 
           .plus-icon {
             opacity: 1;
             transform: translateY(0) translateX(0);
           }
-        }
 
-        img {
-          filter: grayscale(100%);
-          transition: filter 1s;
+          img {
+            filter: grayscale(0%);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
         }
       }
     }
