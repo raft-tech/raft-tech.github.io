@@ -80,7 +80,14 @@ social:
     url: https://www.linkedin.com/company/raft-tech/
     desc: Connect with us on LinkedIn
     share: true
-
+    
+collections:
+  about:
+    output: true
+    source: members.yml
+    id_key: id
+    layout: about/profile
+    permalink: pretty
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
