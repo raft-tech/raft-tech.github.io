@@ -15,9 +15,10 @@ It’s safe to say that nearly everyone in the tech world has been touched in so
 
 **1. Creativity is Connecting Things** 
 
-> “Creativity is just connecting things.”  
-
-> – Steve Jobs 
+<blockquote>
+<p>“Creativity is just connecting things.”  </p>
+<p> – Steve Jobs </p>
+</blockquote>
 
  
 
@@ -27,9 +28,11 @@ Surprisingly, even in industries stereotypically categorized as more “left-bra
 
 **2. Get Closer to Your Customers** 
 
-> “Get closer than ever to your customers. So close that you tell them what they need well before they realize it themselves.”  
+<blockquote>
+<p>“Get closer than ever to your customers. So close that you tell them what they need well before they realize it themselves.” </p> 
 
-> – Steve Jobs 
+<p> – Steve Jobs </p>
+</blockquote>
 
  
 
@@ -39,9 +42,11 @@ In the proposal process, the client tells you exactly what their mission and obj
 
 **3. Greatness Comes From Teamwork**   
 
-> “My model for business is The Beatles…They balanced each other, and the total was greater than the sum of the parts. That’s how I see business: Great things in business are never done by one person, they’re done by a team of people.”  
+<blockquote>
+<p>“My model for business is The Beatles…They balanced each other, and the total was greater than the sum of the parts. That’s how I see business: Great things in business are never done by one person, they’re done by a team of people.”  </p>
 
-> – Steve Jobs 
+<p> – Steve Jobs </p>
+</blockquote>
 
  
 
@@ -51,9 +56,11 @@ The proposal process is a prime example of team-wide collaboration—one that in
 
 **4. Simplify**
 
-> “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.” 
+<blockquote>
+<p> “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.” </p>
 
-> – Steve Jobs 
+<p> – Steve Jobs </p>
+</blockquote>
 
  
 
@@ -63,9 +70,11 @@ Have you ever finished reading a document filled with pages of marketing jargon,
 
 **5. Work on What Excites You**
 
-> “If you are working on something exciting that you really care about you don’t have to be pushed, the vision pulls you.”  
+<blockquote>
+<p>“If you are working on something exciting that you really care about you don’t have to be pushed, the vision pulls you.”</p>  
 
-> – Steve Jobs 
+<p> – Steve Jobs </p>
+</blockquote>
 
  
 
