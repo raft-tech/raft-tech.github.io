@@ -1,77 +1,97 @@
 #profile {
-    #name, #role {
-        color: $purple;
-        font-size: 2rem;
-    }
+  #name,
+  #role {
+    color: $purple;
+    font-size: 2rem;
+  }
 
-    #role {
-        font-weight: normal;
-        font-size: 1.25rem;
-    }
+  #role {
+    font-weight: normal;
+    font-size: 1.25rem;
+  }
 
-    #image {
-        max-width: 100%;
-        margin-bottom: 1rem;
-    }
+  #image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
 
-    #container {
-        clear: both;
-    }
+  #container {
+    clear: both;
+  }
 
-    #links {
-        display: block;
-        list-style: none;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0;
-        margin: 2rem 0;
+  #links {
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 2rem 0;
 
-        img {
-            width: 50px;
-        }
-    }
-}
-
-#hero.profile.site-header-container {
-    .scrim, .about-cover {
-        padding: 0;
-        height: 9vw;
-    }
-}
-
-
-@media screen and (min-width: $tablet) {
-    #profile {
-        margin-bottom: 2rem;
-
-        #image {
-            float: left;
-            max-width: 30%;
-            margin-right: 30px;
-            margin-bottom: 0;
-        }
-
-        #links {
-            margin: 0;
-            margin-top: 2rem;
-        }
-    }
-
-    #hero.profile.site-header-container {
-        .scrim, .about-cover {
-            padding: 0;
-            height: 65px;
-        }
+    img {
+      width: 30px;
     }
   }
 
-  @media screen and (min-width: $large) {
-    #hero.profile.site-header-container {
-        .scrim, .about-cover {
-            padding: 0;
-            height: 100px;
-        }
+  #about {
+    font-size: 1.25rem;
+  }
+
+  #back {
+    font-size: 1rem;
+    font-weight: bold;
+
+    span {
+      margin-right: 7px;
     }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#hero.profile.site-header-container {
+  .scrim,
+  .about-cover {
+    padding: 0;
+    height: 9vw;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  #profile {
+    margin-bottom: 2rem;
+
+    #image {
+      float: left;
+      max-width: 30%;
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    #links {
+      margin: 0;
+      margin-top: 2rem;
+    }
+  }
+
+  #hero.profile.site-header-container {
+    .scrim,
+    .about-cover {
+      padding: 0;
+      height: 65px;
+    }
+  }
+}
+
+@media screen and (min-width: $large) {
+  #hero.profile.site-header-container {
+    .scrim,
+    .about-cover {
+      padding: 0;
+      height: 100px;
+    }
+  }
 }

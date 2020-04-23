@@ -251,7 +251,7 @@ section .section-title {
 
 #hero {
   height: auto;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background-color: $purple;
   background-position: 50%;
@@ -430,7 +430,7 @@ section .section-title {
 
 #copyright {
   display: block;
-  width: 100vw;
+  width: 100%;
   font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
