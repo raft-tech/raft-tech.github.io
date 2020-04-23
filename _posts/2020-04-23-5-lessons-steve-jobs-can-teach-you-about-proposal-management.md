@@ -1,7 +1,7 @@
 --- 
 layout: post 
 title: "5 Lessons Steve Jobs Can Teach You About Proposal Management" 
-short_title: "Proposal Management Practices" 
+short_title: "Proposal Management Methods" 
 date: 2020-04-23
 categories: 
 featimg: /assets/images/featimage/Proposal-icon.jpg  
