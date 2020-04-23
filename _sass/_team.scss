@@ -23,6 +23,10 @@
 
     .member {
       @media screen and (min-width: $tablet) {
+        & { width: 33%; }
+      }
+
+      @media screen and (min-width: $large) {
         & { width: 25%; }
       }
 

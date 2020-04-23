@@ -3,27 +3,25 @@ layout: default
 paramlink: {{ page.link_url }}
 ---
 
-<div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
+<div id="hero" class="profile site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
   <div class="about-cover scrim">
     <h1 class="hero-header title"> {{ page.header }}</h1>
   </div>
 </div>
 
-<div class="wrapper">
+<div id="profile" class="wrapper">
 
-  <h1>{{page.name}}</h1>
+  <h1 id='name'>{{page.full_name}}</h1>
+  {% if page.role %}<h2 id='role'>{{page.role}}</h2>{% endif %}
+  <div class="about-container">
+    {% if page.image %}<img id='image' src="/assets/profiles/{{page.image}}" />{% endif %}
+    <p id="about">{{page.about}}</p>
+  </div>
 
-  <ul>
-      <li>{{page.id}}: {{page.id}}</li>
-      <li>{{page.full_name}}: {{page.full_name}}</li>
-      <li>{{page.permalink}}: {{page.permalink}}</li>
-
-      <!-- optional -->
-      <li>{{page.role}}: {{page.role}}</li>
-      {% if page.image %}<li>{{page.image}}: {{page.image}}</li>{% endif %}
-      <li>{{page.github}}: {{page.github}}</li>
-      <li>{{page.linkedin}}: {{page.linkedin}}</li>
-      <li>{{page.about}}: {{page.about}}</li>
+  <ul id='links'>
+    {% if page.github %}<li><a id='github' href="{{page.github}}" target="_blank" rel="noopener noreferrer"><img src='/assets/profiles/icon-github.png' ></a></li>{% endif %}
+    {% if page.linkedin %}<li><a id='linkedin' href="{{page.linkedin}}" target="_blank" rel="noopener noreferrer"><img src='/assets/profiles/icon-linkedin.png' ></a></li>{% endif %}
+    {% if page.homepage %}<li><a id='homepage' href="{{page.homepage}}" target="_blank" rel="noopener noreferrer"><img src='/assets/profiles/icon-home.png' ></a></li>{% endif %}
   </ul>
 
 </div>
