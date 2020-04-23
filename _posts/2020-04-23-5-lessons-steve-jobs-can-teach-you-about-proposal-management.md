@@ -5,7 +5,7 @@ short_title: "Proposal Management Methods"
 date: 2020-04-23
 categories: 
 featimg: /assets/images/featimage/Proposal-icon.jpg  
-bgimg: /assets/images/bgimg/Proposal-bgimg.jpg  
+bgimg: /assets/images/bgimg/Proposal-bgimg.jpeg  
 author: Christine 
 --- 
 
