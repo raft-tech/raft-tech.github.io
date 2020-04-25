@@ -2,6 +2,9 @@
 layout: default
 paramlink: {{ page.link_url }}
 ---
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&family=Exo:ital@1&display=swap');
+</style>
 
 <div id="hero" class="profile site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
   <div class="about-cover scrim">
@@ -10,20 +13,37 @@ paramlink: {{ page.link_url }}
 </div>
 
 <div id="profile" class="wrapper">
-  <div id="back"><a href='/about#team'><span>&lt;</span> Our Team</a></div>
-
+  <div><a id="back" href='/about#team'>
+    <span>&#8592;</span>Our Team</a>
+  </div>
   <h1 id='name'>{{page.full_name}}</h1>
   {% if page.role %}<h2 id='role'>{{page.role}}</h2>{% endif %}
   
-  <div class="about-container">
-    {% if page.image %}<img id='image' src="/assets/profiles/{{page.image}}" />{% endif %}
-    <p id="about">{{page.about}}</p>
+  <div class="about-row">
+    <div id="col-1" class="about-col">
+      {% if page.image %}<img id='image' src="/assets/profiles/{{page.image}}" />{% endif %}
+      <ul id='links'>
+        {% if page.github %}
+          <li id='github'><a href="{{page.github}}" target="_blank" rel="noopener noreferrer">
+            <img src='/assets/profiles/icon-github.png' >
+          </a></li>
+        {% endif %}
+        {% if page.linkedin %}
+          <li id='linkedin'><a href="{{page.linkedin}}" target="_blank" rel="noopener noreferrer">
+            <img src='/assets/profiles/icon-linkedin.png' >
+          </a></li>
+        {% endif %}
+        {% if page.homepage %}
+          <li id='homepage'><a href="{{page.homepage}}" target="_blank" rel="noopener noreferrer">
+            <img src='/assets/profiles/icon-globe.png' >
+          </a></li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="about-col">
+      <p id="about">{{page.about}}</p>
+    </div>
   </div>
 
-  <ul id='links'>
-    {% if page.github %}<li><a id='github' href="{{page.github}}" target="_blank" rel="noopener noreferrer"><img src='/assets/profiles/icon-github.png' ></a></li>{% endif %}
-    {% if page.linkedin %}<li><a id='linkedin' href="{{page.linkedin}}" target="_blank" rel="noopener noreferrer"><img src='/assets/profiles/icon-linkedin.png' ></a></li>{% endif %}
-    {% if page.homepage %}<li><a id='homepage' href="{{page.homepage}}" target="_blank" rel="noopener noreferrer"><img src='/assets/profiles/icon-home.png' ></a></li>{% endif %}
-  </ul>
 
 </div>
