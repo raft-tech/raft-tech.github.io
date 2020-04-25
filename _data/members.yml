@@ -2,8 +2,8 @@
   permalink: /about/shubhi
   full_name: Shubhi Mishra
   role: CEO
-  image: 'Shubhi.jpg'
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
+  image: Shubhi.jpg
+  about: "Ms. Mishra has many years of experience overseeing multi-million-dollar IDIQs, BPAs, and Task Orders. She has extensive experience in helping public and private organizations achieve their business objectives. She blends deep knowledge of technology with thorough understanding of collaborative research to develop and deploy solutions that integrate bioinformatics with traditional IT in supporting collaborative research business processes. She has over a decade’s worth of experience assisting federal government agencies as a technology and organization consultant to effectively manage change, adopt innovative technology, and improve processes. She is also a published author of scientific papers. Ms. Mishra received her Masters in Bioinformatics from Boston University and her Juris Doctorate from George Washington University."
   github: 'https://github.com/shubhi-raft'
   linkedin: 'https://www.linkedin.com/in/shubhi-mishra-19a94a135/'
   featimg: /assets/aboutBanner1.jpg
@@ -11,7 +11,7 @@
   permalink: /about/bhaarat 
   full_name: Bhaarat Sharma
   role: CTO
-  image: 'Bhaarat.jpg'
+  image: Bhaarat.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/omnipresent07'
   linkedin: 'https://www.linkedin.com/in/bhaarat-s-68190316/'
@@ -20,7 +20,7 @@
   permalink: /about/patrick
   full_name: Patrick Asata
   role: Solutions Architect 
-  image: 'Patrick.jpg'
+  image: Patrick.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/PatrickGoRaft'
   linkedin: 'https://www.linkedin.com/in/patrick-asata-4b21a816b/'
@@ -29,7 +29,7 @@
   permalink: /about/beata
   full_name: Beata Barci
   role: Sr. Product Manager
-  image: 'Beata.jpg'
+  image: Beata.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: 'https://www.linkedin.com/in/beatabarci/'
@@ -38,7 +38,7 @@
   permalink: /about/christine 
   full_name: Christine Kobayashi
   role: Sr. Proposal Manager
-  image: 'Christine.jpg'
+  image: Christine.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/raft-cso'
   linkedin: 'https://www.linkedin.com/in/christine-kobayashi-53159553/'
@@ -47,7 +47,7 @@
   permalink: /about/heather
   full_name: Heather Stout
   role: Operations Manager
-  image: 'Heather.jpg'
+  image: Heather.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: 'https://www.linkedin.com/in/heather-s-0489a9198/'
@@ -56,7 +56,7 @@
   permalink: /about/barak
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
-  image: 'Barak.jpg'
+  image: Barak.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/BarakStout'
   linkedin: 'https://www.linkedin.com/in/barak-stout/'
@@ -65,7 +65,7 @@
   permalink: /about/tyler
   full_name: Tyler Sheppard
   role: Graphic Designer
-  image: 'Tyler.jpg'
+  image: Tyler.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: 'https://www.linkedin.com/in/jtsheppard/'
@@ -74,7 +74,7 @@
   permalink: /about/michael
   full_name: Michael Roach
   role: Sr. DevSecOps Engineer
-  image: 'Michael.jpg'
+  image: Michael.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/RoachMJ'
   linkedin: 'https://www.linkedin.com/in/michaelroachj/'
@@ -83,7 +83,7 @@
   permalink: /about/ryan
   full_name: Ryan Hunter
   role: Marketing Manager
-  image: 'Ryan.jpg'
+  image: Ryan.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/RedNumberIX'
   linkedin: 'https://www.linkedin.com/in/ryanhunter369/'
@@ -92,7 +92,7 @@
   permalink: /about/leslie
   full_name: Leslie Perucci
   role: Senior UX/UI Designer
-  image: 'Leslie.jpg'
+  image: Leslie.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/LesliePerucci'
   linkedin: 'https://www.linkedin.com/in/leslieperucci/'
@@ -100,8 +100,8 @@
 - id: meissa
   permalink: /about/meissa
   full_name: Meissa Dia
-  role: Sr. Frontend Developer
-  image: 'Meissa.jpg'
+  role: Sr. Frontend Engineer
+  image: Meissa.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/meissadia'
   linkedin: https://www.linkedin.com/in/meissa/
@@ -111,7 +111,7 @@
   permalink: /about/missy
   full_name: Missy Maloney
   role: Frontend Developer
-  image: 'background.jpg'
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/MissyM2'
   linkedin: 'https://www.linkedin.com/in/missymaloney/'
@@ -119,8 +119,8 @@
 - id: bhargav
   permalink: /about/bhargav
   full_name: Bhargav Joshi
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: null
@@ -128,8 +128,8 @@
 - id: priya
   permalink: /about/priya
   full_name: Priya Adipoodi
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: 'https://www.linkedin.com/in/priya-adipoodi/'
@@ -137,8 +137,8 @@
 - id: austine
   permalink: /about/austine
   full_name: Austine
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: null
@@ -146,8 +146,8 @@
 - id: dan
   permalink: /about/dan
   full_name: Dan
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: null
@@ -155,8 +155,8 @@
 - id: calvin
   permalink: /about/calvin
   full_name: Calvin
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: null
@@ -164,8 +164,8 @@
 - id: ongel
   permalink: /about/ongel
   full_name: Ongel
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: null
@@ -173,8 +173,8 @@
 - id: jean
   permalink: /about/jean
   full_name: Jean
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: null
@@ -182,8 +182,8 @@
 - id: james
   permalink: /about/james
   full_name: James
-  role: null
-  image: 'background.jpg'
+  role: Team Member
+  image: no-image.jpg
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
   github: 'https://github.com/'
   linkedin: null

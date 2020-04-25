@@ -2,8 +2,8 @@
 id: bhargav
 permalink: "/about/bhargav"
 full_name: Bhargav Joshi
-role: 
-image: background.jpg
+role: Team Member
+image: no-image.jpg
 about: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid
   enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident
   repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat

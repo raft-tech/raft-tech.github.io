@@ -38,7 +38,7 @@ layout: default
             <a class="member-card" href="/about/{{member.id}}">
               <div class='header'>
                 <h4 class='name'>{{member.full_name}}</h4>
-                <h5 class='role'>{% if member.role.size > 0 %}{{member.role}}{% else %}Team Member{% endif %}</h5>
+                {% if member.role %}<h5 class='role'>{{member.role}}</h5>{% endif %}
               </div>
               <div class='plus-icon'>+</div>
               <img src="/assets/profiles/{{member.image}}" alt="{{member.name}}">

@@ -2,7 +2,7 @@
 id: meissa
 permalink: "/about/meissa"
 full_name: Meissa Dia
-role: Sr. Frontend Developer
+role: Sr. Frontend Engineer
 image: Meissa.jpg
 about: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid
   enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident
