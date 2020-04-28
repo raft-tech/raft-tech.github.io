@@ -4,6 +4,7 @@ plugins:
   - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate-v2
+  - pagemaster
 
 exclude:
   - "/vendor/"
@@ -18,8 +19,8 @@ description: >
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://goraft.tech" # the base hostname & protocol for your site
+#baseurl: "/" # the subpath of your site, e.g. /blog/
+#url: "http://goraft.tech" # the base hostname & protocol for your site
 cover: "/assets/header_image_big.jpg"
 logo: "/assets/logo.png"
 
@@ -80,7 +81,7 @@ social:
     url: https://www.linkedin.com/company/raft-tech/
     desc: Connect with us on LinkedIn
     share: true
-    
+
 collections:
   about:
     output: true

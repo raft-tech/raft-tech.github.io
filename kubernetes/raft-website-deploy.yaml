@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: raft-website
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: raft-website
+  template:
+    metadata:
+      labels:
+        app: raft-website
+    spec:
+      containers:
+      - name: raft-website
+        image: <IMAGE>
+        ports:
+        - containerPort: 80
