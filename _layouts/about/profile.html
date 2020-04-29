@@ -21,7 +21,7 @@ paramlink: {{ page.link_url }}
   
   <div class="about-row">
     <div id="col-1" class="about-col">
-      {% if page.image %}<img id='image' src="/assets/profiles/{{page.image}}" />{% endif %}
+      <img id='image' src="{% if page.image %}/assets/profiles/{{page.image}}{% else %}/assets/profiles/r_animated.svg{% endif %}" />
       <ul id='links'>
         {% if page.github %}
           <li id='github'><a href="{{page.github}}" target="_blank" rel="noopener noreferrer">
@@ -44,6 +44,4 @@ paramlink: {{ page.link_url }}
       <p id="about">{{page.about}}</p>
     </div>
   </div>
-
-
 </div>

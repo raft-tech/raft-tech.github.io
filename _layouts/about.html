@@ -41,7 +41,7 @@ layout: default
                 {% if member.role %}<h5 class='role'>{{member.role}}</h5>{% endif %}
               </div>
               <div class='plus-icon'>+</div>
-              <img src="/assets/profiles/{{member.image}}" alt="{{member.name}}">
+              <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}" alt="{{member.name}}">
             </a>
           </li>
         {% endfor %}

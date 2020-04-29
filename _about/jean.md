@@ -3,7 +3,7 @@ id: jean
 permalink: "/about/jean"
 full_name: Jean
 role: Team Member
-image: no-image.jpg
+image: 
 about: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid
   enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident
   repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat
