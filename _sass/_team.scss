@@ -53,6 +53,8 @@
           opacity: 0;
           transform: translateY(1rem);
           transition: transform 0.5s, opacity 0.5s;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: black;
         }
 
         .header {
@@ -76,6 +78,7 @@
 
         img {
           filter: grayscale(100%);
+          background: white;
         }
 
         &:hover {
