@@ -1,0 +1,50 @@
+body {
+  #development-banner,
+  #staging-banner {
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    z-index: 11; // Above navigation
+
+    .closer {
+      text-transform: lowercase;
+      font-size: .75em;
+      line-height: .75em;
+      padding: 5px 5px 5px 5.75px;
+      margin-left: 10px;
+      border-radius: 5px;
+      vertical-align: middle;
+      color: white;
+      background: black;
+      cursor: pointer;
+      transition: color 300ms, background-color 300ms;
+      
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+}
+
+body.development,
+body.staging {
+  #navigation { top: 3rem; }
+  .page-content { margin-top: 3rem; }
+}
+
+body.development #development-banner,
+body.staging #staging-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(69, 5, 101);
+}
