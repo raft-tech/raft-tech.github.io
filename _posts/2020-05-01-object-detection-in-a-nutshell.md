@@ -33,9 +33,9 @@ In this instance we can train a multi-label classifier. Now, there’s another c
 
 That’s where Image Localization comes into the play. It helps us to identify the location of a single object in the given image. In case we have multiple objects present, we then rely on the concept of Object Detection. We can predict the location along with the class for each object using Object Detection.
 
-![Object Detection](/assets/images/object_detection/object_detection_2.jpg)
+![Object Detection](/assets/images/object_detection/object_detection_2.png)
 
-## Application of Object Detection ?
+## Application of Object Detection
 Object detection is breaking into a wide range of industries, with use cases ranging from personal security, air defense, to productivity in the workplace. Object detection and recognition is applied in many areas of computer vision, including image retrieval, security, surveillance, automated vehicle systems and machine inspection. The possibilities are endless when it comes to future use cases for object detection.
 
 Lets discuss some current and future applications of Object Detection in detail.
@@ -43,7 +43,7 @@ Lets discuss some current and future applications of Object Detection in detail.
 ### Optical Character Recognition (OCR)
 Optical character recognition or optical character reader, often abbreviated as OCR, is the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image, we are extracting characters from the image or video.
 
-![Object Detection](/assets/images/object_detection/ocr.jpg)
+![Object Detection](/assets/images/object_detection/ocr.png)
 
 Widely used as a form of information entry from printed paper data records – whether passport documents, invoices, bank statements, computerized receipts, business cards, mail, printouts of static-data, or any suitable documentation it is a common method of digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech.
 
@@ -77,7 +77,7 @@ Object detection was studied even before the breakout popularity of Convolutiona
 
 Object detection before Deep Learning was a several step process, starting with edge detection and feature extraction using techniques like [SIFT](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform), [HOG](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) etc. These outputs were then compared with existing object templates, usually at multi scale levels, to detect and localize objects present in the image.
 
-![Self driving](/assets/images/object_detection/trad_od.jpg)
+![Self driving](/assets/images/object_detection/trad_od.png)
 
 ### Two-Step Object Detection
 
@@ -85,7 +85,7 @@ Two-Step Object Detection involves algorithms that first identify bounding boxes
 
 The first step requires a [Region Proposal Network (RPNs)](https://towardsdatascience.com/region-proposal-network-a-detailed-view-1305c7875853), providing a number of regions which are then passed to common Deep Learning based classification architectures. From the [hierarchical grouping algorithm in RCNNs (which are extremely slow)](https://cs.stanford.edu/people/karpathy/rcnn/) to using CNNs and [ROI pooling in Fast RCNNs](https://towardsdatascience.com/region-of-interest-pooling-f7c637f409af) and [anchors in Faster RCNNs (thus speeding up the pipeline and training end-to-end)](https://medium.com/@smallfishbigsea/faster-r-cnn-explained-864d4fb7e3f8), a lot of different methods and variations have been provided to RPNs.
 
-![Faster RCNNs](/assets/images/object_detection/frcnn.jpg)
+![Faster RCNNs](/assets/images/object_detection/frcnn.png)
 
 
 These algorithms are known to perform better than their one-step object detection counterparts, but are slower in comparison. With various improvements suggested over the years, the current bottleneck in the latency of Two-Step Object Detection networks is the RPN step.
@@ -106,7 +106,7 @@ These modifications allow one-step detectors to run faster and also work on a gl
 
 Heatmap-based object detection can be, in some sense, considered an extension of one-shot based Object Detection. While one-shot based object detection algorithms try to directly regress the bounding box coordinates (or offsets), heatmap-based object detection provides probability distribution of bounding box corners/center.
 
-![Heatmap Regression](/assets/images/object_detection/keypoint.jpg)
+![Heatmap Regression](/assets/images/object_detection/keypoint.png)
 
 Based on the positioning of these corner/center peaks in the heatmaps, resulting bounding boxes are predicted. Since a different heatmap can be created for every class, this method also combines detection and classification. While heatmap-based object detection is currently leading new research, it is still not as fast as conventional one-shot object detection algorithms. This is due to the fact that these algorithms require more complex backbone architectures (CNNs) to get state-of-the-art accuracy.
 
