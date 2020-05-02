@@ -1,0 +1,104 @@
+#team {
+  h3 {
+    font-size: 1.72rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  #members {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+
+    .name, .role {
+      margin: 0;
+      width: 100%;
+      color: white;
+      text-align: left;
+      line-height: normal;
+      font-family: "AvantGardeBold";
+    }
+
+    .member {
+      @media screen and (min-width: $tablet) {
+        & { width: 33%; }
+      }
+
+      @media screen and (min-width: $large) {
+        & { width: 25%; }
+      }
+
+      width: calc(50%);
+      margin-bottom: 2rem;
+      position: relative;
+
+      .member-card {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        color: $purple;
+        transition: transform 300ms;
+        position: relative;
+
+        .plus-icon {
+          position: absolute;
+          bottom: 0;
+          right: 1rem;
+          z-index: 2;
+          color: white;
+          font-size: 2rem;
+          font-weight: bold;
+          opacity: 0;
+          transform: translateY(1rem);
+          transition: transform 0.5s, opacity 0.5s;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: black;
+        }
+
+        .header {
+          width: 100%;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+
+          .name {
+            font-size: 1.2rem;
+            padding: 0.5rem 0 0 0.75rem;
+            font-weight: bold;
+          }
+
+          .role {
+            font-size: 1rem;
+            padding: 0.25rem 0 0.25rem 0.75rem;
+            font-weight: normal;
+            font-family: "AvantGarde";
+          }
+        }
+
+        img {
+          filter: grayscale(100%);
+          background: white;
+        }
+
+        &:hover {
+          text-decoration: none;
+
+          .header {
+            background: #5598cf;
+            color: white;
+          }
+
+          .plus-icon {
+            opacity: 1;
+            transform: translateY(0) translateX(0);
+          }
+
+          img {
+            filter: grayscale(0);
+          }
+        }
+      }
+    }
+  }
+}
