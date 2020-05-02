@@ -79,18 +79,6 @@ $(document).ready(function() {
 			tippy(selector, config);
 		})
 	}
-
-  // Dev banner
-  if(window.location.host !== 'goraft.tech'){
-    const body = $('body')
-    if(window.location.host.indexOf('localhost') > -1) body.addClass('development')
-    if(window.location.host.indexOf('heroku') > -1) body.addClass('staging')
-
-    $('#development-banner .closer, #staging-banner .closer').on('click', function(){
-      body.removeClass('development')
-      body.removeClass('staging')
-    })
-  }
 });
 
 </script>

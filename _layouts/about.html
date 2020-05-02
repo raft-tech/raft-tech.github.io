@@ -28,24 +28,17 @@ layout: default
   </article>
 </div>
 
-<div class="invert">
-  <div id="team">
-    <div class="wrapper">
-      <h3>Our Team</h3>
-      <ul id="members">
-        {% for member in site.data.members %}
-          <li class="member">
-            <a class="member-card" href="/about/{{member.id}}">
-              <div class='header'>
-                <h4 class='name'>{{member.full_name}}</h4>
-                {% if member.role %}<h5 class='role'>{{member.role}}</h5>{% endif %}
-              </div>
-              <div class='plus-icon'>+</div>
-              <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}" alt="{{member.name}}">
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+<div class="leadership">
+  <div class="wrapper">
+    <h3>Our Leadership</h3>
+    <div class="aboutCEOrow">
+      <div class="ceoImage">
+        <img src="{{ page.ceoImage | prepend: site.baseurl }}" alt="{{ page.ceoName }}"/>
+        <h5>{{ page.ceoName }}</h5>
+      </div>
+      <div class="ceoText">
+        {{ page.aboutCEO }}
+      </div>
     </div>
   </div>
 </div>
