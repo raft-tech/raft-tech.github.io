@@ -37,15 +37,15 @@ $xlarge: 1200px;
   box-sizing: border-box;
 }
 
-p, h2, h3, ul {
+.blog-content p, h2, h3, ul {
   color: $grey !important;
 }
 
-p, ul {
+.blog-content p, ul {
   font-size: 1.2rem;
 }
 
-.post-content ul li:before {
+.blog-content ul li:before {
   content: '\2022';
   color: #06a5dc;
   position: absolute;
@@ -53,14 +53,14 @@ p, ul {
   font-weight: bold;
 }
 
-.post-content ul li {
+.blog-content ul li {
   position: relative;
   margin: 0 0 .5em;
   padding-left: .5rem;
   list-style: none;
 }
 
-.post-content ul {
+.blog-content ul {
   list-style: none;
 }
 
