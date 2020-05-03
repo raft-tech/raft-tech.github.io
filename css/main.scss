@@ -17,6 +17,7 @@ $seagreen: #209bb9;
 $lightgrey: #8c91c4;
 $darkgrey: #424680;
 $lightblue: #6cb5ca;
+$grey: #374453;
 
 $small: 576px;
 $medium: 768px;
@@ -32,12 +33,72 @@ $xlarge: 1200px;
 }
 
 * {
-  font-family: "Circular",sans-serif;
+  font-family: 'Source Serif Pro', serif;
   box-sizing: border-box;
 }
 
-p, h2, ul {
+.invert {
+  background-color: $darkgrey;
+  color: white !important;
+}
+
+.invert a {
+  color: #4affef;
+}
+
+.post-content h2 {
   color: $purple;
+}
+
+#blog-content p, #blog-content h2, #blog-content h3, #blog-content ul {
+  color: $grey !important;
+}
+
+#blog-content img {
+  height: 500px;
+  width: 500px;
+}
+
+p, ul, div {
+  font-size: 1.2rem;
+}
+
+#blog-content > ul li:before {
+  content: '\2022';
+  color: #06a5dc;
+  position: absolute;
+  left: -.8625em;
+  font-weight: bold;
+}
+
+#blog-content > ul li {
+  position: relative;
+  margin: 0 0 .5em;
+  padding-left: .5rem;
+  list-style: none;
+}
+
+#blog-content > ul {
+  list-style: none;
+}
+
+.post-content > ul li:before {
+  content: '\2022';
+  color: #06a5dc;
+  position: absolute;
+  left: -.8625em;
+  font-weight: bold;
+}
+
+.post-content > ul li {
+  position: relative;
+  margin: 0 0 .5em;
+  padding-left: .5rem;
+  list-style: none;
+}
+
+.post-content > ul {
+  list-style: none;
 }
 
 .about {
@@ -98,7 +159,7 @@ section .section-title {
   width: 90%;
   margin: 0 auto;
   padding: 10px 0 40px;
-  color: $purple;
+  color: $grey;
 }
 
 #introducing .left {
@@ -236,14 +297,7 @@ section .section-title {
   }
 }
 
-.invert {
-  background-color: $darkgrey;
-  color: white;
-}
 
-.invert a {
-  color: #4affef;
-}
 
 .site-header-container .scrim.has-cover, .post-header-container .scrim.has-cover {
   background-color: rgba(0, 0, 0, 0);
@@ -663,6 +717,7 @@ $speed: 300ms;
 
 .ceoText{
   flex-grow: 1;
+  font-size: 1.2rem;
 }
 
 /* card details start  */
@@ -741,14 +796,11 @@ $speed: 300ms;
 
 .card-desc p {
 	color: #747373;
-  font-size: 14px;
 	font-weight: 400;
-	font-size: 1em;
 	line-height: 1.5;
 	margin: 0px;
 	margin-bottom: 20px;
 	padding: 0;
-	font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: $large){
