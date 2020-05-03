@@ -1,1 +1,1 @@
-web: jekyll serve --no-watch --port  --host 0.0.0.0
+web: jekyll serve --no-watch --port $PORT --host 0.0.0.0
