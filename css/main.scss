@@ -59,6 +59,24 @@ $xlarge: 1200px;
   width: 500px;
 }
 
+#blog-content a {
+  color: #374453;
+  text-decoration: none;
+  border-bottom: 2px solid #00a5dc;
+  text-shadow: none;
+  transition: background-color 450ms ease-out,border 450ms ease-out;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  position: relative;  
+}
+
+//leaving this here -- it can be improved
+//#blog-content a:hover {
+//   transition:background-color 250ms ease-out,border 250ms ease-out;
+//   background-color:#8eb9c7;text-shadow:none;border-bottom-color:transparent;text-decoration:none
+//}
+
 p, ul, div {
   font-size: 1.2rem;
 }
