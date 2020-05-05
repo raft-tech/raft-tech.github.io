@@ -338,6 +338,8 @@ section .section-title {
 
 .about-cover {
   height: 25vw;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .home-hero.site-header-container .scrim.has-cover {
@@ -706,9 +708,26 @@ $speed: 300ms;
 
 .card-content {
   background: #ffffff;
-  border: 4px;
   margin: 15px 0;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.card-desc {
+  position: relative;
+  &:hover {
+    & img {
+      transform: scale(1.1);
+      transition-delay: none !important;
+      transition: transform ease 0.5s !important;
+    }
+    & h3 {
+      color: red;
+    }
+  }
+}
+.card-desc .card-bottom {
+  & a {
+   font-size: 16px;
+  }
 }
 
 .card-featimg {
@@ -746,10 +765,6 @@ $speed: 300ms;
         padding:10px 5px;
          line-height: 0;
 }
-.card-desc {
-	padding: 1.25rem;
-  margin: 5px;
-}
 
 .card-desc h3 {
 	color: #000000;
@@ -759,12 +774,6 @@ $speed: 300ms;
   margin-top: 15px;
   margin-bottom: 0px;
   padding: 0;
-  height: 1.3em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
 }
 .card-desc .date {
   font-size: 16px;
@@ -785,11 +794,6 @@ $speed: 300ms;
 }
 
 @media (max-width: $large){
-  .card-desc {
-  	padding: 1rem;
-    margin: 5px;
-  }
-
   .card-desc h3 {
   	color: #000000;
     font-weight: 600;
