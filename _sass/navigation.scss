@@ -158,7 +158,7 @@
 .navigation ul.navigation-menu > li.nav-link a {
   color: $purple;
   display: inline-block;
-  font-family: "AvantGardeBold";
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   padding: 20px 0px;
   background-color: transparent;
@@ -166,6 +166,8 @@
   transition: background-color 200ms;
   width: auto;
   display: contents;
+  font-weight: bold;
+  font-size: larger;
 
   &:hover {
     color: $seagreen;
