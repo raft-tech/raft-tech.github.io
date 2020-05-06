@@ -3,7 +3,7 @@
 
 // Typography
 $base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; // $helvetica;
-$heading-font-family: 'Exo', sans-serif; // $base-font-family;"
+$heading-font-family: 'Roboto', sans-serif; // $base-font-family;"
 
 // Font Sizes
 $base-font-size: $em-base; // 16px
@@ -12,12 +12,8 @@ $base-font-size: $em-base; // 16px
 $modular-scale-ratio: $minor-third;
 
 // Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
-
-// Font Weight
-
-$heading-font-weight: 800;
+$base-line-height: 1.8;
+$heading-line-height: 1.8;
 
 // Other Sizes
 $base-border-radius: 3px;
@@ -34,7 +30,6 @@ $white: #fff;
 $turquoise: #1abc9c;	// Turqoise
 $green: #27ae60;	  	// Nephritis
 $blue: #2980b9;				// Belize Hole
-$light-blue: #209bb9;
 $purple: #8e44ad;			// Wisteria
 $orange: #d35400;			// Pumpkin
 $red:	#c0392b;				// Pomegranate

@@ -20,10 +20,7 @@
 
 
   &.scrolled {
-    background-color: $light-blue;
-    & ul.navigation-menu > li.nav-link a {
-      color: white;
-    }
+    background-color: $darkgrey;
   }
 
   @media screen and (min-width: $large) {
@@ -34,11 +31,11 @@
     font-size: 1.2rem;
 
     &.scrolled {
-      background-color: $light-blue;
+      background-color: $darkgrey;
       font-size: 1rem;
 
       .logo img {
-        max-height: 70px;
+        max-height: 55px;
       }
     }
   }
@@ -159,9 +156,9 @@
 }
 
 .navigation ul.navigation-menu > li.nav-link a {
-  color: white;
+  color: $purple;
   display: inline-block;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   padding: 20px 0px;
   background-color: transparent;
@@ -170,7 +167,7 @@
   width: auto;
   display: contents;
   font-weight: bold;
-  font-size: 20px;
+  font-size: larger;
 
   &:hover {
     color: $seagreen;
@@ -245,9 +242,9 @@
     float: left;
     display: block;
     a {
-      color: white !important;
+      color: white;
       &:hover {
-        color: $seagreen !important;
+        color: $seagreen;
       }
     }
   }
