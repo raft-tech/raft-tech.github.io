@@ -13,9 +13,9 @@ layout: default
     <div class="row work">
       <article class="post-content">
         <h2>{{ work[1]["head"] }}</h2>
-        <div class="work-row {% cycle '', 'reverse' %}">
+        <div class="work-row {% cycle '', 'reverse' %}" >
           <div id="problem">
-            <img src={{ work[1]["img"] }}></img>
+            <iframe id={{ work[1]["head"] }}  src={{ work[1]["img"] }}></iframe>
           </div>
           <div id="solution">
             <p><strong>Challenge</strong></p>

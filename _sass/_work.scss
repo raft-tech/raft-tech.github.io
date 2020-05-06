@@ -21,9 +21,11 @@
   margin: 0 auto;
   padding: 0 10px;
 
-  #problem img {
+  #problem iframe {
     width: 100%;
     max-width: 600px;
+    height: 600px;
+    border: 0;
   }
 
   #solution {
