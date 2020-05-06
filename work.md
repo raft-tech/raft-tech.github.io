@@ -11,7 +11,7 @@ header: Mission focused recent work
 works:
   work1:
     head: Platform Operations
-    img: /assets/cloud_native.svg
+    img: /assets/devsecops.svg
     challenge: Our client worked with us to build, maintain, and scale a mission critical public facing application. The application is meant to be used by over 15K institutions to submit over 40M records of data in only 60 days. Additionally, the application is expected to have significant surge in traffic.
     solution: Our team took a holistic approach to meet the unique needs of the application -- from both application and infrastructure levels. We architected a cloud native platform on Kubernetes using microservices with baked in security. At the platform level our team avoided vendor lock-in by providing a flexible architecture and working with open source CNCF solutions for log aggregation, alerting/monitoring, chaos testing, and security. At the application layer, our team built a caching layer using redis, enabled faster writes with Cassandra, fault tolerance using Hystrix, and concurrency using Scala. Utilizing this architecture, we built a platform with low latency and high throughput capable of handling the expected surge.
     technique: Open Source Development, Agile Development (2 week sprints), Istio as sidecar, Infrastructure as Code (IaC), Upstream Kubernetes, EFK, Prometheus, Grafana, Redis, Profiling, Scala, Cassandra, PostgreSQL, etc.

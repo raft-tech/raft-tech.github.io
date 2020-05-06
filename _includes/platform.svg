@@ -763,58 +763,9 @@ svg|a {
 </g>
 
 </g>
-<a id="cloud-trg" href="javascript:;">
+<a id="cloud-trg" >
     <rect width="1200" height="1000" opacity="0" />
 </a>
 
-<script>
-<![CDATA[
-var iterations = 2; // change it to control how many times it animates
 
-var frames = 0;
-var itr = 0;
-
-function $(sel) { return document.querySelector(sel); }
-
-function setAttributes(el, attrs) {
-  for(var key in attrs) {
-    el.setAttribute(key, attrs[key]);
-  }
-}
-
-$("#cloud-trg").addEventListener("click", function( event ) {
-  if(itr == iterations) {
-      itr = 0;
-      move();
-  }
-}, false);
-
-function move() {
-  $("#aa1").setAttribute("transform", "translate(0 " + (-3.667 * frames -125) + ")");
-  $("#aa2").setAttribute("transform", "translate(0 " + (3.667 * frames + 125) + ")");
-  $("#bb1").setAttribute("transform", "translate(0 " + (2.778 * frames + 30) + ")");
-  $("#bb2").setAttribute("transform", "translate(0 " + (-2.778 * frames - 30) + ")");
-  $("#cc1").setAttribute("transform", "translate(0 " + (-2.9 * frames - 35) + ")");
-  $("#cc2").setAttribute("transform", "translate(0 " + (2.9 * frames + 35) + ")");
-
-  if (frames < 179) {
-    frames++;
-  } else {
-    itr++;
-    frames = 0;
-  }
-  
-  if (itr < iterations) {
-      setTimeout(function(){
-        requestAnimationFrame(move);
-      }, 30);
-  }
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-  move(); // call this function to start animation;
-});
-
-]]>
-</script>
 </svg>
