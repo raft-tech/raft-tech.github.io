@@ -798,6 +798,12 @@ $speed: 300ms;
   margin-top: 10px;
   margin-bottom: 0px;
   padding: 0;
+  height: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .card-desc p {
@@ -807,6 +813,12 @@ $speed: 300ms;
 	margin: 0px;
 	margin-bottom: 20px;
 	padding: 0;
+  height: 139px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 @media (max-width: $large){
