@@ -117,7 +117,7 @@ pre code.hljs {
 	margin-top: 66px;
 	.wrapper {
 		@include outer-container;
-		padding: 1em;
+		padding: 2em 1em;
 	}
 	/*
 	*	index.html
@@ -191,7 +191,7 @@ pre code.hljs {
 			padding-bottom: 1em;
 		}
 		.post-content {
-			padding: 1em 0;
+			padding: 2em 0;
 		}
 		.tags {
 			font-size: 0.9em;

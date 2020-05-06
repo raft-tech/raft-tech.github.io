@@ -16,32 +16,45 @@ h6 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
+  font-weight: $heading-font-weight;
   margin: 0 0 $base-font-size;
   margin: 0 0 rem($base-font-size);
 }
 h1 {
 	font-size: modular-scale(4);
+  color: $turquoise !important;
 }
 h2 {
 	font-size: modular-scale(3);
+  color: $dark-gray !important;
 }
 h3 {
 	font-size: modular-scale(2);
+  color: $dark-gray !important;
 }
 h4 {
 	font-size: modular-scale(1);
+  color: $dark-gray !important;
 }
 h5 {
 	font-size: modular-scale(-1);
+  color: $dark-gray !important;
 }
 h6 {
 	font-size: modular-scale(-2);
+  color: $dark-gray !important;
 }
 
 p {
   margin: 0 0 $small-spacing;
+  color: $medium-gray !important;
 }
-
+ul li {
+  color: $medium-gray;
+}
+strong {
+  color: $dark-gray;
+}
 a {
   color: $action-color;
   text-decoration: none;
