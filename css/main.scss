@@ -49,20 +49,16 @@ $xlarge: 1200px;
 
 #blog {
   background: $light-gray;
-<<<<<<< HEAD
 }
 
 #blog-content p, #blog-content h2, #blog-content h3, #blog-content ul {
   color: $grey !important;
 }
 
-=======
+#blog-content img {
+  height: 500px;
+  width: 500px;
 }
-
-#blog-content p, #blog-content h2, #blog-content h3, #blog-content ul {
-  color: $grey !important;
-}
->>>>>>> origin
 
 #blog-content a {
   color: #374453;
@@ -721,17 +717,10 @@ $speed: 300ms;
   background: #ffffff;
   margin: 15px 0;
   height: calc(100% - 30px);
-<<<<<<< HEAD
-  border-bottom: 10px solid rgba(49, 182, 123, 0.2);
-  &:hover {
-    cursor: pointer;
-    border-bottom: 10px solid rgba(49, 182, 123, 1);
-=======
   border-bottom: 10px solid rgba(108, 181, 203, 0.2);
   &:hover {
     cursor: pointer;
     border-bottom: 10px solid rgba(23, 10, 124, 1);
->>>>>>> origin
     & h3 {
       color: $blue;
     }
