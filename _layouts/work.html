@@ -15,7 +15,7 @@ layout: default
         <h2>{{ work[1]["head"] }}</h2>
         <div class="work-row {% cycle '', 'reverse' %}">
           <div id="problem">
-            <img src={{ work[1]["img"] }}></img>
+            <object type="image/svg+xml" data={{ work[1]["img"] }}></object>
           </div>
           <div id="solution">
             <p><strong>Challenge</strong></p>
