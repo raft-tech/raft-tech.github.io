@@ -746,10 +746,10 @@ $speed: 300ms;
   background: #ffffff;
   margin: 15px 0;
   height: calc(100% - 30px);
-  border-bottom: 10px solid rgba(49, 182, 123, 0.2);
+  border-bottom: 10px solid rgba(108, 181, 203, 0.2);
   &:hover {
     cursor: pointer;
-    border-bottom: 10px solid rgba(49, 182, 123, 1);
+    border-bottom: 10px solid rgba(23, 10, 124, 1);
     & h3 {
       color: $blue;
     }
