@@ -763,7 +763,7 @@ svg|a {
 </g>
 
 </g>
-<a id="cloud-trg" href="javascript:;">
+<a id="trg" href="javascript:;">
     <rect width="1200" height="1000" opacity="0" />
 </a>
 
@@ -782,7 +782,7 @@ function setAttributes(el, attrs) {
   }
 }
 
-$("#cloud-trg").addEventListener("click", function( event ) {
+$("#trg").addEventListener("click", function( event ) {
   if(itr == iterations) {
       itr = 0;
       move();

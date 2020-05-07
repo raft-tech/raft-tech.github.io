@@ -597,6 +597,7 @@ function move() {
     frame++;
   } else {
     itr++;
+    console.log(frame);
     frame = 360;
   }
   
