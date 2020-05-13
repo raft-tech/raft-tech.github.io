@@ -1,8 +1,8 @@
 ---
-id: austine
-permalink: "/about/austine"
-full_name: Austine
-role: Team Member
+id: ongel_dasilva
+permalink: "/about/ongel_dasilva"
+full_name: Ongel Dasilva
+role: User Analyst
 image: 
 about: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid
   enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident
@@ -13,7 +13,7 @@ about: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo
   eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas,
   expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci
   nemo rem maiores quaerat? Aliquam, quo culpa.
-github: https://github.com/
+github: 
 linkedin: 
 featimg: "/assets/aboutBanner1.jpg"
 layout: about/profile

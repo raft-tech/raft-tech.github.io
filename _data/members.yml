@@ -1,190 +1,291 @@
-- id: shubhi
-  permalink: /about/shubhi
+- id: shubhi_mishra
+  permalink: /about/shubhi_mishra
   full_name: Shubhi Mishra
-  role: CEO
+  role: 'Founder, Design Lead'
   image: Shubhi.jpg
-  about: "Ms. Mishra has many years of experience overseeing multi-million-dollar IDIQs, BPAs, and Task Orders. She has extensive experience in helping public and private organizations achieve their business objectives. She blends deep knowledge of technology with thorough understanding of collaborative research to develop and deploy solutions that integrate bioinformatics with traditional IT in supporting collaborative research business processes. She has over a decade’s worth of experience assisting federal government agencies as a technology and organization consultant to effectively manage change, adopt innovative technology, and improve processes. She is also a published author of scientific papers. Ms. Mishra received her Masters in Bioinformatics from Boston University and her Juris Doctorate from George Washington University."
-  github: 'https://github.com/shubhi-raft'
-  linkedin: 'https://www.linkedin.com/in/shubhi-mishra-19a94a135/'
+  about: 'Shubhi has 12+ years of experience working with government agencies, educational institutions, and non-profits in UX strategy, mobile design, and interactive design. She also has 7+ years of experience with using human centered design principles in an agile framework for agencies such as CFPB and NHLBI and private sector clients. Her passion for creating impactful digital products that are accessible and focused on user needs led her to found Raft.'
+  github: https://github.com/shubhi-raft
+  linkedin: https://www.linkedin.com/in/shubhi-mishra-19a94a135/
   featimg: /assets/aboutBanner1.jpg
-- id: bhaarat 
-  permalink: /about/bhaarat 
+- id: bhaarat_sharma
+  permalink: /about/bhaarat_sharma
   full_name: Bhaarat Sharma
-  role: CTO
+  role: Chief Technology Officer
   image: Bhaarat.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/omnipresent07'
-  linkedin: 'https://www.linkedin.com/in/bhaarat-s-68190316/'
+  about: "Bhaarat enjoys using technology to solve complex user problems. He has over 17 years of experience building user-focused applications in various frameworks including Akka, Rails, Django, and Grails. Bhaarat has a master's degree in computer science from Georgia Tech and <a href=https://patents.google.com/patent/US9830508B1/en?inventor=bhaarat+sharma&oq=bhaarat+sharma'>a patent from USPTO</a> for extracting text from digital images. His current areas of interest are Deep Learning, DevSecOps, and fostering an inclusive team of <em>rockstar</em> mentors."
+  github: https://github.com/omnipresent07
+  linkedin: https://www.linkedin.com/in/bhaarat-s-68190316/
   featimg: /assets/aboutBanner1.jpg
-- id: patrick
-  permalink: /about/patrick
+- id: patrick_asata
+  permalink: /about/patrick_asata
   full_name: Patrick Asata
   role: Solutions Architect 
   image: Patrick.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/PatrickGoRaft'
-  linkedin: 'https://www.linkedin.com/in/patrick-asata-4b21a816b/'
+  about: "Patrick is a hands-on Solution Architect with experience leading development teams to build scalable, resilient, and user-centric applications. He has over 15 years of experience transforming ideas to production-ready systems in various sectors. Patrick has a master's degree in computer science. In his spare time he enjoys building gaming engines, traveling, and long walks."
+  github: https://github.com/PatrickGoRaft
+  linkedin: https://www.linkedin.com/in/patrick-asata-4b21a816b/
   featimg: /assets/aboutBanner1.jpg
-- id: beata
-  permalink: /about/beata
+- id: beata_barci
+  permalink: /about/beata_barci
   full_name: Beata Barci
   role: Sr. Product Manager
   image: Beata.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
-  linkedin: 'https://www.linkedin.com/in/beatabarci/'
+  about: "Beata is a Product Manager with vast experience leading cross-functional scrum teams to build digital services that have a positive impact on the user experience. She has a passion for leading efficient sprint meetings, daily scrums, and focusing on persistent user needs. Along with a master's degree in [....], Beata has over XX years of experience in public health, product management, and leading development teams. In her spare time she enjoys [.......]"
+  github: null
+  linkedin: https://www.linkedin.com/in/beatabarci/
   featimg: /assets/aboutBanner1.jpg
-- id: christine 
-  permalink: /about/christine 
-  full_name: Christine Kobayashi
+- id: christine_so
+  permalink: /about/christine_so
+  full_name: Christine So
   role: Sr. Proposal Manager
   image: Christine.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/raft-cso'
-  linkedin: 'https://www.linkedin.com/in/christine-kobayashi-53159553/'
+  about: "Christine is a growth expert with deep expertise in managing proposals, contracts, marketing, technical writing, and business development. She has a passion for breaking the status quo of traditional government proposals with creativity, visual aesthetics, and plain language. When not working against ever growing deadlines, she enjoys reading, writing, and exploring new cities"
+  github: https://github.com/raft-cso
+  linkedin: https://www.linkedin.com/in/christinekobayashi/
   featimg: /assets/aboutBanner1.jpg
-- id: heather
-  permalink: /about/heather
+- id: heather_stout
+  permalink: /about/heather_stout
   full_name: Heather Stout
-  role: Operations Manager
+  role: Quality Assurance
   image: Heather.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
-  linkedin: 'https://www.linkedin.com/in/heather-s-0489a9198/'
+  about: "Heather is a Quality Assurance Analyst with a knack for finding bugs not caught in unit or integration testing. She has a passion for teaching, has been a middle school math teacher, and has a bachelor's degree in mathematics. When not working, Heather enjoys Zumba and spending time with her family and friends."
+  github: null
+  linkedin: https://www.linkedin.com/in/heather-s-0489a9198/
   featimg: /assets/aboutBanner1.jpg
-- id: barak
-  permalink: /about/barak
+- id: barak_stout
+  permalink: /about/barak_stout
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
   image: Barak.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/BarakStout'
-  linkedin: 'https://www.linkedin.com/in/barak-stout/'
+  about: "Barak is a Sr. DevSecOps Engineer with a passion for simplifying complex tasks such as security, testing, developer happiness, and governance using automation. He also leads Raft's open source collaboration efforts. In his not-so-spare time he enjoys running and cooking. Barak is working on his master's degree in computer science from Georgia Tech's OMSCS program."
+  github: https://github.com/BarakStout
+  linkedin: https://www.linkedin.com/in/barak-stout/
   featimg: /assets/aboutBanner1.jpg
-- id: tyler
-  permalink: /about/tyler
+- id: tyler_sheppard
+  permalink: /about/tyler_sheppard
   full_name: Tyler Sheppard
   role: Graphic Designer
   image: Tyler.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
-  linkedin: 'https://www.linkedin.com/in/jtsheppard/'
+  about: "Tyler has a passion for using visual design and data visualization. He has several years of experience contributing designs to museums, political campaigns, and web studios. He loves typography and hates comic sans. Tyler graduated at the top of his class in visual communication and is currently finishing Lambda School specializing in data science."
+  github: null
+  linkedin: https://www.linkedin.com/in/jtsheppard/
   featimg: /assets/aboutBanner1.jpg
-- id: michael
-  permalink: /about/michael
+- id: michael_roach
+  permalink: /about/michael_roach
   full_name: Michael Roach
   role: Sr. DevSecOps Engineer
   image: Michael.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/RoachMJ'
-  linkedin: 'https://www.linkedin.com/in/michaelroachj/'
+  about: "Mike is a DevSecOps Engineer and former U.S. Marine with a deep expertise in Kubernetes, D2IQ, ansible, puppet, and relational/non-relational databases. He loves command line, tmux, vim and developing on Rasberry Pi's. When not templating YAML, Mike enjoys building smart iot devices and exploring the outdoors."
+  github: https://github.com/RoachMJ
+  linkedin: https://www.linkedin.com/in/michaelroachj/
   featimg: /assets/aboutBanner1.jpg
-- id: ryan
-  permalink: /about/ryan
+- id: ryan_hunter
+  permalink: /about/ryan_hunter
   full_name: Ryan Hunter
-  role: Marketing Manager
+  role: Content Strategist
   image: Ryan.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/RedNumberIX'
-  linkedin: 'https://www.linkedin.com/in/ryanhunter369/'
+  about: 'Ryan loves making content clear using plain language and pertinent questions like, "Who are our users? What do we know about them? How do we focus content for them?" He has experience creating compelling copies for military, journalistic, and entertainment publications, both online and in print. In his spare time, Ryan enjoys board games'
+  github: https://github.com/RedNumberIX
+  linkedin: https://www.linkedin.com/in/ryanhunter369/
   featimg: /assets/aboutBanner1.jpg
-- id: leslie
-  permalink: /about/leslie
+- id: leslie_perucci
+  permalink: /about/leslie_perucci
   full_name: Leslie Perucci
-  role: Senior UX/UI Designer
+  role: Senior UX Designer
   image: Leslie.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/LesliePerucci'
-  linkedin: 'https://www.linkedin.com/in/leslieperucci/'
+  about: "Leslie is a Sr. UX Designer with 8 years of experience in UX design with an emphasis on iterative design, user-centered design, user research, and user testing. She has over 14 years of experience in graphic design, marketing, digital media management, social media marketing, interactive/web design, and video production. Leslie has a voracity for learning and creating innovative, user-friendly design and marketing/brand design that is aesthetic as well as functional. In her free time, she enjoys creative writing, art appreciation, traveling, spending time with family and friends, and activities such as biking."
+  github: https://github.com/LesliePerucci
+  linkedin: https://www.linkedin.com/in/leslieperucci/
+  homepage: https://leslieperucci.com/
   featimg: /assets/aboutBanner1.jpg
-- id: meissa
-  permalink: /about/meissa
+- id: meissa_dia
+  permalink: /about/meissa_dia
   full_name: Meissa Dia
   role: Sr. Frontend Engineer
   image: Meissa.jpg
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/meissadia'
+  about: "Meissa is on a mission to create user experiences that improve lives while growing as an individual, teammate, and leader. He aims to uplift and empower those around him because working together is the surest path forward. Meissa has deep expertise in ReactJS, Redux, ES6, Progressive Web Apps, Responsive Design, and Git. When not developing, he enjoys hiking, basketball, and music production."
+  github: https://github.com/meissadia
   linkedin: https://www.linkedin.com/in/meissa/
-  featimg: /assets/aboutBanner1.jpg
   homepage: https://meissadia.surge.sh
-- id: missy
-  permalink: /about/missy
+  featimg: /assets/aboutBanner1.jpg
+- id: missy_maloney
+  permalink: /about/missy_maloney
   full_name: Missy Maloney
   role: Frontend Developer
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/MissyM2'
-  linkedin: 'https://www.linkedin.com/in/missymaloney/'
+  about: "Missy is a Frontend Developer with experience in ReactJS, Django, MobX, and Redux. She loves to bring ideas to life by using digital tools that focus on critical user needs. Missy has the unique ability to see the problem through the eyes of the user while also being able to implement solutions. She has a diverse background that spans marketing, sales, technology, and network systems. When not working, Missy often lends her coding skills to organizations that need volunteer help."
+  github: https://github.com/MissyM2
+  linkedin: https://www.linkedin.com/in/missymaloney/
+  homepage: http://www.missymaloney1.com/
   featimg: /assets/aboutBanner1.jpg
-- id: bhargav
-  permalink: /about/bhargav
+- id: bhargav_joshi
+  permalink: /about/bhargav_joshi
   full_name: Bhargav Joshi
-  role: Team Member
+  role: Sr. DevSecOps Engineer
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
+  about: "Bhargav has deep expertise in Infrastructure as Code (IaC), GitOps, and Kubernetes. He is a certified OpenShift and RedHat expert and also manages infrastructure in all environments: dev, prod, and staging. He has a passion for learning new tools and currently manages a mission-critical infrastructure using D2iQ, DC/OS, and Kubernetes. While away from work, Bhargav enjoys going for long hikes with his family. "
+  github: null
   linkedin: null
   featimg: /assets/aboutBanner1.jpg
-- id: priya
-  permalink: /about/priya
-  full_name: Priya Adipoodi
-  role: Team Member
+- id: vamsi_priya_adipoodi
+  permalink: /about/vamsi_priya_adipoodi
+  full_name: Vasmi Priya Adipoodi
+  role: Software Engineer
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
-  linkedin: 'https://www.linkedin.com/in/priya-adipoodi/'
+  about: "Priya is a Software Engineer who loves exploring how things work and figuring out ways to make them better through automation. She loves working directly with users to deeply understand user experience issues and improve them for the better.  Priya has a master's degree in computer science from Texas A&M. In her downtime, Priya loves pencil sketching and painting."
+  github: https://github.com/PriyaAdipoodi1
+  linkedin: https://www.linkedin.com/in/priya-adipoodi/
   featimg: /assets/aboutBanner1.jpg
-- id: austine
-  permalink: /about/austine
-  full_name: Austine
-  role: Team Member
+- id: austine_luyegu
+  permalink: /about/austine_luyegu
+  full_name: Austine Luyegu
+  role: Sr. Network Engineer
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
+  about: "Austine has over 10 years of network engineering/systems administration experience in on-prem, hybrid, and cloud infrastructure. He has extensive knowledge working in enterprise, startup, and government environments. Austine enjoys automation in Software-Defined Networking and working on IP Next Generation Network. He has recently enlisted in the U.S. Navy and is currently going through basic training!"
+  github: null
   linkedin: null
   featimg: /assets/aboutBanner1.jpg
-- id: dan
-  permalink: /about/dan
-  full_name: Dan
-  role: Team Member
+- id: dan_mutombo
+  permalink: /about/dan_mutombo
+  full_name: Dan Mutombo
+  role: User Analyst
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
+  about: "Dan loves interacting with users on a daily basis to conduct ethnographic research, troubleshoot issues in daily tasks, and work with the team to try improve the user experience. When not working, Dan enjoys [...]"
+  github: null
   linkedin: null
   featimg: /assets/aboutBanner1.jpg
-- id: calvin
-  permalink: /about/calvin
-  full_name: Calvin
-  role: Team Member
+- id: calvin_fernandes
+  permalink: /about/calvin_fernandes
+  full_name: Calvin Fernandes
+  role: Sr. Software Engineer
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
+  about: "Calvin has over 10 years of experience developing scalable, reactive, vendor-agnostic, and cloud-native applications in the open source. He has utilized languages such as Python, Java, and Scala to write maintainable, functional, and well-tested code base. He also has deep expertise in PostgreSQL and Cassandra. Calvin has a passion for learning new tools and technologies to solve real world problems. He strongly believes that great products are not just built with great technical tools, but with emotional intelligence as well. When not working, Calvin enjoys traveling."
+  github: null
   linkedin: null
   featimg: /assets/aboutBanner1.jpg
-- id: ongel
-  permalink: /about/ongel
-  full_name: Ongel
-  role: Team Member
+- id: ongel_dasilva
+  permalink: /about/ongel_dasilva
+  full_name: Ongel Dasilva
+  role: User Analyst
   image: null
   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
+  github: null
   linkedin: null
   featimg: /assets/aboutBanner1.jpg
-- id: jean
-  permalink: /about/jean
-  full_name: Jean
-  role: Team Member
+- id: jean_alle
+  permalink: /about/jean_alle
+  full_name: Jean Alle
+  role: User Analyst
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
+  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+  github: null
   linkedin: null
   featimg: /assets/aboutBanner1.jpg
-- id: james
-  permalink: /about/james
-  full_name: James
-  role: Team Member
+- id: james_villarreal
+  permalink: /about/james_villarreal
+  full_name: James Villarreal
+  role: Sr. DevSecOps Engineer
   image: null
-  about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat aut ab vitae velit praesentium earum fugit illo commodi veritatis fugiat consequatur ipsam sit! Quis, officia perferendis asperiores ratione fugit totam inventore ut animi iusto praesentium consequatur commodi delectus a repudiandae vero hic quasi odio eum sunt facere eaque. Dolores expedita non, molestiae ullam eligendi atque earum hic in cum? Iste minima eligendi quae quis deserunt ab quas, expedita eaque nam tenetur sint accusantium, porro quam, sapiente iure earum adipisci nemo rem maiores quaerat? Aliquam, quo culpa."
-  github: 'https://github.com/'
+  about: "James loves linux, containerization, and clustering. He has a passion for using DTrace and strace to debug performance issues. When not working, James enjoys long walks and learning new technologies. "
+  github: null
   linkedin: null
   featimg: /assets/aboutBanner1.jpg
+- id: steven_godofsky
+  permalink: /about/steven_godofsky
+  full_name: Steven Godofsky
+  role: Network Engineer
+  image: null
+  about: "Steven loves problem solving, perl, and client-server programming. He is a recent MBA grad from Georgetown and received his bachelor's degree from Rochester Institute of Technology in network and systems administration."
+  github: null
+  linkedin: null
+  featimg: /assets/aboutBanner1.jpg
+- id: rebecca_mancuso
+  permalink: /about/rebecca_mancuso
+  full_name: Rebecca Mancuso
+  role: Operations
+  image: null
+  about: "Rebecca leads the operations for Raft."
+  github: null
+  linkedin: null
+  featimg: /assets/aboutBanner1.jpg
+# - id: james_kaiser
+#   permalink: /about/james_kaiser
+#   full_name: James Kaiser
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: ajaratu_carew
+#   permalink: /about/ajaratu_carew
+#   full_name: Ajaratu Carew
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: altantsetseg_lkhagvasuren
+#   permalink: /about/altantsetseg_lkhagvasuren
+#   full_name: Altantsetseg Lkhagvasuren
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: brandy_waters
+#   permalink: /about/brandy_waters
+#   full_name: Brandy Waters
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: dorsey_vengrouskie
+#   permalink: /about/dorsey_vengrouskie
+#   full_name: Dorsey Vengrouskie
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: mallika_koirala
+#   permalink: /about/mallika_koirala
+#   full_name: Mallika Koirala
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: patria_stout
+#   permalink: /about/patria_stout
+#   full_name: Patria Stout
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: shihfeng_chen
+#   permalink: /about/shihfeng_chen
+#   full_name: Shihfeng Chen
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  
+# - id: tanya_wilcox
+#   permalink: /about/tanya_wilcox
+#   full_name: Tanya Wilcox
+#   role: User Analyst
+#   image: null
+#   about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo aliquid enim est quisquam, architecto debitis culpa ullam ea eveniet, laborum provident repellat."
+#   github: null
+#   linkedin: null
+#   featimg: /assets/aboutBanner1.jpg  

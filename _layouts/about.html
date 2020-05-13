@@ -36,12 +36,12 @@ layout: default
         {% for member in site.data.members %}
           <li class="member">
             <a class="member-card" href="/about/{{member.id}}">
+              <div class='plus-icon'>+</div>
+              <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}" alt="{{member.name}}">
               <div class='header'>
                 <h4 class='name'>{{member.full_name}}</h4>
                 {% if member.role %}<h5 class='role'>{{member.role}}</h5>{% endif %}
               </div>
-              <div class='plus-icon'>+</div>
-              <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}" alt="{{member.name}}">
             </a>
           </li>
         {% endfor %}
