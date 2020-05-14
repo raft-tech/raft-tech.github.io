@@ -12,7 +12,7 @@ about: Calvin has over 7 years of experience developing scalable, reactive, vend
   believes that great products are not just built with great technical tools, but
   with emotional intelligence as well. When not working, Calvin enjoys traveling.
 github: https://github.com/calvinlfer
-linkedin: https://www.linkedin.com/in/calvin-lee-fernandes/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_top%3B1xPUbspDRrmKVtsKudEfkg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_search_srp_top-search_srp_result&lici=xiOi2155Q6eE%2FTY%2FiJMv2w%3D%3D
+linkedin: https://www.linkedin.com/in/calvin-lee-fernandes/
 featimg: "/assets/aboutBanner1.jpg"
 layout: about/profile
 ---
