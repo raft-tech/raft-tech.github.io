@@ -2,7 +2,7 @@
 id: leslie_perucci
 permalink: "/about/leslie_perucci"
 full_name: Leslie Perucci
-role: Senior UX Designer
+role: Senior UX Designer/Researcher
 image: Leslie.jpg
 about: Leslie is a Sr. UX Designer/Researcher with 8 years of experience in UX design with an
   emphasis on iterative design, user-centered design, user research, and user testing.
