@@ -1,18 +1,160 @@
-- id: member_1
-  full_name: Member 1
-  permalink: about/member_1
-  role: Role
-  image: 'meis.jpg'
-  github: ''
-  linkedin: ''
-  about: |
-    About text for member_1
-- id: member_2
-  full_name: Member 2
-  permalink: about/member_2
-  role: Role
-  image: 
-  github: ''
-  linkedin: ''
-  about: |
-    About text for member_2
+- id: shubhi_mishra
+  permalink: /about/shubhi_mishra
+  full_name: Shubhi Mishra
+  role: 'Founder, Design Lead'
+  image: Shubhi.jpg
+- id: bhaarat_sharma
+  permalink: /about/bhaarat_sharma
+  full_name: Bhaarat Sharma
+  role: Chief Technology Officer
+  image: Bhaarat.jpg
+- id: patrick_asata
+  permalink: /about/patrick_asata
+  full_name: Patrick Asata
+  role: Solutions Architect 
+  image: Patrick.jpg
+- id: austine_luyegu
+  permalink: /about/austine_luyegu
+  full_name: Austine Luyegu
+  role: Sr. Network Engineer
+  image: null
+- id: beata_barci
+  permalink: /about/beata_barci
+  full_name: Beata Barci
+  role: Sr. Product Manager
+  image: Beata.jpg
+- id: christine_so
+  permalink: /about/christine_so
+  full_name: Christine So
+  role: Sr. Proposal Manager
+  image: Christine.jpg
+- id: missy_maloney
+  permalink: /about/missy_maloney
+  full_name: Missy Maloney
+  role: Frontend Developer
+  image: null
+- id: barak_stout
+  permalink: /about/barak_stout
+  full_name: Barak Stout
+  role: Sr. DevSecOps Engineer
+  image: Barak.jpg
+- id: tyler_sheppard
+  permalink: /about/tyler_sheppard
+  full_name: Tyler Sheppard
+  role: Visual Designer
+  image: Tyler.jpg
+- id: vamsi_priya_adipoodi
+  permalink: /about/vamsi_priya_adipoodi
+  full_name: Vasmi Priya Adipoodi
+  role: Software Engineer
+  image: null
+- id: ryan_hunter
+  permalink: /about/ryan_hunter
+  full_name: Ryan Hunter
+  role: Content Strategist
+  image: Ryan.jpg
+- id: leslie_perucci
+  permalink: /about/leslie_perucci
+  full_name: Leslie Perucci
+  role: Senior UX Designer/Researcher
+  image: Leslie.jpg
+- id: meissa_dia
+  permalink: /about/meissa_dia
+  full_name: Meissa Dia
+  role: Sr. Frontend Engineer
+  image: Meissa.jpg
+- id: heather_stout
+  permalink: /about/heather_stout
+  full_name: Heather Stout
+  role: Quality Assurance
+  image: Heather.jpg
+- id: bhargav_joshi
+  permalink: /about/bhargav_joshi
+  full_name: Bhargav Joshi
+  role: Sr. DevSecOps Engineer
+  image: null
+- id: calvin_fernandes
+  permalink: /about/calvin_fernandes
+  full_name: Calvin Fernandes
+  role: Sr. Software Engineer
+  image: null
+- id: dan_mutombo
+  permalink: /about/dan_mutombo
+  full_name: Dan Mutombo
+  role: User Analyst
+  image: null
+- id: michael_roach
+  permalink: /about/michael_roach
+  full_name: Michael Roach
+  role: Sr. DevSecOps Engineer
+  image: Michael.jpg  
+- id: ongel_dasilva
+  permalink: /about/ongel_dasilva
+  full_name: Ongel Dasilva
+  role: Project Manager
+  image: null
+- id: jean_alle
+  permalink: /about/jean_alle
+  full_name: Jean Alle
+  role: Sr. User Analyst
+  image: null
+- id: james_villarreal
+  permalink: /about/james_villarreal
+  full_name: James Villarreal
+  role: Sr. DevSecOps Engineer
+  image: null
+- id: steven_godofsky
+  permalink: /about/steven_godofsky
+  full_name: Steven Godofsky
+  role: Network Engineer
+  image: null
+- id: rebecca_mancuso
+  permalink: /about/rebecca_mancuso
+  full_name: Rebecca Mancuso
+  role: Operations
+  image: null
+# - id: james_kaiser
+#   permalink: /about/james_kaiser
+#   full_name: James Kaiser
+#   role: User Analyst
+#   image: null
+# - id: ajaratu_carew
+#   permalink: /about/ajaratu_carew
+#   full_name: Ajaratu Carew
+#   role: User Analyst
+#   image: null
+# - id: altantsetseg_lkhagvasuren
+#   permalink: /about/altantsetseg_lkhagvasuren
+#   full_name: Altantsetseg Lkhagvasuren
+#   role: User Analyst
+#   image: null
+# - id: brandy_waters
+#   permalink: /about/brandy_waters
+#   full_name: Brandy Waters
+#   role: User Analyst
+#   image: null
+# - id: dorsey_vengrouskie
+#   permalink: /about/dorsey_vengrouskie
+#   full_name: Dorsey Vengrouskie
+#   role: User Analyst
+#   image: null
+# - id: mallika_koirala
+#   permalink: /about/mallika_koirala
+#   full_name: Mallika Koirala
+#   role: User Analyst
+#   image: null
+# - id: patria_stout
+#   permalink: /about/patria_stout
+#   full_name: Patria Stout
+#   role: User Analyst
+#   image: null
+# - id: shihfeng_chen
+#   permalink: /about/shihfeng_chen
+#   full_name: Shihfeng Chen
+#   role: User Analyst
+#   image: null
+# - id: tanya_wilcox
+#   permalink: /about/tanya_wilcox
+#   full_name: Tanya Wilcox
+#   role: User Analyst
+#   image: null

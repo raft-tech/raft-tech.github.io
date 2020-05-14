@@ -1,14 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" stroke-miterlimit="10" clip-rule="evenodd" viewBox="0 0 1200 1000">
-<style>
-/* <![CDATA[ */
-svg|a {
-  cursor: pointer;
-  outline: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-tap-highlight-color: transparent;
-}
-/* ]]> */
-</style>
+
 <defs>
 <ellipse id="el1" cx="86.8" cy="7.2" fill="#cbcbcb" rx="86.8" ry="7.2"/>
 <circle id="el3" cx="54.8" cy="54.8" r="54.8" fill="#fff" stroke="#303591" stroke-width="18.94"/>
@@ -221,167 +212,26 @@ svg|a {
 </g>
 </g>
 
-<g id="aa">
-<use id="a1" x="309.2" y="844.2" transform="translate(396 851.4) scale(0) translate(-396 -851.4)" xlink:href="#el1"/>
-<path id="a2" fill="none" stroke-dasharray="704.2" stroke-dashoffset="-704.2" stroke="#303591" stroke-width="42" d="M390.366 148v704.2"/>
-<use id="a3" x="335.4" y="98" transform="translate(390.2 152.8) scale(0) translate(-390.2 -152.8)" xlink:href="#el3"/>
-<path id="a4" fill="none" stroke-dasharray="380.12" stroke-dashoffset="380.12" stroke="#303591" stroke-width="36" d="M390.366 624.537L638.236 496.2l.386-101.003"/>
-<use id="a5" x="591.4" y="346.2" transform="translate(638.6 393.4) scale(0) translate(-638.6 -393.4)" xlink:href="#el5"/>
-<path id="a6" fill="none" stroke-dasharray="274.87" stroke-dashoffset="274.87" stroke="#303591" stroke-width="36" d="M390.366 566.422L232.23 494.417 227.775 393.4"/>
-<use id="a7" x="180.8" y="346.2" transform="translate(228 393.4) scale(0) translate(-228 -393.4)" xlink:href="#el7"/>
-<path id="a8" fill="none" stroke-dasharray="366.81" stroke-dashoffset="366.81" stroke="#303591" stroke-width="36" d="M390.366 548.87l114.886-128.987.386-194.083"/>
-<use id="a9" x="452.4" y="178.6" transform="translate(502.6 225.8) scale(0) translate(-502.6 -225.8)" xlink:href="#el9"/>
-<path id="a10" fill="none" stroke-dasharray="302.98" stroke-dashoffset="302.98" stroke="#303591" stroke-width="30" d="M390.366 446.022l-81.644-59.456L268.6 188.6"/>
-<use id="a11" x="228" y="148" transform="translate(268.6 188.6) scale(0) translate(-268.6 -188.6)" xlink:href="#el11"/>
-<use id="a12" x="744.8" y="840.8" transform="translate(819.2 846.8) scale(0) translate(-819.2 -846.8)" xlink:href="#el12"/>
-<path id="a13" fill="none" stroke-dasharray="288.2" stroke-dashoffset="-288.2" stroke="#303591" stroke-width="24" d="M819.2 558.6v288.2"/>
-<use id="a14" x="786.8" y="526.2" transform="translate(819.2 558.6) scale(0) translate(-819.2 -558.6)" xlink:href="#el14"/>
-<path id="a15" fill="none" stroke-dasharray="240" stroke-dashoffset="-240" stroke="#303591" stroke-width="22" d="M888.4 513.6v138.393L819.2 726.4"/>
-<use id="a16" x="860.4" y="485.6" transform="translate(888.4 513.6) scale(0) translate(-888.4 -513.6)" xlink:href="#el16"/>
+<g id="data_aa">
+<use id="data_a1" x="309.2" y="844.2" transform="translate(396 851.4) scale(0) translate(-396 -851.4)" xlink:href="#el1"/>
+<path id="data_a2" fill="none" stroke-dasharray="704.2" stroke-dashoffset="-704.2" stroke="#303591" stroke-width="42" d="M390.366 148v704.2"/>
+<use id="data_a3" x="335.4" y="98" transform="translate(390.2 152.8) scale(0) translate(-390.2 -152.8)" xlink:href="#el3"/>
+<path id="data_a4" fill="none" stroke-dasharray="380.12" stroke-dashoffset="380.12" stroke="#303591" stroke-width="36" d="M390.366 624.537L638.236 496.2l.386-101.003"/>
+<use id="data_a5" x="591.4" y="346.2" transform="translate(638.6 393.4) scale(0) translate(-638.6 -393.4)" xlink:href="#el5"/>
+<path id="data_a6" fill="none" stroke-dasharray="274.87" stroke-dashoffset="274.87" stroke="#303591" stroke-width="36" d="M390.366 566.422L232.23 494.417 227.775 393.4"/>
+<use id="data_a7" x="180.8" y="346.2" transform="translate(228 393.4) scale(0) translate(-228 -393.4)" xlink:href="#el7"/>
+<path id="data_a8" fill="none" stroke-dasharray="366.81" stroke-dashoffset="366.81" stroke="#303591" stroke-width="36" d="M390.366 548.87l114.886-128.987.386-194.083"/>
+<use id="data_a9" x="452.4" y="178.6" transform="translate(502.6 225.8) scale(0) translate(-502.6 -225.8)" xlink:href="#el9"/>
+<path id="data_a10" fill="none" stroke-dasharray="302.98" stroke-dashoffset="302.98" stroke="#303591" stroke-width="30" d="M390.366 446.022l-81.644-59.456L268.6 188.6"/>
+<use id="data_a11" x="228" y="148" transform="translate(268.6 188.6) scale(0) translate(-268.6 -188.6)" xlink:href="#el11"/>
+<use id="data_a12" x="744.8" y="840.8" transform="translate(819.2 846.8) scale(0) translate(-819.2 -846.8)" xlink:href="#el12"/>
+<path id="data_a13" fill="none" stroke-dasharray="288.2" stroke-dashoffset="-288.2" stroke="#303591" stroke-width="24" d="M819.2 558.6v288.2"/>
+<use id="data_a14" x="786.8" y="526.2" transform="translate(819.2 558.6) scale(0) translate(-819.2 -558.6)" xlink:href="#el14"/>
+<path id="data_a15" fill="none" stroke-dasharray="240" stroke-dashoffset="-240" stroke="#303591" stroke-width="22" d="M888.4 513.6v138.393L819.2 726.4"/>
+<use id="data_a16" x="860.4" y="485.6" transform="translate(888.4 513.6) scale(0) translate(-888.4 -513.6)" xlink:href="#el16"/>
 </g>
 
-<a id="trg" href="javascript:;">
+<a id="trg" >
     <rect width="1200" height="1000" opacity="0" />
 </a>
-
-<script>
-<![CDATA[
-iterations = 3; // change it to control how many times it animates
-
-var frame = 0;
-var frames = 299;
-var itr = 0;
-
-function $(sel) { return document.querySelector(sel); }
-
-function setAttributes(el, attrs) {
-  for(var key in attrs) {
-    el.setAttribute(key, attrs[key]);
-  }
-}
-
-$("#trg").addEventListener("click", function( event ) {
-  if(itr == iterations) {
-      itr = 0;
-      move();
-  }
-}, false);
-
-function move() {
-  if (frame == 0) {
-    $("#aa").setAttribute("opacity", 1);
-    $("#a1").setAttribute("transform", "translate(396 851.4) scale(0) translate(-396 -851.4)");
-    $("#a2").setAttribute("stroke-dashoffset", -704.2);
-    $("#a3").setAttribute("transform", "translate(390.2 152.8) scale(0) translate(-390.2 -152.8)");
-    $("#a4").setAttribute("stroke-dashoffset", 380.12);
-    $("#a5").setAttribute("transform", "translate(638.6 393.4) scale(0) translate(-638.6 -393.4)");
-    $("#a6").setAttribute("stroke-dashoffset", 274.87);
-    $("#a7").setAttribute("transform", "translate(228 393.4) scale(0) translate(-228 -393.4)");
-    $("#a8").setAttribute("stroke-dashoffset", 366.81);
-    $("#a9").setAttribute("transform", "translate(502.6 225.8) scale(0) translate(-502.6 -225.8)");
-    $("#a10").setAttribute("stroke-dashoffset", 302.98);
-    $("#a11").setAttribute("transform", "translate(268.6 188.6) scale(0) translate(-268.6 -188.6)");
-    $("#a12").setAttribute("transform", "translate(819.2 846.8) scale(0) translate(-819.2 -846.8)");
-    $("#a13").setAttribute("stroke-dashoffset", -288.2);
-    $("#a14").setAttribute("transform", "translate(819.2 558.6) scale(0) translate(-819.2 -558.6)");
-    $("#a15").setAttribute("stroke-dashoffset", -240);
-    $("#a16").setAttribute("transform", "translate(888.4 513.6) scale(0) translate(-888.4 -513.6)");
-  }
-
-  if (frame > 0 && frame <= 29) {
-    $("#a1").setAttribute("transform", "translate(396 851.4) scale(" + frame/29 + ") translate(-396 -851.4)");
-    let lnth = $("#a2").getTotalLength();
-    $("#a2").setAttribute("stroke-dashoffset", lnth*frame/29-lnth);
-  }
-
-  if (frame > 29 && frame <= 44) {
-    $("#a3").setAttribute("transform", "translate(390.2 152.8) scale(" + (frame-29)/15 + ") translate(-390.2 -152.8)");
-  }
-
-  if (frame > 29 && frame <= 58) {
-    let lnth = $("#a4").getTotalLength();
-    $("#a4").setAttribute("stroke-dashoffset", lnth-lnth*(frame-29)/29);
-  }
-
-  if (frame > 59 && frame <= 74) {
-    $("#a5").setAttribute("transform", "translate(638.6 393.4) scale(" + (frame-59)/15 + ") translate(-638.6 -393.4)");
-  }
-
-  if (frame > 59 && frame <= 88) {
-    let lnth = $("#a6").getTotalLength();
-    $("#a6").setAttribute("stroke-dashoffset", lnth-lnth*(frame-59)/29);
-  }
-
-  if (frame > 89 && frame <= 104) {
-    $("#a7").setAttribute("transform", "translate(228 393.4) scale(" + (frame-89)/15 + ") translate(-228 -393.4)");
-  }
-
-  if (frame > 89 && frame <= 118) {
-    let lnth = $("#a8").getTotalLength();
-    $("#a8").setAttribute("stroke-dashoffset", lnth-lnth*(frame-89)/29);
-  }
-
-  if (frame > 119 && frame <= 134) {
-    $("#a9").setAttribute("transform", "translate(502.6 225.8) scale(" + (frame-119)/15 + ") translate(-502.6 -225.8)");
-  }
-
-  if (frame > 119 && frame <= 148) {
-    let lnth = $("#a10").getTotalLength();
-    $("#a10").setAttribute("stroke-dashoffset", lnth-lnth*(frame-119)/29);
-  }
-
-  if (frame > 149 && frame <= 164) {
-    $("#a11").setAttribute("transform", "translate(268.6 188.6) scale(" + (frame-149)/15 + ") translate(-268.6 -188.6)");
-  }
-
-  if (frame > 149 && frame <= 178) {
-    $("#a12").setAttribute("transform", "translate(819.2 846.8) scale(" + (frame-149)/29 + ") translate(-819.2 -846.8)");
-    let lnth = $("#a13").getTotalLength();
-    $("#a13").setAttribute("stroke-dashoffset", lnth*(frame-149)/29-lnth);
-  }
-
-  if (frame > 179 && frame <= 194) {
-    $("#a14").setAttribute("transform", "translate(819.2 558.6) scale(" + (frame-179)/15 + ") translate(-819.2 -558.6)");
-  }
-
-  if (frame > 179 && frame <= 208) {
-    let lnth = $("#a15").getTotalLength();
-    $("#a15").setAttribute("stroke-dashoffset", lnth*(frame-179)/29-lnth);
-  }
-
-  if (frame > 209 && frame <= 224) {
-    $("#a16").setAttribute("transform", "translate(888.4 513.6) scale(" + (frame-209)/15 + ") translate(-888.4 -513.6)");
-  }
-
-  if (frame > 279 && frame <= 298) {
-    $("#aa").setAttribute("opacity", (1 - (frame-279)/19));
-  }
-
-  if (frame < frames) {
-    frame++;
-  } else {
-    itr++;
-    frame = 0;
-  }
-  
-  if (itr < iterations) {
-      setTimeout(function(){
-        requestAnimationFrame(move);
-      }, 10);
-  } else {
-    if (frame < 280) {
-      setTimeout(function(){
-        requestAnimationFrame(move);
-      }, 10);
-    }
-  }
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-
-  move(); // call this function to start animation;
-});
-
-]]>
-</script>
 </svg>
