@@ -3,7 +3,7 @@ layout: post
 title: "Continuous Integration and Automated Testing"
 short_title: "Automated Testing" 
 date: 2020-05-15
-categories: testing
+categories:
 featimg: /assets/images/automated-testing/automated-testing-small.png
 bgimg: /assets/images/automated-testing/automated-testing-large.jpeg
 author: Barak
