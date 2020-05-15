@@ -4,9 +4,9 @@ title: "Continuous Integration and Automated Testing"
 short_title: "Automated Testing" 
 date: 2020-05-15
 categories: 
-featimg: /assets/images/featimage/face_reg.jpg
-bgimg: /assets/images/bgimg/object_detection.jpeg
-author: Bhaarat, Barak
+featimg: /assets/images/automated-testing/automated-testing-small.png
+bgimg: /assets/images/automated-testing/automated-testing-large.jpeg
+author: Barak
 --- 
 
 One of the foundations of any Agile framework for developing software is continuous delivery. But how can you be sure that the features being iteratively developed and shipped every two to three weeks are actually working and complying with their Definition of Done (DoD). Traditionally, DoD's are measured and tested using a mix of manual methods, unit testing, or integration testing. Although these approaches are good, they don't repeatedly test the software from the end user perspective. Manual testing can't be automated, unit testing ensures the code being written is tested from the developers perspective and integration testing tests how different code dependencies work together when combined. 
@@ -19,9 +19,7 @@ Many developers are familiar with [Postman](https://www.postman.com/) as a devel
 ## Cypress 
 Cypress is an end-to-end testing framework that can test anything in a browser as an end user would. That means that on its own, Cypress can be integrated into our pipeline as a frontend testing suite. It also means we can re-use the same testing suite to run against any environment as an end-to-end test, testing the frontend and backend. Much like Newman, we containerize and run Cypress periodically in the background, listening for failures, and once a day for an _all clear_ message. Cypress tests can be created via the [Cypress Scenario Recorder Chrome Extention](https://chrome.google.com/webstore/detail/cypress-scenario-recorder/fmpgoobcionmfneadjapdabmjfkmfekb?hl=en) and do not require a ton of coding skills. Cypress can test a large site for all potential user interaction in a very short period, faster than any human-driven smoke test would. Since Cypress can test all pathways, it can ensure the frontend is working as expected and alerts our team for any anomalies. Check out the GIF below recorded with Cypress. It is important to note that all actions taken in this GIF are via Cypress and no human involvement whatsoever.
 
-
-![](/assets/images/automated-testing/automated-testing.gif)
-
+<img src="/assets/images/automated-testing/automated-testing.gif" style="width: 800px; height: 700px;"/>
 
 ## Locust 
 When deploying APIs that are going to be consumed by a large number of users/systems, it is crucial to test how the system would behave during peak load times. Locust is a distributed swarm testing tool, written in Python that can simulate a large load on a system to troubleshoot performance bottlenecks that usually happen during peak usage times. We've recently used Locust effectively to storm our APIs with thousands of users hitting the system for over 24 hours. Setting up Locust is relatively straight forward. All you need to do is define the behavior of the endpoints and data you want to test with, and Locust does the rest. Locust is configurable to the total number of users you would like and the rate at which you want to add new users. Given enough resources, Locust can swarm with _millions_ of API requests. We use Locust as a tool during end of each Sprint to ensure the features being shipped to production can withstand the load expected in the production application. We observe the system's behavior while scaling the application up and seeing how the system behaves while under constant load for a long period of time. How much load and for how long we test depends on the applications goals defined during our user discovery phase. Unlike Newman and Cypress, we don't integrate locust at each PR level because of the time it takes to execute an entire locust test. Additionally, unlike Newman and Cypress, we typically won't run Locust against a production system. Running Locust can get expensive, since you are basically generating and potential processing lots of _"junk"_ traffic on your own system. Being in a cloud hosted and auto scaling production environment this can translate to lots of computational costs -- aka dollars. Locust tests need to be thought out and used strategically to expose scalability problems during development and sprint planning.
