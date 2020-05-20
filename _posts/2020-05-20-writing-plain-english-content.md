@@ -2,7 +2,7 @@
 layout: post
 title:  "Writing Plain English Content for a Great User Experience"
 short_title: "Digestible content" 
-date: 2020-20-05
+date: 2020-05-20
 categories:
 featimg: "https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"
 bgimg: "https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
