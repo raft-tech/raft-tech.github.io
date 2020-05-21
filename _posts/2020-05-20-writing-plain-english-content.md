@@ -63,13 +63,13 @@ We have all witnessed the torture of an unprepared presenter that relies on Uhhâ
 The list of words and phrases below can safely be deleted from copy without affecting any significant meaning in your sentence. If you're looking for more, the [18F Content Guide](https://content-guide.18f.gov/plain-language/) has a more comprehensive list and many of these words are routinely identified as errors by grammatic proofreading tools, like Microsoft Word spell check and [Grammarly](https://www.grammarly.com/).
 
 * **Subjective Adjectives/Adverbs**
-Very, kind of, sort of, just, really, almost, a lot, always, obviously, undoubtedly
+very, kind of, sort of, just, really, almost, a lot, always, obviously, undoubtedly
 
 * **Redundant Phrases**
-Absolutely necessary, advance planning, added bonus, blend together, completely eliminate, whether or not
+absolutely necessary, advance planning, added bonus, blend together, completely eliminate, whether or not
 
 * **Words/phrases that convey no meaning** 
-Absolutely (The word "Absolutely" is mentioned in the line above as well -- can we pick a different word here or above?), completely, entirely, basically, actually, in order to, as a matter of fact 
+completely, entirely, basically, actually, in order to, as a matter of fact 
 
 
 ## 5. Avoid Difficult Words
