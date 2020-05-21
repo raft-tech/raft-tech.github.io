@@ -4,8 +4,8 @@ title:  "Writing Plain English Content for a Great User Experience"
 short_title: "Digestible content" 
 date: 2020-05-20
 categories:
-featimg: "https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"
-bgimg: "https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+featimg: /assets/images/featimage/writingPlainEnglish.png
+bgimg: /assets/images/bgimg/writingPlainEnglish.png
 author: Ryan
 ---
 
@@ -16,7 +16,7 @@ To help ensure that your writing is clear, concise, and easy to understand, we�
 ## 1. Be Short and to the point 
 People tend to skim and scan, rapidly searching for what they need when reading online. [Research shows](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/) that if a reader’s interest isn’t piqued within 10 seconds they won’t interact with your content. One way to overcome this is to utilize the [Nielsen Norman Group’s](https://www.nngroup.com/articles/how-users-read-on-the-web/) “inverted pyramid” structure. This organizational structure, utilized famously by newspapers, places the most important and eye-catching ideas first and auxiliary facts at the end. 
 
-*(INSERT "INVERTED PYRAMID" IMAGE (300x300 px MAX) - https://drive.google.com/file/d/1ltm5HCAGDne4y8TuCn9pAhJ4rAvaVjMj/view?usp=sharing)*
+<img src="/assets/images/SingleImages/invertedPyramid.png" max-width="300" max-height="300">
 
 To illustrate the power of short impactful editing take a look at the following example.
 
@@ -29,7 +29,7 @@ Submissions for the Clerk position in the department of record keeping are due b
 ## 2. Utilize White Space
 Once you have finished writing your content, step back and look at how the words appear on the page. Large paragraphs and long sentences create intimidating walls of text that discourage readers. However, shorter paragraphs, table of contents, titled subsections, and bulleted lists encourage readers. Use the example below as your guide, with the text on the right as the ideal example of accessible reader-friendly formatting.
 
-*(INSERT "F-SHAPED READING" IMAGE (300x300 px MAX) - https://drive.google.com/file/d/17XYwrWMryRE_QNHf3tSWmO0L7iy7ijqC/view?usp=sharing)*
+<img src="/assets/images/SingleImages/fShapedMotions.png" max-width="300" max-height="300">
 
 English readers tend to scan formatted text by beginning at the top and progressing down the page from left to right. There are several ways you can format a block of text to take advantage of this [F-shaped reading method](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/).
 
@@ -49,10 +49,10 @@ Avoid sentences that exceed 3 lines of text. Whenever possible break up sentence
 ## 3. Use the Active Voice
 Using an active voice in your writing makes your sentences compelling, dynamic, and authoritative. Every sentence should feature a clear subject that is performing an obvious task to a receiving object. Whenever possible, avoid the passive voice, which occurs when the subject of the sentence passively receives an action, creating a much more ambiguous sentence. Any easy way to correct this mistake is to ask, who or what is performing the action, and then place them in the driver's seat. 
 
-**PASSIVE:** An error was made regarding your transaction. *(Who made the error?)*
+**PASSIVE:** An error was made regarding your transaction. *(Who made the error?)*  
 **ACTIVE:** We made an error regarding your transaction.
 
-**PASSIVE:** Without the password, access will not be granted. *(Who has the password? Who will get access?)*
+**PASSIVE:** Without the password, access will not be granted. *(Who has the password? Who will get access?)*  
 **ACTIVE:** If you don't have the password, your employees will not be granted access.
 
 While the passive examples above do a great job shifting and alleviating blame, they do a poor job building accountability and trust. This makes it difficult for users to take direct action.
@@ -69,7 +69,7 @@ Very, kind of, sort of, just, really, almost, a lot, always, obviously, undoubte
 Absolutely necessary, advance planning, added bonus, blend together, completely eliminate, whether or not
 
 * **Words/phrases that convey no meaning** 
-Absolutely ( @_L88eO1tSeKJN3sFG95h9g The word "Absolutely" is mentioned in the line above as well -- can we pick a different word here or above? ), completely, entirely, basically, actually, in order to, as a matter of fact 
+Absolutely (The word "Absolutely" is mentioned in the line above as well -- can we pick a different word here or above?), completely, entirely, basically, actually, in order to, as a matter of fact 
 
 
 ## 5. Avoid Difficult Words
