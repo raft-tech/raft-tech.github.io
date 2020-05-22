@@ -5,7 +5,7 @@ short_title: "Digestible content"
 date: 2020-05-22
 categories:
 featimg: /assets/images/featimage/writingPlainEnglish.png
-bgimg: /assets/images/bgimg/writingPlainEnglish.png
+bgimg: /assets/images/featimage/writingPlainEnglish.png
 author: Ryan
 ---
 
