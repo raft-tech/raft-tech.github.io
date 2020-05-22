@@ -2,7 +2,7 @@
 layout: post
 title:  "Writing Plain English Content for a Great User Experience"
 short_title: "Digestible content" 
-date: 2020-05-20
+date: 2020-05-22
 categories:
 featimg: /assets/images/featimage/writingPlainEnglish.png
 bgimg: /assets/images/bgimg/writingPlainEnglish.png
@@ -16,7 +16,9 @@ To help ensure that your writing is clear, concise, and easy to understand, we�
 ## 1. Be Short and to the point 
 People tend to skim and scan, rapidly searching for what they need when reading online. [Research shows](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/) that if a reader’s interest isn’t piqued within 10 seconds they won’t interact with your content. One way to overcome this is to utilize the [Nielsen Norman Group’s](https://www.nngroup.com/articles/how-users-read-on-the-web/) “inverted pyramid” structure. This organizational structure, utilized famously by newspapers, places the most important and eye-catching ideas first and auxiliary facts at the end. 
 
-<img src="/assets/images/SingleImages/invertedPyramid.png" max-width="300" max-height="300">
+<a href='/assets/images/SingleImages/invertedPyramid.png'>
+    <img src="/assets/images/SingleImages/invertedPyramid.png" style="height: auto; width: 100%; max-width: 400px;">
+</a>
 
 To illustrate the power of short impactful editing take a look at the following example.
 
@@ -29,7 +31,9 @@ Submissions for the Clerk position in the department of record keeping are due b
 ## 2. Utilize White Space
 Once you have finished writing your content, step back and look at how the words appear on the page. Large paragraphs and long sentences create intimidating walls of text that discourage readers. However, shorter paragraphs, table of contents, titled subsections, and bulleted lists encourage readers. Use the example below as your guide, with the text on the right as the ideal example of accessible reader-friendly formatting.
 
-<img src="/assets/images/SingleImages/fShapedMotions.png" max-width="300" max-height="300">
+<a href='/assets/images/SingleImages/fShapedMotions.png'>
+    <img src="/assets/images/SingleImages/fShapedMotions.png" style="height: auto; width: 100%; max-width: 500px;">
+</a>
 
 English readers tend to scan formatted text by beginning at the top and progressing down the page from left to right. There are several ways you can format a block of text to take advantage of this [F-shaped reading method](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/).
 
