@@ -741,11 +741,6 @@ $speed: 300ms;
 
 .card-featimg img {
   display: block;
-  height: 175px;
-  @media (max-width: $large){
-    height: 100px;
-    width: 100% !important;
-  }
   width: 100% !important;
 }
 
@@ -776,6 +771,7 @@ $speed: 300ms;
   height: 100%;
   padding-bottom: 30px;
 }
+
 .card-desc .card-top {
   padding: 20px 20px 5px;
   & a {
@@ -785,26 +781,30 @@ $speed: 300ms;
 
 .card-desc .card-bottom {
   position: relative;
-  padding: 10px 20px 20px;
+  padding: 15px 15px 30px;
 }
 
 .card-desc .read-more {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 15px;
   & a {
    text-decoration: underline;
+  }
+
+  @media(min-width: $large){
+    left: 30px;
   }
 }
 
 
 .card-desc h3 {
-	color: #000000;
+  color: #000000;
   font-weight: 600;
-  font-size: 1.25em;
-  line-height: 1.3em;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 
@@ -817,20 +817,18 @@ $speed: 300ms;
 	padding: 0;
 }
 
-@media (max-width: $large){
+@media (min-width: $large){
   .card-desc {
   	padding: 1rem;
     margin: 5px;
   }
 
+
   .card-desc h3 {
-  	color: #000000;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 1.2em;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding: 0;
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-bottom: 0px;
   }
 
   .card-desc p {
@@ -873,18 +871,6 @@ $speed: 300ms;
 a.btn-card {
     text-decoration: none;
     color: #fff;
-}
-
-// Check with Barak if he remembers why this was used.  Causes overflow of view width.
-// .row {
-//     margin-right: -15px;
-//     margin-left: -15px;
-// }
-
-@media(min-width: $medium) {
-  .container {
-    width: 1170px;
-  }
 }
 
 .home {
