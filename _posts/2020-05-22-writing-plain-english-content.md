@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writing Plain English Content for a Great User Experience"
-short_title: "Digestible content" 
+short_title: "Plain English Guidelines" 
 date: 2020-05-22
 categories:
 featimg: /assets/images/featimage/writingPlainEnglish.png
