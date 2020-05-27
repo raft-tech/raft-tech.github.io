@@ -1,0 +1,193 @@
+#profile {
+  #name,
+  #role {
+    color: $purple;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #name {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 0rem 0;
+    font-family: 'El Messiri', 'Circular', sans-serif;
+  }
+  
+  #role {
+    text-transform: uppercase;
+    color: #555;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
+  #links {
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 2rem 0;
+
+    img {
+      width: 45px;
+    }
+
+    #github, #linkedin, #homepage {
+      border-radius: 50%;
+
+      &:hover {
+        background: linear-gradient(white, $lightblue);
+      }
+    }
+
+    #linkedin {
+      border-radius: 5px;
+    }
+
+  }
+
+  .about-row {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  .about-col {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+
+  #about {
+    font-size: 1.25rem;
+    padding: 0 2rem;
+    text-align: left;
+    color: #555;
+  }
+
+  #image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+  }
+
+  #back {
+    font-size: 1rem;
+    font-weight: bold;
+
+    span {
+      margin-right: 2px;
+      font-size: 1.1rem;
+      vertical-align: middle;
+    }
+    
+    &:hover {
+      text-decoration: none;
+      span {
+        animation: point 2s infinite;
+      }
+    }
+
+  }
+}
+
+#hero.profile.site-header-container {
+  .scrim,
+  .about-cover {
+    padding: 0;
+    height: 9vw;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  #profile {
+    margin-bottom: 2rem;
+
+    .about-col {
+      flex-flow: column;
+    }
+
+    #about {
+      font-size: 1.25rem;
+      padding: 0 2rem;
+    }
+
+    #image {
+      width: 500px;
+      margin-bottom: 1rem;
+    }
+
+    #links {
+      margin: 0;
+      margin: 1rem 0 2rem 0;
+    }
+  }
+
+  #hero.profile.site-header-container {
+    .scrim,
+    .about-cover {
+      padding: 0;
+      height: 65px;
+    }
+  }
+}
+
+@media screen and (min-width: $large) {
+  #profile {
+    #name,
+    #role {
+      text-align: left;
+    }
+
+    .about-row {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    .about-col {
+      max-width: 60%;
+      flex-flow: column;
+    }
+
+    #about {
+      font-size: 1.25rem;
+      padding: 0 0 0 2rem;
+    }
+
+    #image {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    #links {
+      margin: 0;
+      margin-top: 1rem;
+    }
+  }
+
+  #hero.profile.site-header-container {
+    .scrim,
+    .about-cover {
+      padding: 0;
+      height: 100px;
+    }
+  }
+}
+
+
+@keyframes point {
+  0%{
+    margin-left: 0px;
+  }
+  50%{
+    margin-left: -5px;
+    margin-right: 7px;
+  }
+  100%{
+    margin-left: 0px;
+    margin-right: 2px;
+  }
+}

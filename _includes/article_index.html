@@ -3,27 +3,33 @@
     Every Post type get's their own little settings.
 -->
 
-<div class="col-md-4">
+<div class="col-md-6 col-xl-4">
   <div class="card-content">
     <div class="card-desc">
-    {% if post.featimg %}
-      <div class="card-featimg">
-        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
-            {% assign thumb = post.featimg  %}
-            <img src="{{ site.baseurl }}{{ site.media_folder | replace: '//', '/'}}{{ thumb }}" alt="{{ thumb }}">
-
-        </a>
-        </div>
-
-        {% endif %}
+      <div class="card-top">
         <a href="{{ post.url | prepend: goraft/ | replace: '//', '/'}}">
             {% if post.short_title.size > 0 %}<h3>{{ post.short_title | truncate: 27 }}</h3>
             {% else %} <h3>{{ post.title | truncate: 27 }}</h3>
             {% endif %}
             <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         </a>
-          <p class="post-content">{{ post.content | strip_html | truncate: 165 }}</p>
-          <a href="{{ post.url | prepend: goraft/ | replace: '//', '/'}}">Read More</a>
+      </div>
+      {% if post.featimg %}
+      <div class="card-featimg">
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+            {% assign thumb = post.featimg  %}
+            <img src="{{ site.baseurl }}{{ site.media_folder | replace: '//', '/'}}{{ thumb }}" alt="{{ thumb }}">
+
+        </a>
+      </div>
+
+      {% endif %}
+      <div class="card-bottom">
+        <p class="post-content">{{ post.content | strip_html | truncate: 165 }}</p>
+      </div>
+      <div class="read-more">
+        <a href="{{ post.url | prepend: goraft/ | replace: '//', '/'}}">Read More</a>
+      </div>
     </div>
 
   </div>

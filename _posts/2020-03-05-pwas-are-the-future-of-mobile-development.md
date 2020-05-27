@@ -12,7 +12,7 @@ Native apps are [doomed](https://medium.com/javascript-scene/native-apps-are-doo
 
 The term was first coined by [Google in 2015](https://divante.com/pwabook/chapter/02-The-history-of-PWAs.html#the-history-of-progressive-web-apps), but the technology has exploded in popularity, with many [developers predicting](https://jaxenter.com/react-native-tool-native-vs-pwa-poll-150667.html) it will completely overtake other mobile development platforms. Here at Raft, we are big proponents of PWAs and believe that the benefits outweigh the limitations. Let's take a closer look at PWAs and see if you agree.   
 
-<img src="/assets/images/pwa-future/phones.jpg" alt="pwa_image" height="500px" width="400px"/>
+<img src="/assets/images/pwa-future/phones.jpg" alt="pwa_image"/>
 
 ## What are Progressive Web Apps? 
 PWAs are essentially websites designed to deliver an app-like user experience, sans a trip to the app store. There are [numerous](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) features available to PWAs, but also a few baseline requirements:

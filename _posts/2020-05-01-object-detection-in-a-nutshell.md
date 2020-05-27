@@ -35,7 +35,7 @@ That’s where Image Localization comes into the play. It helps us to identify t
 
 ![Object Detection](/assets/images/object_detection/object_detection_2.png)
 
-## Application of Object Detection ?
+## Application of Object Detection
 Object detection is breaking into a wide range of industries, with use cases ranging from personal security, air defense, to productivity in the workplace. Object detection and recognition is applied in many areas of computer vision, including image retrieval, security, surveillance, automated vehicle systems and machine inspection. The possibilities are endless when it comes to future use cases for object detection.
 
 Lets discuss some current and future applications of Object Detection in detail.

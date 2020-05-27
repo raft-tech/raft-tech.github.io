@@ -9,7 +9,8 @@
   "bourbon/bourbon",
   "base/base",
   "neat/neat",
-  "layout"
+  "layout",
+  "404"
 ;
 
 $purple: #17097c;
@@ -47,8 +48,17 @@ $xlarge: 1200px;
   color: $purple;
 }
 
+#blog {
+  background: $light-gray;
+}
+
 #blog-content p, #blog-content h2, #blog-content h3, #blog-content ul {
   color: $grey !important;
+}
+
+#blog-content img {
+  height: 500px;
+  width: 500px;
 }
 
 #blog-content a {
@@ -91,6 +101,8 @@ p, ul, div {
 #blog-content > ul {
   list-style: none;
 }
+
+
 
 .post-content > ul li:before {
   content: '\2022';
@@ -218,23 +230,6 @@ section .section-title {
 }
 
 @media (min-width: $large) {
-  li.nav-link a, li.nav-link a:hover  {
-    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.9) !important;
-  }
-
-  li.nav-link a:hover::after{
-    content:'';
-    position:absolute;
-    bottom:-3px;
-    left:0px;
-    width:100%;
-    height:5px;
-    background:rgba(0, 0, 0, 0.9);
-    box-shadow:0 0 3px rgba(0, 0, 0, 0.9);
-  }
-}
-
-@media (min-width: $large) {
 
   #introducing {
     flex-flow: row;
@@ -324,19 +319,9 @@ section .section-title {
 .hero-header {
   display: table-cell;
   vertical-align: middle;
+
   &.title {
     padding-top: 40px;
-  }
-}
-
-@media (max-width: $small){
-  .site-header-container.has-cover .title,
-  .post-header-container.has-cover .title {
-    font-size: 1em;
-  }
-
-  .site-header-container .scrim, .post-header-container .scrim {
-    padding: 1em 1em;
   }
 }
 
@@ -389,10 +374,6 @@ section .section-title {
     height: auto;
     background-size: cover;
   }
-}
-
-.site-header-container.has-cover, .post-header-container.has-cover {
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.9) !important;
 }
 
 .page {
@@ -735,8 +716,21 @@ $speed: 300ms;
 
 .card-content {
   background: #ffffff;
-  border: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  margin: 15px 0;
+  height: calc(100% - 30px);
+  border-bottom: 10px solid rgba(108, 181, 203, 0.2);
+  &:hover {
+    cursor: pointer;
+    border-bottom: 10px solid rgba(23, 10, 124, 1);
+    & h3 {
+      color: $blue;
+    }
+    & img {
+      transform: scale(1.1);
+      transition-delay: none !important;
+      transition: transform ease 0.5s !important;
+    }
+  }
 }
 
 .card-featimg {
@@ -744,28 +738,11 @@ $speed: 300ms;
 	overflow: hidden;
 	border-radius: 0;
 	z-index: 1;
-  display: block;
-  height: 175px;
-  width: auto;
-  margin: 0 auto;
-}
-
-@media (max-width: $large){
-  .card-featimg {
-    height: 100px;
-    width: auto;
-  }
 }
 
 .card-featimg img {
-	display: block;
-  height: 175px;
-  @media (max-width: $large){
-    height: 100px;
-  }
-  width: auto;
-
-  margin: 0 auto;
+  display: block;
+  width: 100% !important;
 }
 
 .card-featimg span {
@@ -784,21 +761,49 @@ $speed: 300ms;
     transform: translate(-50%,-50%);
 }
 .card-featimg span h4{
-  font-size: 12px;
-  margin:0;
-  padding:10px 5px;
-  line-height: 0;
-}
-.card-desc {
-	padding: 1.25rem;
-  margin: 5px;
+        font-size: 12px;
+        margin:0;
+        padding:10px 5px;
+         line-height: 0;
 }
 
+.card-desc {
+  position: relative;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.card-desc .card-top {
+  padding: 20px 20px 5px;
+  & a {
+    text-decoration: none;
+  }
+}
+
+.card-desc .card-bottom {
+  position: relative;
+  padding: 15px 15px 30px;
+}
+
+.card-desc .read-more {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  & a {
+   text-decoration: underline;
+  }
+
+  @media(min-width: $large){
+    left: 30px;
+  }
+}
+
+
 .card-desc h3 {
-	color: #000000;
+  color: #000000;
   font-weight: 600;
-  font-size: 1.25em;
-  line-height: 1.3em;
+  font-size: 1em;
+  line-height: 1.2em;
   margin-top: 0;
   margin-bottom: 5px;
   padding: 0;
@@ -813,20 +818,18 @@ $speed: 300ms;
 	padding: 0;
 }
 
-@media (max-width: $large){
+@media (min-width: $large){
   .card-desc {
   	padding: 1rem;
     margin: 5px;
   }
 
+
   .card-desc h3 {
-  	color: #000000;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 1.2em;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding: 0;
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-bottom: 0px;
   }
 
   .card-desc p {
@@ -871,28 +874,19 @@ a.btn-card {
     color: #fff;
 }
 
-// Check with Barak if he remembers why this was used.  Causes overflow of view width.
-// .row {
-//     margin-right: -15px;
-//     margin-left: -15px;
-// }
-
-@media(min-width: $medium) {
-  .container {
-    width: 1170px;
-  }
-}
-
 .home {
   width: 90% !important;
   margin: 0 auto;
   padding: 30px 0;
   flex: 1;
+}
 
-  @media (max-width: $medium){
-    padding: 0;
-  }
 
+.card-featimg {
+  width: auto;
+  display: block;
+  height: 175px;
+  margin: 0 auto;
 }
 /* End card section */
 
@@ -924,12 +918,6 @@ a.btn-card {
 .post-date {
   font-size: 20px;
   padding-bottom: 10px;
-}
-
-@media(max-width: $medium) {
-  .post-date {
-    font-size: 14px;
-  }
 }
 
 #services .cards .card {
@@ -1116,7 +1104,7 @@ text-decoration: none;
     margin-bottom: 20px;
 
     @include media($large){
-      float: right;
+      float: right; 
       padding: 10px;
       height: 400px;
       margin-bottom: auto;
@@ -1124,4 +1112,5 @@ text-decoration: none;
   }
 }
 
-@import "devBanner";
+@import "team";
+@import "profile";
