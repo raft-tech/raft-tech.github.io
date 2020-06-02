@@ -79,6 +79,11 @@
   full_name: Calvin Fernandes
   role: Sr. Software Engineer
   image: null
+- id: jack_bevis
+  permalink: /about/jack_bevis
+  full_name: Jack Bevis
+  role: Fullstack Developer
+  image: null  
 - id: dan_mutombo
   permalink: /about/dan_mutombo
   full_name: Dan Mutombo
