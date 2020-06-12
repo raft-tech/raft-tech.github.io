@@ -9,7 +9,7 @@ bgimg: /assets/images/bgimg/blm-banner.jpg
 author: Patrick  
 ---
 <img class='float-img-right' src="/assets/images/featimage/Patrick.jpg"  alt="Patrick A">
-When I look at myself in the mirror, I see many things. I see a software developer, I see an educator, I see someone with a master in Computer Science. However, from the time I was a child to today and into the future, I also see a black man living in America.  
+When I look at myself in the mirror, I see many things. I see a software developer, I see an educator, I see someone with a master's in Computer Science. However, from the time I was a child to today and into the future, I also see a black man living in America.  
 
 Dealing with racism has always been a persistent source of stress every person of color has to carry with them. It becomes so common that you begin to normalize it and accept it as just part of a daily routine. You make peace with a lack of opportunities, the unfair judgment, and the isolation. You do anything you can just to survive and try to move forward. Myself and many others understand that you have to reach a level of undisputed excellence in the hopes of leveling out the playing field with your white colleagues. In the light of the recent events, we need to do better in various domains of our society to raise awareness, call out unfair practices, and increase diversity.  
 
