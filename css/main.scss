@@ -57,8 +57,7 @@ $xlarge: 1200px;
 }
 
 #blog-content img {
-  height: 500px;
-  width: 500px;
+  max-height: 500px;
 }
 
 #blog-content a {
