@@ -57,6 +57,6 @@ The dynamics of talking during an in-person social gathering are completely diff
 
 Given our current circumstances, A virtual happy hour is a viable alternative to in-person team building activities. Organizing these events can seem daunting at first. However, strengthening interpersonal relationships amongst co-workers not only boosts morale, but may contribute to maintaining a positive and friendly work culture.   
 
-If you’d like some inspiration for initiating your own virtual happy hour at work, you can download the [Happy Hour Presentation](/assets/images/SingleImages/Work_Happy_Hour-singleimage.png) I created for our company’s first happy hour. This document works exceptionally well with Zoom conferences. Simply maximize the PDF on your device’s screen and then turn on [screen sharing](https://support.zoom.us/hc/en-us/articles/201362153-Sharing-your-screen). 
+If you’d like some inspiration for initiating your own virtual happy hour at work, you can download the [Happy Hour Presentation](/assets/images/SingleImages/Work_Happy_Hour-Download1.pdf) I created for our company’s first happy hour. This document works exceptionally well with Zoom conferences. Simply maximize the PDF on your device’s screen and then turn on [screen sharing](https://support.zoom.us/hc/en-us/articles/201362153-Sharing-your-screen). 
 
  
