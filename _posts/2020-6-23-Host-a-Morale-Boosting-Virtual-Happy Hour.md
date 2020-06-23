@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "9 Tips to Host a Morale Boosting Virtual Happy Hour During Quarentine"
+title:  "9 Tips to Host a Morale Boosting Virtual Happy Hour During Quarantine"
 short_title: "Virtual Happy Hour"
 date: 2020-06-22
 categories:
