@@ -4,8 +4,8 @@ title:  "What Fourth of July Means to Me: Diversity, Equality, and our Mission a
 short_title: "Fourth of July at Raft"
 date: 2020-06-22
 categories:
-featimg: /assets/images/logo.png
-bgimg: /assets/images/bgimg/tree.jpg
+featimg: /assets/logo.png
+bgimg: /assets/images/bgimg/firework.jpg
 author: Shubi
 ---
 
