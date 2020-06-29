@@ -5,7 +5,7 @@ short_title: "Fourth of July at Raft"
 date: 2020-06-22
 categories:
 featimg: /assets/images/logo.png
-bgimg: /assets/images/bgimg/firework.jpg
+bgimg: /assets/images/bgimg/tree.jpg
 author: Shubi
 ---
 
