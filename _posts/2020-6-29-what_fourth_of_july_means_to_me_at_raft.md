@@ -6,7 +6,7 @@ date: 2020-06-22
 categories:
 featimg: /assets/images/featimage/raft-4th.jpg
 bgimg: /assets/images/bgimg/firework.jpg
-author: Shubhi
+author: Shubi
 ---
 
 <img class='float-img-right' src="/assets/profiles/Shubhi.jpg"  alt="Shubhi M">
@@ -16,7 +16,9 @@ The 4th of July thus has special meaning for me. The 4th of July is a day of pos
 
 I salute all the women of this country who work tirelessly alongside me.  Representing a women-owned business in a meeting, event, or a conference, I always remember that while I might be the only woman (physically) in the room, there are many more like me out there. This journey towards independence, which most women face, is not about any one person.  It is certainly not about me. It is bigger than me. It is about all the women entrepreneurs who are continuously fighting against the odds to receive an equal platform to perform. Each day I am grateful to all the women who came before me, who have worked hard to create a society where women are not judged on anything other than their intellect.  That we will be respected and taken seriously, in leadership positions. Have we come a long way since our mothers were young? Yes. Is there a long way ahead to becoming truly equal? Yes.      
 
-## What makes Raft different?
+## What makes Raft different
+
+Every day I teach my kids each to speak up when they see something wrong, to be honest, and to be confident rather than compliant. These are the same principles I have applied and continue to apply in building Raft. We, at Raft, are radically transparent, understand making mistakes is a part of growing, and are always learning. We have purposefully chosen to have a flat structure where there are no “bosses'' and everyone is committed to a one and only one goal—improving the lives of our fellow Americans. When we hire, we make a conscious choice to increase diversity, hire like-minded individuals who want to make an impact, and find those who view the hours they spend at work as more than just a job. I am often asked what differentiates us. I always respond that our super power is our culture and diversity. I am always proud to share the high percentage of women and minorities in our workforce. We at Raft, have it in our DNA to be diverse. Diversity is not a hashtag for us; rather it is the way we do things because we know it is the right thing to do.  
 
 Every day I teach my kids to be independent, to speak up when they see something wrong, to be honest, and to be confident rather than compliant. These are the same principles I have applied and continue to apply in building Raft. We, at Raft, are radically transparent, we understand making mistakes is a part of growing, and we are always learning. We have purposefully chosen to have a flat structure where there are no “bosses'' and everyone is committed to a one and only one goal—improving the lives of our fellow Americans. When we hire, we make a conscious choice to increase diversity, hire like-minded individuals who want to join a team of high-performing people, who want to make an impact, and find those who view the hours they spend at work as more than just a job. I am often asked what differentiates us. I always respond that our super power is our diversity and culture of team-work that delivers results. I am always proud to share the high percentage of achievers – who coincidentally are women and minorities in our workforce. We at Raft, have it in our DNA to be diverse. Diversity is not a hashtag for us; rather it is the way we do things because we know it is the right thing to do.   
 
