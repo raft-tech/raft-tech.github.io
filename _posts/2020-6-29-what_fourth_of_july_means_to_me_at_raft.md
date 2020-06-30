@@ -4,11 +4,12 @@ title:  "What Fourth of July Means to Me: Diversity, Equality, and our Mission a
 short_title: "Fourth of July at Raft"
 date: 2020-06-22
 categories:
-featimg: /assets/logo.png
+featimg: /assets/images/featimage/raft-4th.jpg
 bgimg: /assets/images/bgimg/firework.jpg
 author: Shubhi
 ---
 
+<img class='float-img-right' src="/assets/profiles/Shubhi.jpg"  alt="Shubhi M">
 As the week of 4th of July approaches, I have been thinking a lot about what it means to be living in the land of the free and home of the brave. I came to this country with a dream to live my life where gender was not a basis of differentiation, and where all were treated equally no matter where they came from. This dream was the start of my journey of feeling empowered as a woman and empowering other women to accomplish what we set out to be, and to achieve what we always dreamt of without judgment on what is acceptable or “lady-like.” As a mother, wife, minority, immigrant, scientist, lawyer, and women entrepreneur, I have never taken independence for granted. I salute all the women of this country who have worked to earn the right to serve in the jury of their “peers.” When representing a women-owned business in a meeting, event, or a conference, I always remember that it is not about me per say. It is bigger than me. It is about all the women entrepreneurs out there who are continuously fighting against the odds for an equal platform to perform. Each day I am grateful to all the women who have worked hard in the hopes of having a society where women are not judged when we speak our mind, and to be respected and taken seriously in leadership positions. Have we come a long way since the Civil Rights Act? Yes. Is there a long way ahead to true equality? Yes.  
 
 ## What makes Raft different?
