@@ -6,7 +6,7 @@ date: 2020-06-22
 categories:
 featimg: /assets/images/featimage/raft-4th.jpg
 bgimg: /assets/images/bgimg/firework.jpg
-author: Shubi
+author: Shubhi
 ---
 
 <img class='float-img-right' src="/assets/profiles/Shubhi.jpg"  alt="Shubhi M">
