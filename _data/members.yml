@@ -119,6 +119,10 @@
   full_name: Rebecca Mancuso
   role: Operations
   image: null
+- id: miles_reiter
+  permalink: /about/miles_reiter
+  full_name: Miles Reiter
+  role: UX Designer/Researcher
 - id: adam_caron
   permalink: /about/adam_caron
   full_name: Adam Caron
