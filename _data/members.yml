@@ -11,7 +11,7 @@
 - id: patrick_asata
   permalink: /about/patrick_asata
   full_name: Patrick Asata
-  role: Solutions Architect 
+  role: Solutions Architect
   image: Patrick.jpg
 - id: austine_luyegu
   permalink: /about/austine_luyegu
@@ -83,7 +83,7 @@
   permalink: /about/jack_bevis
   full_name: Jack Bevis
   role: Fullstack Developer
-  image: null  
+  image: null
 - id: dan_mutombo
   permalink: /about/dan_mutombo
   full_name: Dan Mutombo
@@ -93,7 +93,7 @@
   permalink: /about/michael_roach
   full_name: Michael Roach
   role: Sr. DevSecOps Engineer
-  image: Michael.jpg  
+  image: Michael.jpg
 - id: ongel_dasilva
   permalink: /about/ongel_dasilva
   full_name: Ongel Dasilva
@@ -118,6 +118,16 @@
   permalink: /about/rebecca_mancuso
   full_name: Rebecca Mancuso
   role: Operations
+  image: null
+- id: miles_reiter
+  permalink: /about/miles_reiter
+  full_name: Miles Reiter
+  role: UX Designer/Researcher
+  image: null
+- id: adam_caron
+  permalink: /about/adam_caron
+  full_name: Adam Caron
+  role: Full Stack Developer
   image: null
 # - id: james_kaiser
 #   permalink: /about/james_kaiser
