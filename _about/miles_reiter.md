@@ -1,6 +1,6 @@
 ---
 id: miles_reiter
-permalink: "/about/Miles_Reiter"
+permalink: "/about/miles_reiter"
 full_name: Miles Reiter
 role: UX Designer / Researcher
 image:
