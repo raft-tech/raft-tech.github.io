@@ -5,7 +5,7 @@ permalink: /services/devsecops
 main_nav: false
 featimg: /assets/pressBanner.jpg
 subpage: services
-pageTitle: How we do DevSecOps?
+pageTitle: How we do DevSecOps
 pageTitle2: Our Expertise
 pageText: Our DevSecOps journey has been an evolution of architecting automated CI/CD pipelines to integrating security into the platform operations so systems are least trust by default.
 header: Scalable pipelines to accelerate innovation
@@ -13,7 +13,7 @@ services:
   service1:
     head: Developer Focused
     img: /assets/Developer_Focused.svg
-    txt: Our DevSecOps pipelines are focused on the productivity of the developers while at the same time ensuring the security is ensured. As developers embrace cloud native platforms such as Kubernetes, our team builds pipelines that provide the developers a direct view into the security so that security isn’t an after-thought.
+    txt: Our DevSecOps pipelines are focused on the productivity of the developers while simultaneously ensuring application security. By embracing cloud native platforms, such as Kubernetes, our team builds pipelines that provide developers a direct view into container vulerabilities so that security isn’t an afterthought.
   service2:
     head: Zero Trust
     img: /assets/Zero_trust.svg
@@ -21,7 +21,7 @@ services:
   service3:
     head: Pipeline Driven
     img: /assets/Pipeline_Driven.svg
-    txt: We believe in a cloud native environment most things should be automated. Whether that would be finding CVEs at the time of building container images, static/dynamic code analysis, runtime security, testing, or deploying, our team prepares pipelines that trigger all these things at the time of merge into master branch
+    txt: We believe that in a cloud native environment, most things should be automated. Our team prepares pipelines that scan containers for CVEs at build-time, perform static/dynamic code analysis, evaluate runtime security, run test suites, and deploy on each merge into the master branch.
   service4:
     head: Continuous Monitoring
     img: /assets/Continuous_Monitoring.svg
@@ -37,7 +37,7 @@ services:
 experiences:
   experience1:
     head: Kubernetes
-    text: Open source ecosystem for orchestration, managing and customizing application specific workflows, and automating at scale is the key to launching a stable and secure product quickly. , Our team utilizes its revolutionary capacity to design, deploy and manage cluster based containers systems, and K8s Admission Control, and RBAC to ensure the public facing clusters are secure.
+    text: This open source ecosystem for orchestrating, managing and customizing application specific workflows, and automating at scale is the key to launching a stable and secure product quickly. Our team utilizes its revolutionary capacity to design, deploy, and manage cluster based container systems. To ensure the public facing clusters are secure we leverage K8s Admission Control and RBAC.
   experience2:
     head: Service Mesh
     text: Scaling and Securing microservices as they grows in size and complexity can become difficult to manage and understand. Using Service Mesh, our team addresses these challenges where cross-cutting concerns, such as service discovery, service-to-service and origin-to-service security, observability and resiliency, are configured as code  Our team uses both Edge Routing (using Ambassador - Envoy) and Ingress (using Istio - Envoy) to secure network communication down to the pod level. Using Istio as a sidecar, our team provides authentication, observability, relillience, and traffic management.

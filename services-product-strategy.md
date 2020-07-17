@@ -5,10 +5,10 @@ permalink: /services/product
 main_nav: false
 featimg: /assets/pressBanner.jpg
 subpage: services
-pageTitle: How we do Product Strategy?
+pageTitle: How we do Product Strategy
 pageTitle2: Our Expertise
 pageText: When it comes to navigating from your organization’s initial concept to finalized product delivery, we’re experts. By creating products driven by user outcomes, instead of features, we can empower your users to take actions that meet and exceed your organizational goals.
-header: Creating Powerful Products and Solutions that Inspire Audiences.
+header: Creating Powerful Products and Solutions that Inspire Audiences
 services:
   service1:
     head: Identify & Strategize
@@ -17,7 +17,7 @@ services:
   service2:
     head: Define Success
     img: /assets/Success.svg
-    txt: Establish success criteria that enable users to take actions that freely align with organizational objectives and choose the best medium for your organization’s project, from mobile first to native applications. Success criteria are critical to achieving the objectives of your project. We establish success criteria that measure the value your customer and business is going to receive, focuses on the product and its specific features, and assesses change in your customers' actions and behavior.
+    txt: Establish success criteria that enable users to take actions that freely align with organizational objectives and choose the best medium for your organization’s project, from mobile first to native applications. Success criteria are critical to achieving the objectives of your project. We establish success criteria that measure the value your customer and business are going to receive, focuses on the product and its specific features, and assesses change in your customers' actions and behavior.
   service3:
     head: Establish Design Pillars
     img: /assets/Pillars.svg
