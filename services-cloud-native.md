@@ -5,7 +5,7 @@ permalink: /services/cloudnative
 main_nav: false
 order: 2
 featimg: /assets/pressBanner.jpg
-pageTitle: How we do Cloud Native?
+pageTitle: How we do Cloud Native
 pageTitle2: Our Expertise
 pageText: Cloud Native Application Development isn't just a buzzword to us. We’ve built a culture of automation, orchestration, and security that is at the core of our organization. Our team integrates infrastructure as code, open source software, and SRE expertise to manage scalable clusters.
 header: Automation driven operations culture
@@ -22,7 +22,7 @@ services:
   service3:
     head: Scalability
     img: /assets/Scalable.svg
-    txt: Modern software should be scalable from the first day of production. For application level scalability, we break down the solution into microservices following the 12 factor app, reactive manifesto, and use non-blocking IO. Then on the infrastructure level, we utilize best battle tested open source container orchestration system currently available, Kubernetes.
+    txt: "Modern software should be scalable from the first day in Production. For application level scalability, we break the solution down into microservices that use non-blocking IO, following the Twelve-Factor App methodology and Reactive Manifesto. At the infrastructure level we utilize the best battle-tested open source container orchestration system currently available: Kubernetes."
   service4:
     head: Event Sourcing
     img: /assets/Event_Sourcing.svg
@@ -38,7 +38,7 @@ services:
 experiences:
   experience1:
     head: Microservices
-    text: Smaller microservices working together to fulfill business requirements provide the software agility needed in enterprise software. Our team builds RESTFul microservices that are containerized and platform/cloud agnostic. Each microservice exposes its health metrics that are fetched by prometheus.
+    text: Smaller microservices working together to fulfill business requirements provide the software agility needed in enterprise software. Our team builds RESTFul microservices that are containerized and platform/cloud agnostic. Each microservice exposes its health metrics that are fetched by Prometheus.
   experience2:
     head: Kubernetes
     text: Using a mix of open source tools and best practices, our engineering team builds Kubernetes clusters that are quick to setup and yet secure. The clusters built and maintained are production ready and include necessary tools like EFK, Prometheus, Grafana, Istio, and Admission Control.
@@ -50,7 +50,7 @@ experiences:
     text: Event driven architectures are made possible by using Kafka to pub/sub events between microservices. Our team also uses Kafka to prepare stream processing pipelines and KSQL to gather real time insights from the data.
   experience5:
     head: Infrastructure as Code (IaC)
-    text: Our team lives by the moto if it isn't in code, it doesnt exist. Using IaC allows our engineers to build K8s clusters in shorter time and ensure that the clusters are security configured from Day 1.
+    text: "Our team lives by the moto: if it isn't in code, it doesn't exist. Using IaC allows our engineers to build K8s clusters in shorter time and ensure that the clusters are securely configured from Day 1."
   experience6:
     head: Serverless
     text: From writing one-off functions in the cloud to running complex microservices on serverless platforms, our team ensures costs, application state, and security are all managed with a fair balance.
