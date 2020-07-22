@@ -4,8 +4,8 @@ title:  "Creating a Content Style Guide for Your Organization"
 short_title: "Creating a Content Style Guide"
 date: 2020-07-13
 categories:
-featimg: /assets/images/bgimg/Blog_Content_Style_3.00_V4-01.png
-bgimg: /assets/images/bgimg/Blog_Content_Style_3.00_V4-01.png
+featimg: /assets/images/featimage/Blog_Content_Style_290x175-01.png
+bgimg: /assets/images/bgimg/Blog_Content_Style_1600x680-01.png
 author: Ryan
 ---
 
