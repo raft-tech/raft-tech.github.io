@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating a Content Style Guide for Your Organization"
+title:  "Creating a Content Style Guide for Your Users"
 short_title: "Content Style Guide"
 date: 2020-07-13
 categories:
