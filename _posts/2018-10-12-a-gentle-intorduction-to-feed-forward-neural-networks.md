@@ -6,7 +6,8 @@ categories:
 featimg: /assets/images/featimage/oct_10_2018.png
 bgimg: /assets/images/bgimg/nn.jpg
 author: Chelsea
-headerAlign: center
+headerAlign: left
+headerOverlay: left
 ---
 
 

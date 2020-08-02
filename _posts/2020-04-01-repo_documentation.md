@@ -7,6 +7,7 @@ categories:
 featimg: /assets/images/featimage/Documentation_feat.jpg
 bgimg: /assets/images/bgimg/Documentation_bg.jpg
 author: Barak Stout
+headerOverlay: left
 ---
 
 Documentation is a vital part of the development process that is often overlooked. In the worst cases scenarios, no documentation is recorded at all, leaving an impenetrable wall of code that takes time and resources to decipher. However, many programmers write poor documentation regarding their software and rely on outdated documentation when something goes wrong. This _incomplete documentation_ can be a nightmare for new hires who are often tasked to _"follow the documentation"_. So to establish a practice of developer etiquette, I've created this list of 5 lessons I've recently learned to avoid saddling my fellow developers with poor and incomplete documentation.

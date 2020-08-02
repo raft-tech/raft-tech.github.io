@@ -6,8 +6,8 @@ categories:
 featimg: /assets/images/featimage/dec_02_2018.png
 bgimg: /assets/images/bgimg/cnn.jpg
 author: Chelsea
-headerAlign: center
-headerBackground: true
+headerAlign: left
+headerOverlay: left
 ---
 
 **CIO LEVEL SUMMARY:**

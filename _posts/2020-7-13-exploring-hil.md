@@ -7,6 +7,8 @@ categories:
 featimg: /assets/images/featimage/dusty_uno.png
 bgimg: /assets/images/bgimg/pressure-water-line-509871_1920.jpg
 author: Barak
+headerOverlay: left
+headerAlign: left
 ---
 
 <img class='float-img-right' src="/assets/images/featimage/dusty_uno.png"  alt="Mu Dusty Arduino Uno">

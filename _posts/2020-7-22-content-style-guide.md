@@ -7,6 +7,7 @@ categories:
 featimg: /assets/images/featimage/Blog_Content_Style_290x175-01.png
 bgimg: /assets/images/bgimg/Blog_Content_Style_1600x680_4.00_V1-01.png
 author: Ryan
+headerOverlay: none
 ---
 
 
