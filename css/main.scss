@@ -1111,5 +1111,23 @@ text-decoration: none;
   }
 }
 
+#join .job-link {
+  display: block;
+  margin: 1rem auto;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 40px;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  transition: background-color 150ms;
+  text-decoration: none;
+  background-color: #424680;
+
+  &:hover {
+    background-color: lighten(#424680, 10%);
+  }
+}
+
 @import "team";
 @import "profile";
