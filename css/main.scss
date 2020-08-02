@@ -50,6 +50,10 @@ $xlarge: 1200px;
 
 #blog {
   background: $light-gray;
+
+  .hero-header {
+    font-size: 2rem;
+  }
 }
 
 #blog-content p, #blog-content h2, #blog-content h3, #blog-content ul {
