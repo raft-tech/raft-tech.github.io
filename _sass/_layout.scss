@@ -359,10 +359,37 @@ pre code.hljs {
 	}
 }
 
+$overlayPct: 0.6;
+
 #post {
 	.about-cover.scrim {
 		background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.50);
+		background: rgba(0, 0, 0, $overlayPct);
+
+		// Enable yaml config option headerOverlay: none|left|right|all
+		@include media ($desktop){
+			background: linear-gradient(rgba(0, 0, 0, $overlayPct), 25%, rgba(0, 0, 0, 0));
+
+			&.left {
+				background: 
+					linear-gradient(rgba(0, 0, 0, $overlayPct), 25%, rgba(0, 0, 0, 0)),
+					linear-gradient(90deg, rgba(0, 0, 0, $overlayPct), rgba(0, 0, 0, 0));
+				}
+				
+			&.right {
+				background: 
+					linear-gradient(rgba(0, 0, 0, $overlayPct), 25%, rgba(0, 0, 0, 0)),
+					linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, $overlayPct));
+			}
+	
+			&.none {
+				background: none;
+			}
+	
+			&.all {
+				background: rgba(0, 0, 0, $overlayPct);
+			}
+		}
 	}
 
 	.post-header {
@@ -381,11 +408,13 @@ pre code.hljs {
 			max-width: 100px;
 		}
 
+		// Enable config option headerBackground: true|(false by default)
 		&.headerBackground {
 			background: #343840c7;
 			padding: .5rem 1rem;
 		}
 
+		// Enable config option headerAlign: center|right|(left by default)
 		@include media ($desktop){
 			width: 30%;
 			font-size: 1rem;
