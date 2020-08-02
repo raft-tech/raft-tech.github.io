@@ -3,8 +3,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}Go Raft | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 172 }}{% else %}{{ site.description }}{% endif %}">
   {% if site.name %}
   <meta name="author" content="{{ site.name }}">
   <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}">
@@ -44,7 +44,7 @@
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}Go Raft | {{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="{% if page.layout == 'post' and page.featimg %}{{ page.featimg | prepend: site.baseurl | prepend: site.url }}{% elsif page.cover %}{{ page.cover | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.protocols.fb_image | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
   <meta property="og:image:type" content="{{ site.protocols.fb_image_type }}" />
@@ -55,7 +55,7 @@
   {% if site.protocols.twitter_image %}
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:title" content="{% if page.title %}Go Raft | {{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:image" content="{% if page.layout == 'post' and page.featimg %}{{ page.featimg | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.protocols.twitter_image | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   <meta name="twitter:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}">

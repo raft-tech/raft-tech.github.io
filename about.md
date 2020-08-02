@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+excerpt: We are a Woman Owned Small Business serving private and DoD clients with our unique approach to human centered design. 
 permalink: /about/
 main_nav: true
 order: 1

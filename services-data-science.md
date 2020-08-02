@@ -1,6 +1,7 @@
 ---
 layout: services
 title: Data Science
+excerpt: We create products driven by user outcomes, not of features. By focusing our efforts on your users we empower them to meet and exceed your organizational goals.
 permalink: /services/datascience
 main_nav: false
 featimg: /assets/pressBanner.jpg

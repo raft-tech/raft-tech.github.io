@@ -1,6 +1,7 @@
 ---
 layout: join
-title: Join
+title: Join Us
+excerpt: We work hard, play hard, and are always looking to grow. If you’re a software engineer, user researcher, or data scientist we want you on our team.
 permalink: /join/
 main_nav: true
 order: 4

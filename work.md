@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Our Work
+excerpt: We create products driven by user outcomes, not of features. By focusing our efforts on your users we empower them to meet and exceed your organizational goals.
 permalink: /our-work/
 main_nav: true
 order: 2
