@@ -6,7 +6,7 @@ layout: default
   <div class="about-cover scrim">
     <div class="post-header-container {% if page.cover %}has-cover{% endif %}" {% if page.cover %}style="background-image: url({{ page.cover | prepend: site.baseurl }});"{% endif %}>
       <div class="scrim {% if page.cover %}has-cover{% endif %}">
-        <header class="post-header">
+        <header class="post-header {% if page.headerAlign %}{{page.headerAlign}}{% endif %} {% if page.headerBackground %}headerBackground{% endif %}">
           <h1 class="title blog-post">{{ page.title }}</h1>
           <div class="post-date">
             {% if page.author %} Written by {{ page.author | split: " " | first }} {% endif %}

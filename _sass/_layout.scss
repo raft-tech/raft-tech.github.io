@@ -358,3 +358,46 @@ pre code.hljs {
 		}
 	}
 }
+
+#post {
+	.about-cover.scrim {
+		background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.50);
+	}
+
+	.post-header {
+		width: 100%;
+		padding-bottom: 1rem;
+		border-radius: 1rem;
+
+		.title {
+			font-size: 2rem;
+		}
+
+		.share_header {
+			display: flex;
+			justify-content: space-around;
+			margin: 1rem auto;
+			max-width: 100px;
+		}
+
+		&.headerBackground {
+			background: #343840c7;
+			padding: .5rem 1rem;
+		}
+
+		@include media ($desktop){
+			width: 30%;
+			font-size: 1rem;
+
+			&.center {
+				margin: 0 auto;
+			}
+
+			&.right {
+				margin: 0 auto;
+				margin-right: 0;
+			}
+		}
+	}
+}
