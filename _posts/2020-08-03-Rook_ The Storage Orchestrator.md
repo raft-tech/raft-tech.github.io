@@ -2,10 +2,10 @@
 layout: post
 title:  "Rook: The Storage Orchestrator"
 short_title: "Rook on K8s"
-date: 2020-07-22
+date: 2020-08-01
 categories:
-featimg: /assets/images/featimage/Blog_Rook_2.00_V3-01.png
-bgimg: /assets/images/bgimg/Blog_Rook_1.00(Index)-01.png
+featimg: /assets/images/featimage/featimg-blog-rook.jpg
+bgimg: /assets/images/bgimg/Blog_Rook_2.00_V3-01.png
 author: James
 ---
 ## What is Rook? 
