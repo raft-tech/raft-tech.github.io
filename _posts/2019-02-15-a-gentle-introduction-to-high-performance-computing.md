@@ -6,6 +6,7 @@ categories:
 featimg: /assets/images/featimage/feb_15_2019.jpeg
 bgimg: /assets/images/bgimg/hpc.jpg
 author: Bhaarat Sharma
+headerAlign: center
 ---
 
 **CIO LEVEL SUMMARY:**

@@ -7,6 +7,8 @@ categories:
 featimg: /assets/images/featimage/HappyHour_featimage.jpg
 bgimg: /assets/images/bgimg/HappyHour_bgimg.jpg
 author: Ryan
+headerAlign: center
+headerBackground: true
 ---
 
 There is more to building a remote team than a subscription to Zoom and SharePoint. One of the most important factors dictating the productivity of any business (remote or otherwise) is the morale of your workforce. As a remote-first company, Raft has always practiced creative ways to virtually create a sense of community.  

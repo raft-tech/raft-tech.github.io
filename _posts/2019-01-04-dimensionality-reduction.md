@@ -6,6 +6,7 @@ categories:
 featimg: /assets/images/featimage/jan_04_2019.png
 bgimg: /assets/images/bgimg/pca.jpg
 author: Bhaarat Sharma
+headerAlign: center
 ---
 
 **CIO Level Summary**
