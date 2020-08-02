@@ -376,7 +376,7 @@ pre code.hljs {
 
 		.share_header {
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			margin: 1rem auto;
 			max-width: 100px;
 		}
@@ -389,14 +389,30 @@ pre code.hljs {
 		@include media ($desktop){
 			width: 30%;
 			font-size: 1rem;
+			text-align: left;
+
+			.share_header {
+				margin: 1rem 0;
+			}
 
 			&.center {
 				margin: 0 auto;
+				text-align: center;
+
+				.share_header {
+					margin: 1rem auto;
+				}
 			}
 
 			&.right {
 				margin: 0 auto;
 				margin-right: 0;
+				text-align: right;
+
+				.share_header {
+					margin: 1rem auto;
+					margin-right: 0;
+				}
 			}
 		}
 	}
