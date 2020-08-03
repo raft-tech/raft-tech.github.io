@@ -186,7 +186,7 @@ spec:
 
 ## Shared Filesystems 
 
-A shared filesystem can be mounted with read/write permission from multiple pods. This may be useful for applications which can be clustered using a shared filesystem. To run a shared filesystem, we will need a storageclass.yaml and filesystem.yaml 
+A shared filesystem can be mounted with read/write permission from multiple pods. This may be useful for applications which can be clustered using a shared filesystem. To run a shared filesystem, we will need a storageclass.yaml and filesystem.yaml. 
 
  
 
@@ -216,9 +216,9 @@ $ kubectl create -f csi/cephfs/storageclass.yaml
 ```
  
 
-## Verify a succesfull deployment 
+## Verify a successful deployment 
 
-You can verify the status of CEPH by running a command on the rook-ceph-tool container 
+You can verify the status of CEPH by running a command on the rook-ceph-tool container. 
 
 ``` 
 
