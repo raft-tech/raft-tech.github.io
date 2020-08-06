@@ -2,7 +2,7 @@
 id: adam_caron
 permalink: "/about/adam_caron"
 full_name: Adam Caron
-role: Full Stack Developer
+role: Fullstack Developer
 image:
 about: Adam is a software engineer with over a decade of web development experience.
   He specializes in accessibile UIs and scaleable APIs, with deep experience in
