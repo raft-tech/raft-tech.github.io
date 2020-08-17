@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating a pipeline with Raspberry Pi, Arduino, Docker and k3s"
-short_title: "HIL CI/CD Pipelines"
+short_title: "HIL CI/CD Pipelines (1)"
 date: 2020-07-13
 categories:
 featimg: /assets/images/featimage/dusty_uno.png
@@ -214,4 +214,4 @@ Currently, my plan is to proceed with this project and include some fellow Rafte
 - Testing out _QEMU_ and docker as a digital twin
 - Exploring the capabilities of _Microsoft’s Azure Digital Twins_
 
-_To be continued..._
+~~_To be continued..._~~ Continued [Using Docker, Drone.io and Ino to build a HIL Pipeline](/2020/08/17/continue-exploring-hil.html)
