@@ -4,8 +4,8 @@ title:  "Using Docker, Drone.io and Ino to build a HIL Pipeline"
 short_title: "HIL CI/CD Pipelines (2)"
 date: 2020-08-17
 categories:
-featimg: /assets/images/featimage/dusty_uno.png
-bgimg: /assets/images/bgimg/pressure-water-line-509871_1920.jpg
+featimg: /assets/images/featimage/Blog_Pipeline_Art-Index-01.png
+bgimg: /assets/images/bgimg/Blog_Pipeline_Art-Header-01.png
 author: Barak
 ---
 
