@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using Docker, Drone.io and Ino to build a HIL Pipeline"
-short_title: "HIL CI/CD Pipelines (2)"
+short_title: "HIL CI/CD Pipelines - 2"
 date: 2020-08-17
 categories:
 featimg: /assets/images/featimage/Blog_Pipeline_Art-Index-01.png
