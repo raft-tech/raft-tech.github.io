@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating a pipeline with Raspberry Pi, Arduino, Docker and k3s"
-short_title: "HIL CI/CD Pipelines (1)"
+short_title: "HIL CI/CD Pipelines - 1"
 date: 2020-07-13
 categories:
 featimg: /assets/images/featimage/dusty_uno.png
