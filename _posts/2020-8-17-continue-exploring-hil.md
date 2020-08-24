@@ -28,14 +28,14 @@ As a developer, sometimes a diagram is worth a 1,000 words. Taking a look at the
 In the last post we had left things off with the following _TODOs_:
 
 - Code delivery from Pi to Arduino
-- Code delivery from repo to pi
+- Code delivery from repo to Pi
 - Code delivery from repo to Arduino
-- Testing out QEMU and docker as a digital twin
+- Testing out QEMU and Docker as a digital twin
 - Exploring the capabilities of Microsoft’s Azure Digital Twins
 
 In this post, we will mainly be addressing the first 3 points, with the goal to deliver code to Ardiuno via Pi. To get everything working properly, we will address some of the fine grained technical aspects of getting things working with the particular technology stack chosen. Get ready for lots of little technical details.
 
-### Code delivery from Pi to Arduino uning Ino
+### Code delivery from Pi to Arduino using Ino
 The first thing I had to get working is code delivery from a Raspberry Pi to the Arduino. There are quite a few IDE's, including Arduino's offical one, that will accomplish this task. Most of them require a GUI interface and won't be much help in creating a CI/CD. After some more digging, turns out to be a problem that has been semi-solved already for me using the [Ino tool](http://inotool.org/). Ino is a _"a command line toolkit for working with Arduino"_. I should note that the project on GitHub is quite stale, but the tool worked flawlessly for our purpose here. Following [Ino's Quick Start](http://inotool.org/quickstart), setting Ino up is as easy as:  
 
 ```bash
@@ -115,13 +115,13 @@ ino build
 ino upload
 ```
 
-With this in place, we can copy multiple `.ino` files form a `src` folder into a docker image and change the behavior/code on the Arduino using a single command. It will look something like this:
+With this in place, we can copy multiple `.ino` files from a `src` folder into a Docker image and change the behavior/code on the Arduino using a single command. It will look something like this:
 
 ```sh
 docker run --device=/dev/ttyACM0 -e INO_FILENAME=inos/one_leds.ino rafttech/arduino-delivery-container:latest
 ```
 
-The code in `one_leds.ino` is directly from [Arduino Blink Tutorial](https://www.arduino.cc/en/tutorial/blink) tutorial as a starting code. As excepted, it makes a single LED _blink_. Now if we modified the code slightly to have 2 LEDs blink and we already had the code for it ready in to docker image, updating the Arduino becomes as easy as:
+The code in `one_leds.ino` is directly from [Arduino Blink Tutorial](https://www.arduino.cc/en/tutorial/blink) tutorial as a starting code. As excerpted, it makes a single LED _blink_. Now if we modified the code slightly to have 2 LEDs blink and we already had the code for it ready in a Docker image, updating the Arduino becomes as easy as:
 
 ```sh
 docker run --device=/dev/ttyACM0 -e INO_FILENAME=inos/two_leds.ino rafttech/arduino-delivery-container:drone-arm
@@ -132,7 +132,7 @@ And now you should have 2 LEDs blinking, one after the other.
 ![Deploy Example](/assets/images/hil2/deploy_example.gif)
 
 ### Code delivery from repo to Pi and from repo to Arduino
-The next two _TODOs_ from my previous post are very closely related. Any modern CI/CD requires some method of delivering code from a repo to where ever it is needed. In our case, there are 2 pipelines we are trying to establish, (1) repo to Pi and (2) repo to Arduino (our edge device). I decided to go with Drone.io for my CI/CD mainly because it seemed easier/lighter than running [Jenkins](https://www.jenkins.io/) and it is a great opportunity for me to take Drone.io for a test drive. Drone's pipeline configurations are based on steps, with each step having a spastic container. Here is an example pipeline taken from [Drone's pipelnine docs](https://docs.drone.io/pipeline/overview/)
+The next two _TODOs_ from my previous post are very closely related. Any modern CI/CD requires some method of delivering code from a repo to where ever it is needed. In our case, there are 2 pipelines we are trying to establish, (1) repo to Pi and (2) repo to Arduino (our edge device). I decided to go with Drone.io for my CI/CD mainly because it seemed easier/lighter than running [Jenkins](https://www.jenkins.io/) and it is a great opportunity for me to take Drone.io for a test drive. Drone's pipeline configurations are based on steps, with each step having a specific container. Here is an example pipeline taken from [Drone's pipeline docs](https://docs.drone.io/pipeline/overview/)
 
 ```yaml
 ---
@@ -157,11 +157,11 @@ steps:
 Configured properly, this pipeline will checkout a code repo and build and test a backend server using a `go` container and a frontend server using a `node` container. Note that these are 2 individual steps that make up a single pipeline. Drone supports multiple pipelines, more on that in a little bit.  
 
 ### Running a Drone Server
-To get Drone working properly, there are a few things that need to be configured. For the code repo I used [Github](add Github Repo here) and [Drone GitHub Install Guide](https://docs.drone.io/server/provider/github/) was very straight forward. You will need to follow the instructions to create an OAuth Application on GitHub as well as create a shared secret. If you are running everything in the cloud, the instructions are great. Where the instructions fall short is when attempting to run the server on a localhost. The way GitHub OAuth works require a valid callback URL. This is used to redirect back to the Drone dashboard after successfully logging in using GitHub credentials. To solve this issue you will need some tunnel to localhost service. There are a few available, I used [ngrok](https://ngrok.com/) mainly because it's free and on a mac you can install it via [Homebrew](https://brew.sh/) using `brew cask install ngrok`. After the installation, you will need to create an account and use `ngrok authtoken <YOUR_AUTHTOKEN>` to setup authentication. Once all that is done, the command `ngrok http <PORT>` to expose your localhost to the web. If all goes well you should see something like this:
+To get Drone working properly, there are a few things that need to be configured. For the code repo I used [Github](https://github.com/raft-tech/arduino-delivery-container/) and the [Drone GitHub Install Guide](https://docs.drone.io/server/provider/github/) which was very straightforward. You will need to follow the instructions to create an OAuth Application on GitHub as well as create a shared secret. If you are running everything in the cloud, the instructions are great. Where the instructions fall short is when attempting to run the server on a localhost. The way GitHub OAuth works require a valid callback URL. This is used to redirect back to the Drone dashboard after successfully logging in using GitHub credentials. To solve this issue you will need some tunnel to localhost service. There are a few available, I used [ngrok](https://ngrok.com/) mainly because it's free and on a Mac you can install it via [Homebrew](https://brew.sh/) using `brew cask install ngrok`. After the installation, you will need to create an account and use `ngrok authtoken <YOUR_AUTHTOKEN>` to setup authentication. Once all that is done, use the command `ngrok http <PORT>` to expose your localhost to the web. If all goes well you should see something like this:
 
 ![ngrok Example](/assets/images/hil2/ngrok-running.png)
 
-What you are looking after is the forwarding URL, in this case `http://c23a5e42057f.ngrok.io`. Everytime you run `ngrok http <PORT>` you will get a unique url, so if you stop it, you will need to reset the URL in the GitHub OAuth setting. Also don't forget to include `login` at the end of your URL so GitHub will know where to redirect after verifying your identify. The reset is just _step-by-step_ following the Drone documentation. You can get the server running in docker using the command:
+What you are looking after is the forwarding URL, in this case `http://c23a5e42057f.ngrok.io`. Everytime you run `ngrok http <PORT>` you will get a unique url, so if you stop it, you will need to reset the URL in the GitHub OAuth setting. Also don't forget to include `login` at the end of your URL so GitHub will know where to redirect after verifying your identify. The reset is just _step-by-step_ following the Drone documentation. You can get the server running in Docker using the command:
 
 ```sh
 docker run -d \
@@ -179,7 +179,7 @@ docker run -d \
   drone/drone:1
 ```
 
-If you are following along, make sure to set the Drone server host to the URL `ngrok` provided. The next step is to run a Drone Runner/Agent. I use Runner/Agent because I have seen them reffed as both in the documentation and in forums. Getting a Runner/Agent working is again following the [Drone Runner Docs](https://docs.drone.io/runner/docker/installation/linux/)
+If you are following along, make sure to set the Drone server host to the URL `ngrok` provided. The next step is to run a Drone Runner/Agent. I use Runner/Agent because I have seen them reffed as both in the documentation and in forums. Getting a Runner/Agent working is again following the [Drone Runner Docs](https://docs.drone.io/runner/docker/installation/linux/).
 
 ```sh
 docker run -d \
@@ -221,13 +221,13 @@ Until now, I was running everything on my laptop, the pipeline was able to compl
 
 After what seemed like too long, I ended up with multiple solutions. Let's explore these:
 
-- **Corss build using `docker buildx`** [Docker _"supports"_ multi architect builds](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/), if you enable experimental features, run Docker with privileged access and can get `buildx` working. After tinkering with this for a while, I was able to get it working on my laptop, but I couldn't get this working within Drone. [Dorne dind pipeline](https://docker-runner.docs.drone.io/examples/service/docker_dind/) might work here, but I wasn't able to get it to work. When it does work, you can build and push images using:
+- **Corss build using `docker buildx`** - [Docker _"supports"_ multi architect builds](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/), if you enable experimental features, run Docker with privileged access, and can get `buildx` working. After tinkering with this for a while, I was able to get it working on my laptop, but I couldn't get this working within Drone. [Drone dind pipeline](https://docker-runner.docs.drone.io/examples/service/docker_dind/) might work here, but I wasn't able to get it to work. When it does work, you can build and push images using:
 
 ```sh
 docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm/v6 -t rafttech/arduino-delivery-container:latest . --push
 ```
 
-- **Runner on Pi** Drone can build containers natively for multiple architecture, as long as it has a Runner with the same architature. Drone uses a seprate container for it's server and for it's runners This means that I can keep the Drone server running on my laptop and run a seprate Runner on the pi that can build the image for the pi. The down side for this approach is that I was using a Pi 3 that has limited resources and it took significantly longer to build (around x7). The configuration for this is automatically handled by the Drone server. There are 2 pipelines now that can run in parallel, if there are runners available to execute the pipeline.
+- **Runner on Pi** - Drone can build containers natively for multiple architecture, as long as it has a Runner with the same architecture. Drone uses a separate container for its server and for its runners. This means that I can keep the Drone server running on my laptop and run a separate Runner on the Pi that can build the image for the Pi. The down side for this approach is that I was using a Pi 3 that has limited resources and it took significantly longer to build (around x7). The configuration for this is automatically handled by the Drone server. There are 2 pipelines now that can run in parallel, if there are runners available to execute the pipeline.
 
 ```yaml
 ---
@@ -273,24 +273,24 @@ steps:
       from_secret: docker_password
 ```
 
-- **[Drone Manifest](http://plugins.drone.io/drone-plugins/drone-manifest/)** Drone has another pipeline plugin that can be used for multi-arch Docker. I haven't tried it out yet, but it might be promising. Like the previous plugin, it might require Drone to have a Runner on the target architecture. I haven't tried this out yet.
+- **[Drone Manifest](http://plugins.drone.io/drone-plugins/drone-manifest/)** - Drone has another pipeline plugin that can be used for multi-arch Docker. I haven't tried it out yet, but it might be promising. Like the previous plugin, it might require Drone to have a Runner on the target architecture. I haven't tried this out yet.
 
-- **QEMU** Using [QEMU](https://www.qemu.org/) we can [Run and Build ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/). I haven't tried that one either, but it seems like it would work well. To get it to work we will need to run Docker in `privileged` mode. This might be worth exploring if we end up using QEMU for simulations, more on that later.  
+- **QEMU** - Using [QEMU](https://www.qemu.org/) we can [Run and Build ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/). I haven't tried that one either, but it seems like it would work well. To get it to work we will need to run Docker in `privileged` mode. This might be worth exploring if we end up using QEMU for simulations, more on that later.  
 
 ### Kubernetes, Simulations & Testing
 So far, we have accomplished getting code to be built and deployed to an edge device. We have effectively put the hardware at the deploy stage, which is the end goal. For this work to be a complete _Hardware-in-the-loop_ solution, we need to explore a couple more things.
 
-1. **Kubernetes** The work that we have done so far regarding HIL has been in the realm of Docker and using manual commands. Although the pipeline is fully automated at this point, it doesn't complete the delivery without human intervention. The next iteration will need to include a fully automated delivery system and leveraging a container-orchestration system.
+1. **Kubernetes** - The work that we have done so far regarding HIL has been in the realm of Docker and using manual commands. Although the pipeline is fully automated at this point, it doesn't complete the delivery without human intervention. The next iteration will need to include a fully automated delivery system and leveraging a container-orchestration system.
 
-2. **Digital Twins** Argue-able the most beneficial portion of HIL is running new code against a simulated hardware in the cloud. The last thing we want is to complete the cycle and had buggy code delivered to a hardware. This would be a hardware specific simulation that can checkout the code with from the repo and run the code in a virtual environment along with any appropriate tests. In the last post about HIL I mentioned using QEMU or _Microsoft’s Azure Digital Twins_. Since then I found some more options that are worth exploring and we will be doing so in future posts.
+2. **Digital Twins** - Arguably the most beneficial portion of HIL is running new code against simulated hardware in the cloud. The last thing we want is to complete the cycle and have buggy code delivered to actual hardware. This would be a hardware-specific simulation that can checkout the code from the repo and run the code in a virtual environment along with any appropriate tests. In the last post about HIL I mentioned using QEMU or _Microsoft’s Azure Digital Twins_. Since then I found some more options that are worth exploring and we will be doing so in future posts.
 
-3. **Test Hardware** Along the line with a digital twin, the idea is to have a dedicated hardware for testing that is part of the loop, but not the target device. This could be a hardware unit at the developer's workspace or in a lab. The advantages here are to avoid having the first time we run new code on hardware be in the field. This will increase our confidence that we have flushed out any code or delivery problems -- before we hit production. More testing along the loop means finding errors early on and solving them within our CI/CD.
+3. **Test Hardware** - Along the line with a digital twin, the idea is to have dedicated hardware for testing that is part of the loop, but not the target device. This could be a hardware unit at the developer's workspace or in a lab. The advantages here are to avoid having the first time we run new code on hardware be in the field. This will increase our confidence that we have flushed out any code or delivery problems -- before we hit production. More testing along the loop means finding errors early on and solving them within our CI/CD.
 
-4. **Connectivity** Any modern CI/CD depends on having a constant network connection. After all, if we aren't connected, how will the next step in the pipeline know what's going on. The target devices we are trying to bring into the loop are not always connected to a network. This poses it's own challenge of delivery of new code when the target device is offline. In some ways, having a Drone Runner on a device like a Pi might be able to remove this. Any CI/CD that target devices that might go offline for extended periods of time would have to account for this. We should also consider the time the device is connected and the number of devices/connections needed. Since we are discussing mainly smaller process, how does this CI/CD scale when there are a huge number of devices that connect to a network for a brief time and need to all be updated simultaneously. We may also like to download information for the devices and forward them to a database for further analysis. This could be an _interesting conundrum_ to tackle when we get there.
+4. **Connectivity** - Any modern CI/CD depends on having a constant network connection. After all, if we aren't connected, how will the next step in the pipeline know what's going on. The target devices we are trying to bring into the loop are not always connected to a network. This poses its own challenge of delivery of new code when the target device is offline. In some ways, having a Drone Runner on a device like a Pi might be able to remove this. Any CI/CD that targets devices that might go offline for extended periods of time would have to account for this. We should also consider the time the device is connected and the number of devices/connections needed. Since we are discussing mainly smaller processes, how does this CI/CD scale when there are a huge number of devices that connect to a network for a brief time and need to all be updated simultaneously. We may also like to download information for the devices and forward them to a database for further analysis. This could be an _interesting conundrum_ to tackle when we get there.
 
-5. **Testing & Results** The major reason we are trying to active HIL with a modern CI/CD is to do better testing. Ideally, we would like to run code on a target device, observe and capture the behavior, then change the hardware code and/or configuration and run another test. This will be something we would like to do along the way, in simulation, test hardware and in production. This too will be a problem for a later time when things are running smoothly.
+5. **Testing & Results** - The major reason we are trying to active HIL with a modern CI/CD is to do better testing. Ideally, we would like to run code on a target device, observe and capture the behavior, then change the hardware code and/or configuration and run another test. This will be something we would like to do along the way, in simulation, on test hardware, and in production. This too will be a problem for a later time when things are running smoothly.
 
 ### Final Thoughts
-As our quest for HIL continues, I find the problem space to be more and more intriguing. While simulation testing and HIL are not a new concept, applying modern CI/CD concepts to HIL is an interesting technological junction. A lot of the work is around figuring out **how, not if**, all the moving parts fit together. There is much more to do, but the basic building blocks are already in place and we can start to see how a modern HIL CI/CD will look like and what the next steps will include.
+As our quest for HIL continues, I find the problem space to be more and more intriguing. While simulation testing and HIL are not new concepts, applying modern CI/CD concepts to HIL is an interesting technological junction. A lot of the work is around figuring out **how, not if**, all the moving parts fit together. There is much more to do, but the basic building blocks are already in place and we can start to see how a modern HIL CI/CD will look like and what the next steps will include.
 
 _To be continued..._
