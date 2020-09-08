@@ -10,8 +10,7 @@ author: Bhargav
 tags: blogs
 ---
 
-Government and large enterprise requires periodic SSL certificate renewals, at least once a year to comply with NIST's Risk Management Framework (RMF)
-https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final. Typically there is a slight downtime associated with renewing the certificates and to be on the safe side the process is done typically outside the business hours. In this post we show how the certificates can be renewed with zero downtime in a Kubernetes microservice environment with Ambassador as the gateway.
+Government and large enterprise requires periodic SSL certificate renewals, at least once a year to comply with NIST's [Risk Management Framework (RMF)](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final). Typically there is a slight downtime associated with renewing the certificates and to be on the safe side the process is done typically outside the business hours. In this post we show how the certificates can be renewed with zero downtime in a Kubernetes microservice environment with Ambassador as the gateway.
 
 [Ambassador](https://www.getambassador.io/) is a Kubernetes API Gateway that provides Ingress Controller for Routing traffic to Kubernetes clusters. Ambassador supports a broad range of protocols and TLS termination, it also provides traffic management controls for resource availability. TLS installation is covered in [Ambassador Installation](https://www.getambassador.io/docs/latest/howtos/tls-termination/).
 
