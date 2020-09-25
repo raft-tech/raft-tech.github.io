@@ -119,48 +119,7 @@
   full_name: Matthew Doty
   role: Experience Design Practice Lead
   image: Matthew.png
-# - id: james_kaiser
-#   permalink: /about/james_kaiser
-#   full_name: James Kaiser
-#   role: User Analyst
-#   image: null
-# - id: ajaratu_carew
-#   permalink: /about/ajaratu_carew
-#   full_name: Ajaratu Carew
-#   role: User Analyst
-#   image: null
-# - id: altantsetseg_lkhagvasuren
-#   permalink: /about/altantsetseg_lkhagvasuren
-#   full_name: Altantsetseg Lkhagvasuren
-#   role: User Analyst
-#   image: null
-# - id: brandy_waters
-#   permalink: /about/brandy_waters
-#   full_name: Brandy Waters
-#   role: User Analyst
-#   image: null
-# - id: dorsey_vengrouskie
-#   permalink: /about/dorsey_vengrouskie
-#   full_name: Dorsey Vengrouskie
-#   role: User Analyst
-#   image: null
-# - id: mallika_koirala
-#   permalink: /about/mallika_koirala
-#   full_name: Mallika Koirala
-#   role: User Analyst
-#   image: null
-# - id: patria_stout
-#   permalink: /about/patria_stout
-#   full_name: Patria Stout
-#   role: User Analyst
-#   image: null
-# - id: shihfeng_chen
-#   permalink: /about/shihfeng_chen
-#   full_name: Shihfeng Chen
-#   role: User Analyst
-#   image: null
-# - id: tanya_wilcox
-#   permalink: /about/tanya_wilcox
-#   full_name: Tanya Wilcox
-#   role: User Analyst
-#   image: null
+- id: marc_phillips
+  permalink: /about/marc_phillips
+  full_name: Marc Phillips
+  role: Experience Design Practice Lead
