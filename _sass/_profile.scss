@@ -62,6 +62,10 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+
+    object {
+      margin: 0 auto;
+    }
   }
 
   .about-col {
