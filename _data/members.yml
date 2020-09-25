@@ -114,6 +114,11 @@
   full_name: Miles Reiter
   role: UX Designer/Researcher
   image: null
+- id: matthew_doty
+  permalink: /about/matthew_doty
+  full_name: Matthew Doty
+  role: Experience Design Practice Lead
+  image: Matthew.png
 # - id: james_kaiser
 #   permalink: /about/james_kaiser
 #   full_name: James Kaiser
