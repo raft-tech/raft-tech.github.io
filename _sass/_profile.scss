@@ -37,8 +37,18 @@
     #github, #linkedin, #homepage {
       border-radius: 50%;
 
-      &:hover {
-        background: linear-gradient(white, $lightblue);
+      &::after {
+        content: '';
+        display: block;
+        top: 20px;
+        height: 10px;
+        width: 25px;
+        background: white;
+        margin: 10px auto;
+      }
+
+      &:hover::after {
+        background: $lightblue;
       }
     }
 
@@ -165,6 +175,10 @@
     #links {
       margin: 0;
       margin-top: 1rem;
+
+      #github, #linkedin, #homepage {
+        margin-top: 2rem;
+      }
     }
   }
 
