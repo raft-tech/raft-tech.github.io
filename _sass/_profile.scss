@@ -37,8 +37,18 @@
     #github, #linkedin, #homepage {
       border-radius: 50%;
 
-      &:hover {
-        background: linear-gradient(white, $lightblue);
+      &::after {
+        content: '';
+        display: block;
+        top: 20px;
+        height: 10px;
+        width: 25px;
+        background: white;
+        margin: 10px auto;
+      }
+
+      &:hover::after {
+        background: $lightblue;
       }
     }
 
@@ -52,6 +62,10 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+
+    object {
+      margin: 0 auto;
+    }
   }
 
   .about-col {
@@ -119,11 +133,6 @@
       width: 500px;
       margin-bottom: 1rem;
     }
-
-    #links {
-      margin: 0;
-      margin: 1rem 0 2rem 0;
-    }
   }
 
   #hero.profile.site-header-container {
@@ -164,7 +173,7 @@
 
     #links {
       margin: 0;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
   }
 
