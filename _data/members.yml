@@ -114,11 +114,16 @@
   full_name: Miles Reiter
   role: UX Designer/Researcher
   image: null
-- id: adam_caron
-  permalink: /about/adam_caron
-  full_name: Adam Caron
-  role: Fullstack Developer
+- id: carl_smith
+  permalink: /about/carl_smith
+  full_name: Carl Smith
+  role: Sr. Fullstack Developer
   image: null
+# - id: adam_caron
+#   permalink: /about/adam_caron
+#   full_name: Adam Caron
+#   role: Fullstack Developer
+#   image: null
 # - id: james_kaiser
 #   permalink: /about/james_kaiser
 #   full_name: James Kaiser
