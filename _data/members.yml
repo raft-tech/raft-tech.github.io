@@ -114,6 +114,11 @@
   full_name: Miles Reiter
   role: UX Designer/Researcher
   image: null
+- id: carl_smith
+  permalink: /about/carl_smith
+  full_name: Carl Smith
+  role: Sr. Fullstack Developer
+  image: null
 - id: matthew_doty
   permalink: /about/matthew_doty
   full_name: Matthew Doty
