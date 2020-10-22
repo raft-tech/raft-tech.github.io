@@ -33,7 +33,7 @@ layout: default
     <div class="wrapper">
       <h3>Our Team</h3>
       {% assign members_with_images = site.data.members %}
-      <ul id="members">
+      <ul class="members">
         {% for member in members_with_images %}
         {% if member.image != null %}
         <li class="member">
@@ -50,23 +50,23 @@ layout: default
         {% endif %}
         {% endfor %}
       </ul>
+      <ul class="members">
+        {% for member in members_with_images %}
+        {% if member.image == null %}
+        <li class="member">
+          <a class="member-card" href="/about/{{member.id}}">
+            <div class='plus-icon'>+</div>
+            <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}"
+              alt="{{member.name}}">
+            <div class='header'>
+              <h4 class='name'>{{member.full_name}}</h4>
+              {% if member.role %}<h5 class='role'>{{member.role}}</h5>{% endif %}
+            </div>
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
     </div>
-    <ul id="members">
-      {% for member in members_with_images %}
-      {% if member.image == null %}
-      <li class="member">
-        <a class="member-card" href="/about/{{member.id}}">
-          <div class='plus-icon'>+</div>
-          <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}"
-            alt="{{member.name}}">
-          <div class='header'>
-            <h4 class='name'>{{member.full_name}}</h4>
-            {% if member.role %}<h5 class='role'>{{member.role}}</h5>{% endif %}
-          </div>
-        </a>
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
   </div>
 </div>
