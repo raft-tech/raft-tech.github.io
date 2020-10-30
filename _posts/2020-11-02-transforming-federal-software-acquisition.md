@@ -2,7 +2,7 @@
 layout: post
 title:  "Transforming Federal Software Acquisition for Continuous Relevance"
 short_title: "Transforming Federal Software Acquisition"
-date: 2020-10-30
+date: 2020-11-02
 categories:
 featimg: /assets/images/featimage/Agile_Aquisition_Feature-01.png
 bgimg: /assets/images/bgimg/Agile_Aquisition_Header-01.png
