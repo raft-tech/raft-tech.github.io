@@ -6,6 +6,7 @@ gem 'jekyll-paginate-v2'
 gem 'jekyll-target-blank'
 source 'https://rubygems.org'
 gem 'github-pages'
+gem 'jemoji'
 group :jekyll_plugins do
   gem 'pagemaster'
 end
