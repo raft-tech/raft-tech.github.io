@@ -5,6 +5,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - pagemaster
+  - jekyll-target-blank
+  - jemoji
 
 exclude:
   - "/vendor/"
