@@ -69,7 +69,7 @@ $xlarge: 1200px;
   overflow-wrap: break-word;
   word-break: break-word;
   word-wrap: break-word;
-  position: relative;  
+  position: relative;
 }
 
 //leaving this here -- it can be improved
@@ -1103,7 +1103,7 @@ text-decoration: none;
     margin-bottom: 20px;
 
     @include media($large){
-      float: right; 
+      float: right;
       padding: 10px;
       height: 400px;
       margin-bottom: auto;
@@ -1131,3 +1131,10 @@ text-decoration: none;
 
 @import "team";
 @import "profile";
+
+img.emoji {
+    display: inline;
+    height: 1em;
+    width: 1em;
+    margin-bottom: 0.25em;
+}
