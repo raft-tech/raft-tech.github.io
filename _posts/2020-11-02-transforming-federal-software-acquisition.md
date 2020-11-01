@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "Transforming Federal Software Acquisition for Continuous Relevance"
-short_title: "Transforming Federal Software Acquisition"
+title:  "Agile Software Acquisition Brings Continuous Relevance to DoD"
+short_title: "Agile Software Acquisition"
 date: 2020-11-02
 categories:
 featimg: /assets/images/featimage/Agile_Aquisition_Feature-01.png
 bgimg: /assets/images/bgimg/Agile_Aquisition_Header-01.png
 author: Marc Phillips
-tags: blogs
 ---
 
 Somebody go wake up William Gibson. [DoD Instruction 500.87](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500087p.PDF?ver=virAfQj4v_LgN1JxpB_dpA%3d%3d) is about to distribute the future a lot more evenly. Released on October 2nd, 2020, *Operation of the Software Acquisition Pathway* prescribes a transformative approach for accelerating the delivery of effective, resilient, supportable, and affordable software-driven capabilities throughout the Department of Defense. Following these principles will ensure a decisive and sustainable U.S. advantage in an increasingly complex world.
