@@ -27,7 +27,7 @@
   permalink: /about/missy_maloney
   full_name: Missy Maloney
   role: Frontend Developer
-  image: null
+  image: missy_maloney.png
 - id: barak_stout
   permalink: /about/barak_stout
   full_name: Barak Stout
@@ -73,7 +73,7 @@
   permalink: /about/jack_bevis
   full_name: Jack Bevis
   role: Fullstack Developer
-  image: null
+  image: jack_bevis.png
 - id: dan_mutombo
   permalink: /about/dan_mutombo
   full_name: Dan Mutombo
@@ -108,7 +108,7 @@
   permalink: /about/rebecca_mancuso
   full_name: Rebecca Mancuso
   role: Operations
-  image: null
+  image: rebecca_mancuso.png
 - id: miles_reiter
   permalink: /about/miles_reiter
   full_name: Miles Reiter
@@ -128,4 +128,4 @@
   permalink: /about/marc_phillips
   full_name: Marc Phillips
   role: Senior Engagement Manager
-  image: null
+  image: marc_phillips.png
