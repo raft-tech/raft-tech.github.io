@@ -5,7 +5,7 @@ short_title: "Agile Software Acquisition"
 date: 2020-11-02
 categories:
 featimg: /assets/images/featimage/Agile_Aquisition_Feature-01.png
-bgimg: /assets/images/bgimg/Agile_Aquisition_Header-01.png
+bgimg: /assets/images/bgimg/Agile_Acquisition_Header-01.png
 author: Marc Phillips
 ---
 
