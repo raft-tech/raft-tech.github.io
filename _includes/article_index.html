@@ -9,7 +9,7 @@
       <div class="card-top">
         <a href="{{ post.url | prepend: goraft/ | replace: '//', '/'}}">
             {% if post.short_title.size > 0 %}<h3>{{ post.short_title | truncate: 27 }}</h3>
-            {% else %} <h3>{{ post.title | truncate: 27 }}</h3>
+            {% else %} <h3>{{ post.title | truncate: 42 }}</h3>
             {% endif %}
             <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         </a>

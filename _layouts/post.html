@@ -9,7 +9,7 @@ layout: default
         <header class="post-header">
           <h1 class="title blog-post">{{ page.title }}</h1>
           <div class="post-date">
-            {% if page.author %} Written by {{ page.author | split: " " | first }} {% endif %}
+            {% if page.author %} Written by {{ page.author }} {% endif %}
           </div>
           {{ page.date | date: "%B %-d, %Y" }} {% include social_links_header.html %}
         </header>
