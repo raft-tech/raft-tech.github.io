@@ -3,7 +3,7 @@ id: marc_phillips
 permalink: "/about/marc_phillips"
 full_name: Marc Phillips
 role: Senior Engagement Manager
-image: marc_phillips.png
+image: marc_phillips.jpg
 about: Marc is an experienced agile software manager and business strategist 
   dedicated to building transformational products and teams. Marc has worked with startups 
   and enterprises across a variety of industries to create innovative value through the 
