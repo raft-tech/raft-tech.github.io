@@ -2,6 +2,7 @@
 id: missy_maloney
 permalink: "/about/missy_maloney"
 full_name: Missy Maloney
+title: About - Missy Maloney
 role: Frontend Developer
 image: missy_maloney.jpg
 about: Missy is a Frontend Developer with experience in ReactJS, Django, MobX, and

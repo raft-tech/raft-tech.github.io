@@ -2,6 +2,7 @@
 id: meissa_dia
 permalink: "/about/meissa_dia"
 full_name: Meissa Dia
+title: About - Meissa Dia
 role: Sr. Frontend Engineer
 image: meissa_dia.jpg
 about: Meissa is on a mission to create user experiences that improve lives while

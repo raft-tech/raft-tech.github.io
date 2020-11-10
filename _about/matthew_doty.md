@@ -2,6 +2,7 @@
 id: matthew_doty
 permalink: "/about/matthew_doty"
 full_name: Matthew Doty
+title: About - Matthew Doty
 role: Experience Design Practice Lead
 image: matthew_doty.png
 about: Matthew Doty crosses the streams of his artistic roots, technical savvy, business acumen, 

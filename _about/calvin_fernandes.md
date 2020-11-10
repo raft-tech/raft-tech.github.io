@@ -2,6 +2,7 @@
 id: calvin_fernandes
 permalink: "/about/calvin_fernandes"
 full_name: Calvin Fernandes
+title: About - Calvin Fernandes
 role: Sr. Software Engineer
 image: 
 about: Calvin has over 7 years of experience developing scalable, reactive, vendor-agnostic,

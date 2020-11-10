@@ -2,6 +2,7 @@
 id: austine_luyegu
 permalink: "/about/austine_luyegu"
 full_name: Austine Luyegu
+title: About - Austine Luyegu
 role: Sr. Network Engineer
 image: 
 about: Austine has over 10 years of network engineering/systems administration experience

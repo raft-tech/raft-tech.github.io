@@ -2,6 +2,7 @@
 id: carl_smith
 permalink: "/about/carl_smith"
 full_name: Carl Smith
+title: About - Carl Smith
 role: Sr. Fullstack Developer
 image: Carl.png
 about: Carl is a software engineer with over two decades of experience developing scalable,

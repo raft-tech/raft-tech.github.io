@@ -2,6 +2,7 @@
 id: michael_roach
 permalink: "/about/michael_roach"
 full_name: Michael Roach
+title: About - Michael Roach
 role: Sr. DevSecOps Engineer
 image: michael_roach.jpg
 about: Mike is a DevSecOps Engineer and former U.S. Marine with a deep expertise in

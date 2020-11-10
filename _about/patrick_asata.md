@@ -2,6 +2,7 @@
 id: patrick_asata
 permalink: "/about/patrick_asata"
 full_name: Patrick Asata
+title: About - Patrick Asata
 role: Solutions Architect
 image: patrick_asada.jpg
 about: Patrick is a hands-on Solution Architect with experience leading development

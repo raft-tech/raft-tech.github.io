@@ -2,6 +2,7 @@
 id: heather_stout
 permalink: "/about/heather_stout"
 full_name: Heather Stout
+title: About - Heather Stout
 role: Quality Assurance
 image: heather_stout.jpg
 about: Heather is a Quality Assurance Analyst with a knack for finding bugs not caught

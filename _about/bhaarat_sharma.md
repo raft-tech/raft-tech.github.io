@@ -2,6 +2,7 @@
 id: bhaarat_sharma
 permalink: "/about/bhaarat_sharma"
 full_name: Bhaarat Sharma
+title: About - Bhaarat Sharma
 role: Chief Technology Officer
 image: Bhaarat.jpg
 about: Bhaarat enjoys using technology to solve complex user problems. He has over

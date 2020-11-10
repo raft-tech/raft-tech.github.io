@@ -2,6 +2,7 @@
 id: vamsi_priya_adipoodi
 permalink: "/about/vamsi_priya_adipoodi"
 full_name: Vasmi Priya Adipoodi
+title: About - Vasmi Priya Adipoodi
 role: Software Engineer
 image: 
 about: Priya is a Software Engineer who loves exploring how things work and figuring
