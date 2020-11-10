@@ -2,6 +2,7 @@
 id: dan_mutombo
 permalink: "/about/dan_mutombo"
 full_name: Dan Mutombo
+title: About - Dan Mutombo
 role: User Analyst
 image: 
 about: Dan loves interacting with users on a daily basis to conduct ethnographic research,

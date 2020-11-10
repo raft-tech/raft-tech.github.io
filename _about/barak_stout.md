@@ -2,6 +2,7 @@
 id: barak_stout
 permalink: "/about/barak_stout"
 full_name: Barak Stout
+title: About - Barak Stout
 role: Sr. DevSecOps Engineer
 image: Barak.jpg
 about: Barak is a Sr. DevSecOps Engineer with a passion for simplifying complex tasks

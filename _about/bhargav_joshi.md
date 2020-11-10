@@ -2,6 +2,7 @@
 id: bhargav_joshi
 permalink: "/about/bhargav_joshi"
 full_name: Bhargav Joshi
+title: About - Bhargav Joshi
 role: Sr. DevSecOps Engineer
 image: 
 about: Bhargav has deep expertise in Infrastructure as Code (IaC), GitOps, and Kubernetes.

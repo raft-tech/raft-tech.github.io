@@ -2,6 +2,7 @@
 id: tyler_sheppard
 permalink: "/about/tyler_sheppard"
 full_name: Tyler Sheppard
+title: About - Tyler Sheppard
 role: Graphic Designer
 image: Tyler.jpg
 about: Tyler has a passion for using visual design and data visualization. He has
