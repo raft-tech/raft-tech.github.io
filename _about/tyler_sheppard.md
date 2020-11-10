@@ -4,7 +4,7 @@ permalink: "/about/tyler_sheppard"
 full_name: Tyler Sheppard
 title: About - Tyler Sheppard
 role: Graphic Designer
-image: Tyler.jpg
+image: tyler_sheppard.jpg
 about: Tyler has a passion for using visual design and data visualization. He has
   several years of experience contributing designs to museums, political campaigns,
   and web studios. He loves typography and hates comic sans. Tyler graduated at the
