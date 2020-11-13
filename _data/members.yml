@@ -32,12 +32,16 @@
   permalink: /about/barak_stout
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
+<<<<<<< HEAD
   image: barak_stout.jpg
 - id: tyler_sheppard
   permalink: /about/tyler_sheppard
   full_name: Tyler Sheppard
   role: Visual Designer
   image: tyler_sheppard.jpg
+=======
+  image: Barak.jpg
+>>>>>>> remove-tyler
 - id: vamsi_priya_adipoodi
   permalink: /about/vamsi_priya_adipoodi
   full_name: Vasmi Priya Adipoodi
