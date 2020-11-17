@@ -114,11 +114,6 @@
   full_name: Carl Smith
   role: Sr. Fullstack Developer
   image: carl_smith.jpg
-- id: matthew_doty
-  permalink: /about/matthew_doty
-  full_name: Matthew Doty
-  role: Experience Design Practice Lead
-  image: matthew_doty.png
 - id: marc_phillips
   permalink: /about/marc_phillips
   full_name: Marc Phillips
