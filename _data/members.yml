@@ -119,3 +119,13 @@
   full_name: Paul Otto
   role: Principal Engineer
   image: paul_otto.jpg
+- id: aaron_beavers
+  permalink: /about/aaron_beavers
+  full_name: Aaron Beavers
+  role: Full Stack Developer
+  image: null
+- id: dmitri_knapp
+  permalink: /about/dmitri_knapp
+  full_name: Dmitri Knapp
+  role: Sr. User Researcher/Designer
+  image: null
