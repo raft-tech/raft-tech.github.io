@@ -9,7 +9,7 @@ bgimg: /assets/images/bgimg/firework.jpg
 author: Shubhi
 ---
 
-<img class='float-img-right' src="/assets/profiles/Shubhi.jpg"  alt="Shubhi M">
+<img class='float-img-right' src="/assets/profiles/shubhi_mishra.jpg"  alt="Shubhi Mishra">
 As the week of 4th of July approaches, I have been thinking a lot about what it means to be an American. From the time I was a child I knew I would emigrate to the United States, because I knew my gender would not be an impediment, rather it could be an asset. I believed that if I worked hard, studied hard, and wanted to achieve, I could achieve. 
 
 The 4th of July thus has special meaning for me. The 4th of July is a day of possibility, a day of dreams realized, a day I cherish because I can. As a mother, wife, minority, immigrant, scientist, lawyer, and a women entrepreneur, one thing I never did, and never will, take for granted, is independence. 
