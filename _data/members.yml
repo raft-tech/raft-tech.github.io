@@ -129,3 +129,13 @@
   full_name: Dmitri Knapp
   role: Sr. User Researcher/Designer
   image: null
+- id: ryan_salcido
+  permalink: /about/ryan_salcido
+  full_name: Ryan Salcido
+  role: Sr. DevSecOps Engineer
+  image: null
+- id: nick_grippin
+  permalink: /about/nick_grippin
+  full_name: Nick Grippin
+  role: Sr. DevSecOps Engineer
+  image: null
