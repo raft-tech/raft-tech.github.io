@@ -4,8 +4,8 @@ title:  "The Magic of Plain Language"
 short_title: "The Magic of Plain Language"
 date: 2020-12-22
 categories:
-featimg: /assets/images/featimage/plan_language_Feature-01.png
-bgimg: /assets/images/bgimg/plain_langauge_Header-01.png
+featimg: /assets/images/featimage/plain_language_Feature-01.png
+bgimg: /assets/images/bgimg/plain_language_Header-01.png
 author: Missy Maloney
 ---
 
@@ -36,7 +36,7 @@ At the ***[2020 Summit](https://plainlanguagenetwork.org/conferences/2020-access
 
 - Finally, a content strategy includes instructions to ***Govern*** future development and management of the content after the initial project has been deployed. 
 
-Having a Content Strategy at the outset of a project ensures consistency and increases your odds of success. Of course, your chosen tactics are what breathe life into the plan.They will sustain (or eventually destroy) the project. For example, ***comprehensive inventory of current content*** is a critical tactic in the Discovery phase.  This might include such details as URLs that link to a page and the date the page was created.  Also, an ***audit of this inventory*** will surface elements that are working or not working in the project. Regular ***usability testing*** of the content, including language used, will guide the team to what improvements could and should be made. These are just a few of the many tactics that can be used to support a successful Content Strategy. 
+Having a Content Strategy at the outset of a project ensures consistency and increases your odds of success. Of course, your chosen tactics are what breathe life into the plan. They will sustain (or eventually destroy) the project. For example, ***comprehensive inventory of current content*** is a critical tactic in the Discovery phase.  This might include such details as URLs that link to a page and the date the page was created.  Also, an ***audit of this inventory*** will surface elements that are working or not working in the project. Regular ***usability testing*** of the content, including language used, will guide the team to what improvements could and should be made. These are just a few of the many tactics that can be used to support a successful Content Strategy. 
 
 Through a cycle of regular feedback, thoughtful and flexible content strategy execution, and the use of plain language, users will more readily take advantage of the services you provide. Whether upgrading the language to be more conversational or using more familiar, common words to express the message, the end result will be a product that is more usable - and consequently more useful.  By using plain language, we are not dumbing down the content to cater to the reader with the least understanding. Rather, using language that communicates information quickly and clearly benefits everyone.   
 
