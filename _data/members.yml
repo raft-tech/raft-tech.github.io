@@ -32,16 +32,7 @@
   permalink: /about/barak_stout
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
-<<<<<<< HEAD
   image: barak_stout.jpg
-- id: tyler_sheppard
-  permalink: /about/tyler_sheppard
-  full_name: Tyler Sheppard
-  role: Visual Designer
-  image: tyler_sheppard.jpg
-=======
-  image: Barak.jpg
->>>>>>> remove-tyler
 - id: vamsi_priya_adipoodi
   permalink: /about/vamsi_priya_adipoodi
   full_name: Vasmi Priya Adipoodi
@@ -118,11 +109,6 @@
   full_name: Carl Smith
   role: Sr. Fullstack Developer
   image: carl_smith.jpg
-- id: matthew_doty
-  permalink: /about/matthew_doty
-  full_name: Matthew Doty
-  role: Experience Design Practice Lead
-  image: matthew_doty.png
 - id: marc_phillips
   permalink: /about/marc_phillips
   full_name: Marc Phillips
@@ -133,3 +119,23 @@
   full_name: Paul Otto
   role: Principal Engineer
   image: paul_otto.jpg
+- id: aaron_beavers
+  permalink: /about/aaron_beavers
+  full_name: Aaron Beavers
+  role: Full Stack Developer
+  image: null
+- id: dmitri_knapp
+  permalink: /about/dmitri_knapp
+  full_name: Dmitri Knapp
+  role: Sr. User Researcher/Designer
+  image: null
+- id: ryan_salcido
+  permalink: /about/ryan_salcido
+  full_name: Ryan Salcido
+  role: Sr. DevSecOps Engineer
+  image: null
+- id: nick_grippin
+  permalink: /about/nick_grippin
+  full_name: Nick Grippin
+  role: Sr. DevSecOps Engineer
+  image: null
