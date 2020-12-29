@@ -6,7 +6,7 @@ date: 2020-07-13
 categories:
 featimg: /assets/images/featimage/dusty_uno.png
 bgimg: /assets/images/bgimg/pressure-water-line-509871_1920.jpg
-author: Barak
+author: Barak Stout
 ---
 
 <img class='float-img-right' src="/assets/images/featimage/dusty_uno.png"  alt="Mu Dusty Arduino Uno">

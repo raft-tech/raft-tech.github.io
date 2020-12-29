@@ -6,7 +6,7 @@ date: 2020-05-15
 categories:
 featimg: /assets/images/automated-testing/automated-testing-small.png
 bgimg: /assets/images/automated-testing/automated-testing-large.jpeg
-author: Barak
+author: Barak Stout
 --- 
 
 One of the foundations of any Agile framework for developing software is continuous delivery. But how can you be sure that the features being iteratively developed and shipped every two to three weeks are actually working and complying with their Definition of Done (DoD). Traditionally, DoD's are measured and tested using a mix of manual methods, unit testing, or integration testing. Although these approaches are good, they don't repeatedly test the software from the end user perspective. Manual testing can't be automated, unit testing ensures the code being written is tested from the developers perspective and integration testing tests how different code dependencies work together when combined. 

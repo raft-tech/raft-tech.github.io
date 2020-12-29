@@ -6,7 +6,7 @@ date: 2020-06-11
 categories:
 featimg: /assets/images/featimage/Diversity-Small.jpg 
 bgimg: /assets/images/bgimg/blm-banner.jpg 
-author: Patrick  
+author: Patrick Asada
 ---
 <img class='float-img-right' src="/assets/images/featimage/Patrick.jpg"  alt="Patrick A">
 When I look at myself in the mirror, I see many things. I see a software developer, I see an educator, I see someone with a master's in Computer Science. However, from the time I was a child to today and into the future, I also see a black man living in America.  

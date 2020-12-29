@@ -6,7 +6,7 @@ date: 2020-03-25
 categories:
 featimg: /assets/images/featimage/TELEWORK_Icon.jpg 
 bgimg: /assets/images/bgimg/telework-bgimg.jpg 
-author: Bhaarat 
+author: Bhaarat Sharma
 ---
 <img class='float-img-right' src="/assets/images/featimage/TELEWORK_Icon.jpg"  alt="Woman Teleworking at the Beach">
 On March 16th, the federal government [advised the public to avoid gatherings of 10 or more people](https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-press-briefing-3/), compelling millions of people around the nation to rely on work-from-home arrangements. Raft has always been a Remote-First workplace, and over the years we’ve settled on some best-practices we’ve decided to share in this post. Our experience has made us huge advocates for teleworking arrangements, and we believe any business and organizations would be wise to explore this option given the extraordinary circumstances of this quarantine.  
