@@ -1,7 +1,7 @@
 ---
 id: le_chen
 permalink: "/about/le_chen"
-full_name: Lee Chen
+full_name: Le Chen
 title: About - Le Chen
 role: Sr. DevSecOps Engineer
 image: 
