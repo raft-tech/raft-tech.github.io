@@ -6,7 +6,7 @@ date: 2020-08-03
 categories:
 featimg: /assets/images/featimage/featimg-blog-rook.jpg
 bgimg: /assets/images/bgimg/Blog_Rook_2.00_V3-01.png
-author: James
+author: James Villareal
 ---
 ## What is Rook? 
 
