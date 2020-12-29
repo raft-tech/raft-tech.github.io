@@ -6,7 +6,7 @@ date: 2020-08-17
 categories:
 featimg: /assets/images/featimage/Blog_Pipeline_Art-Index-01.png
 bgimg: /assets/images/bgimg/Blog_Pipeline_Art-Header-01.png
-author: Barak
+author: Barak Stout
 ---
 
 ## **CIO LEVEL SUMMARY (The TL;DR version)**
