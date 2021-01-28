@@ -2,17 +2,17 @@
   permalink: /about/shubhi_mishra
   full_name: Shubhi Mishra
   role: 'Founder, Design Lead'
-  image: shubhi_mishra.jpg
+  image: shubhi_mishra_color.jpg
 - id: bhaarat_sharma
   permalink: /about/bhaarat_sharma
   full_name: Bhaarat Sharma
   role: Chief Technology Officer
-  image: bhaarat_sharma.jpg
+  image: bhaarat_sharma_color.jpg
 - id: patrick_asata
   permalink: /about/patrick_asata
   full_name: Patrick Asata
   role: Solutions Architect
-  image: patrick_asata.jpg
+  image: 
 - id: austine_luyegu
   permalink: /about/austine_luyegu
   full_name: Austine Luyegu
@@ -22,17 +22,17 @@
   permalink: /about/christine_so
   full_name: Christine So
   role: Sr. Proposal Manager
-  image: christine_so.jpg
+  image: 
 - id: missy_maloney
   permalink: /about/missy_maloney
   full_name: Missy Maloney
   role: Frontend Developer
-  image: missy_maloney.jpg
+  image: 
 - id: barak_stout
   permalink: /about/barak_stout
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
-  image: barak_stout.jpg
+  image: barak_stout_color.jpg
 - id: vamsi_priya_adipoodi
   permalink: /about/vamsi_priya_adipoodi
   full_name: Vasmi Priya Adipoodi
@@ -42,12 +42,12 @@
   permalink: /about/meissa_dia
   full_name: Meissa Dia
   role: Sr. Frontend Engineer
-  image: meissa_dia.jpg
+  image: 
 - id: heather_stout
   permalink: /about/heather_stout
   full_name: Heather Stout
   role: Quality Assurance
-  image: heather_stout.jpg
+  image: 
 - id: bhargav_joshi
   permalink: /about/bhargav_joshi
   full_name: Bhargav Joshi
@@ -68,7 +68,7 @@
   permalink: /about/michael_roach
   full_name: Michael Roach
   role: Sr. DevSecOps Engineer
-  image: michael_roach.jpg
+  image: 
 - id: ongel_dasilva
   permalink: /about/ongel_dasilva
   full_name: Ongel Dasilva
@@ -93,7 +93,7 @@
   permalink: /about/rebecca_mancuso
   full_name: Rebecca Mancuso
   role: Operations
-  image: rebecca_mancuso.jpg
+  image: rebecca_mancuso_color.jpg
 - id: miles_reiter
   permalink: /about/miles_reiter
   full_name: Miles Reiter
@@ -103,22 +103,22 @@
   permalink: /about/carl_smith
   full_name: Carl Smith
   role: Sr. Fullstack Developer
-  image: carl_smith.jpg
+  image: 
 - id: marc_phillips
   permalink: /about/marc_phillips
   full_name: Marc Phillips
   role: Senior Engagement Manager
-  image: marc_phillips.jpg
+  image: 
 - id: paul_otto
   permalink: /about/paul_otto
   full_name: Paul Otto
   role: Principal Engineer
-  image: paul_otto.jpg
+  image: 
 - id: aaron_beavers
   permalink: /about/aaron_beavers
   full_name: Aaron Beavers
   role: Full Stack Developer
-  image: null
+  image: aaron_beavers_color.jpg
 - id: dmitri_knapp
   permalink: /about/dmitri_knapp
   full_name: Dmitri Knapp
@@ -138,12 +138,12 @@
   permalink: /about/le_chen
   full_name: Le Chen
   role: Sr. DevSecOps Engineer
-  image: null
+  image: le_chen_color.jpg
 - id: angela_milash
   permalink: /about/angela_milash
   full_name: Angela Milash
   role: Product Manager
-  image: null
+  image: angela_milash_color.jpg
 - id: kati_nizzi
   permalink: /about/kati_nizzi
   full_name: Kati Nizzi
@@ -153,7 +153,7 @@
   permalink: /about/mike_mancuso
   full_name: Mike Mancuso
   role: Visual Designer
-  image: null
+  image: mike_mancuso_color.jpg
 - id: ethan_bienstock
   permalink: /about/ethan_bienstock
   full_name: Ethan Bienstock
@@ -168,7 +168,7 @@
   permalink: /about/arthur_chan
   full_name: Arthur Chan
   role: DevSecOps Engineer
-  image: null
+  image: arthur_chan_color.jpg
 - id: dan_green
   permalink: /about/dan_green
   full_name: Dan Green
