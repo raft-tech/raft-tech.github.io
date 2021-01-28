@@ -4,7 +4,7 @@ permalink: "/about/barak_stout"
 full_name: Barak Stout
 title: About - Barak Stout
 role: Sr. DevSecOps Engineer
-image: 
+image: barak_stout_color.jpg
 about: Barak is a Sr. DevSecOps Engineer with a passion for simplifying complex tasks
   such as security, testing, developer happiness, and governance using automation.
   He also leads Raft's open source collaboration efforts. In his not-so-spare time

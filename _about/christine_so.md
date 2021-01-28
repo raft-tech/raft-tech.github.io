@@ -4,7 +4,7 @@ permalink: "/about/christine_so"
 full_name: Christine So
 title: About - Christine So
 role: Sr. Proposal Manager
-image: 
+image: christine_so_color.jpg
 about: Christine is a growth expert with deep expertise in managing proposals, contracts,
   marketing, technical writing, and business development. She has a passion for breaking
   the status quo of traditional government proposals with creativity, visual aesthetics,
