@@ -12,7 +12,7 @@
   permalink: /about/patrick_asata
   full_name: Patrick Asata
   role: Solutions Architect
-  image: 
+  image:
 - id: austine_luyegu
   permalink: /about/austine_luyegu
   full_name: Austine Luyegu
@@ -27,7 +27,7 @@
   permalink: /about/missy_maloney
   full_name: Missy Maloney
   role: Frontend Developer
-  image: 
+  image:
 - id: barak_stout
   permalink: /about/barak_stout
   full_name: Barak Stout
@@ -42,12 +42,12 @@
   permalink: /about/meissa_dia
   full_name: Meissa Dia
   role: Sr. Frontend Engineer
-  image: 
+  image:
 - id: heather_stout
   permalink: /about/heather_stout
   full_name: Heather Stout
   role: Quality Assurance
-  image: 
+  image:
 - id: bhargav_joshi
   permalink: /about/bhargav_joshi
   full_name: Bhargav Joshi
@@ -68,7 +68,7 @@
   permalink: /about/michael_roach
   full_name: Michael Roach
   role: Sr. DevSecOps Engineer
-  image: 
+  image:
 - id: ongel_dasilva
   permalink: /about/ongel_dasilva
   full_name: Ongel Dasilva
@@ -113,7 +113,7 @@
   permalink: /about/paul_otto
   full_name: Paul Otto
   role: Principal Engineer
-  image: 
+  image:
 - id: aaron_beavers
   permalink: /about/aaron_beavers
   full_name: Aaron Beavers
@@ -173,4 +173,9 @@
   permalink: /about/dan_green
   full_name: Dan Green
   role: Sr. Technical Recruiter
+  image: null
+- id: jennifer_pierce
+  permalink: /about/jennifer_pierce
+  full_name: Jennifer Pierce
+  role: Director of UX Strategy and Human-Centered Design
   image: null
