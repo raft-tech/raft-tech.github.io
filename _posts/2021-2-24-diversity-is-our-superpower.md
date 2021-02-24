@@ -4,8 +4,9 @@ title:  "Diversity is Our Supoerpower"
 short_title: "Diversity is Our Supoerpower"
 date: 2021-2-24
 categories:
-featimg: /assets/images/featimage/diversity_superpower_Feature-01.png
-bgimg: /assets/images/bgimg/diversity_superpower_Header-01.png
+featimg: /assets/images/featimage/Diversity_Superpower_Feature-01.png
+bgimg: /assets/images/bgimg/Diversity_Superpower_Header-01.png
+
 author: Shubhi Mishra
 ---
 
