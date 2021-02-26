@@ -4,7 +4,7 @@ permalink: "/about/heather_stout"
 full_name: Heather Stout
 title: About - Heather Stout
 role: Quality Assurance
-image: heather_stout.jpg
+image: 
 about: Heather is a Quality Assurance Analyst with a knack for finding bugs not caught
   in unit or integration testing. She has a passion for teaching, has been a middle
   school math teacher, and has a bachelor's degree in mathematics. When not working,
