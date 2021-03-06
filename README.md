@@ -10,7 +10,7 @@ The site uses Jekyll (based on [Centrarium](https://github.com/bencentra/centrar
 
 Table of Contents:
 
-- Add yourself to the About page [Non Devs]
+- [Add yourself to the About page (Non Devs)](#add-yourself-to-the-about-page-(non-devs))
 - Adding yourself to the About page [For Devs]
 - Creating a blog post [No terminal needed]
 - Creating a blog post [For Devs]
@@ -18,7 +18,7 @@ Table of Contents:
 - Dockerizing [For Devs]
 - Kubeconfig files [For Devs]
 
-## Add yourself to the About page [Non Devs]
+## Add yourself to the About page (Non Devs)
 
 Welcome to Raft! We work together to solve hard problems and we're glad you've decided to join our journey. In order for you to be added to [Our Team](https://goraft.tech/about/#team) page, please follow these four steps:
 0. [Open a new issue](https://github.com/raft-tech/raft-tech.github.io/issues/new) with title `Adding <your name>`
