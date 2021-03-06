@@ -10,13 +10,13 @@ The site uses Jekyll (based on [Centrarium](https://github.com/bencentra/centrar
 
 Table of Contents:
 
-- [Add yourself to the About page (Non Devs)](#add-yourself-to-the-about-page-(non-devs))
-- Adding yourself to the About page [For Devs]
-- Creating a blog post [No terminal needed]
-- Creating a blog post [For Devs]
-- Running locally [For Devs]
-- Dockerizing [For Devs]
-- Kubeconfig files [For Devs]
+- [Add yourself to the About page (Non Devs)](#add-yourself-to-the-about-page-non-devs)
+- [Adding yourself to the About page (For Devs)](#adding-yourself-to-the-about-page-for-Devs)
+- [Creating a blog post (Non Devs)](#creating-a-blog-post-non-devs)
+- [Creating a blog post (For Devs)](#creating-a-blog-post-for-devs)
+- Running locally (For Devs)
+- Dockerizing (For Devs)
+- Kubeconfig files (For Devs)
 
 ## Add yourself to the About page (Non Devs)
 
@@ -98,7 +98,7 @@ layout: about/profile <-- do not change
 - Tag `barakstout`, `meissadia`, or `turbomarc` as reviewers
 - The reviewers will review and merge your Pull Request. Once that is done, the changes will show up on the staging site https://raft-website.herokuapp.com/ . Once the changes look good to the reviewer, the reviewer will open a Pull Request for the `staging` branch to be merged into the `master`. Once that Pull Reuqest is merged in by the reviewer, the changes will show up on the main website - http://goraft.tech/
 
-## Adding yourself to the About page [For Devs]
+## Adding yourself to the About page (For Devs)
 
 - Make your feature branch
 - Append changes to `_data/members/yml`
@@ -128,7 +128,7 @@ layout: about/profile <--  do not change
 - Open a PR for your feature branch to be merged to `staging`. Review your PR. Tag `barakstout`, `meissadia`, or `turbomarc` as reviewers.
 
 
-## Creating a blog post [No terminal needed]
+## Creating a blog post (Non Devs)
 A blog post comprises for three things:
 
 1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor. 
@@ -138,12 +138,17 @@ A blog post comprises for three things:
 3. Click `Submit New Issue`
 4. Tag either `barakstout`, `meissadia`, or `turbomarc` for review
 
+## Creating a blog post (For Devs)
 
+1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor. 
+2. Open a PR that:
+   - add the new markdown file to `_/posts` in the format `YYYY-DD-MM-title-of-the-post.md`
+   - add the background image to `assets/images/bgimage`
+   - add the index image to `assets/images/featimage`
+3. Open a PR for `barakstout`, `meissadia`, or `turbomarc` for review
 
+## Running locally (For Devs)
 
-1. 
-
-## Localhost
 To run the site locally from source, you will need to [Install Jekyll](https://jekyllrb.com/docs/) and then:
 ```bash
 cd ~/
@@ -158,7 +163,8 @@ bundle exec jekyll serve
 # raft website avilable at http://localhost:4000
 ```
 
-## Docker
+## Dockerizing (For Devs)
+
 Build and deploy locally using [Docker](https://www.docker.com/)
 ```bash
 docker build . -t=raft-website
@@ -166,7 +172,7 @@ docker build . -t=raft-website
 docker run -p 80:80 raft-website
 ```
 
-## Kubernetes Config Files
+## Kubeconfig files (For Devs)
 Update the `Image` value in `raft-website-deploy` and deploy `raft-website` on Kubernetes:
 ```bash
 kubectl apply -f kubernetes/raft-website-deploy.yaml
