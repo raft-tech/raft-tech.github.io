@@ -14,9 +14,9 @@ Table of Contents:
 - [Adding yourself to the About page (For Devs)](#adding-yourself-to-the-about-page-for-Devs)
 - [Creating a blog post (Non Devs)](#creating-a-blog-post-non-devs)
 - [Creating a blog post (For Devs)](#creating-a-blog-post-for-devs)
-- Running locally (For Devs)
-- Dockerizing (For Devs)
-- Kubeconfig files (For Devs)
+- [Running locally (For Devs)](#running-locally-for-devs)
+- [Dockerizing (For Devs)](#dockerizing-for-devs)
+- [Kubeconfig files (For Devs)](#kubeconfig-files-for-devs)
 
 ## Add yourself to the About page (Non Devs)
 
