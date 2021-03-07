@@ -4,7 +4,7 @@ permalink: "/about/bhargav_joshi"
 full_name: Bhargav Joshi
 title: About - Bhargav Joshi
 role: Sr. DevSecOps Engineer
-image: 
+image: bhargav_joshi_color.jpg
 about: Bhargav has deep expertise in Infrastructure as Code (IaC), GitOps, and Kubernetes.
   He is a certified OpenShift and RedHat expert and also manages infrastructure in
   all environments - dev, prod, and staging. He has a passion for learning new tools
