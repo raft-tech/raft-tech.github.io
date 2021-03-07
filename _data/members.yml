@@ -12,12 +12,12 @@
   permalink: /about/patrick_asata
   full_name: Patrick Asata
   role: Solutions Architect
-  image:
+  image: null
 - id: austine_luyegu
   permalink: /about/austine_luyegu
   full_name: Austine Luyegu
   role: Sr. Network Engineer
-  image: null
+  image: austine_luyegu_color.jpg
 - id: christine_so
   permalink: /about/christine_so
   full_name: Christine So
@@ -37,17 +37,17 @@
   permalink: /about/meissa_dia
   full_name: Meissa Dia
   role: Sr. Frontend Engineer
-  image:
+  image: meissa_dia_color.jpg
 - id: heather_stout
   permalink: /about/heather_stout
   full_name: Heather Stout
   role: Quality Assurance
-  image:
+  image: heather_stout_color.jpg
 - id: bhargav_joshi
   permalink: /about/bhargav_joshi
   full_name: Bhargav Joshi
   role: Sr. DevSecOps Engineer
-  image: null
+  image: bhargav_joshi_color.jpg
   about: Bhargav has deep expertise in Infrastructure as Code (IaC), GitOps, and Kubernetes. He is a certified OpenShift and RedHat expert and also manages infrastructure in all environments - dev, prod, and staging. He has a passion for learning new tools and currently manages a mission-critical infrastructure using D2iQ, DC/OS, and Kubernetes. While away from work, Bhargav enjoys going for long hikes with his family.
 - id: calvin_fernandes
   permalink: /about/calvin_fernandes
@@ -63,7 +63,7 @@
   permalink: /about/michael_roach
   full_name: Michael Roach
   role: Sr. DevSecOps Engineer
-  image:
+  image: mike_roach_color.jpg
 - id: ongel_dasilva
   permalink: /about/ongel_dasilva
   full_name: Ongel Dasilva
@@ -93,7 +93,7 @@
   permalink: /about/miles_reiter
   full_name: Miles Reiter
   role: UX Designer/Researcher
-  image: null
+  image: miles_reiter_color.jpg
 - id: carl_smith
   permalink: /about/carl_smith
   full_name: Carl Smith
@@ -108,7 +108,7 @@
   permalink: /about/paul_otto
   full_name: Paul Otto
   role: Principal Engineer
-  image:
+  image: paul_otto_color.jpg
 - id: aaron_beavers
   permalink: /about/aaron_beavers
   full_name: Aaron Beavers
@@ -118,17 +118,17 @@
   permalink: /about/dmitri_knapp
   full_name: Dmitri Knapp
   role: Sr. User Researcher/Designer
-  image: null
+  image: dmitri_knapp_color.jpg
 - id: ryan_salcido
   permalink: /about/ryan_salcido
   full_name: Ryan Salcido
   role: Sr. DevSecOps Engineer
-  image: null
+  image: ryan_salcido_color.jpg
 - id: nick_grippin
   permalink: /about/nick_grippin
   full_name: Nick Grippin
   role: Sr. DevSecOps Engineer
-  image: null
+  image: nick_grippin_color.jpg
 - id: le_chen
   permalink: /about/le_chen
   full_name: Le Chen
@@ -143,7 +143,7 @@
   permalink: /about/kati_nizzi
   full_name: Kati Nizzi
   role: Product Manager
-  image: null
+  image: katie_nizzie_color.jpg
 - id: mike_mancuso
   permalink: /about/mike_mancuso
   full_name: Mike Mancuso
@@ -158,7 +158,7 @@
   permalink: /about/john_willis
   full_name: John Willis
   role: Sr. Full Stack Developer
-  image: null
+  image: john_willis_color.jpg
 - id: arthur_chan
   permalink: /about/arthur_chan
   full_name: Arthur Chan
@@ -168,7 +168,7 @@
   permalink: /about/dan_green
   full_name: Dan Green
   role: Sr. Technical Recruiter
-  image: null
+  image: dan_green_color.jpg
 - id: jennifer_pierce
   permalink: /about/jennifer_pierce
   full_name: Jennifer Pierce
