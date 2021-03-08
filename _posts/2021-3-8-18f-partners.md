@@ -75,7 +75,7 @@ In the past, critical aspects of product engineering like security and accessibi
 At Raft, we know that by shifting left – bringing testing of all forms as early into the design and development process as possible - creates better products and solves more user problems. This means, for example, that accessibility is considered and addressed at every phase of feature and product development and each team member understands how to apply accessibility concepts to their roles and tasks. Furthermore, we automate the testing and verification process to catch issues early and assist team members to detect and fix and problems. Here are a few examples of how we ensure we deliver highly accessible software solutions to users while simultaneously streamlining the development process with rapid and low-impact feedback loops and plain language, automated error reporting.  
 
 * Leverage ACF digital standards and the U.S. Web Design System ([USWDS](https://designsystem.digital.gov/)).
-* Adhere to [WCAG 2.0 AA](https://www.w3.org/WAI/WCAG2AA-Conformance) and [18F Accessibility guidelines](https://accessibility.18f.gov/) starting at the mockup stage with Figma’s [Stark](https://www.figma.com/community/plugin/732603254453395948) plugin and “Do’s and Don’ts” list including choice of colors, contrast, text size, content hierarchy, annotation of placeholders, and descriptive buttons.   
+* Adhere to [WCAG 2.0 AA](https://www.w3.org/WAI/WCAG2AA-Conformance) and [18F Accessibility guidelines](https://accessibility.18f.gov/) starting at the mockup stage with Figma’s [Stark](https://www.figma.com/community/plugin/732603254453395948) plugin and “[Do’s and Don’ts](https://github.com/raft-tech/TANF-app/blob/raft-tdp-main/docs/Technical-Documentation/rafts-accessibility-dos-and-donts.md)” list including choice of colors, contrast, text size, content hierarchy, annotation of placeholders, and descriptive buttons.   
 * Automate [Pa11y](https://pa11y.org/) checks in our CI/CD pipeline and manual verifications with [tota11y](https://khan.github.io/tota11y/), keyboard navigation, and screen readers prior to delivery. 
 * Ensure every frontend user story has an acceptance criteria item to meet both automated and manual [a11y](https://www.a11yproject.com/) checks.
 
@@ -99,7 +99,7 @@ In all of our projects, we work closely with the agency PO and other stakeholder
 
 ## Because we care
 
-At the end of the day, our partnership with 18F and OFA to deliver the TDRS project isn’t about technology or methodology. It’s about helping OFA program staff create better outcomes for children and families. We deliver new functionality each sprint not to just keep up with a story point burndown chart; we do it because we know, based on our user research, the impact each new feature will have on the agency’s ability to better serve the American public. At the end of the day, that’s what really gets us up in the morning.
+At the end of the day, our partnership with 18F and OFA to deliver the TDRS project isn’t about technology or methodology. It’s about helping OFA program staff create better outcomes for children and families. We deliver new functionality each sprint not just to keep up with a story point burndown chart; we do it because we know, based on our user research, the impact each new feature will have on the agency’s ability to better serve the American public. At the end of the day, that’s what really gets us up in the morning.
 
 
 
