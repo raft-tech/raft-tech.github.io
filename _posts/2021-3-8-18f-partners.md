@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Raft Partners with 18F and OFA to Help Children & Families"
+title:  "Raft joins 18F and OFA to Help Children & Families"
 short_title: "Our 18F Partners"
 date: 2021-3-8
 categories:
