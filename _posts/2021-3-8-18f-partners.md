@@ -99,7 +99,7 @@ In all of our projects, we work closely with the agency PO and other stakeholder
 
 ## Because we care
 
-At the end of the day, our partnership with 18F and OFA to deliver the TDRS project isn’t about technology or methodology. It’s about helping OFA program staff create better outcomes for children and families. We don’t do our best to deliver new functionality each sprint because to align with a story point burn chart. We do it because we know, based on our user research, the level of positive impact each new feature will have on the agency’s ability to better serve the American public. At the end of the day, that’s what really gets us up in the morning.
+At the end of the day, our partnership with 18F and OFA to deliver the TDRS project isn’t about technology or methodology. It’s about helping OFA program staff create better outcomes for children and families. We deliver new functionality each sprint not to just keep up with a story point burndown chart; we do it because we know, based on our user research, the impact each new feature will have on the agency’s ability to better serve the American public. At the end of the day, that’s what really gets us up in the morning.
 
 
 
