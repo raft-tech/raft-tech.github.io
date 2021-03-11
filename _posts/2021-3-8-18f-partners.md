@@ -35,7 +35,7 @@ Despite its numerous shortcomings, the existing manual TANF data reporting proce
 * Create a conversation guide, participation agreement, and interview protocol to clarify logistics and ensure efficient use of time.
 * Use the conversation guide to conduct in-depth interviews and initial design mock-ups for concept testing.
 * Leverage [Mural](https://www.mural.co/) boards to plan and synthesize research, and [Figma](https://www.figma.com/) to create design mock-ups. 
-* Use observations and insights from each round to refine and prioritize the product roadmap and documented open questions for future research.
+* Use observations and insights from each round to refine and prioritize the product roadmap and document open questions for future research.
 
 We applied these steps to interview OFA analysts with broad exposure to administrative tasks and data submission scenarios within the current system. As a result, we understood existing workflows and pain points around receiving TANF data submissions and how these experiences compare across the grantees - states, tribes, and territories. 
 
