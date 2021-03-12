@@ -87,7 +87,7 @@ Our DevOps pipeline includes:
 
 * [CircleCI](https://circleci.com/) infrastructure for continuous integration and delivery
 * [Snyk](https://snyk.io/) and [OWASP ZAP](https://owasp.org/www-project-zap/) for continuous security testing and vulnerability scanning
-* [Jest](https://jestjs.io/) and [Cypress](https://www.cypress.io/) for JavaScript and frontend testing
+* [Jest](https://jestjs.io/) for JavaScript testing
 * [Newman](https://www.npmjs.com/package/newman) for backend API validation
 * [Codecov](https://about.codecov.io/) for code coverage checking, which has been maintained at 98%+ throughout the project
 
