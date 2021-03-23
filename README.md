@@ -157,6 +157,7 @@ cd raft
 git clone git@github.com:raft-tech/raft-tech.github.io.git
 cd raft-tech.github.io.git
 gem install bundler
+bundle install
 bundle exec jekyll pagemaster --no-permalink about
 bundle exec jekyll serve
 
