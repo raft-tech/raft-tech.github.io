@@ -4,8 +4,8 @@ title: "Integrating Keycloak and Open Policy Agent (OPA) with Confluent"
 short_title: "Integrating Keycloak and OPA with Confluent" 
 date: 2021-03-17
 categories:
-featimg: /assets/images/featimage/security_padlock.png
-bgimg: /assets/images/bgimg/security_padlock.png
+featimg: /assets/images/featimage/keycloak_opa_confluent-01.png
+bgimg: /assets/images/bgimg/keycloak_opa_confluent-01.png
 author: Ryan Salcido
 ---
 
