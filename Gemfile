@@ -5,7 +5,7 @@ gem 'jekyll-sitemap'
 gem 'jekyll-paginate-v2'
 gem 'jekyll-target-blank'
 source 'https://rubygems.org'
-gem 'github-pages'
+gem 'github-pages', '>= 214'
 gem 'jemoji'
 group :jekyll_plugins do
   gem 'pagemaster'
