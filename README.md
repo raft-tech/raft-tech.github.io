@@ -132,6 +132,21 @@ layout: about/profile <--  do not change
 A blog post comprises for three things:
 
 1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor. 
+```
+---
+id: firstname_lastname
+permalink: "/about/firstname_lastname"
+full_name: Firstname Lastname
+title: About - Firstname Lastname
+role: Your Title
+about: Short bio about yourself
+github: your github handle
+linkedin: yourlinkedin url
+homepage: your homepage url - if applicable
+featimg: "/assets/aboutBanner1.jpg" <-- do not change
+layout: about/profile <-- do not change
+---
+```
 2. Open [a new issue](https://github.com/raft-tech/raft-tech.github.io/issues/new) 
     - (a) The title of the issue should be `Name of the blog title - by John Doe` 
     - (b) The body of the ticket drag and drop the two images -- one for the [index page](https://goraft.tech/blog/) and another for the actual blog page (exampel: [here](https://goraft.tech/2021/02/24/diversity-is-our-superpower.html)). Also include the URL of the blog post from HackMD from ()
