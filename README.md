@@ -156,6 +156,21 @@ layout: about/profile <-- do not change
 ## Creating a blog post (For Devs)
 
 1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor. 
+```
+---
+id: firstname_lastname
+permalink: "/about/firstname_lastname"
+full_name: Firstname Lastname
+title: About - Firstname Lastname
+role: Your Title
+about: Short bio about yourself
+github: your github handle
+linkedin: yourlinkedin url
+homepage: your homepage url - if applicable
+featimg: "/assets/aboutBanner1.jpg" <-- do not change
+layout: about/profile <-- do not change
+---
+```
 2. Open a PR that:
    - add the new markdown file to `_/posts` in the format `YYYY-DD-MM-title-of-the-post.md`
    - add the background image to `assets/images/bgimage`
