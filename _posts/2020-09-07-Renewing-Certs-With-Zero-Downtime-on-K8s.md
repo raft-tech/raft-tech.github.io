@@ -6,7 +6,7 @@ date: 2020-09-07
 categories:
 featimg: /assets/images/featimage/Certificate_Updates1.00B-01.png
 bgimg: /assets/images/bgimg/Certificate_Updates_Header_-01.png
-author: Bhargav
+author: Bhargav Joshi
 tags: blogs
 ---
 

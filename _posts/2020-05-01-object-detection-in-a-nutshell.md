@@ -6,7 +6,7 @@ date: 2020-05-01
 categories: 
 featimg: /assets/images/featimage/face_reg.jpg
 bgimg: /assets/images/bgimg/object_detection.jpeg
-author: Bhaarat 
+author: Bhaarat Sharma
 --- 
 
 This is a two-part blog series where we explain the intricacies of object detection, state-of-the-art research being done by the larger community, and applied theory by Raft.
