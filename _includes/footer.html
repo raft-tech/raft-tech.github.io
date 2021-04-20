@@ -19,6 +19,16 @@
           18911 Hardy Oak Blvd <br />
           San Antonio, TX 78258<br />
         </div>
+        <div>
+          <b>Satellite Office TX</b><br/>
+          18911 Hardy Oak Blvd <br />
+          San Antonio, TX 78258<br />
+
+          <b>Satellite Office MA</b><br/>
+          361 Newbury Street<br />
+          5th Floor<br />
+          Boston, Massachusetts 02115<br />
+        </div>
       </div>
 
         {% for social in site.social %}
@@ -73,7 +83,7 @@ function flatFormMove() {
     itr++;
     frames = 0;
   }
-  
+
   if (itr < iterations) {
       setTimeout(function(){
         requestAnimationFrame(flatFormMove);
@@ -193,7 +203,7 @@ var obj_attr = function(el_pos, dif) {
 }
 
 function devMove() {
-  
+
   var l_pos = devframe * pace;
 
   var a1_param = obj_attr(l_pos, 0);
@@ -221,7 +231,7 @@ function devMove() {
   var a22_param = obj_attr(l_pos - 21*dist, 21*dist);
   var a23_param = obj_attr(l_pos - 22*dist, 22*dist);
   var a24_param = obj_attr(l_pos - 23*dist, 23*dist);
-  
+
   obg_pos($("#a1"), a1_param[0], a1_param[1], a1_param[2], false);
   obg_pos($("#a2"), a2_param[0], a2_param[1], a2_param[2], true);
   obg_pos($("#a3"), a3_param[0], a3_param[1], a3_param[2], false);
@@ -256,7 +266,7 @@ function devMove() {
     devitr++;
     devframe = 360;
   }
-  
+
   if (devitr < deviterations) {
       setTimeout(function(){
         requestAnimationFrame(devMove);
@@ -390,7 +400,7 @@ function dataMove() {
     dataItr++;
     dataFrame = 0;
   }
-  
+
   if (dataItr < dataIterations) {
       setTimeout(function(){
         requestAnimationFrame(dataMove);
@@ -609,7 +619,7 @@ function productMove() {
     productItr++;
     productFrame = 0;
   }
-  
+
   if (productItr < productIterations) {
       setTimeout(function(){
         requestAnimationFrame(productMove);
@@ -687,7 +697,7 @@ $(document).ready(function() {
       : $('#navigation').removeClass('scrolled')
   }
 
-  let observer = new IntersectionObserver(changeNavBgColor, options); 
+  let observer = new IntersectionObserver(changeNavBgColor, options);
   let target = document.querySelector('#hero');
   observer.observe(target);
 </script>
@@ -718,4 +728,3 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNvUvhmjk_Woi-QfDTQ1YgTa5
   });
 </script>
 {% endif %}
-
