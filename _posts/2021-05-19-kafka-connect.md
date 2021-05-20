@@ -15,7 +15,7 @@ author: Le Chen
 With Kafka Connect, we are able to set up Kafka to interact with external data stores. In this article, we will be using source connectors to monitor and retrieve data from the configured traditional data sources.
 
 ## Prerequisites
-* Have feedONE / [Confluent](https://docs.confluent.io/5.5.0/quickstart/ce-quickstart.html) running with [Connectors](https://docs.confluent.io/home/connect/overview.html) component configured with the appropriate connector plugins.
+* Have [Confluent](https://docs.confluent.io/5.5.0/quickstart/ce-quickstart.html) running with [Connectors](https://docs.confluent.io/home/connect/overview.html) component configured with the appropriate connector plugins.
 * Configure Kafka with `auto.create.topics.enable` property set to `true`, or have the appropriate topics created.
 * Have RDBMS (e.g. PostgreSQL) running and accessible.
 * Have NoSQL (e.g. MongoDB) running and accessible.
