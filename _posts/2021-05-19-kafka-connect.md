@@ -4,9 +4,8 @@ title: "Kafka Connect With SQL and NoSQL Databases"
 short_title: "Kafka Connect" 
 date: 2021-05-19
 categories:
-# todo: replace images
-featimg: /assets/images/featimage/keycloak_opa_confluent-01.png
-bgimg: /assets/images/bgimg/keycloak_opa_confluent-01.png
+featimg: /assets/images/featimage/Kafka_Connect_Feature-01.png
+bgimg: /assets/images/bgimg/Kafka_Connect_Header-01.png
 author: Le Chen
 ---
 
