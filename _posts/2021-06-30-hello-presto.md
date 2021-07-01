@@ -4,13 +4,9 @@ title: "Building a Distributed Data Platform for Scale "
 short_title: "Distributed Data Platform"
 date: 2021-06-30
 categories:
-featimg: /assets/images/featimage/sevilla-bridge-1235783.jpg
-bgimg: /assets/images/bgimg/sevilla-bridge-1235783.jpg
+featimg: /assets/images/featimage/brooklyn-bridge-at-night-1-1205940.jpg
+bgimg: /assets/images/bgimg/brooklyn-bridge-at-night-1-1205940.jpg
 author: Barak Stout
----
-
----
-keywords: blog post
 ---
 
 # Building a Distributed Data Platform for Scale
