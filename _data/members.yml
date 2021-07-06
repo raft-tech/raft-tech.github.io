@@ -63,11 +63,6 @@
   full_name: Angela Milash
   role: Product Manager
   image: angela_milash_color.jpg
-- id: kati_nizzi
-  permalink: /about/kati_nizzi
-  full_name: Kati Nizzi
-  role: Product Manager
-  image: katie_nizzie_color.jpg
 - id: vamsi_priya_adipoodi
   permalink: /about/vamsi_priya_adipoodi
   full_name: Vasmi Priya Adipoodi
@@ -128,16 +123,6 @@
   full_name: Miles Reiter
   role: UX Designer/Researcher
   image: miles_reiter_color.jpg
-- id: carl_smith
-  permalink: /about/carl_smith
-  full_name: Carl Smith
-  role: Sr. Fullstack Developer
-  image: carl_smith_color.jpg
-- id: jennifer_pierce
-  permalink: /about/jennifer_pierce
-  full_name: Jennifer Pierce
-  role: Director of UX Strategy and Human-Centered Design
-  image: jen_pierce_color.jpg
 - id: paul_otto
   permalink: /about/paul_otto
   full_name: Paul Otto
