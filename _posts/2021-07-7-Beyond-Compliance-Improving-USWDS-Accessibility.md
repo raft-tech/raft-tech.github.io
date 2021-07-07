@@ -18,7 +18,7 @@ This brings us to implementing a file upload workflow as part of [our project](h
 
 Like other components in the library, it's built on the principle of progressive enhancement. Javascript and CSS adding value to a pure HTML core that can be fallen back upon in a scenario where javascript fails to initialize. It also has the benefit of relying on HTML markup that plays nice with screen readers and lets them recognize it for type of input it is. 
 
-![](/assets/images/file_input/anatomy.png)
+![Anatomy of the USWDS File Input. Side-by-side showing that the USWDS component is a pure HTML file picker styled to look like it has additional buttons like "Change File" when it's really one big button.](/assets/images/file_input/anatomy.png)
 
 At first glance our implementation of the component was looking good; behaving just like the USWDS demo. Files uploaded successfully and labels associated to each file input were read correctly by screen readers. But as we continued testing—moving from basic checks to those focused more on the overall quality of the experience—we started to identify some rough spots. 
 
@@ -34,7 +34,7 @@ More critically—especially so in our upload workflow where users are likely to
 
 
 ## Demo: USWDS File Input Behavior
-[![USWDS File Input Behavior](/assets/images/file_input/USWDS_video_thumbnail.jpg)](https://youtu.be/Xw0IwOLZshM)
+[![YouTube link to a demo of the USWDS File Input Behavior](/assets/images/file_input/USWDS_video_thumbnail.jpg)](https://youtu.be/Xw0IwOLZshM)
 
 The lack of transparency into that selected file name [isn't an issue exclusive to the USWDS component](https://a11ysupport.io/tests/tech__html__input__input-file#assertion-html-input(type-file)_element-convey_change_in_value-). But regardless of where the issue stems from we needed a solution; one that didn't require a change to the component itself due to a constraint of how USWDS is integrated to our project. Our solution? Doing what amounts to handing a script to the screen reader that it can read when interacting with the input. 
 
@@ -53,7 +53,7 @@ When focused, the file input will now pass the describeby text to the screenread
 -- As read by VoiceOver in Chrome
 
 ## Demo: Raft File Input Behavior
-[![Raft File Input Behavior](/assets/images/file_input/Raft_video_thumbnail.jpg)](https://youtu.be/JxjZYlkIZc0)
+[![Youtube link to a demo of the Raft File Input Behavior](/assets/images/file_input/Raft_video_thumbnail.jpg)](https://youtu.be/JxjZYlkIZc0)
 
 ### Takeaways: 
 
