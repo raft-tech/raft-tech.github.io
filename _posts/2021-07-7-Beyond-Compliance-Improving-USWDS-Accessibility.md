@@ -9,9 +9,6 @@ bgimg: /assets/images/bgimg/file_input_bg.png
 author: Miles Reiter
 ---
 
-# Beyond Compliance: Improving USWDS Accessibility
-![](https://i.imgur.com/zDrLa87.png)
-
 The U.S. Web Design System (USWDS) represents a great starting place for designing and building accessible experiences. Its components are built to from the ground up to be keyboard navigable, render with accessible contrast, and  generally conform to easily recognizable patterns. It comes out of the box with a variety of development tools to help ensure accessibility while allowing for customization from project to project such as automatic contrast checks that run right in the code itself when you make a change to the color palette. But no matter how great the toolset supporting accessibility manual testing that takes the time to consider the diversity of ways in which something will be experienced is critical. *Access* to an experience is not always the same thing as *equity* of experience. 
 
 This brings us to implementing a file upload workflow as part of [our project](https://goraft.tech/2021/03/08/18f-partners.html) with the Administration for Children & Families’ Office of Family Assistance (OFA) involving a new data portal for the Temporary Assistance for Needy Families (TANF) program. Thanks to USWDS 2.0, we had a [file input](https://designsystem.digital.gov/components/file-input/) component to plug in to. 
@@ -32,8 +29,8 @@ More critically—especially so in our upload workflow where users are likely to
 
 -- As read by VoiceOver in Safari
 
-
 ## Demo: USWDS File Input Behavior
+
 [![YouTube link to a demo of the USWDS File Input Behavior](/assets/images/file_input/USWDS_video_thumbnail.jpg)](https://youtu.be/Xw0IwOLZshM)
 
 The lack of transparency into that selected file name [isn't an issue exclusive to the USWDS component](https://a11ysupport.io/tests/tech__html__input__input-file#assertion-html-input(type-file)_element-convey_change_in_value-). But regardless of where the issue stems from we needed a solution; one that didn't require a change to the component itself due to a constraint of how USWDS is integrated to our project. Our solution? Doing what amounts to handing a script to the screen reader that it can read when interacting with the input. 
