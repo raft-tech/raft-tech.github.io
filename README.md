@@ -58,7 +58,7 @@ Below is a detailed explanation of each step:
   role: Your Title
   image: <firstname_lastname.jpg> or null (if you don't want your image up)
 ```
-- Once pasted, change the contents 
+- Once pasted, change the contents
 - Add details at the bottom of the page (Ensure the changes are going to correct branch and click `Commit Changes`)
 - ![](https://i.imgur.com/0o5aH3N.png)
 - Now similarly go to `_about` folder and create a new file
@@ -131,44 +131,38 @@ layout: about/profile <--  do not change
 ## Creating a blog post (Non Devs)
 A blog post comprises for three things:
 
-1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor. 
+1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor.
 ```
 ---
-id: firstname_lastname
-permalink: "/about/firstname_lastname"
-full_name: Firstname Lastname
-title: About - Firstname Lastname
-role: Your Title
-about: Short bio about yourself
-github: your github handle
-linkedin: yourlinkedin url
-homepage: your homepage url - if applicable
-featimg: "/assets/aboutBanner1.jpg" <-- do not change
-layout: about/profile <-- do not change
+layout: post
+title: "Really long blog title"
+short_title: "Shorter title"
+date: 2021-07-14
+categories:
+featimg: /assets/images/featimage/...
+bgimg: /assets/images/bgimg/...
+author: Angela Milash
 ---
 ```
-2. Open [a new issue](https://github.com/raft-tech/raft-tech.github.io/issues/new) 
-    - (a) The title of the issue should be `Name of the blog title - by John Doe` 
+2. Open [a new issue](https://github.com/raft-tech/raft-tech.github.io/issues/new)
+    - (a) The title of the issue should be `Name of the blog title - by John Doe`
     - (b) The body of the ticket drag and drop the two images -- one for the [index page](https://goraft.tech/blog/) and another for the actual blog page (exampel: [here](https://goraft.tech/2021/02/24/diversity-is-our-superpower.html)). Also include the URL of the blog post from HackMD from ()
 3. Click `Submit New Issue`
 4. Tag either `barakstout`, `meissadia`, or `turbomarc` for review
 
 ## Creating a blog post (For Devs)
 
-1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor. 
+1. Have your blog post in Markdown format - We recommend https://hackmd.io. Copy/Paste the below into the editor.
 ```
 ---
-id: firstname_lastname
-permalink: "/about/firstname_lastname"
-full_name: Firstname Lastname
-title: About - Firstname Lastname
-role: Your Title
-about: Short bio about yourself
-github: your github handle
-linkedin: yourlinkedin url
-homepage: your homepage url - if applicable
-featimg: "/assets/aboutBanner1.jpg" <-- do not change
-layout: about/profile <-- do not change
+layout: post
+title: "Really long blog title"
+short_title: "Shorter title"
+date: 2021-07-14
+categories:
+featimg: /assets/images/featimage/...
+bgimg: /assets/images/bgimg/...
+author: Angela Milash
 ---
 ```
 2. Open a PR that:
