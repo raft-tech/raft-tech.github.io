@@ -23,7 +23,7 @@ The Dagobah Systems Proof of concept build was initiated in January of 2021, and
 
 In May, 2021 Dagobah was demonstrated to the Chief of Staff of the Air Force, as well as folks across the Air Force CIO and CDO, as well as Key Leaders at the Pentagon. The Air Force and DoD Leaders are marshalling their vision and efforts towards comprehensive Data Federation and Access.  The team at Raft continue to promote and support the effort in every way we can. Raft’s Blue Horizon Product Owner Partners Major Messencar and Major Heruska will graduate their fellowship program, and move on to Space Force, and Directing Operations for the 33rd Network Warfare Squadron, respectively.
 
-**View or Download the [Dagobah One Pager Overview .PDF](/assets/assets/Dagobah_One-Pager_05102021.pdf)**
+**View or Download the [Dagobah One Pager Overview .PDF](/assets/Dagobah_One-Pager_05102021.pdf)**
 
 ### So, What Does Dagobah Do?
 
