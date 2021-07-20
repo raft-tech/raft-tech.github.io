@@ -78,11 +78,6 @@
   full_name: Heather Stout
   role: Quality Assurance
   image: heather_stout_color.jpg
-- id: calvin_fernandes
-  permalink: /about/calvin_fernandes
-  full_name: Calvin Fernandes
-  role: Sr. Software Engineer
-  image: null
 - id: dan_mutombo
   permalink: /about/dan_mutombo
   full_name: Dan Mutombo
@@ -98,21 +93,6 @@
   full_name: Jean Alle
   role: Sr. User Analyst
   image: null
-- id: james_villarreal
-  permalink: /about/james_villarreal
-  full_name: James Villarreal
-  role: Sr. DevSecOps Engineer
-  image: null
-- id: steven_godofsky
-  permalink: /about/steven_godofsky
-  full_name: Steven Godofsky
-  role: Network Engineer
-  image: null
-- id: dan_green
-  permalink: /about/dan_green
-  full_name: Dan Green
-  role: Sr. Technical Recruiter
-  image: dan_green_color.jpg
 - id: rebecca_mancuso
   permalink: /about/rebecca_mancuso
   full_name: Rebecca Mancuso
@@ -158,3 +138,18 @@
   full_name: Mike Mancuso
   role: Visual Designer
   image: mike_mancuso_color.jpg
+- id: andrew_bottoms
+  permalink: /about/andrew_bottoms
+  full_name: Andrew Bottoms
+  role: Technical Lead
+  image: andrew_bottoms_color.jpg
+- id: jorge_gonzalez
+  permalink: /about/jorge_gonzalez
+  full_name: Jorge Gonzalez
+  role: Full Stack Engineer
+  image: jorge_gonzalez_color.jpg
+- id: john_machairas
+  permalink: /about/john_machairas
+  full_name: John Machiras
+  role: Sr. Software Engineer
+  image: john_machairas_color.jpg
