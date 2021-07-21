@@ -138,3 +138,18 @@
   full_name: Mike Mancuso
   role: Visual Designer
   image: mike_mancuso_color.jpg
+- id: andrew_bottoms
+  permalink: /about/andrew_bottoms
+  full_name: Andrew Bottoms
+  role: Technical Lead
+  image: andrew_bottoms_color.jpg
+- id: jorge_gonzalez
+  permalink: /about/jorge_gonzalez
+  full_name: Jorge Gonzalez
+  role: Full Stack Engineer
+  image: jorge_gonzalez_color.jpg
+- id: john_machairas
+  permalink: /about/john_machairas
+  full_name: John Machiras
+  role: Sr. Software Engineer
+  image: john_machairas_color.jpg
