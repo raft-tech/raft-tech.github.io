@@ -27,7 +27,7 @@ Follow the steps below to start Keycloak, if one is not already running.
 
 1. Run an instance of Keycloak via Docker:
     ```sh
-    docker run -e KEYCLOAK_USER=<USERNAME> -e KEYCLOAK_PASSWORD=<PASSWORD> jboss/keycloak
+    docker run -d -e KEYCLOAK_USER=<USERNAME> -e KEYCLOAK_PASSWORD=<PASSWORD> -p 8080:8080 jboss/keycloak
     ```
 2. Login in to the Keycloak dashboard at: http://localhost:8080
 3. Create at least two (2) clients:

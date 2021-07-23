@@ -1,7 +1,7 @@
 - id: shubhi_mishra
   permalink: /about/shubhi_mishra
   full_name: Shubhi Mishra
-  role: 'Founder, Design Lead'
+  role: 'Founder & CEO'
   image: shubhi_mishra_color.jpg
 - id: bhaarat_sharma
   permalink: /about/bhaarat_sharma
@@ -63,11 +63,6 @@
   full_name: Angela Milash
   role: Product Manager
   image: angela_milash_color.jpg
-- id: kati_nizzi
-  permalink: /about/kati_nizzi
-  full_name: Kati Nizzi
-  role: Product Manager
-  image: katie_nizzie_color.jpg
 - id: vamsi_priya_adipoodi
   permalink: /about/vamsi_priya_adipoodi
   full_name: Vasmi Priya Adipoodi
@@ -83,11 +78,6 @@
   full_name: Heather Stout
   role: Quality Assurance
   image: heather_stout_color.jpg
-- id: calvin_fernandes
-  permalink: /about/calvin_fernandes
-  full_name: Calvin Fernandes
-  role: Sr. Software Engineer
-  image: null
 - id: dan_mutombo
   permalink: /about/dan_mutombo
   full_name: Dan Mutombo
@@ -103,21 +93,6 @@
   full_name: Jean Alle
   role: Sr. User Analyst
   image: null
-- id: james_villarreal
-  permalink: /about/james_villarreal
-  full_name: James Villarreal
-  role: Sr. DevSecOps Engineer
-  image: null
-- id: steven_godofsky
-  permalink: /about/steven_godofsky
-  full_name: Steven Godofsky
-  role: Network Engineer
-  image: null
-- id: dan_green
-  permalink: /about/dan_green
-  full_name: Dan Green
-  role: Sr. Technical Recruiter
-  image: dan_green_color.jpg
 - id: rebecca_mancuso
   permalink: /about/rebecca_mancuso
   full_name: Rebecca Mancuso
@@ -128,16 +103,6 @@
   full_name: Miles Reiter
   role: UX Designer/Researcher
   image: miles_reiter_color.jpg
-- id: carl_smith
-  permalink: /about/carl_smith
-  full_name: Carl Smith
-  role: Sr. Fullstack Developer
-  image: carl_smith_color.jpg
-- id: jennifer_pierce
-  permalink: /about/jennifer_pierce
-  full_name: Jennifer Pierce
-  role: Director of UX Strategy and Human-Centered Design
-  image: jen_pierce_color.jpg
 - id: paul_otto
   permalink: /about/paul_otto
   full_name: Paul Otto
@@ -162,7 +127,7 @@
   permalink: /about/ethan_bienstock
   full_name: Ethan Bienstock
   role: Sr. Data Engineer
-  image: null
+  image: ethan_bienstock_color.jpg
 - id: john_willis
   permalink: /about/john_willis
   full_name: John Willis
@@ -173,3 +138,18 @@
   full_name: Mike Mancuso
   role: Visual Designer
   image: mike_mancuso_color.jpg
+- id: andrew_bottoms
+  permalink: /about/andrew_bottoms
+  full_name: Andrew Bottoms
+  role: Technical Lead
+  image: andrew_bottoms_color.jpg
+- id: jorge_gonzalez
+  permalink: /about/jorge_gonzalez
+  full_name: Jorge Gonzalez
+  role: Full Stack Engineer
+  image: jorge_gonzalez_color.jpg
+- id: john_machairas
+  permalink: /about/john_machairas
+  full_name: John Machiras
+  role: Sr. Software Engineer
+  image: john_machairas_color.jpg
