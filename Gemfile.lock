@@ -225,13 +225,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (>= 209)
   jekyll (< 4)
   jekyll-archives
   jekyll-paginate-v2
   jekyll-sitemap
-  jekyll-target-blank
-  jemoji
+  jekyll-target-blank (>= 2.0.0)
+  jemoji (>= 0.12.0)
   pagemaster
 
 BUNDLED WITH
