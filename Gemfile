@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "3.0.1"
 gem 'jekyll', '<4'
 gem 'jekyll-archives'
 gem 'jekyll-sitemap'
