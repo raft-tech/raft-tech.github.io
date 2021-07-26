@@ -3,6 +3,7 @@ ruby "3.0.1"
 gem 'jekyll', '<4'
 gem 'jekyll-archives'
 gem 'jekyll-sitemap'
+gem 'webrick'
 gem 'jekyll-paginate-v2'
 gem 'jekyll-target-blank', '>= 2.0.0'
 source 'https://rubygems.org'
