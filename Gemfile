@@ -8,5 +8,5 @@ source 'https://rubygems.org'
 gem 'github-pages', '>= 209'
 gem 'jemoji', '>= 0.12.0'
 group :jekyll_plugins do
-  gem 'pagemaster', '>= 2.0.2'
+  gem 'pagemaster'
 end
