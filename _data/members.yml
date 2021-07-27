@@ -153,3 +153,18 @@
   full_name: John Machiras
   role: Sr. Software Engineer
   image: john_machairas_color.jpg
+- id: rob_murtha
+  permalink: /about/rob_murtha
+  full_name: Rob Murtha
+  role: Director of Strategic Growth
+  image: rob_murtha_color.jpg
+- id: gregory_behm
+  permalink: /about/gregory_behm
+  full_name: Gregory Behm
+  role: Sr. Data Scientist
+  image: gregory_behm_color.jpg
+- id: hannah_maad
+  permalink: /about/hannah_maad
+  full_name: Hannah Maad
+  role: Project Engineer
+  image: hannah_maad_color.jpg
