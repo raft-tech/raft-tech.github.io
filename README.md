@@ -183,6 +183,7 @@ cd raft-tech.github.io.git
 gem install bundler
 bundle install
 bundle exec jekyll pagemaster --no-permalink about
+#If you are running this with ruby 3.0+, run the command 'bundle add webrick'
 bundle exec jekyll serve
 
 # raft website avilable at http://localhost:4000
