@@ -173,4 +173,9 @@
   full_name: Laura Garrison
   role: Director of People and Services
   image: laura_garrison_color.jpg
+- id: luke_manion
+  permalink: /about/luke_manion
+  full_name: Luke Manion
+  role: Principle Kubernetes Engineer
+  image: luke_manion_color.jpg
 
