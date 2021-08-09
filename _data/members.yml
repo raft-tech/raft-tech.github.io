@@ -178,4 +178,8 @@
   full_name: Luke Manion
   role: Principle Kubernetes Engineer
   image: luke_manion_color.jpg
-
+- id: shawn_lafferty
+  permalink: /about/shawn_lafferty
+  full_name: Shawn Lafferty
+  role: Product Manager
+  image: shawn_lafferty_color.jpg
