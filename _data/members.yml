@@ -173,4 +173,13 @@
   full_name: Laura Garrison
   role: Director of People and Services
   image: laura_garrison_color.jpg
-
+- id: luke_manion
+  permalink: /about/luke_manion
+  full_name: Luke Manion
+  role: Principle Kubernetes Engineer
+  image: luke_manion_color.jpg
+- id: shawn_lafferty
+  permalink: /about/shawn_lafferty
+  full_name: Shawn Lafferty
+  role: Senior Product Manager
+  image: shawn_lafferty_color.jpg
