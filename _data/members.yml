@@ -193,3 +193,18 @@
   full_name: Valerie Collignon
   role: Project Manager
   image: valerie_collignon_color.jpg
+- id: dagan_henderson
+  permalink: /about/dagan_henderson
+  full_name: Dagan Henderson
+  role: Principle Engineer
+  image: null
+- id: jennifer_russell
+  permalink: /about/jennifer_russell
+  full_name: Jennifer Russell
+  role: Project Manager
+  image: null
+- id: vallalar_sivakolundu
+  permalink: /about/vallalar_sivakolundu
+  full_name: Vallalar Sivakolundu
+  role: Cloud Architect
+  image: null
