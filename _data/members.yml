@@ -198,3 +198,13 @@
   full_name: Dagan Henderson
   role: Principle Engineer
   image: dagan_henderson_color.png
+- id: jennifer_russell
+  permalink: /about/jennifer_russell
+  full_name: Jennifer Russell
+  role: Project Manager
+  image: null
+- id: vallalar_sivakolundu
+  permalink: /about/vallalar_sivakolundu
+  full_name: Vallalar Sivakolundu
+  role: Cloud Architect
+  image: null
