@@ -193,3 +193,63 @@
   full_name: Vallalar Sivakolundu
   role: Cloud Architect
   image: null
+- id: tami_hrivnak
+  permalink: /about/tami_hrivnak
+  full_name: Tami Hrivnak
+  role: Director of Innovation
+  image: null
+- id: jonathan_kuerschner
+  permalink: /about/jonathan_kuerschner
+  full_name: Jonathan Kuerschner
+  role: Senior Program Manager
+  image: null
+- id: cody_jackson
+  permalink: /about/cody_jackson
+  full_name: Cody Jackson
+  role: Senior Hardware Emulation Engineer
+  image: null
+- id: christopher_skeen
+  permalink: /about/christopher_skeen
+  full_name: Christopher Skeen
+  role: Senior Platform Engineer
+  image: null
+- id: kristen_shaw
+  permalink: /about/kristen_shaw
+  full_name: Kristen Shaw
+  role: UX Manager
+  image: null
+- id: hitesh_sharma
+  permalink: /about/hitesh_sharma
+  full_name: Hitesh Sharma
+  role: Senior Platform Lead
+  image: null
+- id: john_valdez
+  permalink: /about/john_valdez
+  full_name: John Valdez
+  role: Principal Data Engineer
+  image: null
+- id: corey_harmon
+  permalink: /about/corey_harmon
+  full_name: Corey Harmon
+  role: Full Stack Developer
+  image: null
+- id: alex_floyd_marshall
+  permalink: /about/alex_floyd_marshall
+  full_name: Alex Floyd Marshall
+  role: Cyber Security Engineer
+  image: null
+- id: ajia_allen
+  permalink: /about/ajia_allen
+  full_name: Ajia Allen
+  role: Senior Proposal Writer
+  image: null
+- id: tim_whitlock
+  permalink: /about/tim_whitlock
+  full_name: Tim Whitlock
+  role: Senior DevSecOps Engineer
+  image: null
+- id: sarah_espinosa
+  permalink: /about/sarah_espinosa
+  full_name: Sarah Espinosa
+  role: Talent Manager
+  image: null
