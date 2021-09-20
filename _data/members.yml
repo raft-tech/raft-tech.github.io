@@ -53,16 +53,6 @@
   full_name: Le Chen
   role: Sr. DevSecOps Engineer
   image: le_chen_color.jpg
-- id: marc_phillips
-  permalink: /about/marc_phillips
-  full_name: Marc Phillips
-  role: Senior Engagement Manager
-  image: marc_phillips_color.jpg
-- id: angela_milash
-  permalink: /about/angela_milash
-  full_name: Angela Milash
-  role: Product Manager
-  image: angela_milash_color.jpg
 - id: vamsi_priya_adipoodi
   permalink: /about/vamsi_priya_adipoodi
   full_name: Vasmi Priya Adipoodi
@@ -118,11 +108,6 @@
   full_name: Arthur Chan
   role: DevSecOps Engineer
   image: arthur_chan_color.jpg
-- id: dmitri_knapp
-  permalink: /about/dmitri_knapp
-  full_name: Dmitri Knapp
-  role: Sr. User Researcher/Designer
-  image: dmitri_knapp_color.jpg
 - id: ethan_bienstock
   permalink: /about/ethan_bienstock
   full_name: Ethan Bienstock
