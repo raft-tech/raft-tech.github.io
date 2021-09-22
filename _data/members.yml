@@ -182,42 +182,42 @@
   permalink: /about/dagan_henderson
   full_name: Dagan Henderson
   role: Principle Engineer
-  image: dagan_henderson_color.jpg
+  image: null
 - id: jennifer_russell
   permalink: /about/jennifer_russell
   full_name: Jennifer Russell
   role: Project Manager
-  image: jennifer_russell_color.jpg
+  image: null
 - id: vallalar_sivakolundu
   permalink: /about/vallalar_sivakolundu
   full_name: Vallalar Sivakolundu
   role: Cloud Architect
-  image: vallalar_sivakolundu_color.jpg
+  image: null
 - id: tami_hrivnak
   permalink: /about/tami_hrivnak
   full_name: Tami Hrivnak
   role: Director of Innovation
-  image: tami_hivnak_color.jpg
+  image: null
 - id: jonathan_kuerschner
   permalink: /about/jonathan_kuerschner
   full_name: Jonathan Kuerschner
   role: Sr. Program Manager
-  image: jonathan_kuerschner_color.jpg
+  image: null
 - id: cody_jackson
   permalink: /about/cody_jackson
   full_name: Cody Jackson
   role: Sr. Hardware Emulation Engineer
-  image: cody_jackson_color.jpg
+  image: null
 - id: christopher_skeen
   permalink: /about/christopher_skeen
   full_name: Christopher Skeen
   role: Sr. Platform Engineer
-  image: chris_skeen_color.jpg
+  image: null
 - id: kristen_shaw
   permalink: /about/kristen_shaw
   full_name: Kristen Shaw
   role: UX Manager
-  image: kristen_shaw_color.jpg
+  image: null
 - id: hitesh_sharma
   permalink: /about/hitesh_sharma
   full_name: Hitesh Sharma
@@ -227,22 +227,22 @@
   permalink: /about/john_valdez
   full_name: John Valdez
   role: Principal Data Engineer
-  image: john_valdez_color.jpg
+  image: null
 - id: corey_harmon
   permalink: /about/corey_harmon
   full_name: Corey Harmon
   role: Full Stack Developer
-  image: corey_harmon_color.jpg
+  image: null
 - id: alex_floyd_marshall
   permalink: /about/alex_floyd_marshall
   full_name: Alex Floyd Marshall
   role: Cyber Security Engineer
-  image: alex_floyd_marshall_color.jpg
+  image: null
 - id: ajia_allen
   permalink: /about/ajia_allen
   full_name: Ajia Allen
   role: Sr. Proposal Writer
-  image: aija_allen_color.jpg
+  image: null
 - id: tim_whitlock
   permalink: /about/tim_whitlock
   full_name: Tim Whitlock
@@ -252,12 +252,12 @@
   permalink: /about/sarah_espinosa
   full_name: Sarah Espinosa
   role: Talent Manager
-  image: sarah_espinosa_color.jpg
+  image: null
 - id: jimmy_neville
   permalink: /about/jimmy_neville
   full_name: Jimmy Neville
   role: Sr. Platform Engineer
-  image: jimmy_neville_color.jpg
+  image: null
 - id: burt_walsh
   permalink: /about/burt_walsh
   full_name: Burt Walsh
@@ -267,9 +267,9 @@
   permalink: /about/james_baker
   full_name: James Baker
   role: Principal Platform Engineer
-  image: james_baker_color.jpg 
+  image: null
 - id: aidan_stein
   permalink: /about/aidan_stein
   full_name: Aidan Stein
   role: Platform Engineer
-  image: aidan_stein_color.jpg 
+  image: null
