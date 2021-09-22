@@ -263,3 +263,13 @@
   full_name: Burt Walsh
   role: Principal Data Engineer
   image: null 
+- id: james_baker
+  permalink: /about/james_baker
+  full_name: James Baker
+  role: Principal Platform Engineer
+  image: null 
+- id: aidan_stein
+  permalink: /about/aidan_stein
+  full_name: Aidan Stein
+  role: Platform Engineer
+  image: null 
