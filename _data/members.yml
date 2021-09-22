@@ -83,11 +83,6 @@
   full_name: Jean Alle
   role: Sr. User Analyst
   image: null
-- id: rebecca_mancuso
-  permalink: /about/rebecca_mancuso
-  full_name: Rebecca Mancuso
-  role: Operations
-  image: rebecca_mancuso_color.jpg
 - id: miles_reiter
   permalink: /about/miles_reiter
   full_name: Miles Reiter
