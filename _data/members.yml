@@ -66,7 +66,7 @@
 - id: heather_stout
   permalink: /about/heather_stout
   full_name: Heather Stout
-  role: Quality Assurance
+  role: Operations Analyst
   image: heather_stout_color.jpg
 - id: dan_mutombo
   permalink: /about/dan_mutombo
@@ -166,12 +166,12 @@
 - id: shawn_lafferty
   permalink: /about/shawn_lafferty
   full_name: Shawn Lafferty
-  role: Senior Product Manager
+  role: Sr. Product Manager
   image: shawn_lafferty_color.jpg
 - id: sreedevi_purayannur
   permalink: /about/sreedevi_purayannur
   full_name: Sreedevi Purayannur
-  role: Senior UX/UI Research and Designer 
+  role: Sr. UX/UI Research and Designer 
   image: sreedevi_purayannur_color.jpg
 - id: valerie_collignon
   permalink: /about/valerie_collignon
@@ -182,82 +182,82 @@
   permalink: /about/dagan_henderson
   full_name: Dagan Henderson
   role: Principle Engineer
-  image: null
+  image: dagan_henderson_color.jpg
 - id: jennifer_russell
   permalink: /about/jennifer_russell
   full_name: Jennifer Russell
   role: Project Manager
-  image: null
+  image: jennifer_russell_color.jpg
 - id: vallalar_sivakolundu
   permalink: /about/vallalar_sivakolundu
   full_name: Vallalar Sivakolundu
   role: Cloud Architect
-  image: null
+  image: vallalar_sivakolundu_color.jpg
 - id: tami_hrivnak
   permalink: /about/tami_hrivnak
   full_name: Tami Hrivnak
   role: Director of Innovation
-  image: null
+  image: tami_hivnak_color.jpg
 - id: jonathan_kuerschner
   permalink: /about/jonathan_kuerschner
   full_name: Jonathan Kuerschner
-  role: Senior Program Manager
-  image: null
+  role: Sr. Program Manager
+  image: jonathan_kuerschner_color.jpg
 - id: cody_jackson
   permalink: /about/cody_jackson
   full_name: Cody Jackson
-  role: Senior Hardware Emulation Engineer
-  image: null
+  role: Sr. Hardware Emulation Engineer
+  image: cody_jackson_color.jpg
 - id: christopher_skeen
   permalink: /about/christopher_skeen
   full_name: Christopher Skeen
-  role: Senior Platform Engineer
-  image: null
+  role: Sr. Platform Engineer
+  image: chris_skeen_color.jpg
 - id: kristen_shaw
   permalink: /about/kristen_shaw
   full_name: Kristen Shaw
   role: UX Manager
-  image: null
+  image: kristen_shaw_color.jpg
 - id: hitesh_sharma
   permalink: /about/hitesh_sharma
   full_name: Hitesh Sharma
-  role: Senior Platform Lead
+  role: Sr. Platform Lead
   image: null
 - id: john_valdez
   permalink: /about/john_valdez
   full_name: John Valdez
   role: Principal Data Engineer
-  image: null
+  image: john_valdez_color.jpg
 - id: corey_harmon
   permalink: /about/corey_harmon
   full_name: Corey Harmon
   role: Full Stack Developer
-  image: null
+  image: corey_harmon_color.jpg
 - id: alex_floyd_marshall
   permalink: /about/alex_floyd_marshall
   full_name: Alex Floyd Marshall
   role: Cyber Security Engineer
-  image: null
+  image: alex_floyd_marshall_color.jpg
 - id: ajia_allen
   permalink: /about/ajia_allen
   full_name: Ajia Allen
-  role: Senior Proposal Writer
-  image: null
+  role: Sr. Proposal Writer
+  image: aija_allen_color.jpg
 - id: tim_whitlock
   permalink: /about/tim_whitlock
   full_name: Tim Whitlock
-  role: Senior DevSecOps Engineer
+  role: Sr. DevSecOps Engineer
   image: null
 - id: sarah_espinosa
   permalink: /about/sarah_espinosa
   full_name: Sarah Espinosa
   role: Talent Manager
-  image: null
+  image: sarah_espinosa_color.jpg
 - id: jimmy_neville
   permalink: /about/jimmy_neville
   full_name: Jimmy Neville
-  role: Senior Platform Engineer
-  image: null 
+  role: Sr. Platform Engineer
+  image: jimmy_neville_color.jpg
 - id: burt_walsh
   permalink: /about/burt_walsh
   full_name: Burt Walsh
@@ -267,9 +267,9 @@
   permalink: /about/james_baker
   full_name: James Baker
   role: Principal Platform Engineer
-  image: null 
+  image: james_baker_color.jpg 
 - id: aidan_stein
   permalink: /about/aidan_stein
   full_name: Aidan Stein
   role: Platform Engineer
-  image: null 
+  image: aidan_stein_color.jpg 
