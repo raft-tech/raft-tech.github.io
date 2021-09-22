@@ -253,3 +253,13 @@
   full_name: Sarah Espinosa
   role: Talent Manager
   image: null
+- id: jimmy_neville
+  permalink: /about/jimmy_neville
+  full_name: Jimmy Neville
+  role: Senior Platform Engineer
+  image: null 
+- id: burt_walsh
+  permalink: /about/burt_walsh
+  full_name: Burt Walsh
+  role: Principal Data Engineer
+  image: null 
