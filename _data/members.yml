@@ -53,16 +53,6 @@
   full_name: Le Chen
   role: Sr. DevSecOps Engineer
   image: le_chen_color.jpg
-- id: marc_phillips
-  permalink: /about/marc_phillips
-  full_name: Marc Phillips
-  role: Senior Engagement Manager
-  image: marc_phillips_color.jpg
-- id: angela_milash
-  permalink: /about/angela_milash
-  full_name: Angela Milash
-  role: Product Manager
-  image: angela_milash_color.jpg
 - id: vamsi_priya_adipoodi
   permalink: /about/vamsi_priya_adipoodi
   full_name: Vasmi Priya Adipoodi
@@ -76,7 +66,7 @@
 - id: heather_stout
   permalink: /about/heather_stout
   full_name: Heather Stout
-  role: Quality Assurance
+  role: Operations Analyst
   image: heather_stout_color.jpg
 - id: dan_mutombo
   permalink: /about/dan_mutombo
@@ -93,11 +83,6 @@
   full_name: Jean Alle
   role: Sr. User Analyst
   image: null
-- id: rebecca_mancuso
-  permalink: /about/rebecca_mancuso
-  full_name: Rebecca Mancuso
-  role: Operations
-  image: rebecca_mancuso_color.jpg
 - id: miles_reiter
   permalink: /about/miles_reiter
   full_name: Miles Reiter
@@ -118,11 +103,6 @@
   full_name: Arthur Chan
   role: DevSecOps Engineer
   image: arthur_chan_color.jpg
-- id: dmitri_knapp
-  permalink: /about/dmitri_knapp
-  full_name: Dmitri Knapp
-  role: Sr. User Researcher/Designer
-  image: dmitri_knapp_color.jpg
 - id: ethan_bienstock
   permalink: /about/ethan_bienstock
   full_name: Ethan Bienstock
@@ -181,12 +161,12 @@
 - id: shawn_lafferty
   permalink: /about/shawn_lafferty
   full_name: Shawn Lafferty
-  role: Senior Product Manager
+  role: Sr. Product Manager
   image: shawn_lafferty_color.jpg
 - id: sreedevi_purayannur
   permalink: /about/sreedevi_purayannur
   full_name: Sreedevi Purayannur
-  role: Senior UX/UI Research and Designer 
+  role: Sr. UX/UI Research and Designer 
   image: sreedevi_purayannur_color.jpg
 - id: valerie_collignon
   permalink: /about/valerie_collignon
@@ -207,4 +187,84 @@
   permalink: /about/vallalar_sivakolundu
   full_name: Vallalar Sivakolundu
   role: Cloud Architect
+  image: null
+- id: tami_hrivnak
+  permalink: /about/tami_hrivnak
+  full_name: Tami Hrivnak
+  role: Director of Innovation
+  image: null
+- id: jonathan_kuerschner
+  permalink: /about/jonathan_kuerschner
+  full_name: Jonathan Kuerschner
+  role: Sr. Program Manager
+  image: null
+- id: cody_jackson
+  permalink: /about/cody_jackson
+  full_name: Cody Jackson
+  role: Sr. Hardware Emulation Engineer
+  image: null
+- id: christopher_skeen
+  permalink: /about/christopher_skeen
+  full_name: Christopher Skeen
+  role: Sr. Platform Engineer
+  image: null
+- id: kristen_shaw
+  permalink: /about/kristen_shaw
+  full_name: Kristen Shaw
+  role: UX Manager
+  image: null
+- id: hitesh_sharma
+  permalink: /about/hitesh_sharma
+  full_name: Hitesh Sharma
+  role: Sr. Platform Lead
+  image: null
+- id: john_valdez
+  permalink: /about/john_valdez
+  full_name: John Valdez
+  role: Principal Data Engineer
+  image: null
+- id: corey_harmon
+  permalink: /about/corey_harmon
+  full_name: Corey Harmon
+  role: Full Stack Developer
+  image: null
+- id: alex_floyd_marshall
+  permalink: /about/alex_floyd_marshall
+  full_name: Alex Floyd Marshall
+  role: Cyber Security Engineer
+  image: null
+- id: ajia_allen
+  permalink: /about/ajia_allen
+  full_name: Ajia Allen
+  role: Sr. Proposal Writer
+  image: null
+- id: tim_whitlock
+  permalink: /about/tim_whitlock
+  full_name: Tim Whitlock
+  role: Sr. DevSecOps Engineer
+  image: null
+- id: sarah_espinosa
+  permalink: /about/sarah_espinosa
+  full_name: Sarah Espinosa
+  role: Talent Manager
+  image: null
+- id: jimmy_neville
+  permalink: /about/jimmy_neville
+  full_name: Jimmy Neville
+  role: Sr. Platform Engineer
+  image: null
+- id: burt_walsh
+  permalink: /about/burt_walsh
+  full_name: Burt Walsh
+  role: Principal Data Engineer
+  image: null 
+- id: james_baker
+  permalink: /about/james_baker
+  full_name: James Baker
+  role: Principal Platform Engineer
+  image: null
+- id: aidan_stein
+  permalink: /about/aidan_stein
+  full_name: Aidan Stein
+  role: Platform Engineer
   image: null
