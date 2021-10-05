@@ -143,11 +143,6 @@
   full_name: Gregory Behm
   role: Sr. Data Scientist
   image: gregory_behm_color.jpg
-- id: hannah_maad
-  permalink: /about/hannah_maad
-  full_name: Hannah Maad
-  role: Project Engineer
-  image: hannah_maad_color.jpg
 - id: laura_garrison
   permalink: /about/laura_garrison
   full_name: Laura Garrison
@@ -192,11 +187,6 @@
   permalink: /about/tami_hrivnak
   full_name: Tami Hrivnak
   role: Director of Innovation
-  image: null
-- id: jonathan_kuerschner
-  permalink: /about/jonathan_kuerschner
-  full_name: Jonathan Kuerschner
-  role: Sr. Program Manager
   image: null
 - id: cody_jackson
   permalink: /about/cody_jackson
@@ -282,4 +272,14 @@
   permalink: /about/luis_lahoz
   full_name: Luis Lahoz
   role: Sr. Full Stack Developer
+  image: null
+- id: richard_santiago
+  permalink: /about/richard_santiago
+  full_name: Richard Santiago
+  role: Cyber Security Engineer
+  image: null
+- id: brian_sells
+  permalink: /about/brian_sells
+  full_name: Brian Sells
+  role: Product Manager
   image: null
