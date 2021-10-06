@@ -689,9 +689,9 @@
     var markers = [];
 
     for (var i = 0; i < cities.length; i++) {
-      console.log(cities[i].count);
-      var latLng = new google.maps.LatLng(cities[i].lat,
-        cities[i].long);
+      
+      var latLng = new google.maps.LatLng(cities[i].lat, cities[i].long);
+      
       var marker = new google.maps.Marker({
         position: latLng,
         label: {
@@ -703,6 +703,7 @@
         icon: "../assets/rafty-marker.png",
         optimized: true,
       });
+      
       markers.push(marker);
     }
 
@@ -729,7 +730,6 @@
   observer.observe(target);
 </script>
 
-</script>
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNvUvhmjk_Woi-QfDTQ1YgTa5hkQqRFKM&callback=initMap">
   </script>
