@@ -280,7 +280,7 @@
   image: null
 - id: brian_sells
   permalink: /about/brian_sells
-  full_name: Luis Lahoz
+  full_name: Brian Sells
   role: Product Manager
   image: null
 - id: bhavik_chothani
@@ -292,4 +292,14 @@
   permalink: /about/keerthi_chinthaguntla
   full_name: Keerthi Chinthaguntla
   role: SRE Manager
+  image: null
+- id: patrick_roserie
+  permalink: /about/patrick_roserie
+  full_name: Patrick Roserie
+  role: Principal Cybersecurity Manager
+  image: null
+- id: jose_alvarez
+  permalink: /about/jose_alvarez
+  full_name: Jose Alvarez
+  role: Principal DevSecOps Engineer
   image: null
