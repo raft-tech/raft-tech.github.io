@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Trick or treak with a kubernetes stack"
+title: "Trick or treak with a Kubernetes cloud stack"
 short_title: "Kubecon 2021"
 date: 2021-10-31
 categories:
