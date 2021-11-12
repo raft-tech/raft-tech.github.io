@@ -177,12 +177,12 @@
   permalink: /about/jennifer_russell
   full_name: Jennifer Russell
   role: Project Manager
-  image: jennifer_russel_color
+  image: jennifer_russel_color.jpg
 - id: vallalar_sivakolundu
   permalink: /about/vallalar_sivakolundu
   full_name: Vallalar Sivakolundu
   role: Cloud Architect
-  image: vallalar_sivakolundu_color
+  image: vallalar_sivakolundu_color.jpg
 - id: tami_hrivnak
   permalink: /about/tami_hrivnak
   full_name: Tami Hrivnak
@@ -262,7 +262,7 @@
   permalink: /about/jimmy_bourqe
   full_name: Jimmy Bourque
   role: Principal Engineer
-  image: jimmy_bourque_color
+  image: jimmy_bourque_color.jpg
 - id: justin_olivarez
   permalink: /about/justin_olivarez
   full_name: Justin Olivarez
