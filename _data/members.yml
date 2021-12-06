@@ -108,11 +108,6 @@
   full_name: Ethan Bienstock
   role: Sr. Data Engineer
   image: ethan_bienstock_color.jpg
-- id: john_willis
-  permalink: /about/john_willis
-  full_name: John Willis
-  role: Sr. Full Stack Developer
-  image: john_willis_color.jpg
 - id: mike_mancuso
   permalink: /about/mike_mancuso
   full_name: Mike Mancuso
@@ -143,11 +138,6 @@
   full_name: Gregory Behm
   role: Sr. Data Scientist
   image: gregory_behm_color.jpg
-- id: laura_garrison
-  permalink: /about/laura_garrison
-  full_name: Laura Garrison
-  role: Director of People and Services
-  image: laura_garrison_color.jpg
 - id: luke_manion
   permalink: /about/luke_manion
   full_name: Luke Manion
@@ -187,31 +177,26 @@
   permalink: /about/tami_hrivnak
   full_name: Tami Hrivnak
   role: Director of Innovation
-  image: null
+  image: tami_hrivnak_color.jpg
 - id: cody_jackson
   permalink: /about/cody_jackson
   full_name: Cody Jackson
   role: Sr. Hardware Emulation Engineer
-  image: null
+  image: cody_jackson_color.jpg
 - id: christopher_skeen
   permalink: /about/christopher_skeen
   full_name: Christopher Skeen
   role: Sr. Platform Engineer
-  image: null
+  image: christopher_skeen_color.jpg
 - id: kristen_shaw
   permalink: /about/kristen_shaw
   full_name: Kristen Shaw
   role: UX Manager
-  image: null
+  image: kristen_shaw_color.jpg
 - id: hitesh_sharma
   permalink: /about/hitesh_sharma
   full_name: Hitesh Sharma
   role: Sr. Platform Lead
-  image: null
-- id: john_valdez
-  permalink: /about/john_valdez
-  full_name: John Valdez
-  role: Principal Data Engineer
   image: null
 - id: corey_harmon
   permalink: /about/corey_harmon
@@ -233,16 +218,11 @@
   full_name: Tim Whitlock
   role: Sr. DevSecOps Engineer
   image: null
-- id: sarah_espinosa
-  permalink: /about/sarah_espinosa
-  full_name: Sarah Espinosa
-  role: Talent Manager
-  image: null
 - id: jimmy_neville
   permalink: /about/jimmy_neville
   full_name: Jimmy Neville
   role: Sr. Platform Engineer
-  image: null
+  image: jimmy_neville_color.jpg
 - id: burt_walsh
   permalink: /about/burt_walsh
   full_name: Burt Walsh
