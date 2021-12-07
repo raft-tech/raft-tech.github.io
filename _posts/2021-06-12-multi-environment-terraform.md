@@ -15,7 +15,7 @@ author: Jorge Gonzalez
 ## Terraform 
 We adopted [Terraform](https://www.terraform.io/) recently to help in the provisioning of our service infrastructure across multiple environments. We developed this workflow early in our application’s lifecycle, an advantage that will yield the ability to create and test new services in lower, non-production environments, and then easily replicate them to higher environments.
 
-It is well described elsewhere how to manually manage such deployments across environments, but this deployment workflow is notably entirely automated, managed only by  commiting the declarative, high-level configuration [Terraform language](https://www.terraform.io/docs/language/index.html) syntax with which we describe our infrastructure; deployments are managed by certain git merges, and services can be updated and created with changes to our Terraform configuration files.
+It is well described elsewhere how to manually manage such deployments across environments, but this deployment workflow is notably entirely automated, managed only by committing the declarative, high-level configuration [Terraform language](https://www.terraform.io/docs/language/index.html) syntax with which we describe our infrastructure; deployments are managed by certain git merges, and services can be updated and created with changes to our Terraform configuration files.
 
 ### Proceed with Caution
 
