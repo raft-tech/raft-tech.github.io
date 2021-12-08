@@ -150,7 +150,7 @@ workflows:
   dev-deployment:
     jobs:
       - deploy-infrastructure:
-			filters:
+      filters:
             branches:
               only:
                 - dev
@@ -215,7 +215,7 @@ workflows:
   dev-deployment:
     jobs:
       - deploy-infrastructure:
-			filters:
+          filters:
             branches:
               only:
                 - dev
