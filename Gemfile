@@ -10,3 +10,5 @@ gem 'jemoji', '>= 0.12.0'
 group :jekyll_plugins do
   gem 'pagemaster'
 end
+
+gem "webrick", "~> 1.7"

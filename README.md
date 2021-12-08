@@ -189,6 +189,8 @@ bundle exec jekyll serve
 # raft website avilable at http://localhost:4000
 ```
 
+M1 Based Macs follow the instructions [here](https://mac.install.guide/ruby/13.html) to install ruby
+
 ## Dockerizing (For Devs)
 
 Build and deploy locally using [Docker](https://www.docker.com/)

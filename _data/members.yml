@@ -108,11 +108,6 @@
   full_name: Ethan Bienstock
   role: Sr. Data Engineer
   image: ethan_bienstock_color.jpg
-- id: john_willis
-  permalink: /about/john_willis
-  full_name: John Willis
-  role: Sr. Full Stack Developer
-  image: john_willis_color.jpg
 - id: mike_mancuso
   permalink: /about/mike_mancuso
   full_name: Mike Mancuso
@@ -143,11 +138,6 @@
   full_name: Gregory Behm
   role: Sr. Data Scientist
   image: gregory_behm_color.jpg
-- id: laura_garrison
-  permalink: /about/laura_garrison
-  full_name: Laura Garrison
-  role: Director of People and Services
-  image: laura_garrison_color.jpg
 - id: luke_manion
   permalink: /about/luke_manion
   full_name: Luke Manion
@@ -172,46 +162,41 @@
   permalink: /about/dagan_henderson
   full_name: Dagan Henderson
   role: Principle Engineer
-  image: null
+  image: dagan_henderson_color.jpg
 - id: jennifer_russell
   permalink: /about/jennifer_russell
   full_name: Jennifer Russell
   role: Project Manager
-  image: null
+  image: jennifer_russel_color.jpg
 - id: vallalar_sivakolundu
   permalink: /about/vallalar_sivakolundu
   full_name: Vallalar Sivakolundu
   role: Cloud Architect
-  image: null
+  image: vallalar_sivakolundu_color.jpg
 - id: tami_hrivnak
   permalink: /about/tami_hrivnak
   full_name: Tami Hrivnak
   role: Director of Innovation
-  image: null
+  image: tami_hrivnak_color.jpg
 - id: cody_jackson
   permalink: /about/cody_jackson
   full_name: Cody Jackson
   role: Sr. Hardware Emulation Engineer
-  image: null
+  image: cody_jackson_color.jpg
 - id: christopher_skeen
   permalink: /about/christopher_skeen
   full_name: Christopher Skeen
   role: Sr. Platform Engineer
-  image: null
+  image: christopher_skeen_color.jpg
 - id: kristen_shaw
   permalink: /about/kristen_shaw
   full_name: Kristen Shaw
   role: UX Manager
-  image: null
+  image: kristen_shaw_color.jpg
 - id: hitesh_sharma
   permalink: /about/hitesh_sharma
   full_name: Hitesh Sharma
   role: Sr. Platform Lead
-  image: null
-- id: john_valdez
-  permalink: /about/john_valdez
-  full_name: John Valdez
-  role: Principal Data Engineer
   image: null
 - id: corey_harmon
   permalink: /about/corey_harmon
@@ -233,16 +218,11 @@
   full_name: Tim Whitlock
   role: Sr. DevSecOps Engineer
   image: null
-- id: sarah_espinosa
-  permalink: /about/sarah_espinosa
-  full_name: Sarah Espinosa
-  role: Talent Manager
-  image: null
 - id: jimmy_neville
   permalink: /about/jimmy_neville
   full_name: Jimmy Neville
   role: Sr. Platform Engineer
-  image: null
+  image: jimmy_neville_color.png
 - id: burt_walsh
   permalink: /about/burt_walsh
   full_name: Burt Walsh
@@ -262,7 +242,7 @@
   permalink: /about/jimmy_bourqe
   full_name: Jimmy Bourque
   role: Principal Engineer
-  image: null
+  image: jimmy_bourque_color.jpg
 - id: justin_olivarez
   permalink: /about/justin_olivarez
   full_name: Justin Olivarez
@@ -282,4 +262,24 @@
   permalink: /about/brian_sells
   full_name: Brian Sells
   role: Product Manager
+  image: null
+- id: bhavik_chothani
+  permalink: /about/bhavik_chothani
+  full_name: Bhavik Chothani
+  role: Cloud Architect
+  image: null
+- id: keerthi_chinthaguntla
+  permalink: /about/keerthi_chinthaguntla
+  full_name: Keerthi Chinthaguntla
+  role: SRE Manager
+  image: null
+- id: patrick_roserie
+  permalink: /about/patrick_roserie
+  full_name: Patrick Roserie
+  role: Principal Cybersecurity Manager
+  image: null
+- id: jose_alvarez
+  permalink: /about/jose_alvarez
+  full_name: Jose Alvarez
+  role: Principal DevSecOps Engineer
   image: null
