@@ -4,8 +4,8 @@ title: "How we Won the 2021 Afwerx Datathon Challenge"
 short_title: "Afwerx Datathon"
 date: 2021-12-15
 categories:
-featimg: /assets/images/featimage/afwerx_datathon.jpg
-bgimg: /assets/images/bgimg/afwerx_datathon.jpg
+featimg: /assets/images/featimage/Datathon_thumbnail.png
+bgimg: /assets/images/bgimg/Datathon_Blog_Header.png
 author: Ethan David
 ---
 
