@@ -2,7 +2,7 @@
 layout: post
 title: "A Multi Environment Terraform Setup"
 short_title: "Multi Environment Terraform"
-date: 2021-12-06
+date: 2022-01-03
 categories:
 featimg: /assets/images/featimage/Terraform_Blog_Header.png
 bgimg: /assets/images/bgimg/Terraform_Blog_Index.png
