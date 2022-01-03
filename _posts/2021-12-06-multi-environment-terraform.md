@@ -4,8 +4,8 @@ title: "A Multi Environment Terraform Setup"
 short_title: "Multi Environment Terraform"
 date: 2021-12-06
 categories:
-featimg:
-bgimg: 
+featimg: /assets/images/featimage/Terraform_Blog_Header.png
+bgimg: /assets/images/bgimg/Terraform_Blog_Index.png
 author: Jorge Gonzalez
 ---
 
