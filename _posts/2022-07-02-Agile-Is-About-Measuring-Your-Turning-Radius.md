@@ -2,7 +2,7 @@
 layout: post
 title: "Agile is About Measuring Your Turning Radius, Not Your 0-60 Start Time"
 short_title: "The Real Meaning of Agile"
-date: 2022-02-07
+date: 2022-01-07
 categories: agile, devops, cicd, govtech
 featimg: /assets/images/featimage/devops__learn_tek.jpg
 bgimg: /assets/images/bgimg/2018-05-01_Basketball,_easyCredit_Basketball-Bundesliga,_Science_City_Jena_-_Rockets_StP_5092_by_Stepro.jpg
