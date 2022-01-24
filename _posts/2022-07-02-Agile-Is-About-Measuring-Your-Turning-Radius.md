@@ -11,7 +11,7 @@ author: Alex Floyd Marshall
 
 # Agile is About Measuring Your Turning Radius, Not Your 0-60 Start Time
 
-My kids, boys aged 2 and 4, have been obsessed for well over a year with the Disney series *Cars*. About once a week we do a family “movie dinner,” and we’ve watched all three *Cars* movies multiple times. The lead character in the series, Lightning McQueen, is a champion race car. Before every race, he chants a mantra to himself: “Speed. I am speed.”
+My kids, boys aged 2 and 4, have been obsessed for well over a year with the Disney series *Cars*. About once a week we do a family “movie dinner,” and we’ve watched all three *Cars* movies multiple times. The lead character in the series, _Lightning McQueen_, is a champion race car. Before every race, he chants a mantra to himself: _“Speed. I am speed”_.
 
 One might be forgiven for thinking that mantra is also being chanted by developers and product leaders at virtually every startup under the sun these days. We hear about the frequency of deployments, the speed with which teams can get code from developer laptops to production servers, the (short) duration of feature sprints, the rapidness with which development environments can be spun up, and so on and so forth. Speed, we are speed.
 
@@ -31,7 +31,7 @@ The most popular manifestation of the agile business philosophy in the realms of
 
 An often-used shorthand for this methodology is "CI/CD": Continuous Integration, Continuous Deployment (or sometimes Delivery). Integration here refers to the constant process of running new code through automated testing pipelines to ensure it's ready to be merged into the production branch.
 
-But if we're being true to the real meaning of agile-- nimbleness, or the ability to pivot-- then there's another way to look at CI. I prefer to call it **"Continuous Improvement"**, making our products better with every change we implement (or integrate). For those changes to represent true improvements, we need those two kinds of speed that we described our basketball player as having. So what do those kinds of speeds look like in the realm of software development?
+But if we're being true to the real meaning of agile, nimbleness, or the ability to pivot, then there's another way to look at CI. I prefer to call it **"Continuous Improvement"**, making our products better with every change we implement (or integrate). For those changes to represent true improvements, we need those two kinds of speed that we described our basketball player as having. So what do those kinds of speeds look like in the realm of software development?
 
 ## Speed in Transition
 
