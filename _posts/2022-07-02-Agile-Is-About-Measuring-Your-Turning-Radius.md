@@ -21,7 +21,7 @@ In the first **Cars** installation, Lightning is challenged by an older car to a
 
 The point of the story isn’t that we should be slow. It’s that you have to know how to turn or your speed will end up wrecking you.
 
-Everyone these days wants to be "agile". Where "agile" is a synonym for "nimble", and being nimble is about how fast you can change directions, not how fast you can move in a straight line. Think about a basketball player who can react quickly to where the defense is setting up and find just the right angle for their pass or shot. That’s what it means to be nimble.
+Everyone these days wants to be "agile", but "agile" is a synonym for "nimble", and being nimble is about how fast you can change directions, not how fast you can move in a straight line. Think about a basketball player who can react quickly to where the defense is setting up and find just the right angle for their pass or shot. That’s what it means to be nimble.
 
 In other words, "agile" is a special kind of speed. It's a combination of two special kinds of speed. First, you need the raw physical speed for a certain kind of movement, namely, transitions. Our basketball player needs to be physically quick at moving side to side and spinning on their pivot foot. But second, and just as important, you need speed in analyzing the situation and making a decision about how to position yourself based on what you see. Our basketball player needs to be able to quickly determine which lanes are open so that their pass isn’t intercepted or their shot blocked before it can get to the net. It's the combination of both of these, __speed in transitions and speed in decision making__, that makes a player nimble.
 
