@@ -141,7 +141,7 @@
 - id: luke_manion
   permalink: /about/luke_manion
   full_name: Luke Manion
-  role: Principle Kubernetes Engineer
+  role: Principal Kubernetes Engineer
   image: luke_manion_color.jpg
 - id: shawn_lafferty
   permalink: /about/shawn_lafferty
@@ -161,7 +161,7 @@
 - id: dagan_henderson
   permalink: /about/dagan_henderson
   full_name: Dagan Henderson
-  role: Principle Engineer
+  role: Principal Engineer
   image: dagan_henderson_color.jpg
 - id: jennifer_russell
   permalink: /about/jennifer_russell
@@ -208,11 +208,6 @@
   full_name: Alex Floyd Marshall
   role: Cyber Security Engineer
   image: null
-- id: ajia_allen
-  permalink: /about/ajia_allen
-  full_name: Ajia Allen
-  role: Sr. Proposal Writer
-  image: null
 - id: tim_whitlock
   permalink: /about/tim_whitlock
   full_name: Tim Whitlock
@@ -253,25 +248,30 @@
   full_name: Luis Lahoz
   role: Sr. Full Stack Developer
   image: null
-- id: richard_santiago
-  permalink: /about/richard_santiago
-  full_name: Richard Santiago
-  role: Cyber Security Engineer
-  image: null
 - id: brian_sells
   permalink: /about/brian_sells
   full_name: Brian Sells
-  role: Product Manager
+  role: Director of Operations
   image: null
-- id: bhavik_chothani
-  permalink: /about/bhavik_chothani
-  full_name: Bhavik Chothani
-  role: Cloud Architect
+- id: sally_yoo
+  permalink: /about/sally_yoo
+  full_name: Sally Yoo
+  role: Sr. UX Researcher and Designer
+  image: null
+- id: bradley_kirchmann
+  permalink: /about/bradley_kirchmann
+  full_name: Bradley Kirchmann
+  role: Principal Engineer
   image: null
 - id: keerthi_chinthaguntla
   permalink: /about/keerthi_chinthaguntla
   full_name: Keerthi Chinthaguntla
   role: SRE Manager
+  image: null
+- id: edward_morgan
+  permalink: /about/edward_morgan
+  full_name: Edward Morgan
+  role: DevSecOps Manager
   image: null
 - id: patrick_roserie
   permalink: /about/patrick_roserie
