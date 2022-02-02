@@ -98,11 +98,6 @@
   full_name: Aaron Beavers
   role: Full Stack Developer
   image: aaron_beavers_color.jpg
-- id: arthur_chan
-  permalink: /about/arthur_chan
-  full_name: Arthur Chan
-  role: DevSecOps Engineer
-  image: arthur_chan_color.jpg
 - id: ethan_bienstock
   permalink: /about/ethan_bienstock
   full_name: Ethan Bienstock
@@ -283,3 +278,9 @@
   full_name: Jose Alvarez
   role: Principal DevSecOps Engineer
   image: null
+- id: ismael_kamdoum
+  permalink: /about/ismael_kamdoum
+  full_name: Ismael Kamdoum
+  role: Sr. DevSecOps Engineer
+  image: null
+  
