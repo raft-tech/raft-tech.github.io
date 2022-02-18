@@ -123,11 +123,6 @@
   full_name: John Machiras
   role: Sr. Software Engineer
   image: john_machairas_color.jpg
-- id: rob_murtha
-  permalink: /about/rob_murtha
-  full_name: Rob Murtha
-  role: Director of Strategic Growth
-  image: rob_murtha_color.jpg
 - id: gregory_behm
   permalink: /about/gregory_behm
   full_name: Gregory Behm
@@ -158,11 +153,6 @@
   full_name: Dagan Henderson
   role: Principal Engineer
   image: dagan_henderson_color.jpg
-- id: jennifer_russell
-  permalink: /about/jennifer_russell
-  full_name: Jennifer Russell
-  role: Project Manager
-  image: jennifer_russel_color.jpg
 - id: vallalar_sivakolundu
   permalink: /about/vallalar_sivakolundu
   full_name: Vallalar Sivakolundu
@@ -283,4 +273,9 @@
   full_name: Ismael Kamdoum
   role: Sr. DevSecOps Engineer
   image: null
+- id: matthew_odunjo
+  permalink: /about/matthew_odunjo
+  full_name: Matthew Odunjo
+  role: DevSecOps Engineer
+  image: matthew_odunjo_color.jpg
   
