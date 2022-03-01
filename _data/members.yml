@@ -93,6 +93,11 @@
   full_name: Paul Otto
   role: Principal Engineer
   image: paul_otto_color.jpg
+- id: brandon_sneider
+  permalink: /about/brandon_sneider
+  full_name: Brandon Sneider
+  role: Principal Platform Engineer
+  image: brandon_sneider.jpg
 - id: aaron_beavers
   permalink: /about/aaron_beavers
   full_name: Aaron Beavers
