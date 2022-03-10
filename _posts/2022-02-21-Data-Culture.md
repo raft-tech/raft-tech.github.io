@@ -3,7 +3,7 @@ layout: post
 title: "How Data Culture Transforms Organizations Into Perpetual Improvement Machines"
 short_title: "Data Culture - Whitepaper"
 date: 2022-02-21
-categories: data, culture, infrastructure, data science
+categories: 
 featimg: /assets/images/featimage/data-culture-small.jpeg
 bgimg: /assets/images/bgimg/data-culture-bg-big.png
 author: Ethan Bienstock
