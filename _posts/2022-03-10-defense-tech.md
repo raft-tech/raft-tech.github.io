@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Not all heroes wear capes, but many do work in defense tech"
-short_title: "Why Defense Tech"
+short_title: "Why Defense Tech?"
 date: 2022-03-10
 categories: 
 featimg: /assets/images/featimage/heros_Blog_Index.png
@@ -13,7 +13,7 @@ The Defense Department and all its components are innovating and constantly thin
  
 The Department of Defense (DoD) can’t do that without brilliant people, of course. 
  
-But here’s the catch:
+**But here’s the catch**:
  
 The defense industry (and government as a whole) often loses the fight for tech talent, as private sector tends to offer higher salaries to skilled technologists. That’s important, of course, but perhaps consider the value of mission, outcome and difference-making. Consider doing work that makes an impact, that changes our country – for the better.
  
@@ -35,6 +35,6 @@ Private companies can help the federal government and defense solve complex prob
  
 Those programs are becoming increasingly important, especially with the Ukraine-Russia war.
  
-In fact, the Defense Department [released a notice](https://www.defense.gov/News/News-Stories/Article/Article/2959378/dod-in-search-of-disruptive-technologies-that-will-enable-the-warfighter/) just yesterday about searching for “disruptive technologies that will enable the warfighter.” It stated that our adversaries, like Russia and China, are heavily investing in R&D for various capabilities, such as cyber, space, hypersonics, autonomy and nuclear. 
+In fact, the Defense Department [released a notice](https://www.defense.gov/News/News-Stories/Article/Article/2959378/dod-in-search-of-disruptive-technologies-that-will-enable-the-warfighter/) earlier this week about searching for “disruptive technologies that will enable the warfighter.” It stated that our adversaries, like Russia and China, are heavily investing in R&D for various capabilities, such as cyber, space, hypersonics, autonomy and nuclear. 
  
 And we should be doing the same.
