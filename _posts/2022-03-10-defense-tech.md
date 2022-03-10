@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Not all heroes wear capes, but many *do* work in defense tech"
+title: "Not all heroes wear capes, but many do work in defense tech"
 short_title: "Why Defense Tech"
 date: 2022-03-10
 categories: 
