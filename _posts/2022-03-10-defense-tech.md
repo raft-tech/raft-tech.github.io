@@ -5,7 +5,7 @@ short_title: "Why Defense Tech"
 date: 2022-03-10
 categories: 
 featimg: /assets/images/featimage/heros_Blog_Index.png
-bgimg: /assets/images/bgimg/heros_Blog_Index_FINAL.png
+bgimg: /assets/images/bgimg/Terraform_Blog_Header.png
 author: Shubhi Mishra
 ---
  
