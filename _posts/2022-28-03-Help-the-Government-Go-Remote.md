@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Let’s Help the Government Go Remote"
-short_title: "Government Going Remote"
+short_title: "Government's Transition to Remote"
 date: 2022-03-28
 categories: 
 featimg: /assets/images/featimage/remote-small.jpeg
