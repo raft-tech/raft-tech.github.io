@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Let’s Help the Government Go Remote"
-short_title: "Government's Transition to Remote"
-date: 2022-03-28
+title: "Putting the Security Back in DevSecOps in an Open Source, Cloud-Native World"
+short_title: "Security in DevSecOps"
+date: 2022-03-29
 categories: 
-featimg: /assets/images/featimage/remote-small.jpeg
-bgimg: /assets/images/bgimg/remote-large.jpeg
+featimg: /assets/images/featimage/Shift_Left_small.png
+bgimg: /assets/images/featimage/Shift_Left_small.png
 author: Shubhi Mishra
 ---
 
