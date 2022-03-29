@@ -5,7 +5,7 @@ short_title: "Security in DevSecOps"
 date: 2022-03-29
 categories: 
 featimg: /assets/images/featimage/Shift_Left_small.png
-bgimg: /assets/images/featimage/Shift_Left_small.png
+bgimg: /assets/images/bgimg/security-large.jpeg
 author: Shubhi Mishra
 ---
 
