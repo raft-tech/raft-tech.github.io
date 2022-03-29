@@ -13,7 +13,7 @@ As technology advances and adversaries mature their cyber tactics, America needs
  
 Congress introduced the [Strengthening American Cybersecurity Act of 2022](https://www.congress.gov/bill/117th-congress/senate-bill/3600/text) for this very reason – we can’t stay stagnant. What worked last year needs to evolve. The act says CISA must perform ongoing and continuous assessments of federal risk posture – especially as the U.S. continues to support Ukraine, and Russian-sponsored attacks are on the uptick. It also says agencies and critical infrastructure operators need to report cyberattacks to CISA and authorize FedRAMP so agencies can quickly adopt secure cloud technologies. 
  
-**But who’s responsible for securing applications in the ecosystem?**
+#### But who’s responsible for securing applications in the ecosystem?
  
 A [2021 GitLab survey](https://about.gitlab.com/developer-survey/) found the most practiced development methodology is DevOps/DevSecOps because of its code quality, faster time to market and security. But the weight of securing applications shouldn’t just be put on DevSecOps teams – there should be a shared responsibility including the developers building the IT and the security teams finding the vulnerabilities. 
  
@@ -29,7 +29,7 @@ Most respondents rated their organization’s security efforts as “good,” ra
  
 This becomes challenging given the ratio of security to product teams, so it needs to be a shared responsibility. Drop the finger-pointing over who did and didn’t catch what vulnerabilities, and work together to ensure all efforts are pointed to the same cause. 
  
-**How do we fix this?**
+#### How do we fix this?
  
 Changing the above mindset is cultural, but there are also ways we can tackle this through processes:
  
@@ -38,7 +38,7 @@ Changing the above mindset is cultural, but there are also ways we can tackle th
 - **Implement security as a culture**: Rather than only investing in privacy security training that focuses on when things happen, organizations should invest in training like [Security Warrior](https://www.securecodewarrior.com/), which helps developers secure code. Also, incorporate the [OWASP Top Ten](https://owasp.org/www-project-top-ten/) into your team’s training. Use [Sigstore](https://www.sigstore.dev/) and [Cosign](https://github.com/sigstore/cosign) to verify Software -- [Chainguard is leading by example](https://www.prnewswire.com/news-releases/raft-llc-announces-its-partnership-with-chainguard-inc-301468671.html). 
 - **Better tracing**: Consider the use of tracing and collecting telemetry data across distributed microservices like [OpenTelemetry](https://opentelemetry.io/) to analyze your software’s performance and behavior. Catch anomalies in action before they cause trouble. 
 - **Define and balance technical debt**: Decide when it’s acceptable to have technical debt, and when it’s not, because you’ll always be behind on resources. Share this definition with your organization, as it’s the responsibility of engineering leadership to make sure it’s in line with the current problems it’s working to solve and the impact being made. [Hyrum’s Law](https://www.hyrumslaw.com/) can help. 
-- **Bridge the DevSecOps gap with Zero Trust**: Great starting point is the [DoD's Enterprise DevSecOps Reference Design Guide](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf) on how to incorporate Zero Trust into your architecture.
+- **Bridge the DevSecOps gap with Zero Trust**: Great starting point is the [DoD's Enterprise DevSecOps Reference Design Guide](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf). Adopt architecure based on your organizational needs. 
 
  
 If your organization is facing obstacles implementing these security practices or finding it tough to make that cultural shift, we are always shifting left at Raft – come ask us how we do it. 
