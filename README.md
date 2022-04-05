@@ -31,7 +31,7 @@ Welcome to Raft! We work together to solve hard problems and we're glad you've d
 
 1. Create a new branch from `master`
 2. Update the `_data/members.yml` to add your details and add a new file to the `_about/` folder
-3. Send a Pull Request from your newly created branch in (1) to `master` and tag `barakstout`, `meissadia`, or `turbomarc` as reviewers
+3. Send a Pull Request from your newly created branch in (1) to `master` and tag `barakstout`, `meissadia`, or `omnipresent07` as reviewers
 
 Below is a detailed explanation of each step:
 
@@ -109,7 +109,7 @@ layout: about/profile <-- do not change
 - Change `master` to `staging`, copy/paste the URL for the issue you created in (0) and type in the body of the PR `Addresses <copy paste URL of the ticket>`, and click `Create pull request`
 - ![Create Pull Request](https://i.imgur.com/3PbIWIL.png)
 - Ensure the commits are going into `staging` from `your branch` and the number of files changed is still 2
-- Tag `barakstout`, `meissadia`, or `turbomarc` as reviewers
+- Tag `barakstout`, `meissadia`, or `omnipresent07` as reviewers
 - The reviewers will review and merge your Pull Request. Once that is done, the changes will show up on the staging site <https://raft-website.herokuapp.com/> . Once the changes look good to the reviewer, the reviewer will open a Pull Request for the `staging` branch to be merged into the `master`. Once that Pull Reuqest is merged in by the reviewer, the changes will show up on the main website - <http://goraft.tech/>
 
 ## Adding yourself to the About page (For Devs)
@@ -143,7 +143,7 @@ layout: about/profile <--  do not change
 ```
 
 - If you wanted to add your image, title it `firstname_lastname.jpg` and put it in `assets/profiles/`
-- Open a PR for your feature branch to be merged to `staging`. Review your PR. Tag `barakstout`, `meissadia`, or `turbomarc` as reviewers.
+- Open a PR for your feature branch to be merged to `staging`. Review your PR. Tag `barakstout`, `meissadia`, or `omnipresent07` as reviewers.
 
 ## Creating a blog post (Non Devs)
 
@@ -168,7 +168,7 @@ A blog post comprises for three things:
     - (a) The title of the issue should be `Name of the blog title - by John Doe`
     - (b) The body of the ticket drag and drop the two images -- one for the [index page](https://goraft.tech/blog/) and another for the actual blog page (exampel: [here](https://goraft.tech/2021/02/24/diversity-is-our-superpower.html)). Also include the URL of the blog post from HackMD from ()
 3. Click `Submit New Issue`
-4. Tag either `barakstout`, `meissadia`, or `turbomarc` for review
+4. Tag either `barakstout`, `meissadia`, or `omnipresent07` for review
 
 ## Creating a blog post (For Devs)
 
@@ -191,11 +191,26 @@ A blog post comprises for three things:
    - add the new markdown file to `_/posts` in the format `YYYY-DD-MM-title-of-the-post.md`
    - add the background image to `assets/images/bgimage`
    - add the index image to `assets/images/featimage`
-3. Open a PR for `barakstout`, `meissadia`, or `turbomarc` for review
+3. Open a PR for `barakstout`, `meissadia`, or `omnipresent07` for review
 
 ## Running locally (For Devs)
 
-To run the site locally from source, you will need to [Install Jekyll](https://jekyllrb.com/docs/) and then:
+To run the site locally from source, you will need to [Install Jekyll](https://jekyllrb.com/docs/) for which you'll need Ruby. We recommend:
+
+### Install RVM
+```
+➜ curl -sSL https://get.rvm.io | bash -s stable
+➜  ~ rvm version
+rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+```
+
+### Install Ruby
+
+```
+➜  ~ rvm install "ruby-2.6.4"
+```
+
+### Clone and run locally
 
 ```bash
 cd ~/
