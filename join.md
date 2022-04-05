@@ -4,7 +4,7 @@ title: Join
 permalink: /join/
 main_nav: true
 order: 4
-featimg: /assets/banner.jpg
+featimg: /assets/join.jpg
 header: Be a part of our journey!
 ---
 
