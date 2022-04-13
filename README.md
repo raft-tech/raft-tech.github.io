@@ -21,6 +21,7 @@ Table of Contents:
   - [Creating a blog post (Non Devs)](#creating-a-blog-post-non-devs)
   - [Creating a blog post (For Devs)](#creating-a-blog-post-for-devs)
   - [Running locally (For Devs)](#running-locally-for-devs)
+  - [Docker Compose for local dev (For Devs)](#docker-compose-for-local-dev-for-devs)
   - [Dockerizing (For Devs)](#dockerizing-for-devs)
   - [Kubeconfig files (For Devs)](#kubeconfig-files-for-devs)
   
@@ -229,6 +230,9 @@ bundle exec jekyll serve
 
 M1 Based Macs follow the instructions [here](https://mac.install.guide/ruby/13.html) to install ruby
 
+## Docker Compose for local dev (For Devs)
+
+Simply clone the repo cd into the root folder in terminal and run `docker-compose up` point your browser to `http://localhost:4000` and get to work.
 ## Dockerizing (For Devs)
 
 Build and deploy locally using [Docker](https://www.docker.com/)
