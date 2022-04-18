@@ -1,3 +1,14 @@
+---
+layout: post
+title: "How Do You Make Security Agile?"
+short_title: "Agile Security"
+date: 2022-04-20
+categories:
+featimg: /assets/images/featimage/DEFx Boston Poster_cropped.jpeg
+bgimg: /assets/images/bgimg/DEFx Boston Panel.jpg
+author: Alex Floyd Marshall
+---
+
 # How Do You Make Security Agile? 
 
 ## Some Reflections From DEFx Boston 2022 
