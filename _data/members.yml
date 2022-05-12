@@ -18,11 +18,6 @@
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
   image: barak_stout_color.jpg
-- id: brandon_sneider
-  permalink: /about/brandon_sneider
-  full_name: Brandon Sneider
-  role: Principal Platform Engineer
-  image: brandon_sneider_color.png
 - id: christine_so
   permalink: /about/christine_so
   full_name: Christine So
@@ -248,4 +243,9 @@
   full_name: Matthew Odunjo
   role: DevSecOps Engineer
   image: matthew_odunjo_color.jpg
+- id: brandon_sneider
+  permalink: /about/brandon_sneider
+  full_name: Brandon Sneider
+  role: Principal Platform Engineer
+  image: brandon_sneider_color.png
   
