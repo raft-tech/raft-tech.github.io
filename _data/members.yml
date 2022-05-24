@@ -18,6 +18,26 @@
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
   image: barak_stout_color.jpg
+- id: meissa_dia
+  permalink: /about/meissa_dia
+  full_name: Meissa Dia
+  role: Sr. Frontend Engineer
+  image: meissa_dia_color.jpg
+- id: heather_stout
+  permalink: /about/heather_stout
+  full_name: Heather Stout
+  role: Operations Analyst
+  image: heather_stout_color.jpg
+- id: ongel_dasilva
+  permalink: /about/ongel_dasilva
+  full_name: Ongel Dasilva
+  role: Project Manager
+  image: null
+- id: jean_alle
+  permalink: /about/jean_alle
+  full_name: Jean Alle
+  role: Sr. User Analyst
+  image: null
 - id: christine_so
   permalink: /about/christine_so
   full_name: Christine So
@@ -48,26 +68,6 @@
   full_name: Le Chen
   role: Sr. DevSecOps Engineer
   image: le_chen_color.jpg
-- id: meissa_dia
-  permalink: /about/meissa_dia
-  full_name: Meissa Dia
-  role: Sr. Frontend Engineer
-  image: meissa_dia_color.jpg
-- id: heather_stout
-  permalink: /about/heather_stout
-  full_name: Heather Stout
-  role: Operations Analyst
-  image: heather_stout_color.jpg
-- id: ongel_dasilva
-  permalink: /about/ongel_dasilva
-  full_name: Ongel Dasilva
-  role: Project Manager
-  image: null
-- id: jean_alle
-  permalink: /about/jean_alle
-  full_name: Jean Alle
-  role: Sr. User Analyst
-  image: null
 - id: miles_reiter
   permalink: /about/miles_reiter
   full_name: Miles Reiter
