@@ -1,7 +1,7 @@
 - id: shubhi_mishra
   permalink: /about/shubhi_mishra
   full_name: Shubhi Mishra
-  role: 'Founder & CEO'
+  role: "Founder & CEO"
   image: shubhi_mishra_color.jpg
 - id: bhaarat_sharma
   permalink: /about/bhaarat_sharma
@@ -177,7 +177,7 @@
   permalink: /about/burt_walsh
   full_name: Burt Walsh
   role: Principal Data Engineer
-  image: null 
+  image: null
 - id: james_baker
   permalink: /about/james_baker
   full_name: James Baker
@@ -248,4 +248,8 @@
   full_name: Brandon Sneider
   role: Principal Platform Engineer
   image: brandon_sneider_color.png
-  
+- id: benjamin_marte
+  permalink: /about/benjamin_marte
+  full_name: Benjamin Marte
+  role: Fullstack R&D Engineer
+  image: null
