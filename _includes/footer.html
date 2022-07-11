@@ -3,15 +3,15 @@
   <div class="wrapper">
 
     <div class="footer-logo site-contact">
-      <img id='footer-logo-image' src="{{ site.baseurl }}/assets/raft-name-logo.png" />
+      <img id='footer-logo-image' src="{{ site.baseurl }}/assets/new-raft-logo.svg" />
     </div>
 
 
     <div class="site-contact address-social">
       <div class="flexbox">
         <div>
-          <b>Headquarters</b><br/>
-	        11800 Sunrise Valley Dr. #400 <br />
+          <b>Headquarters</b><br />
+          11800 Sunrise Valley Dr. #400 <br />
           Reston, VA 20191<br />
         </div>
         <div>
@@ -689,9 +689,9 @@
     var markers = [];
 
     for (var i = 0; i < cities.length; i++) {
-      
+
       var latLng = new google.maps.LatLng(cities[i].lat, cities[i].long);
-      
+
       var marker = new google.maps.Marker({
         position: latLng,
         label: {
@@ -703,7 +703,7 @@
         icon: "../assets/rafty-marker.png",
         optimized: true,
       });
-      
+
       markers.push(marker);
     }
 

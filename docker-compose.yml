@@ -1,6 +1,6 @@
 services:
   jekyll:
-    image: jekyll/jekyll:latest
+    image: jekyll/jekyll:stable
     command: jekyll serve --watch --force_polling --verbose --livereload
     ports:
       - 4000:4000
