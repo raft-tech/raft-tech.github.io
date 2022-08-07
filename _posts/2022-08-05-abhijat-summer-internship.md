@@ -5,7 +5,7 @@ short_title: "Shorter title"
 date: 2021-07-14
 categories:
 featimg: /assets/images/featimage/...
-bgimg: /assets/images/bgimg/...
+bgimg: /assets/images/bgimg/pipelines.png
 author: Angela Milash
 ---
 
