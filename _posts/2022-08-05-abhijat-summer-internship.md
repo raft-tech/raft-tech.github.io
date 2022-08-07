@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Really long blog title"
-short_title: "Shorter title"
-date: 2021-07-14
+title: "Abhijat Chauhan Raft Internship: Summer 2022"
+short_title: "Raft Internship"
+date: 2022-08-05
 categories:
 featimg: /assets/images/featimage/ci-cd.png
 bgimg: /assets/images/bgimg/pipelines.png
-author: Angela Milash
+author: Abhijat Chauhan
 ---
 
 ### Before coming to this internship
