@@ -20,7 +20,7 @@ At X-Force, I worked with Brian on a full-stack development project. He tasked m
 
 ### Raft Internship
 
-Throughout my Internship, I had the opportunity to work on multiple aspects of different tech projects, specifically Gravity and Data Fabric.
+Throughout my Internship, I had the opportunity to work on multiple aspects of different tech projects, specifically Gravity ([SpaceCAMP](https://spacecamp.il2.dso.mil/#/home)'s software plaftorm) and [Data Fabric](https://datafabric.goraft.tech/).
 
 #### SpaceCAMP/Gravity
 
@@ -57,7 +57,7 @@ I was assigned to look into testing the Data Ingestion process with Trino, Postg
 
 ##### Kafka Producers
 
-This probably was one of my biggest projects here at Raft. There were many phases with this project; the initial phase was learning about Kafka, how it works, and how to build my own producer and consumer. The next phase was investigating the Kafka integration with the Data Fabric platform. The final phase was the development and testing phase where I developed the producer (with a ton of help from Edward, James Mullinix, Levi, Dane Curran, Ben Marte, and Karthik Appukuttan) and tested the producer, and the demo phase. For more information, see my technical post in the `cp-kafka-producer.md` file under `data-fabric/df-docs/content/docs` in the `Data Fabric` Github Repo.
+This probably was one of my biggest projects here at Raft. There were many phases with this project; the initial phase was learning about Kafka, how it works, and how to build my own producer and consumer. The next phase was investigating the Kafka integration with the Data Fabric platform. The final phase was the development and testing phase where I developed the producer (with a ton of help from Edward, James Mullinix, Levi, Dane Curran, Ben Marte, and Karthik Appukuttan) and tested the producer, and the demo phase. 
 
 ### Conclusion
 
