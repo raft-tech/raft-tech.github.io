@@ -11,12 +11,13 @@ author: Benjamin Marte
 
 Being a Full Stack R&D Developer at [Raft](https://goraft.tech) comes with a few interesting challenges to solve. In this blog post, we will discuss one of the latest problems my team and I ran into during the development of [DataFabric](https://datafabric.goraft.tech).
 
-DataFabric, is a pretty complex app that has integrations with many other apps (Datahub, Superset, Kafka, Trino to name a few) and cutting-edge technologies (Docker, Kubernetes, NextJS, and more). Integrating with these technologies and making them play nice with each other can sometimes lead to going down a rabbit hole that has no end in sight.
+Data Fabric, is a complex data platform assembled from open source technologies, [Datahub](https://datahubproject.io/), [Superset](https://superset.apache.org/), [Kafka](https://kafka.apache.org/) and [Trino](https://trino.io/) to name a few. Undreneath the hood, Data Fabric is a container based platform, utilizing [Docker](https://www.docker.com/) and [Kubernetes](https://kubernetes.io/). There are many nuts and bolts to Data Fabric, including many integration points among these technologies. Making them play nice with each other can sometimes lead to going down a deep rabbit hole that has no end in sight.
+
+_Would you like to continue?_
 
 #### The NextJS environment variable problem
 
-We use [NextJS](https://nextjs.org/) for DataFabric’s front end, it is one of the best Reactjs app frameworks with a ton of features that make it a joy to work with but sometimes those features can pose a unique challenge.
-If you’ve ever created an app and used docker you always end up using environment variables to customize some portions of your app based on the environment it will be deployed on. NextJS takes app security seriously, this is why to be able to access environment variables in your app's user interface (UI) they need to be prefixed with `NEXT_PUBLIC_`.
+We use [NextJS](https://nextjs.org/) for Data Fabric’s front end. It's one of the best Reactjs app frameworks with a ton of features that make it a joy to work with but sometimes those features can pose a unique challenge. If you’ve ever created an app and used docker you always end up using environment variables to customize some portions of your app based on the environment it will be deployed on. NextJS takes app security seriously, this is why to be able to access environment variables in your app's user interface (UI) they need to be prefixed with `NEXT_PUBLIC_`.
 
 Looking at their docs for [exposing environment variables to the browser](https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser) I want to bring your attention to this portion where it states:
 
