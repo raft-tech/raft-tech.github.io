@@ -1,7 +1,7 @@
 - id: shubhi_mishra
   permalink: /about/shubhi_mishra
   full_name: Shubhi Mishra
-  role: 'Founder & CEO'
+  role: "Founder & CEO"
   image: shubhi_mishra_color.jpg
 - id: bhaarat_sharma
   permalink: /about/bhaarat_sharma
@@ -13,21 +13,31 @@
   full_name: Patrick Asata
   role: Solutions Architect
   image: null
-- id: austine_luyegu
-  permalink: /about/austine_luyegu
-  full_name: Austine Luyegu
-  role: Sr. Network Engineer
-  image: austine_luyegu_color.jpg
 - id: barak_stout
   permalink: /about/barak_stout
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
   image: barak_stout_color.jpg
-- id: brandon_sneider
-  permalink: /about/brandon_sneider
-  full_name: Brandon Sneider
-  role: Principal Platform Engineer
-  image: brandon_sneider_color.png
+- id: meissa_dia
+  permalink: /about/meissa_dia
+  full_name: Meissa Dia
+  role: Sr. Frontend Engineer
+  image: meissa_dia_color.jpg
+- id: heather_stout
+  permalink: /about/heather_stout
+  full_name: Heather Stout
+  role: Operations Analyst
+  image: heather_stout_color.jpg
+- id: ongel_dasilva
+  permalink: /about/ongel_dasilva
+  full_name: Ongel Dasilva
+  role: Project Manager
+  image: null
+- id: jean_alle
+  permalink: /about/jean_alle
+  full_name: Jean Alle
+  role: Sr. User Analyst
+  image: null
 - id: christine_so
   permalink: /about/christine_so
   full_name: Christine So
@@ -58,36 +68,6 @@
   full_name: Le Chen
   role: Sr. DevSecOps Engineer
   image: le_chen_color.jpg
-- id: vamsi_priya_adipoodi
-  permalink: /about/vamsi_priya_adipoodi
-  full_name: Vasmi Priya Adipoodi
-  role: Software Engineer
-  image: null
-- id: meissa_dia
-  permalink: /about/meissa_dia
-  full_name: Meissa Dia
-  role: Sr. Frontend Engineer
-  image: meissa_dia_color.jpg
-- id: heather_stout
-  permalink: /about/heather_stout
-  full_name: Heather Stout
-  role: Operations Analyst
-  image: heather_stout_color.jpg
-- id: dan_mutombo
-  permalink: /about/dan_mutombo
-  full_name: Dan Mutombo
-  role: User Analyst
-  image: null
-- id: ongel_dasilva
-  permalink: /about/ongel_dasilva
-  full_name: Ongel Dasilva
-  role: Project Manager
-  image: null
-- id: jean_alle
-  permalink: /about/jean_alle
-  full_name: Jean Alle
-  role: Sr. User Analyst
-  image: null
 - id: miles_reiter
   permalink: /about/miles_reiter
   full_name: Miles Reiter
@@ -113,16 +93,11 @@
   full_name: Mike Mancuso
   role: Visual Designer
   image: mike_mancuso_color.jpg
-- id: andrew_bottoms
-  permalink: /about/andrew_bottoms
-  full_name: Andrew Bottoms
+- id: andrew_jameson
+  permalink: /about/andrew_jameson
+  full_name: Andrew Jameson
   role: Technical Lead
   image: andrew_bottoms_color.jpg
-- id: jorge_gonzalez
-  permalink: /about/jorge_gonzalez
-  full_name: Jorge Gonzalez
-  role: Full Stack Engineer
-  image: jorge_gonzalez_color.jpg
 - id: john_machairas
   permalink: /about/john_machairas
   full_name: John Machiras
@@ -143,16 +118,6 @@
   full_name: Shawn Lafferty
   role: Sr. Product Manager
   image: shawn_lafferty_color.jpg
-- id: sreedevi_purayannur
-  permalink: /about/sreedevi_purayannur
-  full_name: Sreedevi Purayannur
-  role: Sr. UX/UI Research and Designer 
-  image: sreedevi_purayannur_color.jpg
-- id: valerie_collignon
-  permalink: /about/valerie_collignon
-  full_name: Valerie Collignon
-  role: Project Manager
-  image: valerie_collignon_color.jpg
 - id: dagan_henderson
   permalink: /about/dagan_henderson
   full_name: Dagan Henderson
@@ -212,7 +177,7 @@
   permalink: /about/burt_walsh
   full_name: Burt Walsh
   role: Principal Data Engineer
-  image: null 
+  image: null
 - id: james_baker
   permalink: /about/james_baker
   full_name: James Baker
@@ -273,14 +238,18 @@
   full_name: Jose Alvarez
   role: Principal DevSecOps Engineer
   image: null
-- id: ismael_kamdoum
-  permalink: /about/ismael_kamdoum
-  full_name: Ismael Kamdoum
-  role: Sr. DevSecOps Engineer
-  image: null
 - id: matthew_odunjo
   permalink: /about/matthew_odunjo
   full_name: Matthew Odunjo
   role: DevSecOps Engineer
   image: matthew_odunjo_color.jpg
-  
+- id: brandon_sneider
+  permalink: /about/brandon_sneider
+  full_name: Brandon Sneider
+  role: Principal Platform Engineer
+  image: brandon_sneider_color.png
+- id: benjamin_marte
+  permalink: /about/benjamin_marte
+  full_name: Benjamin Marte
+  role: Fullstack R&D Engineer
+  image: null
