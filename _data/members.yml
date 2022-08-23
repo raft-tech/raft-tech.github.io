@@ -12,7 +12,7 @@
   permalink: /about/patrick_asata
   full_name: Patrick Asata
   role: Solutions Architect
-  image: null
+  image: patrick_asata_color.png
 - id: barak_stout
   permalink: /about/barak_stout
   full_name: Barak Stout
@@ -227,7 +227,7 @@
   permalink: /about/edward_morgan
   full_name: Edward Morgan
   role: DevSecOps Manager
-  image: null
+  image: edward_morgan_color.jpg
 - id: patrick_roserie
   permalink: /about/patrick_roserie
   full_name: Patrick Roserie
@@ -248,4 +248,93 @@
   full_name: Brandon Sneider
   role: Principal Platform Engineer
   image: brandon_sneider_color.png
-  
+- id: daniel_morrison
+  permalink: /about/daniel morrison
+  full_name: Daniel Morrison
+  role: Sr. DevSecOps Engineer
+  image: null
+- id: venessa_muoio
+  permalink: /about/venessa_muoio
+  full_name: Venessa Muoio
+  role: Recruiting Coordinator
+  image: null
+- id: brienne_gilvin
+  permalink: /about/brienne_gilvin
+  full_name: Brienne Gilvin
+  role: Program Manager
+  image: null
+- id: tejendra_patel
+  permalink: /about/tejendra_patel
+  full_name: Tejendra Patel
+  role: Principal Full Stack Engineer
+  image: null
+- id: kelley_williams
+  permalink: /about/kelley_williams
+  full_name: Kelley Williams
+  role: Product Manager
+  image: null
+- id: steven_morgan
+  permalink: /about/steven_morgan
+  full_name: Steven Morgan
+  role: Chief Data Engineer 
+  image: null
+- id: steve_nino
+  permalink: /about/steve_nino
+  full_name: Steve Nino
+  role: Sr. Product Manager
+  image: null
+- id: emily_schwartz
+  permalink: /about/emily_schwartz
+  full_name: Emily Schwartz
+  role: Technical Recruiter
+  image: null
+- id: griselle_jimenez
+  permalink: /about/griselle_jimenez
+  full_name: Griselle Jimenez
+  role: Sr. Fullstack Developer
+  image: null
+- id: carlton_carpenter
+  permalink: /about/carlton_carpenter
+  full_name: Carlton Carpenter
+  role: Sr. Technical Recruiter
+  image: null
+- id: dane_curran 
+  permalink: /about/dane_curran 
+  full_name: Dane Curran 
+  role: Principle Data Engineer 
+  image: null
+- id: victoria_amoroso
+  permalink: /about/victoria_amoroso
+  full_name: Victoria Amoroso
+  role: Senior UX Researcher
+  image: null
+- id: levi_le
+  permalink: /about/levi_le
+  full_name: Levi Le
+  role: Software Engineer
+  image: null
+- id: cody_allen
+  permalink: /about/cody_allen
+  full_name: Cody Allen
+  role: Cybersecurity Engineer
+  image: null
+- id: diana_dong
+  permalink: /about/diana_dong 
+  full_name: Diana Dong 
+  role: Sr. UX Researcher/Designer  
+  image: null
+- id: joseph_call
+  permalink: /about/joseph_call
+  full_name: Joseph Call
+  role: Principal Platform Engineer 
+  image: null
+- id: michael_remy
+  permalink: /about/michael_remy
+  full_name: Michael Remy
+  role: Software Engineer
+  image: null
+- id: jakob_buikema
+  permalink: /about/jakob_buikema
+  full_name: Jakob Buikema
+  role: Chief Growth Officer
+  image: null
