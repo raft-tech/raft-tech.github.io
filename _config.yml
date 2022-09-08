@@ -24,7 +24,7 @@ description: >
 #baseurl: "/" # the subpath of your site, e.g. /blog/
 #url: "http://goraft.tech" # the base hostname & protocol for your site
 cover: "/assets/header_image_big.jpg"
-logo: "/assets/logo.png"
+logo: "/assets/new-raft-logo.svg"
 
 # Build settings
 markdown: kramdown
@@ -44,10 +44,10 @@ jekyll-archives:
   enabled:
     - categories
     - tags
-  layout: 'archive'
+  layout: "archive"
   permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+    category: "/category/:name/"
+    tag: "/tag/:name/"
 
 # Disqus comments
 # disqus_shortname: bencentra
@@ -96,13 +96,13 @@ collections:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/assets/logo.png"
-    fb_image_width: 612
-    fb_image_height: 605
-    fb_image_type: "image/png"
+  fb_image: "/assets/new-raft-logo.svg"
+  fb_image_width: 612
+  fb_image_height: 605
+  fb_image_type: "image/png"
 
-    twitter_image: "/assets/logo.png"
+  twitter_image: "/assets/new-raft-logo.svg"
 
-    os_repo: "https://github.com/raft-tech"
-    os_rcs_type: "git"
-    os_src: "https://github.com/raft-tech"
+  os_repo: "https://github.com/raft-tech"
+  os_rcs_type: "git"
+  os_src: "https://github.com/raft-tech"

@@ -1,7 +1,7 @@
 - id: shubhi_mishra
   permalink: /about/shubhi_mishra
   full_name: Shubhi Mishra
-  role: 'Founder & CEO'
+  role: "Founder & CEO"
   image: shubhi_mishra_color.jpg
 - id: bhaarat_sharma
   permalink: /about/bhaarat_sharma
@@ -13,16 +13,31 @@
   full_name: Patrick Asata
   role: Solutions Architect
   image: null
-- id: austine_luyegu
-  permalink: /about/austine_luyegu
-  full_name: Austine Luyegu
-  role: Sr. Network Engineer
-  image: austine_luyegu_color.jpg
 - id: barak_stout
   permalink: /about/barak_stout
   full_name: Barak Stout
   role: Sr. DevSecOps Engineer
   image: barak_stout_color.jpg
+- id: meissa_dia
+  permalink: /about/meissa_dia
+  full_name: Meissa Dia
+  role: Sr. Frontend Engineer
+  image: meissa_dia_color.jpg
+- id: heather_stout
+  permalink: /about/heather_stout
+  full_name: Heather Stout
+  role: Operations Analyst
+  image: heather_stout_color.jpg
+- id: ongel_dasilva
+  permalink: /about/ongel_dasilva
+  full_name: Ongel Dasilva
+  role: Project Manager
+  image: null
+- id: jean_alle
+  permalink: /about/jean_alle
+  full_name: Jean Alle
+  role: Sr. User Analyst
+  image: null
 - id: christine_so
   permalink: /about/christine_so
   full_name: Christine So
@@ -53,36 +68,6 @@
   full_name: Le Chen
   role: Sr. DevSecOps Engineer
   image: le_chen_color.jpg
-- id: vamsi_priya_adipoodi
-  permalink: /about/vamsi_priya_adipoodi
-  full_name: Vasmi Priya Adipoodi
-  role: Software Engineer
-  image: null
-- id: meissa_dia
-  permalink: /about/meissa_dia
-  full_name: Meissa Dia
-  role: Sr. Frontend Engineer
-  image: meissa_dia_color.jpg
-- id: heather_stout
-  permalink: /about/heather_stout
-  full_name: Heather Stout
-  role: Operations Analyst
-  image: heather_stout_color.jpg
-- id: dan_mutombo
-  permalink: /about/dan_mutombo
-  full_name: Dan Mutombo
-  role: User Analyst
-  image: null
-- id: ongel_dasilva
-  permalink: /about/ongel_dasilva
-  full_name: Ongel Dasilva
-  role: Project Manager
-  image: null
-- id: jean_alle
-  permalink: /about/jean_alle
-  full_name: Jean Alle
-  role: Sr. User Analyst
-  image: null
 - id: miles_reiter
   permalink: /about/miles_reiter
   full_name: Miles Reiter
@@ -91,137 +76,82 @@
 - id: paul_otto
   permalink: /about/paul_otto
   full_name: Paul Otto
-  role: Principal Engineer
+  role: Director of Engineering
   image: paul_otto_color.jpg
 - id: aaron_beavers
   permalink: /about/aaron_beavers
   full_name: Aaron Beavers
   role: Full Stack Developer
   image: aaron_beavers_color.jpg
-- id: arthur_chan
-  permalink: /about/arthur_chan
-  full_name: Arthur Chan
-  role: DevSecOps Engineer
-  image: arthur_chan_color.jpg
 - id: ethan_bienstock
   permalink: /about/ethan_bienstock
   full_name: Ethan Bienstock
   role: Sr. Data Engineer
   image: ethan_bienstock_color.jpg
-- id: john_willis
-  permalink: /about/john_willis
-  full_name: John Willis
-  role: Sr. Full Stack Developer
-  image: john_willis_color.jpg
 - id: mike_mancuso
   permalink: /about/mike_mancuso
   full_name: Mike Mancuso
   role: Visual Designer
   image: mike_mancuso_color.jpg
-- id: andrew_bottoms
-  permalink: /about/andrew_bottoms
-  full_name: Andrew Bottoms
+- id: andrew_jameson
+  permalink: /about/andrew_jameson
+  full_name: Andrew Jameson
   role: Technical Lead
   image: andrew_bottoms_color.jpg
-- id: jorge_gonzalez
-  permalink: /about/jorge_gonzalez
-  full_name: Jorge Gonzalez
-  role: Full Stack Engineer
-  image: jorge_gonzalez_color.jpg
 - id: john_machairas
   permalink: /about/john_machairas
   full_name: John Machiras
   role: Sr. Software Engineer
   image: john_machairas_color.jpg
-- id: rob_murtha
-  permalink: /about/rob_murtha
-  full_name: Rob Murtha
-  role: Director of Strategic Growth
-  image: rob_murtha_color.jpg
 - id: gregory_behm
   permalink: /about/gregory_behm
   full_name: Gregory Behm
   role: Sr. Data Scientist
   image: gregory_behm_color.jpg
-- id: hannah_maad
-  permalink: /about/hannah_maad
-  full_name: Hannah Maad
-  role: Project Engineer
-  image: hannah_maad_color.jpg
-- id: laura_garrison
-  permalink: /about/laura_garrison
-  full_name: Laura Garrison
-  role: Director of People and Services
-  image: laura_garrison_color.jpg
 - id: luke_manion
   permalink: /about/luke_manion
   full_name: Luke Manion
-  role: Principle Kubernetes Engineer
+  role: Principal Kubernetes Engineer
   image: luke_manion_color.jpg
 - id: shawn_lafferty
   permalink: /about/shawn_lafferty
   full_name: Shawn Lafferty
   role: Sr. Product Manager
   image: shawn_lafferty_color.jpg
-- id: sreedevi_purayannur
-  permalink: /about/sreedevi_purayannur
-  full_name: Sreedevi Purayannur
-  role: Sr. UX/UI Research and Designer 
-  image: sreedevi_purayannur_color.jpg
-- id: valerie_collignon
-  permalink: /about/valerie_collignon
-  full_name: Valerie Collignon
-  role: Project Manager
-  image: valerie_collignon_color.jpg
 - id: dagan_henderson
   permalink: /about/dagan_henderson
   full_name: Dagan Henderson
-  role: Principle Engineer
-  image: null
-- id: jennifer_russell
-  permalink: /about/jennifer_russell
-  full_name: Jennifer Russell
-  role: Project Manager
-  image: null
+  role: Principal Engineer
+  image: dagan_henderson_color.jpg
 - id: vallalar_sivakolundu
   permalink: /about/vallalar_sivakolundu
   full_name: Vallalar Sivakolundu
   role: Cloud Architect
-  image: null
+  image: vallalar_sivakolundu_color.jpg
 - id: tami_hrivnak
   permalink: /about/tami_hrivnak
   full_name: Tami Hrivnak
   role: Director of Innovation
-  image: null
-- id: jonathan_kuerschner
-  permalink: /about/jonathan_kuerschner
-  full_name: Jonathan Kuerschner
-  role: Sr. Program Manager
-  image: null
+  image: tami_hrivnak_color.jpg
 - id: cody_jackson
   permalink: /about/cody_jackson
   full_name: Cody Jackson
   role: Sr. Hardware Emulation Engineer
-  image: null
+  image: cody_jackson_color.jpg
 - id: christopher_skeen
   permalink: /about/christopher_skeen
   full_name: Christopher Skeen
-  role: Sr. Platform Engineer
-  image: null
+  role: Lead Software Engineer
+  image: christopher_skeen_color.jpg
 - id: kristen_shaw
   permalink: /about/kristen_shaw
   full_name: Kristen Shaw
   role: UX Manager
-  image: null
+  image: kristen_shaw_color.jpg
 - id: hitesh_sharma
   permalink: /about/hitesh_sharma
   full_name: Hitesh Sharma
   role: Sr. Platform Lead
-  image: null
-- id: john_valdez
-  permalink: /about/john_valdez
-  full_name: John Valdez
-  role: Principal Data Engineer
   image: null
 - id: corey_harmon
   permalink: /about/corey_harmon
@@ -233,31 +163,21 @@
   full_name: Alex Floyd Marshall
   role: Cyber Security Engineer
   image: null
-- id: ajia_allen
-  permalink: /about/ajia_allen
-  full_name: Ajia Allen
-  role: Sr. Proposal Writer
-  image: null
 - id: tim_whitlock
   permalink: /about/tim_whitlock
   full_name: Tim Whitlock
   role: Sr. DevSecOps Engineer
   image: null
-- id: sarah_espinosa
-  permalink: /about/sarah_espinosa
-  full_name: Sarah Espinosa
-  role: Talent Manager
-  image: null
 - id: jimmy_neville
   permalink: /about/jimmy_neville
   full_name: Jimmy Neville
   role: Sr. Platform Engineer
-  image: null
+  image: jimmy_neville_color.png
 - id: burt_walsh
   permalink: /about/burt_walsh
   full_name: Burt Walsh
   role: Principal Data Engineer
-  image: null 
+  image: null
 - id: james_baker
   permalink: /about/james_baker
   full_name: James Baker
@@ -267,4 +187,69 @@
   permalink: /about/aidan_stein
   full_name: Aidan Stein
   role: Platform Engineer
+  image: null
+- id: jimmy_bourqe
+  permalink: /about/jimmy_bourqe
+  full_name: Jimmy Bourque
+  role: Principal Engineer
+  image: jimmy_bourque_color.jpg
+- id: justin_olivarez
+  permalink: /about/justin_olivarez
+  full_name: Justin Olivarez
+  role: Sr. DevSecOps Engineer
+  image: null
+- id: luis_lahoz
+  permalink: /about/luis_lahoz
+  full_name: Luis Lahoz
+  role: Sr. Full Stack Developer
+  image: null
+- id: brian_sells
+  permalink: /about/brian_sells
+  full_name: Brian Sells
+  role: Director of Operations
+  image: null
+- id: sally_yoo
+  permalink: /about/sally_yoo
+  full_name: Sally Yoo
+  role: Sr. UX Researcher and Designer
+  image: null
+- id: bradley_kirchmann
+  permalink: /about/bradley_kirchmann
+  full_name: Bradley Kirchmann
+  role: Principal Engineer
+  image: null
+- id: keerthi_chinthaguntla
+  permalink: /about/keerthi_chinthaguntla
+  full_name: Keerthi Chinthaguntla
+  role: SRE Manager
+  image: null
+- id: edward_morgan
+  permalink: /about/edward_morgan
+  full_name: Edward Morgan
+  role: DevSecOps Manager
+  image: null
+- id: patrick_roserie
+  permalink: /about/patrick_roserie
+  full_name: Patrick Roserie
+  role: Principal Cybersecurity Manager
+  image: null
+- id: jose_alvarez
+  permalink: /about/jose_alvarez
+  full_name: Jose Alvarez
+  role: Principal DevSecOps Engineer
+  image: null
+- id: matthew_odunjo
+  permalink: /about/matthew_odunjo
+  full_name: Matthew Odunjo
+  role: DevSecOps Engineer
+  image: matthew_odunjo_color.jpg
+- id: brandon_sneider
+  permalink: /about/brandon_sneider
+  full_name: Brandon Sneider
+  role: Principal Platform Engineer
+  image: brandon_sneider_color.png
+- id: benjamin_marte
+  permalink: /about/benjamin_marte
+  full_name: Benjamin Marte
+  role: Fullstack R&D Engineer
   image: null
