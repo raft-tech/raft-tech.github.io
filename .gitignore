@@ -73,3 +73,5 @@ yarn-error.log
 /.sass-cache
 
 vendor/
+
+.vscode/
