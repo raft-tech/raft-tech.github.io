@@ -30,162 +30,51 @@ So this is how I see kubeflow currently fitting into the ecosystem. This is spec
 
 Here you can see the many different components of Kubeflow. The main components being the model training, and model serving. Which is what I'll run through here along with example codes and commands. The resources section below has the repository where you can get kubeflow from and start installing it. 
 
-## Training pipeline 
+## Training the Model
 
 Training pipeline can be done in a simple way. Here are some code examples of how to build a simple pipeline in Kubeflow. 
-
 ```
-# You may need to restart your notebook kernel after updating the kfp sdk
-!python3 -m pip install kfp --upgrade --user
-```
-```
-EXPERIMENT_NAME = 'Simple notebook pipeline'        # Name of the experiment in the UI
-BASE_IMAGE = 'tensorflow/tensorflow:2.0.0b0-py3'    # Base image used for components in the pipeline
+!python3 -m pip install kfp==1.8.14 --upgrade --user
 ```
 ```
 import kfp
 import kfp.dsl as dsl
-from kfp import compiler
-from kfp import components
+from kfp.v2.dsl import component, Input, Output, InputPath, OutputPath, Dataset, Metrics, Model, Artifact
 ```
 ```
-@dsl.python_component(
-    name='add_op',
-    description='adds two numbers',
-    base_image=BASE_IMAGE  # you can define the base image here, or when you build in the next step. 
+@component(
+    packages_to_install = ["pandas", "sklearn"],
 )
-def add(a: float, b: float) -> float:
-    '''Calculates sum of two arguments'''
-    print(a, '+', b, '=', a + b)
-    return a + b
-```
-```
-# Convert the function to a pipeline operation.
-add_op = components.func_to_container_op(
-    add,
-    base_image=BASE_IMAGE, 
+def load(data: Output[Dataset]):
+    import pandas as pd
+    from sklearn import datasets
+
+    dataset = datasets.load_iris()
+    df = pd.DataFrame(data=dataset.data, columns= ["Petal Length", "Petal Width", "Sepal Length", "Sepal Width"])
+    
+    df.to_csv(data.path)
+
+@component(
+    packages_to_install = ["pandas"],
 )
-```
-```
+def print_head(data: Input[Dataset]):
+    import pandas as pd
+    df = pd.read_csv(data.path)
+    print(df.head())
+
 @dsl.pipeline(
-   name='Calculation pipeline',
-   description='A toy pipeline that performs arithmetic calculations.'
+    name='Iris',
+    description='iris'
 )
-def calc_pipeline(
-   a: float =0,
-   b: float =7
-):
-    #Passing pipeline parameter and a constant value as operation arguments
-    add_task = add_op(a, 4) #Returns a dsl.ContainerOp class instance. 
-    
-    #You can create explicit dependency between the tasks using xyz_task.after(abc_task)
-    add_2_task = add_op(a, b)
-    
-    add_3_task = add_op(add_task.output, add_2_task.output)
+def pipeline():
+    load_task = load()
+    print_task = print_head(data=load_task.outputs["data"])
+
+kfp.compiler.Compiler(mode=kfp.dsl.PipelineExecutionMode.V2_COMPATIBLE).compile(
+    pipeline_func=pipeline,
+    package_path='iris_csv.yaml')
 ```
-```
-import re
-import requests
-from urllib.parse import urlsplit
-
-def get_istio_auth_session(url: str, username: str, password: str) -> dict:
-    """
-    Determine if the specified URL is secured by Dex and try to obtain a session cookie.
-    WARNING: only Dex `staticPasswords` and `LDAP` authentication are currently supported
-             (we default default to using `staticPasswords` if both are enabled)
-
-    :param url: Kubeflow server URL, including protocol
-    :param username: Dex `staticPasswords` or `LDAP` username
-    :param password: Dex `staticPasswords` or `LDAP` password
-    :return: auth session information
-    """
-    # define the default return object
-    auth_session = {
-        "endpoint_url": url,    # KF endpoint URL
-        "redirect_url": None,   # KF redirect URL, if applicable
-        "dex_login_url": None,  # Dex login URL (for POST of credentials)
-        "is_secured": None,     # True if KF endpoint is secured
-        "session_cookie": None  # Resulting session cookies in the form "key1=value1; key2=value2"
-    }
-
-    # use a persistent session (for cookies)
-    with requests.Session() as s:
-
-        ################
-        # Determine if Endpoint is Secured
-        ################
-        resp = s.get(url, allow_redirects=True)
-        if resp.status_code != 200:
-            raise RuntimeError(
-                f"HTTP status code '{resp.status_code}' for GET against: {url}"
-            )
-
-        auth_session["redirect_url"] = resp.url
-
-        # if we were NOT redirected, then the endpoint is UNSECURED
-        if len(resp.history) == 0:
-            auth_session["is_secured"] = False
-return auth_session
-        else:
-            auth_session["is_secured"] = True
-
-        ################
-        # Get Dex Login URL
-        ################
-        redirect_url_obj = urlsplit(auth_session["redirect_url"])
-
-        # if we are at `/auth?=xxxx` path, we need to select an auth type
-        if re.search(r"/auth$", redirect_url_obj.path): 
-            
-            #######
-            # TIP: choose the default auth type by including ONE of the following
-            #######
-            
-            # OPTION 1: set "staticPasswords" as default auth type
-            redirect_url_obj = redirect_url_obj._replace(
-                path=re.sub(r"/auth$", "/auth/local", redirect_url_obj.path)
-            )
-            # OPTION 2: set "ldap" as default auth type 
-            # redirect_url_obj = redirect_url_obj._replace(
-            #     path=re.sub(r"/auth$", "/auth/ldap", redirect_url_obj.path)
-            # )
-            
-        # if we are at `/auth/xxxx/login` path, then no further action is needed (we can use it for login POST)
-        if re.search(r"/auth/.*/login$", redirect_url_obj.path):
-            auth_session["dex_login_url"] = redirect_url_obj.geturl()
-
-        # else, we need to be redirected to the actual login page
-        else:
-            # this GET should redirect us to the `/auth/xxxx/login` path
-            resp = s.get(redirect_url_obj.geturl(), allow_redirects=True)
-            if resp.status_code != 200:
-                raise RuntimeError(
-                    f"HTTP status code '{resp.status_code}' for GET against: {redirect_url_obj.geturl()}"
-                )
-
-            # set the login url
-            auth_session["dex_login_url"] = resp.url
-
-        ################
-        # Attempt Dex Login
-        ################
-        resp = s.post(
-            auth_session["dex_login_url"],
-            data={"login": username, "password": password},
-            allow_redirects=True
-        )
-        if len(resp.history) == 0:
-            raise RuntimeError(
-                f"Login credentials were probably invalid - "
-                f"No redirect after POST to: {auth_session['dex_login_url']}"
-            )
-
-        # store the session cookies in a "key1=value1; key2=value2" string
-        auth_session["session_cookie"] = "; ".join([f"{c.name}={c.value}" for c in s.cookies])
-
-    return auth_session
-
-```
+After running this cell you'll get a iris_csv.yaml file and you can put that file into the training pipeline manually through the Kubeflow UI under the pipelines tab. Afterwards you'll have to create an experiment and a run then see the results of the run in the graph.
 
 ## Serving the model
 
