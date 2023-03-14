@@ -23,7 +23,7 @@ Machine Learning has really kicked off and we've seen impressive accomplishments
 
 Today I'm going to walk you through using Kubeflow for such an infrastructure. So what exactly is Kubeflow? Well, Kubeflow is an open-source platform, introduced by Google, for machine learning and MLOps built on top of Kubernetes. The different stages in a typical machine learning lifecycle are represented with different software components in Kubeflow, including model development, model training, model serving, and automated machine learning. 
 
-So this is how I see kubeflow currently fitting into the ecosystem. This is specifically for Data Fabric since this is where this work has been mostly done at.
+So this is how I see kubeflow currently fitting into the ecosystem. This is specifically for [Data Fabric](https://datafabric.goraft.tech/) since this is where this work has been mostly done at.
 
 ![](https://i.imgur.com/Hu10Vl6.png)
 
