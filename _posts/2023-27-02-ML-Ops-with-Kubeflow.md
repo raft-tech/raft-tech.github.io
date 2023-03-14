@@ -2,33 +2,33 @@
 layout: post
 title: "ML Ops with Kubeflow - by Joey Cheung"
 short_title: "Kubeflow pipeline"
-date: 2023-02-27
+date: 2023-03-14
 categories:
-featimg: /assets/images/featimage/...
-bgimg: /assets/images/bgimg/...
+featimg: /assets/images/featimage/kubeflow.jpeg
+bgimg: /assets/images/bgimg/kubeflow.jpeg
 author: Joey Cheung
 ---
 
 # Where we are now
-Machine learning (ML) is a field of inquiry devoted to understanding and building methods that "learn" – that is, methods that leverage data to improve performance on some set of tasks. It is seen as a part of artificial intelligence. As you can see in this diagram here.
+Machine learning (ML) is a field of inquiry devoted to understanding and building systems that "learn" – that is, systems that leverage data to improve performance on some set of tasks. It is seen as a part of artificial intelligence, as shown in the diagram below.
 
 ![](https://i.imgur.com/Gy2Lr5H.png)
 
 
-Machine Learning has really kicked off and those of us in the field of Machine Learning have had many accomplishments thus far with research and creation of all of models such as BERT, GPT, ChatGPT, etc. So this leads to the question: "What's next and how do we productionize these ML models?" Some of the bigger tech companies have this pipeline using tools such as Spark, Apache Airflow, and so on. While others have created their own Machine Learning infrastructure and look relatively like the following below: 
+Machine Learning has really kicked off and we've seen impressive accomplishments in this field of research with the creation of models such as BERT, GPT, ChatGPT, and others. So this leads to the question: "What's next and how do we productionize these ML models?" Some of the bigger tech companies have implemented ML pipelines using tools such as Spark and Apache Airflow,  while others, such as the Netflix recommendation algorithm shown below, have created their own Machine Learning infrastructure. 
 
 ![](https://i.imgur.com/aWqzHeO.jpg)
 
 # Introducing Kubeflow
 
-Today I'm going to walk you through using Kubeflow as such an infrastructure. So what exactly is Kubeflow? Well, Kubeflow is an open-source platform for machine learning and MLOps built on top of Kubernetes and introduced by Google. The different stages in a typical machine learning lifecycle are represented with different software components in Kubeflow, including model development, model training, model serving, and automated machine learning. 
+Today I'm going to walk you through using Kubeflow for such an infrastructure. So what exactly is Kubeflow? Well, Kubeflow is an open-source platform, introduced by Google, for machine learning and MLOps built on top of Kubernetes. The different stages in a typical machine learning lifecycle are represented with different software components in Kubeflow, including model development, model training, model serving, and automated machine learning. 
 
 So this is how I see kubeflow currently fitting into the ecosystem. This is specifically for Data Fabric since this is where this work has been mostly done at.
 
 ![](https://i.imgur.com/Hu10Vl6.png)
 
 
-Here you can see the many different components of Kubeflow. The main components being the model training, and model serving. Which is what I'll run through here along with example codes and commands. The resources section below has the repository where you can get kubeflow from and start installing it. 
+Here you can see the many different components of Kubeflow. The main components being the model training and model serving. I'll run through these components here, along with example code and commands. The resources section below has the repository where you can download Kubeflow and start installing it. 
 
 ## Training the Model
 
@@ -74,11 +74,11 @@ kfp.compiler.Compiler(mode=kfp.dsl.PipelineExecutionMode.V2_COMPATIBLE).compile(
     pipeline_func=pipeline,
     package_path='iris_csv.yaml')
 ```
-After running this cell you'll get a iris_csv.yaml file and you can put that file into the training pipeline manually through the Kubeflow UI under the pipelines tab. Afterwards you'll have to create an experiment and a run then see the results of the run in the graph.
+After running this cell you'll get an `iris_csv.yaml` file and you can put that file into the training pipeline manually through the Kubeflow UI under the pipelines tab. Afterwards you'll have to create an experiment and a run, then view the results of the run in the graph.
 
 ## Serving the model
 
-Serving the model is mostly done using kubectl commands. This as well as creating a yaml file to point to where the model lives. Here are some snippets of creating a test service using the famous iris training dataset as well as the results:
+Serving the model is mostly done using `kubectl` commands. Additionally you'll need to create a yaml file to point to where the model lives. Here are some snippets for creating a test service using the famous iris training dataset, as well as the results:
 
 ```
 kubectl create namespace kserve-test
@@ -117,7 +117,7 @@ SERVICE_HOSTNAME=$(kubectl get inferenceservice sklearn-iris -n kserve-test -o j
 curl -v -L -H "Host: ${SERVICE_HOSTNAME}" -H "Cookie: authservice_session=add_authservice_session_cookie_value_from_browser" http://${INGRESS_HOST}:${INGRESS_PORT}/v1/models/sklearn-iris:predict -d @./iris-input.json
 ```
 
-The output of the request below should look like such: 
+The output of the request above should look like this: 
 
 ```
 *   Trying 10.152.183.241...
@@ -145,18 +145,18 @@ The output of the request below should look like such:
 
 # Conclusion 
 
-Machine Learning has come a long way and the current state of ML is going towards how to better productionize these Machine Learning models and Kubeflow is one such possible way of doing just that.
+Machine Learning has come a long way and the current state of ML is trending towards how to better productionize these Machine Learning models, with Kubeflow being one possible way of doing just that.
 
 # Specifications for Kubeflow set up
 
-Minikube: 1.22.0
-Kustomize: 3.2.0
-Kubernetes: 1.21.0
-Kubeflow manifests: 1.6.0 and 1.6.1
+- Minikube: 1.22.0
+- Kustomize: 3.2.0
+- Kubernetes: 1.21.0
+- Kubeflow manifests: 1.6.0 and 1.6.1
 
 # Resources
 
-https://github.com/kubeflow/manifests#installation
-https://kserve.github.io/website/0.7/get_started/first_isvc/#run-your-first-inferenceservice
-https://v1-5-branch.kubeflow.org/docs/components/pipelines/
-https://github.com/raft-tech/data-fabric/tree/dev/examples/Kubeflow
+- https://github.com/kubeflow/manifests#installation
+- https://kserve.github.io/website/0.7/get_started/first_isvc/#run-your-first-inferenceservice
+- https://v1-5-branch.kubeflow.org/docs/components/pipelines/
+- https://github.com/raft-tech/data-fabric/tree/dev/examples/Kubeflow
