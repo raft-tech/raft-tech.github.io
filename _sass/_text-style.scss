@@ -1,0 +1,6 @@
+.space-mono-font {
+    @include space-mono-headers;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.2em;
+}

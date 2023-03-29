@@ -1,0 +1,53 @@
+.footer {
+    background: $footer-background;
+    padding: 44px 54px;
+    color: $text-white;
+
+    h5 {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+    .footer-header {
+        color: $footer-headers;
+    }
+
+    a, button.btn {
+        color: $gray;
+        text-decoration: none;
+
+        &:hover {
+            color: $text-white;
+            text-decoration: underline;
+        }
+    }
+
+    .list-unstyled {
+        
+        li {
+            margin-bottom: 16px;
+
+            a {
+                color: $gray;
+                text-decoration: none;
+                &:hover{
+                    color: $text-white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        margin: 1rem 0;
+
+        a {
+            margin: 0 1rem 0 0;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+}

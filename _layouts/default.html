@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en" data-bs-theme="dark">
 
   {% include head.html %}
 
@@ -7,11 +7,13 @@
 
     {% include header.html %}
 
-    <div class="page-content" id={{page.layout}}>
+    <div id={{page.layout}}>
         {{ content }}
     </div>
 
     {% include footer.html %}
+
+    {% include scripts.html %}
 
   </body>
 

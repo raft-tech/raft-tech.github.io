@@ -1,0 +1,30 @@
+.raft-btn, a.raft-btn {
+    background: $binary-black-gradient;
+    color: $text-white;
+    position: relative;
+    z-index: 1;
+    padding: 13px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.75s linear !important;
+
+    &:hover {
+        background: $cta-gradient;
+        color: $text-white;
+        transition: background 0.75s linear !important;
+        text-decoration: none !important;
+    }
+
+    &:before {
+        background: $cta-gradient;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 104%;
+        height: 120%;
+        content: "";
+        z-index: -1;
+        border-radius: 4px;
+        margin: -4px;
+    }
+}
