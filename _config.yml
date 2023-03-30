@@ -24,7 +24,7 @@ description: >
 #baseurl: "/" # the subpath of your site, e.g. /blog/
 #url: "http://goraft.tech" # the base hostname & protocol for your site
 cover: "/assets/header_image_big.jpg"
-logo: "/assets/new-raft-logo.svg"
+logo: "/assets/new-raft-logo-light.svg"
 
 # Build settings
 markdown: kramdown

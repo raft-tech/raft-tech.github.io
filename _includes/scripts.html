@@ -21,29 +21,6 @@
   $(document).ready(function () {
     // Default syntax highlighting
     hljs.initHighlightingOnLoad();
-
-    // Header
-    var menuToggle = $('#js-mobile-menu').unbind();
-    $('#js-navigation-menu').removeClass("show");
-    menuToggle.on('click', function (e) {
-      e.preventDefault();
-      $('#js-navigation-menu').slideToggle(function () {
-        if ($('#js-navigation-menu').is(':hidden')) {
-          $('#js-navigation-menu').removeAttr('style');
-        }
-      });
-    });
-
-    // Enable tooltips via Tippy.js
-    if (Array.isArray(window.tooltips)) {
-      window.tooltips.forEach(function (tooltip) {
-        var selector = tooltip[0];
-        var config = tooltip[1];
-        tippy(selector, config);
-      })
-    }
-  });
-
 </script>
 
 
@@ -98,8 +75,20 @@ window.cookieconsent.initialise({
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  */
 
+ 
+
 (() => {
     'use strict'
+
+    const setRaftLogo = () => {
+      const logo = document.getElementById('logo');
+      const theme = document.documentElement.getAttribute('data-bs-theme');
+      if (theme === 'dark') {
+        logo.setAttribute('src', '/assets/new-raft-logo-light.svg');
+      } else {
+        logo.setAttribute('src', '/assets/new-raft-logo-dark.svg');
+      }
+    }
   
     const storedTheme = localStorage.getItem('theme')
   
@@ -112,10 +101,13 @@ window.cookieconsent.initialise({
     }
   
     const setTheme = function (theme) {
+      const logo = document.getElementById('logo');
       if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.setAttribute('data-bs-theme', 'dark')
+        setRaftLogo();
       } else {
         document.documentElement.setAttribute('data-bs-theme', theme)
+        setRaftLogo();
       }
     }
   

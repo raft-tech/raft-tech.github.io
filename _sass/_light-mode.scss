@@ -1,0 +1,17 @@
+[data-bs-theme="light"] {
+    .search-icon, .hamburger {
+        color: $binary-black;
+    }
+
+    .search-result, .raft-search-input {
+        color: $text-white;
+    }
+
+    
+
+    #nav, #search-box {
+        h5, p {
+            color: $text-white;
+        }
+    }
+}
