@@ -38,16 +38,18 @@
         }
     }
 
-    .social-links {
-        margin: 1rem 0;
+}
 
-        a {
-            margin: 0 1rem 0 0;
+.social-links {
+    margin: 1rem 0;
 
-            &:hover {
-                text-decoration: none;
-            }
+    a {
+        margin: 0 1rem 0 0;
+        color: $gray;
+        text-decoration: none;
+        &:hover {
+            color: $text-white;
+            text-decoration: none;
         }
     }
-
 }

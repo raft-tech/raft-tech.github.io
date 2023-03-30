@@ -13,7 +13,7 @@
     line-height: 132%;
 }
 
-h1 {
+h1, .title {
     @include ubuntu-headers;
     font-weight: 700;
     font-size: 50px;

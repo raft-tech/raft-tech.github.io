@@ -1,0 +1,58 @@
+<div id="nav" class="container d-none">
+    <div class="row">
+        <div class="col-lg-7 offset-lg-1 col-md-12 offset-md-0">
+            <h5>Navigation</h5>
+            <ul class="list-unstyled">
+
+                    <li>
+                        <a href="/about" class="{nav-arrow-1">
+                            <span class="title">We are nerdy humans</span> <br />
+                            <span class="invisible">About us and our philosophies</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-arrow-2">
+                            <span class="title">doing the work we love</span> <br />
+                            <span class="invisible">Our Focus Areas and Innovation Toolkit</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/blog" class="nav-arrow-3">
+                            <span class="title">+ sharing it with the world.</span> <br />
+                            <span class="invisible">Read about Raft’s News + Insights</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/join" class="nav-arrow-4">
+                            <span class="title">Come <em>join</em> the fun.</span> <br />
+                            <span class="invisible">Careers at Team Raft</span>
+                        </a>
+                    </li>
+
+               <!--
+                 {% for item in site.data.navigation %}
+                    <li>
+                        <a href="{{ item.url }}" class="{{item.className}}">
+                            <span class="title">{{ item.title }}</span> <br />
+                            <span class="invisible">{{item.subtitle}}</span>
+                        </a>
+                    </li>
+                {% endfor %} 
+                -->
+
+        </div>
+        <div class="col-lg-3 col-md-12">
+            <h5>Raft + you</h5>
+            <p>We’re your solution. Not an acronym.  Whatever challenges your organization might face, you don’t have to solve it alone. Let’s talk about the work that can’t wait and Let’s Freakin’ Go!</p>
+            <p class="mt-5">
+                <a href="mailto:{{site.email}}" class="raft-btn">Contact Raft</a>
+            </p>
+            <div class="mt-5">
+                {% include social_links.html %}
+            </div>
+        </div>
+    </div>
+</div>

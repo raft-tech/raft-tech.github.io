@@ -1,3 +1,4 @@
+<!--
 <header class="navigation" id="navigation" role="banner">
   <div class="navigation-wrapper">
     <a href="{{ site.baseurl }}/" class="logo">
@@ -17,5 +18,31 @@
 				{% include nav_links.html %}
       </ul>
     </nav>
+  </div>
+</header>
+-->
+
+<header class="nav-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col text-start">
+        <a href="/">
+            <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}" class="logo">
+        </a>
+      </div>
+      <div class="col text-end">
+          <a href="#" class="search-icon" onclick="toggleSearch()" id="search-button">
+            <i class="bi bi-search"></i>
+          </a>
+          <a class="hamburger" href="#" id="hamburger">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x-lg"></i>
+          </a>
+      </div>
+    </div>
+    <div class="row">
+      {% include search.html %}
+      {% include nav.html %}
+    </div>
   </div>
 </header>
