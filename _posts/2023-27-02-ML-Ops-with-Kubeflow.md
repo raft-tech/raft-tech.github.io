@@ -9,7 +9,7 @@ bgimg: /assets/images/bgimg/kubeflow.jpeg
 author: Joey Cheung
 ---
 
-# Where we are now
+## Where we are now
 Machine learning (ML) is a field of inquiry devoted to understanding and building systems that "learn" – that is, systems that leverage data to improve performance on some set of tasks. It is seen as a part of artificial intelligence, as shown in the diagram below.
 
 ![](https://i.imgur.com/Gy2Lr5H.png)
@@ -19,7 +19,7 @@ Machine Learning has really kicked off and we've seen impressive accomplishments
 
 ![](https://i.imgur.com/aWqzHeO.jpg)
 
-# Introducing Kubeflow
+## Introducing Kubeflow
 
 Today I'm going to walk you through using Kubeflow for such an infrastructure. So what exactly is Kubeflow? Well, Kubeflow is an open-source platform, introduced by Google, for machine learning and MLOps built on top of Kubernetes. The different stages in a typical machine learning lifecycle are represented with different software components in Kubeflow, including model development, model training, model serving, and automated machine learning. 
 
@@ -143,7 +143,7 @@ The output of the request above should look like this:
 {"predictions": [1, 1]}
 ```
 
-# Conclusion 
+## Conclusion 
 
 Machine Learning has come a long way and the current state of ML is trending towards how to better productionize these Machine Learning models, with Kubeflow being one possible way of doing just that.
 
@@ -154,7 +154,7 @@ Machine Learning has come a long way and the current state of ML is trending tow
 - Kubernetes: 1.21.0
 - Kubeflow manifests: 1.6.0 and 1.6.1
 
-# Resources
+## Resources
 
 - https://github.com/kubeflow/manifests#installation
 - https://kserve.github.io/website/0.7/get_started/first_isvc/#run-your-first-inferenceservice
