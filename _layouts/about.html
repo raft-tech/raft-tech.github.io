@@ -2,6 +2,25 @@
 layout: default
 ---
 
+
+<ul class="members">
+{% for member in site.about %}
+  <li class="member">
+    <a class="member-card" href="/about/{{member.id}}">
+      <div class='plus-icon'>+</div>
+      <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}"
+        alt="{{member.name}}">
+      <div class='header'>
+        <h4 class='name'>{{member.full_name}}</h4>
+        {% if member.role %}<h5 class='role'>{{member.role}}</h5>{% endif %}
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>  
+<!-- 
+
+
 <div id="hero" class="site-header-container {% if page.featimg %}has-cover{% endif %} about-hero" {% if page.featimg %}style="background-image: url({{ page.featimg | prepend: site.baseurl }});"{% endif %}>
   <div class="about-cover scrim">
     <h1 class="hero-header title"> {{ page.header }}</h1>
@@ -32,7 +51,6 @@ layout: default
   <div id="team">
     <div class="wrapper">
       <h3>Our Team</h3>
-      <!-- <div id="map" style="margin-bottom: 2rem; height: 400px;"></div> -->
       {% assign members_with_images = site.data.members %}
       <ul class="members">
         {% for member in members_with_images %}
@@ -71,3 +89,5 @@ layout: default
     </div>
   </div>
 </div>
+
+  ..>

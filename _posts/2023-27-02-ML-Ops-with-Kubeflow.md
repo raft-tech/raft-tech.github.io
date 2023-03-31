@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ML Ops with Kubeflow - by Joey Cheung"
+title: "ML Ops with Kubeflow"
 short_title: "Kubeflow pipeline"
 date: 2023-03-14
 categories:
