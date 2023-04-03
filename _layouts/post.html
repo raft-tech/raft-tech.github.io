@@ -4,23 +4,25 @@ layout: default
 
 <div class="container">
   <div class="row flex-wrap-reverse">
-    <div class="col-lg-6 col-md-12 content-column">
+    <div class="col-lg-7 col-md-12 content-column">
+
       <h1>{{ page.title }}</h1>
+      
         {% if page.subtitle != nil %}
         <h3>{{page.subtitle}}</h3>
         {% endif %}
 
         {% for author in  site.about %}
           {% if author.full_name == page.author %}
-            {% assign authorUrl = author.permalink %}
-            <h5 class="mb-5">{{ page.date | date: "%B %-d, %Y" }} | Words by <a href="{{authorUrl}}">{{ page.author }}</a></h5>
+            {% assign author_url = author.permalink %}
+            <h5 class="mb-5">{{ page.date | date: "%B %-d, %Y" }} | Words by <a href="{{author_url}}">{{ page.author }}</a></h5>
           {% endif %}
         {% endfor %}
 
         {{content}}
     </div>
-    <div class="col"></div>
-    <div class="col-lg-5 col-md-12 mb-5 sidebar-column">
+    <div class="col-1"></div>
+    <div class="col-lg-4 col-md-12 mb-5 sidebar-column">
       <img src="{{page.featimg}}" alt="{{page.title}}">
     </div>
   </div>
@@ -33,7 +35,7 @@ layout: default
       <p class="related-content">You may also be interested in</p>
     </div>
   </div>
-  <div class="row">
+  <div class="row justify-content-center">
 
   {% for post in site.posts limit: 3 %}
     {% include article-thumbnail.html %}

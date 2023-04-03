@@ -8,15 +8,15 @@ bgimg: /assets/images/bgimg/pca.jpg
 author: Bhaarat Sharma
 ---
 
-**CIO Level Summary**
+## CIO Level Summary
 
--   Modern datasets often have a large number of features which add richness, but also complexity.
+- Modern datasets often have a large number of features which add richness, but also complexity.
 
--   In situations where the complexity of the data is too much either for humans to understand, or computers to process in a time efficient manner, we often want to reduce the number of features (dimensions) in the dataset.
+- In situations where the complexity of the data is too much either for humans to understand, or computers to process in a time efficient manner, we often want to reduce the number of features (dimensions) in the dataset.
 
--   When doing Dimensionality Reduction, we want to keep as much useful information as possible. The techniques described below (PCA, LDA, LASSO, RIDGE, Elastic Net, and Autoencoders) aim to mitigate issues of dimensionality while maintaining as much richness in the data as possible.
+- When doing Dimensionality Reduction, we want to keep as much useful information as possible. The techniques described below (PCA, LDA, LASSO, RIDGE, Elastic Net, and Autoencoders) aim to mitigate issues of dimensionality while maintaining as much richness in the data as possible.
 
-**What is Dimensionality and Why do we want to reduce it?**
+## What is Dimensionality and Why do we want to reduce it?
 
 Interesting and useful datasets are often (though not always) rather
 large. They generally have both many observations (for example, data on
@@ -62,18 +62,18 @@ at what this means visually.
 Let's look at this scatterplot which shows subjects' height and weight
 (both z-scored).
 
-![](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture1.png){: .center-image }
+![Picture 1](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture1.png)
 
 There's some variation in both the x and y axes. But by looking at the
 data, we can see that there is the most variation is in this direction.
 If we ignored the x and y axes and drew this line as a new axis, it
 would have the highest amount of variance that one axis could have.
 
-![](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture2.png){: .center-image }
+![Picture 2](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture2.png)
 
 We can then draw a new second axis perpendicular to this new one
 
-![](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture3.png){: .center-image }
+![Picture 3](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture3.png)
 
 These new axes\--our principal components\--are linear combinations of
 our old x and y values. But these principle components maximize the
@@ -148,7 +148,7 @@ plt.ylabel('cumulative explained variance')
 plt.show()
 ```
 
-![](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture4.png){: .center-image }
+![Picture 4](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture4.png)
 
 We can see in this plot that the first Principal component accounts for
 almost 25% of the variance in the original data. And all together, the
@@ -187,7 +187,6 @@ $$ \text{where } S_i = \sum\limits_{\pmb x \in D_i}^n (\pmb x - \pmb m_i)\;(\pmb
 
 $$ S_B =\sum\limits_{i=1}^{c} N_{i} (\pmb m_i - \pmb \mu) (\pmb m_i - \pmb \mu)^T%0 $$
 
-
 The covariance matrix we decompose is $$ S_w^{-1}S_B%0 $$
 which allows us to simultaneously maximize between group variance (i.e.
 the groups will be far apart from each other on these new component
@@ -214,9 +213,9 @@ print(p)
 When we plot the data using one component from LDA, we can see that the
 groups are pretty well separated using this new axis.
 
-![](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture5.png){: .center-image }
+![Picture 5](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture5.png)
 
-**LASSO and RIDGE Regression, and Elastic Net**
+## LASSO and RIDGE Regression, and Elastic Net
 
 One issue with methods like PCA and LDA is that the new components that
 we create can be hard to understand in clinical context, they're just a
@@ -258,7 +257,8 @@ This is similar to putting a normal prior on the values of the Beta
 coefficients. So while it won't force as many of the coefficients to be
 0, it will make them much more likely to be *near* to 0.
 
-![](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture6.png){: .center-image }
+![Picture 6](//healthstarinfo.com/blogs/assets/images/dimensionality_reduction/Picture6.png)
+
 *Image from: [https://www.transtutors.com/homework-help/statistics/laplace-distribution.aspx](https://www.transtutors.com/homework-help/statistics/laplace-distribution.aspx)*
 
 So, while we don't completely get rid of features, we do make their
@@ -307,7 +307,7 @@ that LASSO indeed produced more zero coefficients than Ridge.
  -0.        ]
 ```
 
-**Dimensionality Reduction with Neural Networks (Autoencoders)**
+## Dimensionality Reduction with Neural Networks (Autoencoders)
 
 All of the above techniques rely in some way on the assumption of
 linearity. PCA and LDA create new axes/components from *linear*
@@ -376,7 +376,7 @@ encoded_dia = encoder.predict(diapc)
 decoded_dia = decoder.predict(encoded_dia)
 ```
 
-**Conclusion**
+## Conclusion
 
 Data often has more features than we can handle. Dimensionality
 reduction allows us to retain important information about the data,

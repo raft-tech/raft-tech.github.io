@@ -10,15 +10,15 @@ author: Bhaarat Sharma
 
 **CIO LEVEL SUMMARY:**
 
--   High Performance Computing (HPC) uses existing technology to create a high level of performance that is above and beyond what a typical computer can do.
+- High Performance Computing (HPC) uses existing technology to create a high level of performance that is above and beyond what a typical computer can do.
 
--   HPC is often implemented using multiple computers, called *clusters*, that work together to generate a high level of performance.
+- HPC is often implemented using multiple computers, called *clusters*, that work together to generate a high level of performance.
 
--   When HPC is implemented using large clusters of computers, special thought needs to be given to how the computers communicate with each other.
+- When HPC is implemented using large clusters of computers, special thought needs to be given to how the computers communicate with each other.
 
--   NextGen Healthcare utilizes HPC\--as well as other recent technologies\--in order to build (and help others build) a large database of Electronic Healthcare Records (EHR).
+- NextGen Healthcare utilizes HPC\--as well as other recent technologies\--in order to build (and help others build) a large database of Electronic Healthcare Records (EHR).
 
--   This large scale ability to aggregate health information allows companies, organizations, and researchers access to huge amounts of health related data, which provides opportunities for large scale insights from this data.
+- This large scale ability to aggregate health information allows companies, organizations, and researchers access to huge amounts of health related data, which provides opportunities for large scale insights from this data.
 
 **WHAT IS HPC?**
 
@@ -57,17 +57,17 @@ Imagine a restaurant who is making a lasagna as their dinner special.
 Let's simplify and say that there are 6 steps to making a pan of
 lasagna:
 
-1.  Chop onion, garlic and herbs
+1. Chop onion, garlic and herbs
 
-2.  Sauté onion, garlic, and herbs with meat and tomato sauce
+2. Sauté onion, garlic, and herbs with meat and tomato sauce
 
-3.  Parboil noodles
+3. Parboil noodles
 
-4.  Mix Ricotta and egg mixture
+4. Mix Ricotta and egg mixture
 
-5.  Layer meat sauce, noodles, ricotta mix, and mozzarella til pan is full
+5. Layer meat sauce, noodles, ricotta mix, and mozzarella til pan is full
 
-6.  Bake at 400° F for 1 hour
+6. Bake at 400° F for 1 hour
 
 Now, if you only have one chef, you would by necessity do each step one
 at a time. But having a bunch of sous chefs in the kitchen would help
@@ -102,7 +102,7 @@ another.
 
 $$ \underbrace {1,1,2,3,5,8,13...}_\text{Fibonacci Series}%0 $$
 
-**USING HPC**
+## USING HPC
 
 In practice, using an HPC to speed up your data processing can be as
 simple as importing a package or downloading an add-on to whatever
@@ -142,7 +142,7 @@ architectures both for storing and for processing. The faster we are
 able to complete data processing and computation, the more lives can be
 improved or even saved.
 
-**CLOUD BASED SERVICES**
+## CLOUD BASED SERVICES
 
 And while it's possible for anyone to build their own cluster of
 computers, the knowledge, time, and energy required for its upkeep is
@@ -171,7 +171,7 @@ services like AWS or Google Cloud allow you to pay for what you need,
 when you need it, and provide much of the infrastructure needed to
 quickly transform your normal data pipeline into one that utilizes HPC.
 
-**CONCLUSION**
+## CONCLUSION
 
 Many data processes require large amounts of storage and processing
 power. Often more than one single machine can handle. This is especially
@@ -185,7 +185,7 @@ models that can improve patient experiences and outcomes. It can also
 help with simpler data tasks such as making large scale record changes,
 or searching through large amounts of data.
 
-**RESOURCES:**
+## RESOURCES
 
 [Intro to Google Cloud](https://www.youtube.com/watch?v=VviB3kxFe_0)
 
@@ -195,6 +195,6 @@ or searching through large amounts of data.
 
 [HPC Structure](http://hpc.fs.uni-lj.si/sites/default/files/HPC_for_dummies.pdf)
 
-**REFERENCES:**
+## REFERENCES
 
 [^1]: [https://arxiv.org/pdf/1301.2158.pdf](https://arxiv.org/pdf/1301.2158.pdf)

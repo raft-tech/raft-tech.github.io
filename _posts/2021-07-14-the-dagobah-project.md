@@ -13,7 +13,7 @@ author: Angela Milash
 
 Project Dagobah was formed out of the Air Force Air University, specifically from the Blue Horizons program, part of the Air Force Center for Strategy and Technology (CSAT) out of the Air War College. Every year a select few (~14) are chosen as [Blue Horizon Fellows](https://www.airuniversity.af.edu/CSAT/Display/Article/2242531/blue-horizons-program/), who then will engage in long term strategic thinking and learning focusing on technology and its strategic and actual implications for U.S. national security. Blue Horizon Fellows engage in a 10-month Professional development Education where they get to learn and are given budget to prototype working technology modeling solutions to the opportunities they identify through their program. Project Dagobah is one of these projects. A SBIR grant is then funded, and in this case, the Raft team, was contracted to build the prototype.
 
-![](/assets/Dagobah_Logo_Animation.gif)
+![Dagobah logo](/assets/Dagobah_Logo_Animation.gif)
 
 Dagobah is a partnered effort between Raft and Blue Horizon Fellows Major Devon “Devo” Messecar and Major Benjamin “Coco” Heruska, and Airman Coder Alex Grover, of the United States Air Force to spend 6 months and provide a working Proof of Concept of the technical capabilities and a recommendation for how to bridge old, siloed data systems with modern governance and permissions approaches. The Dagobah Project teams Proof of Concept will deliver a tool that Data Owners across the DoD can use to provide other teams across to their data as near-real time data streams with the appropriate permissions applied to protect sensitive data as well as to allow more specific data sharing than is currently possible with the technical capabilities of legacy systems. This enables applications and empowers their users to make faster, highly informed decisions, and can reduce manual work across the DoD through scalable, platform agnostic production quality tools and capabilities. Dagobah provides an Administrators Portal interface, where governance to the enabled data is applied, and a back-end system that is extensible. The system is designed to scale to ~500,000 users (about half the population of South Dakota) and will help mitigate the need for the restructuring of existing databases, or additional exorbitant license fees.
 
@@ -37,8 +37,6 @@ The Policy Based Access approach enables users and systems to have more granular
 
 Beyond general ease of management and access that comes along with moving towards data federation there will be a host of very specific pain points Dagobah can help with. We surveyed Commanders and Data Owners asking questions about the impacts to Command of having data in many siloed systems on their daily operations and their ability to make decisions, both to support teams and to prepare for and operate missions. Additionally, we performed a series of user interviews and continued research to identify current data owners/stewards, and their pain points. The following synthesizes summarizes broad themes of pain points we heard during our research:
 
-
-
 - Too Many Systems
 
 - Legacy System Performance Suffered – Including availability, performance, and inconsistent browser support.
@@ -51,16 +49,17 @@ Beyond general ease of management and access that comes along with moving toward
 
 The surveyed Commanders wanted to spend time and have the technology available to do predictive analytics, trend analysis, and have seamless access to the records of their team(s), so they could better support their career growth and be successful mentors and leaders. With Federated Data Access these leaders could be leveraging data to make new insights rather than doing manual workarounds to accomplish their base level duties. This is in keeping with general industry trends and capabilities available in private and commercial sectors for data standards and enablement.
 
-![](/assets/Dagobah_Synthesis.png)
+![Dagobah Synthesis](/assets/Dagobah_Synthesis.png)
+
 *Diagram of the broad pain-point themes discovered from the Commanders Survey.*
 
-### Who does this impact?
+## Who does this impact?
 
 Felt impacts from these issues has resulted in lots of time spent trying to gain access or dealing with down systems, manual workarounds to data comprehension, time spent manually aggregating data into spreadsheets to gain insights - rather than time being spent developing strategies, making decisions, and managing personnel based on insights that come from data. These issues impact Commanders, Air Force Leadership, Airmen, and data owners/operators/beneficiaries (or Data Citizens). Our research shows that for some commanders or their staff 10-40% of their time is spent on manual work arounds to aggregating data from disparate systems. Note that data aggregation and even data analysis is not part of the Commanders job role - making sound mentoring and mission readiness decisions based on current cross functional data is.
 
 There were several startling anecdotal impacts to having data in many places and limited access to that data reported. Notably:
 
-##### Delays
+### Delays
 
 >"We contacted those with access and attained the information. Result was a time delay."
 
@@ -74,9 +73,7 @@ There were several startling anecdotal impacts to having data in many places and
 
 >"Missed application deadline that required ROPs [because of time spent by the Airman to aggregate data from so many systems, and Commander didn’t have direct access to that data]"
 
-
-
-##### More work for more people
+### More work for more people
 
 >"Exceeding time allocation and duplication of effort by squadrons"
 
@@ -90,9 +87,7 @@ There were several startling anecdotal impacts to having data in many places and
 
 >"I would end up taking my laptop home and trying to access later in the evening."
 
-
-
-##### Mission Impacts
+### Mission Impacts
 
 >"It also makes it difficult to establish checks and balances in our processes"
 
@@ -100,9 +95,7 @@ There were several startling anecdotal impacts to having data in many places and
 
 >"Limited awareness of TFAT completion as a CC program; delayed mission analysis"
 
-
-
-##### Difficulty in managing personnel
+### Difficulty in managing personnel
 
 >"Inaccurate manning requests for the unit; and thus, could not take care of our people or report correct to HHQ"
 
@@ -116,7 +109,7 @@ These are a just a few examples of the tangible impacts of not having federated,
 
 There is another set of valuable potential use cases that for having federated policy-based access to streaming data (or real time data). Data that is needed for making real time strategic decisions for warfighters in theatre. Command and operations could gain insights from supported data sets they previously had no access to because the data was in siloed databases and access was blunted by the capabilities (or lack of) within legacy systems.
 
-### Opportunities for Impact
+## Opportunities for Impact
 
 Below are a few use cases that demonstrate the opportunities of having federated data:
 
@@ -128,7 +121,7 @@ Below are a few use cases that demonstrate the opportunities of having federated
 
 We saw and heard numerous use cases for impact even in our limited scope of 6 months of research. When commanders are able to spend more time utilizing insights and intelligence from data that is aggregated and protected and filtered cross functionally - _rather than manually aggregating data and rather than spending 10-40% of their team and their support staffs time manually copy and pasting data to aggregate it_ (or flying around the world with briefcases for 3 years in order to pull together data for analysis. True story, ask Major Messencar about this), we gain true efficiencies for the warfighter and general defense capabilities.
 
-### What is next for Dagobah? (Roadmap)
+## What is next for Dagobah? (Roadmap)
 
 The initial Raft SIBR ends in June 2021. To realize the promise of Dagobah in helping to reduce data silos and enable more granular federated permissions across the Air Force and DoD, the following institutional support is recommended and will be needed.
 
@@ -140,15 +133,13 @@ The initial Raft SIBR ends in June 2021. To realize the promise of Dagobah in he
 
 - **Product Support and New Feature Development Team(s)** – as the System is adopted there will need to be team(s) identified to own support and extend the onboarding, data enablement, and integration with other Data Federation technical capabilities.  
 
-
 The Dagobah team is confident and excited about the value of Policy Based Access for the Air Force and DOD.
 
 >“For the past ~5+ years I have seen and built Enterprise Data Federation Solutions and Secure Data Platforms, supporting Digital Transformation efforts in the Private/ Corporate sector. The DAF and DOD (Department of Defense) are right on track with their modernization efforts. It is exciting to see the momentum within the leadership be so aligned. I look forward to continuing to realize the vision for Defense Leadership and Warfighters to make better decisions more quickly by enabling better data access.” Angela Milash, Raft's Dagobah Product Manager
 
 The Raft team is committed and stands ready to continue supporting Data Federation in partnership with DOD and DAF teams, and to deliver and extend capabilities that empower and enable Airman and Leaders in this important effort. We wish our Blue Horizon Fellows all the best success in their next ventures, we know they will succeed and provide value through their service wherever they are.
 
-
-### The Dagobah Project Team Members
+## The Dagobah Project Team Members
 
 [Major Devon "Devo" Messencar](https://www.linkedin.com/in/devon-messecar-a3919bb/) - Product Owner
 

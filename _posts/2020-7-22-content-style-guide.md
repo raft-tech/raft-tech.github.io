@@ -40,28 +40,29 @@ While the writers and content strategists in your organization may fully underst
 ### Writing Goals
 
 Consider what readers should be able to achieve while reading the materials produced by your organization. List necessary adjectives each piece of content should be. Here are some examples:
-  - *Informative* - It’s not enough to tell readers what we want to say, they should find valuable information with opportunities to learn more.
-  - *Concise* - Our reader’s time is valuable and worthy of respect. Our messaging should be direct, actionable and to the point.
-  - *Accessible* - In order to reach the widest audience available, all messaging should be easily digestible by a general audience.
+
+- *Informative* - It’s not enough to tell readers what we want to say, they should find valuable information with opportunities to learn more.
+- *Concise* - Our reader’s time is valuable and worthy of respect. Our messaging should be direct, actionable and to the point.
+- *Accessible* - In order to reach the widest audience available, all messaging should be easily digestible by a general audience.
 
 ### Principles
 
 Your writing principles should address each item listed in your goals using actionable verbs. Using the previously identified writing goals, I’ve included some examples below:
 
 - *Informative*
-  - _Provide_ links to relevant information.
-  - _Avoid_ vague language.
-  - _Fact check_ all material to ensure accuracy.
+  - *Provide* links to relevant information.
+  - *Avoid* vague language.
+  - *Fact check* all material to ensure accuracy.
 
 - *Concise*
-  - _Write_ short sentences (<140 characters).
-  - _Prioritize_ the most important information.
-  - _Use_ bullet points instead of sentences when possible.
+  - *Write* short sentences (<140 characters).
+  - *Prioritize* the most important information.
+  - *Use* bullet points instead of sentences when possible.
 
 - *Accessible*
-  - _Group_ related ideas.
-  - _Avoid_ technical jargon.
-  - _Use_ descriptive titles and headings
+  - *Group* related ideas.
+  - *Avoid* technical jargon.
+  - *Use* descriptive titles and headings
 
 ## Establish Brand Voice and Tone
 
@@ -106,28 +107,30 @@ Don’t assume your writers will instinctively know which words to use and when 
 ### Formats and Content Types
 
 To make sure that organization-wide messaging is consistent across all platforms, most style guides address multiple formats and content types. Some of these mediums will have specific requirements for them to operate optimally, especially if they’re digital. Be sure to address the following aspects in the following mediums:
-  - *Blog Posts and Website Content* – Metadata Tags, SEO Keywords, Template restrictions, etc.
-  - *Email* – Graphical/HTML Text, Atl Text, Dynamic Content, etc.
-  - *Social Media Posts* – Character restrictions, Hashtags, Image dimensions, etc.
+
+- *Blog Posts and Website Content* – Metadata Tags, SEO Keywords, Template restrictions, etc.
+- *Email* – Graphical/HTML Text, Atl Text, Dynamic Content, etc.
+- *Social Media Posts* – Character restrictions, Hashtags, Image dimensions, etc.
 
 ### Design and Formatting Guidelines
 
 In the digital age of publishing, content and editorial style guides should address some issues of design and format. Depending on your publishing platform, these elements may typically include:
-  - *Font Styling* - Bold, Italic, Underline, etc.
-  - *Font Colors*- Primary, secondary colors.
-  - *Typography* - Primary, secondary fonts.
-  - *Header Tags* – H1, H2, H3, etc.
-  - *Hyperlinks* – Introductory text conventions, link descriptions, etc.
-  - *Image Guidelines* – Dimensions, Quality, Content Guidelines, Captions, Alt text, Credits, etc.
+
+- *Font Styling* - Bold, Italic, Underline, etc.
+- *Font Colors*- Primary, secondary colors.
+- *Typography* - Primary, secondary fonts.
+- *Header Tags* – H1, H2, H3, etc.
+- *Hyperlinks* – Introductory text conventions, link descriptions, etc.
+- *Image Guidelines* – Dimensions, Quality, Content Guidelines, Captions, Alt text, Credits, etc.
 
 ### House Style
 
 As a veteran editor, I’ve participated in my fair share of discussion on technical copywriting minutiae. It seems everyone has their own opinion on the usefulness of the [oxford comma]( https://www.grammarly.com/blog/oxford-comma-debate/). Regardless of your stance, consistency in usage is always correct. Using an established style guide will free you from making these minor decisions. Here are a few of the questions you’ll want to consider:
 
-  - Should items in bulleted lists include capitalizations and periods?
-  - How should dates, times, phone numbers, and addresses be formatted?
-  - Should ordinal numbers be spelled out or include ordinal indicators (like nd, th, rd, etc.) Also, if you do plan to use ordinal indicators, should they be in superscript?
-  - When should numerals be spelled out, if at all? Does this rule also apply to larger numbers with multiple digits or money?
+- Should items in bulleted lists include capitalizations and periods?
+- How should dates, times, phone numbers, and addresses be formatted?
+- Should ordinal numbers be spelled out or include ordinal indicators (like nd, th, rd, etc.) Also, if you do plan to use ordinal indicators, should they be in superscript?
+- When should numerals be spelled out, if at all? Does this rule also apply to larger numbers with multiple digits or money?
 
 ## Closing
 

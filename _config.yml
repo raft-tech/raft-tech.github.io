@@ -98,3 +98,7 @@ protocols:
   os_repo: "https://github.com/raft-tech"
   os_rcs_type: "git"
   os_src: "https://github.com/raft-tech"
+
+collections:
+  about:
+    output: true

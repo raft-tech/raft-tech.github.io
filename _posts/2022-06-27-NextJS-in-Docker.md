@@ -15,7 +15,7 @@ Data Fabric, is a complex data platform assembled from open source technologies,
 
 _Would you like to continue?_
 
-#### The NextJS environment variable problem
+## The NextJS environment variable problem
 
 We use [NextJS](https://nextjs.org/) for Data Fabric’s front end. It's one of the best Reactjs app frameworks with a ton of features that make it a joy to work with but sometimes those features can pose a unique challenge. If you’ve ever created an app and used docker you always end up using environment variables to customize some portions of your app based on the environment it will be deployed on. NextJS takes app security seriously, this is why to be able to access environment variables in your app's user interface (UI) they need to be prefixed with `NEXT_PUBLIC_`.
 
@@ -35,7 +35,7 @@ The words in bold here are the keywords we need to focus on, as you can see, Nex
 
 It seems I wasn’t the only one running into this issue as you can see [here](https://github.com/vercel/next.js/discussions/16995), being security-conscious about my apps, I was not happy with having a docker image with possibly sensitive information embedded in it. I took the plunge into the deep dark rabbit hole (someone help me).
 
-#### Searching for a solution
+## Searching for a solution
 
 One of the first solutions I tried was the one suggested by the user fabb [here](https://github.com/vercel/next.js/discussions/16995#discussioncomment-1031659) but that seemed too complicated for my liking; however, I did use some of his suggestions mainly using the [`publicRuntimeConfig`](https://nextjs.org/docs/api-reference/next.config.js/runtime-configuration) which states:
 
@@ -49,11 +49,11 @@ Great, so none of these environment variables will be accessible unless you make
 
 At this point, you can see I was not happy with this solution either since I need to access environment variables in some of my components and NextJS simply does not support this.
 
-#### The eureka moment
+## The eureka moment
 
 I already established that using `publicRuntimeConfig` was part of solving the problem, so I started looking into customizing my `_app.js` and see how I can leverage `getInitialProps` so I could get it working. After many google searches and countless hours of failed attempts, I got it working and with very minimal changes to my app.
 
-#### The fix
+## The fix
 
 The fix is suprisingly very simple, you just need to modify 2 files in your application: `next.config.js` and `_app.js`.
 
@@ -144,7 +144,7 @@ const Header = () => {
 export default Header;
 ```
 
-#### But I don't want to opt out of Automatic Static Optimization
+## But I don't want to opt out of Automatic Static Optimization
 
 I hear you and I’m happy to tell you that you don’t have to. The alternative way to use it is by commenting out `MyApp.getInitialProps` method from `_app.js` and then using `getServerSideProps` on any page that will need to access an environment variable. Here’s an example of what a page would look like using this method:
 
@@ -179,11 +179,11 @@ export async function getServerSideProps(context) {
 
 I prefer the first method since it kind of works as a global context of sorts for my environment variables allowing me to access them anywhere in my app or components but it's always nice to have options.
 
-#### Dockerizing my app
+## Dockerizing my app
 
 Here is where I ran into issues, I used the dockerfile provided by NextJS in their [with-docker](https://github.com/vercel/next.js/tree/canary/examples/with-docker) example repo and it simply would not work when I built the docker image for my app. I was back at stage one until my co-worker, [Edward Morgan](https://www.linkedin.com/in/edwardwmorgan/) told me the words every developer hates to hear: ***“It works on my machine”***. This made me look into what I was doing differently in my branch and after many hours of comparing files and changes, I found the culprit.
 
-#### The Dockerfile
+## The Dockerfile
 
 As I mentioned above, I was using the latest Dockerfile provided by NextJS, but my co-worker had a previous version of the Dockerfile that worked with my code. It worked, but I didn’t understand why it was working, and this was driving me crazy because I need to know why it works. After spending some more time tinkering, I realized that the new Dockerfile got rid of a few lines of code, so I tried adding those back to my Dockerfile and it worked. I finally understood why it worked.
 
@@ -252,11 +252,11 @@ ENV PORT 3000
 CMD ["node_modules/.bin/next", "start"]
 ```
 
-#### Local Development & deployment
+## Local Development & deployment
 
 Using this method also allows us to use a `.env.development` file in our repo, so devs can do local development with the required environment variables and any other environment type of `.env` files described in the [NextJS Environment Variable Load Order](https://nextjs.org/docs/basic-features/environment-variables#environment-variable-load-order) or, in our case, using environment variables in a helm chart at run time with our docker image.
 
-#### Example App & NextJS Starter Template
+## Example App & NextJS Starter Template
 
 I made a GitHub repo with a sample app using this setup so you can see how it works if you’re interested in making edits and testing it yourself. Feel free to clone my example app [here](https://github.com/benmarte/nextjs-docker). You can also use it as a starter template for your NextJS project by running the following in your terminal:
 
@@ -264,7 +264,7 @@ I made a GitHub repo with a sample app using this setup so you can see how it wo
 npx create-next-app -e https://github.com/benmarte/nextjs-docker --use-npm
 ```
 
-#### Closing thoughts
+## Closing thoughts
 
 This whole process took me two weeks of constant trial and error, testing things locally, testing things in docker, and then testing things in Kubernetes. I tried many different things until I finally got this working as DRY and simple as possible while still respecting security and the 12 Factor App rules. I want to give a special shout-out to my co-workers: [Edward Morgan](https://www.linkedin.com/in/edwardwmorgan/) for his invaluable Kubernetes knowledge and help, and [Tejendra Patel](https://www.linkedin.com/in/tejendrapatel/) for being my rubber duck, keeping me sane, and ensuring I write better code. I couldn’t have solved this without their assistance.
 
