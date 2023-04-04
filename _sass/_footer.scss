@@ -2,10 +2,25 @@
     background: $footer-background;
     padding: 44px 54px;
     color: $text-white;
+    position: relative;
+
+    &::before {
+        content: url('/assets/images/footer/footer-pattern.png');
+        position: absolute;
+        left: 124px;
+        top: -242px;
+        width: 225px;
+        height: 408px;
+        z-index: 0;
+    }
 
     h5 {
         font-size: 20px;
         text-transform: capitalize;
+    }
+
+    .col-lg-3{
+        z-index: 1;
     }
 
     .footer-header {

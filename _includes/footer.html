@@ -3,8 +3,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 col-lg-3">
-        <h5>Contact Us</h5>
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <h5><a href="/contact">Contact Us</a></h5>
         <p>
           11800 Sunrise Valley Dr. #400 <br/>
           Reston, VA 20191
@@ -52,7 +51,7 @@
         <p>
           Theme: <button class="btn" data-bs-theme-value="light">Light</button> <button class="btn" data-bs-theme-value="dark">Dark</button>
         </p>
-        <p id="copyright">&copy; {{ site.time | date: '%Y' }} Raft LLC. All rights reserved. Terms of Use.</p>
+        <p id="copyright">&copy; {{ site.time | date: '%Y' }} Raft LLC. All rights reserved. Terms of Use. <a href="/privacy-policy-cookies">Privacy Policy.</a></p>
       </div>
       <div class="col-sm-12 col-lg-6 text-end">
         {% include social_links.html %}

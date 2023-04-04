@@ -49,3 +49,10 @@ h5 {
     font-weight: 500;
     font-size: 20px;
 }
+
+.gradient-text {
+    background: $radial-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

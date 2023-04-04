@@ -18,4 +18,10 @@
             color: $footer-background;
         }
     }
+    .gradient-text {
+        background: $radial-gradient-light;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

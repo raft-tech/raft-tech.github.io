@@ -18,3 +18,5 @@ $big-text-gradient: linear-gradient(3.99deg, $primary-links-light 4.62%, $vibran
 $cta-gradient: linear-gradient(267.17deg, $vibrant-pink-dark 7.53%, $secondary-links-dark 104.95%);
 $binary-black-gradient: linear-gradient(267.17deg, $footer-background 7.53%, $footer-background 104.95%);
 $subtle-cta-gradient: linear-gradient(0deg, $transparent-black, $transparent-black), linear-gradient(267.61deg, $vibrant-pink 0.39%, $vibrant-pink-light 42.41%, $primary-links-light 100%);
+$radial-gradient: radial-gradient(50% 50% at 50% 50%, #E85AFF 0%, $text-white 100%);
+$radial-gradient-light: radial-gradient(50% 50% at 50% 50%, #E85AFF 0%, #212529 100%);
