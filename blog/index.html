@@ -1,0 +1,19 @@
+---
+layout: default
+id: blogs
+pagination:
+  enabled: true
+---
+
+<div class="container">
+  <h1 class="mb-5">News & Insights</h1>
+  <div class="row justify-content-center">
+ 
+  {% for post in paginator.posts %}
+    {% include article-thumbnail.html %}
+  {% endfor %}
+
+  {% include pagination.html%}
+
+  </div>
+</div>

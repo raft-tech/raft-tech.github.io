@@ -15,9 +15,10 @@ layout: default
         {% for author in  site.about %}
           {% if author.full_name == page.author %}
             {% assign author_url = author.permalink %}
-            <h5 class="mb-5">{{ page.date | date: "%B %-d, %Y" }} | Words by <a href="{{author_url}}">{{ page.author }}</a></h5>
           {% endif %}
         {% endfor %}
+
+          <h5 class="mb-5">{{ page.date | date: "%B %-d, %Y" }} | Words by {% if author_url %}<a href="{{author_url}}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}</h5>
 
         {{content}}
     </div>

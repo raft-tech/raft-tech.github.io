@@ -8,7 +8,7 @@ const pages = [
       "title": {{ p.title | jsonify }},
       "content": {{ p.content | markdownify | strip_html | jsonify }},
       "url": {{ p.url | jsonify }},
-      "excerpt": {{ p.excerpt | strip_html | jsonify }}
+      "excerpt": {{ p.excerpt | strip_html | markdownify | truncate: 158, "" }}
     }
     {%- unless forloop.last %},{% endunless -%}
   {% endfor %}
