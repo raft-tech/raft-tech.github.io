@@ -13,6 +13,10 @@
         }
     }
 
+    .rafter > .rafter-details {
+        color: $text-black;
+    }
+
     .article-thumbnail {
         a {
             color: $footer-background;

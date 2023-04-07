@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<div class="reading-progress"></div>
 <div class="container">
   <div class="row flex-wrap-reverse">
     <div class="col-lg-7 col-md-12 content-column">
@@ -14,11 +14,11 @@ layout: default
 
         {% for author in  site.about %}
           {% if author.full_name == page.author %}
-            {% assign author_url = author.permalink %}
+            {% assign author_url = author.linkedin %}
           {% endif %}
         {% endfor %}
 
-          <h5 class="mb-5">{{ page.date | date: "%B %-d, %Y" }} | Words by {% if author_url %}<a href="{{author_url}}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}</h5>
+          <h5 class="mb-5">{{ page.date | date: "%B %-d, %Y" }} | Words by {% if author_url %}<a href="{{author_url}}" target="_blank" rel="no-follow no-referrer">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}</h5>
 
         {{content}}
     </div>
@@ -44,3 +44,11 @@ layout: default
     
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/scrollpup@0.0.1/dist/scrollpup.min.js"></script>
+<script>
+  scrollpup({
+    background: 'linear-gradient(267.17deg, #C52EA3 7.53%, #4749CA 104.95%)',
+    height: '10px'
+  })
+</script>

@@ -1,5 +1,9 @@
-<a class="rafter" href="/about{{member.full_name | lowercase | slugify}}">
-    <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}" alt="{{member.full_name}}">
-    <h5>{{member.full_name}}</h5>
-    <p>{{member.role}}</p>
-</a>
+<div class="rafter">
+    <div class="rafter-avatar">
+        <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}" alt="{{member.full_name}}">
+    </div>
+    <div class="rafter-details">
+        <h5>{{member.full_name}}</h5>
+        <p>{{member.role}}</p>
+    </div>    
+</div>
