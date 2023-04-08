@@ -238,11 +238,6 @@
   full_name: Jose Alvarez
   role: Principal DevSecOps Engineer
   image: null
-- id: matthew_odunjo
-  permalink: /about/matthew_odunjo
-  full_name: Matthew Odunjo
-  role: DevSecOps Engineer
-  image: matthew_odunjo_color.jpg
 - id: brandon_sneider
   permalink: /about/brandon_sneider
   full_name: Brandon Sneider
