@@ -37,27 +37,55 @@ producer.flush(timeout=1)
 
 ## Demo:
 
-- Publish:
+### Publishing with DynamicSchemaProducer
+- Local k8s cluster with Kafka, Schema-registry and Trino running: 
+
+![](/assets/images/dynamic-kafka-producer/cluster.PNG)
+
+- Publish our first message to topic `test-topic`:
 ```
 producer_config = {
     "bootstrap.servers": "localhost:9092",
     "client.id": socket.gethostname(),
 }
-producer = AutoAvroSchemaProducer(producer_config, "http://localhost:8082", "test-topic")
+producer = DynamicSchemaProducer(producer_config, "http://localhost:8082", "test-topic")
 producer.produce({"field_1": "string", "field_2": 12345.123, "field_3": [1, 2, 3], "field_4": ["a", "b", "c"],
                   "field_5": {"field_5_1": 12.0, "field_5_2": "hello"}})
 producer.flush(timeout=1)
 ```
-- Publish again with additional fields on the payload and see the schema changes
+- The message automatically got serialized into `avro` format and a `Schema` was generated for the topic:
+
+![](/assets/images/dynamic-kafka-producer/message_example.PNG)
+![](/assets/images/dynamic-kafka-producer/schema_example.PNG)
+
+- Let's add another field to the message and publish again
 
 ```
 producer.produce({"field_1": "string", "field_2": 12345.123, "field_3": [1, 2, 3], "field_4": ["a", "b", "c"],
                   "field_5": {"field_5_1": 12.0, "field_5_2": "hello"},
                   "field_6": {"field_6_1": {"field_6_1_1": "hello"}}})
 ```
+- As you can see, the `Schema` has automatically evolved to include the new field we just added:
+![](/assets/images/dynamic-kafka-producer/message_example_2.PNG)
+![](/assets/images/dynamic-kafka-producer/schema_example_2.PNG)
 
-Querying from Trino:
+### Querying from Trino:
+- I have published a few more messages. Now, we simply just need to direct Trino to Kafka and Schema-Registry by adding a new Trino catalog:
+```
+  df-kafka: |
+    connector.name=kafka
+    kafka.nodes=df-cp-broker.data.svc.cluster.local:9071
+    kafka.table-description-supplier=CONFLUENT
+    kafka.confluent-schema-registry-url=http://df-cp-schema-registry.data.svc.cluster.local:8081
+```
+- Lets try a couple of queries:
 
+![](/assets/images/dynamic-kafka-producer/trino_1.PNG)
+![](/assets/images/dynamic-kafka-producer/trino_2.PNG)
+![](/assets/images/dynamic-kafka-producer/trino_3.PNG)
+![](/assets/images/dynamic-kafka-producer/trino_4.PNG)
+
+There you have it! With just a few lines of code, we were able to publish a message and run SQL-like queries on the data with Trino.
 ## Final Words:
 
 As streaming data becomes increasingly popular, more people will want the ability to perform SQL over Kafka messages using tools like Trino or KSQL. However, to achieve this, you will need a schema for each Kafka topic. As the number of topics grows, maintaining the schemas for each one can become incredibly challenging. By utilizing the Dynamic Schema Producer, you can autonomously handle schema generation, saving you time and headaches in the future.
