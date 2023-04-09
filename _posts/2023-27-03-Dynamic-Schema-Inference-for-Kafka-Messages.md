@@ -37,7 +37,26 @@ producer.flush(timeout=1)
 
 ## Demo:
 
+- Publish:
+```
+producer_config = {
+    "bootstrap.servers": "localhost:9092",
+    "client.id": socket.gethostname(),
+}
+producer = AutoAvroSchemaProducer(producer_config, "http://localhost:8082", "test-topic")
+producer.produce({"field_1": "string", "field_2": 12345.123, "field_3": [1, 2, 3], "field_4": ["a", "b", "c"],
+                  "field_5": {"field_5_1": 12.0, "field_5_2": "hello"}})
+producer.flush(timeout=1)
+```
+- Publish again with additional fields on the payload and see the schema changes
 
+```
+producer.produce({"field_1": "string", "field_2": 12345.123, "field_3": [1, 2, 3], "field_4": ["a", "b", "c"],
+                  "field_5": {"field_5_1": 12.0, "field_5_2": "hello"},
+                  "field_6": {"field_6_1": {"field_6_1_1": "hello"}}})
+```
+
+Querying from Trino:
 
 ## Final Words:
 
