@@ -13,6 +13,7 @@ $secondary-links-dark: #4749CA;
 $footer-background: #1E1E1E;
 $footer-headers: #919191;
 $thumbnail-background: #D0D0F4;
+$line-gray: #4F4F4F;
 $transparent-black: rgba(0, 0, 0, 0.2);
 $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
 $big-text-gradient: linear-gradient(3.99deg, $primary-links-light 4.62%, $vibrant-pink 89.4%);
@@ -20,4 +21,5 @@ $cta-gradient: linear-gradient(267.17deg, $vibrant-pink-dark 7.53%, $secondary-l
 $binary-black-gradient: linear-gradient(267.17deg, $footer-background 7.53%, $footer-background 104.95%);
 $subtle-cta-gradient: linear-gradient(0deg, $transparent-black, $transparent-black), linear-gradient(267.61deg, $vibrant-pink 0.39%, $vibrant-pink-light 42.41%, $primary-links-light 100%);
 $radial-gradient: radial-gradient(50% 50% at 50% 50%, #E85AFF 0%, $text-white 100%);
-$radial-gradient-light: radial-gradient(50% 50% at 50% 50%, #E85AFF 0%, #212529 100%);
+$radial-gradient-light: radial-gradient(50% 50% at 50% 50%, #E85AFF 0%, $text-black 100%);
+$linear-gradient-top-bottom: linear-gradient(3.99deg, $primary-links-light 4.62%, $vibrant-pink 89.4%);
