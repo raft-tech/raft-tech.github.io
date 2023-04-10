@@ -92,7 +92,7 @@ protocols:
   os_src: "https://github.com/raft-tech"
 
 collections:
-  about:
+  leadership:
     output: true
 
 ############################################################

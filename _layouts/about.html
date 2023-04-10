@@ -4,14 +4,14 @@ layout: default
 
 <div id="waveframe"></div>
 <div class="container">
-  <h1 class="about-title">We are Team Raft. Together, we're building the sharpest digital solutions and solving the most complex problems, while having fun.</h1>
+  <h1 class="about-title text-center">We are Team Raft. Together, we're building the sharpest digital solutions and solving the most complex problems, while having fun.</h1>
 
   <div class="row bm-250">
-    <div class="col-6">
+    <div class="col-lg-6 col-md-12 mb-5">
       <h2>Rafters are crafters of contingency. Programmers of tomorrow. Real people. Really smart. Who really care.</h2>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-lg-1 d-md-none"></div>
+    <div class="col-lg-5 col-md-12">
       <h4>We destroy legacies and rebuild legends</h4>
 
       <p>We navigate through problems, not around them.
@@ -20,18 +20,19 @@ layout: default
     </div>
   </div>
   <div class="row bm-250">
-    <div class="col-8">
+    <div class="col-xl-8 col-12-md">
       
-        <div class="row">
-          {% for member in site.about %}
-              <div class="col-6 col-12-sm">
+        <div class="row bm-250">
+          {% assign members = site.leadership | sort: 'weight' %}
+          {% for member in members %}
+              <div class="col-xl-6 col-md-6 col-sm-12">
                 {% include rafter.html %}
               </div>
           {% endfor %}
         </div>
       
     </div>
-    <div class="col-4">
+    <div class="col-xl-4 col-md-12">
       <h2>Let's Freakin' Go</h2>
       <p>We are more than the faces you see here...</p>
       <p>We are more than the faces you see here... We are kind people with big hearts and hardcore geek intensity. We are bound and determined to succeed. We are the people you want to work with because we strive to be the people that we love to work with.</p>
@@ -42,13 +43,17 @@ layout: default
         </p>
     </div>
   </div>
-  <div class="row">
+  <div class="row bm-250">
     <div class="col-12">
       <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Jg1T4qZik_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
       </div>
     </div>
   </div>
+</div>
+
+<div class="about-footer">
+  <img src="/assets/images/footer/footer-pattern-2.png" alt="We'll make waves together." class="img-fluid">
 </div>
 
 {% include threejs.html %}

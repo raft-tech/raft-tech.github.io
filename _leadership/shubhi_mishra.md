@@ -10,4 +10,5 @@ github: https://github.com/shubhi-raft
 linkedin: https://www.linkedin.com/in/shubhi-mishra-19a94a135/
 featimg: "/assets/aboutBanner1.jpg"
 layout: about/profile
+weight: 1
 ---

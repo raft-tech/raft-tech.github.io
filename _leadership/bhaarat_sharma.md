@@ -14,4 +14,5 @@ github: https://github.com/omnipresent07
 linkedin: https://www.linkedin.com/in/bhaarat-s-68190316/
 featimg: "/assets/aboutBanner1.jpg"
 layout: about/profile
+weight: 2
 ---

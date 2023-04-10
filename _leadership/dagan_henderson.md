@@ -10,4 +10,5 @@ github:
 linkedin: 
 featimg: "/assets/aboutBanner1.jpg"
 layout: about/profile
+weight: 9
 ---
