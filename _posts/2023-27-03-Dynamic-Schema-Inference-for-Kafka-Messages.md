@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dynamic Schema Inference for Kafka Messages: Simplifying Data Engineering Pipelines- by Levi Le"
+title: "Dynamic Schema Inference for Kafka Messages: Simplifying Data Engineering Pipelines"
 short_title: "Dynamic Kafka Schema Producer"
 date: 2023-03-27
 categories:
@@ -58,7 +58,7 @@ producer.flush(timeout=1)
 ![](/assets/images/dynamic-kafka-producer/message_example.PNG)
 ![](/assets/images/dynamic-kafka-producer/schema_example.PNG)
 
-- Let's add another field to the message and publish again
+- Let's add another field (field 6) to the message and publish again
 
 ```
 producer.produce({"field_1": "string", "field_2": 12345.123, "field_3": [1, 2, 3], "field_4": ["a", "b", "c"],
@@ -78,11 +78,14 @@ producer.produce({"field_1": "string", "field_2": 12345.123, "field_3": [1, 2, 3
     kafka.table-description-supplier=CONFLUENT
     kafka.confluent-schema-registry-url=http://df-cp-schema-registry.data.svc.cluster.local:8081
 ```
-- Lets try a couple of queries:
+- Let's try a couple of queries within Trino:
 
 ![](/assets/images/dynamic-kafka-producer/trino_1.PNG)
+
 ![](/assets/images/dynamic-kafka-producer/trino_2.PNG)
+
 ![](/assets/images/dynamic-kafka-producer/trino_3.PNG)
+
 ![](/assets/images/dynamic-kafka-producer/trino_4.PNG)
 
 There you have it! With just a few lines of code, we were able to publish a message and run SQL-like queries on the data with Trino.
