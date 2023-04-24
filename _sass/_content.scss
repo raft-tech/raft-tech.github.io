@@ -16,3 +16,10 @@ blockquote {
     font-size: 18px;
     line-height: 30px;
 }
+
+.gradient-text {
+    background: $radial-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

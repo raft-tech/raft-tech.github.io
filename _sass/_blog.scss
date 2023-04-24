@@ -93,3 +93,9 @@
     width: calc(100% + 108px);
     margin: 0 -54px;
 }
+
+.related-content {
+    @include ubuntu-headers;
+    font-weight: 500;
+    font-size: 20px;
+}

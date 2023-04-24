@@ -7,10 +7,10 @@
         </a>
       </div>
       <div class="col text-end">
-          <a href="#" class="search-icon" onclick="toggleSearch()" id="search-button">
+          <a href="#" class="search-icon {% if page.url == '/' %}text-light{% endif %}" onclick="toggleSearch()" id="search-button">
             <i class="bi bi-search"></i>
           </a>
-          <a class="hamburger" href="#" id="hamburger">
+          <a class="hamburger {% if page.url == '/' %}text-light{% endif %}" href="#" id="hamburger">
             <i class="bi bi-list"></i>
             <i class="bi bi-x-lg"></i>
           </a>

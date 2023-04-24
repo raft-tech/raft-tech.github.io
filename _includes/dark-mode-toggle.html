@@ -15,7 +15,9 @@
     const setRaftLogo = () => {
       const logo = document.getElementById('logo');
       const theme = document.documentElement.getAttribute('data-bs-theme');
-      if (theme === 'dark') {
+      if (document.location.pathname === '/') {
+        logo.setAttribute('src', '/assets/new-raft-logo-light.svg');
+      } else if (theme === 'dark') {
         logo.setAttribute('src', '/assets/new-raft-logo-light.svg');
       } else {
         logo.setAttribute('src', '/assets/new-raft-logo-dark.svg');

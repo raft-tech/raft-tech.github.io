@@ -1,0 +1,14 @@
+/* bootstrap medium breakpoints */
+@media (max-width: 992px) {
+    h1, .title {
+        font-size: 225%;
+    }
+    h2, h3, .subtitle, h4, h5 {
+        font-size: 175%;
+    }
+    .nav-arrow-4 {
+        &::before {
+            left: 0 !important;
+        }
+    }
+}

@@ -7,6 +7,12 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    
+    h1 {
+        color: $text-white;
+        text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+        padding: 0 69px;
+    }
 }
 
 .waveframe-wrapper {
@@ -45,6 +51,4 @@
     background: $linear-gradient-top-bottom;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
