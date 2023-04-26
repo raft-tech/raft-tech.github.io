@@ -2,6 +2,12 @@
     display: flex;
     align-items: center;
 
+    &:hover {
+        .rafter-avatar > .rafter-image {
+            background-position: bottom !important;
+        }
+    }
+
     .rafter-avatar {
 
         width: 127px;
@@ -10,6 +16,13 @@
         background: $cta-gradient;
         margin: 1.5rem 1.5rem 1.5rem 0;
         position: relative;
+
+        .rafter-image {
+            width: 123px;
+            height: 123px;
+            margin: 2px;
+            border-radius: 100%;
+        }
 
         &::after {
             position: absolute;

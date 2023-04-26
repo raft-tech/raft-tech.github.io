@@ -1,6 +1,10 @@
 <div class="rafter">
     <div class="rafter-avatar">
-        <img src="/assets/profiles/{% if member.image %}{{member.image}}{% else %}r_static.svg{% endif %}" alt="{{member.full_name}}">
+        {% if member.image %}
+        <div class="rafter-image" style="background: url(/assets/profiles/{{member.image}}); background-position: top;"></div>
+        {% else %}
+        <img src="/assets/profiles/r_static.svg" alt="{{member.full_name}}" class="rafter-image">
+        {% endif %}
     </div>
     <div class="rafter-details">
         <h5>{{member.full_name}}</h5>
