@@ -1,54 +1,71 @@
-.homepage-bg {
-    width: 100vw;
-    background-image: url("/assets/images/homepage/homepage-bg.png");
-    height: 100vh;
-    margin: -130px -69px 250px -69px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    
-    h1 {
-        color: $text-white;
-        text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
-        padding: 0 69px;
-    }
+.waveframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+
+  #waveframe {
+    width: calc(100% + 108px);
+    margin: 0 -54px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
-.waveframe-wrapper {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 130px);
-    display: flex;
-    align-items: center;
-
-    #waveframe {
-        width: calc(100% + 108px);
-        margin: 0 -54px;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-  }
-
 .waveframe-text-list {
-    font-size: 30px;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 
-    li {
-        margin-bottom: 25px;
+  li {
+    margin-bottom: 25px;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 }
 
 .gradient-text-tb {
-    background: $linear-gradient-top-bottom;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: $linear-gradient-top-bottom;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-section-1,
+.home-section-2,
+.home-section-3 {
+  width: 100%;
+  min-height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+
+.home-section-1 {
+  background-image: url("/assets/images/homepage/homepage-bg.png");
+  margin: -140px -54px 0;
+  width: calc(100% + 108px);
+  background-size: cover;
+
+  h1 {
+    color: $text-white;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 69px;
+  }
+}
+
+.home-section-2 {
+  background-image: url(/assets/images/homepage/home-section-4.svg);
+}
+
+.home-section-3 {
+  background-image: url(/assets/images/homepage/home-section-3.svg);
+  margin: 0 -54px;
+  width: calc(100% + 108px);
 }

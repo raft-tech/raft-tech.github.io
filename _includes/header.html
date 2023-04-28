@@ -2,23 +2,36 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col text-start">
-        <a href="/">
-            <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}" class="logo" id="logo">
+        <a href="/" tabindex="0">
+          <img
+            src="{{ site.logo | prepend: site.baseurl }}"
+            alt="{{ site.title }}"
+            class="logo"
+            id="logo"
+          />
         </a>
       </div>
       <div class="col text-end">
-          <a href="#" class="search-icon {% if page.url == '/' %}text-light{% endif %}" onclick="toggleSearch()" id="search-button">
-            <i class="bi bi-search"></i>
-          </a>
-          <a class="hamburger {% if page.url == '/' %}text-light{% endif %}" href="#" id="hamburger">
-            <i class="bi bi-list"></i>
-            <i class="bi bi-x-lg"></i>
-          </a>
+        <a
+          href="#"
+          class="search-icon {% if page.url == '/' %}text-light{% endif %}"
+          onclick="toggleSearch()"
+          id="search-button"
+          tabindex="1"
+        >
+          <i class="bi bi-search"></i>
+        </a>
+        <a
+          class="hamburger {% if page.url == '/' %}text-light{% endif %}"
+          href="#"
+          id="hamburger"
+          tabindex="2"
+        >
+          <i class="bi bi-list"></i>
+          <i class="bi bi-x-lg"></i>
+        </a>
       </div>
     </div>
-    <div class="row">
-      {% include search.html %}
-      {% include nav.html %}
-    </div>
+    <div class="row">{% include search.html %} {% include nav.html %}</div>
   </div>
 </header>
