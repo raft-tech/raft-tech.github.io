@@ -4,6 +4,6 @@ services:
     command: jekyll serve --watch --force_polling --verbose --livereload
     platform: linux/amd64
     ports:
-      - 8000:8000
+      - 4000:4000
     volumes:
       - .:/srv/jekyll
