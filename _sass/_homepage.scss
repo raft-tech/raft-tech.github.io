@@ -37,7 +37,8 @@
 
 .home-section-1,
 .home-section-2,
-.home-section-3 {
+.home-section-3,
+.home-section-4 {
   width: 100%;
   min-height: 100vh;
   background-size: contain;
@@ -45,6 +46,15 @@
   background-position: center center;
   display: flex;
   align-items: center;
+}
+
+.full-height-section {
+  min-height: 100vh;
+  margin: 0 -54px;
+  width: calc(100% + 108px);
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .home-section-1 {
@@ -61,11 +71,47 @@
 }
 
 .home-section-2 {
-  background-image: url(/assets/images/homepage/home-section-4.svg);
+  background-image: url(/assets/images/homepage/home-section-2.svg);
 }
 
 .home-section-3 {
   background-image: url(/assets/images/homepage/home-section-3.svg);
   margin: 0 -54px;
   width: calc(100% + 108px);
+}
+
+.home-section-4 {
+  background-image: url(/assets/images/homepage/statement-bg.svg);
+}
+
+.text-block {
+  h4 {
+    margin-bottom: 40px;
+  }
+  h5 {
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 64px;
+  }
+}
+
+.client {
+  cursor: pointer;
+  p {
+    visibility: hidden;
+  }
+  &:hover {
+    p {
+      visibility: visible;
+    }
+  }
+}
+
+.bracket {
+  color: $vibrant-pink;
+}
+
+.highlight-text {
+  color: $vibrant-pink;
 }

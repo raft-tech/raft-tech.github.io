@@ -2,60 +2,132 @@
 layout: default
 ---
 
-<div class="container-fluid waveframe-wrapper">
+<div class="full-height-section">
   <div class="container">
-    <h1 class="about-title text-center">We are Team Raft. Together, we're building the sharpest digital solutions and solving the most complex problems, while having fun.</h1>
+    <div class="container">
+      <h1 class="about-title text-center">
+        We are <span class="highlight-text">Team Raft</span>. Together, we’re
+        building the sharpest digital solutions and solving the most complex
+        problems, while having fun.
+      </h1>
+    </div>
   </div>
-  <div id="waveframe"></div>
+  <img src="/assets/images/about/wave-about-top.svg" class="about-wave-top" />
 </div>
 
-<div class="container">
-  <div class="row bm-250">
-    <div class="col-lg-6 col-md-12 mb-5">
-      <h2>Rafters are crafters of contingency. Programmers of tomorrow. Real people. Really smart. Who really care.</h2>
-    </div>
-    <div class="col-lg-1 d-md-none"></div>
-    <div class="col-lg-5 col-md-12">
-      <h4>We destroy legacies and rebuild legends</h4>
+<div class="full-height-section">
+  <img
+    src="/assets/images/about/wave-about-bottom.svg"
+    class="about-wave-bottom"
+  />
+  <div class="container">
+    <div class="row bm-250">
+      <div class="col-lg-6 col-md-12 mb-5">
+        <h2 class="mb-4">
+          Rafters are crafters of contingency. Programmers of tomorrow. Real
+          people. Really smart. Who really care.
+        </h2>
+        <p><a href="">Learn about our culture</a></p>
+      </div>
+      <div class="col-lg-1 d-md-none"></div>
+      <div class="col-lg-5 col-md-12">
+        <div class="text-block">
+          <h4>Why Raft?...</h4>
 
-      <p>We navigate through problems, not around them.
-        We find solutions, where others only find more headaches. We aren't afraid to face the enormity of a task, assemble for the challenge and start moving forward from zero. We are the solution to problems you haven't diagnosed yet.
-      </p>
-    </div>
-  </div>
-  <div class="row bm-250">
-    <div class="col-xl-8 col-12-md">
-      
-        <div class="row bm-250">
-          {% assign members = site.leadership | sort: 'weight' %}
-          {% for member in members %}
-              <div class="col-xl-6 col-md-6 col-sm-12">
-                {% include rafter.html %}
-              </div>
-          {% endfor %}
+          <h5>
+            <span class="bracket">[</span> Humans-First
+            <span class="bracket">]</span>
+          </h5>
+
+          <p>
+            We put our people and our culture first. We work with some of the
+            smartest, hardest working experts in their field. We owe it to them
+            to make sure our team is free of meaningless restrictions and
+            politics so they can focus on what they love, finding innovative
+            solutions.
+          </p>
+
+          <h5>
+            <span class="bracket">[</span> Diveristy is our superpower
+            <span class="bracket">]</span>
+          </h5>
+
+          <p>
+            We celebrate diversity, individuality, and non-traditional, out of
+            the-box thinkers. We go to bat for you and for your differences.
+            Because our differences make us strong.
+          </p>
+
+          <h5>
+            <span class="bracket">[</span> Remote-first
+            <span class="bracket">]</span>
+          </h5>
+
+          <p>
+            We are a geographically distributed team where little humans, pets,
+            and everything in between are welcome during our zoom calls. We
+            <span class="heart">♥️</span> Open Source and use Mattermost for
+            collaboration. We strive for less meetings and are mindful of
+            different time zones.
+          </p>
         </div>
-      
-    </div>
-    <div class="col-xl-4 col-md-12">
-      <h2>Let's Freakin' Go</h2>
-      <p>We are more than the faces you see here...</p>
-      <p>We are more than the faces you see here... We are kind people with big hearts and hardcore geek intensity. We are bound and determined to succeed. We are the people you want to work with because we strive to be the people that we love to work with.</p>
-      <p>We are a team of 170+ awesome humans<br/>
-        ....and growing</p>
-        <p class="my-5">
-          <a href="/join" class="raft-btn">Join Team Raft</a>
-        </p>
-    </div>
-  </div>
-  <div class="row bm-250">
-    <div class="col-12">
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jg1T4qZik_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
       </div>
     </div>
   </div>
 </div>
 
-{% include wave-footer.html %}
+<div class="full-height-section">
+  <div class="container">
+    <div class="row bm-250">
+      <div class="col-xl-8 col-12-md">
+        <div class="row bm-250">
+          {% assign members = site.leadership | sort: 'weight' %} {% for member
+          in members %}
+          <div class="col-xl-6 col-md-6 col-sm-12">
+            {% include rafter.html %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-12">
+        <h2>Let's Freakin' Go</h2>
+        <p>We are more than the faces you see here...</p>
+        <p>
+          We are more than the faces you see here... We are kind people with big
+          hearts and hardcore geek intensity. We are bound and determined to
+          succeed. We are the people you want to work with because we strive to
+          be the people that we love to work with.
+        </p>
+        <p>
+          We are a team of 170+ awesome humans<br />
+          ....and growing
+        </p>
+        <p class="my-5">
+          <a href="/join" class="raft-btn">Join Team Raft</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-{% include threejs.html %}
+<div class="full-height-section">
+  <div class="container">
+    <div class="row bm-250">
+      <div class="col-12">
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Jg1T4qZik_A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- {% include wave-footer.html %} {% include threejs.html %} -->

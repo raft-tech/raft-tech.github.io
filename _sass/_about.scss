@@ -1,111 +1,121 @@
+.about-wave-top {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.about-wave-bottom {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 .rafter {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    &:hover {
-        .rafter-avatar > .rafter-image {
-            background-position: bottom !important;
-        }
+  &:hover {
+    .rafter-avatar > .rafter-image {
+      background-position: bottom !important;
+    }
+  }
+
+  .rafter-avatar {
+    width: 127px;
+    height: 127px;
+    border-radius: 100%;
+    background: $cta-gradient;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    position: relative;
+
+    .rafter-image {
+      width: 123px;
+      height: 123px;
+      margin: 2px;
+      border-radius: 100%;
     }
 
-    .rafter-avatar {
-
-        width: 127px;
-        height: 127px;
-        border-radius: 100%;
-        background: $cta-gradient;
-        margin: 1.5rem 1.5rem 1.5rem 0;
-        position: relative;
-
-        .rafter-image {
-            width: 123px;
-            height: 123px;
-            margin: 2px;
-            border-radius: 100%;
-        }
-
-        &::after {
-            position: absolute;
-            width: 65px;
-            height: 76px;
-            z-index: -1;
-        }
-
-        img {
-            width: 123px;
-            height: 123px;
-            border-radius: 100%;
-            margin: 2px;
-        }
+    &::after {
+      position: absolute;
+      width: 65px;
+      height: 76px;
+      z-index: -1;
     }
 
-    .rafter-details {
-        color: $text-white;
+    img {
+      width: 123px;
+      height: 123px;
+      border-radius: 100%;
+      margin: 2px;
     }
+  }
+
+  .rafter-details {
+    color: $text-white;
+  }
 }
 
 .col-6:nth-child(1n) > .rafter > .rafter-avatar {
-    &::after {
-        content: url("/assets/images/about/profile-pattern-1.png");
-        right: auto;
-        bottom: -6px;
-        left: -10px;
-    }
+  &::after {
+    content: url("/assets/images/about/profile-pattern-1.png");
+    right: auto;
+    bottom: -6px;
+    left: -10px;
+  }
 }
 
 .col-6:nth-child(2n) > .rafter > .rafter-avatar {
-    &::after {
-        content: url("/assets/images/about/profile-pattern-2.png");
-        right: auto;
-        bottom: -6px;
-        left: -10px;
-    }
+  &::after {
+    content: url("/assets/images/about/profile-pattern-2.png");
+    right: auto;
+    bottom: -6px;
+    left: -10px;
+  }
 }
 
-.col-6:nth-child(3n) > .rafter > .rafter-avatar, .col-6:nth-child(4n) > .rafter > .rafter-avatar {
-    &::after {
-        content: url("/assets/images/about/profile-pattern-3.png");
-        right: -10px;
-        bottom: -6px;
-        left: auto;
-    }
+.col-6:nth-child(3n) > .rafter > .rafter-avatar,
+.col-6:nth-child(4n) > .rafter > .rafter-avatar {
+  &::after {
+    content: url("/assets/images/about/profile-pattern-3.png");
+    right: -10px;
+    bottom: -6px;
+    left: auto;
+  }
 }
 
 .about-title {
-    margin: 300px 0;
-    z-index: 1;
-    position: relative;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  margin: 300px 0;
+  z-index: 1;
+  position: relative;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
 .bm-250 {
-    margin-bottom: 250px;
+  margin-bottom: 250px;
 }
 
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-    border: 2px solid $vibrant-pink;
-    border-radius: 18px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  border: 2px solid $vibrant-pink;
+  border-radius: 18px;
 
-    &::after {
-        content: url("/assets/images/about/video-dots.png");
-        width: 195px;
-        height: 169px;
-        position: absolute;
-        top: calc(50% - 84.5px);
-        left: -72px;
-        z-index: 1;
-    }
-
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 16px;
-      }
-
+  &::after {
+    content: url("/assets/images/about/video-dots.png");
+    width: 195px;
+    height: 169px;
+    position: absolute;
+    top: calc(50% - 84.5px);
+    left: -72px;
+    z-index: 1;
   }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+}
