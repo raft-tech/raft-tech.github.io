@@ -52,11 +52,11 @@
     text-decoration: underline;
 
     &::before {
-      content: "[";
+      content: "[ ";
       visibility: hidden;
     }
     &::after {
-      content: "]";
+      content: " ]";
       visibility: hidden;
     }
   }
@@ -77,13 +77,17 @@
       color: $text-white;
     }
     p {
+      color: $text-white;
+      text-decoration: none;
       &::before {
-        content: "[";
+        content: "[ ";
         visibility: visible;
+        color: $text-white;
       }
       &::after {
-        content: "]";
+        content: " ]";
         visibility: visible;
+        color: $text-white;
       }
     }
   }
