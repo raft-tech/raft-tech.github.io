@@ -71,7 +71,16 @@
 }
 
 .home-section-2 {
-  background-image: url(/assets/images/homepage/home-section-2.svg);
+  position: relative;
+  &::before {
+    background-image: url(/assets/images/homepage/blur-home.svg);
+    filter: blur(300px);
+    width: 940px;
+    height: 708px;
+    content: "";
+    left: calc(50% - 470px);
+    z-index: -1;
+  }
 }
 
 .home-section-3 {
