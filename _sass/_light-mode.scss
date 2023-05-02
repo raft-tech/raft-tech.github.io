@@ -1,5 +1,4 @@
 [data-bs-theme="light"] {
-  --bs-body-color: #fafafa;
   .search-icon,
   .hamburger {
     color: $binary-black;
@@ -37,4 +36,5 @@
 
 [data-bs-theme="dark"] {
   --bs-body-bg: #131313;
+  --bs-body-color: #fafafa;
 }
