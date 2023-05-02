@@ -47,6 +47,7 @@
 .focus-area-link {
   color: $text-white;
   text-decoration: none;
+  position: relative;
   p {
     text-decoration: underline;
 
@@ -61,6 +62,16 @@
   }
 
   &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+      background-image: url(/assets/images/homepage/arrow.svg);
+      width: 24px;
+      height: 65px;
+      background-repeat: no-repeat;
+    }
     color: $primary-links;
     i {
       color: $text-white;
