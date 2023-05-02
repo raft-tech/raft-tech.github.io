@@ -119,3 +119,75 @@
     border-radius: 16px;
   }
 }
+
+.blur-about-top {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/images/about/blur-about-top.svg);
+    z-index: -1;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: calc(50% - 723px);
+    width: 100%;
+    height: 100%;
+    max-width: 1447px;
+    max-height: 615px;
+  }
+}
+
+.blur-about-bottom {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/images/about/blur-about-bottom.svg);
+    z-index: -1;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    top: 0;
+    left: calc(50% - 723px);
+    width: 100%;
+    height: 100%;
+    max-width: 1447px;
+    max-height: 615px;
+  }
+}
+
+.blur-about-video-top {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/images/about/blur-about-video-top.svg);
+    z-index: -1;
+    max-width: 836px;
+    max-height: 615px;
+    width: 100%;
+    height: 100%;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.blur-about-video-bottom {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/images/about/blur-about-video-bottom.svg);
+    z-index: -1;
+    max-width: 836px;
+    max-height: 615px;
+    width: 100%;
+    height: 100%;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+}

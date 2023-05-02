@@ -1,3 +1,12 @@
+.header-video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .waveframe-wrapper {
   position: relative;
   width: 100%;
@@ -35,6 +44,40 @@
   -webkit-text-fill-color: transparent;
 }
 
+.focus-area-link {
+  color: $text-white;
+  text-decoration: none;
+  p {
+    text-decoration: underline;
+
+    &::before {
+      content: "[";
+      visibility: hidden;
+    }
+    &::after {
+      content: "]";
+      visibility: hidden;
+    }
+  }
+
+  &:hover {
+    color: $primary-links;
+    i {
+      color: $text-white;
+    }
+    p {
+      &::before {
+        content: "[";
+        visibility: visible;
+      }
+      &::after {
+        content: "]";
+        visibility: visible;
+      }
+    }
+  }
+}
+
 .home-section-1,
 .home-section-2,
 .home-section-3,
@@ -58,10 +101,10 @@
 }
 
 .home-section-1 {
-  background-image: url("/assets/images/homepage/homepage-bg.png");
-  margin: -140px -54px 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0 -54px;
   width: calc(100% + 108px);
-  background-size: cover;
 
   h1 {
     color: $text-white;
@@ -130,4 +173,8 @@
 
 .highlight-text-purple {
   color: $primary-links;
+}
+
+.section-1 {
+  margin-top: -140px;
 }
