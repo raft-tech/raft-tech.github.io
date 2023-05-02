@@ -75,11 +75,14 @@
   &::before {
     background-image: url(/assets/images/homepage/blur-home.svg);
     filter: blur(300px);
-    width: 940px;
-    height: 708px;
+    max-width: 940px;
+    max-height: 708px;
     content: "";
     left: calc(50% - 470px);
     z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 }
 
