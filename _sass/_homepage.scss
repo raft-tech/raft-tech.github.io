@@ -47,7 +47,6 @@
 .focus-area-link {
   color: $text-white;
   text-decoration: none;
-  position: relative;
   p {
     text-decoration: underline;
 
@@ -154,6 +153,8 @@
 }
 
 .text-block {
+  height: 100vh;
+
   h4 {
     margin-bottom: 40px;
   }
@@ -214,4 +215,9 @@
       display: block;
     }
   }
+}
+
+.sticky-text {
+  position: sticky;
+  top: 200px;
 }
