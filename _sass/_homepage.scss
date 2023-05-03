@@ -192,3 +192,30 @@
 .section-1 {
   margin-top: -140px;
 }
+
+.use-case-link {
+  text-decoration: none;
+  color: $text-white;
+
+  .use-case-text {
+    display: block;
+  }
+  .use-case-hover {
+    display: none;
+  }
+  &:hover {
+    .use-case-text {
+      display: none;
+    }
+    .use-case-hover {
+      position: relative;
+      display: block;
+
+      img {
+        position: absolute;
+        right: 0;
+        top: -200px;
+      }
+    }
+  }
+}
