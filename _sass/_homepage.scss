@@ -196,26 +196,22 @@
 .use-case-link {
   text-decoration: none;
   color: $text-white;
-
-  .use-case-text {
-    display: block;
-  }
-  .use-case-hover {
+  position: relative;
+  img {
     display: none;
   }
-  &:hover {
-    .use-case-text {
-      display: none;
-    }
-    .use-case-hover {
-      position: relative;
-      display: block;
 
-      img {
-        position: absolute;
-        right: 0;
-        top: -200px;
-      }
+  &:hover {
+    .space-mono-text {
+      background: $linear-gradient-top-bottom;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    img {
+      position: absolute;
+      right: -637px;
+      top: -215px;
+      display: block;
     }
   }
 }
