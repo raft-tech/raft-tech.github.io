@@ -7,7 +7,6 @@
   z-index: -2;
 }
 
-
 .gradient-text-tb {
   background: $linear-gradient-top-bottom;
   -webkit-background-clip: text;
@@ -30,7 +29,7 @@
     }
   }
   .highlight-text-pink {
-    color: $vibrant-pink
+    color: $vibrant-pink;
   }
   .bracket-link {
     color: $text-white;
@@ -88,7 +87,6 @@
 
   h1 {
     color: $text-white;
-    padding: 0 69px;
   }
 }
 
@@ -133,7 +131,7 @@
 }
 
 .text-block {
-  height: 100vh;
+  height: 40vh;
 
   h4 {
     margin-bottom: 40px;
@@ -144,6 +142,10 @@
   p {
     margin-bottom: 64px;
   }
+}
+
+.text-block-title {
+  margin-bottom: 3.5rem;
 }
 
 .client {
@@ -227,7 +229,11 @@
 }
 
 .video-gradient {
-  background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 1) 80%);
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 0) 0%,
+    rgba(19, 19, 19, 1) 80%
+  );
   width: 100%;
   height: 100vh;
   position: absolute;

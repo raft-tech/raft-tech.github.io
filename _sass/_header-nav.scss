@@ -7,7 +7,6 @@
 .logo {
   width: 134px;
   height: auto;
-  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.4));
 }
 
 .search-icon {
@@ -15,14 +14,12 @@
   color: $text-white;
   text-decoration: none;
   margin-right: 1.5rem;
-  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 .hamburger {
   font-size: 1.75rem;
   color: $text-white;
   text-decoration: none;
-  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
   .bi-list {
     display: inline-block;
   }
@@ -41,14 +38,19 @@
 }
 
 .nav-background {
-  background: url("/assets/images/nav/nav-background.png") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100vw;
-  height: 100vh;
-  background-attachment: fixed;
+  position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
+  height: 100vh;
+  &::before {
+    background: url("/assets/images/nav/nav-dots.svg") no-repeat;
+    width: 118px;
+    height: 152px;
+    position: absolute;
+    bottom: 212px;
+    left: 0;
+    content: "";
+  }
 }
 
 #nav {
@@ -128,23 +130,30 @@
         z-index: -1;
         display: none;
         background: url("/assets/images/nav/animated-nav-arrow-4.png");
-        animation: "nav-arrow-4-animation" 0.5s steps(0);
+        animation-play-state: paused;
       }
       &:hover {
         &::before {
           display: display;
-          animation: "nav-arrow-4-animation" 0.5s steps(10);
+          animation: nav4Animation 0.2s running;
         }
       }
     }
   }
 }
 
-@keyframes nav-arrow-4-animation {
-  0% {
+@keyframes nav4Animation {
+  from {
     background-position-y: 0px;
   }
-  100% {
+  to {
     background-position-y: -290px;
+  }
+}
+
+.btn-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
