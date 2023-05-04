@@ -63,6 +63,7 @@
       a {
         text-decoration: none;
         color: $gray;
+        line-height: normal;
       }
 
       &:hover {
@@ -119,14 +120,31 @@
     .nav-arrow-4 {
       &::before {
         position: absolute;
-        content: url("/assets/images/nav/nav-arrow-4.png");
+        content: "";
         bottom: 18px;
         left: 136px;
-        width: 309px;
+        width: 301px;
         height: 29px;
         z-index: -1;
         display: none;
+        background: url("/assets/images/nav/animated-nav-arrow-4.png");
+        animation: "nav-arrow-4-animation" 0.5s steps(0);
+      }
+      &:hover {
+        &::before {
+          display: display;
+          animation: "nav-arrow-4-animation" 0.5s steps(10);
+        }
       }
     }
+  }
+}
+
+@keyframes nav-arrow-4-animation {
+  0% {
+    background-position-y: 0px;
+  }
+  100% {
+    background-position-y: -290px;
   }
 }

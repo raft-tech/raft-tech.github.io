@@ -10,7 +10,7 @@
   title: \+ sharing it with the world.
   subtitle: Read about Raft’s News + Insights
   className: nav-arrow-3
-- url: /join
+- url: https://boards.greenhouse.io/raft
   title: Come *join* the fun.
   subtitle: Careers at Team Raft
   className: nav-arrow-4
