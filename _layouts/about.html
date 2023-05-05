@@ -83,8 +83,8 @@ layout: default
     <div class="row bm-250">
       <div class="col-xl-8 col-12-md">
         <div class="row bm-250">
-          {% assign members = site.leadership | sort: 'weight' %} {% for member
-          in members %}
+          {% assign members = site.leadership | sort: "weight" %}
+          {% for member in members %}
           <div class="col-xl-6 col-md-6 col-sm-12">
             {% include rafter.html %}
           </div>
