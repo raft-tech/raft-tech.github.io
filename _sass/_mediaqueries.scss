@@ -13,11 +13,16 @@
   }
 
   #nav {
+    padding: 0 75px;
     li {
       .title {
         font-size: 2rem;
       }
     }
+  }
+
+  .nav-header {
+    padding: 44px 0;
   }
 
   .nav-arrow-4 {
