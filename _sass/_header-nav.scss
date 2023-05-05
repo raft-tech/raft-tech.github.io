@@ -129,13 +129,13 @@
         height: 29px;
         z-index: -1;
         display: none;
-        background: url("/assets/images/nav/animated-nav-arrow-4.png");
-        animation-play-state: paused;
+        background: url("/assets/images/nav/nav-arrow-4.png");
+        // animation-play-state: paused;
       }
       &:hover {
         &::before {
-          display: display;
-          animation: nav4Animation 0.2s running;
+          display: block;
+          // animation: nav4Animation 0.2s running;
         }
       }
     }
