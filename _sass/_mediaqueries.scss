@@ -29,6 +29,14 @@
   .text-block {
     height: auto;
   }
+
+  .bm-250 {
+    margin: auto;
+  }
+
+  .flex-sm-column-reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 1399px) {
