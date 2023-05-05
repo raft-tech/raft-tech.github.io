@@ -66,9 +66,16 @@
     }
   }
 
-  .search-result,
+  .search-result {
+    color: $text-black;
+    a {
+      color: $text-black;
+    }
+  }
+
   .raft-search-input {
-    color: $text-white;
+    color: $text-black;
+    border-bottom: 2px solid $text-black;
   }
 
   #nav {

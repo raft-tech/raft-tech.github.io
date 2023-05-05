@@ -70,13 +70,35 @@ const noResultsHTMLTemplate = (term) => {
 searchResults.innerHTML += template;
 }
 
-// Search on keyup
-searchInput.addEventListener("keyup", function (e) {
+// reset search fields
+const resetSearchFields = (resetInput) => {
+    if (resetInput) {
+        searchInput.value = "";
+        searchResults.innerHTML = "";
+        searchResultsLength.innerHTML = "";
+    } else {
+        searchResults.innerHTML = "";
+        searchResultsLength.innerHTML = "";
+    }
+}
+
+// toggle search
+const toggleSearch = () => {
+    resetSearchFields(true);
+    if (body.classList.length === 0) {
+        showSearch()
+    } else {
+        hideSearch();
+    }
+}
+
+const getSearchResults = () => {
     resetSearchFields();
 
-    if (e.key === 'Enter') {
+    const term = searchInput.value;
+    if (term !== "") {
         // console.log(e)
-        const results = index.search(e.target.value, {
+        const results = index.search(term, {
             fields: {
                 title: {boost: 2},
                 content: {boost: 1}
@@ -86,7 +108,7 @@ searchInput.addEventListener("keyup", function (e) {
         // console.log(results)
 
         if (results.length === 0) {
-            noResultsHTMLTemplate(e.target.value)
+            noResultsHTMLTemplate(term)
         } else {
             searchResultsLength.innerHTML = results.length + " results found";
             results.forEach(result => {
@@ -94,15 +116,6 @@ searchInput.addEventListener("keyup", function (e) {
             })
         }        
         return results
-    }
-});
-
-const toggleSearch = () => {
-    resetSearchFields(true);
-    if (body.classList.length === 0) {
-        showSearch()
-    } else {
-        hideSearch();
     }
 }
 
@@ -146,17 +159,8 @@ const hideNav = () => {
     searchButton.classList.remove('d-none');
 }
 
-// reset search fields
-const resetSearchFields = (resetInput) => {
-    if (resetInput) {
-        searchInput.value = "";
-        searchResults.innerHTML = "";
-        searchResultsLength.innerHTML = "";
-    } else {
-        searchResults.innerHTML = "";
-        searchResultsLength.innerHTML = "";
-    }
-}
+// Search on keyup
+searchInput.addEventListener("keyup", getSearchResults(this));
 
 hamburger.addEventListener('click', function(e) {
     if (!this.classList.contains('open') && nav.classList.contains('d-none')) {
