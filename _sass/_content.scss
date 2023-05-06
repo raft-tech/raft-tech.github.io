@@ -2,7 +2,8 @@
     padding: 0 54px;
     min-height: 60vh;
     margin-bottom: 3rem;
-
+    z-index: 1;
+    position: relative;
     // pagination footer z-index fix
     nav {
         z-index: 1;

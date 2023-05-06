@@ -42,6 +42,7 @@
 
 .blur-1-bottom {
   position: relative;
+  min-height: 54vh;
   &:before {
     position: absolute;
     content: "";

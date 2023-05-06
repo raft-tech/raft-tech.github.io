@@ -121,13 +121,18 @@
 }
 
 .home-section-3 {
-  background-image: url(/assets/images/homepage/home-section-3.svg);
   margin: 0 -54px;
   width: calc(100% + 108px);
+
+  .home-section-3-wave {
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .home-section-4 {
   background-image: url(/assets/images/homepage/statement-bg.svg);
+  min-height: 64vh;
 }
 
 .text-block {
@@ -149,7 +154,7 @@
 }
 
 .client {
-  cursor: pointer;
+  cursor: default;
   p {
     visibility: hidden;
   }
@@ -161,7 +166,19 @@
 }
 
 .bracket {
-  color: $vibrant-pink;
+  line-height: 24px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0 0 24px 0 !important;
+  font-family: 'Space Mono';
+  &::before {
+    color: $vibrant-pink;
+    content: "[ ";
+  }
+  &::after {
+    color: $vibrant-pink;
+    content: " ]";
+  }
 }
 
 .highlight-text-pink {

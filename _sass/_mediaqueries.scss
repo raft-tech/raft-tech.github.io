@@ -42,6 +42,10 @@
   .flex-sm-column-reverse {
     flex-direction: column-reverse;
   }
+  .sticky-text {
+    position: relative;
+    top: 0;
+  }
 }
 
 @media (max-width: 1399px) {
