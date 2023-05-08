@@ -2,7 +2,7 @@
 id: danielle_mccoy
 full_name: Danielle McCoy
 title: About - Danielle McCoy
-role: Chief Growth Officer
+role: Senior Director of Culture and People
 image: danielle_mccoy.jpg
 about:
 github:
