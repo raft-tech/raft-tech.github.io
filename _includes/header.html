@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col text-start">
-        <a href="/" tabindex="0">
+        <a href="/" tabindex="1">
           <svg
             version="1.1"
             id="b"
@@ -64,14 +64,30 @@
       <div class="col text-end">
         <a
           href="#"
-          class="search-icon"
+          tabindex="2"
+          data-bs-theme-value="light"
+          class="nav-icon light-theme-btn"
+        >
+          <i class="bi bi-brightness-high-fill"></i>
+        </a>
+        <a
+          href="#"
+          data-bs-theme-value="dark"
+          tabindex="2"
+          class="nav-icon dark-theme-btn"
+        >
+          <i class="bi bi-moon-stars-fill"></i>
+        </a>
+        <a
+          href="#"
+          class="nav-icon"
           onclick="toggleSearch()"
           id="search-button"
-          tabindex="1"
+          tabindex="3"
         >
           <i class="bi bi-search"></i>
         </a>
-        <a class="hamburger" href="#" id="hamburger" tabindex="2">
+        <a class="hamburger" href="#" id="hamburger" tabindex="4">
           <i class="bi bi-list"></i>
           <i class="bi bi-x-lg"></i>
         </a>

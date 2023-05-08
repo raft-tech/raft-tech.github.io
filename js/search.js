@@ -41,6 +41,10 @@ const searchResults = document.getElementById("search-results");
 
 const searchButton = document.getElementById("search-button");
 
+const lightThemeButton = document.querySelector(".light-theme-btn");
+
+const darkThemeButton = document.querySelector(".dark-theme-btn");
+
 const body = document.body;
 
 const content = document.getElementById("content");
@@ -125,6 +129,8 @@ const showSearch = () => {
     content.classList.add("d-none");
     footer.classList.add("d-none");
     hamburger.classList.add('open');
+    lightThemeButton.classList.add('d-none');
+    darkThemeButton.classList.add('d-none');
     nav.classList.add("d-none");
     searchButton.classList.add('d-none');
 }
@@ -135,6 +141,8 @@ const hideSearch = () => {
     body.classList.remove("search-background");
     content.classList.remove("d-none");
     footer.classList.remove("d-none");
+    lightThemeButton.classList.remove('d-none');
+    darkThemeButton.classList.remove('d-none');
     hamburger.classList.remove('open');
     searchButton.classList.remove('d-none');
 }
@@ -145,6 +153,8 @@ const showNav = () => {
     searchBox.classList.add("d-none");
     content.classList.add("d-none");
     footer.classList.add("d-none");
+    lightThemeButton.classList.add('d-none');
+    darkThemeButton.classList.add('d-none');
     hamburger.classList.add('open');
     searchButton.classList.add('d-none');
 }
@@ -155,6 +165,8 @@ const hideNav = () => {
     body.classList.remove("nav-background");
     content.classList.remove("d-none");
     footer.classList.remove("d-none");
+    lightThemeButton.classList.remove('d-none');
+    darkThemeButton.classList.remove('d-none');
     hamburger.classList.remove('open');
     searchButton.classList.remove('d-none');
 }

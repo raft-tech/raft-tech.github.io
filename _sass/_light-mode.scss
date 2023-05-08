@@ -9,12 +9,16 @@
     }
   }
 
-  .search-icon,
+  .nav-icon,
   .hamburger {
     color: $binary-black;
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .light-theme-btn {
+    display: none;
   }
 
   .logo {
@@ -162,11 +166,14 @@
   .logo {
     fill: $text-white;
   }
-  .search-icon,
+  .nav-icon,
   .hamburger {
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
   }
   .logo {
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.4));
+  }
+  .dark-theme-btn {
+    display: none;
   }
 }
