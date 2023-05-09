@@ -8,4 +8,5 @@ about: As the founder of Raft, Shubhi Mishra has extensive experience using huma
 github: https://github.com/shubhi-raft
 linkedin: https://www.linkedin.com/in/shubhi-mishra-19a94a135/
 weight: 1
+sitemap: false
 ---

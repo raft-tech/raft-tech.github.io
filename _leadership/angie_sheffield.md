@@ -8,4 +8,5 @@ about:
 github:
 linkedin: https://www.linkedin.com/in/angelasheffield/
 weight: 6
+sitemap: false
 ---

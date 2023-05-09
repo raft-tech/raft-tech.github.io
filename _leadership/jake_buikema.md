@@ -8,4 +8,5 @@ about:
 github:
 linkedin: https://www.linkedin.com/in/jake-buikema-6338a93/
 weight: 4
+sitemap: false
 ---

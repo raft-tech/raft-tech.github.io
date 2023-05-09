@@ -8,4 +8,5 @@ about: Kristen is a UX Researcher and Designer. For over ten years, she has been
 github:
 linkedin:
 weight: 8
+sitemap: false
 ---

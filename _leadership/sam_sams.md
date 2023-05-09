@@ -8,4 +8,5 @@ about:
 github:
 linkedin: https://www.linkedin.com/in/samuelnsams/
 weight: 7
+sitemap: false
 ---

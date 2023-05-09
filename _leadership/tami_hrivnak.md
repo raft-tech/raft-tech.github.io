@@ -8,4 +8,5 @@ about: Tami Hrivnak is a technology enthusiast who loves innovating and finding 
 github:
 linkedin:
 weight: 3
+sitemap: false
 ---
