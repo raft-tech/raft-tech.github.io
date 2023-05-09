@@ -2,7 +2,7 @@
 # See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
 plugins:
   - jekyll-sitemap
-  - jekyll-paginate-v2
+  # - jekyll-paginate-v2
   - pagemaster
   - jekyll-target-blank
   - jemoji
@@ -86,7 +86,7 @@ collections:
 # The values here represent the defaults if nothing is set
 pagination:
   # Site-wide kill switch, disabled here it doesn't run at all
-  enabled: true
+  enabled: false
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
   debug: false
