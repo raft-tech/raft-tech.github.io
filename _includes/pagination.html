@@ -1,0 +1,31 @@
+<nav aria-label="Pagination" class="my-5">
+    <ul class="pagination justify-content-center">
+
+        {% if paginator.first_page %}
+        <li class="page-item">
+            <a class="page-link" href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="First">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        {% endif %}
+
+        
+        
+        {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+            <li {% if page.url == trail.path %}class="page-item active"{% endif %}>
+                <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}" class="page-link">{{ trail.num }}</a>
+            </li>
+        {% endfor %}
+        {% endif %}
+
+        {% if paginator.last_page %}
+        <li class="page-item">
+            <a class="page-link" href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Last">
+            <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        {% endif %}
+
+    </ul>
+    </nav>

@@ -1,0 +1,55 @@
+<div id="nav" class="container d-none">
+  <div class="row">
+    <div class="col-lg-7 offset-lg-1 col-md-12 offset-md-0">
+      <h5>Navigation</h5>
+      <ul class="list-unstyled mb-5">
+        {% for item in site.data.navigation %}
+        <li class="{{item.className}}">
+          <a href="{{ item.url }}">
+            <div class="title">
+              {{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}
+            </div>
+            <div class="invisible">
+              {{item.subtitle | markdownify | remove: '<p>' | remove: '</p>' }}
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-12">
+      <h5>Raft + you</h5>
+      <p>
+        We're your solution. Not an acronym. Whatever challenges your
+        organization might face, you don't have to solve it alone. Let's talk
+        about the work that can't wait and Let's Freakin' Go!
+      </p>
+      <p class="mt-5">
+        <a href="/contact" class="raft-btn">Contact Raft</a>
+      </p>
+      <div class="mt-5">{% include social_links.html %}</div>
+      <div class="mt-5">
+        <p class="space-mono-font text-uppercase footer-header">
+          Accessibility matters
+        </p>
+        <p class="d-flex align-items-center">
+          Theme:
+          <button
+            class="btn btn-link"
+            data-bs-theme-value="light"
+            id="light-mode"
+          >
+            Light
+          </button>
+          <button
+            class="btn btn-link"
+            data-bs-theme-value="dark"
+            id="dark-mode"
+          >
+            Dark
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

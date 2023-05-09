@@ -1,0 +1,30 @@
+.raft-btn, a.raft-btn, button.raft-btn {
+    font-family: 'Space Mono';
+    background: $binary-black-gradient;
+    color: $text-white;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        background: $cta-gradient;
+        color: $text-white;
+        text-decoration: none !important;
+    }
+
+    &:before {
+        background: $cta-gradient;
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        content: "";
+        z-index: -1;
+        border-radius: 4px;
+    }
+}

@@ -1,72 +1,281 @@
 ---
 layout: default
-pagination:
-  enabled: true
 ---
 
-<div id="hero" class="home-hero site-header-container {% if site.cover %}has-cover{% endif %} fullhome" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+<div class="home-section-1 section-1">
+  <div class="container">
+    <h1>
+      We are a new breed of digital consulting firm. We are
+      <i class="space-mono-text highlight-text-pink">engineers</i> of the
+      future.
+      <i class="space-mono-text highlight-text-purple">Artists of change</i>.
+      Dedicated to building solutions that actually work.
+    </h1>
   </div>
+  <div class="video-gradient"></div>
+  <video
+    src="/assets/videos/header.mp4"
+    autoplay
+    muted
+    class="header-video"
+    loop
+    playsinline
+  ></video>
 </div>
 
-<section id="introducing">
-  <div class="left">
-      <h1 class="section-title">Building the Unimagined</h1>
-      <span class="h5">Introducing Raft</span>
-      <div class="line"></div>
-      <p class="about">A new breed of digital consulting firm, that’s part full stack consultancy, part think tank and part band of creative folks. We’re problem solvers and innovators with a focus on Open Source. Our name is actually inspired from the<!-- --> <a target="_" href="https://raft.github.io">Raft Consensus Algorithm</a>, which revolutionized solving consensus problems by being more reliable and easier to understand. It is also the algorithm implemented by etcd (brain of the Kubernetes). We took on this name because we share a similar goal: replace any overly complex and outdated system with a new, efficient, and secure one that <i>just</i> works.</p>
-      <a href="/about"><span class="button learn-more">Learn More</span></a>
-  </div>
-
-  <div class="right"><img src="./assets/raft-logo-712.jpg" alt="raft quad circle logo"></div>
-</section>
-
-<section id="services">
-  <h1 class="section-title">Services</h1>
-
-  <div class="cards">
-    <a href="http://goraft.tech/services/cloudnative">
-      <div class="card">
-        <img class="circle" src="./assets/cloud-native.png" alt="service icon">
-        <h2 class="title">Cloud Native</h2>
+<div class="home-section-2">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 col-sm-12 mb-5">
+        <a href="/focus-areas" class="focus-area-link sticky-text">
+          <h2>
+            Raft partners with public agencies to solve hard complex problems
+            that impact the lives of millions of Americans. We work hard to make
+            it easy for humans to
+            <i class="space-mono-text highlight-text-pink">connect</i> with
+            data.
+          </h2>
+          <p class="bracket-link">Learn about our Focus Areas</p>
+        </a>
       </div>
-    </a>
-
-    <a href="http://goraft.tech/services/datascience">
-      <div class="card">
-        <img class="circle" src="./assets/data-science.png" alt="service icon">
-        <h2 class="title">Data Science</h2>
-      </div>
-    </a>
-
-    <a href="http://goraft.tech/services/devsecops">
-      <div class="card">
-        <img class="circle" src="./assets/digital-transformation.png" alt="service icon">
-        <h2 class="title">DevSecOps</h2>
-      </div>
-    </a>
-
-    <a href="http://goraft.tech/services/product">
-      <div class="card">
-        <img class="circle" src="./assets/product-strategy.png" alt="service icon">
-          <h2 class="title">Product Strategy</h2>
+      <div class="col-md-2 d-none-sm"></div>
+      <div class="col-md-4 col-sm-12">
+        <h4 class="text-block-title">At Raft, we think difficult is fun...</h4>
+        <div class="text-block">
+          <p class="bracket">
+            We thrive in complexity
+          </p>
+          <p>
+            We work on advanced features and functionality that require
+            specialized skills and capabilities in software architecture, UX/UI
+            design, and automated testing. We work closely with operators and
+            end users to transform mission workflows, modernize legacy
+            applications and data systems for speed, security, and scale.
+          </p>
         </div>
-    </a>
+
+        <div class="text-block">
+          <p class="bracket">
+            We are Decision Driven
+          </p>
+          <p>
+            We are architects of the data-centric and AI era. We have end-to-end
+            experience working with government and commercial partners to
+            establish sustainable data governance strategies, implementing
+            federated data ecosystems, and adopting human-centered AI systems
+            that reduce cognitive load and augment decision making. We are
+            charting a path for responsible AI and emerging technology.
+          </p>
+        </div>
+
+        <div class="text-block">
+          <p class="bracket">
+            We are Customer Obsessed
+          </p>
+          <p>
+            We are experts and trusted partners across the product lifecycle -
+            from initial concept to operationalizing the end results. By
+            creating products driven by user outcomes instead of features, we
+            empower organizations with solutions that meet and exceed your
+            goals.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-
-</section>
-
-<section id="clients">
-  <h1 class="section-title">Clients &amp; Partners</h1>
-  <div class="logos">
-    <div class="logo"><img src="./assets/kr-logo.png" alt="Kessel Run"></div>
-    <div class="logo"><img src="./assets/p1-logo.png" alt="Platform One"></div>
-    <div class="logo"><img src="./assets/18F-Logo.png" alt="18F"></div>
-    <div class="logo"><img src="./assets/spacecamp-logo.png" alt="SpaceCAMP"></div>
-    <div class="logo"><img src="./assets/cp-cfpb.png" alt="Consumer Financial Protection Bureau"></div>
-    <div class="logo"><img src="./assets/corsairranch-logo.png" alt="Corsair Ranch"></div>
-    <div class="logo"><img src="./assets/levelup-logo.png" alt="LevelUP"></div>
-  </div>
-</section>
-
 </div>
+
+<div class="home-section-3">
+  <div class="container-fluid">
+    <!-- <div class="container"> -->
+    <div class="row justify-content-center">
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img src="/assets/images/homepage/kessel-run.png" alt="Kessel Run" />
+          <p>Kessel Run</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img src="/assets/images/homepage/usaf.png" alt="US Airfoce" />
+          <p>US Airfoce</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img src="/assets/images/homepage/dod.png" alt="Dept. Of Defense" />
+          <p>Dept. Of Defense</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img
+            src="/assets/images/homepage/corsair-ranch.png"
+            alt="Corsair Ranch"
+          />
+          <p>Corsair Ranch</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img src="/assets/images/homepage/space-camp.png" alt="Space Camp" />
+          <p>Space Camp</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img src="/assets/images/homepage/level-up.png" alt="Level Up" />
+          <p>Level Up</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img
+            src="/assets/images/homepage/cfpb.png"
+            alt="Consumer Financial Protection Bureau"
+          />
+          <p>Consumer Financial Protection Bureau</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img src="/assets/images/homepage/18f.png" alt="18f" />
+          <p>18f</p>
+        </div>
+      </div>
+
+      <div class="col-md-1 col-sm-12 text-center mb-5">
+        <div class="client">
+          <img
+            src="/assets/images/homepage/platform-one.png"
+            alt="Platform One"
+          />
+          <p>Platform One</p>
+        </div>
+      </div>
+    </div>
+    <!--
+      <ul class="list-unstyled">
+        <li>
+          <a href="#" class="use-case-link">
+            <span class="space-mono-text">Enterprise Data Management</span>
+            //
+            <span class="ubuntu-text">Data and AI</span>
+            <img src="/assets/images/homepage/df-hover-img.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  --></div>
+  <img src="/assets/images/homepage/new-home-section-3.svg" class="home-section-3-wave">
+</div>
+
+<!--
+  <div class="container-fluid bm-250">
+  <div class="row justify-content-center">
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img src="/assets/images/homepage/kessel-run.png" alt="Kessel Run" />
+        <p>Kessel Run</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img src="/assets/images/homepage/usaf.png" alt="US Airfoce" />
+        <p>US Airfoce</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img src="/assets/images/homepage/dod.png" alt="Dept. Of Defense" />
+        <p>Dept. Of Defense</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img
+          src="/assets/images/homepage/corsair-ranch.png"
+          alt="Corsair Ranch"
+        />
+        <p>Corsair Ranch</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img src="/assets/images/homepage/space-camp.png" alt="Space Camp" />
+        <p>Space Camp</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img src="/assets/images/homepage/level-up.png" alt="Level Up" />
+        <p>Level Up</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img
+          src="/assets/images/homepage/cfpb.png"
+          alt="Consumer Financial Protection Bureau"
+        />
+        <p>Consumer Financial Protection Bureau</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img src="/assets/images/homepage/18f.png" alt="18f" />
+        <p>18f</p>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-sm-12 text-center mb-5">
+      <div class="client">
+        <img
+          src="/assets/images/homepage/platform-one.png"
+          alt="Platform One"
+        />
+        <p>Platform One</p>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="home-section-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-12">
+        <h2 class="gradient-text-tb mb-5">
+          At Raft, we think difficult is fun. We are building the sharpest
+          digital solutions. To solve the most complex problems. With the
+          brightest minds. And a passion for culture that will change the world.
+        </h2>
+        <p class="text-end">
+          <a
+            href="https://boards.greenhouse.io/raft"
+            target="_blank"
+            rel="no-follow no-referrer"
+            class="raft-btn"
+            >Join Team Raft</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include wave-footer.html %}

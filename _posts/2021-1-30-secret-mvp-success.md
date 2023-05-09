@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Secret of MVP Success"
+title: "The Secret of MVP Success"
 short_title: "The Secret of MVP Success"
 date: 2021-1-30
 categories:
@@ -11,7 +11,7 @@ author: Barak Stout
 
 ## Communication is hard
 
-A few weeks ago, my co-worker [Marc Phillips](https://goraft.tech/about/marc_phillips) sparked up a conversation among Rafters about MVPs and why the term MVP sparks such a range of definitions and emotions. Minimal Viable Product? Minimal Viable Prototype? Optimal First Release? We chatted about it for a while and I believe it boils down to a fundamental communication problem. Words mean different things to different people. Consensus is hard to achieve and harder to keep. Even simple concepts like success and failure become complicated, especially for things like an MVP. When we communicate, we often _assume_ that the other person understands the communication the way we do. You know what they say about making assumptions, right?
+A few weeks ago, my co-worker Marc Phillips sparked up a conversation among Rafters about MVPs and why the term MVP sparks such a range of definitions and emotions. Minimal Viable Product? Minimal Viable Prototype? Optimal First Release? We chatted about it for a while and I believe it boils down to a fundamental communication problem. Words mean different things to different people. Consensus is hard to achieve and harder to keep. Even simple concepts like success and failure become complicated, especially for things like an MVP. When we communicate, we often _assume_ that the other person understands the communication the way we do. You know what they say about making assumptions, right?
 
 Words themselves are a made up construct to convey ideas. Alone, words are abstractions. Combined, words can make up a story, an argument, an inspiring speech, a computer program, a mathematical proof, a love song; The list is enormous, and yes, computer programs and mathematical proofs are built using languages. Not really human friendly languages, but languages none the less. Let’s look at 2 particular words in the context of an MVP, _success_ and _failure_.
 

@@ -9,7 +9,6 @@ bgimg: /assets/images/bgimg/pressure-water-line-509871_1920.jpg
 author: Barak Stout
 ---
 
-<img class='float-img-right' src="/assets/images/featimage/dusty_uno.png"  alt="Mu Dusty Arduino Uno">
 Over the past several weeks, I was presented with the idea of [_Hardware In the Loop_](https://en.wikipedia.org/wiki/Hardware-in-the-loop_simulation) (HIL). In a byte, it is the idea of having a [digital twin](https://en.wikipedia.org/wiki/Digital_twin), a digital replica of a physical embedded system that can run in a virtual environment during development. The main benefit of this idea is so hardware and software can be created in parallel, rather than hardware availability becoming a blocker to the software development team. If we take the idea a little bit further, we can use the concept to create a CI/CD pipeline that starts as the developer's code passes through vigorous testing and ends on a physical device, using containerization and network availability. Now I have to admit, like most programmers I like solving problems. Some problems just linger around for a while. Others just have to be solved. This was a little bit of both. The more I thought about it, the more  I wanted to try it out for myself. _How would I do this if I had to?_ Well, I have been looking for a reason to dust off my Pi and Arduino. Thus began my weekend rabbit hole...
 
 I spent some time thinking about HIL with the end-goal in mind. What we really want is to get to the hardware running such that it can be configured and/or observed by software alone. Although computational costs may seem negligible these days, embedded systems that interface analog and digital signals still have very little computing power. The Arduino Uno for example has only 32k bytes of flash memory which is part of the reason why Embedded systems run programs written in cryptic code to optimize run time and with short variable names to save memory. It would ideal if we could attach a powerhouse like a Pi, or a cluster of them, running a container orchestration system and enhance the capabilities of the overall system.
@@ -25,19 +24,23 @@ Below are my k3s on Pi install notes:
 ### Getting the Pi ready
 
 On host machine:
-  - Download [balenaEtcher](https://www.balena.io/etcher/)
-  - Download [Raspberry Pi OS (32-bit) Lite](https://downloads.raspberrypi.org/raspios_lite_armhf_latest.torrent)
-  - Insert memory card into reader
-  - Run balenaEtcher
-  - Use UI to install the OS
+
+- Download [balenaEtcher](https://www.balena.io/etcher/)
+- Download [Raspberry Pi OS (32-bit) Lite](https://downloads.raspberrypi.org/raspios_lite_armhf_latest.torrent)
+- Insert memory card into reader
+- Run balenaEtcher
+- Use UI to install the OS
 
 Take memory card out of host and put in pi
-  - Power up pi
-  - The OS default credentials are:
-    ```
+
+- Power up pi
+- The OS default credentials are:
+
+    ```bash
     Username: pi
     Password: raspberry
     ```
+
   - Run `sudo raspi-config` to open config UI
   - Use config UI for:
     - change password
@@ -47,19 +50,25 @@ Take memory card out of host and put in pi
     - reduce video mem to 16
 
 Once done, the Pi will be available for ssh via:
-  - From host:
-  ```sh
-  ssh pi@raspberrypi.local
+
+- From host:
+
+```sh
+ssh pi@raspberrypi.local
   ```
 
 ### Instilling k3s
 
 ssh into pi
-  - open this file `sudo nano /boot/cmdline.txt` and add the following at the end of the line
+
+- open this file `sudo nano /boot/cmdline.txt` and add the following at the end of the line
+  
   ```sh
   cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
   ```
+
   - run
+
     ```sh
     sudo apt-get update && sudo apt-get upgrade
     curl -fsSL https://get.docker.com -o get-docker.sh
@@ -67,11 +76,13 @@ ssh into pi
     export K3S_KUBECONFIG_MODE="644"
     export INSTALL_K3S_EXEC=" --no-deploy servicelb --no-deploy --docker traefik"
     curl -sfL https://get.k3s.io | sh -s - --docker
+    ```
 
   - Once done, you can check that k3s is up via `sudo systemctl status k3s`
   - You can use `ifconfig` to see ip
 
-#### Accessing the cluster from host
+### Accessing the cluster from host
+
 Back on host machine, copy the `KUBECONFIG` file from Pi to host.
 ```sh
 scp pi@192.168.1.83:/etc/rancher/k3s/k3s.yaml ~/Downloads/k3sconfig
@@ -137,7 +148,8 @@ docker run -it --device=/dev/ttyACM0 comm-test-docker
 ```
 
 And the results just showed up as:
-```
+
+```bash
 b'Starting ir_sensor_demo...\r\n'
 b'48\r\n'
 b'69\r\n'

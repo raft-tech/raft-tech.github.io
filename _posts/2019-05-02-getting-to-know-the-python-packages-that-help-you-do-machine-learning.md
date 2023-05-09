@@ -10,15 +10,15 @@ author: Chelsea
 
 **CIO LEVEL SUMMARY:**
 
--   Machine Learning can be difficult to implement by hand, but packages in python like SciKit Learn, Keras, and Tensorflow create an environment where building ML models from logistic regression to Deep Networks is straightforward.
+- Machine Learning can be difficult to implement by hand, but packages in python like SciKit Learn, Keras, and Tensorflow create an environment where building ML models from logistic regression to Deep Networks is straightforward.
 
--   **Scikit learn** is a package is a general machine learning library that implements basic ML algorithms, both supervised and unsupervised. It has clear and consistent syntax so that training models is similar between algorithms.
+- **Scikit learn** is a package is a general machine learning library that implements basic ML algorithms, both supervised and unsupervised. It has clear and consistent syntax so that training models is similar between algorithms.
 
--   Similarly, **Keras** is an open source Neural Network library that uses different frameworks (such as Tensorflow) to create an easy to use syntax for building custom Neural Networks. Keras allows you flexibility, without the technical cost of using Tensorflow directly.
+- Similarly, **Keras** is an open source Neural Network library that uses different frameworks (such as Tensorflow) to create an easy to use syntax for building custom Neural Networks. Keras allows you flexibility, without the technical cost of using Tensorflow directly.
 
--   **Tensorflow** is a lower level machine learning library created and maintained by Google. It allows for incredibly customization and flexibility, but does have less opaque and more complex syntax that can have a steep learning curve.
+- **Tensorflow** is a lower level machine learning library created and maintained by Google. It allows for incredibly customization and flexibility, but does have less opaque and more complex syntax that can have a steep learning curve.
 
-**SCIKIT LEARN**
+## SCIKIT LEARN
 
 Scikit-learn is an open source package for common machine learning
 models. It's built on top of other popular python libraries such as
@@ -61,6 +61,7 @@ features = pd.DataFrame(data = data['data'], columns = data['feature_names'])
 features['target'] = data['target']
 features['class'] = features['target'].map(lambda ind: data['target_names'][ind])
 ```
+
 Then we use the built in function **train\_test\_split()** to create a
 training and testing set.
 
@@ -103,13 +104,13 @@ and customize your models.
 Here's some common sklearn methods to help you train your sklearn
 models:
 
--   **fit()** takes in data and uses it to train the model you call it on.
+- **fit()** takes in data and uses it to train the model you call it on.
 
--   **predict()** takes a trained model and a set of inputs (these can either be seen, or unseen) and outputs the values predicted by the model.
+- **predict()** takes a trained model and a set of inputs (these can either be seen, or unseen) and outputs the values predicted by the model.
 
--   **score()** take in (usually unseen) test data, runs it through your model, and returns a measure of model performance based on how close the predictions were to the actual output.
+- **score()** take in (usually unseen) test data, runs it through your model, and returns a measure of model performance based on how close the predictions were to the actual output.
 
-**KERAS**
+## KERAS
 
 You can access tensorflow backend through keras
 
@@ -145,7 +146,8 @@ model.add(Activation('relu'))
 model.add(Dense(2))
 model.add(Activation('softmax')
 ```
-**Building a Model**
+
+## Building a Model
 
 Both blocks of code will result in the same model. Keras treats layers
 (and as we'll soon see, other neural network features) a bit like Lego
@@ -154,36 +156,27 @@ This allows us to have a lot of flexibility when creating our model
 structure. Let's take a look at some commonly used layers that we can
 use.
 
--   **Dense()** creates a new fully connected layer, meaning that the each input value is included in the calculation of each of the layer's output.
+- **Dense()** creates a new fully connected layer, meaning that the each input value is included in the calculation of each of the layer's output.
+- **Activation()** applies an activation to the last output in the model. You can specify the type of activation function you want by passing a string like "relu" or "softmax" to the method.
+- **Dropout()** randomly drops connection between node during each pass through the model. Using the rate argument, you can specify the proportion of input units to be dropped.
+- **Conv*2*D()** and **Conv*3*D()** create 2D or 3D Convolutional layers for use in a convolutional NN. Convolutional layers use learned "filters" that condense and extract information from images (see HSI article on Convolutional Neural Networks for more information).
+- **MaxPooling*2*D()** and **MaxPooling*3*D()** creates a Max pooling layer. In general, Pooling reduces the dimensions of (downsamples) images and usually follows convolutional layers. Max pooling will take the maximum value from an nxn window of entries in the matrix.
+- **AveragePooling*2*D()** and **AveragePooling*3*D()** are similar to Max pooling, but it will take the average value of an nxn window of entries in the matrix.
 
--   **Activation()** applies an activation to the last output in the model. You can specify the type of activation function you want by passing a string like "relu" or "softmax" to the method.
-
--   **Dropout()** randomly drops connection between node during each pass through the model. Using the rate argument, you can specify the proportion of input units to be dropped.
-
--   **Conv*2*D()** and **Conv*3*D()** create 2D or 3D Convolutional layers for use in a convolutional NN. Convolutional layers use learned "filters" that condense and extract information from images (see HSI article on Convolutional Neural Networks for more information).
-
--   **MaxPooling*2*D()** and **MaxPooling*3*D()** creates a Max pooling layer. In general, Pooling reduces the dimensions of (downsamples) images and usually follows convolutional layers. Max pooling will take the maximum value from an nxn window of entries in the matrix.
-
--   **AveragePooling*2*D()** and **AveragePooling*3*D()** are similar to Max pooling, but it will take the average value of an nxn window of entries in the matrix.
-
-**How to Compile**
+## How to Compile
 
 Once you've specified the layers that you'd like your network to have,
 you need to give Keras a few pieces of information about how you want to
 *train* your model. Let's look at three main arguments the **compile()**
 function takes.
 
--   **Loss** refers to the *loss function* that you want to minimize. When your model is doing well, it's loss will be low. For specific info see (https://keras.io/losses/).
+- **Loss** refers to the *loss function* that you want to minimize. When your model is doing well, it's loss will be low. For specific info see [https://keras.io/losses/](https://keras.io/losses/).
+  - Binary Cross Entropy
+  - Mean Square Error
+- **Metrics** allow you to track the progress of your model as it trains. You can ask for things like *accuracy* (for categorical tasks) or *mean absolute error* (for continuous predictions).
+- **Optimizer** allows you to specify the algorithm used to optimize your network (i.e. to minimize your loss function). Some popular ones include *SGD* which stands for stochastic gradient descent and *Adam* (short for adaptive moment estimation) which takes advantage of the second as well as the first moment of the gradient and is often quite effective compared to other algorithms.
 
-    -   Binary Cross Entropy
-
-    -   Mean Square Error
-
--   **Metrics** allow you to track the progress of your model as it trains. You can ask for things like *accuracy* (for categorical tasks) or *mean absolute error* (for continuous predictions).
-
--   **Optimizer** allows you to specify the algorithm used to optimize your network (i.e. to minimize your loss function). Some popular ones include *SGD* which stands for stochastic gradient descent and *Adam* (short for adaptive moment estimation) which takes advantage of the second as well as the first moment of the gradient and is often quite effective compared to other algorithms.
-
-**How to Fit**
+## How to Fit
 
 Now that we've specified the structure of our network as well as the
 details of how it will be trained, we need to give the network some data
@@ -200,7 +193,7 @@ discussed in the Compile section.
 For examples of fully implemented Keras models, see the HSI articles on
 *Convolutional Neural Networks,* and *Feed-Forward Neural Networks*.
 
-**TENSORFLOW**
+## TENSORFLOW
 
 Often, most networks can be built using the Keras package. Despite how
 much work Keras does for you, it still allows for model flexibility.
@@ -222,7 +215,7 @@ accessible than Keras. Often, developers will choose to use Keras when
 possible since it gives you many of the advantages of Tensorflow (like
 speed), while allowing for much simpler syntax.
 
-**CONCLUSION**
+## CONCLUSION
 
 Python has a very well developed and easily accessible set of tools that
 can help you build all kinds of Machine Learning models; from simpler

@@ -1,0 +1,8 @@
+<section class="social-links">
+  {% for social in site.social %}
+    {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+    <a href="{{ social.url }}" class="mr-2" target="_blank" rel="no-follow no-referrer">
+      <i class="fa fa-{{ social.icon | remove_first: '-square' }} fa-lg"></i>
+    </a>
+  {% endfor %}
+</section>

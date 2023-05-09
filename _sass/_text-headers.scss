@@ -1,0 +1,45 @@
+@mixin ubuntu-headers() {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 132%;
+}
+
+@mixin space-mono-headers() {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 132%;
+}
+
+h1, .title {
+    @include ubuntu-headers;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+h2 {
+    @include ubuntu-headers;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h3, .subtitle {
+    @include ubuntu-headers;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+h4 {
+    @include space-mono-headers;
+    font-size: 26px;
+}
+
+h5 {
+    @include space-mono-headers;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}

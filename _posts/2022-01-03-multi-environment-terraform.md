@@ -9,19 +9,18 @@ bgimg: /assets/images/bgimg/Terraform_Blog_Header.png
 author: Jorge Gonzalez
 ---
 
-# A Multi-Environment Terraform Setup
+## Terraform
 
-
-## Terraform 
 We adopted [Terraform](https://www.terraform.io/) recently to help in the provisioning of our service infrastructure across multiple environments. We developed this workflow early in our application’s lifecycle, an advantage that will yield the ability to create and test new services in lower, non-production environments, and then easily replicate them to higher environments.
 
 It is well described elsewhere how to manually manage such deployments across environments, but this deployment workflow is notably entirely automated, managed only by committing the declarative, high-level configuration [Terraform language](https://www.terraform.io/docs/language/index.html) syntax with which we describe our infrastructure; deployments are managed by certain git merges, and services can be updated and created with changes to our Terraform configuration files.
 
-### Proceed with Caution
+## Proceed with Caution
 
 This text assumes a working understanding of Terraform and CI/CD concepts with CircleCI. It is also recommended that you have already used or included Terraform configurations in your project and have run the local CLI workflow, else the automation this guide describes may not be immediately obvious. Additionally, consider first whether introducing multi-environment automation is worth the added costs and complexity. 
 
 ## Initial Configuration
+
 Below is a starter configuration with a remote backend to store our environment’s state in S3 that will provision an RDS instance. This guide uses the Cloudfoundry provider, but the workflow and setup should be quite similar if you’re hosting on AWS.
 
 > One caveat is this presumes the existence of an S3 bucket as a backend to store the Terraform state, which must be created beforehand manually.
@@ -56,9 +55,9 @@ provider "aws" {
   region = var.aws_region
 }
 
-#######################
+################
 # Define data sources #
-#######################
+################
 
 # Target space/org in Cloudfoundry
 data "cloudfoundry_space" "space" {
@@ -72,9 +71,9 @@ data "cloudfoundry_service" "rds" {
 }
 
 
-#######################
+################
 # Provision resources #
-#######################
+################
 
 # RDS on Cloudfoundry
 resource "cloudfoundry_service_instance" "database" {
@@ -89,6 +88,7 @@ resource "cloudfoundry_service_instance" "database" {
 Fantastic. Now we can run the usual `terraform init`, `terraform apply` and so on against that configuration. But what we really want to do is get this running in CI. We’ll use the CircleCI [Terraform Orb](https://circleci.com/developer/orbs/orb/circleci/terraform) to help configure this.
 
 ## Automated Deployments
+
 After configuring the Orb to your CircleCi `config.yml` file, create a custom `deploy-infrastructure` job that will be called somewhere in your workflow:
 
 ```yaml
@@ -162,6 +162,7 @@ workflows:
 Above, the `deploy-infrastructure`  job will trigger under the `dev-deployment` workflow on builds against the `dev` branch. You might be able to see how we can now extrapolate this for new environments.
 
 ## Higher Environments
+
 Suppose that in addition to a `dev` environment, we now want a parallel `staging` environment. We have all the Terraform configuration necessary to manually run commands with env-specific params, but as mentioned earlier, we ideally want this running in an automated fashion within CircleCI. 
 
 Recalling the `tfpath` param from above, we need a way for both Terraform and CircleCI to reference discrete sets of configuration files. We can duplicate our terraform’s file structure for separate `dev` and `staging` environments like below:
@@ -246,9 +247,9 @@ For example, suppose we wanted to provision a new S3 service in the `dev` enviro
 ```
 # main.tf
 
-###
+##
 # Provision S3 bucket
-###
+##
 
 data "cloudfoundry_service" "s3" {
   name = "s3"
@@ -262,13 +263,13 @@ resource "cloudfoundry_service_instance" "data-storage" {
 }
 ```
 
-When this is commited and merged into `dev`, Terraform sees this change when it creates a new `terraform/plan`, and creates the new S3 instance in the following `terraform/apply` step. Once this service is live and tested and perhaps iterated upon with your development application, you can replicate the final settings ( `terraform/staging/main.tf` ) and have your new services ready for testing in the staging environment. 
+When this is commited and merged into `dev`, Terraform sees this change when it creates a new `terraform/plan`, and creates the new S3 instance in the following `terraform/apply` step. Once this service is live and tested and perhaps iterated upon with your development application, you can replicate the final settings ( `terraform/staging/main.tf` ) and have your new services ready for testing in the staging environment.
 
 ## Reflections
-There is tremendous value in being able to iteratively deploy, develop, and test your infrastructure with plain code backed by git commits, with reproducible and consistent environments. It’s important to note though that not every team or project needs Terraform. Not every team or project needs these layers of environments and complexity. For us it was so clearly worth being able to easily stand up new services and environments consistently. Still, always consider the various costs of adopting new tools and technologies that will become deeply embedded in your build and deployment processes. 
 
+There is tremendous value in being able to iteratively deploy, develop, and test your infrastructure with plain code backed by git commits, with reproducible and consistent environments. It’s important to note though that not every team or project needs Terraform. Not every team or project needs these layers of environments and complexity. For us it was so clearly worth being able to easily stand up new services and environments consistently. Still, always consider the various costs of adopting new tools and technologies that will become deeply embedded in your build and deployment processes.
 
-### Further Reading
+## Further Reading
 
 [Deploy Terraform infrastructure with CircleCI](https://learn.hashicorp.com/tutorials/terraform/circle-ci?in=terraform/automation)
 [Running Terraform in Automation | Terraform - HashiCorp Learn](https://learn.hashicorp.com/tutorials/terraform/automate-terraform?in=terraform/automation)

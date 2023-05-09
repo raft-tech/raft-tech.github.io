@@ -10,19 +10,19 @@ author: Chelsea
 
 **CIO LEVEL SUMMARY:**
 
-1.  Convolutional Neural Networks (CNN) expand the principles of Feed Forward Neural Networks in order to preserve spatial relationships between input data.
+1. Convolutional Neural Networks (CNN) expand the principles of Feed Forward Neural Networks in order to preserve spatial relationships between input data.
 
-2.  CNNs are especially useful for image data, since pixels often have strong relationships with their surrounding pixels.
+2. CNNs are especially useful for image data, since pixels often have strong relationships with their surrounding pixels.
 
-3.  Spatial relationships are preserved by sliding a filter matrix (or kernel) across the matrix and performing the convolution operation. Using the same weights for the filter at each location allows CNNs to recognize features no matter where they are in the image.
+3. Spatial relationships are preserved by sliding a filter matrix (or kernel) across the matrix and performing the convolution operation. Using the same weights for the filter at each location allows CNNs to recognize features no matter where they are in the image.
 
-4.  Convolution filters often help detect features such as edges or curves which can help the CNN classify the image.
+4. Convolution filters often help detect features such as edges or curves which can help the CNN classify the image.
 
-5.  Pooling is used to reduce the dimensions of the convolved image in order to make it more manageable to use.
+5. Pooling is used to reduce the dimensions of the convolved image in order to make it more manageable to use.
 
-6.  The output of the convolutional and pooling layers is fed into at least one Feed Forward layer in order to classify the image as desired.
+6. The output of the convolutional and pooling layers is fed into at least one Feed Forward layer in order to classify the image as desired.
 
-**WHAT ARE CONVOLUTIONAL NEURAL NETS?**
+## WHAT ARE CONVOLUTIONAL NEURAL NETS?
 
 Neural Networks are incredibly useful models that can learn complex
 relationships between inputs and an output or prediction\--like using a
@@ -32,7 +32,7 @@ which the input data has spatial relationships. Simple Feed Forward
 Neural Networks take in one dimensional vectors as input, which
 discounts any spatial relationships between these inputs.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture1.png){: .center-image }
+![Picture 1](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture1.png)
 
 If you wanted to feed a small black and white image\--like a handwritten
 digit from the MNIST dataset\--into a simple Feed Forward Neural
@@ -41,15 +41,16 @@ instead of a 28x28 pixel square, you get a single, one dimensional
 vector that is 784 pixels long. Below, a 3x3 matrix of pixels is shown
 flattened into a one dimensional vector of 9 pixels.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture2.png){: .center-image }
+![Picture 2](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture2.png)
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture3.png){: .center-image }
+![Picture 3](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture3.png)
 
 And for smaller, simpler problems like classifying the MNIST digits,
 transforming a 2D matrix of pixels into a 1D vector of pixels can be
 surprisingly effective.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture4.png){: .center-image }
+![Picture 4](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture4.png)
+
 *MNIST digits from [Wikipedia](https://en.wikipedia.org/wiki/MNIST_database)*
 
 But often, the images that we want to work with are much more
@@ -69,17 +70,17 @@ that we can use in a CNN that we didn't have when we built a Feed
 Forward Neural Network in the last article. **Convolution**,
 **Detection**, and **Pooling**.
 
-**CONVOLUTION**
+## CONVOLUTION
 
 First, we'll consider a simple black and white fluorescent microscopy
 image. This is a mitochondrion from a HeLa cell.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture5.png){: .center-image }
+![Picture 5](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture5.png)
 
 We also have images (courtesy of the National Institute on Aging), of 9
 other types of organelles.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture6.png){: .center-image }
+![Picture 6](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture6.png)
 
 We can use a Convolutional Neural Network in order to classify new
 images as one of the 10 types of organelles in this dataset (Nuclei,
@@ -91,8 +92,9 @@ numeric version our our matrix, on the right is the same matrix, but
 with the corresponding color for each pixel. 0's are black, 1's are
 white, and anything in between is a shade of gray.
 
-{: .nolinetable}
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture7.png) | ![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture8.png)
+![Picture 7](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture7.png)
+
+![Picture 8](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture8.png)
 
 To preserve the spatial relationships between the pixels in these
 images, we create matrices called **filters** (or kernels) which we can
@@ -100,7 +102,7 @@ slide over the matrix of pixels in the image.
 
 A filter that looks for edges might look like this.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture9.png){: .center-image-md }
+![Picture 9](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture9.png)
 
 The convolution operation takes the dot product of the filter, and the
 matrix of pixels it is on top of. This particular filter is useful,
@@ -109,13 +111,13 @@ big difference between the center pixel and surrounding pixels (i.e. an
 edge), and small if there's a small difference between the center pixel
 and those around it (i.e. not an edge).
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture10.png){: .center-image }
+![Picture 10](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture10.png)
 
 When we multiply each element of the filter with the value of the pixel
 under it, and add all these up, we get a single number, in this case,
 -1.41.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture11.png){: .center-image-md }
+![Picture 11](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture11.png)
 
 In general, if we call the filter F, and the submatrix M, then
 convolution is
@@ -128,7 +130,7 @@ which tells us how far to move the filter for the next calculation. Here
 we have a stride of 1 since we're moving the filter by one pixel each
 time.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture12.png){: .center-image }
+![Picture 12](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture12.png)
 
 In this case, our matrix of pixels is 10x10, and our filter is 3x3, so
 with a stride of 1, our output will be 8x8. In general, the dimensions
@@ -137,19 +139,19 @@ But often, we want our output to be the same size as our input. So we
 surround our image with a "padding" of 0's. Our original matrix looks
 like this:
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture13.png){: .center-image-md}
+![Picture 13](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture13.png)
 
 To pad it, we add a row of 0's at the top and bottom, and a column of
 0's at either side.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture14.png){: .center-image-md }
+![Picture 14](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture14.png)
 
 This allows our output to have the same dimensions as our original
 input, which is often useful when working with images.
 
 Using our filter and our padded matrix, we get this output.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture15.png){: .center-image-md }
+![Picture 15](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture15.png)
 
 At the (2,2) location, you can see the -1.41 that we calculated above.
 
@@ -157,8 +159,9 @@ Plotting a rescaled version of this matrix (so that each value is
 between 0 and 1), we can see that this filter does detect edges
 relatively well.
 
-{: .nolinetable}
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture16.png){: .center-image-md } | ![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture17.png){: .center-image-md }
+![Picture 16](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture16.png)
+
+![Picture 17](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture17.png)
 
 Now, we've completed the convolution step. But, just like with Feed
 Forward Neural Networks, we often want to use some kind of activation
@@ -189,7 +192,7 @@ often with less data.
 In our organelle classification example, we want to recognize a
 mitochondrion no matter if it's in the center, or slightly offset.
 
-**POOLING**
+## POOLING
 
 Convolution helps extract useful features from images. But when we're
 working with large complex images, we often want to reduce the amount of
@@ -204,17 +207,17 @@ specify the size of the filter that we want to use, and the stride. For
 example, here, we'll look at 2x2 sections of our matrix, and our stride
 will be 2.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture18.png){: .center-image }
+![Picture 18](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture18.png)
 
 In max pooling, we take the maximum value of each 2x2 section, and
 create a new, smaller matrix.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture19.png){: .center-image }
+![Picture 19](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture19.png)
 
 In average pooling, we take the average of each value in the 2x2 section
 to create our new matrix.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture20.png){: .center-image }
+![Picture 20](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture20.png)
 
 Like with the Convolution step, the output of pooling on a Matrix with
 width W, with Filter width F, and Stride S will be
@@ -230,9 +233,9 @@ that produce an output, like a decision about which of 10 organelles is
 in an unseen image. So the last few layers of a CNN look similar to the
 last few layers of a Feed Forward Neural Network.
 
-![](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture21.png){: .center-image }
+![Picture 21](//healthstarinfo.com/blogs/assets/images/convolutional_nn/Picture21.png)
 
-**APPLICATIONS**
+## APPLICATIONS
 
 Let's build a Convolutional Neural Network in Python to classify our
 organelle data.
@@ -256,6 +259,7 @@ import glob
 import cv2
 import random
 ```
+
 We need a few packages and functions to build a Convolutional Neural
 Network, each one will be explained as needed.
 
@@ -325,6 +329,7 @@ labels = [1 for i in ims["dna"]] +\
 data = np.array(images, dtype = 'float') / 255.0 #for color ims
 labels = np.array(labels)
 ```
+
 Now that our images our loaded into the array *data* and our labels (a
 number indicating which organelle the picture contains) in the array
 *labels*, we're ready to start preparing to build a model.
@@ -392,6 +397,7 @@ def createModel(height, width, depth, n_classes):
     model.add(Flatten())
     model.add(Activation('relu'))
 ```
+
 First, we create a base model using *Sequential()*, then we keep adding
 layers to our model. Our first Convolutional layer uses 32 filters, each
 of size 4x4. Python will pad our images with 0's so that the output from
@@ -428,6 +434,7 @@ H = m.fit_generator(aug.flow(train_data, trainY, batch_size=b_size),
 	validation_data=(test_data, testY),
 	epochs=e, verbose=1)
 ```
+
 Since we're using stochastic gradient descent (which approximates the
 gradient of the loss function using only a small sample), we need to
 specify a batch size. Here, we chose 32.
@@ -446,7 +453,7 @@ Once our model is done running, we'll be able to see how it performed
 (in terms of accuracy) on both our training and testing set (in the
 model, this is also called the validation set).
 
-**CONCLUSION**
+## CONCLUSION
 
 The Convolutional Neural Network is a powerful tool for performing image
 related tasks. CNNs have been used extensively in the medical and health
@@ -456,7 +463,7 @@ computer vision to recognize the location of surgical tools during
 laparoscopic surgery[^4]. And as these fields increase the amount of
 image data they collect, the uses for CNNs will grow.
 
-**REFERENCES**
+## REFERENCES
 
 [^1]: Pereira, S., Pinto, A., Alves, V., & Silva, C. A. (2016). Brain
     tumor segmentation using convolutional neural networks in MRI

@@ -35,13 +35,13 @@ More critically—especially so in our upload workflow where users are likely to
 
 The lack of transparency into that selected file name [isn't an issue exclusive to the USWDS component](https://a11ysupport.io/tests/tech__html__input__input-file#assertion-html-input(type-file)_element-convey_change_in_value-). But regardless of where the issue stems from we needed a solution; one that didn't require a change to the component itself due to a constraint of how USWDS is integrated to our project. Our solution? Doing what amounts to handing a script to the screen reader that it can read when interacting with the input.
 
-### The Steps:
+### The Steps
 
 1. Add hidden text to the upload page that would be programmatically updated based on file input labels and the file names uploaded to them.
 2. Give that hidden text a unique ID so that it can be referenced by other elements.
 3. Reference the ID in an ARIA-describeby property added to the file input.
 
-### The Results:
+### The Results
 
 When focused, the file input will now pass the describeby text to the screenreader so that it gets read alongside the label and the input type. In our case this resulted in the slightly longer, but far clearer result below.
 
@@ -50,9 +50,10 @@ When focused, the file input will now pass the describeby text to the screenread
 -- As read by VoiceOver in Chrome
 
 ## Demo: Raft File Input Behavior
+
 [![Youtube link to a demo of the Raft File Input Behavior](/assets/images/file_input/Raft_video_thumbnail.jpg)](https://youtu.be/JxjZYlkIZc0)
 
-### Takeaways:
+### Takeaways
 
 - Taking the time to think through the many different ways people will experience what you create is essential to accessibility testing. There's lots to consider; from information conveyed to people relying on screen readers to proximity of related content for folks with a limited field of view and properly sized interaction targets for those with dexterity problems.
 - While there's a lot that can be caught by internal manual testing, but there's no substitute for inclusive research; making sure your designs get tested by people with disabilities.

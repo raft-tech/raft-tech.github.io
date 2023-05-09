@@ -13,7 +13,7 @@ As technology advances and adversaries mature their cyber tactics, America needs
  
 Congress introduced the [Strengthening American Cybersecurity Act of 2022](https://www.congress.gov/bill/117th-congress/senate-bill/3600/text) for this very reason – we can’t stay stagnant. What worked last year needs to evolve. The act says CISA must perform ongoing and continuous assessments of federal risk posture – especially as the U.S. continues to support Ukraine, and Russian-sponsored attacks are on the uptick. It also says agencies and critical infrastructure operators need to report cyberattacks to CISA and authorize FedRAMP so agencies can quickly adopt secure cloud technologies. 
  
-#### But who’s responsible for securing applications in the ecosystem?
+## But who’s responsible for securing applications in the ecosystem?
  
 A [2021 GitLab survey](https://about.gitlab.com/developer-survey/) found the most practiced development methodology is DevOps/DevSecOps because of its code quality, faster time to market and security. But the weight of securing applications shouldn’t just be put on DevSecOps teams – there should be a shared responsibility including the developers building the IT and the security teams finding the vulnerabilities. 
  
@@ -29,7 +29,7 @@ Most respondents rated their organization’s security efforts as “good,” ra
  
 This becomes challenging given the ratio of security to product teams, so it needs to be a shared responsibility. Drop the finger-pointing over who did and didn’t catch what vulnerabilities, and work together to ensure all efforts are pointed to the same cause. 
  
-#### How do we fix this?
+## How do we fix this?
  
 Changing the above mindset is cultural, but there are also ways we can tackle this through processes:
  

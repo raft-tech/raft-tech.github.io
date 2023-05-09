@@ -36,6 +36,7 @@ In the last post we had left things off with the following _TODOs_:
 In this post, we will mainly be addressing the first 3 points, with the goal to deliver code to Ardiuno via Pi. To get everything working properly, we will address some of the fine grained technical aspects of getting things working with the particular technology stack chosen. Get ready for lots of little technical details.
 
 ### Code delivery from Pi to Arduino using Ino
+
 The first thing I had to get working is code delivery from a Raspberry Pi to the Arduino. There are quite a few IDE's, including Arduino's offical one, that will accomplish this task. Most of them require a GUI interface and won't be much help in creating a CI/CD. After some more digging, turns out to be a problem that has been semi-solved already for me using the [Ino tool](http://inotool.org/). Ino is a _"a command line toolkit for working with Arduino"_. I should note that the project on GitHub is quite stale, but the tool worked flawlessly for our purpose here. Following [Ino's Quick Start](http://inotool.org/quickstart), setting Ino up is as easy as:  
 
 ```bash
@@ -62,6 +63,7 @@ After all this and barring any error messages, the Arduino should be running any
 ![Ino Example](/assets/images/hil2/ino_example.gif)
 
 ### Containerize Ino
+
 Ino worked great, but we want to take it a step further and have this done in a container. For things to work in a modern CI/CD pipeline, getting things working inside a container has become a requirement. To get Ino working we will need a Python2.7 container. I know what you are thinking -- _Python 2.7?!_. I did say the Ino repo is quite stale... Let's take a look at the Dockerfile that will help us:
 
 ```docker
@@ -132,6 +134,7 @@ And now you should have 2 LEDs blinking, one after the other.
 ![Deploy Example](/assets/images/hil2/deploy_example.gif)
 
 ### Code delivery from repo to Pi and from repo to Arduino
+
 The next two _TODOs_ from my previous post are very closely related. Any modern CI/CD requires some method of delivering code from a repo to where ever it is needed. In our case, there are 2 pipelines we are trying to establish, (1) repo to Pi and (2) repo to Arduino (our edge device). I decided to go with Drone.io for my CI/CD mainly because it seemed easier/lighter than running [Jenkins](https://www.jenkins.io/) and it is a great opportunity for me to take Drone.io for a test drive. Drone's pipeline configurations are based on steps, with each step having a specific container. Here is an example pipeline taken from [Drone's pipeline docs](https://docs.drone.io/pipeline/overview/)
 
 ```yaml
@@ -157,6 +160,7 @@ steps:
 Configured properly, this pipeline will checkout a code repo and build and test a backend server using a `go` container and a frontend server using a `node` container. Note that these are 2 individual steps that make up a single pipeline. Drone supports multiple pipelines, more on that in a little bit.  
 
 ### Running a Drone Server
+
 To get Drone working properly, there are a few things that need to be configured. For the code repo I used [Github](https://github.com/raft-tech/arduino-delivery-container/) and the [Drone GitHub Install Guide](https://docs.drone.io/server/provider/github/) which was very straightforward. You will need to follow the instructions to create an OAuth Application on GitHub as well as create a shared secret. If you are running everything in the cloud, the instructions are great. Where the instructions fall short is when attempting to run the server on a localhost. The way GitHub OAuth works require a valid callback URL. This is used to redirect back to the Drone dashboard after successfully logging in using GitHub credentials. To solve this issue you will need some tunnel to localhost service. There are a few available, I used [ngrok](https://ngrok.com/) mainly because it's free and on a Mac you can install it via [Homebrew](https://brew.sh/) using `brew cask install ngrok`. After the installation, you will need to create an account and use `ngrok authtoken <YOUR_AUTHTOKEN>` to setup authentication. Once all that is done, use the command `ngrok http <PORT>` to expose your localhost to the web. If all goes well you should see something like this:
 
 ![ngrok Example](/assets/images/hil2/ngrok-running.png)
@@ -218,7 +222,6 @@ Until now, I was running everything on my laptop, the pipeline was able to compl
 
 ![Drone.io Failures](/assets/images/hil2/drone-failures.png)
 
-
 After what seemed like too long, I ended up with multiple solutions. Let's explore these:
 
 - **Corss build using `docker buildx`** - [Docker _"supports"_ multi architect builds](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/), if you enable experimental features, run Docker with privileged access, and can get `buildx` working. After tinkering with this for a while, I was able to get it working on my laptop, but I couldn't get this working within Drone. [Drone dind pipeline](https://docker-runner.docs.drone.io/examples/service/docker_dind/) might work here, but I wasn't able to get it to work. When it does work, you can build and push images using:
@@ -278,6 +281,7 @@ steps:
 - **QEMU** - Using [QEMU](https://www.qemu.org/) we can [Run and Build ARM Docker Containers on x86](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/). I haven't tried that one either, but it seems like it would work well. To get it to work we will need to run Docker in `privileged` mode. This might be worth exploring if we end up using QEMU for simulations, more on that later.  
 
 ### Kubernetes, Simulations & Testing
+
 So far, we have accomplished getting code to be built and deployed to an edge device. We have effectively put the hardware at the deploy stage, which is the end goal. For this work to be a complete _Hardware-in-the-loop_ solution, we need to explore a couple more things.
 
 1. **Kubernetes** - The work that we have done so far regarding HIL has been in the realm of Docker and using manual commands. Although the pipeline is fully automated at this point, it doesn't complete the delivery without human intervention. The next iteration will need to include a fully automated delivery system and leveraging a container-orchestration system.
@@ -291,6 +295,7 @@ So far, we have accomplished getting code to be built and deployed to an edge de
 5. **Testing & Results** - The major reason we are trying to active HIL with a modern CI/CD is to do better testing. Ideally, we would like to run code on a target device, observe and capture the behavior, then change the hardware code and/or configuration and run another test. This will be something we would like to do along the way, in simulation, on test hardware, and in production. This too will be a problem for a later time when things are running smoothly.
 
 ### Final Thoughts
+
 As our quest for HIL continues, I find the problem space to be more and more intriguing. While simulation testing and HIL are not new concepts, applying modern CI/CD concepts to HIL is an interesting technological junction. A lot of the work is around figuring out **how, not if**, all the moving parts fit together. There is much more to do, but the basic building blocks are already in place and we can start to see how a modern HIL CI/CD will look like and what the next steps will include.
 
 _To be continued..._
