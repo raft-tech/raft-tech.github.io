@@ -8,4 +8,5 @@ about: Dagan believes that technology should enhance our abilities, experiences,
 github:
 linkedin:
 weight: 9
+sitemap: false
 ---

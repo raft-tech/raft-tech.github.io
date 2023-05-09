@@ -8,4 +8,5 @@ about:
 github:
 linkedin: https://www.linkedin.com/in/danielle-kem-mccoy/
 weight: 5
+sitemap: false
 ---

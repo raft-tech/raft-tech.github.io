@@ -8,4 +8,5 @@ about:
 github:
 linkedin:
 weight: 13
+sitemap: false
 ---

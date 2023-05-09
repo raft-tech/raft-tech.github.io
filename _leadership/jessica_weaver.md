@@ -8,4 +8,5 @@ about:
 github:
 linkedin: https://www.linkedin.com/in/jessica-weaver-a5235319/
 weight: 10
+sitemap: false
 ---
