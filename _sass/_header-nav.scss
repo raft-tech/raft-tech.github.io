@@ -134,12 +134,15 @@
         background: url("/assets/images/nav/nav-arrow-4.png");
         // animation-play-state: paused;
       }
+      &:not(:hover) {
+        animation: none;
+      }
       &:hover,
       &:focus,
       &:focus-visible {
         &::before {
           display: block;
-          // animation: nav4Animation 0.2s running;
+          animation: nav4Animation 0.2s;
         }
       }
     }

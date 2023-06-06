@@ -1,0 +1,141 @@
+# External plugins
+# See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
+plugins:
+  - jekyll-sitemap
+  # - jekyll-paginate-v2
+  - pagemaster
+  - jekyll-target-blank
+  - jemoji
+
+exclude:
+  - "/vendor/"
+
+# Site settings
+title: Raft
+subtitle: ""
+email: info@teamraft.com
+phone: 703-570-4820
+name: Raft
+description: >
+  Building the Unimagined
+# Base URL of site (i.e. /blog). It should always start with a slash,
+# and never end with a slash. Set it to a blank value if hosting at the
+# root of your server.
+#baseurl: "/" # the subpath of your site, e.g. /blog/
+#url: "http://goraft.tech" # the base hostname & protocol for your site
+cover: "/assets/header_image_big.jpg"
+logo: "/assets/new-raft-logo-light.svg"
+
+# Build settings
+markdown: kramdown
+inter_post_navigation: false
+highlightjs_theme: "atom-one-dark"
+
+#Google analytics
+ga_tracking_id: "UA-18253952-2"
+
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."
+
+  - cat: dummy
+    desc: "Just some placeholder posts, lorem ipsum and the rest."
+social:
+  - name: Twitter
+    icon: twitter
+    username: Raft_Tech
+    url: https://twitter.com/raft_tech
+    desc: Follow us on Twitter
+    share: true
+
+  - name: GitHub
+    icon: github
+    username: raft-tech
+    url: https://github.com/raft-tech
+    desc: Fork us on GitHub
+    share: true
+
+  - name: LinkedIn
+    icon: linkedin
+    username: Raft Tech
+    url: https://www.linkedin.com/company/raft-tech/
+    desc: Connect with us on LinkedIn
+    share: true
+
+# Social sharing protocols
+# These are for automatically generating sharing metadata for FB and Twitter
+# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
+protocols:
+  fb_image: "/assets/new-raft-logo.svg"
+  fb_image_width: 612
+  fb_image_height: 605
+  fb_image_type: "image/png"
+
+  twitter_image: "/assets/new-raft-logo.svg"
+
+  os_repo: "https://github.com/raft-tech"
+  os_rcs_type: "git"
+  os_src: "https://github.com/raft-tech"
+
+collections:
+  leadership:
+    output: true
+
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+pagination:
+  # Site-wide kill switch, disabled here it doesn't run at all
+  enabled: false
+
+  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
+  debug: false
+
+  # The default document collection to paginate if nothing is specified ('posts' is default)
+  collection: "posts"
+
+  # How many objects per paginated page, used to be `paginate` (default: 0, means all)
+  per_page: 9
+
+  # The permalink structure for the paginated pages (this can be any level deep)
+  permalink: "/page/:num/" # Pages are index.html inside this folder (default)
+  #permalink: '/page/:num.html' # Pages are simple html files
+  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+
+  # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
+  # title: ':title - page :num'
+
+  # Limit how many pagenated pages to create (default: 0, means all)
+  limit: 0
+
+  # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
+  sort_field: "date"
+
+  # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
+  sort_reverse: true
+
+  # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
+  category: "posts"
+
+  # Optional, the default tag to use, omit to disable
+  # tag: ''
+
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts,
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  # locale: ''
+
+  # Optional,omit or set both before and after to zero to disable.
+  # Controls how the pagination trail for the paginated pages look like.
+  trail:
+    before: 2
+    after: 2
+
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: "index"
+############################################################

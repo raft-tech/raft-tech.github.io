@@ -1,0 +1,96 @@
+.focus-area-wave {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.raft-r {
+  position: absolute;
+  z-index: -1;
+  width: 265px;
+  height: 175px;
+  margin-top: 300px;
+}
+
+.image-top {
+  position: absolute;
+  top: 0;
+}
+
+.image-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.blur-1-top {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-image: url(/assets/images/focus-areas/blur-1-top.svg);
+    max-width: 883px;
+    max-height: 706px;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blur-1-bottom {
+  position: relative;
+  min-height: 54vh;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: url(/assets/images/focus-areas/blur-1-bottom.svg);
+    max-width: 883px;
+    max-height: 706px;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blur-2-top {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    background-image: url(/assets/images/focus-areas/blur-2-top.svg);
+    max-width: 883px;
+    max-height: 605px;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blur-2-bottom {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-image: url(/assets/images/focus-areas/blur-2-bottom.svg);
+    max-width: 883px;
+    max-height: 605px;
+    filter: blur(300px);
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+}

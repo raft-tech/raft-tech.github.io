@@ -1,0 +1,140 @@
+---
+layout: default
+---
+
+<div class="full-height-section section-1">
+  <div class="container">
+    <h1 class="about-title">
+      We are <i class="highlight-text-pink space-mono-text">Team Raft</i>.
+      Together, we're building the sharpest digital solutions and solving the
+      most complex problems, while
+      <i class="highlight-text-purple space-mono-text">having fun</i>.
+    </h1>
+  </div>
+  <img src="/assets/images/about/wave-about-top.svg" class="about-wave-top" />
+</div>
+
+<div class="full-height-section blur-about-top">
+  <img
+    src="/assets/images/about/wave-about-bottom.svg"
+    class="about-wave-bottom"
+  />
+  <div class="container pt-5">
+    <div class="row bm-250">
+      <div class="col-lg-6 col-md-12 mb-5">
+        <div class="sticky-text">
+          <h2 class="mb-4">
+            We are crafters of contingency. Programmers of tomorrow. Real
+            people. Really smart. Who care about how their work affects the
+            world.
+          </h2>
+          <!--<p><a href="">Learn about our culture</a></p>-->
+        </div>
+      </div>
+      <div class="col-md-1 d-xs-none"></div>
+      <div class="col-lg-5 col-md-12">
+        <h4 class="text-block-title">Why Raft?</h4>
+
+        <div class="text-block">
+          <p class="bracket">
+             Humans First
+          </p>
+
+          <p>
+            We put our people and our culture first. We work with some of the
+            smartest, hardest-working experts in their fields. We give our teams
+            the space and freedom to focus on what they love - finding truly
+            innovative solutions.
+          </p>
+        </div>
+        <div class="text-block">
+          <p class="bracket">
+            Diversity is our superpower
+          </p>
+
+          <p>
+            We celebrate diversity, individuality, and non-traditional, out of
+            the-box thinkers. Because our differences make us strong.
+          </p>
+        </div>
+        <div class="text-block">
+          <p class="bracket">
+            Remote-first
+          </p>
+
+          <p>
+            We are a geographically distributed team where little humans, pets,
+            and everything in between are welcome during our zoom calls. We ♥️
+            Open Source and use Mattermost for collaboration. Less is more when
+            it comes to meetings, and we are accommodating of different time
+            zones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="full-height-section blur-about-bottom blur-about-video-top">
+  <div class="container">
+    <div class="row bm-250 flex-md-row flex-sm-column-reverse">
+      <div class="col-xl-8 col-12-md">
+        <div class="row bm-250">
+          {% assign members = site.leadership | sort: "weight" %}
+          {% for member in members %}
+          <div class="col-xl-6 col-md-6 col-sm-12">
+            {% include rafter.html %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-12">
+        <div class="sticky-text">
+          <h2>Let's Freakin' Go</h2>
+          <p>We are more than the faces you see here...</p>
+          <p>
+            We are kind people with big hearts and hardcore geek intensity. We
+            are bound and determined to succeed. We strive to be the people you
+            want to work with.
+          </p>
+          <p>
+            We are a team of 170+ awesome humans<br />
+            ....and growing
+          </p>
+          <p class="my-5">
+            <a
+              href="https://boards.greenhouse.io/raft"
+              target="_blank"
+              rel="no-follow no-referrer"
+              class="raft-btn"
+              >Join Team Raft</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="full-height-section blur-about-video-bottom">
+  <div class="container">
+    <div class="row bm-250">
+      <div class="col-12">
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://youtube.com/embed/2psdrE9gZPs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include wave-footer.html %}

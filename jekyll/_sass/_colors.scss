@@ -1,0 +1,64 @@
+$vibrant-pink-light: #b459df;
+$vibrant-pink: #f246cc;
+$vibrant-pink-dark: #c52ea3;
+$text-white: #fafafa;
+$text-black: #212529;
+$gray: #bebebe;
+$error: #fd7373;
+$binary-black: #101010;
+$primary-links-light: #6c6ff5;
+$primary-links: #8789ff;
+$secondary-links: #484be9;
+$secondary-links-dark: #4749ca;
+$footer-background: #1e1e1e;
+$footer-headers: #919191;
+$thumbnail-background: #d0d0f4;
+$line-gray: #4f4f4f;
+$transparent-black: rgba(0, 0, 0, 0.2);
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+$big-text-gradient: linear-gradient(
+  3.99deg,
+  $primary-links-light 4.62%,
+  $vibrant-pink 89.4%
+);
+$cta-gradient: linear-gradient(
+  267.17deg,
+  $vibrant-pink-dark 7.53%,
+  $secondary-links-dark 104.95%
+);
+$binary-black-gradient: linear-gradient(
+  267.17deg,
+  $footer-background 7.53%,
+  $footer-background 104.95%
+);
+$subtle-cta-gradient: linear-gradient(
+    0deg,
+    $transparent-black,
+    $transparent-black
+  ),
+  linear-gradient(
+    267.61deg,
+    $vibrant-pink 0.39%,
+    $vibrant-pink-light 42.41%,
+    $primary-links-light 100%
+  );
+$radial-gradient: radial-gradient(
+  50% 50% at 50% 50%,
+  #e85aff 0%,
+  $text-white 100%
+);
+$radial-gradient-light: radial-gradient(
+  50% 50% at 50% 50%,
+  #e85aff 0%,
+  $text-black 100%
+);
+$linear-gradient-top-bottom: linear-gradient(
+  3.99deg,
+  $primary-links-light 4.62%,
+  $vibrant-pink 89.4%
+);
+$radial-gradient-2: radial-gradient(
+  25% 50% at 50% 50%,
+  rgba(197, 46, 163, 0.5) 0%,
+  rgba(71, 72, 102, 0) 100%
+);

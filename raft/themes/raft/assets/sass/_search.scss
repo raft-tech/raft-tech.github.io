@@ -1,0 +1,39 @@
+.search-background {
+  background: url("/assets/images/search/search-bg.svg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container {
+  .raft-search-input {
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid $text-white;
+    margin: 87px auto 20px auto;
+    font-size: 26px;
+    line-height: 34px;
+    &:focus-visible {
+      outline: none;
+      border-bottom: 2px solid $vibrant-pink;
+    }
+  }
+
+  .search-result {
+    margin-bottom: 32px;
+    a {
+      color: $text-white;
+      font-family: "Space Mono", sans-serif;
+      font-size: 1.125rem;
+      text-decoration: underline;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
