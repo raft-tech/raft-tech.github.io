@@ -1,17 +1,3 @@
-// const pages = [
-//     {{range site.RegularPages}}
-//     {
-//         "title": {{ .Title | jsonify }},
-//         "content": {{ .Content | markdownify | strip_html | jsonify }},
-//         "url": {{ .Permalink | jsonify }},
-//         "excerpt": {{ .Summary | markdownify | strip_html | jsonify }}
-//       }
-//     {{end}}
-
-// ]
-
-const pages = [];
-
 // Generate search index
 
 const index = elasticlunr(function () {

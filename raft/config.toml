@@ -25,8 +25,9 @@ theme = 'raft'
     subtitle = "Careers at Team Raft"
     class = "nav-arrow-4"
 [params]
+ phone = "703-570-4820"
+ email = "info@teamraft.com"
  [[params.social]]
-    
     name = "Twitter"
     icon = "twitter"
     username = "Raft_Tech"
