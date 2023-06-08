@@ -4,8 +4,17 @@
         <h5>Navigation</h5>
         <ul class="list-unstyled mb-5">
           {{range site.Menus.main}}
-          {{.}}
-         {{end}}
+          <li class="{{.Params.class}}">
+            <a href="{{ .PageRef }}">
+              <div class="title">
+                {{ .Name  | markdownify}}
+              </div>
+              <div class="invisible">
+                {{.Params.subtitle | markdownify}}
+              </div>
+            </a>
+          </li>
+          {{end}}
         </ul>
       </div>
       <div class="col-lg-3 col-md-12">

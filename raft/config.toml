@@ -1,50 +1,84 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Raft'
 theme = 'raft'
 
+# [menu]
+# [[menu.main]]
+#   name = 'Products'
+#   pageRef = '/products'
+#   weight = 10
+# [[menu.main]]
+#   name = 'Hardware'
+#   pageRef = '/products/hardware'
+#   parent = 'Products'
+#   weight = 1
+# [[menu.main]]
+#   name = 'Software'
+#   pageRef = '/products/software'
+#   parent = 'Products'
+#   weight = 2
+# [[menu.main]]
+#   name = 'Services'
+#   pageRef = '/services'
+#   weight = 20
+# [[menu.main]]
+#   name = 'Hugo'
+#   class = '<i class="fa fa-heart"></i>'
+#   pageRef = 'https://gohugo.io/'
+#   weight = 30
+
 [menu]
-  [[menu.main]]
-    url = "/about"
-    title = "We are nerdy humans"
-    subtitle = "About us and our philosophies"
-    class = "nav-arrow-1"
-  [[menu.main]]
-    url = "/focus-areas"
-    title = "doing the work we love"
-    subtitle = "Our Focus Areas and Innovation Toolkit"
-    class = "nav-arrow-2"
-  [[menu.main]]
-    url = "/blog"
-    title = "+ sharing it with the world."
-    subtitle = "Read about Raft’s News + Insights"
-    class = "nav-arrow-3"
-  [[menu.main]]
-    url = "https://boards.greenhouse.io/raft"
-    title = "Come *join* the fun."
-    subtitle = "Careers at Team Raft"
-    class = "nav-arrow-4"
+[[menu.main]]
+  pageRef = '/about'
+  name = 'We are nerdy humans'
+  weight = 1
+  [menu.main.params]
+      subtitle = 'About us and our philosophies'
+      class = 'nav-arrow-1'
+[[menu.main]]
+  pageRef = '/focus-areas'
+  name = 'doing the work we love'
+  weight = 2
+  [menu.main.params]
+    subtitle = 'Our Focus Areas and Innovation Toolkit'
+    class = 'nav-arrow-2'
+[[menu.main]]
+  pageRef = '/blog'
+  name = '\+ sharing it with the world.'
+  weight = 3
+  [menu.main.params]
+    subtitle = 'Read about Raft’s News + Insights'
+    class = 'nav-arrow-3'
+[[menu.main]]
+  pageRef = 'https://boards.greenhouse.io/raft'
+  name = 'Come *join* the fun.'
+  weight = 4
+  [menu.main.params]
+    subtitle = 'Careers at Team Raft'
+    class = 'nav-arrow-4'
+
 [params]
- phone = "703-570-4820"
- email = "info@teamraft.com"
+ phone = '703-570-4820'
+ email = 'info@teamraft.com'
  [[params.social]]
-    name = "Twitter"
-    icon = "twitter"
-    username = "Raft_Tech"
-    url = "https://twitter.com/raft_tech"
-    desc = "Follow us on Twitter"
+    name = 'Twitter'
+    icon = 'twitter'
+    username = 'Raft_Tech'
+    url = 'https://twitter.com/raft_tech'
+    desc = 'Follow us on Twitter'
     share = true
  [[params.social]]
-    name = "GitHub"
-    icon = "github"
-    username = "raft-tech"
-    url = "https://github.com/raft-tech"
-    desc = "Fork us on GitHub"
+    name = 'GitHub'
+    icon = 'github'
+    username = 'raft-tech'
+    url = 'https://github.com/raft-tech'
+    desc = 'Fork us on GitHub'
     share = true
  [[params.social]]
-    name = "LinkedIn"
-    icon = "linkedin"
-    username = "Raft Tech"
-    url = "https://www.linkedin.com/company/raft-tech/"
-    desc = "Connect with us on LinkedIn"
+    name = 'LinkedIn'
+    icon = 'linkedin'
+    username = 'Raft Tech'
+    url = 'https://www.linkedin.com/company/raft-tech/'
+    desc = 'Connect with us on LinkedIn'
     share = true

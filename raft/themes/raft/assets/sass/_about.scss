@@ -56,7 +56,7 @@
 
 .col-6:nth-child(1n) > .rafter > .rafter-avatar {
   &::after {
-    content: url("/assets/images/about/profile-pattern-1.png");
+    content: url("/images/about/profile-pattern-1.png");
     right: auto;
     bottom: -6px;
     left: -10px;
@@ -65,7 +65,7 @@
 
 .col-6:nth-child(2n) > .rafter > .rafter-avatar {
   &::after {
-    content: url("/assets/images/about/profile-pattern-2.png");
+    content: url("/images/about/profile-pattern-2.png");
     right: auto;
     bottom: -6px;
     left: -10px;
@@ -75,7 +75,7 @@
 .col-6:nth-child(3n) > .rafter > .rafter-avatar,
 .col-6:nth-child(4n) > .rafter > .rafter-avatar {
   &::after {
-    content: url("/assets/images/about/profile-pattern-3.png");
+    content: url("/images/about/profile-pattern-3.png");
     right: -10px;
     bottom: -6px;
     left: auto;
@@ -100,7 +100,7 @@
   border-radius: 18px;
 
   &::after {
-    content: url("/assets/images/about/video-dots.png");
+    content: url("/images/about/video-dots.png");
     width: 195px;
     height: 169px;
     position: absolute;
@@ -124,7 +124,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url(/assets/images/about/blur-about-top.svg);
+    background-image: url(/images/about/blur-about-top.svg);
     z-index: -1;
     filter: blur(300px);
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url(/assets/images/about/blur-about-bottom.svg);
+    background-image: url(/images/about/blur-about-bottom.svg);
     z-index: -1;
     filter: blur(300px);
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url(/assets/images/about/blur-about-video-top.svg);
+    background-image: url(/images/about/blur-about-video-top.svg);
     z-index: -1;
     max-width: 836px;
     max-height: 615px;
@@ -178,7 +178,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url(/assets/images/about/blur-about-video-bottom.svg);
+    background-image: url(/images/about/blur-about-video-bottom.svg);
     z-index: -1;
     max-width: 836px;
     max-height: 615px;

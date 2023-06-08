@@ -1,0 +1,58 @@
+{{ define "main" }}
+<div class="reading-progress"></div>
+<div class="container">
+  <div class="row flex-wrap-reverse">
+    <div class="col-lg-7 col-md-12 content-column">
+      <h1>{{ .Params.Title }}</h1>
+
+      {{with .Params.subtitle}} <h3>{{.Params.subtitle}}</h3>{{end}}
+      {{/*  {% for author in site.about %} {% if author.full_name ==
+      page.author %} {% assign author_url = author.linkedin %} {% endif %} {%
+      endfor %}  */}}
+
+      <h5 class="mb-5">
+        {{/*  {{ page.date | date: "%B %-d, %Y" }} | Words by {% if author_url %}<a
+          href="{{author_url}}"
+          target="_blank"
+          rel="no-follow no-referrer"
+          >{{ page.author }}</a
+        >{% else %}{{ page.author }}{% endif %}  */}}
+      </h5>
+
+      {{.Content}}
+    </div>
+    <div class="col-1"></div>
+    <div class="col-lg-4 col-md-12 mb-5 sidebar-column">
+      <div class="sticky-text">
+        <img src="{{.Params.featimg}}" alt="{{.Params.Title}}" />
+      </div>
+    </div>
+  </div>
+</div>
+<img
+  src="/images/footer/well-make-waves-straight.svg"
+  alt="We'll make waves together."
+  class="well-make-waves my-5"
+/>
+<div class="container">
+  <div class="row mb-5">
+    <div class="col">
+      <hr />
+      <p class="related-content">You may also be interested in</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    {{range first 3 .RegularPages}}
+    {{partial "article-thumbnail.html" .}}
+    {{end}}
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/scrollpup@0.0.1/dist/scrollpup.min.js"></script>
+<script>
+  scrollpup({
+    background: "linear-gradient(267.17deg, #C52EA3 7.53%, #4749CA 104.95%)",
+    height: "10px",
+  })
+</script>
+{{ end }}

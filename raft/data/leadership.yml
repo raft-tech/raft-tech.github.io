@@ -1,0 +1,93 @@
+leadership:
+  - name: Angie Sheffield
+    role: Senior Director of Data and AI
+    about:
+    github:
+    linkedin: https://www.linkedin.com/in/angelasheffield/
+    weight: 6
+  - name: Barak Stout
+    role: R&D Director
+    about: Barak is Rafts R&D Director, with a passion for simplifying complex tasks
+      such as security, testing, developer happiness, and governance using automation.
+      He also leads Raft's open source collaboration efforts. In his not-so-spare time
+      he enjoys running and cooking. Barak is working on his master's in computer
+      science from Georgia Tech's OMSCS program.
+    github: https://github.com/BarakStout
+    linkedin: https://www.linkedin.com/in/barak-stout/
+    weight: 11
+  - name: Bhaarat Sharma
+    role: Chief Technology Officer
+    about: Bhaarat enjoys using technology to solve complex user problems. He has over
+      17 years of experience building user-focused applications in various frameworks. Bhaarat has a master's in computer
+      science from Georgia Tech and <a href=https://patents.google.com/patent/US9830508B1/en?inventor=bhaarat+sharma&oq=bhaarat+sharma>a
+
+      of interest are Deep Learning, DevSecOps, and fostering an inclusive team culture.
+    github: https://github.com/omnipresent07
+    linkedin: https://www.linkedin.com/in/bhaarat-s-68190316/
+    weight: 2
+  - name: Dagan Henderson
+    role: Vice President of Platform
+    about: Dagan believes that technology should enhance our abilities, experiences, and reach; solutions should be secure, reliable, and proven; and outcomes should be measured, tracked, and intentional. He has been programming for more than 20 years, has developed commercial software solutions in 10 programming languages, and has been awarded two patents. Dagan is passionate about secure application development and distributed computing.
+    github:
+    linkedin:
+    weight: 9
+  - name: Danielle McCoy
+    role: Senior Director of Culture and People
+    about:
+    github:
+    linkedin: https://www.linkedin.com/in/danielle-kem-mccoy/
+    weight: 5
+  - name: Hitesh Sharma
+    role: Senior Platform Lead
+    about:
+    github:
+    linkedin:
+    weight: 14
+  - name: Jake Buikema
+    role: Chief Growth Officer
+    about:
+    github:
+    linkedin: https://www.linkedin.com/in/jake-buikema-6338a93/
+    weight: 4
+  - name: Jesse Fullerton
+    role: Director of Contracts
+    about:
+    github:
+    linkedin:
+    weight: 12
+  - name: Jessica Weaver
+    role: Program Director
+    about:
+    github:
+    linkedin: https://www.linkedin.com/in/jessica-weaver-a5235319/
+    weight: 10
+  - name: Kristen Shaw
+    role: Director of UX
+    about: Kristen is a UX Researcher and Designer. For over ten years, she has been crafting delightful experiences - designing and optimizing digital products at the nexus of business and user needs spanning public, private, and non-profit sectors. She is passionate about user-centered design, solving complex problems through design thinking, and using her talents to serve missions with social impact. In her free time, she likes to spend time with her husband, daughter, and their two German Shepherds, traveling, hanging out with friends, reading, and streaming the latest new releases.
+    github:
+    linkedin:
+    weight: 8
+  - name: Sam Sams
+    role: Senior Director of Talent
+    about:
+    github:
+    linkedin: https://www.linkedin.com/in/samuelnsams/
+    weight: 7
+  - name: Shubhi Mishra
+    role: Founder & CEO
+    about: As the founder of Raft, Shubhi Mishra has extensive experience using human-centered design principles in an agile framework to create accessible and impactful digital solutions. For 12+ years, she has used her deep knowledge of UX strategy, mobile design, and interactive design to spearhead efforts with government agencies, educational institutions, and non-profits. Her work includes projects for agencies such as HHS, NIH, CFPB, Air Force, and various private sector clients including educational institutions and non-profits. Shubhi’s passion as both an innovator and a leader drives Raft in our mission to create digital products that make a positive difference in the lives of our community.
+    github: https://github.com/shubhi-raft
+    linkedin: https://www.linkedin.com/in/shubhi-mishra-19a94a135/
+    weight: 1
+  - name: Steve Morgan
+    role: Chief Data Engineer
+    about:
+    github:
+    linkedin:
+    weight: 13
+  - name: Tami Hrivnak
+    role: Vice President
+    about: Tami Hrivnak is a technology enthusiast who loves innovating and finding user-centric solutions to solve customer pain points. She most recently helped lead a digital transformation at NATO, helping them build Agile product teams that utilized a DevSecOps approach. She has over a decade of Product Management experience in both the civilian and government space. She is passionate about delivering the right capabilities to the warfighters at the right time. Tami is also a current HR Officer for the Navy Reserves and spent 8 years in the Army National Guard. She received her Master’s in Organizational Leadership at the University of Denver and her Bachelor’s in Security and Intelligence from The Ohio State University. She and her entire family are huge Buckeye fans. O-H!
+    github:
+    linkedin:
+    weight: 3
