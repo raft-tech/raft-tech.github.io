@@ -5,7 +5,7 @@
         <ul class="list-unstyled mb-5">
           {{range site.Menus.main}}
           <li class="{{.Params.class}}">
-            <a href="{{ .PageRef }}">
+            <a href="{{ .PageRef }}" {{if eq (strings.ContainsAny .PageRef "http") true}}target="_blank"{{end}}>
               <div class="title">
                 {{ .Name  | markdownify}}
               </div>
