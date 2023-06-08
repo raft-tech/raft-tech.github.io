@@ -2,9 +2,12 @@
 <div class="container">
   <h1 class="mb-5">News & Insights</h1>
   <div class="row justify-content-center">
-    {{range .RegularPages}}
+    {{range .Paginator.Pages}}
       {{partial "article-thumbnail.html" .}}
     {{end}}
+  </div>
+  <div class="row">
+    {{partial "paginator.html" .}}
   </div>
 </div>
 {{ end }}

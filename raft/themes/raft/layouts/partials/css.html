@@ -1,8 +1,3 @@
-{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <!-- External libraries -->
 
 <link
@@ -36,3 +31,8 @@
   type="text/css"
   href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
 />
+
+{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

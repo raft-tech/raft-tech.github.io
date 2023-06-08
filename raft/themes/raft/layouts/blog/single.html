@@ -5,18 +5,10 @@
     <div class="col-lg-7 col-md-12 content-column">
       <h1>{{ .Params.Title }}</h1>
 
-      {{with .Params.subtitle}} <h3>{{.Params.subtitle}}</h3>{{end}}
-      {{/*  {% for author in site.about %} {% if author.full_name ==
-      page.author %} {% assign author_url = author.linkedin %} {% endif %} {%
-      endfor %}  */}}
+      {{with .Params.subtitle}} <h3>{{.}}</h3>{{end}}
 
       <h5 class="mb-5">
-        {{/*  {{ page.date | date: "%B %-d, %Y" }} | Words by {% if author_url %}<a
-          href="{{author_url}}"
-          target="_blank"
-          rel="no-follow no-referrer"
-          >{{ page.author }}</a
-        >{% else %}{{ page.author }}{% endif %}  */}}
+        {{ .Date | time.Format ":date_long" }} | Words by {{ .Params.author }}
       </h5>
 
       {{.Content}}
@@ -42,7 +34,8 @@
     </div>
   </div>
   <div class="row justify-content-center">
-    {{range first 3 .RegularPages}}
+    
+    {{range .RegularPages | first 3 }}
     {{partial "article-thumbnail.html" .}}
     {{end}}
   </div>

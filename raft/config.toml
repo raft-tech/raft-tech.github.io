@@ -3,30 +3,7 @@ languageCode = 'en-us'
 title = 'Raft'
 theme = 'raft'
 
-# [menu]
-# [[menu.main]]
-#   name = 'Products'
-#   pageRef = '/products'
-#   weight = 10
-# [[menu.main]]
-#   name = 'Hardware'
-#   pageRef = '/products/hardware'
-#   parent = 'Products'
-#   weight = 1
-# [[menu.main]]
-#   name = 'Software'
-#   pageRef = '/products/software'
-#   parent = 'Products'
-#   weight = 2
-# [[menu.main]]
-#   name = 'Services'
-#   pageRef = '/services'
-#   weight = 20
-# [[menu.main]]
-#   name = 'Hugo'
-#   class = '<i class="fa fa-heart"></i>'
-#   pageRef = 'https://gohugo.io/'
-#   weight = 30
+paginate = 9
 
 [menu]
 [[menu.main]]
