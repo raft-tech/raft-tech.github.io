@@ -88,36 +88,60 @@
     .nav-arrow-1 {
       &::before {
         position: absolute;
-        content: url("/images/nav/nav-arrow-1.png");
+        content: "";
         top: 0;
         left: -49px;
         width: 39px;
         height: 81px;
         display: none;
       }
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        &::before {
+          background: url("/images/nav/nav-arrow-1-horizontal.png") 0 0 no-repeat;
+          animation: navAnimation1 0.25s steps(5) forwards;
+        }
+      }
     }
 
     .nav-arrow-2 {
       &::before {
         position: absolute;
-        content: url("/images/nav/nav-arrow-2.png");
+        content: "";
         top: 0;
         left: -74px;
-        width: 58px;
-        height: 52px;
+        width: 77px;
+        height: 77px;
         display: none;
+      }
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        &::before {
+          background: url("/images/nav/nav-arrow-2-horizontal.png") 0 0 no-repeat;
+          animation: navAnimation2 0.25s steps(11) forwards;
+        }
       }
     }
 
     .nav-arrow-3 {
       &::before {
         position: absolute;
-        content: url("/images/nav/nav-arrow-3.png");
+        content: "";
         top: 0;
         left: -43px;
-        width: 23px;
-        height: 71px;
+        width: 42px;
+        height: 75px;
         display: none;
+      }
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        &::before {
+          background: url("/images/nav/nav-arrow-3-horizontal.png") 0 0 no-repeat;
+          animation: navAnimation3 0.25s steps(5) forwards;
+        }
       }
     }
 
@@ -127,32 +151,56 @@
         content: "";
         bottom: 18px;
         left: 136px;
-        width: 301px;
-        height: 29px;
+        width: 305px;
+        height: 40px;
         z-index: -1;
-        display: none;
-        background: none;
-        animation: none;
+        // animation: nav4AnimationReset;
       }
       &:hover,
       &:focus,
       &:focus-visible {
         &::before {
-          display: block;
-          background: url("/images/nav/animated-nav-arrow-4.png");
-          animation: nav4Animation 0.2s steps(start);
+          background: url("/images/nav/nav-arrow-4-vertical.png") 0 0 no-repeat;
+          animation: navAnimation4 0.25s steps(10) forwards;
         }
       }
     }
   }
 }
 
-@keyframes nav4Animation {
+@keyframes navAnimation1 {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -201px;
+  }
+}
+
+@keyframes navAnimation2 {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -851px;
+  }
+}
+
+@keyframes navAnimation3 {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -210px;
+  }
+}
+
+@keyframes navAnimation4 {
   from {
     background-position-y: 0px;
   }
   to {
-    background-position-y: -290px;
+    background-position-y: -400px;
   }
 }
 
