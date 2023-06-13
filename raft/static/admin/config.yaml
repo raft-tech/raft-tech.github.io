@@ -53,43 +53,13 @@ collections:
         file: "raft/data/leadership.yml"
         name: "leaders"
         fields:
-          - label: "Leadership"
-            name: "leadership"
+          - label: "Leaders"
+            name: "leaders"
             widget: list
-            sortable_fields: ["weight", "name", "role", "song", "about"]
-            default:
-              field: order
-              direction: Descending
+            collapsed: true
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Role', name: 'role', widget: 'string' }
               - { label: 'Song', name: 'song', widget: 'string' }
               - { label: 'About', name: 'about', widget: 'markdown' }
-              - { label: 'Weight', name: 'weight', widget: 'number', step: 1 }
-    
-            
-            
-    
-    # fields:
-    #   - name: leadership
-    #     label: Leadership
-    #     widget: object
-    #     summary: 'Leaders'
-    #     allow_add: true
-    #     fields:
-    #       - name: leader
-    #         label: Leader
-    #         widget: object
-    #       - label: 'Order'
-    #         name: 'weight'
-    #         widget: 'number'
-    #       - label: 'Role'
-    #         name: 'role'
-    #         widget: 'string'
-    #       - label: 'Song'
-    #         name: 'song'
-    #         widget: 'string'
-    #       - label: 'About'
-    #         name: 'about'
-    #         widget: 'markdown'
-
+              - { label: 'Weight', name: 'weight', widget: 'number'}
