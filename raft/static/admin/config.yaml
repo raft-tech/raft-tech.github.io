@@ -56,7 +56,6 @@ collections:
           - label: "Leaders"
             name: "leaders"
             widget: list
-            collapsed: true
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Role', name: 'role', widget: 'string' }
