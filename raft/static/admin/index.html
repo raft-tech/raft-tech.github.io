@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^2.0.0/dist/main.css" />
+
+    <title>Content Manager</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link href="config.yaml" type="text/yaml" rel="cms-config-url" />
+
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Static CMS -->
+    <script src="https://unpkg.com/@staticcms/app@^2.0.0/dist/static-cms-app.js"></script>
+    <!-- <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script> -->
+
+    <script>
+      // const style = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css";
+      // CMS.registerPreviewStyle(style);
+      window.CMS.init();
+    </script>
+  </body>
+</html>

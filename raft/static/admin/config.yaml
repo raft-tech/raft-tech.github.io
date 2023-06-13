@@ -1,0 +1,95 @@
+backend:
+  name: github
+  repo: raft-tech/raft-tech.github.io # Path to your GitHub repository
+  # optional, defaults to main
+  branch: hugo
+# These lines should *not* be indented
+media_folder: "/raft/static/images/" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/raft/images/" # The src attribute for uploaded media will begin with /images/uploads
+media_library:
+  name: images
+  max_file_size: 512000
+  folder_support: true
+editor:
+  preview: true
+  frame: true
+  size: "half"
+logo_url: "../raft-logos/raft-logo.svg"
+collections:
+  - name: "pages"
+    identifier_field: "name"
+    label: "Pages"
+    folder: "raft/content/"
+    create: true
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+  - name: "about"
+    identifier_field: "name"
+    label: "About"
+    folder: "raft/content/about"
+    create: true
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+  - name: "blog"
+    identifier_field: "name"
+    label: "Blog"
+    folder: "raft/content/blog"
+    create: true
+    editor:
+      preview: true
+      frame: true
+      size: "half"
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "leadership"
+    label: "Leadership"
+    editor:
+      preview: true
+      frame: true
+      size: "half"
+    files:
+      - label: "Leaders"
+        file: "raft/data/leadership.yml"
+        name: "leaders"
+        fields:
+          - label: "Leadership"
+            name: "leadership"
+            widget: list
+            sortable_fields: ["weight", "name", "role", "song", "about"]
+            default:
+              field: order
+              direction: Descending
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Role', name: 'role', widget: 'string' }
+              - { label: 'Song', name: 'song', widget: 'string' }
+              - { label: 'About', name: 'about', widget: 'markdown' }
+              - { label: 'Weight', name: 'weight', widget: 'number', step: 1 }
+    
+            
+            
+    
+    # fields:
+    #   - name: leadership
+    #     label: Leadership
+    #     widget: object
+    #     summary: 'Leaders'
+    #     allow_add: true
+    #     fields:
+    #       - name: leader
+    #         label: Leader
+    #         widget: object
+    #       - label: 'Order'
+    #         name: 'weight'
+    #         widget: 'number'
+    #       - label: 'Role'
+    #         name: 'role'
+    #         widget: 'string'
+    #       - label: 'Song'
+    #         name: 'song'
+    #         widget: 'string'
+    #       - label: 'About'
+    #         name: 'about'
+    #         widget: 'markdown'
+

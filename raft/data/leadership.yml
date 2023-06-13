@@ -1,97 +1,69 @@
-leadership:
+leaders:
   - name: Angie Sheffield
     role: Senior Director of Data and AI
     about: As Senior Director of Data and Artificial Intelligence, Angie leads Raft's practice to operationalize data-centric and AI solutions for decision dominance in all warfighting domains. She is an expert in responsible AI for defense and national security. Angie started her career as an applied mathematician and intelligence officer in the U.S. Air Force, and later worked as the Director of Decision Modeling and Optimization at Pacific Northwest National Laboratory. She joined Raft after leading industry, academia, and the National Laboratories to harness AI to reduce nuclear threats as the Senior Program Manager for AI at DOE’s National Nuclear Security Administration. Angie is a graduate of the U.S. Air Force Academy, has an M.S. in Operations Research from Kansas State University, and is a war college graduate with an M.S. in National Security Resource Strategy from NDU’s Eisenhower School.
-    github:
-    linkedin: https://www.linkedin.com/in/angelasheffield/
     song: Good as Hell · Lizzo
     weight: 6
   - name: Barak Stout
     role: R&D Director
     about: Barak is Raft’s Sr. DevSecOps Engineer with a talent for simplifying complex problems and building clean solutions that meet user needs and codebase standards and automation applications for security, testing, developer happiness, and governance. Barak also leads Raft's open-source collaboration efforts. He is experienced in providing backend developer services and APIs, AWS, Python, Kubernetes, and DevOps tools (including Jenkins). Other interests include microservices architecture, functional programming, embedded systems, UI/UX design, software quality, web service architectures, serverless, cloud computing, agile development methodologies, and distributed platforms. He earned his BS in Computer Science at George Mason University and a MS in computer science from Georgia Tech's OMSCS program. Away from his computer, Barak enjoys running and cooking.
-    github: https://github.com/BarakStout
-    linkedin: https://www.linkedin.com/in/barak-stout/
     weight: 11
   - name: Bhaarat Sharma
     role: Chief Technology Officer
     about: Raft’s Chief Technology Officer Bhaarat has been an integral and formative part of the Raft team since its inception. He prides himself on being hands-on working in complex environments, applying technology to solve unique and challenging user problems. Bhaarat has over 17 years of experience building user-focused applications in various frameworks. He received his master’s degree in computer science from Georgia Institute Technology and was awarded a patent for systems and methods for extracting text from digital images. Bhaarat is a perpetual student and pursues constant improvement; his current areas of interest are Deep Learning, tightening the kill chain with low latency data streaming, and fostering an inclusive team culture.
-    github: https://github.com/omnipresent07
-    linkedin: https://www.linkedin.com/in/bhaarat-s-68190316/
     song: Forgot About Dre · Dr. Dre and Eminem
     weight: 2
   - name: Dagan Henderson
     role: Vice President of Platform
     about: As Vice President of Platform Engineering, Dagan lives his work ethos. He believes that technology should enhance our abilities, experiences, and reach; solutions should be secure, reliable, and proven, and outcomes should be measured, tracked, and intentional. Dagan is a Kubernetes Platform Engineer, a software engineer and security researcher delivering hardened, mission-critical platforms for Raft’s customers. Dagan has been programming for more than 20 years, developed commercial software solutions in 10 programming languages, and was awarded two US patents. He is passionate about secure application development and distributed computing. Dagan loves to share his knowledge in compelling and accessible ways including hacking demonstrations and video presentations.
-    github:
-    linkedin:
     song: You Can't Stop Me · Andy Mineo
     weight: 9
   - name: Danielle McCoy
     role: Senior Director of Culture and People
     about: Senior Director of People Danielle has built, scaled, and transformed award-winning companies known for their people-first cultures for over 15 years. As a champion of inclusion, Danielle spearheads game-changing people initiatives to ensure every Rafter feels valued and heard. Graduating from the University of Iowa (Go Hawks!) and currently pursuing a graduate degree in I-O Psychology from Harvard’s Division of Continuing Education, Danielle is always focused on the cutting edge of research and strategies to help people thrive at work. When she's not busy shaping the future of human engagement and operations, you'll find her exploring Northern Virginia's wine country or cheering on the Baltimore Ravens.
-    github:
-    linkedin: https://www.linkedin.com/in/danielle-kem-mccoy/
     song: Good as Hell · Lizzo
     weight: 5
   - name: Hitesh Sharma
     role: Senior Platform Lead
     about: Hitesh is a Sr. Lead Platform Engineer and specializes in GitOps, Infrastructure as Code (IaC), Kubernetes, and Automation. He has an impressive 10-year career dedicated to solution architecting various systems/platforms and is passionate about designing and implementing container platforms that can take full advantage of the cloud and embrace the DevOps culture. Hitesh is currently the TCODE Platform Lead at US Transportation Command and previous Gravity Platform Tech Lead at Space CAMP. Prior to his work at Raft, he also worked in various technologist roles for Booz Allen Hamilton and Accenture Federal Services. Hitesh received his BS in Information Systems from Northern Illinois University. Outside of work, he enjoys spending time with his family and traveling the world.
-    github:
-    linkedin:
     song: Lose Yourself · Eminem
     weight: 14
   - name: Jake Buikema
     role: Chief Growth Officer
     about: As Raft’s Chief Growth Officer, Jake oversees Raft’s new business processes and performance in increasingly competitive arenas. He is passionate about building winning teams. Jake brings 20 years of business strategy and acquisition experience, including more than 100 contract wins and 4 M&A transactions. He led the Digital Modernization Growth Team at ICF, was the SVP at Incentive Technology Group, and spent over 10 years with Lockheed Martin as a project engineer, manager, and senior capture executive. Jake has an MBA from the University of Maryland’s Robert H. Smith School of Business and a BS from the University of Michigan in Industrial & Operations Engineering. In his downtime, you can probably find him skiing or cheering for one of his daughter’s dance teams.
-    github:
-    linkedin: https://www.linkedin.com/in/jake-buikema-6338a93/
     song: The Victors · Michigan’s fight song
     weight: 4
   - name: Jesse Fullerton
     role: Director of Contracts
     about:
-    github:
-    linkedin:
     weight: 12
   - name: Jessica Weaver
     role: Program Director
     about: Jess is Raft’s Program Director with a proven track record of driving successful outcomes through the development of critical business partnerships, implementation of continuous improvement initiatives, and innovative solutions to complex problems. She has been instrumental in supporting Raft’s contracts, bringing top talent to solve hard mission problems to enable the war fighter. She leads and manages a portfolio of multi-faceted programs and projects with multi-million budgets and empowers cross-functional teams for success through training, performance management, and research-based insights. She received her BS in Public Relations from Franklin University and a Six Sigma Black Belt certification from University of San Diego. Jess is also a Group Chief out of the 121st Air Refueling Wing of the Air National Guard with 20 years of service.
-    github:
-    linkedin: https://www.linkedin.com/in/jessica-weaver-a5235319/
     song: Till I Collapse · Eminem
     weight: 10
   - name: Kristen Shaw
     role: Director of UX
     about: Kristen is Raft’s Director of UX, leading the practice of user-centered research and design to create exceptional experiences for Raft’s customers. For over eleven years, she has focused on crafting every aspect of delightful experiences - designing and optimizing digital products at the nexus of business and user needs that span public, private, and non-profit sectors. She is passionate about user-centered design, solving complex problems through design thinking, and applying her talents to serve missions with impact. Her philosophy, borrowed from Leonardo DaVinci, is “Simplicity is the ultimate sophistication.” Kristen has a BS in Graphic Design and a MS in Information Communications Technology from the University of Denver. Off hours, Kristen spends time with her husband, daughter, and their three dogs, traveling, connecting with friends, reading, and streaming the latest releases.
-    github:
-    linkedin:
     song: High Hopes · Panic! At The Disco
     weight: 8
   - name: Sam Sams
     role: Senior Director of Talent
     about: As Raft’s passionate Senior Director of Talent, Sam focuses on recruiting skilled people and their potential for agile and innovative solutions. Over his 17-year career, Sam has excelled at utilizing cutting-edge TA technology, fostering process enhancement, cultivating a compelling employer brand, and guiding TA team building and management. Sam connects teams across departments and plays a pivotal role in the entire Business Development life cycle. His understanding of day-to-day operations facilitates seamless collaboration between Talent Acquisition and BD to assemble great teams and drive missions. Sam lives in sunny St. Petersburg, Florida, with his loving family, which includes his wife, son, and two cherished dogs.
-    github:
-    linkedin: https://www.linkedin.com/in/samuelnsams/
     song: Vacation · Dirty Heads
     weight: 7
   - name: Shubhi Mishra
     role: Founder & CEO
     about: Shubhi is CEO and founder of RAFT, as well as a data scientist and lawyer. She is an unapologetic disruptor in the defense industry, driving contract wins over GovCon giants to deliver innovative solutions to some of the world’s most complex digital engineering problems. Shubhi has extensive experience leveraging human-centered design principles to create accessible, impactful, razor’s-edge solutions in the highest security environments. <br><br> With more than 15 years of experience in the data and technology industry, Shubhi has transformed Raft into a leading player in the defense ecosystem since its inception in 2018. She began her journey in the world of data and technology by earning an MS in computational biology from Boston University and a JD from George Washington Law School. Shubhi embarked on a successful career in the tech industry, holding various roles in software engineering, data analysis, and product management at Fortune-500 organizations prior to starting her own company. Shubhi is a champion for women in STEM and leadership and pursues a “LFG!” winning agenda in all arenas from fielding tip-of-the-spear solutions to Peloton sprints.
-    github: https://github.com/shubhi-raft
-    linkedin: https://www.linkedin.com/in/shubhi-mishra-19a94a135/
     song: Wu-Tang Clan Ain’t Nuthing Ta F’Wit · Wu-Tang Clan
     weight: 1
   - name: Steve Morgan
     role: Chief Data Engineer
     about: As Chief Data Engineer, Steve is responsible for developing Raft’s data engineering team into a world-class organization with well-rounded dynamic engineers who greatly understand all aspects of the data stack, from governance and quality to distributed high-performance computing. He has over 15 years of experience in the defense industry, most of which has been as a data engineer and architect. He is a Lockheed Martin Fellow Emeritus for his work done to build a data platform at Lockheed Martin, which impacted every employee and was used on projects including Orion, the F35, and the Blackhawk. Steve has an M.S. in Computer and Information Sciences from SUNY Polytechnic Institute and is currently a Ph.D. candidate in Systems Science at Binghamton University. During off-hours, you’ll probably find Steve outdoors golfing, canoeing, skiing, or spending time with his 2 kids and wife.
-    github:
-    linkedin:
     song: While You See A Chance · Steve Winwood
     weight: 13
   - name: Tami Hrivnak
     role: Vice President
     about: Tami Hrivnak is a technology enthusiast who loves innovating and finding user-centric solutions to solve customer pain points. She most recently helped lead a digital transformation at NATO, helping them build Agile product teams that utilized a DevSecOps approach. She has over a decade of Product Management experience in both the civilian and government space. She is passionate about delivering the right capabilities to the warfighters at the right time. Tami is also a current HR Officer for the Navy Reserves and spent 8 years in the Army National Guard. She received her Master’s in Organizational Leadership at the University of Denver and her Bachelor’s in Security and Intelligence from The Ohio State University. She and her entire family are huge Buckeye fans. O-H!
-    github:
-    linkedin:
     song: Thunderstruck·  AC/DC
     weight: 3
