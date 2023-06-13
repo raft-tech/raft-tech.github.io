@@ -16,20 +16,44 @@ editor:
   size: "half"
 logo_url: "../raft-logos/raft-logo.svg"
 collections:
-  - name: "pages"
-    identifier_field: "name"
-    label: "Pages"
-    folder: "raft/content/"
-    create: true
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
+  - name: "home"
+    label: "Home"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        editor:
+          preview: true
+          frame: true
+          size: "half"
+        file: "raft/content/_index.md"
+        fields: # The fields for each document, usually in front matter
+          - label: 'Title'
+            name: 'title'
+            widget: 'string'
+          - label: 'Draft'
+            name: 'draft'
+            widget: 'boolean'
+          - label: 'Partners'
+            name: 'partners'
+            widget: 'list'
+            fields:
+              - label: 'Name'
+                name: 'name'
+                widget: 'string'
+              - label: 'Logo'
+                name: 'logo'
+                widget: 'image'
+    
+        
   - name: "about"
     identifier_field: "name"
     label: "About"
     folder: "raft/content/about"
     create: true
     fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
   - name: "blog"
     identifier_field: "name"
     label: "Blog"
@@ -40,8 +64,12 @@ collections:
       frame: true
       size: "half"
     fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
   - name: "leadership"
     label: "Leadership"
     editor:
@@ -57,8 +85,18 @@ collections:
             name: "leaders"
             widget: list
             fields:
-              - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Role', name: 'role', widget: 'string' }
-              - { label: 'Song', name: 'song', widget: 'string' }
-              - { label: 'About', name: 'about', widget: 'markdown' }
-              - { label: 'Weight', name: 'weight', widget: 'number'}
+              - label: 'Name'
+                name: 'name'
+                widget: 'string'
+              - label: 'Role'
+                name: 'role'
+                widget: 'string'
+              - label: 'Song'
+                name: 'song'
+                widget: 'string'
+              - label: 'About'
+                name: 'about'
+                widget: 'markdown'
+              - label: 'Weight'
+                name: 'weight'
+                widget: 'number'

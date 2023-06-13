@@ -38,6 +38,7 @@
         <div class="col-md-2 d-none-sm"></div>
         <div class="col-md-4 col-sm-12">
           <h4 class="text-block-title">At Raft, we think difficult is fun...</h4>
+          
           <div class="text-block">
             <p class="bracket">We thrive in complexity</p>
             <p>
@@ -80,108 +81,19 @@
     <div class="container-fluid">
       <!-- <div class="container"> -->
       <div class="row justify-content-center">
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img
-              src="/images/homepage/socom.png"
-              alt="US Special Operations Command"
-            />
-            <p>US Special Operations Command</p>
+        
+        {{range .Params.partners}}
+          <div class="col-md-2 col-sm-12 text-center mb-5">
+            <div class="client">
+              <img
+                src="{{.logo}}"
+                alt="{{.name}}"
+              />
+              <p>{{.name}}</p>
+            </div>
           </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img
-              src="/images/homepage/space-systems-command.png"
-              alt="Space Systems Command"
-            />
-            <p>Space Systems Command</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img
-              src="/images/homepage/space-force.png"
-              alt="US Space Force"
-            />
-            <p>US Space Force</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img src="/images/homepage/kessel-run.png" alt="Kessel Run" />
-            <p>Kessel Run</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img src="/images/homepage/usaf.png" alt="US Airfoce" />
-            <p>US Airfoce</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img src="/images/homepage/dod.png" alt="Dept. Of Defense" />
-            <p>Dept. Of Defense</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img
-              src="/images/homepage/corsair-ranch.png"
-              alt="Corsair Ranch"
-            />
-            <p>Corsair Ranch</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img src="/images/homepage/space-camp.png" alt="Space Camp" />
-            <p>Space Camp</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img src="/images/homepage/level-up.png" alt="Level Up" />
-            <p>Level Up</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img
-              src="/images/homepage/cfpb.png"
-              alt="Consumer Financial Protection Bureau"
-            />
-            <p>Consumer Financial Protection Bureau</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img src="/images/homepage/18f.png" alt="18f" />
-            <p>18f</p>
-          </div>
-        </div>
-  
-        <div class="col-md-2 col-sm-12 text-center mb-5">
-          <div class="client">
-            <img
-              src="/images/homepage/platform-one.png"
-              alt="Platform One"
-            />
-            <p>Platform One</p>
-          </div>
-        </div>
+        {{end}}
+
       </div>
       <!--
         <ul class="list-unstyled">
