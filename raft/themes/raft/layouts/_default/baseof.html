@@ -8,6 +8,7 @@
         </div>
         {{- partial "footer.html" . -}}
         {{- partial "scripts.html" . -}}
+        {{ block "scripts" . }}{{ end }}
         {{- partial "google-analytics.html" . -}}
     </body>
 </html>

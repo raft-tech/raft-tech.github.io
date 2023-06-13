@@ -59,3 +59,23 @@ paginate = 9
     url = 'https://www.linkedin.com/company/raft-tech/'
     desc = 'Connect with us on LinkedIn'
     share = true
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+
+[[related.indices]]
+  name = "blog"
+  weight = 100
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+  hardWraps = true
+[markup.blackfriday]
+  extensions = ["hardLineBreak"]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true

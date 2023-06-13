@@ -1,10 +1,15 @@
 <div class="rafter">
-    <div class="rafter-avatar">
-
-        <div class="rafter-image" style="background: url(/images/about/{{replace (lower .name) " " "_"}}.jpg); background-position: top;"></div>
+    <div class="d-flex flex-row align-items-center">
+        <div class="rafter-avatar">
+            <div class="rafter-image" style="background: url(/images/about/{{replace (lower .name) " " "_"}}.jpg); background-position: top;"></div>
+        </div>
+        <div class="rafter-details">
+            <h5>{{.name}} {{with .about}}<i class="bi bi-plus-circle"></i>{{end}}</h5>
+            <p>{{.role}}</p>
+            {{with .song}}<p class="rafter-song">LFG Song: {{.}}</p>{{end}}
+        </div>
     </div>
-    <div class="rafter-details">
-        <h5>{{.name}}</h5>
-        <p>{{.role}}</p>
+    <div class="rafter-bio">
+        {{.about | safeHTML}}
     </div>    
 </div>

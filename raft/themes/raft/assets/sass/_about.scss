@@ -12,10 +12,58 @@
 .rafter {
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 5;
+  flex-direction: column;
+  cursor: pointer;
 
-  &:hover {
-    .rafter-avatar > .rafter-image {
-      background-position: bottom !important;
+  .d-flex {
+    width: 100%;
+  }
+  .rafter-bio {
+    display: none;
+  }
+  .rafter-song {
+    color: $vibrant-pink;
+    font-size: 12px;
+    visibility: hidden;
+  }
+
+  &:hover,
+  &.active {
+    .rafter-avatar {
+      .rafter-image {
+        background-position: bottom !important;
+      }
+    }
+    .rafter-song {
+      visibility: visible;
+    }
+    .rafter-details {
+      i {
+        visibility: visible;
+        &:before {
+          transition: rotate 0.25s ease-in-out;
+          transform-origin: center;
+        }
+      }
+    }
+  }
+
+  &.active {
+    .rafter-song {
+      visibility: visible;
+    }
+    .rafter-details {
+      i:before {
+        transition: rotate 0.25s ease-in-out;
+        rotate: 45deg;
+      }
+    }
+    .rafter-bio {
+      display: block;
     }
   }
 
@@ -51,6 +99,9 @@
 
   .rafter-details {
     color: $text-white;
+    i {
+      visibility: hidden;
+    }
   }
 }
 
