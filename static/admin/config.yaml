@@ -13,7 +13,7 @@ editor:
   preview: true
   frame: true
   size: half
-logo_url: raft-logos/raft-logo.svg
+logo_url: ../raft-logos/raft-logo.svg
 collections:
   - name: home
     label: Home
