@@ -4,6 +4,11 @@
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
+            {{if eq .Params.draft true}}
+                <div class="alert alert-warning" role="alert">
+                This page is in draft mode, it will not be visible in the public site until it is approved.
+                </div>
+            {{end}}
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}

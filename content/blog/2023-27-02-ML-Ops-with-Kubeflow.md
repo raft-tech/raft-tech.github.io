@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ML Ops with Kubeflow"
 short_title: "Kubeflow pipeline"
 date: 2023-03-14
@@ -7,6 +6,7 @@ categories:
 featimg: /images/featimage/kubeflow.jpeg
 bgimg: /images/bgimg/kubeflow.jpeg
 author: Joey Cheung
+draft: true
 ---
 
 ## Where we are now

@@ -4,8 +4,8 @@ backend:
   # optional, defaults to main
   branch: hugo
 # These lines should *not* be indented
-media_folder: /raft/static/images/ # Media files will be stored in the repo under static/images/uploads
-public_folder: /raft/images/ # The src attribute for uploaded media will begin with /images/uploads
+media_folder: /static/images/ # Media files will be stored in the repo under static/images/uploads
+public_folder: /images/ # The src attribute for uploaded media will begin with /images/uploads
 media_library:
   max_file_size: 512000
   folder_support: true
@@ -13,7 +13,7 @@ editor:
   preview: true
   frame: true
   size: half
-logo_url: ../raft-logos/raft-logo.svg
+logo_url: static/raft-logos/raft-logo.svg
 collections:
   - name: home
     label: Home
@@ -24,7 +24,7 @@ collections:
           preview: true
           frame: true
           size: half
-        file: raft/content/_index.md
+        file: content/_index.md
         fields: # The fields for each document, usually in front matter
           - label: Title
             name: title
@@ -47,7 +47,7 @@ collections:
   - name: about
     identifier_field: name
     label: About
-    folder: raft/content/about
+    folder: content/about
     create: true
     fields: # The fields for each document, usually in front matter
       - label: Title
@@ -56,7 +56,7 @@ collections:
   - name: blog
     identifier_field: name
     label: Blog
-    folder: raft/content/blog
+    folder: content/blog
     create: true
     editor:
       preview: true
@@ -77,7 +77,7 @@ collections:
       size: half
     files:
       - label: Leaders
-        file: raft/data/leadership.yml
+        file: data/leadership.yml
         name: leaders
         fields:
           - label: Leaders
