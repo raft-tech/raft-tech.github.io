@@ -38,10 +38,13 @@
 }
 
 .nav-background {
-  position: relative;
+  position: absolute;
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100vh;
+  z-index: 2;
+  top: 0;
+  backdrop-filter: blur(50px);
   &::before {
     background: url("/images/nav/nav-dots.svg") no-repeat;
     width: 118px;

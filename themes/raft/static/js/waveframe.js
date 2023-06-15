@@ -1,33 +1,56 @@
 // ThreeJS and Third-party deps
-import * as THREE from "three"
-import { RenderPass } from "/js/three.js-master/examples/jsm/postprocessing/RenderPass.js"
-import { EffectComposer } from "/js/three.js-master/examples/jsm/postprocessing/EffectComposer.js"
+import * as THREE from "three";
+import { RenderPass } from "/js/three.js-master/examples/jsm/postprocessing/RenderPass.js";
+import { EffectComposer } from "/js/three.js-master/examples/jsm/postprocessing/EffectComposer.js";
 
 // import * as THREE from "https://unpkg.com/browse/three@0.151.3/build/three.module.js";
 // import { RenderPass } from "https://unpkg.com/browse/three@0.151.3/examples/jsm/postprocessing/RenderPass.js";
 // import { EffectComposer } from "https://unpkg.com/browse/three@0.151.3/examples/jsm/postprocessing/EffectComposer.js";
 
-const lightMode = document.getElementById("light-mode")
-const darkMode = document.getElementById("dark-mode")
+const lightModeToggle = document.querySelectorAll(
+  '[data-bs-theme-value="light"]'
+);
 
-const startApp = (mode) => {
-  let theme =
-    mode ||
-    document.getElementsByTagName("html")[0].getAttribute("data-bs-theme")
+const darkModeToggle = document.querySelectorAll(
+  '[data-bs-theme-value="dark"]'
+);
+
+let theme = document
+  .getElementsByTagName("html")[0]
+  .getAttribute("data-bs-theme");
+
+const startApp = (theme) => {
+  console.log(theme);
   if (theme === "dark") {
-    runApp(appDark, scene, renderer, camera, true, uniforms, undefined)
+    runApp(appDark, scene, renderer, camera, true, uniforms, undefined);
   } else {
-    runApp(appLight, scene, renderer, camera, true, uniforms, undefined)
+    runApp(appLight, scene, renderer, camera, true, uniforms, undefined);
   }
-}
+};
 
-lightMode.addEventListener("click", () => {
-  startApp("light")
-})
+const toggleTheme = (theme) => {
+  const themeMode = document
+    .getElementsByTagName("html")[0]
+    .getAttribute("data-bs-theme");
+  console.log(themeMode);
+  if (themeMode === "dark") {
+    startApp("light");
+  } else if (themeMode === "light") {
+    startApp("dark");
+  }
+};
 
-darkMode.addEventListener("click", () => {
-  startApp("dark")
-})
+lightModeToggle.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    toggleTheme(theme);
+  })
+);
+
+darkModeToggle.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    toggleTheme(theme);
+  })
+);
 
 /**
  * Initializes a reasonable uniforms object ready to be used in fragments
@@ -48,8 +71,8 @@ const getDefaultUniforms = () => {
         y: window.innerHeight * window.devicePixelRatio,
       },
     },
-  }
-}
+  };
+};
 
 /**
  * This function contains the boilerplate code to set up the environment for a threejs app;
@@ -75,62 +98,62 @@ const runApp = (
   composer = null
 ) => {
   // Create the HTML container, styles defined in index.html
-  const container = document.getElementById("waveframe")
-  container.appendChild(renderer.domElement)
+  const container = document.getElementById("waveframe");
+  container.appendChild(renderer.domElement);
 
   // Register resize listener
   window.addEventListener("resize", () => {
-    camera.aspect = window.innerWidth / window.innerHeight
-    camera.updateProjectionMatrix()
-    renderer.setSize(window.innerWidth, window.innerHeight)
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
     // update uniforms.u_resolution
     if (uniforms.u_resolution !== undefined) {
       uniforms.u_resolution.value.x =
-        window.innerWidth * window.devicePixelRatio
+        window.innerWidth * window.devicePixelRatio;
       uniforms.u_resolution.value.y =
-        window.innerHeight * window.devicePixelRatio
+        window.innerHeight * window.devicePixelRatio;
     }
-  })
+  });
 
   // Define your app
   if (app.updateScene === undefined) {
-    app.updateScene = (delta, elapsed) => {}
+    app.updateScene = (delta, elapsed) => {};
   }
-  Object.assign(app, { ...app, container })
+  Object.assign(app, { ...app, container });
 
   // The engine that powers your scene into movement
-  const clock = new THREE.Clock()
+  const clock = new THREE.Clock();
   const animate = () => {
     if (enableAnimation) {
-      requestAnimationFrame(animate)
+      requestAnimationFrame(animate);
     }
 
-    const delta = clock.getDelta()
-    const elapsed = clock.getElapsedTime()
-    uniforms.u_time.value = elapsed
+    const delta = clock.getDelta();
+    const elapsed = clock.getElapsedTime();
+    uniforms.u_time.value = elapsed;
 
-    app.updateScene(delta, elapsed)
+    app.updateScene(delta, elapsed);
 
     if (composer === null) {
-      renderer.render(scene, camera)
+      renderer.render(scene, camera);
     } else {
-      composer.render()
+      composer.render();
     }
-  }
+  };
 
   app
     .initScene()
     .then(animate)
     .then(() => {
       // debugging info
-      renderer.info.reset()
+      renderer.info.reset();
       // not sure if reliable enough, numbers change everytime...
       // console.log("Renderer info", renderer.info);
     })
     .catch((error) => {
-      console.log(error)
-    })
-}
+      console.log(error);
+    });
+};
 
 /**
  * This creates the renderer, by default calls renderer's setPixelRatio and setSize methods
@@ -143,16 +166,16 @@ const createRenderer = (
   rendererProps = {},
   configureRenderer = (renderer) => {}
 ) => {
-  const renderer = new THREE.WebGLRenderer(rendererProps, { alpha: true })
-  renderer.setPixelRatio(window.devicePixelRatio)
-  renderer.setSize(window.innerWidth, window.innerHeight)
-  renderer.setClearColor(0x000000, 0)
+  const renderer = new THREE.WebGLRenderer(rendererProps, { alpha: true });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setClearColor(0x000000, 0);
 
   // more configurations to the renderer from the consumer
-  configureRenderer(renderer)
+  configureRenderer(renderer);
 
-  return renderer
-}
+  return renderer;
+};
 
 /**
  * This function creates the EffectComposer object for post processing
@@ -163,16 +186,16 @@ const createRenderer = (
  * @returns The created composer object used for post processing
  */
 const createComposer = (renderer, scene, camera, extraPasses) => {
-  const renderScene = new RenderPass(scene, camera)
+  const renderScene = new RenderPass(scene, camera);
 
-  let composer = new EffectComposer(renderer)
-  composer.addPass(renderScene)
+  let composer = new EffectComposer(renderer);
+  composer.addPass(renderScene);
 
   // custom passes that the consumer wants to add
-  extraPasses(composer)
+  extraPasses(composer);
 
-  return composer
-}
+  return composer;
+};
 
 /**
  * This function creates the three.js camera
@@ -192,12 +215,12 @@ const createCamera = (
   camLookAt = { x: 0, y: 0, z: 0 },
   aspect = window.innerWidth / window.innerHeight
 ) => {
-  const camera = new THREE.PerspectiveCamera(fov, aspect, near, far)
-  camera.position.set(camPos.x, camPos.y, camPos.z)
-  camera.lookAt(camLookAt.x, camLookAt.y, camLookAt.z) // this only works when there's no OrbitControls
-  camera.updateProjectionMatrix()
-  return camera
-}
+  const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+  camera.position.set(camPos.x, camPos.y, camPos.z);
+  camera.lookAt(camLookAt.x, camLookAt.y, camLookAt.z); // this only works when there's no OrbitControls
+  camera.updateProjectionMatrix();
+  return camera;
+};
 
 /**************************************************
  * 0. Tweakable parameters for the scene
@@ -213,22 +236,22 @@ const uniforms = {
   u_noise_freq_2: { value: 2.0 },
   u_noise_amp_2: { value: 0.3 },
   u_spd_modifier_2: { value: 0.8 },
-}
+};
 
 /**************************************************
  * 1. Initialize core threejs components
  *************************************************/
 // Create the scene
-let scene = new THREE.Scene()
+let scene = new THREE.Scene();
 
 // Create the renderer via 'createRenderer',
 // 1st param receives additional WebGLRenderer properties
 // 2nd param receives a custom callback to further configure the renderer
-let renderer = createRenderer({ antialias: true })
+let renderer = createRenderer({ antialias: true });
 
 // Create the camera
 // Pass in fov, near, far and camera position respectively
-let camera = createCamera(60, 1, 100, { x: 0, y: 0, z: 4.5 })
+let camera = createCamera(60, 1, 100, { x: 0, y: 0, z: 4.5 });
 
 /**************************************************
  * 2. Build your scene in this threejs app
@@ -299,7 +322,7 @@ let appDark = {
       vec4 mvm = modelViewMatrix * vec4(pos, 1.0);
       gl_Position = projectionMatrix * mvm;
     }
-    `
+    `;
   },
   fragmentShader() {
     return `
@@ -334,29 +357,29 @@ let appDark = {
           
           gl_FragColor = vec4(gradient,1.0);
         }
-      `
+      `;
   },
   async initScene() {
     // Environment
     // scene.background = new THREE.Color(bgColor);
 
     // Mesh
-    this.geometry = new THREE.PlaneGeometry(6, 6, 256, 256)
+    this.geometry = new THREE.PlaneGeometry(6, 6, 256, 256);
     const material = new THREE.ShaderMaterial({
       uniforms: uniforms,
       vertexShader: this.vertexShader(),
       fragmentShader: this.fragmentShader(),
-    })
+    });
     // const material = new THREE.MeshStandardMaterial();
-    this.mesh = new THREE.Points(this.geometry, material)
-    scene.add(this.mesh)
+    this.mesh = new THREE.Points(this.geometry, material);
+    scene.add(this.mesh);
 
     // set appropriate positioning
     // this.mesh.position.set(-0.1, 0.4, 0);
-    this.mesh.rotation.x = 3.1415 / 2
-    this.mesh.rotation.y = 3.1415
+    this.mesh.rotation.x = 3.1415 / 2;
+    this.mesh.rotation.y = 3.1415;
   },
-}
+};
 
 let appLight = {
   vertexShader() {
@@ -421,7 +444,7 @@ let appLight = {
       vec4 mvm = modelViewMatrix * vec4(pos, 1.0);
       gl_Position = projectionMatrix * mvm;
     }
-    `
+    `;
   },
   fragmentShader() {
     return `
@@ -456,29 +479,29 @@ let appLight = {
           
           gl_FragColor = vec4(gradient,1.0);
         }
-    `
+    `;
   },
   async initScene() {
     // Environment
     // scene.background = new THREE.Color(bgColor);
 
     // Mesh
-    this.geometry = new THREE.PlaneGeometry(6, 6, 256, 256)
+    this.geometry = new THREE.PlaneGeometry(6, 6, 256, 256);
     const material = new THREE.ShaderMaterial({
       uniforms: uniforms,
       vertexShader: this.vertexShader(),
       fragmentShader: this.fragmentShader(),
-    })
+    });
     // const material = new THREE.MeshStandardMaterial();
-    this.mesh = new THREE.Points(this.geometry, material)
-    scene.add(this.mesh)
+    this.mesh = new THREE.Points(this.geometry, material);
+    scene.add(this.mesh);
 
     // set appropriate positioning
     // this.mesh.position.set(-0.1, 0.4, 0);
-    this.mesh.rotation.x = 3.1415 / 2
-    this.mesh.rotation.y = 3.1415
+    this.mesh.rotation.x = 3.1415 / 2;
+    this.mesh.rotation.y = 3.1415;
   },
-}
+};
 
 /**************************************************
  * 3. Run the app
@@ -489,4 +512,4 @@ let appLight = {
  * ps. if you don't use post-processing, pass undefined to the 'composer'(last) param
  *************************************************/
 // runApp(app, scene, renderer, camera, true, uniforms, undefined);
-startApp()
+startApp(theme);

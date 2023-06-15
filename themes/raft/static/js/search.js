@@ -39,6 +39,8 @@ const hamburger = document.getElementById("hamburger");
 
 const nav = document.getElementById("nav");
 
+const navHeader = document.getElementById("nav-header");
+
 // HTML template for search results
 const resultsHTMLTemplate = (result) => {
     // console.log(result)
@@ -109,8 +111,8 @@ const getSearchResults = () => {
 
 const showSearch = () => {
     searchBox.classList.remove("d-none");
-    body.classList.add("search-background");
-    content.classList.add("d-none");
+    navHeader.classList.add("search-background");
+    body.classList.add("no-scroll");
     footer.classList.add("d-none");
     hamburger.classList.add('open');
     lightThemeButton.classList.add('d-none');
@@ -122,8 +124,8 @@ const showSearch = () => {
 const hideSearch = () => {
     nav.classList.add("d-none");
     searchBox.classList.add("d-none");
-    body.classList.remove("search-background");
-    content.classList.remove("d-none");
+    navHeader.classList.remove("search-background");
+    body.classList.remove("no-scroll");
     footer.classList.remove("d-none");
     lightThemeButton.classList.remove('d-none');
     darkThemeButton.classList.remove('d-none');
@@ -133,9 +135,9 @@ const hideSearch = () => {
 
 const showNav = () => {
     nav.classList.remove('d-none');
-    body.classList.add("nav-background");
+    navHeader.classList.add('nav-background');
+    body.classList.add("no-scroll");
     searchBox.classList.add("d-none");
-    content.classList.add("d-none");
     footer.classList.add("d-none");
     lightThemeButton.classList.add('d-none');
     darkThemeButton.classList.add('d-none');
@@ -146,8 +148,8 @@ const showNav = () => {
 const hideNav = () => {
     searchBox.classList.add("d-none");
     nav.classList.add('d-none');
-    body.classList.remove("nav-background");
-    content.classList.remove("d-none");
+    navHeader.classList.remove('nav-background');
+    body.classList.remove("no-scroll");
     footer.classList.remove("d-none");
     lightThemeButton.classList.remove('d-none');
     darkThemeButton.classList.remove('d-none');

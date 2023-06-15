@@ -7,10 +7,14 @@
         <li class="{{item.className}}">
           <a href="{{ item.url }}">
             <div class="title">
-              {{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}
+              {{ item.title | markdownify | remove: '
+              <p>' | remove: '</p>
+              ' }}
             </div>
             <div class="invisible">
-              {{item.subtitle | markdownify | remove: '<p>' | remove: '</p>' }}
+              {{item.subtitle | markdownify | remove: '
+              <p>' | remove: '</p>
+              ' }}
             </div>
           </a>
         </li>
@@ -34,20 +38,10 @@
         </p>
         <p class="d-flex align-items-center">
           Theme:
-          <button
-            class="btn btn-link"
-            data-bs-theme-value="light"
-            id="light-mode"
-          >
+          <button class="btn btn-link" data-bs-theme-value="light">
             Light
           </button>
-          <button
-            class="btn btn-link"
-            data-bs-theme-value="dark"
-            id="dark-mode"
-          >
-            Dark
-          </button>
+          <button class="btn btn-link" data-bs-theme-value="dark">Dark</button>
         </p>
       </div>
     </div>
