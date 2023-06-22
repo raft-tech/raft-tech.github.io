@@ -32,6 +32,19 @@ collections:
           - label: Draft
             name: draft
             widget: boolean
+          - label: Focus Area Title
+            name: focus_area_title
+            widget: string
+          - label: Focus Areas
+            name: focus_areas
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: markdown
           - label: Partners
             name: partners
             widget: list
@@ -42,8 +55,9 @@ collections:
               - label: Logo
                 name: logo
                 widget: image
-    
-        
+          - label: Join Team Raft Paragraph
+            name: join_team_raft_paragraph
+            widget: markdown
   - name: about
     identifier_field: name
     label: About
