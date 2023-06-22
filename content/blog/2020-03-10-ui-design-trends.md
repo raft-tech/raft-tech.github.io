@@ -4,9 +4,9 @@ title:  "Emerging Mobile UI and Web Design Trends of 2020"
 short_title: "Emerging Mobile Trends"
 date:   2020-03-10
 categories:
-featimg: /images/featimage/ui-design-trends.jpg
-bgimg: /images/bgimg/ui-design-trends.jpg
+thumbnail: /images/featimage/ui-design-trends.jpg
 author: Shubhi Mishra
+tags: ["UX/UI", "Design"]
 ---
 
 In with the new, and out with the old. As we creep into a new decade of Mobile UI and Web Design, the team at Raft sat down to select our favorite trends from across the web.  

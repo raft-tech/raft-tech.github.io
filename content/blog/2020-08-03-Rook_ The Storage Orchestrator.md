@@ -4,9 +4,9 @@ title:  "Rook: The Storage Orchestrator"
 short_title: "Rook on K8s"
 date: 2020-08-03
 categories:
-featimg: /images/featimage/featimg-blog-rook.jpg
-bgimg: /images/bgimg/Blog_Rook_2.00_V3-01.png
+thumbnail: /images/featimage/featimg-blog-rook.jpg
 author: James Villareal
+tags: ["Automation", "Kubernetes", "k8s", "Rook", "Open Source", "Storage", "Ochestration"]
 ---
 ## What is Rook?
 

@@ -4,9 +4,9 @@ title:  "Writing Plain English Content for a Great User Experience"
 short_title: "Plain English Guidelines" 
 date: 2020-05-22
 categories:
-featimg: /images/featimage/writingPlainEnglish.png
-bgimg: /images/featimage/writingPlainEnglish.png
+thumbnail: /images/featimage/writingPlainEnglish.png
 author: Ryan
+tags: ["UX"]
 ---
 
 To create the most eye-catching copy for your users, you must address your readers directly with thoughtfully worded writing that is easy to digest. When done properly, Plain English Content can help users on-board from legacy systems without issues, help users locate precisely the content they came looking for, and follow guidance without additional handholding. Confuse your readers with walls of text and complex jargon and no one will read past the first sentence.

@@ -4,9 +4,9 @@ title: "3 Biggest Benefits of Investing in UX Design"
 short_title: "The Benefits of UX Design" 
 date: 2020-04-08 
 categories: 
-featimg: /images/featimage/Important_UX-FeatImg.jpg 
-bgimg: /images/bgimg/Important-UX_bg.jpg 
+thumbnail: /images/featimage/Important_UX-FeatImg.jpg 
 author: Leslie
+tags: ["UX"]
 --- 
 
  As technology continues to rapidly change, UX design is more important than ever. The only way to stay ahead of curve is to invest in UX design for your product and build it into your development process as a permanent fixture. To reflect on the invaluable role UX design plays in product development, we’ve listed the three biggest benefits it can provide to your apps, websites and software.

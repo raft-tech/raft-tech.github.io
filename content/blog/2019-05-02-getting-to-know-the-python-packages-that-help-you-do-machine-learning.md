@@ -3,9 +3,9 @@ layout: post
 title:  "Python for Machine Learning"
 date:   2019-05-02
 categories:
-featimg: /images/featimage/may_2_2019.jpg
-bgimg: /images/bgimg/ml.jpg
+thumbnail: /images/featimage/may_2_2019.jpg
 author: Chelsea
+tags: ["Python", "Automation", "ML", "AI", "Open Source"]
 ---
 
 **CIO LEVEL SUMMARY:**

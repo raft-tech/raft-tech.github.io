@@ -4,9 +4,9 @@ title: "How we Won the 2021 Afwerx Datathon Challenge"
 short_title: "Afwerx Datathon"
 date: 2021-12-15
 categories:
-featimg: /images/featimage/Datathon_thumbnail.png
-bgimg: /images/bgimg/Datathon_Blog_Header.png
+thumbnail: /images/featimage/Datathon_thumbnail.png
 author: Ethan David
+tags: ["Datathon", "Python"]
 ---
 
 Raft is excited to announce that our team placed first place in this year’s AFWERX Datathon sponsored by the Air Force Chief Data Office. This year’s challenge presented two subproblems: using flight simulation data and physiological and cognitive sensor data, predict the difficulty rating of a flight simulation scenario and the pilot’s overall performance. The ability to make these predictions will enable the Air Force to train pilots more effectively. By dynamically adjusting the difficulty of training scenarios, pilots are trained at an intensity that optimizes their learning.

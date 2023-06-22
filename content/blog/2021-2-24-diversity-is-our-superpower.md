@@ -4,9 +4,9 @@ title:  "Diversity is Our Superpower"
 short_title: "Diversity Superpowers"
 date: 2021-2-24
 categories:
-featimg: /images/featimage/Diversity_Superpower_Feature-01.png
-bgimg: /images/bgimg/Diversity_Superpower_Header-01.png
+thumbnail: /images/featimage/Diversity_Superpower_Feature-01.png
 author: Shubhi Mishra
+tags: ["Diversity", "Culture", "Inclusion"]
 ---
 
 I am Shubhi Mishra, founder and CEO of Raft, a GovTech digital consultancy solving complex problems that impact millions of Americans every day. I started with a clear vision - Raft would be a new breed of digital consultancy, operating as a human-centered think tank to solve urgent problems with daily rigor and forward-looking innovation. As a woman of color, I had no illusions: the tech world is still a male-dominated, non-diverse space. Furthermore, women in federal contracting are often seen as figureheads put in leadership roles to take advantage of socio-economic vendor selection preferences. Presumptions about who I am and what I am capable of are real and continuous.

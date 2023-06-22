@@ -4,9 +4,9 @@ title:  "The Magic of Plain Language"
 short_title: "The Magic of Plain Language"
 date: 2020-12-22
 categories:
-featimg: /images/featimage/plain_language_Feature-01.png
-bgimg: /images/bgimg/plain_language_Header-01.png
+thumbnail: /images/featimage/plain_language_Feature-01.png
 author: Missy Maloney
+tags: ["Plain Language"]
 ---
 
 How should the federal government define success for agency websites and applications? How can we, as agile software delivery team members, ensure each system achieves these goals? While every program has different needs, one universal challenge stands out - how to make sure that every user can get the information they need, quickly. Given a user base comprising the American public at large – a varied audience that includes the young, the old, and those with disabilities - how can we help each federal agency fulfill this promise to the people they serve?

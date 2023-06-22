@@ -4,9 +4,9 @@ title: "Kafka Connect With SQL and NoSQL Databases"
 short_title: "Kafka Connect" 
 date: 2021-05-19
 categories:
-featimg: /images/featimage/Kafka_Connect_Feature-01.png
-bgimg: /images/bgimg/Kafka_Connect_Header-01.png
+thumbnail: /images/featimage/Kafka_Connect_Feature-01.png
 author: Le Chen
+tags: ["Kafka", "NoSQL", "Confluent", "JDBC", "MongoDB"]
 ---
 
 ## Overview

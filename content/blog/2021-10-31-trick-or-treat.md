@@ -4,9 +4,9 @@ title: "Trick or treat with a Kubernetes cloud stack"
 short_title: "Kubecon 2021"
 date: 2021-10-31
 categories:
-featimg: /images/featimage/trick-or-treat.jpg
-bgimg: /images/bgimg/trick-or-treat.jpg
+thumbnail: /images/featimage/trick-or-treat.jpg
 author: Barak Stout
+tags: ["Kubernetes", "k8s", "Kubecon"]
 ---
 
 A Cloud-based software stack can be a lot like _trick or treat_. It can have spooky parts, and parts that work smoothly out of the gate. At scale, a cloud application will need multiple additional resources to maintain close to [Five Nines of availability](https://en.wikipedia.org/wiki/High_availability#Percentage_calculation). Services for logging, alerting, testing, development, artifacts, notifications, and more. The [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) has a lot of helpful projects that sometimes can make life easy; sometimes it will have you puzzled for days. With almost 1,000 projects in the [CNCF landsacpe](https://landscape.cncf.io/), each application ecosystem is unique. Each stack is made up of similar blocks that were integrated in the easiest way possible at the time. As new projects, new features and services are created, old ones are taken down. With each change, the history and evolution of an environment becomes the learning curve newcomers must overcome. The landscape is becoming more complex, without any signs of slowing down. [With the hope of making kubernetes boring](https://twitter.com/timothysc/status/1453119919055310856)

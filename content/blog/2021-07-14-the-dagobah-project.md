@@ -4,9 +4,9 @@ title: "DAGOBAH: Data Governance and Business Automation for Humans"
 short_title: "DAGOBAH Project"
 date: 2021-07-14
 categories:
-featimg: /images/featimage/Dagobah_Blog_Index-01.png
-bgimg: /images/bgimg/Dagobah_Blog_Header-01.png
+thumbnail: /images/featimage/Dagobah_Blog_Index-01.png
 author: Angela Milash
+tags: ["Dagobah", "Data Governance", "Automation"]
 ---
 
 ## What is Project Dagobah?

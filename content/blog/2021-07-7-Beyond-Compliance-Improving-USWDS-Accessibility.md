@@ -4,9 +4,9 @@ title: "Beyond Compliance: Improving USWDS Accessibility"
 short_title: "Improving USWDS"
 date: 2021-07-7
 categories:
-featimg: /images/featimage/file_input_index.png
-bgimg: /images/bgimg/file_input_bg.png
+thumbnail: /images/featimage/file_input_index.png
 author: Miles Reiter
+tags: ["Compliance", "Accessibility", "UX"]
 ---
 
 The U.S. Web Design System (USWDS) represents a great starting place for designing and building accessible experiences. Its components are built to from the ground up to be keyboard navigable, render with accessible contrast, and  generally conform to easily recognizable patterns. It comes out of the box with a variety of development tools to help ensure accessibility while allowing for customization from project to project such as automatic contrast checks that run right in the code itself when you make a change to the color palette. But no matter how great the toolset supporting accessibility manual testing that takes the time to consider the diversity of ways in which something will be experienced is critical. *Access* to an experience is not always the same thing as *equity* of experience.

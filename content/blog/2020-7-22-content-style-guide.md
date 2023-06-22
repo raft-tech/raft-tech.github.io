@@ -4,9 +4,9 @@ title:  "Creating a Content Style Guide for Your Users"
 short_title: "Content Style Guide"
 date: 2020-07-13
 categories:
-featimg: /images/featimage/Blog_Content_Style_290x175-01.png
-bgimg: /images/bgimg/Blog_Content_Style_1600x680_4.00_V1-01.png
+thumbnail: /images/featimage/Blog_Content_Style_290x175-01.png
 author: Ryan
+tags: ["Style Guide"]
 ---
 
 

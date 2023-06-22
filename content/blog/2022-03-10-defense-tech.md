@@ -4,8 +4,7 @@ title: "Not all heroes wear capes, but many do work in defense tech"
 short_title: "Why Defense Tech?"
 date: 2022-03-10
 categories: 
-featimg: /images/featimage/heros_Blog_Index.png
-bgimg: /images/bgimg/Terraform_Blog_Header.png
+thumbnail: /images/featimage/heros_Blog_Index.png
 author: Shubhi Mishra
 ---
  

@@ -4,9 +4,9 @@ title: "Diversity in the Tech Industry"
 short_title: "Diversity in Tech"
 date: 2020-06-11
 categories:
-featimg: /images/featimage/Diversity-Small.jpg 
-bgimg: /images/bgimg/blm-banner.jpg 
+thumbnail: /images/featimage/Diversity-Small.jpg 
 author: Patrick Asada
+tags: ["Culture", "Diversity"]
 ---
 
 When I look at myself in the mirror, I see many things. I see a software developer, I see an educator, I see someone with a master's in Computer Science. However, from the time I was a child to today and into the future, I also see a black man living in America.  

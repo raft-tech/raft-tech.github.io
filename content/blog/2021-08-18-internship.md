@@ -4,9 +4,9 @@ title: "Interning at Raft"
 short_title: "Internship"
 date: 2021-08-18
 categories:
-featimg: /images/featimage/Learning_Cycle.jpg
-bgimg: /images/bgimg/Learning_Cycle.jpg
+thumbnail: /images/featimage/Learning_Cycle.jpg
 author: Thomas Lee
+tags: ["Internship", "Kafka"]
 ---
 
 ## Where to even begin?

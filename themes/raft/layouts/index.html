@@ -2,7 +2,7 @@
 {{.Content}}
 <div class="home-section-1 section-1">
     <div class="container">
-      <h1>
+      <h1 class="typewriter">
         We are a new breed of digital consulting firm. We are
         <i class="space-mono-text highlight-text-pink">engineers</i> of the
         future.
@@ -38,41 +38,17 @@
         </div>
         <div class="col-md-2 d-none-sm"></div>
         <div class="col-md-4 col-sm-12">
-          <h4 class="text-block-title">At Raft, we think difficult is fun...</h4>
+          <h4 class="text-block-title">{{.Params.focus_area_title}}</h4>
           
-          <div class="text-block">
-            <p class="bracket">We thrive in complexity</p>
-            <p>
-              We work on advanced features and functionality that require
-              specialized skills and capabilities in software architecture, UX/UI
-              design, and automated testing. We work closely with operators and
-              end users to transform mission workflows, modernize legacy
-              applications and data systems for speed, security, and scale.
-            </p>
-          </div>
-  
-          <div class="text-block">
-            <p class="bracket">We are Decision Driven</p>
-            <p>
-              We are architects of the data-centric and AI era. We have end-to-end
-              experience working with government and commercial partners to
-              establish sustainable data governance strategies, implementing
-              federated data ecosystems, and adopting human-centered AI systems
-              that reduce cognitive load and augment decision making. We are
-              charting a path for responsible AI and emerging technology.
-            </p>
-          </div>
-  
-          <div class="text-block">
-            <p class="bracket">We are Customer Obsessed</p>
-            <p>
-              We are experts and trusted partners across the product lifecycle -
-              from initial concept to operationalizing the end results. By
-              creating products driven by user outcomes instead of features, we
-              empower organizations with solutions that meet and exceed your
-              goals.
-            </p>
-          </div>
+          {{range .Params.focus_areas}}
+            <div class="text-block">
+              <p class="bracket">{{.title}}</p>
+              <p>
+                {{.content}}
+              </p>
+            </div>
+          {{end}}
+          
         </div>
       </div>
     </div>
@@ -115,92 +91,12 @@
     />
   </div>
   
-  <!--
-    <div class="container-fluid bm-250">
-    <div class="row justify-content-center">
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img src="/images/homepage/kessel-run.png" alt="Kessel Run" />
-          <p>Kessel Run</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img src="/images/homepage/usaf.png" alt="US Airfoce" />
-          <p>US Airfoce</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img src="/images/homepage/dod.png" alt="Dept. Of Defense" />
-          <p>Dept. Of Defense</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img
-            src="/images/homepage/corsair-ranch.png"
-            alt="Corsair Ranch"
-          />
-          <p>Corsair Ranch</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img src="/images/homepage/space-camp.png" alt="Space Camp" />
-          <p>Space Camp</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img src="/images/homepage/level-up.png" alt="Level Up" />
-          <p>Level Up</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img
-            src="/images/homepage/cfpb.png"
-            alt="Consumer Financial Protection Bureau"
-          />
-          <p>Consumer Financial Protection Bureau</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img src="/images/homepage/18f.png" alt="18f" />
-          <p>18f</p>
-        </div>
-      </div>
-  
-      <div class="col-md-2 col-sm-12 text-center mb-5">
-        <div class="client">
-          <img
-            src="/images/homepage/platform-one.png"
-            alt="Platform One"
-          />
-          <p>Platform One</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  -->
-  
   <div class="home-section-4">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-sm-12">
           <h2 class="gradient-text-tb mb-5">
-            At Raft, we think difficult is fun. We are building the sharpest
-            digital solutions. To solve the most complex problems. With the
-            brightest minds. And a passion for culture that will change the world.
+            {{.Params.join_team_raft_paragraph}}
           </h2>
           <p class="text-end">
             <a

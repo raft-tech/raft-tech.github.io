@@ -4,9 +4,9 @@ title:  "Creating a pipeline with Raspberry Pi, Arduino, Docker and k3s"
 short_title: "HIL CI/CD Pipelines - 1"
 date: 2020-07-13
 categories:
-featimg: /images/featimage/dusty_uno.png
-bgimg: /images/bgimg/pressure-water-line-509871_1920.jpg
+thumbnail: /images/featimage/dusty_uno.png
 author: Barak Stout
+tags: ["Automation", "Docker", "Kubernetes", "k3s", "Raspberry Pi", "Arduino"]
 ---
 
 Over the past several weeks, I was presented with the idea of [_Hardware In the Loop_](https://en.wikipedia.org/wiki/Hardware-in-the-loop_simulation) (HIL). In a byte, it is the idea of having a [digital twin](https://en.wikipedia.org/wiki/Digital_twin), a digital replica of a physical embedded system that can run in a virtual environment during development. The main benefit of this idea is so hardware and software can be created in parallel, rather than hardware availability becoming a blocker to the software development team. If we take the idea a little bit further, we can use the concept to create a CI/CD pipeline that starts as the developer's code passes through vigorous testing and ends on a physical device, using containerization and network availability. Now I have to admit, like most programmers I like solving problems. Some problems just linger around for a while. Others just have to be solved. This was a little bit of both. The more I thought about it, the more  I wanted to try it out for myself. _How would I do this if I had to?_ Well, I have been looking for a reason to dust off my Pi and Arduino. Thus began my weekend rabbit hole...

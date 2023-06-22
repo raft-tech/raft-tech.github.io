@@ -3,9 +3,9 @@ layout: post
 title:  "Dimensionality Reduction"
 date:   2019-01-04
 categories:
-featimg: /images/featimage/jan_04_2019.png
-bgimg: /images/bgimg/pca.jpg
+thumbnail: /images/featimage/jan_04_2019.png
 author: Bhaarat Sharma
+tags: ["Dimensionality", "Python"]
 ---
 
 ## CIO Level Summary

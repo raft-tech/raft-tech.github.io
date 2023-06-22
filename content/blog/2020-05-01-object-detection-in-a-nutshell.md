@@ -4,9 +4,9 @@ title: "Object detection in a Nutshell"
 short_title: "Object detection Nutshell" 
 date: 2020-05-01
 categories: 
-featimg: /images/featimage/face_reg.jpg
-bgimg: /images/bgimg/object_detection.jpeg
+thumbnail: /images/featimage/face_reg.jpg
 author: Bhaarat Sharma
+tags: ["Object Detection"]
 --- 
 
 This is a two-part blog series where we explain the intricacies of object detection, state-of-the-art research being done by the larger community, and applied theory by Raft.

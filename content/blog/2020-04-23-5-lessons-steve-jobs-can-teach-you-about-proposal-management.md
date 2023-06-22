@@ -4,9 +4,9 @@ title: "5 Lessons Steve Jobs Can Teach You About Proposal Management"
 short_title: "Proposal Management Methods" 
 date: 2020-04-23
 categories: 
-featimg: /images/featimage/Proposal-icon.jpg  
-bgimg: /images/bgimg/Proposal-bgimg.jpeg  
+thumbnail: /images/featimage/Proposal-icon.jpg   
 author: Christine So
+tags: ["Proposals", "Management", "Culture"]
 --- 
 
 It’s safe to say that nearly everyone in the tech world has been touched in some way, shape, or form by Steve Jobs, the legend who left behind a legacy that continues to evolve and grow. As a proposal manager (and avid Apple consumer), Steve Jobs has always inspired me both personally and professionally in ways far beyond the gadgets I use. His visionary beliefs can be applied to any role within any industry, and align especially well with Raft’s constantly evolving pursuit of digital innovation and cutting-edge solutions. Below are some of my favorite quotes by Steve Jobs that illuminate our best practices for proposal management, a role that integrates daily with the work of our entire team.

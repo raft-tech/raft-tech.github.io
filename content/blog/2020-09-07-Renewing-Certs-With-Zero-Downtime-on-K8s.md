@@ -4,10 +4,10 @@ title:  "Renewing certs with zero downtime on K8s"
 short_title: "Renew Certs"
 date: 2020-09-07
 categories:
-featimg: /images/featimage/Certificate_Updates1.00B-01.png
-bgimg: /images/bgimg/Certificate_Updates_Header_-01.png
+thumbnail: /images/featimage/Certificate_Updates1.00B-01.png
 author: Bhargav Joshi
-tags: blogs
+tags: ["Automation", "Kubernetes", "k8s", "Security"]
+
 ---
 
 Government and large enterprises require periodic SSL certificate renewals, at least once a year to comply with NIST's [Risk Management Framework (RMF)](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final). Typically, there is a slight downtime associated with renewing the certificates and to be on the safe side the process is usually run outside of business hours. In this post we show how the certificates can be renewed with zero downtime in a Kubernetes microservice environment with Ambassador as the gateway.

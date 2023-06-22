@@ -4,9 +4,9 @@ title:  "Raft Helps 18F and OFA Assist Children & Families"
 short_title: "Partnering with 18F"
 date: 2021-3-8
 categories:
-featimg: /images/featimage/18F-partners_Feature-01.png
-bgimg: /images/bgimg/18F-partners_Header-01.png
+thumbnail: /images/featimage/18F-partners_Feature-01.png
 author: Marc Phillips
+tags: ["DevOPs", "Partners", "Automation"]
 ---
 
 Hello humans. For a change, let’s talk about something good that happened in 2020. To begin, if you’re not familiar with [18F](https://18f.gsa.gov/), part of Technology Transformation Services ([TTS](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services)), they’re a group of fantastic people dedicated to making government work better for all of us. 18F helps government agencies build and buy new technology to create better user experiences and improve program results. For example, what do you do if you’re responsible for tracking the results of over $16.5 billion dollars’ worth of annual grants to states, tribes, and territories (STT) and all you have is a system consisting of emails and spreadsheets created during the heyday of Hootie and the Blowfish?  

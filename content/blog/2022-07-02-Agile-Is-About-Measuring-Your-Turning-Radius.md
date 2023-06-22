@@ -4,9 +4,9 @@ title: "Agile is About Measuring Your Turning Radius, Not Your 0-60 Start Time"
 short_title: "The Meaning of Agile"
 date: 2022-02-07
 categories:
-featimg: /images/featimage/devops__learn_tek.jpg
-bgimg: /images/bgimg/2018-05-01_Basketball,_easyCredit_Basketball-Bundesliga,_Science_City_Jena_-_Rockets_StP_5092_by_Stepro.jpg
+thumbnail: /images/featimage/devops__learn_tek.jpg
 author: Alex Floyd Marshall
+tags: ["Agile", "CI/CD", "DevOps"]
 ---
 
 My kids, boys aged 2 and 4, have been obsessed for well over a year with the Disney series _Cars_. About once a week we do a family “movie dinner,” and we’ve watched all three _Cars_ movies multiple times. The lead character in the series, _Lightning McQueen_, is a champion race car. Before every race, he chants a mantra to himself: _“Speed. I am speed”_.

@@ -4,9 +4,9 @@ title: "The Secret of MVP Success"
 short_title: "The Secret of MVP Success"
 date: 2021-1-30
 categories:
-featimg: /images/featimage/mvp_success_Feature-01.png
-bgimg: /images/bgimg/mvp_success_Header-01.png
+thumbnail: /images/featimage/mvp_success_Feature-01.png
 author: Barak Stout
+tags: ["MVP", "Success"]
 ---
 
 ## Communication is hard

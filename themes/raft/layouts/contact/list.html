@@ -4,8 +4,7 @@
     <div class="row">
       <div class="col-lg-5 col-md-12 mb-4">
         <h2 class="gradient-text">
-          We are out-of-the-box thinkers that partner with you to design and
-          implement modular and scalable solutions accelerating your mission.
+          {{.Params.form_text}}
         </h2>
       </div>
       <div class="col-1 d-none-md"></div>
@@ -86,6 +85,7 @@
                 required
               >
                 <option selected>Select country</option>
+                <option value="US">United States</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">&Aring;land Islands</option>
                 <option value="AL">Albania</option>

@@ -4,9 +4,9 @@ title: "Abhijat Chauhan Raft Internship: Summer 2022"
 short_title: "Raft Internship"
 date: 2022-08-05
 categories:
-featimg: /images/featimage/ci-cd.png
-bgimg: /images/bgimg/pipelines.png
+thumbnail: /images/featimage/ci-cd.png
 author: Abhijat Chauhan
+tags: ["Data Fabric", "Internship", "Kafka"]
 ---
 
 ## Before coming to this internship

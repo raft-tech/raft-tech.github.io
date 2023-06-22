@@ -4,9 +4,9 @@ title: "Trino - SQL to rule them all"
 short_title: "Using Trino to enable SQL over all data"
 date: 2022-08-15
 categories:
-featimg: /images/featimage/brooklyn-bridge-at-night-1-1205940.jpg
-bgimg: /images/bgimg/brooklyn-bridge-at-night-1-1205940.jpg
+thumbnail: /images/featimage/brooklyn-bridge-at-night-1-1205940.jpg
 author: Barak Stout
+tags: ["Data Fabric", "Trino", "SQL", "OPA", "Keycloak"]
 ---
 
 About a year ago, I wrote a blog post titled ["Building a Distributed Data Platform for Scale "](). Since then, Raft has been working on a [Data Fabric](https://datafabric.goraft.tech/). Early on in architecting the implementation of Data Fabric, we adpoted [Trino](https://trino.io/) as our query engine mechanism. Trino allows us to connect to multiple data sources and run queries against databases, without copying the data. Data exists in many places, and increasingly so. As the data becomes disparate, we need tooling that will enable joining data together, making insights possible. Without a unified abstraction layer, a data operator needs to run independent queries, using multiple interfaces. Trino takes on the work of maintaining the connection to the data source and allowing data operators to focus on the data logic.

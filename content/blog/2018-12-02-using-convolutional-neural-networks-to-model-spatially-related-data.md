@@ -3,9 +3,9 @@ layout: post
 title:  "CNN Object Detection"
 date:   2018-12-02
 categories:
-featimg: /images/featimage/dec_02_2018.png
-bgimg: /images/bgimg/cnn.jpg
+thumbnail: /images/featimage/dec_02_2018.png
 author: Chelsea
+tags: ["Object Detection", "Automation", "Python"]
 ---
 
 **CIO LEVEL SUMMARY:**

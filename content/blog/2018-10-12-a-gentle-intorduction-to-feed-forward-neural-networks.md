@@ -3,9 +3,9 @@ layout: post
 title:  "Neural Networks"
 date:   2018-10-12
 categories:
-featimg: /images/featimage/oct_10_2018.png
-bgimg: /images/bgimg/nn.jpg
+thumbnail: /images/featimage/oct_10_2018.png
 author: Chelsea
+tags: ["ML", "Automation", "Python", "AI"]
 ---
 
 

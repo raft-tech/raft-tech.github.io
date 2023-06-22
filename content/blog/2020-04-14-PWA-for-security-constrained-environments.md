@@ -4,9 +4,9 @@ title: "PWAs for Security Constrained Environments"
 short_title: "PWAs for offline mode" 
 date: 2020-04-14
 categories: 
-featimg: /images/featimage/pwa-small.jpg
-bgimg: /images/bgimg/pwa.jpg
+thumbnail: /images/featimage/pwa-small.jpg
 author: Meissa Dia
+tags: ["PWA", "Security"]
 --- 
 
 [Though we've already expressed our support of Progressive Web Applications (PWAs) as the future of mobile development](https://goraft.tech/2020/03/05/pwas-are-the-future-of-mobile-development.html), I'd like to dive a bit deeper into how they operate and explore a few potential applications.

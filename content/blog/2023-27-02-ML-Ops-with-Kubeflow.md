@@ -3,17 +3,16 @@ title: "ML Ops with Kubeflow"
 short_title: "Kubeflow pipeline"
 date: 2023-03-14
 categories:
-featimg: /images/featimage/kubeflow.jpeg
-bgimg: /images/bgimg/kubeflow.jpeg
+thumbnail: /images/featimage/kubeflow.jpeg
 author: Joey Cheung
-draft: true
+tags: ["ML", "AI", "Kubernetes", "k8s", "Kubeflow", "Minikube", "Kustomize"]
 ---
 
 ## Where we are now
+
 Machine learning (ML) is a field of inquiry devoted to understanding and building systems that "learn" – that is, systems that leverage data to improve performance on some set of tasks. It is seen as a part of artificial intelligence, as shown in the diagram below.
 
 ![](https://i.imgur.com/Gy2Lr5H.png)
-
 
 Machine Learning has really kicked off and we've seen impressive accomplishments in this field of research with the creation of models such as BERT, GPT, ChatGPT, and others. So this leads to the question: "What's next and how do we productionize these ML models?" Some of the bigger tech companies have implemented ML pipelines using tools such as Spark and Apache Airflow,  while others, such as the Netflix recommendation algorithm shown below, have created their own Machine Learning infrastructure.
 

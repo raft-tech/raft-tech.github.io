@@ -4,9 +4,9 @@ title: "Building a Distributed Data Platform for Scale "
 short_title: "Distributed Data Platform"
 date: 2021-06-30
 categories:
-featimg: /images/featimage/brooklyn-bridge-at-night-1-1205940.jpg
-bgimg: /images/bgimg/brooklyn-bridge-at-night-1-1205940.jpg
+thumbnail: /images/featimage/brooklyn-bridge-at-night-1-1205940.jpg
 author: Barak Stout
+tags: ["PrestoDB", "Docker"]
 ---
 
 Data is everywhere and it is big. Every organization is constantly generating data, however not all of it is easily accessible to everyone that needs it. For example, over time organizations may establish new data stores. For some organizations, it is rather easy to mandate that all databases use the same technology and versions. For others, it's not that easy. Large organizations that have been around for a while have accumulated databases and tech debt. This means that there are potentially lots of different technologies and versioning in play. Moving all the data to a central location or tech stack is feasible in some cases, but not in all cases. Sometimes it is better to leave the data where it is and use a distributed query engine rather than a centralized database. In this post, we will begin to lay the foundations needed for such a data platform that can scale up and serve the data needs of a large org with lots of data silos.

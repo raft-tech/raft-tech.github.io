@@ -3,9 +3,9 @@ layout: post
 title:  "Why Progressive Web Apps are the future of Mobile Development"
 date:   2020-03-05
 categories:
-featimg: /images/featimage/pwa-icon.jpg
-bgimg: /images/bgimg/pwa-future.jpg
+thumbnail: /images/featimage/pwa-icon.jpg
 author: Shubhi Mishra
+tags: ["PWA"]
 ---
 
 Native apps are [doomed](https://medium.com/javascript-scene/native-apps-are-doomed-ac397148a2c0) and responsive design is [dead](https://uxdesign.cc/stop-using-responsive-design-f0922e7882b2), yet [more than half](https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics) of all website traffic worldwide is generated through mobile devices.  How can Business and Product Owners continue to maximize device reach while reducing development effort? The answer: Progressive Web Apps (PWAs).  

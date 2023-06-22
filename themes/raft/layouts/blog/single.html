@@ -16,7 +16,7 @@
     <div class="col-1"></div>
     <div class="col-lg-4 col-md-12 mb-5 sidebar-column">
       <div class="sticky-text">
-        <img src="{{.Params.featimg}}" alt="{{.Params.Title}}" />
+        <img src="{{.Params.thumbnail}}" alt="{{.Params.Title}}" />
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
   </div>
   <div class="row justify-content-center">
     
-    {{range .RegularPages | first 3 }}
+    {{range site.RegularPages.Related . | first 3 }}
     {{partial "article-thumbnail.html" .}}
     {{end}}
   </div>

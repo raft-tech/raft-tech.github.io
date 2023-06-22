@@ -4,9 +4,9 @@ title: "NextJS in Docker"
 short_title: "NextJS in Docker"
 date: 2022-06-27
 categories: 
-featimg: /images/featimage/nextjs-docker.svg
-bgimg: /images/featimage/nextjs-docker.svg
+thumbnail: /images/featimage/nextjs-docker.svg
 author: Benjamin Marte
+tags: ["Docker", "NextJS", "Kubernetes", "k8s", "Data Fabric"]
 ---
 
 Being a Full Stack R&D Developer at [Raft](https://goraft.tech) comes with a few interesting challenges to solve. In this blog post, we will discuss one of the latest problems my team and I ran into during the development of [DataFabric](https://datafabric.goraft.tech).

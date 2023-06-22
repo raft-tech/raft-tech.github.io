@@ -61,13 +61,15 @@ paginate = 9
     share = true
 
 [related]
-  includeNewer = false
+  includeNewer = true
   threshold = 80
   toLower = false
-
 [[related.indices]]
-  name = "blog"
+  name = 'keywords'
   weight = 100
+[[related.indices]]
+  name = 'date'
+  weight = 10
 
 [markup]
 [markup.goldmark]

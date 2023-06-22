@@ -4,9 +4,9 @@ title: "Integrating Keycloak and Open Policy Agent (OPA) with Confluent"
 short_title: "Integrating Keycloak and OPA with Confluent" 
 date: 2021-03-17
 categories:
-featimg: /images/featimage/keycloak_opa_confluent-01.png
-bgimg: /images/bgimg/keycloak_opa_confluent-01.png
+thumbnail: /images/featimage/keycloak_opa_confluent-01.png
 author: Ryan Salcido
+tags: ["Keycloak", "OPA", "Confluent", "Docker", "Kafka"]
 ---
 
 In this article, we will go over how to utilize Keycloak for OAuth2 authentication and Open Policy Agent (OPA) for topic-level authorization within Confluent Kafka. At the time of writing this, LDAP is the only natively supported authentication and authorization mechanism within Confluent (besides custom ACLs via CLI). Although there are many other cloud authentication providers, the platform our team is deploying to only supports Keycloak.

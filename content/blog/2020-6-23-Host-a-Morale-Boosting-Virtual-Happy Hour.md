@@ -4,9 +4,9 @@ title:  "9 Tips to Host a Morale Boosting Virtual Happy Hour During Quarantine"
 short_title: "Virtual Happy Hour"
 date: 2020-06-22
 categories:
-featimg: /images/featimage/HappyHour_featimage.jpg
-bgimg: /images/bgimg/HappyHour_bgimg.jpg
+thumbnail: /images/featimage/HappyHour_featimage.jpg
 author: Ryan
+tags: ["Culture", "HR"]
 ---
 
 There is more to building a remote team than a subscription to Zoom and SharePoint. One of the most important factors dictating the productivity of any business (remote or otherwise) is the morale of your workforce. As a remote-first company, Raft has always practiced creative ways to virtually create a sense of community.  

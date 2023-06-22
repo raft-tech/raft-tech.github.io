@@ -4,9 +4,9 @@ title:  "What Fourth of July Means to Me: Diversity, Equality, and our Mission a
 short_title: "Fourth of July at Raft"
 date: 2020-06-22
 categories:
-featimg: /images/featimage/raft-4th.jpg
-bgimg: /images/bgimg/firework.jpg
+thumbnail: /images/featimage/raft-4th.jpg
 author: Shubhi Mishra
+tags: ["4th of July", "Independence Day", "Diversity", "Equality", "Culture"]
 ---
 
 As the week of 4th of July approaches, I have been thinking a lot about what it means to be an American. From the time I was a child I knew I would emigrate to the United States, because I knew my gender would not be an impediment, rather it could be an asset. I believed that if I worked hard, studied hard, and wanted to achieve, I could achieve.

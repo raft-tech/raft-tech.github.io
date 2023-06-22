@@ -3,9 +3,9 @@ layout: post
 title:  "Intro to HPC"
 date:   2019-02-15
 categories:
-featimg: /images/featimage/feb_15_2019.jpeg
-bgimg: /images/bgimg/hpc.jpg
+thumbnail: /images/featimage/feb_15_2019.jpeg
 author: Bhaarat Sharma
+tags: ["High performance Computing", "DevOps"]
 ---
 
 **CIO LEVEL SUMMARY:**

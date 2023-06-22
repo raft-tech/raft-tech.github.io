@@ -4,9 +4,9 @@ title: "How Data Culture Transforms Organizations Into Perpetual Improvement Mac
 short_title: "Data Culture - Whitepaper"
 date: 2022-02-21
 categories:
-featimg: /images/featimage/data-culture-small.jpeg
-bgimg: /images/bgimg/data-culture-bg-big.png
+thumbnail: /images/featimage/data-culture-small.jpeg
 author: Ethan Bienstock
+tags: ["Big Data", "Data Science", "ML", "Python"]
 ---
 
 ## Executive Summary

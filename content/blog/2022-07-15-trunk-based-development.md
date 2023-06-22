@@ -4,9 +4,9 @@ title: "Trunk Based Development; Or, How We Stopped Being Afraid And Learned To 
 short_title: "Trunk Based Development"
 date: 2022-07-15
 categories: 
-featimg: /images/featimage/Git-Icon-Black.png
-bgimg: /images/featimage/Git-Icon-Black.png
+thumbnail: /images/featimage/Git-Icon-Black.png
 author: Christopher Skeen
+tags: ["Development", "Git"]
 ---
 
 **"Hey, why don't we just commit our code to the main branch?"**

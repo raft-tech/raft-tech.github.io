@@ -4,9 +4,9 @@ title: "A Multi Environment Terraform Setup"
 short_title: "Multi Environment Terraform"
 date: 2022-01-03
 categories:
-featimg: /images/featimage/Terraform_Blog_Index.png
-bgimg: /images/bgimg/Terraform_Blog_Header.png
+thumbnail: /images/featimage/Terraform_Blog_Index.png
 author: Jorge Gonzalez
+tags: ["Terraform", "DevOps", "CI/CD", "Automation"]
 ---
 
 ## Terraform

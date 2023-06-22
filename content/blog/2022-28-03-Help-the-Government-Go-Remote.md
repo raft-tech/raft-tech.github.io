@@ -4,9 +4,9 @@ title: "Let’s Help the Government Go Remote"
 short_title: "Government's Transition to Remote"
 date: 2022-03-28
 categories: 
-featimg: /images/featimage/remote-small.jpeg
-bgimg: /images/bgimg/remote-large.jpeg
+thumbnail: /images/featimage/remote-small.jpeg
 author: Shubhi Mishra
+tags: ["Government", "Remote"]
 ---
 
 We’re all aware the pandemic has changed the way we work probably forever. Remote and hybrid work environments are now the norm. And while most of us in the tech world were able to transition quickly or were already accustomed to virtual work, the federal government had to make those adjustments fast -- but it could still use some help. 

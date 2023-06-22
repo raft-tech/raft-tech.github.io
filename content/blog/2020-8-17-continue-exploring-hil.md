@@ -4,9 +4,9 @@ title:  "Using Docker, Drone.io and Ino to build a HIL Pipeline"
 short_title: "HIL CI/CD Pipelines - 2"
 date: 2020-08-17
 categories:
-featimg: /images/featimage/Blog_Pipeline_Art-Index-01.png
-bgimg: /images/bgimg/Blog_Pipeline_Art-Header-01.png
+thumbnail: /images/featimage/Blog_Pipeline_Art-Index-01.png
 author: Barak Stout
+tags: ["Automation", "Kubernetes", "k8s", "Docker", "Arduino", "Raspberry Pi"]
 ---
 
 ## **CIO LEVEL SUMMARY (The TL;DR version)**
