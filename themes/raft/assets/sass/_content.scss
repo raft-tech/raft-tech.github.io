@@ -2,7 +2,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
   }
 #content {
-    padding: 0 54px;
     min-height: 60vh;
     margin-bottom: 3rem;
     z-index: 1;
@@ -10,6 +9,10 @@ body {
     // pagination footer z-index fix
     nav {
         z-index: 1;
+    }
+
+    section {
+        margin-bottom: 64px;
     }
 }
 
@@ -26,6 +29,10 @@ blockquote {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.pink-text {
+    color: $vibrant-pink;
 }
 
 .no-scroll {

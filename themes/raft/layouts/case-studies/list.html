@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{.Content}}
+<div class="container">
+  <h1 class="mb-5">Case Studies</h1>
+  <div class="row justify-content-center">
+    {{range .Paginator.Pages}}
+      {{partial "article-thumbnail.html" .}}
+    {{end}}
+  </div>
+  <div class="row">
+    {{partial "paginator.html" .}}
+  </div>
+</div>
+{{ end }}

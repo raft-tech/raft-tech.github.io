@@ -1,0 +1,26 @@
+.case-studies {
+    h2 {
+        color: $vibrant-pink;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    blockquote {
+        background: $linear-gradient-top-bottom;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .impact-title {
+        font-size: 50px;
+    }
+
+    h1 {
+        margin-bottom: 64px;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 76px;
+    }
+}

@@ -1,0 +1,59 @@
+{{ define "main" }}
+    <div class="container case-studies">
+        <section>
+            <p>
+                {{$tagsLength := len .Params.tags}}
+                {{range $i, $tag := .Params.tags}}
+                {{$tag}}
+                {{if ne $i (sub $tagsLength 1)}}&bull;{{end}}
+                {{end}}
+            </p>
+            <h1>{{.Params.title}}</h1>
+        
+            <h3>{{.Params.subtitle}}</h3>
+        </section>
+    
+        <section>
+            <h2>Our Impact</h2>
+        <div class="row">
+            {{range .Params.impact}}
+            <div class="col-md-12 col-lg-4">
+                <p class="impact-title">{{.title}}</p>
+                <p class="impact-text">{{.text}}</p>
+            </div>
+            {{end}}
+        </div>
+        </section>
+
+        <section>
+            <div class="row flex-wrap-reverse">
+                <div class="col-md-12 col-lg-8 content-column">
+                    {{.Content}}
+                </div>
+                <div class="col-md-12 col-lg-3 offset-lg-1">
+                    <div class="sticky-text">
+                        <p class="pink-text">CLIENT</p>
+                        <p>{{.Params.client}}</p>
+                        <p class="pink-text">STATUS</p>
+                        <p>{{.Params.status}}</p>
+                        <p class="pink-text">TECHNOLOGIES</p>
+                        {{range .Params.technologies}}
+                        <p>{{.}}</p>
+                        {{end}}
+
+                        {{with .Params.thumbnail}}<img class="img-fluid mb-5" src="{{.}}" alt="">{{end}}
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="cols-md-12 col-lg-3 offset-lg-9">
+                    <p>Raft + YOU</p>
+                    <p>We're your solution. Not an acronym.  Whatever challenges your organization might face, you don't have to solve it alone. Let's talk about the work that can't wait and Let's Freakin' Go!</p>
+                    <p class="mt-5"><a href="/contact" class="raft-btn">Contact Raft</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    {{ partial "wave-footer" . }}
+{{ end }}               
