@@ -234,6 +234,27 @@
   </div>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <hr />
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-sm-12 col-lg-6 text-start">
+      <h3>View Our Case Studies</h3>
+    </div>
+    <div class="col-sm-12 col-lg-6 text-end">
+      <a href="/case-studies">View all cases</a>
+    </div> 
+  </div>
+  <div class="row mt-5 justify-content-center">
+    {{range where site.RegularPages "Section" "case-studies"}}
+      {{ partial "article-thumbnail.html" . }}
+    {{end}}
+  </div>
+</div>
+
 {{ partial "wave-footer.html" . }}
 
 {{ end }}

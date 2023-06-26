@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="reading-progress"></div>
     <div class="container case-studies">
         <section>
             <p>
@@ -57,3 +58,7 @@
 
     {{ partial "wave-footer" . }}
 {{ end }}               
+
+{{ define "scripts" }}
+  {{ partial "scrollup.html" . }}
+{{ end }}

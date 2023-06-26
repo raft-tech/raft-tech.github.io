@@ -18,7 +18,7 @@ paginate = 9
   name = 'doing the work we love'
   weight = 2
   [menu.main.params]
-    subtitle = 'Our Focus Areas and Innovation Toolkit'
+    subtitle = 'Our Focus Areas and Case Studies'
     class = 'nav-arrow-2'
 [[menu.main]]
   pageRef = '/blog'
@@ -65,7 +65,7 @@ paginate = 9
   threshold = 80
   toLower = false
 [[related.indices]]
-  name = 'keywords'
+  name = 'tags'
   weight = 100
 [[related.indices]]
   name = 'date'
