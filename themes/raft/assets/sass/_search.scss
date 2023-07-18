@@ -9,6 +9,7 @@
   position: absolute;
   z-index: 2;
   width: 100%;
+  -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   top: 0;
 }
