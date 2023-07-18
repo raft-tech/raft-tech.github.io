@@ -71,11 +71,12 @@
   }
 
   .nav-background {
-    background: (255,255,255, 0.5);
+    background: rgba(255, 255, 255, 0.75);
   }
 
   .search-background {
-    background: url("/images/search/search-bg.svg") no-repeat rgba(255,255,255, 0.5);
+    background: url("/images/search/search-bg.svg") no-repeat
+      rgba(255, 255, 255, 0.75);
     background-size: cover;
   }
   .search-result {
@@ -185,10 +186,11 @@
     display: none;
   }
   .search-background {
-    background: url("/images/search/search-bg.svg") no-repeat rgba(0,0,0, 0.5);
+    background: url("/images/search/search-bg.svg") no-repeat
+      rgba(0, 0, 0, 0.75);
     background-size: cover;
   }
-  .nav-background{
-    background: rgba(0,0,0, 0.5);
+  .nav-background {
+    background: rgba(0, 0, 0, 0.75);
   }
 }
