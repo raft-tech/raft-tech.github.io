@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<div class="reading-progress"></div>
+    <div class="container case-studies">
+        <section>
+          <h1>{{page.title}}</h1>
+      
+          <h3>{{page.subtitle}}</h3>
+        </section>
+    
+        <section>
+          <h2>Our Impact</h2>
+          <div class="row">
+            {% for impact in page.impact %}
+              <div class="col-md-12 col-lg-4">
+                  <p class="impact-title">{{impact.title}}</p>
+                  <p class="impact-text">{{impact.text}}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section>
+            <div class="row flex-wrap-reverse">
+                <div class="col-md-12 col-lg-8 content-column">
+                    {{content}}
+                </div>
+                <div class="col-md-12 col-lg-3 offset-lg-1">
+                    <div class="sticky-text">
+                        <p class="pink-text">CLIENT</p>
+                        <p>{{page.client}}</p>
+                        <p class="pink-text">STATUS</p>
+                        <p>{{page.status}}</p>
+                        <p class="pink-text">TECHNOLOGIES</p>
+                        {% for tech in page.technologies %}
+                          <p>{{tech}}</p>
+                        {% endfor %}
+                        <img class="img-fluid mb-5" src="{{page.featimg}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="cols-md-12 col-lg-3 offset-lg-9">
+                    <p>Raft + YOU</p>
+                    <p>We're your solution. Not an acronym.  Whatever challenges your organization might face, you don't have to solve it alone. Let's talk about the work that can't wait and Let's Freakin' Go!</p>
+                    <p class="mt-5"><a href="/contact" class="raft-btn">Contact Raft</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+{% include wave-footer.html %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/scrollpup@0.0.1/dist/scrollpup.min.js"></script>
+<script>
+  scrollpup({
+    background: "linear-gradient(267.17deg, #C52EA3 7.53%, #4749CA 104.95%)",
+    height: "10px",
+  })
+</script>

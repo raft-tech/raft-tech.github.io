@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="container">
+  <h1 class="mb-5">Case Studies</h1>
+  <div class="row justify-content-center">
+    {% for post in site.case_studies %}
+      {% include article-thumbnail.html %}
+    {% endfor %}
+  </div>
+</div>

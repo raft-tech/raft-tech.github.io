@@ -81,6 +81,8 @@ protocols:
 collections:
   leadership:
     output: true
+  case_studies:
+    output: true
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem

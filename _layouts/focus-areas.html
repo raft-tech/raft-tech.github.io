@@ -237,6 +237,27 @@ layout: default
   </div>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <hr />
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-sm-12 col-lg-6 text-start">
+      <h3>View Our Case Studies</h3>
+    </div>
+    <div class="col-sm-12 col-lg-6 text-end">
+      <a href="/case-studies">View all cases</a>
+    </div> 
+  </div>
+  <div class="row mt-5 justify-content-center">
+    {% for post in site.case_studies %}
+      {% include article-thumbnail.html %}
+    {% endfor %}
+  </div>
+</div>
+
 {% include wave-footer.html %}
 
 <!-- {% include threejs.html %} -->
