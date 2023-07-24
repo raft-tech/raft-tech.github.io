@@ -7,13 +7,20 @@ import { EffectComposer } from "/js/three.js-master/examples/jsm/postprocessing/
 // import { RenderPass } from "https://unpkg.com/browse/three@0.151.3/examples/jsm/postprocessing/RenderPass.js";
 // import { EffectComposer } from "https://unpkg.com/browse/three@0.151.3/examples/jsm/postprocessing/EffectComposer.js";
 
-const lightMode = document.getElementById("light-mode")
-const darkMode = document.getElementById("dark-mode")
+const lightModeToggle = document.querySelectorAll(
+  '[data-bs-theme-value="light"]'
+);
 
-const startApp = (mode) => {
-  let theme =
-    mode ||
-    document.getElementsByTagName("html")[0].getAttribute("data-bs-theme")
+const darkModeToggle = document.querySelectorAll(
+  '[data-bs-theme-value="dark"]'
+);
+
+let theme = document
+  .getElementsByTagName("html")[0]
+  .getAttribute("data-bs-theme");
+
+const startApp = (theme) => {
+  console.log(theme);
   if (theme === "dark") {
     runApp(appDark, scene, renderer, camera, true, uniforms, undefined)
   } else {
@@ -21,14 +28,29 @@ const startApp = (mode) => {
   }
 }
 
-lightMode.addEventListener("click", () => {
-  startApp("light")
-})
+const toggleTheme = (theme) => {
+  const themeMode = document
+    .getElementsByTagName("html")[0]
+    .getAttribute("data-bs-theme");
+  console.log(themeMode);
+  if (themeMode === "dark") {
+    startApp("light");
+  } else if (themeMode === "light") {
+    startApp("dark");
+  }
+}
 
-darkMode.addEventListener("click", () => {
-  startApp("dark")
-})
+lightModeToggle.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    toggleTheme(theme);
+  })
+);
 
+darkModeToggle.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    toggleTheme(theme);
+  })
+);
 /**
  * Initializes a reasonable uniforms object ready to be used in fragments
  * @returns a uniforms object with u_time, u_mouse and u_resolution
@@ -489,4 +511,4 @@ let appLight = {
  * ps. if you don't use post-processing, pass undefined to the 'composer'(last) param
  *************************************************/
 // runApp(app, scene, renderer, camera, true, uniforms, undefined);
-startApp()
+startApp(theme)

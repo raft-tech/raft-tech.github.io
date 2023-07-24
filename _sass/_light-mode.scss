@@ -70,6 +70,15 @@
     }
   }
 
+  .nav-background {
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .search-background {
+    background: url("/images/search/search-bg.svg") no-repeat
+      rgba(255, 255, 255, 0.75);
+  }
+
   .search-result {
     color: $text-black;
     a {
@@ -175,5 +184,12 @@
   }
   .dark-theme-btn {
     display: none;
+  }
+  .search-background {
+    background: url("/images/search/search-bg.svg") no-repeat
+      rgba(0, 0, 0, 0.75);
+  }
+  .nav-background{
+    background: rgba(0, 0, 0, 0.75);
   }
 }

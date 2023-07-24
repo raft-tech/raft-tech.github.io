@@ -1,5 +1,4 @@
 .search-background {
-  background: url("/assets/images/search/search-bg.svg") no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100vw;
@@ -7,9 +6,15 @@
   background-attachment: fixed;
   overflow-x: hidden;
   overflow-y: scroll;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  top: 0;
 }
 
-.container {
+.container-fluid {
   .raft-search-input {
     background: none;
     border: none;

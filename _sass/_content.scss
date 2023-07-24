@@ -24,3 +24,7 @@ blockquote {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.no-scroll {
+    overflow: hidden;
+}
