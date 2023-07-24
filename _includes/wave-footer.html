@@ -1,7 +1,62 @@
-<div class="wave-footer">
-  <img
-    src="/assets/images/footer/well-make-waves-together.svg"
-    alt="We'll make waves together."
-    class="img-fluid"
-  />
-</div>
+<script>
+  window.addEventListener('resize', adjustSVG);
+
+  function adjustSVG() {
+      var width = window.innerWidth;
+      var path = document.getElementById('p1');
+      path.setAttribute('d', 'M0,100 Q' + width / 4 + ',250 ' + width / 2 + ',100 Q' + 3 * width / 4 + ',-50 ' + width + ',100');
+
+      var pathLength = path.getTotalLength();
+
+      // Set a speed for the animation (in pixels per second)
+      var speed = 20;
+
+      // Calculate the duration of the animation based on the length of the path and the desired speed
+      var duration = pathLength / speed;
+
+      // Apply the calculated duration to the animate elements
+      var animateElements = document.getElementsByTagName('animate');
+      for (const element of animateElements) {
+          element.setAttribute('dur', duration/4 + 's');
+      }
+  }
+
+  window.onload = adjustSVG;
+</script>
+
+<svg width="100%" height="200px" style="position: relative; left: -50px; width: 100vw;" xmlns="http://www.w3.org/2000/svg">
+  <path id="p1" fill="none" />
+  <text class="ubuntu-text" dominant-baseline="middle" style="fill: #474747;font-size: 36px;">
+      <textPath href="#p1" startOffset="100%">
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+        TOGETHER, LET'S MAKE WAVES.
+      <animate
+      attributeName="startOffset" from="0%" to="-100%" repeatCount="indefinite" />
+      </textPath>
+  </text>
+</svg>
