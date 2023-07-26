@@ -1,7 +1,9 @@
 <script>
   window.addEventListener('resize', adjustSVG);
-
+  console.log('hi')
   function adjustSVG() {
+      console.log('hello')
+
       var width = window.innerWidth;
       var path = document.getElementById('p1');
       path.setAttribute('d', 'M0,100 Q' + width / 4 + ',250 ' + width / 2 + ',100 Q' + 3 * width / 4 + ',-50 ' + width + ',100');

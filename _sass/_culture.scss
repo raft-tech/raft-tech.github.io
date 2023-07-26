@@ -1,0 +1,86 @@
+.gradient-pink-to-purple-1 {
+  background: linear-gradient(
+    0deg,
+    $primary-links-light 4.62%,
+    $vibrant-pink 26.4%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-pink-to-purple-2 {
+  background: linear-gradient(
+    0deg,
+    $primary-links-light 24.62%,
+    $vibrant-pink 69.4%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-pink-to-purple-3 {
+  background: linear-gradient(
+    0deg,
+    $primary-links-light 24.62%,
+    $vibrant-pink 96.4%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-pink-to-purple-4 {
+  background: linear-gradient(
+    0deg,
+    $primary-links-light 99.62%,
+    $vibrant-pink 1.4%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.offset-bordered-image {
+  position: relative;
+  width: max-content;
+  border: 1px solid #f246cc;
+  border-radius: 7px;
+  width: 100%;
+  img {
+    position: relative;
+    left: 13px;
+    top: 3px;
+    width: 100%;
+  }
+}
+
+.benefit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  background: url(/assets/images/benefits/background.svg);
+  background-repeat: no-repeat;
+  max-width: 240px;
+  margin-bottom: 25px;
+  height: 12rem;
+  img {
+    max-height: 49px;
+    margin-bottom: 10px;
+  }
+  h6 {
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.culture-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  h2 {
+    max-width: 50%;
+  }
+}
