@@ -1,5 +1,6 @@
 ---
 layout: case-study
+genre: Focus Area
 title: "U.S. Air Force Digital Modernization"
 subtitle: "Combatting Outdated DoD Theater Battle Management Core Systems (TBMCS): Modernizing Kessel Run’s Enterprise Developer/Designer Operations Requirement (EnDOR)"
 featimg: /assets/images/case-studies/endor-case-study.jpg
