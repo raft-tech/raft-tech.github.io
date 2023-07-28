@@ -1,33 +1,14 @@
 ---
+layout: default
 permalink: /404.html
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="{{ '/css/main.css' | prepend: site.baseurl }}"
-    />
-  </head>
-  <body>
-    <section id="PageNotFound">
-      <p id="status">4&nbsp;0&nbsp;4</p>
-      <object
-        type="image/svg+xml"
-        style="max-width: 400px; width: 100%;"
-        data="/assets/404-animated-rings.svg"
-      ></object>
-      <p id="message">Page does not exist.</p>
-      <div id='goBack' class="back" onclick="goBack()">
-        <span>&#8592;</span>
-        Go Back
-      </div>
-    </section>
-  </body>
-  <script>
-    function goBack() {
-      window.history.back()
-    }
-  </script>
-</html>
+<div class="wrapper-not-found">
+  <div class="container">
+    <div class="not-found-wrapper">
+      <span class="four-o-four">404</span><br /><span class="not-found-text"
+        >Page Not Found</span
+      >
+    </div>
+  </div>
+  <div id="waveframe"></div>
+</div>
