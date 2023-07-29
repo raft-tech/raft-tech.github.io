@@ -2,7 +2,7 @@
 layout: case-study
 genre: Focus Area
 title: "U.S. Air Force Digital Modernization"
-subtitle: "Combatting Outdated DoD Theater Battle Management Core Systems (TBMCS): Modernizing Kessel Run’s Enterprise Developer/Designer Operations Requirement (EnDOR)"
+subtitle: "Combatting Outdated DoD Theater Battle Management Core Systems (TBMCS): <i class=\"space-mono-text highlight-text-purple\">Modernizing</i> Kessel Run’s Enterprise Developer/Designer Operations Requirement (EnDOR)"
 featimg: /assets/images/case-studies/endor-case-study.jpg
 tags: ["Case Study", "DevSecOPs Ecosystem", "Software Factory"]
 client: United States Air Force
@@ -46,4 +46,4 @@ The Raft solution is an iterative suite of products, constantly evolving for the
 
 Under the EnDOR mission, Raft software developers and UX designers are pivotal to the modernization efforts under all three product lines at Kessel Run.
 
-> "[Raft’s] work will positively transform the way our team maintains our applications...[Rafters] have helped us solve issues that have long plagued our team, and, by extension, KRADOS as a whole." - Customer Feedback · 2023
+> "[Raft’s] work will positively transform the way our team maintains our applications...[Rafters] have helped us solve issues that have long plagued our team, and, by extension, KRADOS as a whole."<br/>- Customer Feedback · 2023
