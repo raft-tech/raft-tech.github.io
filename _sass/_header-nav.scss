@@ -58,6 +58,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .invisible {
+    visibility: visible !important;
+    margin-bottom: 32px;
+    font-size: 0.875rem;
+  }
+  .nav-background .raft-header-container {
+    padding-left: 50px;
+  }
+}
+
 #nav {
   margin-top: 66px;
 
