@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="reading-progress"></div>
     <div class="container case-studies">
-        <section>
+        <section class="blur-2-bottom">
           <div class='case-study-tags'>
             {% for tag in page.tags %}
                 <p>{{tag}}</p>
@@ -14,7 +14,7 @@ layout: default
           <h3>{{page.subtitle}}</h3>
         </section>
     
-        <section>
+        <section class="blur-2-bottom">
           <h2>Our Impact</h2>
           <div class="row">
             {% for impact in page.impact %}
@@ -26,7 +26,7 @@ layout: default
           </div>
         </section>
 
-        <section>
+        <section class="blur-2-top">
             <div class="row flex-wrap-reverse">
                 <div class="col-md-12 col-lg-8 content-column">
                     {{content}}
