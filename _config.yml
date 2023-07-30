@@ -9,6 +9,7 @@ plugins:
 
 exclude:
   - "/vendor/"
+  - "case-studies.md"
 
 # Site settings
 title: Raft

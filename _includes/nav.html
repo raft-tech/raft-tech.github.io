@@ -6,10 +6,10 @@
         {% for item in site.data.navigation %}
         <li class="{{item.className}}">
           <a href="{{ item.url }}">
-            <div class="title">
+            <div class="title nav-title">
               {{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}
             </div>
-            <div class="invisible">
+            <div class="invisible" style="font-family: 'Space Mono';">
               {{item.subtitle | markdownify | remove: '<p>' | remove: '</p>' }}
             </div>
           </a>

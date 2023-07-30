@@ -3,13 +3,18 @@ layout: default
 ---
 <div class="reading-progress"></div>
     <div class="container case-studies">
-        <section>
+        <section class="blur-2-bottom">
+          <div class='case-study-tags'>
+            {% for tag in page.tags %}
+                <p>{{tag}}</p>
+            {% endfor %}
+          </div>
           <h1>{{page.title}}</h1>
       
           <h3>{{page.subtitle}}</h3>
         </section>
     
-        <section>
+        <section class="blur-2-bottom">
           <h2>Our Impact</h2>
           <div class="row">
             {% for impact in page.impact %}
@@ -21,7 +26,7 @@ layout: default
           </div>
         </section>
 
-        <section>
+        <section class="blur-2-top">
             <div class="row flex-wrap-reverse">
                 <div class="col-md-12 col-lg-8 content-column">
                     {{content}}
@@ -42,7 +47,7 @@ layout: default
             </div>
             <div class="row mt-5 mb-5">
                 <div class="cols-md-12 col-lg-3 offset-lg-9">
-                    <p>Raft + YOU</p>
+                    <h5>Raft + YOU</h5>
                     <p>We're your solution. Not an acronym.  Whatever challenges your organization might face, you don't have to solve it alone. Let's talk about the work that can't wait and Let's Freakin' Go!</p>
                     <p class="mt-5"><a href="/contact" class="raft-btn">Contact Raft</a></p>
                 </div>
