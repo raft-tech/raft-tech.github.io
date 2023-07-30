@@ -8,6 +8,9 @@
       text-decoration: underline;
     }
   }
+  .wave-footer {
+    fill: #474747;
+  }
 
   .nav-icon,
   .hamburger {
@@ -68,6 +71,15 @@
       color: $text-black;
       text-decoration: none;
     }
+  }
+
+  .nav-background {
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .search-background {
+    background: url("/images/search/search-bg.svg") no-repeat
+      rgba(255, 255, 255, 0.75);
   }
 
   .search-result {
@@ -166,6 +178,9 @@
   .logo {
     fill: $text-white;
   }
+  .nav-title {
+    color: #e3e3e3;
+  }
   .nav-icon,
   .hamburger {
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
@@ -175,5 +190,15 @@
   }
   .dark-theme-btn {
     display: none;
+  }
+  .search-background {
+    background: url("/images/search/search-bg.svg") no-repeat
+      rgba(0, 0, 0, 0.75);
+  }
+  .nav-background{
+    background: rgba(0, 0, 0, 0.75);
+  }
+  .wave-footer {
+    fill: #FAFAFA;
   }
 }

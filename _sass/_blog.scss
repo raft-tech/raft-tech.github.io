@@ -48,12 +48,12 @@
 
     .image-wrapper {
         background: $thumbnail-background;
-        width: 100%;
+        width: 90%;
         max-height: 275px;
         margin: 0 auto 30px auto;
         padding: 30px;
         position: relative;
-
+        border-radius: 4px;
         &::before {
             content: "";
             display: block;

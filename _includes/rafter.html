@@ -1,13 +1,24 @@
 <div class="rafter">
-    <div class="rafter-avatar">
-        {% if member.image %}
-        <div class="rafter-image" style="background: url(/assets/images/about/{{member.image}}); background-position: top;"></div>
-        {% else %}
-        <img src="/assets/profiles/r_static.svg" alt="{{member.full_name}}" class="rafter-image">
-        {% endif %}
+    <div class="d-flex flex-row align-items-center">
+        <div class="rafter-avatar">
+            <div class="rafter-image" style="background: url(/assets/images/about/{{member.image}}); background-position: top;"></div>
+        </div>
+        <div class="rafter-details">
+            <h5>{{member.full_name}}
+                {% if member.about %}
+                    <i class="bi bi-plus-circle profile-button"></i>
+                {% endif %}
+            </h5>
+            <p style="font-size: 0.75rem; margin-bottom: 0.25rem;">{{member.role}}</p>
+            {% if member.location %}
+            <p style="font-size: 0.7rem;">{{member.location}}</p>
+            {% endif %}
+            {% if member.song %}
+                <p class="rafter-song">LFG Song: {{member.song}}</p>
+            {% endif %}
+        </div>
     </div>
-    <div class="rafter-details">
-        <h5>{{member.full_name}}</h5>
-        <p>{{member.role}}</p>
+    <div class="rafter-bio">
+        {{member.about}}
     </div>    
 </div>

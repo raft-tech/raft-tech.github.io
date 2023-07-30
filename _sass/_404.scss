@@ -1,0 +1,24 @@
+.wrapper-not-found {
+  display: flex;
+  height: 100vh;
+  .container {
+    .not-found-wrapper {
+      z-index: 1;
+      position: relative;
+      text-align: center;
+      height: 384px;
+      margin-top: calc(50vh - 350px);
+    }
+    .four-o-four {
+      font-size: 13rem;
+    }
+    .not-found-text {
+      font-size: 3rem;
+    }
+  }
+}
+#waveframe {
+  margin: 0 -54px;
+  z-index: 0;
+  position: absolute;
+}

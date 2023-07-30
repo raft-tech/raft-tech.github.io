@@ -137,4 +137,22 @@ layout: default
   </div>
 </div>
 
-{% include wave-footer.html %}
+<script>
+  const rafters = document.querySelectorAll(".rafter");
+  const clearActiveRafter = (selected) => {
+    rafters.forEach((rafter, index) => {
+      if (selected !== index) {
+        rafter.classList.remove("active");
+      } else if (selected === index && rafter.classList.contains('active')){
+        rafter.classList.remove("active");
+      } else {
+        rafter.classList.add("active");}
+    });
+  }
+  rafters.forEach((rafter, index) => {
+    rafter.addEventListener("click", () => {
+      clearActiveRafter(index);
+    });
+  });
+</script>
+

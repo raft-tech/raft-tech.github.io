@@ -9,6 +9,7 @@ plugins:
 
 exclude:
   - "/vendor/"
+  - "case-studies.md"
 
 # Site settings
 title: Raft
@@ -80,6 +81,8 @@ protocols:
 
 collections:
   leadership:
+    output: true
+  case_studies:
     output: true
 
 ############################################################

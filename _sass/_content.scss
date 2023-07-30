@@ -24,3 +24,11 @@ blockquote {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.pink-text {
+    color: $vibrant-pink;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
