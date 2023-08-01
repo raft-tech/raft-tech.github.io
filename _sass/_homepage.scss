@@ -136,8 +136,7 @@
 }
 
 .text-block {
-  height: 40vh;
-
+  margin-bottom: 40px;
   h4 {
     margin-bottom: 40px;
   }
@@ -240,6 +239,7 @@
 .sticky-text {
   position: sticky;
   top: 200px;
+  margin-bottom: 100px;
 }
 
 .bracket-link {
