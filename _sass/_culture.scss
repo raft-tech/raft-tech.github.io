@@ -1,8 +1,8 @@
 .gradient-pink-to-purple-1 {
   background: linear-gradient(
     0deg,
-    $primary-links-light 4.62%,
-    $vibrant-pink 26.4%
+    $primary-links-light 0%,
+    $vibrant-pink 50%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16,7 +16,7 @@
   background: linear-gradient(
     0deg,
     $primary-links-light 0%,
-    $vibrant-pink 70%
+    $vibrant-pink 95%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,7 +25,7 @@
 .gradient-pink-to-purple-3 {
   background: linear-gradient(
     0deg,
-    $primary-links-light 30%,
+    $primary-links-light 40%,
     $vibrant-pink 100%
   );
   -webkit-background-clip: text;
