@@ -1,6 +1,6 @@
 ---
 featimg: /assets/images/benefits/tech.svg
-title: Yearly technology budget
-description: To make your home office more comfortable
+title: Technology Budget
+description: Choose the gear and tools that support you at work
 weight: 6
 ---

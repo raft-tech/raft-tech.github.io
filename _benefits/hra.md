@@ -1,6 +1,6 @@
 ---
 featimg: /assets/images/benefits/hra.svg
-title: (HRA) to cover deductibles
-description: Rafters, spouse and dependents who enroll
+title: HRA Funds
+description: Helping you tackle medical deductibles with ease.
 weight: 2
 ---

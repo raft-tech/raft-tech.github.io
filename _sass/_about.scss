@@ -107,6 +107,35 @@
   }
 }
 
+.culture-link {
+  color: rgba(190, 190, 190, 1);
+  border-bottom: 1px solid rgba(190, 190, 190, 1);
+  text-decoration: none;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: rgba(135, 137, 255, 1);
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("/assets/images/nav/nav-arrow-2-horizontal.png") 0 0 no-repeat;
+      animation: navAnimation2 0.25s steps(11) forwards;
+      width: 80px;
+      height: 80px;
+      display: block;
+      bottom: 0px;
+      left: -80px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
 .col-6:nth-child(1n) > .rafter > .rafter-avatar {
   &::after {
     content: url("/assets/images/about/profile-pattern-1.png");

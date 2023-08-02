@@ -1,6 +1,6 @@
 ---
 featimg: /assets/images/benefits/education.svg
-title: "Yearly Education Budget #ContinuouslyGrow"
-description: Yearly education budget to use on day 1 with no payback
+title: Education Budget
+description: We pay for you to travel, train & grow, no strings attached
 weight: 7
 ---

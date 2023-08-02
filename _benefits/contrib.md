@@ -1,6 +1,6 @@
 ---
 featimg: /assets/images/benefits/contrib.svg
-title: Contributions to your retirement goals
-description: Receive 401k with matching contributions to your ROTH
+title: 401K
+description: Invest in your future with a match from us and no vesting period
 weight: 5
 ---

@@ -8,11 +8,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.rafter-factor {
+  font-weight: 600;
+}
+
 .gradient-pink-to-purple-2 {
   background: linear-gradient(
     0deg,
-    $primary-links-light 24.62%,
-    $vibrant-pink 69.4%
+    $primary-links-light 0%,
+    $vibrant-pink 70%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -21,8 +25,8 @@
 .gradient-pink-to-purple-3 {
   background: linear-gradient(
     0deg,
-    $primary-links-light 24.62%,
-    $vibrant-pink 96.4%
+    $primary-links-light 30%,
+    $vibrant-pink 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -31,8 +35,8 @@
 .gradient-pink-to-purple-4 {
   background: linear-gradient(
     0deg,
-    $primary-links-light 99.62%,
-    $vibrant-pink 1.4%
+    $primary-links-light 90%,
+    $vibrant-pink 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,7 +60,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 32px;
   position: relative;
   background: url(/assets/images/benefits/background.svg);
   background-repeat: no-repeat;
@@ -65,7 +69,7 @@
   height: 12rem;
   img {
     max-height: 49px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
   }
   h6 {
     text-align: center;

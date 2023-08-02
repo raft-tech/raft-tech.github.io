@@ -73,7 +73,7 @@ layout: default
     <div class="row bm-250 flex-md-row flex-sm-column-reverse">
       <div class="col-xl-5 col-12-md">
         <div class="text-block">
-          <p class="white-bracket">
+          <p class="white-bracket rafter-factor">
             RAFTER FACTOR #1
           </p>
           <h2 class="gradient-pink-to-purple-1 mb-5">
@@ -88,7 +88,7 @@ layout: default
           </p>
         </div>
         <div class="text-block">
-          <p class="white-bracket">
+          <p class="white-bracket rafter-factor">
             RAFTER FACTOR #2
           </p>
           <h2 class="gradient-pink-to-purple-2 mb-5">
@@ -106,7 +106,7 @@ layout: default
           </p>
         </div>
         <div class="text-block">
-          <p class="white-bracket">
+          <p class="white-bracket rafter-factor">
             RAFTER FACTOR #3
           </p>
           <h2 class="gradient-pink-to-purple-3 mb-5">
@@ -125,7 +125,7 @@ layout: default
           </p>
         </div>
         <div class="text-block">
-          <p class="white-bracket">
+          <p class="white-bracket rafter-factor">
             RAFTER FACTOR #4
           </p>
           <h2 class="gradient-pink-to-purple-4 mb-5">
@@ -144,8 +144,17 @@ layout: default
       <div class="col-md-1 d-xs-none"></div>
       <div class="col-xl-6 col-md-12">
         <div class="sticky-text">
-          <div class="offset-bordered-image">
-            <img src="/assets/images/culture/placeholder.png" />
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://youtube.com/embed/2psdrE9gZPs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="video"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -158,13 +167,13 @@ layout: default
     <div class="row bm-250 flex-md-row flex-sm-column-reverse">
       <div class="col-xl-6 col-md-12">
         <div class="sticky-text">
-          <img style="max-width: 100%" src="/assets/images/culture/placeholder2.png" />
+          <img style="width: 100%" src="/assets/images/culture/placeholder2.png" />
         </div>
       </div>
       <div class="col-md-1 d-xs-none"></div>
       <div class="col-xl-5 col-12-md">
         <div class="text-block">
-          <p class="white-bracket">
+          <p class="white-bracket rafter-factor">
             RAFTER FACTOR #5
           </p>
           <h2 class="gradient-pink-to-purple-1 mb-5">
@@ -182,7 +191,7 @@ layout: default
           </p>
         </div>
         <div class="text-block">
-          <p class="white-bracket">
+          <p class="white-bracket rafter-factor">
             RAFTER FACTOR #6
           </p>
           <h2 class="gradient-pink-to-purple-2 mb-5">
@@ -198,7 +207,7 @@ layout: default
           </p>
         </div>
         <div class="text-block">
-          <p class="white-bracket">
+          <p class="white-bracket rafter-factor">
             RAFTER FACTOR #7
           </p>
           <h2 class="gradient-pink-to-purple-3 mb-5">
@@ -231,7 +240,7 @@ layout: default
           <i class="highlight-text-pink">above</i>
           the market compensation + 100% Benefits
         </h2>
-          <p class="bracket">
+          <p class="bracket" style="text-transform: none;">
             We want great results and we pay for it
           </p>
       </div>
@@ -243,7 +252,7 @@ layout: default
         <div class="benefit-container">
           <img src="{{benefit.featimg}}" />
           <h6>{{benefit.title}}</h6>
-          <p>{{benefit.description}}</p>
+          <p style="text-align: center;">{{benefit.description}}</p>
         </div>
       </div>
       {% endfor %}
@@ -251,7 +260,7 @@ layout: default
   </div>
 </div>
 
-<img style="width: 100%;" src="/assets/images/culture/placeholder3.png" />
+<img style="margin: 0 -54px;width: calc(100% + 108px);" src="/assets/images/culture/placeholder3.png" />
 
 <div class="culture-footer">
   <h2 class="gradient-pink-to-purple-1 mb-5">

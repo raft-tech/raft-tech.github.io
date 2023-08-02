@@ -1,6 +1,6 @@
 ---
 featimg: /assets/images/benefits/pto.svg
-title: Take as You Need Time Off Policy
-description: In addition, receive all 11 federal holidays, your birthday off!
-weight: 3
+title: Take as you need
+description: Plus 11 Federal holidays and your birthday!
+weight: 4
 ---
