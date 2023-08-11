@@ -1,6 +1,6 @@
 ---
 featimg: /assets/images/benefits/refer.svg
-title: Referral Bonuses
-description: Great referrals that we hire earn you a fat check.
+title: Receive Bonuses
+description: Presentations, publications and referrals get you more $$$
 weight: 8
 ---
