@@ -11,20 +11,21 @@
     let images = stack.querySelectorAll('img');
     let firstImage = images[0];
     
-    // Append the first image to the end of the stack
+    stack.removeChild(firstImage)
     stack.appendChild(firstImage);
+    images = stack.querySelectorAll('img');
     
-    // Update the z-index and transform properties
     for (let i = 0; i < images.length; i++) {
-      let img = images[i];
-      
-      if (i === 0) {
-        img.style.zIndex = "999";
-        img.style.transform = "";
-      } else {
-        let rotation = [3, -3, 2, 2][i % 4];
-        img.style.transform = `rotate3d(0,0,1,${rotation}deg)`;
-      }
+        let img = images[i];
+        
+        if (i === 0) {
+            img.style.zIndex = "999";
+            img.style.transform = "";
+        } else {
+            let rotation = [3, -3, 2, 2][i % 4];
+            img.style.transform = `rotate3d(0,0,1,${rotation}deg)`;
+            img.style.zIndex = "0"
+        }
     }
   });
 </script>
