@@ -143,7 +143,7 @@
 
 .photo-marquee-row {
   display: flex;
-  animation: scrollingLeft 60s linear infinite;
+  animation: scrollingLeft 120s linear infinite;
   padding: 16px;
   img {
     flex: 0 0 16vw;
@@ -156,7 +156,7 @@
 }
 
 div.photo-marquee-row:nth-of-type(even) {
-  animation: scrollingRight 60s linear infinite;
+  animation: scrollingRight 160s linear infinite;
 }
 
 
