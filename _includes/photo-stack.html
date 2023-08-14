@@ -1,0 +1,31 @@
+<div class='photo-stack'>
+  <img src="/assets/images/culture/photo-stack/PXL_20230405_211150148.jpg">
+  <img src="/assets/images/culture/photo-stack/1685036454995.jpeg">
+  <img src="/assets/images/culture/photo-stack/1691706577016.jpeg">
+  <img src="/assets/images/culture/photo-stack/IMG_0464.jpg">
+  <img src="/assets/images/culture/photo-stack/party.gif">
+</div>
+<script>
+  document.querySelector('.photo-stack').addEventListener('click', function () {
+    let stack = document.querySelector('.photo-stack');
+    let images = stack.querySelectorAll('img');
+    let firstImage = images[0];
+    
+    stack.removeChild(firstImage)
+    stack.appendChild(firstImage);
+    images = stack.querySelectorAll('img');
+    
+    for (let i = 0; i < images.length; i++) {
+        let img = images[i];
+        
+        if (i === 0) {
+            img.style.zIndex = "999";
+            img.style.transform = "";
+        } else {
+            let rotation = [3, -3, 2, 2][i % 4];
+            img.style.transform = `rotate3d(0,0,1,${rotation}deg)`;
+            img.style.zIndex = "0"
+        }
+    }
+  });
+</script>

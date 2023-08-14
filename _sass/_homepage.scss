@@ -136,8 +136,7 @@
 }
 
 .text-block {
-  height: 40vh;
-
+  margin-bottom: 40px;
   h4 {
     margin-bottom: 40px;
   }
@@ -185,6 +184,22 @@
   }
 }
 
+.white-bracket {
+  line-height: 24px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0 0 24px 0 !important;
+  font-family: 'Space Mono';
+  &::before {
+    color: $text-white;
+    content: "[ ";
+  }
+  &::after {
+    color: $text-white;
+    content: " ]";
+  }
+}
+
 .highlight-text-pink {
   color: $vibrant-pink;
 }
@@ -224,6 +239,7 @@
 .sticky-text {
   position: sticky;
   top: 200px;
+  margin-bottom: 100px;
 }
 
 .bracket-link {
