@@ -4,8 +4,8 @@ title: "DevSecOps: Part 1 - Development"
 short_title: "DevSecOps: Development"
 date: 2023-08-15
 categories:
-featimg: /assets/images/featimage/developers_at_work.jpeg
-bgimg: /assets/images/featimage/developers_at_work.jpeg
+featimg: /assets/images/featimage/developers_at_work.jpg
+bgimg: /assets/images/featimage/developers_at_work.jpg
 author: Dagan Henderson
 ---
 
