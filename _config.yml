@@ -7,6 +7,10 @@ plugins:
   - jekyll-target-blank
   - jemoji
 
+webrick:
+  headers:
+    Content-Security-Policy: frame-ancestors 'none';
+
 exclude:
   - "/vendor/"
   - "case-studies.md"
