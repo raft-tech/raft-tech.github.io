@@ -1,4 +1,9 @@
 <section class="social-links">
+  <img
+    style="height: 4rem; margin-right: 8px;"
+    src="/assets/images/footer/bestplacetowork.svg"
+    alt="Best place to work"
+  />
   {% for social in site.social %}
     {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
     <a href="{{ social.url }}" class="mr-2" target="_blank" rel="no-follow no-referrer">
