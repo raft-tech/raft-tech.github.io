@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+<h1>Rafters Around the US</h1>
+<h5>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, dignissimos.
+  Quidem excepturi labore dolorum iure! Repellat, ducimus? Aut quas dolores
+  incidunt eligendi debitis porro. Dicta omnis ratione tenetur aliquam suscipit!
+</h5>
+
+<div id="map"></div>
+<script type="text/javascript">
+  d3.csv("./map-source-data.csv", function (err, rows) {
+    function unpack(rows, key) {
+      return rows.map(function (row) {
+        return row[key]
+      })
+    }
+    var data = [
+      {
+        type: "choropleth",
+        locationmode: "USA-states",
+        locations: unpack(rows, "State"),
+        z: unpack(rows, "Count"),
+        text: unpack(rows, "Name"),
+        colorscale: "Greens",
+        reversescale: true,
+      },
+    ]
+
+    var layout = {
+      // title: "Rafters by State",
+      geo: {
+        scope: "usa",
+        bgcolor: "rgba(0, 0, 0, 0)",
+        showland: true,
+        landcolor: "rgb(217, 217, 217)",
+        showlakes: true,
+        lakecolor: "rgb(255, 255, 255)",
+        subunitcolor: "rgb(255, 255, 255)",
+        lonaxis: {},
+        lataxis: {},
+      },
+      paper_bgcolor: "rgba(0,0,0,0)",
+    }
+
+    Plotly.newPlot("map", data, layout, { showLink: false })
+  })
+</script>
