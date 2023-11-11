@@ -1,5 +1,5 @@
 {
-  "name": "rafters-map",
+  "name": "raftmap",
   "type": "module",
   "version": "1.0.0",
   "description": "Map of Rafters",
@@ -7,5 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "node-xlsx": "^0.23.0"
+  },
+   "scripts": {
+    "data": "node generateMapData.js"
   }
 }
