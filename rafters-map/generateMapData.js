@@ -43,12 +43,21 @@ workSheetsFromFile.forEach(worksheet => {
   stateColumn = -1
 })
 
+// Sort by value
+const sortedByValue = []
+for (let state in states) {
+  sortedByValue.push([state, states[state]])
+}
+sortedByValue.sort(function (a, b) {
+  return b[1] - a[1]
+})
+
 
 // Convert to CSV
 let csv = "State,Name,FIPS,Count\n"
 
-Object.keys(states).forEach(abbr => {
-  csv += `${abbr},${stateCode2Name[abbr]},${shortcodeToFips[abbr]},${states[abbr]}\n`
+sortedByValue.forEach(([abbr, value]) => {
+  csv += `${abbr},${stateCode2Name[abbr]},${shortcodeToFips[abbr]},${value}\n`
 })
 
 // Save data to Maps source file

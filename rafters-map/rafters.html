@@ -5,14 +5,21 @@ layout: default
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 
-<h1>Rafters Around the US</h1>
-<h5>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, dignissimos.
-  Quidem excepturi labore dolorum iure! Repellat, ducimus? Aut quas dolores
-  incidunt eligendi debitis porro. Dicta omnis ratione tenetur aliquam suscipit!
-</h5>
-
-<div id="map"></div>
+<div id="raftmap" class="container">
+  <h1 class="w-50 heading">
+    We are a
+    <i class="space-mono-text highlight-text-pink gradient-pink-to-purple-1"
+      >geographically distributed</i
+    >
+    team
+  </h1>
+  <p class="w-50 description">
+    where little humans, pets, and everything in between are welcome during our
+    zoom calls. We utilize Open Source and use Mattermost for collaboration. We
+    strive for fewer meetings and are mindful of different time zones.
+  </p>
+  <div id="map"></div>
+</div>
 <script type="text/javascript">
   d3.csv("./map-source-data.csv", function (err, rows) {
     function unpack(rows, key) {
@@ -20,34 +27,57 @@ layout: default
         return row[key]
       })
     }
-    var data = [
+
+    var chartData = [
       {
         type: "choropleth",
         locationmode: "USA-states",
         locations: unpack(rows, "State"),
         z: unpack(rows, "Count"),
         text: unpack(rows, "Name"),
-        colorscale: "Greens",
-        reversescale: true,
+        reversescale: false,
+        colorscale: [
+          ["0.0", "#1C1C1C"],
+          ["0.3", "#9663E9"],
+          ["1", "#4749CA"],
+        ],
+        hoverlabel: {
+          align: "right",
+          bgcolor: "black",
+          bordercolor: "#7D7FEB",
+          font: { family: "Space Mono", color: "white", size: 14 },
+        },
+        hovertemplate:
+          "&nbsp;<br>" + // Vertical padding
+          "&nbsp;&nbsp;" + // Horizontal padding
+          "%{text} • %{z}" + // State • Count
+          "&nbsp;&nbsp;" + // Horizontal padding
+          "<br>&nbsp;" + // Vertical padding
+          "<extra></extra>", // Hide "Extra" section
       },
     ]
 
-    var layout = {
-      // title: "Rafters by State",
+    var chartLayout = {
+      dragmode: false, // Disable trackpad events to avoid capturing mouse on scroll
+      paper_bgcolor: "rgba(0,0,0,0)", // Map's bounding box (map + legend)
       geo: {
         scope: "usa",
-        bgcolor: "rgba(0, 0, 0, 0)",
+        bgcolor: "rgba(0,0,0,0)", // Map's bounding box (map w/o legend)
         showland: true,
-        landcolor: "rgb(217, 217, 217)",
-        showlakes: true,
-        lakecolor: "rgb(255, 255, 255)",
-        subunitcolor: "rgb(255, 255, 255)",
+        landcolor: "rgba(0,0,0,1)",
+        showlakes: false,
+        lakecolor: "rgba(203,233,255,1)",
+        // subunitcolor: "white", // State borders (How to show above fill layers?)
         lonaxis: {},
         lataxis: {},
       },
-      paper_bgcolor: "rgba(0,0,0,0)",
     }
 
-    Plotly.newPlot("map", data, layout, { showLink: false })
+    const chartConfig = {
+      showLink: false, // Hide weird "Edit chart" link
+      displayModeBar: false,  // Hide map controls (zoom, download png, etc)
+    }
+
+    Plotly.newPlot("map", chartData, chartLayout, chartConfig)
   })
 </script>
