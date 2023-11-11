@@ -4,4 +4,4 @@
   - `yarn install`
   - `yarn data`
 - Run locally: `docker-compose up`
-- Visit: http://localhost:4000/rafters-map/rafters.html
+- Visit: http://localhost:4000/raftmap
