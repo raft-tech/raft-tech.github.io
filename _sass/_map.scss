@@ -1,0 +1,21 @@
+#raftmap {
+  .graphic {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.25;
+    max-width: 100%;
+  }
+
+  .raft-r {
+    position: absolute;
+    max-width: 265px;
+    height: 175px;
+    margin-top: 300px;
+  }
+}
+
+#map {
+  width: 70vw;
+  height: 80vh;
+  margin: 0 auto;
+}

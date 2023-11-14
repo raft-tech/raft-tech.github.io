@@ -1,0 +1,130 @@
+---
+layout: default
+---
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<div id="raftmap">
+  <div class="container">
+    <img
+      src="/assets/images/homepage/arrow.svg"
+      class="graphic arrow"
+      style="top: 12%; left: 8%; height: 60px; opacity: 1"
+    />
+    <img
+      src="/assets/images/raftmap/raft-r.svg"
+      class="graphic raft-r"
+      style="top: -30%; right: 15%"
+    />
+    <img
+      src="/assets/images/raftmap/rectangle_small.svg"
+      class="graphic rectangle"
+      style="top: 12%; right: 35%"
+    />
+    <img
+      src="/assets/images/raftmap/rectangle_large.svg"
+      class="graphic rectangle"
+      style="top: 30%; right: 0%"
+    />
+    <img
+      src="/assets/images/raftmap/circle.svg"
+      class="graphic circle"
+      style="top: 7%; left: 5%"
+    />
+    <img
+      src="/assets/images/raftmap/squiggle.svg"
+      class="graphic squiggle"
+      style="bottom: 5%; right: 10%; rotate: 75deg"
+    />
+    <img
+      src="/assets/images/raftmap/grid.svg"
+      class="graphic grid"
+      style="bottom: 10%; left: -25%; height: 25%"
+    />
+    <h1 class="w-50 heading">
+      We are a
+      <i class="space-mono-text highlight-text-pink gradient-pink-to-purple-1"
+        >geographically distributed</i
+      >
+      team
+    </h1>
+    <p class="w-50 description">
+      where little humans, pets, and everything in between are welcome during
+      our zoom calls. We utilize Open Source and use Mattermost for
+      collaboration. We strive for fewer meetings and are mindful of different
+      time zones.
+    </p>
+    <div id="map"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  d3.csv("./map-source-data.csv", function (err, rows) {
+    function unpack(rows, key) {
+      return rows.map(function (row) {
+        return row[key]
+      })
+    }
+
+    var chartData = [
+      {
+        type: "choropleth",
+        locationmode: "USA-states",
+        locations: unpack(rows, "State"),
+        z: unpack(rows, "Count"),
+        text: unpack(rows, "Name"),
+        reversescale: false,
+        colorscale: [
+          ["0.0", "#1C1C1C"],
+          ["0.3", "#9663E9"],
+          ["1", "#4749CA"],
+        ],
+        hoverlabel: {
+          align: "right",
+          bgcolor: "black",
+          bordercolor: "#7D7FEB",
+          font: { family: "Space Mono", color: "white", size: 14 },
+        },
+        hovertemplate:
+          "&nbsp;<br>" + // Vertical padding
+          "&nbsp;&nbsp;" + // Horizontal padding
+          "%{text} • %{z}" + // State • Count
+          "&nbsp;&nbsp;" + // Horizontal padding
+          "<br>&nbsp;" + // Vertical padding
+          "<extra></extra>", // Hide "Extra" section
+        colorbar: {
+          thickness: 10,
+        },
+        marker: {
+          // State borders
+          line: {
+            color: "rgb(255,255,255)",
+            width: 1,
+          },
+        },
+      },
+    ]
+
+    var chartLayout = {
+      dragmode: false, // Disable trackpad events to avoid capturing mouse on scroll
+      paper_bgcolor: "rgba(0,0,0,0)", // Map's bounding box (map + legend)
+      geo: {
+        scope: "usa",
+        bgcolor: "rgba(0,0,0,0)", // Map's bounding box (map w/o legend)
+        showland: true,
+        landcolor: "rgba(0,0,0,1)",
+        showlakes: true,
+        lakecolor: "rgb(62, 132, 236)",
+        subunitcolor: "white", // State border when no data available for state
+        lonaxis: {},
+        lataxis: {},
+      },
+    }
+
+    const chartConfig = {
+      showLink: false, // Hide weird "Edit chart" link
+      displayModeBar: false, // Hide map controls (zoom, download png, etc)
+    }
+
+    Plotly.newPlot("map", chartData, chartLayout, chartConfig)
+  })
+</script>
