@@ -4,15 +4,43 @@ layout: default
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-<div id="raftmap" >
+<div id="raftmap">
   <div class="container">
-    <img src="/assets/images/homepage/arrow.svg" class="graphic arrow" style="top: 12%; left: 8%; height: 60px; opacity: 1;">
-    <img src="/assets/images/raftmap/raft-r.svg" class="graphic raft-r" style="top: -30%; right: 15%">
-    <img src="/assets/images/raftmap/rectangle_small.svg" class="graphic rectangle" style="top: 12%; right: 35%">
-    <img src="/assets/images/raftmap/rectangle_large.svg" class="graphic rectangle" style="top: 30%; right: 0%">
-    <img src="/assets/images/raftmap/circle.svg" class="graphic circle" style="top: 7%; left: 5%">
-    <img src="/assets/images/raftmap/squiggle.svg" class="graphic squiggle" style="bottom: 5%; right: 10%; rotate: 75deg;">
-    <img src="/assets/images/raftmap/grid.svg" class="graphic grid" style="bottom: 10%; left: -25%; height: 25%;">
+    <img
+      src="/assets/images/homepage/arrow.svg"
+      class="graphic arrow"
+      style="top: 12%; left: 8%; height: 60px; opacity: 1"
+    />
+    <img
+      src="/assets/images/raftmap/raft-r.svg"
+      class="graphic raft-r"
+      style="top: -30%; right: 15%"
+    />
+    <img
+      src="/assets/images/raftmap/rectangle_small.svg"
+      class="graphic rectangle"
+      style="top: 12%; right: 35%"
+    />
+    <img
+      src="/assets/images/raftmap/rectangle_large.svg"
+      class="graphic rectangle"
+      style="top: 30%; right: 0%"
+    />
+    <img
+      src="/assets/images/raftmap/circle.svg"
+      class="graphic circle"
+      style="top: 7%; left: 5%"
+    />
+    <img
+      src="/assets/images/raftmap/squiggle.svg"
+      class="graphic squiggle"
+      style="bottom: 5%; right: 10%; rotate: 75deg"
+    />
+    <img
+      src="/assets/images/raftmap/grid.svg"
+      class="graphic grid"
+      style="bottom: 10%; left: -25%; height: 25%"
+    />
     <h1 class="w-50 heading">
       We are a
       <i class="space-mono-text highlight-text-pink gradient-pink-to-purple-1"
@@ -63,6 +91,16 @@ layout: default
           "&nbsp;&nbsp;" + // Horizontal padding
           "<br>&nbsp;" + // Vertical padding
           "<extra></extra>", // Hide "Extra" section
+        colorbar: {
+          thickness: 10,
+        },
+        marker: {
+          // State borders
+          line: {
+            color: "rgb(255,255,255)",
+            width: 1,
+          },
+        },
       },
     ]
 
@@ -74,9 +112,9 @@ layout: default
         bgcolor: "rgba(0,0,0,0)", // Map's bounding box (map w/o legend)
         showland: true,
         landcolor: "rgba(0,0,0,1)",
-        showlakes: false,
-        lakecolor: "rgba(203,233,255,1)",
-        // subunitcolor: "white", // TODO: State borders - How to show above fill layers?
+        showlakes: true,
+        lakecolor: "rgb(62, 132, 236)",
+        subunitcolor: "white", // State border when no data available for state
         lonaxis: {},
         lataxis: {},
       },
