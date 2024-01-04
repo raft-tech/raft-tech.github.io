@@ -41,7 +41,9 @@ layout: default
     </div>
   </div>
   <div class="row justify-content-center">
-    {% for post in site.posts limit: 3 %} {% include article-thumbnail.html %}
+    {% assign related_posts = site.posts | where_exp:"post", "post.title != page.title" %}
+    {% for post in related_posts limit: 3 %}
+      {% include article-thumbnail.html %}
     {% endfor %}
   </div>
 </div>
