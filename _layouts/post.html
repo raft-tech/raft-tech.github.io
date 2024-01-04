@@ -15,13 +15,16 @@ layout: default
       endfor %}
 
       <h5 class="mb-5">
-        {{ page.date | date: "%B %-d, %Y" }} | Words by {% if author_url %}<a
-          href="{{author_url}}"
-          target="_blank"
-          rel="no-follow no-referrer"
-          >{{ page.author }}</a
-        >{% else %}{{ page.author }}{% endif %}
-      </h5>
+        {{ page.date | date: "%B %-d, %Y" }} | Words by 
+        {% if author_url %}
+            <a href="{{author_url}}" target="_blank" rel="no-follow no-referrer">{{ page.author }}</a>
+        {% elsif page.author_email %}
+            <a href="mailto:{{page.author_email}}">{{ page.author }}</a>
+        {% else %}
+            {{ page.author }}
+        {% endif %}
+        {% if page.author_title %}<span>&#183;</span> {{ page.author_title }}{% endif %}
+    </h5>
 
       {{content}}
     </div>

@@ -6,7 +6,9 @@ date: 2024-01-03
 categories: press release
 featimg: /assets/images/featimage/trey_press_release.jpeg
 bgimg: /assets/images/featimage/trey_press_release.jpeg
-author: Sandra Perez, Media Relations
+author: Sandra Perez
+author_email: sandraperez@marcouxstrategies.com
+author_title: Media Relations
 ---
 
 Washington, D.C., January 3, 2024 – Raft, a full stack engineering and digital consultancy serving defense and intelligence agencies, today announced retired Colonel Frederick “Trey” Coleman III will join the firm as its first Chief Product Officer. Coleman retired from the United States Air Force in 2023 and will lead Raft’s corporate offerings strategy, product portfolio and innovation to deliver operational advantage to its government customers.  
