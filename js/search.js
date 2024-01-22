@@ -41,9 +41,9 @@ const searchResults = document.getElementById("search-results");
 
 const searchButton = document.getElementById("search-button");
 
-const lightThemeButton = document.querySelector(".light-theme-btn");
+// const lightThemeButton = document.querySelector(".light-theme-btn");
 
-const darkThemeButton = document.querySelector(".dark-theme-btn");
+// const darkThemeButton = document.querySelector(".dark-theme-btn");
 
 const body = document.body;
 
@@ -131,8 +131,8 @@ const showSearch = () => {
     body.classList.add("no-scroll");
     footer.classList.add("d-none");
     hamburger.classList.add('open');
-    lightThemeButton.classList.add('d-none');
-    darkThemeButton.classList.add('d-none');
+    // lightThemeButton.classList.add('d-none');
+    // darkThemeButton.classList.add('d-none');
     nav.classList.add("d-none");
     searchButton.classList.add('d-none');
 }
@@ -143,8 +143,8 @@ const hideSearch = () => {
     navHeader.classList.remove("search-background");
     body.classList.remove("no-scroll");
     footer.classList.remove("d-none");
-    lightThemeButton.classList.remove('d-none');
-    darkThemeButton.classList.remove('d-none');
+    // lightThemeButton.classList.remove('d-none');
+    // darkThemeButton.classList.remove('d-none');
     hamburger.classList.remove('open');
     searchButton.classList.remove('d-none');
 }
@@ -155,8 +155,8 @@ const showNav = () => {
     body.classList.add("no-scroll");
     searchBox.classList.add("d-none");
     footer.classList.add("d-none");
-    lightThemeButton.classList.add('d-none');
-    darkThemeButton.classList.add('d-none');
+    // lightThemeButton.classList.add('d-none');
+    // darkThemeButton.classList.add('d-none');
     hamburger.classList.add('open');
     searchButton.classList.add('d-none');
 }
@@ -167,8 +167,8 @@ const hideNav = () => {
     navHeader.classList.remove('nav-background');
     body.classList.remove("no-scroll");
     footer.classList.remove("d-none");
-    lightThemeButton.classList.remove('d-none');
-    darkThemeButton.classList.remove('d-none');
+    // lightThemeButton.classList.remove('d-none');
+    // darkThemeButton.classList.remove('d-none');
     hamburger.classList.remove('open');
     searchButton.classList.remove('d-none');
 }
