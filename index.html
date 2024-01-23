@@ -2,15 +2,21 @@
 layout: default
 ---
 
+
+
 <div class="home-section-1 section-1">
-  <div class="container">
-    <h1>
-      We are a new breed of digital consulting firm. We are
-      <i class="space-mono-text highlight-text-pink">engineers</i> of the
-      future.
-      <i class="space-mono-text highlight-text-purple">Artists of change</i>.
-      Dedicated to building solutions that actually work.
-    </h1>
+  <div class="container home-content-container">
+    <div class="home-content-header">
+      <span class="home-content-header-text"></span>
+      <span class="home-content-header-last"></span>
+    </div>
+    <div class="home-content-domains">
+      <span>AI/ML Battle Management Tools <span>&#183;</span> COP-Agnostic Data Fabric <span>&#183;</span> DDIL Platform Designed for the Tactical Edge <span>&#183;</span> Complex Application Software Factory</span>
+    </div>
+    <div class="home-content-desc">
+      <span>We're building the sharpest digital solutions and solving the most complex problems, while</span>
+      <span style="color: #D263FA;">having fun</span>
+    </div>
   </div>
   <div class="video-gradient"></div>
   <video
@@ -306,3 +312,59 @@ layout: default
   </div>
 </div>
 
+<script>
+const typeTime = 75
+const homeContentElement = document.getElementsByClassName('home-content-header-text')[0];
+const lastWordsElement = document.getElementsByClassName('home-content-header-last')[0];
+const lastWords = [
+  "technology",
+  "data",
+  "software",
+  "DDIL platforms",
+  "A.I.",
+  "complex apps",
+]
+let lastWordsIndex = 0;
+let currentLastWordPos = 0;
+const deleteLastWord = () => {
+  if (currentLastWordPos > 0) {
+    lastWordsElement.textContent = lastWordsElement.textContent.slice(0, -1);
+    currentLastWordPos--;
+    setTimeout(deleteLastWord, typeTime);
+  }
+  else {
+    addLastWord();
+  }
+}
+const addLastWord = () => {
+  // calculate width based on the length of the last word
+
+  if (currentLastWordPos < lastWords[lastWordsIndex].length) {
+    lastWordsElement.textContent += lastWords[lastWordsIndex].charAt(currentLastWordPos);
+    currentLastWordPos++;
+    setTimeout(addLastWord, typeTime);
+  }
+  else {
+    lastWordsIndex++;
+    if (lastWordsIndex >= lastWords.length) {
+      lastWordsIndex = 0;
+    }
+    setTimeout(deleteLastWord, 2000);
+  }
+}
+const content = "Together we'll make waves in "
+let i = 0;
+const typeWriter = () => {
+  if (i < content.length) {
+    homeContentElement.textContent += content.charAt(i);
+    i++;
+    setTimeout(typeWriter, typeTime);
+  }
+  else {
+    addLastWord();
+  }
+}
+typeWriter();
+
+
+</script>
