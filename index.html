@@ -352,11 +352,11 @@ const addLastWord = () => {
     setTimeout(deleteLastWord, 2000);
   }
 }
-const content = "Together we'll make waves in "
+const textContent = "Together we'll make waves in "
 let i = 0;
 const typeWriter = () => {
-  if (i < content.length) {
-    homeContentElement.textContent += content.charAt(i);
+  if (i < textContent.length) {
+    homeContentElement.textContent += textContent.charAt(i);
     i++;
     setTimeout(typeWriter, typeTime);
   }
