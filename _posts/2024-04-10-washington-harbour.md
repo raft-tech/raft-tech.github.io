@@ -4,8 +4,8 @@ title: "Raft Receives Significant Growth Investment From Washington Harbour Part
 short_title: "Raft Receives Significant Growth Investment From Washington Harbour Partners"
 date: 2024-04-10
 categories: 
-featimg: /assets/images/featimage/washington-harbour.jpg
-bgimg: /assets/images/featimage/washington-harbour.jpg
+featimg: /assets/images/featimage/washington-harbour.png
+bgimg: /assets/images/featimage/washington-harbour.png
 ---
 
 ARLINGTON, Va.--(BUSINESS WIRE)--Washington Harbour Partners LP (“Washington Harbour”), a leading private investment firm specializing in partnering with founders and management teams on unlocking their next phase of growth, announced today that it has made an over $60 million strategic growth investment in Raft LLC (“Raft”). Raft is a leading modern technology and data-focused, advanced software engineering firm, pioneering new, innovative solutions for the most critical mission sets across the Department of Defense and our nation.
