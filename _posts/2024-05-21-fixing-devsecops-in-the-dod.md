@@ -18,7 +18,7 @@ Let’s take a look at the two definitions and why the DoD needs to rethink soft
 
 —DoD [DevSecOps Reference Design](https://ac.cto.mil/wp-content/uploads/2020/05/DoD-DevSecOps-Ref-v1.0.pdf), v1.0
 
-“The goal of DevSecOps it to improve customer outcomes and mission value through the automation, monitoring, and application of security at every phase of the software lifecycle.”
+“The goal of DevSecOps is to improve customer outcomes and mission value through the automation, monitoring, and application of security at every phase of the software lifecycle.”
 
 —DoD [DevSecOps Fundamentals Guidebook](https://dl.dod.cyber.mil/wp-content/uploads/devsecops/pdf/DevSecOpsTools-ActivitiesGuidebook.pdf), v2.0
 
