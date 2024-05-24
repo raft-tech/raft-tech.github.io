@@ -167,7 +167,7 @@ A blog post comprises for three things:
 
 2. Open [a new issue](https://github.com/raft-tech/raft-tech.github.io/issues/new)
     - (a) The title of the issue should be `Name of the blog title - by John Doe`
-    - (b) The body of the ticket drag and drop the two images -- one for the [index page](https://goraft.tech/blog/) and another for the actual blog page (exampel: [here](https://goraft.tech/2021/02/24/diversity-is-our-superpower.html)). Also include the URL of the blog post from HackMD from ()
+    - (b) The body of the ticket drag and drop the two images -- one for the [index page](https://goraft.tech/blog/) and another for the actual blog page (exampel: [here](https://goraft.tech/2021/02/24/diversity-is-our-superpower.html)).
 3. Click `Submit New Issue`
 4. Tag either `barakstout`, `meissadia`, or `omnipresent07` for review
 
