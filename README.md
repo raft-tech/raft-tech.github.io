@@ -150,7 +150,7 @@ layout: about/profile <--  do not change
 
 A blog post comprises for three things:
 
-1. Have your blog post in Markdown format - We recommend <https://hackmd.io>. Copy/Paste the below into the editor.
+1. Have your blog post in Markdown format. Copy/Paste the below into the editor.
 
     ```yaml
     ---
@@ -173,7 +173,7 @@ A blog post comprises for three things:
 
 ## Creating a blog post (For Devs)
 
-1. Have your blog post in Markdown format - We recommend <https://hackmd.io>. Copy/Paste the below into the editor.
+1. Have your blog post in Markdown format. Copy/Paste the below into the editor.
 
     ```yaml
     ---
