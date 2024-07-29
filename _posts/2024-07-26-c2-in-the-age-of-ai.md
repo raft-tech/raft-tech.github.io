@@ -2,7 +2,8 @@
 layout: post
 title: Command and Control in the Age of AI
 date: 2024-07-26
-author: Trey Coleman
+featimg: /assets/images/featimage/C2AI.jpg
+author: Team Raft
 ---
 
 Artificial Intelligence (AI) has become ubiquitous, entering our lives so swiftly and smoothly that many of us can’t imagine not having it, even if we don’t always know we’re using it. But AI didn’t spring up overnight, and it isn’t done growing. Soon, AI will be so integrated into our daily lives that it will touch everything we do, including military operations. In fact, any military that doesn’t leverage AI will quickly be outpaced by those that do. 
