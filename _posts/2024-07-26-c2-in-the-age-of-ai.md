@@ -2,7 +2,7 @@
 layout: post
 title: Command and Control in the Age of AI
 date: 2024-07-26
-featimg: /assets/images/featimage/C2AI.jpg
+featimg: /assets/images/featimage/C2AI.png
 author: Team Raft
 ---
 
