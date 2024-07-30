@@ -9,7 +9,7 @@ RUN bundle install
 RUN bundle exec jekyll pagemaster --no-permalink about
 RUN bundle exec jekyll build
 
-FROM nginx:1.25
+FROM nginx:1.27
 
 COPY --from=builder /site/_site /usr/share/nginx/html
 
